@@ -396,7 +396,7 @@
         ${e.unlock ? "" : '<span class="panel-lock">🔒</span>'}
         <div class="panel-body">
           <div class="panel-num">${i + 1}</div>
-          <div class="panel-name">${e.name}</div>
+          <div class="panel-name">${e.name.toUpperCase()}</div>
         </div>
       </button>`;
     }).join("");
