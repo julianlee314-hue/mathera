@@ -1,4 +1,4 @@
-/* Mathera — Living Grove world view */
+/* Mathera — painting-first world views (Eras I–IV) */
 (() => {
   const TAGS = {
     count: "Things begin here.",
@@ -19,19 +19,19 @@
     },
     operate: {
       title: "FORGE CITY",
-      bg: null,
+      bg: "assets/tapestry/forge-city.jpg",
       quote: "To operate is to shape what numbers can become.",
       previewLine: "Learn to act on numbers.",
     },
     relate: {
       title: "BRIDGE ISLES",
-      bg: null,
+      bg: "assets/tapestry/bridge-isles.jpg",
       quote: "To relate is to see the hidden bridges between things.",
       previewLine: "See how numbers connect.",
     },
     solve: {
       title: "PEAK RANGE",
-      bg: null,
+      bg: "assets/tapestry/peak-range.jpg",
       quote: "To solve is to find what the mountain hides.",
       previewLine: "Hunt for the unknown.",
     },
@@ -75,22 +75,75 @@
     `<svg viewBox="0 0 16 16" fill="none"><path d="M8 2l1.5 3.2L13 6l-2.5 2.2L11.2 12 8 10.3 4.8 12l.7-3.8L3 6l3.5-.8L8 2z" stroke="currentColor" stroke-width="1.1"/></svg>`,
   ];
 
-  /* Branch pill positions (% of grove-tree box) — tuned to canopy layout */
-  const BRANCH_POS = [
-    { left: "8%", top: "18%" },
-    { left: "22%", top: "38%" },
-    { left: "6%", top: "58%" },
-    { left: "28%", top: "74%" },
-    { left: "58%", top: "20%" },
-    { left: "62%", top: "44%" },
-    { left: "55%", top: "66%" },
-  ];
+  /* Branch pill positions (% of grove-tree) — per-era scatter over the painting */
+  const BRANCH_POS = {
+    count: [  /* Living Grove canopy — 7 domains */
+      { left: "7%",  top: "16%" },
+      { left: "24%", top: "34%" },
+      { left: "5%",  top: "52%" },
+      { left: "26%", top: "70%" },
+      { left: "56%", top: "18%" },
+      { left: "60%", top: "42%" },
+      { left: "52%", top: "64%" },
+    ],
+    operate: [  /* Forge City — 10 domains around forge / streets */
+      { left: "6%",  top: "14%" },
+      { left: "28%", top: "12%" },
+      { left: "52%", top: "16%" },
+      { left: "8%",  top: "36%" },
+      { left: "30%", top: "40%" },
+      { left: "55%", top: "38%" },
+      { left: "5%",  top: "58%" },
+      { left: "27%", top: "62%" },
+      { left: "50%", top: "58%" },
+      { left: "18%", top: "78%" },
+    ],
+    relate: [  /* Bridge Isles — 9 domains across islands */
+      { left: "5%",  top: "18%" },
+      { left: "32%", top: "14%" },
+      { left: "58%", top: "20%" },
+      { left: "8%",  top: "42%" },
+      { left: "36%", top: "40%" },
+      { left: "60%", top: "46%" },
+      { left: "10%", top: "66%" },
+      { left: "34%", top: "68%" },
+      { left: "56%", top: "70%" },
+    ],
+    solve: [  /* Peak Range — 15 domains across mountain tiers */
+      { left: "8%",  top: "8%" },
+      { left: "28%", top: "6%" },
+      { left: "48%", top: "10%" },
+      { left: "4%",  top: "24%" },
+      { left: "22%", top: "26%" },
+      { left: "42%", top: "22%" },
+      { left: "58%", top: "28%" },
+      { left: "6%",  top: "44%" },
+      { left: "26%", top: "46%" },
+      { left: "46%", top: "42%" },
+      { left: "62%", top: "48%" },
+      { left: "10%", top: "64%" },
+      { left: "30%", top: "66%" },
+      { left: "50%", top: "62%" },
+      { left: "20%", top: "80%" },
+    ],
+  };
 
-  const LEAF_DECOR = [
-    [18, 22], [24, 28], [32, 18], [40, 26], [48, 16], [55, 24], [62, 20],
-    [70, 28], [78, 18], [85, 30], [20, 42], [35, 36], [50, 40], [65, 38],
-    [80, 42], [28, 52], [42, 48], [58, 54], [72, 50], [45, 62], [60, 68],
-  ];
+  function branchPositions(eraId, n) {
+    const base = BRANCH_POS[eraId];
+    if (base && base.length) {
+      return Array.from({ length: n }, (_, i) => {
+        if (base[i]) return base[i];
+        const col = i % 4;
+        const row = Math.floor(i / 4);
+        return { left: `${6 + col * 18}%`, top: `${10 + row * 22}%` };
+      });
+    }
+    return Array.from({ length: n }, (_, i) => {
+      const col = i % 4;
+      const row = Math.floor(i / 4);
+      return { left: `${6 + col * 18}%`, top: `${12 + row * 22}%` };
+    });
+  }
 
   const ORB_SVG = {
     count: `<svg viewBox="0 0 48 48" fill="none"><path d="M24 42 V18" stroke="#c4a574" stroke-width="3" stroke-linecap="round"/><path d="M24 22 C14 14, 12 8, 18 6 C22 12, 24 14, 24 14 C24 14, 26 12, 30 6 C36 8, 34 14, 24 22Z" fill="#5dca7a"/><path d="M24 28 C10 24, 8 16, 14 14 C18 20, 24 22, 24 22 C24 22, 30 20, 34 14 C40 16, 38 24, 24 28Z" fill="#3da85c"/></svg>`,
@@ -276,28 +329,28 @@
   function renderBranches() {
     const era = eraById(nav.eraId);
     const tree = document.getElementById("groveTree");
-    const pills = era.domains.map((d, i) => {
-      const pos = BRANCH_POS[i] || { left: `${10 + (i % 4) * 20}%`, top: `${20 + Math.floor(i / 4) * 30}%` };
+    const positions = branchPositions(era.id, era.domains.length);
+    const nodes = era.domains.map((d, i) => {
+      const pos = positions[i];
       const on = i === nav.domainIdx ? "on" : "";
       const icon = DOMAIN_ICONS[i % DOMAIN_ICONS.length];
-      return `<button type="button" class="branch-pill ${on}" data-di="${i}"
+      const leaves = d.skills.map(s => {
+        const st = s.state || "seed";
+        return `<span class="leaf-dot ${st}" title="${s.title}"></span>`;
+      }).join("");
+      return `<div class="branch-node ${on}" data-di="${i}"
         style="left:${pos.left};top:${pos.top}">
-        <span class="bn">${i + 1}</span>
-        <span class="bi">${icon}</span>
-        <span class="bt">${shortDomainName(d.name)}</span>
-      </button>`;
+        <button type="button" class="branch-pill" data-di="${i}">
+          <span class="bn">${i + 1}</span>
+          <span class="bi">${icon}</span>
+          <span class="bt">${shortDomainName(d.name)}</span>
+        </button>
+        <div class="leaf-row" aria-hidden="true">${leaves}</div>
+      </div>`;
     }).join("");
 
-    // Decorative leaves colored by a sample of skill states across domains
-    const states = [];
-    era.domains.forEach(d => d.skills.forEach(s => states.push(s.state || "seed")));
-    const leaves = LEAF_DECOR.map((p, i) => {
-      const st = states[i % states.length] || "seed";
-      return `<span class="leaf-dot ${st}" style="left:${p[0]}%;top:${p[1]}%"></span>`;
-    }).join("");
-
-    tree.innerHTML = leaves + pills;
-    tree.querySelectorAll(".branch-pill").forEach(b => {
+    tree.innerHTML = nodes;
+    tree.querySelectorAll(".branch-node").forEach(b => {
       b.onclick = () => selectDomain(+b.dataset.di);
     });
   }

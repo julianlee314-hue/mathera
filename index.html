@@ -71,10 +71,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .grove-shell::before{
   content:""; position:absolute; inset:0; z-index:0;
   background:
-    linear-gradient(90deg, rgba(6,10,16,.55) 0%, transparent 18%, transparent 62%, rgba(6,10,16,.72) 100%),
-    linear-gradient(180deg, rgba(6,10,16,.4) 0%, transparent 22%, transparent 78%, rgba(6,10,16,.55) 100%),
-    var(--grove-bg, linear-gradient(180deg,#152218,#0a120c)) center/cover no-repeat;
-  filter:saturate(1.05);
+    radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(4,8,12,.28) 100%),
+    linear-gradient(90deg, rgba(6,10,16,.38) 0%, transparent 14%, transparent 68%, rgba(6,10,16,.42) 100%),
+    linear-gradient(180deg, rgba(6,10,16,.22) 0%, transparent 16%, transparent 88%, rgba(6,10,16,.35) 100%),
+    var(--grove-bg, linear-gradient(180deg,#152218,#0a120c)) center / cover no-repeat;
+  filter:saturate(1.08) contrast(1.02);
 }
 .grove-shell > *{position:relative; z-index:1}
 
@@ -82,9 +83,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .era-rail{
   display:flex; flex-direction:column; align-items:center;
   padding:.85rem .4rem 1rem;
-  background:rgba(8,12,20,.72);
-  border-right:1px solid rgba(255,255,255,.08);
-  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  background:rgba(6,10,16,.48);
+  border-right:1px solid rgba(255,255,255,.07);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
   gap:.15rem;
 }
 .era-rail-brand{
@@ -144,7 +145,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .grove-header h2{
   margin:0; font-family:Fraunces,Georgia,serif; font-weight:700;
   font-size:clamp(1.55rem, 3.2vw, 2.35rem); letter-spacing:.04em;
-  color:#f2f6f3; text-shadow:0 2px 24px rgba(0,0,0,.45);
+  color:#f2f6f3; text-shadow:0 2px 18px rgba(0,0,0,.55), 0 0 2px rgba(0,0,0,.4);
 }
 .grove-header .tagline{
   margin:.25rem 0 0; font-family:Fraunces,Georgia,serif; font-style:italic;
@@ -157,8 +158,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .grove-pill{
   display:inline-flex; align-items:center; gap:.4rem;
   padding:.28rem .7rem; border-radius:999px;
-  background:rgba(8,14,20,.55); border:1px solid rgba(255,255,255,.14);
-  font-size:.68rem; color:rgba(220,230,230,.85); backdrop-filter:blur(8px);
+  background:rgba(6,10,16,.42); border:1px solid rgba(255,255,255,.12);
+  font-size:.68rem; color:rgba(220,230,230,.85); backdrop-filter:blur(6px);
 }
 .grove-pill svg{width:12px;height:12px; opacity:.85}
 
@@ -166,42 +167,53 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   position:relative; flex:1; min-height:320px;
   margin:.25rem 0 .5rem;
 }
-.branch-pill{
+.branch-node{
   position:absolute; z-index:3;
+  display:flex; flex-direction:column; align-items:flex-start; gap:.28rem;
+  max-width:min(260px, 48vw);
+  transition:transform .15s;
+}
+.branch-node:hover{transform:translateY(-1px)}
+.branch-pill{
   display:inline-flex; align-items:center; gap:.4rem;
   padding:.38rem .7rem .38rem .5rem; border-radius:999px;
-  background:rgba(6,10,14,.82); border:1px solid rgba(255,255,255,.14);
-  color:rgba(230,235,240,.88); font-size:.62rem; font-weight:700;
+  background:rgba(4,8,12,.78); border:1px solid rgba(255,255,255,.16);
+  color:rgba(230,235,240,.92); font-size:.62rem; font-weight:700;
   letter-spacing:.08em; text-transform:uppercase;
-  box-shadow:0 6px 20px rgba(0,0,0,.35);
-  transition:transform .15s, border-color .15s, box-shadow .15s, background .15s;
-  white-space:nowrap; max-width:min(240px, 46vw);
+  box-shadow:0 4px 16px rgba(0,0,0,.4);
+  transition:border-color .15s, box-shadow .15s, background .15s;
+  white-space:nowrap; max-width:100%;
+  pointer-events:none; /* click handled by .branch-node */
 }
-.branch-pill:hover{
-  transform:translateY(-1px); border-color:rgba(255,255,255,.3);
-  background:rgba(10,16,22,.9);
+.branch-node:hover .branch-pill{
+  border-color:rgba(255,255,255,.32);
+  background:rgba(8,12,18,.88);
 }
-.branch-pill.on{
-  border-color:rgba(61,155,143,.75);
-  box-shadow:0 0 0 1px rgba(61,155,143,.4), 0 8px 24px rgba(61,155,143,.25);
-  background:rgba(12,28,30,.92); color:#e8faf6;
+.branch-node.on .branch-pill{
+  border-color:rgba(61,155,143,.8);
+  box-shadow:0 0 0 1px rgba(61,155,143,.45), 0 6px 20px rgba(61,155,143,.28);
+  background:rgba(10,24,26,.9); color:#e8faf6;
 }
 .branch-pill .bn{
   display:grid; place-items:center; width:1.35rem; height:1.35rem; border-radius:50%;
-  background:rgba(255,255,255,.08); font-size:.58rem; flex-shrink:0;
+  background:rgba(255,255,255,.1); font-size:.58rem; flex-shrink:0;
 }
 .branch-pill .bi{width:14px;height:14px; flex-shrink:0; opacity:.9; display:grid; place-items:center}
 .branch-pill .bi svg{width:14px;height:14px}
 .branch-pill .bt{overflow:hidden; text-overflow:ellipsis}
 
-/* decorative skill leaves on canopy */
-.leaf-dot{
-  position:absolute; width:7px; height:7px; border-radius:50% 0 50% 50%;
-  transform:rotate(-45deg); pointer-events:none; opacity:.85;
-  box-shadow:0 0 6px currentColor;
+/* skill leaf dots under each domain pill */
+.leaf-row{
+  display:flex; flex-wrap:wrap; gap:3px; max-width:100%;
+  padding-left:.35rem; pointer-events:none;
 }
-.leaf-dot.seed{background:#8a93a8; color:#8a93a8; opacity:.45}
-.leaf-dot.inferred{background:transparent; border:1.5px solid #8fbf8a; color:#8fbf8a; opacity:.7}
+.leaf-dot{
+  width:6px; height:6px; border-radius:50% 0 50% 50%;
+  transform:rotate(-45deg); opacity:.9; flex-shrink:0;
+  box-shadow:0 0 4px currentColor;
+}
+.leaf-dot.seed{background:#8a93a8; color:#8a93a8; opacity:.4}
+.leaf-dot.inferred{background:transparent; border:1.3px solid #8fbf8a; color:#8fbf8a; opacity:.7; box-sizing:border-box}
 .leaf-dot.growing{background:#9dce7a; color:#9dce7a}
 .leaf-dot.proven{background:#2f7a3a; color:#3dca6a}
 .leaf-dot.thirsty{background:#d4a017; color:#d4a017}
@@ -209,9 +221,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 
 .grove-legend{
   display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.55rem 1rem;
-  margin-top:auto; padding:.55rem .9rem;
-  background:rgba(8,12,20,.62); border:1px solid rgba(255,255,255,.1);
-  border-radius:999px; backdrop-filter:blur(10px);
+  margin-top:auto; padding:.5rem .85rem;
+  background:rgba(6,10,16,.45); border:1px solid rgba(255,255,255,.08);
+  border-radius:999px; backdrop-filter:blur(8px);
   font-size:.62rem; color:rgba(200,210,220,.75); align-self:center;
   max-width:100%;
 }
@@ -236,9 +248,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 /* Right detail panel */
 .detail-panel{
   display:flex; flex-direction:column;
-  background:rgba(8,12,20,.78);
-  border-left:1px solid rgba(255,255,255,.1);
-  backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px);
+  background:rgba(6,10,16,.52);
+  border-left:1px solid rgba(255,255,255,.08);
+  backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
   padding:1rem .9rem .85rem; min-height:0; overflow:hidden;
 }
 .detail-quote{
@@ -288,10 +300,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .skill-row .stitle{font-size:.78rem; font-weight:500; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
 .skill-preview{
-  margin-top:.55rem; padding:.7rem;
-  border-radius:1rem; border:1px solid rgba(255,255,255,.12);
-  background:rgba(12,18,28,.65);
-  display:flex; flex-direction:column; gap:.55rem;
+  margin-top:.55rem; padding:.65rem;
+  border-radius:.9rem; border:1px solid rgba(255,255,255,.1);
+  background:rgba(8,12,20,.42);
+  display:flex; flex-direction:column; gap:.5rem;
 }
 .preview-art{
   border-radius:.7rem; aspect-ratio:16/7; overflow:hidden;
