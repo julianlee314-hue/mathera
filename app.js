@@ -1,14 +1,5 @@
-/* Mathera — Math Garden tapestry */
+/* Mathera — Living Grove world view */
 (() => {
-  const PANEL_IMG = [
-    "assets/tapestry/era1.jpg",
-    "assets/tapestry/era2.jpg",
-    "assets/tapestry/era3.jpg",
-    "assets/tapestry/era4.jpg",
-    "assets/tapestry/era5.jpg",
-    "assets/tapestry/era6.jpg",
-    "assets/tapestry/era7.jpg",
-  ];
   const TAGS = {
     count: "Things begin here.",
     operate: "Do things to numbers.",
@@ -18,10 +9,89 @@
     motion: "Understand change.",
     space: "Explore higher worlds.",
   };
-  const STATE_FILL = {
-    seed: "#8a93a8", growing: "#9dce7a", proven: "#2f7a3a",
-    thirsty: "#d4a017", withered: "#8b5a3c", inferred: "transparent",
+
+  const WORLD_META = {
+    count: {
+      title: "THE LIVING GROVE",
+      bg: "assets/tapestry/living-grove.jpg",
+      quote: "To count is to notice that the world is full of things.",
+      previewLine: "Build your number sense.",
+    },
+    operate: {
+      title: "FORGE CITY",
+      bg: null,
+      quote: "To operate is to shape what numbers can become.",
+      previewLine: "Learn to act on numbers.",
+    },
+    relate: {
+      title: "BRIDGE ISLES",
+      bg: null,
+      quote: "To relate is to see the hidden bridges between things.",
+      previewLine: "See how numbers connect.",
+    },
+    solve: {
+      title: "PEAK RANGE",
+      bg: null,
+      quote: "To solve is to find what the mountain hides.",
+      previewLine: "Hunt for the unknown.",
+    },
+    prove: {
+      title: "PROOF PALACE",
+      bg: null,
+      quote: "To prove is to know — and know why.",
+      previewLine: "Make certainty shine.",
+    },
+    motion: {
+      title: "TIDE SEA",
+      bg: null,
+      quote: "To understand motion is to read the living tide.",
+      previewLine: "Watch how change unfolds.",
+    },
+    space: {
+      title: "STAR VAULT",
+      bg: null,
+      quote: "To explore space is to walk among higher worlds.",
+      previewLine: "Reach beyond the familiar.",
+    },
   };
+
+  const ERA_ICONS = {
+    count: `<svg viewBox="0 0 24 24" fill="none"><path d="M12 20C12 20 5 15.5 5 10.5C5 7.5 7.2 5.5 9.8 5.5C11.2 5.5 12 6.4 12 6.4S12.8 5.5 14.2 5.5C16.8 5.5 19 7.5 19 10.5C19 15.5 12 20 12 20Z" stroke="currentColor" stroke-width="1.6" fill="rgba(61,155,143,.25)"/></svg>`,
+    operate: `<svg viewBox="0 0 24 24" fill="none"><path d="M12 8.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6.1 6.1l1.4 1.4M16.5 16.5l1.4 1.4M6.1 17.9l1.4-1.4M16.5 7.5l1.4-1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>`,
+    relate: `<svg viewBox="0 0 24 24" fill="none"><path d="M4 16c3-5 6-7 8-7s5 2 8 7" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="6" cy="14" r="1.6" fill="currentColor"/><circle cx="12" cy="9.5" r="1.6" fill="currentColor"/><circle cx="18" cy="14" r="1.6" fill="currentColor"/></svg>`,
+    solve: `<svg viewBox="0 0 24 24" fill="none"><path d="M3 19L9 8l4 5 4-8 4 14H3z" stroke="currentColor" stroke-width="1.5" fill="rgba(200,210,230,.12)"/></svg>`,
+    prove: `<svg viewBox="0 0 24 24" fill="none"><path d="M5 19V10l7-5 7 5v9" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="13" width="4" height="6" fill="currentColor" opacity=".5"/></svg>`,
+    motion: `<svg viewBox="0 0 24 24" fill="none"><path d="M3 13c3-3 5 3 8 0s5-3 8 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>`,
+    space: `<svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3.2" fill="currentColor" opacity=".55"/><ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="currentColor" stroke-width="1.3" transform="rotate(-24 12 12)"/></svg>`,
+  };
+
+  const DOMAIN_ICONS = [
+    `<svg viewBox="0 0 16 16" fill="none"><path d="M5 8h6M8 5v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="8" r="5.5" stroke="currentColor" stroke-width="1.2" opacity=".5"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><path d="M3 8h10M5 5L3 8l2 3M11 5l2 3-2 3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><rect x="2" y="9" width="4" height="4" rx=".5" stroke="currentColor" stroke-width="1.2"/><rect x="6.5" y="5" width="4" height="8" rx=".5" stroke="currentColor" stroke-width="1.2"/><rect x="11" y="2" width="3" height="11" rx=".5" stroke="currentColor" stroke-width="1.2"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><path d="M4 8h8M8 4v8M3 12h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><circle cx="4" cy="8" r="1.4" fill="currentColor"/><circle cx="8" cy="4.5" r="1.4" fill="currentColor"/><circle cx="12" cy="8" r="1.4" fill="currentColor"/><circle cx="8" cy="11.5" r="1.4" fill="currentColor"/><path d="M4 8h8M8 4.5v7" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><rect x="2.5" y="2.5" width="5" height="5" stroke="currentColor" stroke-width="1.2"/><circle cx="11.5" cy="5" r="2.5" stroke="currentColor" stroke-width="1.2"/><path d="M3 13.5L5.5 9l2.5 4.5H3z" stroke="currentColor" stroke-width="1.2"/></svg>`,
+    `<svg viewBox="0 0 16 16" fill="none"><path d="M8 2l1.5 3.2L13 6l-2.5 2.2L11.2 12 8 10.3 4.8 12l.7-3.8L3 6l3.5-.8L8 2z" stroke="currentColor" stroke-width="1.1"/></svg>`,
+  ];
+
+  /* Branch pill positions (% of grove-tree box) — tuned to canopy layout */
+  const BRANCH_POS = [
+    { left: "8%", top: "18%" },
+    { left: "22%", top: "38%" },
+    { left: "6%", top: "58%" },
+    { left: "28%", top: "74%" },
+    { left: "58%", top: "20%" },
+    { left: "62%", top: "44%" },
+    { left: "55%", top: "66%" },
+  ];
+
+  const LEAF_DECOR = [
+    [18, 22], [24, 28], [32, 18], [40, 26], [48, 16], [55, 24], [62, 20],
+    [70, 28], [78, 18], [85, 30], [20, 42], [35, 36], [50, 40], [65, 38],
+    [80, 42], [28, 52], [42, 48], [58, 54], [72, 50], [45, 62], [60, 68],
+  ];
+
   const ORB_SVG = {
     count: `<svg viewBox="0 0 48 48" fill="none"><path d="M24 42 V18" stroke="#c4a574" stroke-width="3" stroke-linecap="round"/><path d="M24 22 C14 14, 12 8, 18 6 C22 12, 24 14, 24 14 C24 14, 26 12, 30 6 C36 8, 34 14, 24 22Z" fill="#5dca7a"/><path d="M24 28 C10 24, 8 16, 14 14 C18 20, 24 22, 24 22 C24 22, 30 20, 34 14 C40 16, 38 24, 24 28Z" fill="#3da85c"/></svg>`,
     operate: `<svg viewBox="0 0 48 48" fill="none"><rect x="10" y="22" width="10" height="16" rx="1" fill="#dcc09a"/><rect x="22" y="14" width="12" height="24" rx="1" fill="#c4a574"/><rect x="28" y="8" width="8" height="30" rx="1" fill="#e8d2a8"/></svg>`,
@@ -32,15 +102,24 @@
     space: `<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" fill="#c4a0ff" opacity=".85"/></svg>`,
   };
 
+  const BG_FALLBACK = {
+    count: "linear-gradient(180deg,#1a2a1c,#0a120c)",
+    operate: "linear-gradient(180deg,#2a1c10,#0e0a06)",
+    relate: "linear-gradient(180deg,#121a2c,#0a101c)",
+    solve: "linear-gradient(180deg,#141c2a,#0a1018)",
+    prove: "linear-gradient(180deg,#1c1810,#0e0c08)",
+    motion: "linear-gradient(180deg,#0a1820,#061018)",
+    space: "radial-gradient(ellipse at 50% 40%,#1a1030,#07040f)",
+  };
+
   let ERAS = [];
   let stepLabels = { a: "See it", b: "Try it", c: "Use it", d: "Explain it" };
   const nav = {
-    view: "universe", eraId: null, domainIdx: null, skillId: null,
-    cam: { x: 0, y: 0, k: 1 }, target: null, layout: null,
+    view: "universe", eraId: null, domainIdx: 0, skillId: null,
   };
-  const VW = 1400, VH = 900;
 
   const eraById = id => ERAS.find(e => e.id === id);
+
   function counts(era) {
     let proven = 0, total = 0, growing = 0;
     for (const d of era.domains) for (const s of d.skills) {
@@ -48,350 +127,49 @@
     }
     return { proven, total, growing };
   }
-  function domainCounts(dom) {
-    let proven = 0, growing = 0;
-    for (const s of dom.skills) {
-      if (s.state === "proven") proven++; else if (s.state === "growing") growing++;
-    }
-    return { proven, growing, total: dom.skills.length };
-  }
+
   function toast(msg) {
     const t = document.getElementById("toast");
     t.textContent = msg; t.classList.add("show");
     clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove("show"), 1600);
   }
+
   function setView(name) {
     nav.view = name;
     document.body.classList.toggle("land", name === "universe");
-    const map = { universe: "viewUniverse", world: "viewWorld", domain: "viewDomain", skill: "viewSkill" };
+    document.body.classList.toggle("grove", name === "world");
+    const map = { universe: "viewUniverse", world: "viewWorld", skill: "viewSkill" };
     Object.values(map).forEach(id => document.getElementById(id).classList.remove("show"));
     document.getElementById(map[name]).classList.add("show");
-    renderCrumb(); renderContinue();
+    renderContinue();
   }
+
   function skillCode(id) {
     const p = id.split(".");
     return p.length >= 3 ? `${p[1]}.${p[2]}` : id;
   }
 
-  /* ── layout engines ── */
-  function placeInCluster(d, di, cx, cy, r, skills, mode) {
-    const n = d.skills.length;
-    d.skills.forEach((s, si) => {
-      const a = (si / Math.max(n, 1)) * Math.PI * 2 - Math.PI / 2;
-      const rr = r * (0.35 + 0.55 * ((si % 5) / 5));
-      const x = cx + Math.cos(a) * rr * (mode === "road" ? 1.15 : 1);
-      const y = cy + Math.sin(a) * rr * (mode === "road" ? 0.55 : 0.85);
-      skills.push({ di, skill: s, x, y, mode });
-    });
-  }
-
-  function layoutWorld(era) {
-    const domains = era.domains, n = domains.length;
-    const clusters = [], skills = [];
-    const m = era.metaphor;
-
-    if (m === "grove" || m === "tree") {
-      const trunkX = 700;
-      domains.forEach((d, i) => {
-        const ang = -Math.PI / 2 + (i / n) * Math.PI * 2;
-        const rad = 280;
-        const cx = trunkX + Math.cos(ang) * rad * 1.05;
-        const cy = 420 + Math.sin(ang) * rad * 0.78;
-        const r = 70 + Math.sqrt(d.skills.length) * 11;
-        clusters.push({ i, cx, cy, r, limb: cx < trunkX ? "left" : "right" });
-        placeInCluster(d, i, cx, cy, r * 0.75, skills, "leaf");
-      });
-      return { kind: "grove", trunkX, clusters, skills };
-    }
-    if (m === "city") {
-      domains.forEach((d, i) => {
-        const ang = -Math.PI / 2 + (i / n) * Math.PI * 2;
-        const cx = 700 + Math.cos(ang) * 300;
-        const cy = 450 + Math.sin(ang) * 250;
-        const r = 55 + Math.sqrt(d.skills.length) * 9;
-        clusters.push({ i, cx, cy, r, ang });
-        // skills along radial "roads"
-        d.skills.forEach((s, si) => {
-          const t = (si + 1) / (d.skills.length + 1);
-          const x = 700 + (cx - 700) * t + Math.sin(si) * 12;
-          const y = 450 + (cy - 450) * t + Math.cos(si) * 8;
-          skills.push({ di: i, skill: s, x, y, mode: "vehicle" });
-        });
-      });
-      return { kind: "city", clusters, skills };
-    }
-    if (m === "bridges") {
-      domains.forEach((d, i) => {
-        const t = n === 1 ? 0.5 : i / (n - 1);
-        const cx = 120 + t * 1160;
-        const cy = 480 + Math.sin(t * Math.PI * 2) * 90;
-        const r = 60 + Math.sqrt(d.skills.length) * 8;
-        clusters.push({ i, cx, cy, r });
-        placeInCluster(d, i, cx, cy, r * 0.7, skills, "span");
-      });
-      return { kind: "bridges", clusters, skills };
-    }
-    if (m === "mountains") {
-      domains.forEach((d, i) => {
-        const t = n === 1 ? 0.5 : i / (n - 1);
-        const cx = 140 + t * 1120;
-        const peakY = 180 + (i % 3) * 40;
-        const cy = peakY + 120;
-        const r = 55 + Math.sqrt(d.skills.length) * 8;
-        clusters.push({ i, cx, cy, r, peakY });
-        placeInCluster(d, i, cx, cy, r * 0.7, skills, "stone");
-      });
-      return { kind: "mountains", clusters, skills };
-    }
-    if (m === "palace") {
-      const cols = Math.ceil(Math.sqrt(n));
-      domains.forEach((d, i) => {
-        const col = i % cols, row = Math.floor(i / cols);
-        const cx = 220 + col * (1000 / Math.max(cols - 1, 1));
-        const cy = 220 + row * (500 / Math.max(Math.ceil(n / cols) - 1, 1));
-        const r = 55 + Math.sqrt(d.skills.length) * 8;
-        clusters.push({ i, cx, cy, r });
-        placeInCluster(d, i, cx, cy, r * 0.65, skills, "tile");
-      });
-      return { kind: "palace", clusters, skills };
-    }
-    if (m === "ocean") {
-      domains.forEach((d, i) => {
-        const ang = (i / n) * Math.PI * 2;
-        const cx = 700 + Math.cos(ang) * 320;
-        const cy = 450 + Math.sin(ang) * 220;
-        const r = 55 + Math.sqrt(d.skills.length) * 8;
-        clusters.push({ i, cx, cy, r });
-        placeInCluster(d, i, cx, cy, r * 0.7, skills, "boat");
-      });
-      return { kind: "ocean", clusters, skills };
-    }
-    // cosmos
-    domains.forEach((d, i) => {
-      const ang = (i / n) * Math.PI * 2;
-      const rad = 180 + (i % 3) * 70;
-      const cx = 700 + Math.cos(ang) * rad;
-      const cy = 450 + Math.sin(ang) * rad * 0.75;
-      const r = 50 + Math.sqrt(d.skills.length) * 7;
-      clusters.push({ i, cx, cy, r });
-      placeInCluster(d, i, cx, cy, r * 0.7, skills, "star");
-    });
-    return { kind: "cosmos", clusters, skills };
-  }
-
-  function camTransform() {
-    const { x, y, k } = nav.cam;
-    const cx = VW / 2, cy = VH / 2;
-    return `translate(${cx} ${cy}) scale(${k}) translate(${-cx + x} ${-cy + y})`;
-  }
-
-  function escapeXml(s) {
-    return String(s).replace(/[&<>"']/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&apos;" }[c]));
-  }
-  function truncate(s, n) { return s.length > n ? s.slice(0, n - 1) + "…" : s; }
-
-  function renderMap() {
+  function domainHeader(dom, idx) {
     const era = eraById(nav.eraId);
-    const L = nav.layout;
-    const svg = document.getElementById("mapSvg");
-    const zoomed = nav.domainIdx != null && nav.cam.k > 1.5;
-    let decor = "";
-
-    if (L.kind === "grove") {
-      decor = `
-        <defs>
-          <radialGradient id="canopy" cx="50%" cy="35%" r="60%">
-            <stop offset="0%" stop-color="#6bcf8e" stop-opacity=".4"/>
-            <stop offset="100%" stop-color="#0e1610" stop-opacity="0"/>
-          </radialGradient>
-          <linearGradient id="bark" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#a67c52"/><stop offset="100%" stop-color="#5a3d24"/>
-          </linearGradient>
-        </defs>
-        <ellipse cx="${L.trunkX}" cy="260" rx="380" ry="180" fill="url(#canopy)"/>
-        <path d="M${L.trunkX - 28} 860 C ${L.trunkX - 34} 520, ${L.trunkX - 18} 280, ${L.trunkX} 140
-                 C ${L.trunkX + 18} 280, ${L.trunkX + 34} 520, ${L.trunkX + 28} 860 Z" fill="url(#bark)"/>
-        <text x="${L.trunkX}" y="110" text-anchor="middle" fill="rgba(180,220,180,.5)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="4">FIRST GROVE</text>`;
-      L.clusters.forEach(cl => {
-        const active = nav.domainIdx === cl.i;
-        const midX = (L.trunkX + cl.cx) / 2;
-        decor += `<path d="M${L.trunkX} 400 Q ${midX} ${(400 + cl.cy) / 2 - 40} ${cl.cx} ${cl.cy}" fill="none" stroke="${active ? "#5dca7a" : "#7a9a5a"}" stroke-width="${active ? 9 : 5}" stroke-linecap="round" opacity=".9"/>`;
-        decor += `<ellipse cx="${cl.cx}" cy="${cl.cy}" rx="${cl.r}" ry="${cl.r * 0.85}" fill="rgba(74,180,110,${active ? 0.14 : 0.05})" stroke="rgba(120,200,140,${active ? 0.5 : 0.2})"/>`;
-      });
-    } else if (L.kind === "city") {
-      decor = `<ellipse cx="700" cy="450" rx="90" ry="70" fill="rgba(232,160,80,.2)"/>
-        <circle cx="700" cy="450" r="22" fill="rgba(255,180,90,.35)"/>
-        <text x="700" y="70" text-anchor="middle" fill="rgba(220,190,140,.45)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="4">FORGE CITY</text>`;
-      L.clusters.forEach(cl => {
-        const active = nav.domainIdx === cl.i;
-        decor += `<path d="M700 450 L${cl.cx} ${cl.cy}" stroke="rgba(196,165,116,${active ? 0.55 : 0.22})" stroke-width="${active ? 8 : 4}"/>`;
-        decor += `<rect x="${cl.cx - cl.r}" y="${cl.cy - cl.r * 0.7}" width="${cl.r * 2}" height="${cl.r * 1.4}" rx="10" fill="rgba(40,36,48,${active ? 0.55 : 0.3})" stroke="rgba(232,210,160,${active ? 0.6 : 0.25})"/>`;
-      });
-    } else if (L.kind === "bridges") {
-      decor = `<text x="700" y="60" text-anchor="middle" fill="rgba(180,200,255,.4)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="3">BRIDGE ISLES</text>
-        <path d="M0 620 Q350 560 700 620 T1400 620" fill="none" stroke="rgba(155,183,255,.25)" stroke-width="3"/>`;
-      L.clusters.forEach((cl, i) => {
-        const active = nav.domainIdx === cl.i;
-        decor += `<ellipse cx="${cl.cx}" cy="${cl.cy + 30}" rx="${cl.r * 1.2}" ry="${cl.r * 0.4}" fill="rgba(60,90,140,${active ? 0.4 : 0.2})"/>`;
-        if (i < L.clusters.length - 1) {
-          const n = L.clusters[i + 1];
-          decor += `<path d="M${cl.cx} ${cl.cy} Q ${(cl.cx + n.cx) / 2} ${Math.min(cl.cy, n.cy) - 50} ${n.cx} ${n.cy}" fill="none" stroke="rgba(200,210,255,.4)" stroke-width="3"/>`;
-        }
-      });
-    } else if (L.kind === "mountains") {
-      L.clusters.forEach(cl => {
-        decor += `<path d="M${cl.cx - cl.r * 1.2} 820 L${cl.cx} ${cl.peakY} L${cl.cx + cl.r * 1.2} 820 Z" fill="rgba(180,200,220,.1)" stroke="rgba(220,230,245,.3)"/>`;
-      });
-      decor += `<text x="700" y="60" text-anchor="middle" fill="rgba(200,210,230,.4)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="3">PEAK RANGE</text>`;
-    } else if (L.kind === "palace") {
-      decor = `<text x="700" y="60" text-anchor="middle" fill="rgba(240,230,200,.4)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="3">PROOF PALACE</text>`;
-      L.clusters.forEach(cl => {
-        const active = nav.domainIdx === cl.i;
-        decor += `<rect x="${cl.cx - cl.r}" y="${cl.cy - cl.r}" width="${cl.r * 2}" height="${cl.r * 1.6}" rx="6" fill="rgba(240,230,200,${active ? 0.12 : 0.05})" stroke="rgba(240,230,200,${active ? 0.45 : 0.2})"/>`;
-      });
-    } else if (L.kind === "ocean") {
-      decor = `<path d="M0 600 Q400 540 800 620 T1400 600" fill="none" stroke="rgba(94,200,216,.3)" stroke-width="3"/>
-        <text x="700" y="60" text-anchor="middle" fill="rgba(160,220,230,.4)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="3">TIDE SEA</text>`;
-      L.clusters.forEach(cl => {
-        decor += `<ellipse cx="${cl.cx}" cy="${cl.cy}" rx="${cl.r * 1.2}" ry="${cl.r * 0.7}" fill="rgba(60,140,160,.15)" stroke="rgba(94,200,216,.3)"/>`;
-      });
-    } else {
-      decor = `<circle cx="700" cy="450" r="80" fill="rgba(196,160,255,.15)"/>
-        <text x="700" y="60" text-anchor="middle" fill="rgba(200,180,255,.4)" font-family="Fraunces,Georgia,serif" font-size="22" letter-spacing="3">STAR VAULT</text>`;
-      L.clusters.forEach(cl => {
-        decor += `<circle cx="${cl.cx}" cy="${cl.cy}" r="${cl.r}" fill="rgba(196,160,255,.08)" stroke="rgba(196,160,255,.3)"/>`;
-      });
+    const eraNum = era ? ERAS.indexOf(era) + 1 : 1;
+    let domNum = idx + 1;
+    if (dom.id) {
+      const m = String(dom.id).match(/\.(\d+)$/);
+      if (m) domNum = +m[1];
     }
-
-    let clusterLayer = "";
-    L.clusters.forEach(cl => {
-      const d = era.domains[cl.i];
-      const active = nav.domainIdx === cl.i;
-      const show = !zoomed || active;
-      clusterLayer += `<g class="cluster" data-di="${cl.i}">
-        <circle cx="${cl.cx}" cy="${cl.cy}" r="${cl.r + 20}" fill="rgba(255,255,255,${active ? 0.06 : 0.02})" stroke="rgba(255,255,255,${active ? 0.35 : 0.08})"/>
-        ${show ? `<text x="${cl.cx}" y="${cl.cy - cl.r - 16}" text-anchor="middle" fill="rgba(200,210,230,.85)" font-size="13" font-weight="600" font-family="Inter,sans-serif">${d.id}</text>
-        <text x="${cl.cx}" y="${cl.cy - cl.r + 2}" text-anchor="middle" fill="rgba(238,243,255,.8)" font-size="12" font-family="Fraunces,Georgia,serif">${escapeXml(d.name)}</text>` : ""}
-      </g>`;
-    });
-
-    let skillLayer = "";
-    L.skills.forEach(p => {
-      const s = p.skill;
-      const activeDom = nav.domainIdx == null || nav.domainIdx === p.di;
-      const big = zoomed && nav.domainIdx === p.di;
-      const r = big ? 7 : (p.mode === "leaf" ? 4.5 : 3.5);
-      const fill = s.state === "inferred" ? "none" : (STATE_FILL[s.state] || STATE_FILL.seed);
-      const stroke = s.state === "inferred" ? "#8fbf8a" : "rgba(0,0,0,.25)";
-      const dash = s.state === "inferred" ? 'stroke-dasharray="2 2"' : "";
-      let shape = `<circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="1.1" ${dash}/>`;
-      if (p.mode === "leaf" && !big) {
-        shape = `<ellipse cx="${p.x}" cy="${p.y}" rx="${r * 1.3}" ry="${r * 0.7}" transform="rotate(${(p.di * 17 + p.x) % 50} ${p.x} ${p.y})" fill="${fill === "none" ? "rgba(120,200,140,.25)" : fill}" stroke="${stroke}" stroke-width="1" ${dash}/>`;
-      } else if (p.mode === "vehicle" && !big) {
-        shape = `<rect x="${p.x - 5}" y="${p.y - 2.5}" width="10" height="5" rx="1.5" fill="${fill === "none" ? "rgba(196,165,116,.4)" : fill}" stroke="${stroke}" ${dash}/>`;
-      } else if (p.mode === "boat" && !big) {
-        shape = `<path d="M${p.x - 6} ${p.y} Q ${p.x} ${p.y + 4} ${p.x + 6} ${p.y} Q ${p.x} ${p.y - 3} ${p.x - 6} ${p.y}" fill="${fill === "none" ? "rgba(94,200,216,.35)" : fill}"/>`;
-      } else if (p.mode === "star" && !big) {
-        shape = `<circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${fill === "none" ? "rgba(196,160,255,.45)" : fill}" stroke="${stroke}" ${dash}/>`;
-      }
-      const label = big
-        ? `<text x="${p.x}" y="${p.y - 12}" text-anchor="middle" fill="#eef3ff" font-size="9" font-family="Inter,sans-serif">${escapeXml(truncate(s.title, 20))}</text>`
-        : "";
-      skillLayer += `<g class="sknode ${activeDom ? "" : "dim"}" data-di="${p.di}" data-sid="${s.id}">
-        <circle cx="${p.x}" cy="${p.y}" r="${big ? 16 : 9}" fill="transparent"/>
-        ${shape}${label}
-      </g>`;
-    });
-
-    svg.innerHTML = `<g id="cam" transform="${camTransform()}">
-      <g class="decor">${decor}</g>
-      <g class="clusters">${clusterLayer}</g>
-      <g class="skills">${skillLayer}</g>
-    </g>`;
-
-    svg.querySelectorAll(".cluster").forEach(g => {
-      g.addEventListener("click", e => { e.stopPropagation(); zoomToDomain(+g.dataset.di); });
-    });
-    svg.querySelectorAll(".sknode").forEach(g => {
-      g.addEventListener("click", e => {
-        e.stopPropagation();
-        const di = +g.dataset.di, sid = g.dataset.sid;
-        if (nav.domainIdx !== di || nav.cam.k < 1.8) zoomToDomain(di, () => openSkill(sid));
-        else openSkill(sid);
-      });
-    });
+    return `${eraNum}.${domNum} ${dom.name.toUpperCase()}`;
   }
 
-  function animateCam(done) {
-    const start = { ...nav.cam };
-    const end = nav.target || nav.cam;
-    const t0 = performance.now(), dur = 480;
-    function frame(t) {
-      const u = Math.min(1, (t - t0) / dur);
-      const e = 1 - Math.pow(1 - u, 3);
-      nav.cam.x = start.x + (end.x - start.x) * e;
-      nav.cam.y = start.y + (end.y - start.y) * e;
-      nav.cam.k = start.k + (end.k - start.k) * e;
-      const cam = document.getElementById("cam");
-      if (cam) cam.setAttribute("transform", camTransform());
-      if (u < 1) requestAnimationFrame(frame);
-      else { nav.cam = { ...end }; nav.target = null; if (done) done(); }
-    }
-    requestAnimationFrame(frame);
+  function shortDomainName(name) {
+    return String(name).toUpperCase();
   }
 
-  function zoomToDomain(di, after) {
-    nav.domainIdx = di;
-    const cl = nav.layout.clusters[di];
-    if (!cl) return;
-    nav.target = { x: VW / 2 - cl.cx, y: VH / 2 - cl.cy, k: 2.5 };
-    animateCam(() => { renderMap(); if (after) after(); });
-    renderDistrictCards();
-    renderCrumb();
-  }
-
-  function zoomOutMap() {
-    if (nav.domainIdx != null) {
-      nav.domainIdx = null;
-      nav.target = { x: 0, y: 0, k: 1 };
-      animateCam(() => renderMap());
-      renderCrumb();
-      return;
-    }
-    renderUniverse();
-  }
-
-  let mapBound = false;
-  function bindMapInteract() {
-    if (mapBound) return;
-    mapBound = true;
-    const stage = document.getElementById("worldStage");
-    stage.addEventListener("wheel", e => {
-      e.preventDefault();
-      const factor = e.deltaY > 0 ? 0.9 : 1.1;
-      nav.cam.k = Math.min(4, Math.max(0.7, nav.cam.k * factor));
-      const cam = document.getElementById("cam");
-      if (cam) cam.setAttribute("transform", camTransform());
-    }, { passive: false });
-    let dragging = false, lx = 0, ly = 0;
-    stage.addEventListener("pointerdown", e => { dragging = true; lx = e.clientX; ly = e.clientY; stage.classList.add("panning"); stage.setPointerCapture(e.pointerId); });
-    stage.addEventListener("pointermove", e => {
-      if (!dragging) return;
-      const dx = (e.clientX - lx) / nav.cam.k, dy = (e.clientY - ly) / nav.cam.k;
-      nav.cam.x += dx; nav.cam.y += dy; lx = e.clientX; ly = e.clientY;
-      const cam = document.getElementById("cam");
-      if (cam) cam.setAttribute("transform", camTransform());
-    });
-    stage.addEventListener("pointerup", () => { dragging = false; stage.classList.remove("panning"); });
-    stage.addEventListener("dblclick", () => zoomOutMap());
-  }
-
-  /* ── views ── */
+  /* ── Universe landing ── */
   function renderUniverse() {
-    nav.eraId = null; nav.domainIdx = null; nav.skillId = null;
+    nav.eraId = null; nav.domainIdx = 0; nav.skillId = null;
     setView("universe");
     const root = document.getElementById("panels");
-    root.innerHTML = ERAS.map((e, i) => {
+    root.innerHTML = ERAS.map(e => {
       return `<button type="button" class="panel ${e.unlock ? "" : "locked"}" data-id="${e.id}">
         ${e.unlock ? "" : '<span class="panel-lock">🔒</span>'}
         <div class="panel-body">
@@ -408,73 +186,211 @@
     });
   }
 
-  function renderDistrictCards() {
-    const era = eraById(nav.eraId);
-    const root = document.getElementById("districts");
-    root.innerHTML = era.domains.map((d, i) => {
-      const dc = domainCounts(d);
-      return `<button type="button" class="district" data-di="${i}">
-        <div class="did">${d.id}</div>
-        <div class="dname">${d.name}</div>
-        <div class="dmeta">${dc.proven} of ${dc.total} proven · ${dc.total} skills on the painting</div>
+  /* ── Era rail ── */
+  function renderEraRail() {
+    const rail = document.getElementById("eraRail");
+    const items = ERAS.map(e => {
+      const on = e.id === nav.eraId ? "on" : "";
+      const locked = e.unlock ? "" : "locked";
+      return `<button type="button" class="era-item ${on} ${locked}" data-id="${e.id}" title="${e.name}">
+        <span class="ei">${ERA_ICONS[e.id] || ""}</span>
+        <span class="el">${e.romanLabel || ""} ${e.name}</span>
       </button>`;
     }).join("");
-    root.querySelectorAll(".district").forEach(b => {
-      b.onclick = () => openDomain(+b.dataset.di);
+
+    rail.innerHTML = `
+      <div class="era-rail-brand">
+        <div class="logo">Mathera</div>
+        <span class="tag">Explore · Learn · Grow</span>
+      </div>
+      <div class="era-list">${items}</div>
+      <div class="era-rail-foot">
+        <button type="button" class="world-map-btn" id="worldMapBtn" title="World Map">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 5v2.5M12 16.5V19M5 12h2.5M16.5 12H19" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M12 12l3.2-4.2 1 3.4-3.5.8z" fill="currentColor"/></svg>
+          WORLD MAP
+        </button>
+        <button type="button" class="settings-stub" title="Settings" id="settingsStub" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6.1 6.1l1.4 1.4M16.5 16.5l1.4 1.4M6.1 17.9l1.4-1.4M16.5 7.5l1.4-1.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>`;
+
+    rail.querySelectorAll(".era-item").forEach(b => {
+      b.onclick = () => {
+        const era = eraById(b.dataset.id);
+        if (!era.unlock) { toast("Still beyond the horizon"); return; }
+        openWorld(era.id);
+      };
+    });
+    document.getElementById("worldMapBtn").onclick = () => renderUniverse();
+    document.getElementById("settingsStub").onclick = () => toast("Settings coming soon");
+  }
+
+  /* ── World / Living Grove ── */
+  function openWorld(eraId, opts = {}) {
+    const switching = nav.eraId !== eraId;
+    nav.eraId = eraId;
+    const era = eraById(eraId);
+    const meta = WORLD_META[eraId] || {};
+    const c = counts(era);
+
+    const shell = document.getElementById("groveShell");
+    const bg = meta.bg
+      ? `url("${meta.bg}")`
+      : (BG_FALLBACK[eraId] || BG_FALLBACK.count);
+    shell.style.setProperty("--grove-bg", bg);
+
+    document.getElementById("groveKicker").textContent =
+      `ERA ${era.romanLabel || ""} · ${era.name.toUpperCase()}`;
+    document.getElementById("groveTitle").textContent =
+      meta.title || (era.worldName || era.name).toUpperCase();
+    document.getElementById("groveTagline").textContent = TAGS[eraId] || "";
+    document.getElementById("groveStatsText").textContent =
+      `${c.total} skills · ${era.domains.length} domains`;
+
+    document.getElementById("detailQuote").textContent =
+      meta.quote ? `“${meta.quote}”` : "";
+
+    if (switching || opts.reset || nav.domainIdx == null || !era.domains[nav.domainIdx]) {
+      nav.domainIdx = 0;
+      const dom0 = era.domains[0];
+      const prefer = dom0 && dom0.skills.find(s => /\.03$/.test(s.id));
+      nav.skillId = prefer ? prefer.id : (dom0 && dom0.skills[0] ? dom0.skills[0].id : null);
+    } else if (!nav.skillId || !findSkill(era, nav.skillId)) {
+      const dom = era.domains[nav.domainIdx];
+      const prefer = dom.skills.find(s => /\.03$/.test(s.id));
+      nav.skillId = prefer ? prefer.id : (dom.skills[0] ? dom.skills[0].id : null);
+    }
+
+    renderEraRail();
+    renderBranches();
+    renderDetailPanel();
+    setView("world");
+
+    if (window.matchMedia("(max-width:960px)").matches) {
+      shell.classList.add("panel-open");
+    } else {
+      shell.classList.remove("panel-open");
+    }
+  }
+
+  function renderBranches() {
+    const era = eraById(nav.eraId);
+    const tree = document.getElementById("groveTree");
+    const pills = era.domains.map((d, i) => {
+      const pos = BRANCH_POS[i] || { left: `${10 + (i % 4) * 20}%`, top: `${20 + Math.floor(i / 4) * 30}%` };
+      const on = i === nav.domainIdx ? "on" : "";
+      const icon = DOMAIN_ICONS[i % DOMAIN_ICONS.length];
+      return `<button type="button" class="branch-pill ${on}" data-di="${i}"
+        style="left:${pos.left};top:${pos.top}">
+        <span class="bn">${i + 1}</span>
+        <span class="bi">${icon}</span>
+        <span class="bt">${shortDomainName(d.name)}</span>
+      </button>`;
+    }).join("");
+
+    // Decorative leaves colored by a sample of skill states across domains
+    const states = [];
+    era.domains.forEach(d => d.skills.forEach(s => states.push(s.state || "seed")));
+    const leaves = LEAF_DECOR.map((p, i) => {
+      const st = states[i % states.length] || "seed";
+      return `<span class="leaf-dot ${st}" style="left:${p[0]}%;top:${p[1]}%"></span>`;
+    }).join("");
+
+    tree.innerHTML = leaves + pills;
+    tree.querySelectorAll(".branch-pill").forEach(b => {
+      b.onclick = () => selectDomain(+b.dataset.di);
     });
   }
 
-  function openWorld(eraId) {
-    nav.eraId = eraId; nav.domainIdx = null; nav.skillId = null;
-    nav.cam = { x: 0, y: 0, k: 1 }; nav.target = null;
-    const era = eraById(eraId);
-    nav.layout = layoutWorld(era);
-    const m = era.metaphor === "tree" ? "grove" : (era.metaphor || "grove");
-    document.getElementById("worldStage").dataset.m = m;
-    document.getElementById("worldTitle").textContent = era.worldName || era.name;
-    const c = counts(era);
-    document.getElementById("worldMeta").textContent =
-      `${era.romanLabel} · ${era.name} · ${c.total} skills on the tapestry · ${TAGS[era.id] || ""}`;
-    renderDistrictCards();
-    setView("world");
-    renderMap();
-    bindMapInteract();
+  function selectDomain(di) {
+    const era = eraById(nav.eraId);
+    if (!era.domains[di]) return;
+    nav.domainIdx = di;
+    const dom = era.domains[di];
+    // Keep current skill if still in domain; else first / .03
+    const still = dom.skills.find(s => s.id === nav.skillId);
+    if (!still) {
+      const prefer = dom.skills.find(s => /\.03$/.test(s.id));
+      nav.skillId = prefer ? prefer.id : (dom.skills[0] ? dom.skills[0].id : null);
+    }
+    renderBranches();
+    renderDetailPanel();
+    document.getElementById("groveShell").classList.add("panel-open");
   }
 
-  function openDomain(di) {
-    nav.domainIdx = di; nav.skillId = null;
+  function selectSkill(sid) {
+    nav.skillId = sid;
+    renderDetailPanel();
+  }
+
+  function renderDetailPanel() {
     const era = eraById(nav.eraId);
+    const di = nav.domainIdx ?? 0;
     const dom = era.domains[di];
-    const dc = domainCounts(dom);
-    document.getElementById("topicTitle").textContent = `${dom.id} · ${dom.name.toUpperCase()}`;
-    document.getElementById("topicFrac").textContent = `${dc.proven} of ${dc.total} proven`;
-    const tabs = document.getElementById("topicTabs");
-    tabs.innerHTML = era.domains.map((d, i) =>
-      `<button type="button" class="${i === di ? "on" : ""}" data-di="${i}">${d.id}</button>`
-    ).join("");
-    tabs.querySelectorAll("button").forEach(b => { b.onclick = () => openDomain(+b.dataset.di); });
-    const rows = document.getElementById("topicRows");
-    rows.innerHTML = dom.skills.map(s => {
+    if (!dom) return;
+    const meta = WORLD_META[era.id] || {};
+
+    document.getElementById("detailDomainTitle").textContent = domainHeader(dom, di);
+    document.getElementById("detailDomainCount").textContent = `${dom.skills.length} skills`;
+
+    // Domain-specific quote only for Counting (domain 0 of count) by default
+    const quoteEl = document.getElementById("detailQuote");
+    if (era.id === "count" && di === 0) {
+      quoteEl.textContent = `“${meta.quote || "To count is to notice that the world is full of things."}”`;
+      quoteEl.style.display = "";
+    } else if (meta.quote && di === 0) {
+      quoteEl.textContent = `“${meta.quote}”`;
+      quoteEl.style.display = "";
+    } else {
+      quoteEl.style.display = "none";
+    }
+
+    const list = document.getElementById("skillList");
+    list.innerHTML = dom.skills.map(s => {
       const st = s.state || "seed";
-      const tag = st === "growing" && s.step ? `Growing · ${s.step}` : st;
-      return `<button type="button" class="row" data-sid="${s.id}">
-        <span class="dot ${st}"></span>
-        <span><span class="code">${skillCode(s.id)}</span><span class="title">${s.title}</span></span>
-        <span class="tag ${st}">${tag}</span>
+      const on = s.id === nav.skillId ? "on" : "";
+      return `<button type="button" class="skill-row ${on}" data-sid="${s.id}">
+        <span class="leaf ${st}"></span>
+        <span class="scode">${skillCode(s.id)}</span>
+        <span class="stitle">${s.title}</span>
       </button>`;
     }).join("");
-    rows.querySelectorAll(".row").forEach(b => { b.onclick = () => openSkill(b.dataset.sid); });
-    // also zoom map if coming from world
-    if (nav.layout) {
-      const cl = nav.layout.clusters[di];
-      if (cl) {
-        nav.cam = { x: VW / 2 - cl.cx, y: VH / 2 - cl.cy, k: 2.2 };
-      }
+    list.querySelectorAll(".skill-row").forEach(b => {
+      b.onclick = () => selectSkill(b.dataset.sid);
+    });
+
+    // Scroll selected into view
+    const onRow = list.querySelector(".skill-row.on");
+    if (onRow) onRow.scrollIntoView({ block: "nearest" });
+
+    renderPreview();
+  }
+
+  function renderPreview() {
+    const era = eraById(nav.eraId);
+    const found = findSkill(era, nav.skillId);
+    const meta = WORLD_META[era.id] || {};
+    const art = document.getElementById("previewArt");
+    const title = document.getElementById("previewTitle");
+    const line = document.getElementById("previewLine");
+    const btn = document.getElementById("beginBtn");
+
+    if (!found) {
+      title.textContent = "Select a skill";
+      line.textContent = "";
+      art.innerHTML = ORB_SVG[era.id] || "";
+      btn.onclick = () => toast("Select a skill first");
+      return;
     }
-    setView("domain");
+    const s = found.skill;
+    title.textContent = `${skillCode(s.id)} ${s.title}`;
+    line.textContent = meta.previewLine || "";
+    art.innerHTML = ORB_SVG[era.id] || "";
+    btn.onclick = () => openSkill(s.id);
   }
 
   function findSkill(era, sid) {
+    if (!sid) return null;
     for (let di = 0; di < era.domains.length; di++) {
       const s = era.domains[di].skills.find(x => x.id === sid);
       if (s) return { skill: s, di };
@@ -502,30 +418,6 @@
     setView("skill");
   }
 
-  function renderCrumb() {
-    const els = [document.getElementById("crumb"), document.getElementById("crumbDomain")].filter(Boolean);
-    const parts = [`<button type="button" data-g="universe">Garden</button>`];
-    if (nav.eraId) {
-      const era = eraById(nav.eraId);
-      parts.push(`<span class="sep">/</span><button type="button" data-g="world">${era.name}</button>`);
-    }
-    if (nav.eraId && nav.domainIdx != null) {
-      parts.push(`<span class="sep">/</span><button type="button" data-g="domain">${eraById(nav.eraId).domains[nav.domainIdx].id}</button>`);
-    }
-    if (nav.skillId) parts.push(`<span class="sep">/</span><span>${nav.skillId}</span>`);
-    els.forEach(el => {
-      el.innerHTML = parts.join("");
-      el.querySelectorAll("button").forEach(b => {
-        b.onclick = () => {
-          const g = b.dataset.g;
-          if (g === "universe") renderUniverse();
-          if (g === "world") openWorld(nav.eraId);
-          if (g === "domain") openDomain(nav.domainIdx);
-        };
-      });
-    });
-  }
-
   function nextSkill() {
     for (const era of ERAS) {
       if (!era.unlock) continue;
@@ -541,6 +433,7 @@
     }
     return null;
   }
+
   function renderContinue() {
     const n = nextSkill();
     document.getElementById("nextHint").textContent = n
@@ -549,20 +442,21 @@
   }
 
   function wire() {
-    document.getElementById("backUniverse").onclick = () => renderUniverse();
-    document.getElementById("zoomOutBtn").onclick = () => zoomOutMap();
-    document.getElementById("backWorld").onclick = () => openWorld(nav.eraId);
-    document.getElementById("backDomain").onclick = () => openDomain(nav.domainIdx);
+    document.getElementById("backDomain").onclick = () => {
+      if (nav.eraId) openWorld(nav.eraId);
+      else renderUniverse();
+    };
     document.getElementById("continueBtn").onclick = () => {
       const n = nextSkill();
       if (!n) { renderUniverse(); return; }
-      openWorld(n.era); openDomain(n.domainIdx); openSkill(n.skill.id);
+      openWorld(n.era);
+      selectDomain(n.domainIdx);
+      openSkill(n.skill.id);
     };
     document.addEventListener("keydown", e => {
       if (e.key !== "Escape") return;
-      if (nav.view === "skill") openDomain(nav.domainIdx);
-      else if (nav.view === "domain") openWorld(nav.eraId);
-      else if (nav.view === "world") zoomOutMap();
+      if (nav.view === "skill") openWorld(nav.eraId);
+      else if (nav.view === "world") renderUniverse();
     });
   }
 
