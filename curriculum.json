@@ -2597,1148 +2597,1968 @@
     {
       "id": "relate",
       "name": "Relate",
-      "roman": 2,
+      "roman": 3,
       "romanLabel": "III",
-      "unlock": false,
+      "unlock": true,
       "metaphor": "bridges",
-      "tagline": "See connections.",
-      "total": 84,
+      "tagline": "How quantities connect.",
+      "total": 146,
       "domains": [
         {
           "id": "III.1",
-          "name": "Ratio",
+          "name": "Integers & Rationals",
           "skills": [
             {
               "id": "III.1.01",
-              "title": "Ratio \u00b7 01",
+              "title": "Negative numbers in context",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.02",
-              "title": "Ratio \u00b7 02",
+              "title": "Integers on a number line",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.03",
-              "title": "Ratio \u00b7 03",
+              "title": "Absolute value",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.04",
-              "title": "Ratio \u00b7 04",
+              "title": "Add integers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.05",
-              "title": "Ratio \u00b7 05",
+              "title": "Subtract integers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.06",
-              "title": "Ratio \u00b7 06",
+              "title": "Multiply integers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.07",
-              "title": "Ratio \u00b7 07",
+              "title": "Divide integers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.08",
-              "title": "Ratio \u00b7 08",
+              "title": "Order of operations with integers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.09",
-              "title": "Ratio \u00b7 09",
+              "title": "Rational numbers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.10",
-              "title": "Ratio \u00b7 10",
+              "title": "Add and subtract rationals",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.11",
-              "title": "Ratio \u00b7 11",
+              "title": "Multiply and divide rationals",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.1.12",
-              "title": "Ratio \u00b7 12",
+              "title": "Terminating and repeating decimals",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            },
+            {
+              "id": "III.1.13",
+              "title": "Repeating decimals to fractions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.1.14",
+              "title": "Compare and order rationals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.1.15",
+              "title": "All four quadrants",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.2",
-          "name": "Proportion",
+          "name": "Ratios & Rates",
           "skills": [
             {
               "id": "III.2.01",
-              "title": "Proportion \u00b7 01",
+              "title": "Ratio language",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.02",
-              "title": "Proportion \u00b7 02",
+              "title": "Equivalent ratios",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.03",
-              "title": "Proportion \u00b7 03",
+              "title": "Ratio tables",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.04",
-              "title": "Proportion \u00b7 04",
+              "title": "Unit rates",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.05",
-              "title": "Proportion \u00b7 05",
+              "title": "Rates with fractions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.06",
-              "title": "Proportion \u00b7 06",
+              "title": "Ratios on a graph",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.07",
-              "title": "Proportion \u00b7 07",
+              "title": "Proportions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.08",
-              "title": "Proportion \u00b7 08",
+              "title": "Proportional relationships",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.09",
-              "title": "Proportion \u00b7 09",
+              "title": "The constant of proportionality",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.10",
-              "title": "Proportion \u00b7 10",
+              "title": "Scale drawings",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.11",
-              "title": "Proportion \u00b7 11",
+              "title": "Unit conversion with ratios",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.2.12",
-              "title": "Proportion \u00b7 12",
+              "title": "Sharing in a ratio",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            },
+            {
+              "id": "III.2.13",
+              "title": "Speed, distance, time",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.2.14",
+              "title": "Comparing ratios",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.2.15",
+              "title": "Ratio puzzles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.3",
-          "name": "Linear",
+          "name": "Percent",
           "skills": [
             {
               "id": "III.3.01",
-              "title": "Linear \u00b7 01",
+              "title": "Percent means per hundred",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.02",
-              "title": "Linear \u00b7 02",
+              "title": "Fractions, decimals, percents",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.03",
-              "title": "Linear \u00b7 03",
+              "title": "Percent of a number",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.04",
-              "title": "Linear \u00b7 04",
+              "title": "Find the whole",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.05",
-              "title": "Linear \u00b7 05",
+              "title": "Find the percent",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.06",
-              "title": "Linear \u00b7 06",
+              "title": "Over 100% and under 1%",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.07",
-              "title": "Linear \u00b7 07",
+              "title": "Percent increase",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.08",
-              "title": "Linear \u00b7 08",
+              "title": "Percent decrease",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.09",
-              "title": "Linear \u00b7 09",
+              "title": "Discounts and sale prices",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.10",
-              "title": "Linear \u00b7 10",
+              "title": "Tax and tips",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.11",
-              "title": "Linear \u00b7 11",
+              "title": "Markup and profit",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.3.12",
-              "title": "Linear \u00b7 12",
+              "title": "Simple interest",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            },
+            {
+              "id": "III.3.13",
+              "title": "Percent error",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.3.14",
+              "title": "Percent change traps",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.3.15",
+              "title": "Percent in data",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.3.16",
+              "title": "Estimating with percents",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.3.17",
+              "title": "Multi-step percent problems",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.4",
-          "name": "Systems",
+          "name": "Exponents & Roots",
           "skills": [
             {
               "id": "III.4.01",
-              "title": "Systems \u00b7 01",
+              "title": "Whole-number exponents",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.02",
-              "title": "Systems \u00b7 02",
+              "title": "Powers of ten",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.03",
-              "title": "Systems \u00b7 03",
+              "title": "Exponents in the order of operations",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.04",
-              "title": "Systems \u00b7 04",
+              "title": "Multiplying powers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.05",
-              "title": "Systems \u00b7 05",
+              "title": "Dividing powers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.06",
-              "title": "Systems \u00b7 06",
+              "title": "Power of a power",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.07",
-              "title": "Systems \u00b7 07",
+              "title": "Negative exponents",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.08",
-              "title": "Systems \u00b7 08",
+              "title": "Scientific notation",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.09",
-              "title": "Systems \u00b7 09",
+              "title": "Calculating in scientific notation",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.10",
-              "title": "Systems \u00b7 10",
+              "title": "Comparing huge and tiny numbers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.11",
-              "title": "Systems \u00b7 11",
+              "title": "Square roots",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.4.12",
-              "title": "Systems \u00b7 12",
+              "title": "Cube roots",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            },
+            {
+              "id": "III.4.13",
+              "title": "Estimate roots",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.4.14",
+              "title": "Irrational numbers",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.4.15",
+              "title": "The real number system",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.4.16",
+              "title": "Compare irrationals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.4.17",
+              "title": "Growth with exponents",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.5",
-          "name": "Inequalities",
+          "name": "Expressions",
           "skills": [
             {
               "id": "III.5.01",
-              "title": "Inequalities \u00b7 01",
+              "title": "Variables",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.02",
-              "title": "Inequalities \u00b7 02",
+              "title": "Expressions from words",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.03",
-              "title": "Inequalities \u00b7 03",
+              "title": "Evaluate expressions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.04",
-              "title": "Inequalities \u00b7 04",
+              "title": "Parts of an expression",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.05",
-              "title": "Inequalities \u00b7 05",
+              "title": "Like terms",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.06",
-              "title": "Inequalities \u00b7 06",
+              "title": "The distributive property",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.07",
-              "title": "Inequalities \u00b7 07",
+              "title": "Factor out a GCF",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.08",
-              "title": "Inequalities \u00b7 08",
+              "title": "Equivalent expressions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.09",
-              "title": "Inequalities \u00b7 09",
+              "title": "Simplify expressions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.10",
-              "title": "Inequalities \u00b7 10",
+              "title": "Expressions in geometry",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.11",
-              "title": "Inequalities \u00b7 11",
+              "title": "Expressions in context",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.5.12",
-              "title": "Inequalities \u00b7 12",
+              "title": "Expressions with powers",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            },
+            {
+              "id": "III.5.13",
+              "title": "Patterns to expressions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.5.14",
+              "title": "Algebra tiles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.5.15",
+              "title": "Why number tricks work",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.6",
-          "name": "Graphs",
+          "name": "Equations & Inequalities",
           "skills": [
             {
               "id": "III.6.01",
-              "title": "Graphs \u00b7 01",
+              "title": "What an equation is",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.02",
-              "title": "Graphs \u00b7 02",
+              "title": "One-step equations: + and \u2013",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.03",
-              "title": "Graphs \u00b7 03",
+              "title": "One-step equations: \u00d7 and \u00f7",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.04",
-              "title": "Graphs \u00b7 04",
+              "title": "Two-step equations",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.05",
-              "title": "Graphs \u00b7 05",
+              "title": "Multi-step equations",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.06",
-              "title": "Graphs \u00b7 06",
+              "title": "Variables on both sides",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.07",
-              "title": "Graphs \u00b7 07",
+              "title": "Equations from word problems",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.08",
-              "title": "Graphs \u00b7 08",
+              "title": "Inequalities",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.09",
-              "title": "Graphs \u00b7 09",
+              "title": "One-step inequalities",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.10",
-              "title": "Graphs \u00b7 10",
+              "title": "Two-step inequalities",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.11",
-              "title": "Graphs \u00b7 11",
+              "title": "Rearrange formulas",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.6.12",
-              "title": "Graphs \u00b7 12",
+              "title": "Choosing a strategy",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             }
           ]
         },
         {
           "id": "III.7",
-          "name": "Models",
+          "name": "Lines & First Functions",
           "skills": [
             {
               "id": "III.7.01",
-              "title": "Models \u00b7 01",
+              "title": "Input-output rules",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.02",
-              "title": "Models \u00b7 02",
+              "title": "Graph from a table",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.03",
-              "title": "Models \u00b7 03",
+              "title": "Rate of change",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.04",
-              "title": "Models \u00b7 04",
+              "title": "Slope",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.05",
-              "title": "Models \u00b7 05",
+              "title": "Slope and similar triangles",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.06",
-              "title": "Models \u00b7 06",
+              "title": "y = mx + b",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.07",
-              "title": "Models \u00b7 07",
+              "title": "Proportional vs non-proportional",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.08",
-              "title": "Models \u00b7 08",
+              "title": "Linear vs nonlinear",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.09",
-              "title": "Models \u00b7 09",
+              "title": "Functions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.10",
-              "title": "Models \u00b7 10",
+              "title": "Compare functions",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.11",
-              "title": "Models \u00b7 11",
+              "title": "Describe graphs qualitatively",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
             },
             {
               "id": "III.7.12",
-              "title": "Models \u00b7 12",
+              "title": "Linear models",
               "star": false,
               "was": null,
               "steps": [
-                "a",
-                "b",
-                "c",
-                "d"
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
               ],
-              "state": "inferred"
+              "state": "seed"
+            }
+          ]
+        },
+        {
+          "id": "III.8",
+          "name": "Geometry",
+          "skills": [
+            {
+              "id": "III.8.01",
+              "title": "Angle relationships",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.02",
+              "title": "Parallel lines & a transversal",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.03",
+              "title": "Triangle angle sum",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.04",
+              "title": "Area of parallelograms",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.05",
+              "title": "Area of triangles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.06",
+              "title": "Area of trapezoids",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.07",
+              "title": "Composite area",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.08",
+              "title": "Circle parts",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.09",
+              "title": "Circumference",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.10",
+              "title": "Area of a circle",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.11",
+              "title": "Surface area of prisms",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.12",
+              "title": "Volume of prisms",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.13",
+              "title": "Volume of cylinders",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.14",
+              "title": "Volume of cones & spheres",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.15",
+              "title": "Pythagorean theorem",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.16",
+              "title": "Converse of Pythagoras",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.17",
+              "title": "Distance on the plane",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.18",
+              "title": "Pythagoras in 3D",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.19",
+              "title": "Translations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.20",
+              "title": "Reflections",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.21",
+              "title": "Rotations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.22",
+              "title": "Dilations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.8.23",
+              "title": "Congruence & similarity informally",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            }
+          ]
+        },
+        {
+          "id": "III.9",
+          "name": "Statistics & Probability",
+          "skills": [
+            {
+              "id": "III.9.01",
+              "title": "Statistical questions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.02",
+              "title": "Mean",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.03",
+              "title": "Median & mode",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.04",
+              "title": "Range",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.05",
+              "title": "Quartiles & IQR",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.06",
+              "title": "Box plots",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.07",
+              "title": "Dot plots",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.08",
+              "title": "Histograms",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.09",
+              "title": "Mean absolute deviation",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.10",
+              "title": "Sampling",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.11",
+              "title": "Inferences from samples",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.12",
+              "title": "Compare populations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.13",
+              "title": "Probability basics",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.14",
+              "title": "Experimental probability",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.15",
+              "title": "Sample spaces",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.16",
+              "title": "Compound events",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.17",
+              "title": "Simulations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.18",
+              "title": "Scatter plots",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.19",
+              "title": "Trend lines",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "III.9.20",
+              "title": "Two-way tables",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
             }
           ]
         }
-      ]
+      ],
+      "worldName": "Bridge Isles",
+      "note": "Full Era III from Julius screenshots 2026-09-29."
     },
     {
       "id": "solve",

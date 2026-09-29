@@ -471,9 +471,34 @@
         }
       });
     } else if (L.kind === "bridges") {
+      // Bridge Isles — mist water, arched spans between islet domains
+      decor += `
+        <defs>
+          <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="rgba(120,160,220,.05)"/>
+            <stop offset="100%" stop-color="rgba(40,70,120,.2)"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="480" width="1200" height="300" fill="url(#mist)"/>
+        <path d="M0 560 Q200 520 400 560 T800 560 T1200 560" fill="none" stroke="rgba(155,183,255,.2)" stroke-width="2"/>
+        <text x="600" y="40" text-anchor="middle" fill="rgba(180,200,255,.4)" font-family="Fraunces,Georgia,serif" font-size="18" letter-spacing="3">BRIDGE ISLES</text>
+      `;
       let path = "";
       L.clusters.forEach((cl, i) => { path += `${i ? "L" : "M"}${cl.cx},${cl.cy} `; });
-      decor = `<path d="${path}" fill="none" stroke="rgba(155,183,255,.35)" stroke-width="3" stroke-dasharray="8 6"/>`;
+      decor += `<path d="${path}" fill="none" stroke="rgba(155,183,255,.45)" stroke-width="3.5" stroke-dasharray="10 7"/>`;
+      L.clusters.forEach((cl, i) => {
+        const active = nav.domainIdx === cl.i;
+        decor += `<ellipse cx="${cl.cx}" cy="${cl.cy + cl.r * 0.55}" rx="${cl.r * 1.15}" ry="${cl.r * 0.35}"
+          fill="rgba(60,90,140,${active ? 0.35 : 0.18})" stroke="rgba(155,183,255,${active ? 0.5 : 0.22})" stroke-width="1.5"/>`;
+        // arch bridge silhouette toward next
+        if (i < L.clusters.length - 1) {
+          const n = L.clusters[i + 1];
+          const mx = (cl.cx + n.cx) / 2;
+          const my = Math.min(cl.cy, n.cy) - 40;
+          decor += `<path d="M${cl.cx} ${cl.cy} Q ${mx} ${my} ${n.cx} ${n.cy}" fill="none"
+            stroke="rgba(200,210,255,${active || nav.domainIdx === n.i ? 0.55 : 0.25})" stroke-width="2.5"/>`;
+        }
+      });
     }
 
     // cluster hit areas + labels
