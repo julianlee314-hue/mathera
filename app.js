@@ -1,4 +1,4 @@
-/* Mathera — painting-first world views (Eras I–IV) */
+/* Mathera — painting-first world views (Eras I–VII) */
 (() => {
   const TAGS = {
     count: "Things begin here.",
@@ -36,20 +36,20 @@
       previewLine: "Hunt for the unknown.",
     },
     prove: {
-      title: "PROOF PALACE",
-      bg: null,
+      title: "THE AXIOM TEMPLE",
+      bg: "assets/tapestry/proof-palace.jpg",
       quote: "To prove is to know — and know why.",
       previewLine: "Make certainty shine.",
     },
     motion: {
-      title: "TIDE SEA",
-      bg: null,
+      title: "THE FLOW SEA",
+      bg: "assets/tapestry/tide-sea.jpg",
       quote: "To understand motion is to read the living tide.",
       previewLine: "Watch how change unfolds.",
     },
     space: {
-      title: "STAR VAULT",
-      bg: null,
+      title: "THE INFINITE ATLAS",
+      bg: "assets/tapestry/star-vault.jpg",
       quote: "To explore space is to walk among higher worlds.",
       previewLine: "Reach beyond the familiar.",
     },
@@ -126,6 +126,61 @@
       { left: "50%", top: "62%" },
       { left: "20%", top: "80%" },
     ],
+    prove: [  /* Axiom Temple — 15 domains across temple tiers */
+      { left: "6%",  top: "6%" },
+      { left: "26%", top: "5%" },
+      { left: "46%", top: "8%" },
+      { left: "4%",  top: "22%" },
+      { left: "22%", top: "24%" },
+      { left: "42%", top: "20%" },
+      { left: "58%", top: "26%" },
+      { left: "5%",  top: "42%" },
+      { left: "24%", top: "44%" },
+      { left: "44%", top: "40%" },
+      { left: "60%", top: "46%" },
+      { left: "8%",  top: "62%" },
+      { left: "28%", top: "64%" },
+      { left: "48%", top: "60%" },
+      { left: "16%", top: "78%" },
+    ],
+    motion: [  /* Flow Sea — 12 domains across islands / sea */
+      { left: "5%",  top: "10%" },
+      { left: "28%", top: "8%" },
+      { left: "52%", top: "12%" },
+      { left: "8%",  top: "30%" },
+      { left: "32%", top: "32%" },
+      { left: "56%", top: "34%" },
+      { left: "6%",  top: "50%" },
+      { left: "30%", top: "52%" },
+      { left: "54%", top: "54%" },
+      { left: "10%", top: "70%" },
+      { left: "34%", top: "72%" },
+      { left: "50%", top: "68%" },
+    ],
+    space: [  /* Infinite Atlas — 19 domains in orbital scatter */
+      /* inner ring */
+      { left: "30%", top: "36%" },
+      { left: "42%", top: "30%" },
+      { left: "46%", top: "44%" },
+      /* mid ring */
+      { left: "16%", top: "26%" },
+      { left: "54%", top: "22%" },
+      { left: "56%", top: "46%" },
+      { left: "20%", top: "50%" },
+      { left: "36%", top: "54%" },
+      /* outer ring */
+      { left: "4%",  top: "10%" },
+      { left: "26%", top: "6%" },
+      { left: "50%", top: "5%" },
+      { left: "60%", top: "16%" },
+      { left: "3%",  top: "34%" },
+      { left: "58%", top: "36%" },
+      { left: "5%",  top: "56%" },
+      { left: "28%", top: "68%" },
+      { left: "48%", top: "64%" },
+      { left: "12%", top: "74%" },
+      { left: "42%", top: "78%" },
+    ],
   };
 
   function branchPositions(eraId, n) {
@@ -168,7 +223,7 @@
   let ERAS = [];
   let stepLabels = { a: "See it", b: "Try it", c: "Use it", d: "Explain it" };
   const nav = {
-    view: "universe", eraId: null, domainIdx: 0, skillId: null,
+    view: "universe", eraId: null, domainIdx: null, skillId: null,
   };
 
   const eraById = id => ERAS.find(e => e.id === id);
@@ -219,13 +274,15 @@
 
   /* ── Universe landing ── */
   function renderUniverse() {
-    nav.eraId = null; nav.domainIdx = 0; nav.skillId = null;
+    nav.eraId = null; nav.domainIdx = null; nav.skillId = null;
     setView("universe");
     const root = document.getElementById("panels");
     root.innerHTML = ERAS.map(e => {
+      const roman = e.romanLabel || "";
       return `<button type="button" class="panel ${e.unlock ? "" : "locked"}" data-id="${e.id}">
         ${e.unlock ? "" : '<span class="panel-lock">🔒</span>'}
         <div class="panel-body">
+          <div class="panel-roman">${roman}</div>
           <div class="panel-name">${e.name.toUpperCase()}</div>
         </div>
       </button>`;
@@ -247,7 +304,7 @@
       const locked = e.unlock ? "" : "locked";
       return `<button type="button" class="era-item ${on} ${locked}" data-id="${e.id}" title="${e.name}">
         <span class="ei">${ERA_ICONS[e.id] || ""}</span>
-        <span class="el">${e.romanLabel || ""} ${e.name}</span>
+        <span class="el">${e.romanLabel || ""}</span>
       </button>`;
     }).join("");
 
@@ -258,9 +315,8 @@
       </div>
       <div class="era-list">${items}</div>
       <div class="era-rail-foot">
-        <button type="button" class="world-map-btn" id="worldMapBtn" title="World Map">
+        <button type="button" class="world-map-btn" id="worldMapBtn" title="World Map" aria-label="World Map">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.4"/><path d="M12 5v2.5M12 16.5V19M5 12h2.5M16.5 12H19" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M12 12l3.2-4.2 1 3.4-3.5.8z" fill="currentColor"/></svg>
-          WORLD MAP
         </button>
         <button type="button" class="settings-stub" title="Settings" id="settingsStub" aria-label="Settings">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 3.5v2M12 18.5v2M3.5 12h2M18.5 12h2M6.1 6.1l1.4 1.4M16.5 16.5l1.4 1.4M6.1 17.9l1.4-1.4M16.5 7.5l1.4-1.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
@@ -284,7 +340,6 @@
     nav.eraId = eraId;
     const era = eraById(eraId);
     const meta = WORLD_META[eraId] || {};
-    const c = counts(era);
 
     const shell = document.getElementById("groveShell");
     const bg = meta.bg
@@ -292,38 +347,20 @@
       : (BG_FALLBACK[eraId] || BG_FALLBACK.count);
     shell.style.setProperty("--grove-bg", bg);
 
-    document.getElementById("groveKicker").textContent =
-      `ERA ${era.romanLabel || ""} · ${era.name.toUpperCase()}`;
-    document.getElementById("groveTitle").textContent =
-      meta.title || (era.worldName || era.name).toUpperCase();
-    document.getElementById("groveTagline").textContent = TAGS[eraId] || "";
-    document.getElementById("groveStatsText").textContent =
-      `${c.total} skills · ${era.domains.length} domains`;
-
-    document.getElementById("detailQuote").textContent =
-      meta.quote ? `“${meta.quote}”` : "";
-
+    // Center stage is painting + pills + leaves only (header chrome stripped).
+    // Right panel stays empty until a branch is clicked.
     if (switching || opts.reset || nav.domainIdx == null || !era.domains[nav.domainIdx]) {
-      nav.domainIdx = 0;
-      const dom0 = era.domains[0];
-      const prefer = dom0 && dom0.skills.find(s => /\.03$/.test(s.id));
-      nav.skillId = prefer ? prefer.id : (dom0 && dom0.skills[0] ? dom0.skills[0].id : null);
-    } else if (!nav.skillId || !findSkill(era, nav.skillId)) {
-      const dom = era.domains[nav.domainIdx];
-      const prefer = dom.skills.find(s => /\.03$/.test(s.id));
-      nav.skillId = prefer ? prefer.id : (dom.skills[0] ? dom.skills[0].id : null);
+      nav.domainIdx = null;
+      nav.skillId = null;
+    } else if (nav.skillId && !findSkill(era, nav.skillId)) {
+      nav.skillId = null;
     }
 
     renderEraRail();
     renderBranches();
     renderDetailPanel();
     setView("world");
-
-    if (window.matchMedia("(max-width:960px)").matches) {
-      shell.classList.add("panel-open");
-    } else {
-      shell.classList.remove("panel-open");
-    }
+    shell.classList.remove("panel-open");
   }
 
   function renderBranches() {
@@ -336,7 +373,8 @@
       const icon = DOMAIN_ICONS[i % DOMAIN_ICONS.length];
       const leaves = d.skills.map(s => {
         const st = s.state || "seed";
-        return `<span class="leaf-dot ${st}" title="${s.title}"></span>`;
+        const sel = s.id === nav.skillId ? "on" : "";
+        return `<span class="leaf-dot ${st} ${sel}" data-sid="${s.id}" title="${s.title}" role="button" tabindex="0"></span>`;
       }).join("");
       return `<div class="branch-node ${on}" data-di="${i}"
         style="left:${pos.left};top:${pos.top}">
@@ -345,13 +383,28 @@
           <span class="bi">${icon}</span>
           <span class="bt">${shortDomainName(d.name)}</span>
         </button>
-        <div class="leaf-row" aria-hidden="true">${leaves}</div>
+        <div class="leaf-row">${leaves}</div>
       </div>`;
     }).join("");
 
     tree.innerHTML = nodes;
     tree.querySelectorAll(".branch-node").forEach(b => {
       b.onclick = () => selectDomain(+b.dataset.di);
+    });
+    tree.querySelectorAll(".leaf-dot").forEach(leaf => {
+      const pick = (e) => {
+        e.stopPropagation();
+        const di = +leaf.closest(".branch-node").dataset.di;
+        nav.domainIdx = di;
+        nav.skillId = leaf.dataset.sid;
+        renderBranches();
+        renderDetailPanel();
+        document.getElementById("groveShell").classList.add("panel-open");
+      };
+      leaf.onclick = pick;
+      leaf.onkeydown = (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(e); }
+      };
     });
   }
 
@@ -373,30 +426,39 @@
 
   function selectSkill(sid) {
     nav.skillId = sid;
+    const tree = document.getElementById("groveTree");
+    if (tree) {
+      tree.querySelectorAll(".leaf-dot").forEach(el => {
+        el.classList.toggle("on", el.dataset.sid === sid);
+      });
+    }
     renderDetailPanel();
   }
 
   function renderDetailPanel() {
+    const panel = document.getElementById("detailPanel");
     const era = eraById(nav.eraId);
-    const di = nav.domainIdx ?? 0;
+    const di = nav.domainIdx;
+    const quoteEl = document.getElementById("detailQuote");
+    if (quoteEl) { quoteEl.textContent = ""; quoteEl.hidden = true; }
+
+    if (di == null || !era || !era.domains[di]) {
+      panel.classList.add("is-empty");
+      document.getElementById("detailDomainTitle").textContent = "";
+      document.getElementById("detailDomainCount").textContent = "";
+      document.getElementById("skillList").innerHTML = "";
+      document.getElementById("previewTitle").textContent = "";
+      document.getElementById("previewLine").textContent = "";
+      document.getElementById("previewArt").innerHTML = "";
+      document.getElementById("beginBtn").onclick = () => {};
+      return;
+    }
+
+    panel.classList.remove("is-empty");
     const dom = era.domains[di];
-    if (!dom) return;
-    const meta = WORLD_META[era.id] || {};
 
     document.getElementById("detailDomainTitle").textContent = domainHeader(dom, di);
     document.getElementById("detailDomainCount").textContent = `${dom.skills.length} skills`;
-
-    // Domain-specific quote only for Counting (domain 0 of count) by default
-    const quoteEl = document.getElementById("detailQuote");
-    if (era.id === "count" && di === 0) {
-      quoteEl.textContent = `“${meta.quote || "To count is to notice that the world is full of things."}”`;
-      quoteEl.style.display = "";
-    } else if (meta.quote && di === 0) {
-      quoteEl.textContent = `“${meta.quote}”`;
-      quoteEl.style.display = "";
-    } else {
-      quoteEl.style.display = "none";
-    }
 
     const list = document.getElementById("skillList");
     list.innerHTML = dom.skills.map(s => {
@@ -412,7 +474,6 @@
       b.onclick = () => selectSkill(b.dataset.sid);
     });
 
-    // Scroll selected into view
     const onRow = list.querySelector(".skill-row.on");
     if (onRow) onRow.scrollIntoView({ block: "nearest" });
 
@@ -422,7 +483,6 @@
   function renderPreview() {
     const era = eraById(nav.eraId);
     const found = findSkill(era, nav.skillId);
-    const meta = WORLD_META[era.id] || {};
     const art = document.getElementById("previewArt");
     const title = document.getElementById("previewTitle");
     const line = document.getElementById("previewLine");
@@ -431,14 +491,14 @@
     if (!found) {
       title.textContent = "Select a skill";
       line.textContent = "";
-      art.innerHTML = ORB_SVG[era.id] || "";
-      btn.onclick = () => toast("Select a skill first");
+      art.innerHTML = "";
+      btn.onclick = () => {};
       return;
     }
     const s = found.skill;
     title.textContent = `${skillCode(s.id)} ${s.title}`;
-    line.textContent = meta.previewLine || "";
-    art.innerHTML = ORB_SVG[era.id] || "";
+    line.textContent = "";
+    art.innerHTML = "";
     btn.onclick = () => openSkill(s.id);
   }
 

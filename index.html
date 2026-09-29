@@ -51,14 +51,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .panel.locked:hover{opacity:.35}
 .panel-body{
   position:relative; z-index:2; padding:1.5rem .75rem; color:var(--ink);
-  display:flex; align-items:center; justify-content:center;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
 }
 .panel-name{
   font-family:Fraunces,Georgia,serif; font-size:clamp(1rem,1.8vw,1.45rem);
   font-weight:600; letter-spacing:.16em; text-transform:uppercase;
   color:rgba(230,235,245,.88);
 }
+.panel-roman{
+  display:block; font-family:Fraunces,Georgia,serif; font-weight:600;
+  font-size:clamp(.72rem,1.2vw,.95rem); letter-spacing:.28em;
+  color:rgba(200,210,230,.55); margin-bottom:.45rem;
+}
 .panel:hover .panel-name{color:#fff}
+.panel:hover .panel-roman{color:rgba(230,235,245,.78)}
 .panel-lock{position:absolute;top:1rem;right:1rem;z-index:2;font-size:.8rem;opacity:.7}
 
 /* ── Living Grove shell ── */
@@ -109,9 +115,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .era-item .ei{width:22px;height:22px;display:grid;place-items:center;opacity:.85}
 .era-item .ei svg{width:18px;height:18px}
 .era-item .el{
-  font-size:.48rem; font-weight:700; letter-spacing:.06em; text-align:center;
+  font-size:.58rem; font-weight:700; letter-spacing:.14em; text-align:center;
   line-height:1.15; text-transform:uppercase;
+  font-family:Fraunces,Georgia,serif;
 }
+.era-rail-brand .tag{display:none}
+.world-map-btn{font-size:0; gap:0; letter-spacing:0; color:rgba(200,210,230,.7)}
+.world-map-btn svg{width:18px;height:18px}
 .era-item:hover{color:rgba(230,235,245,.85); background:rgba(255,255,255,.04)}
 .era-item.on{
   color:#e8f6f3; background:rgba(61,155,143,.18);
@@ -135,8 +145,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .grove-stage{
   display:flex; flex-direction:column; min-width:0; min-height:0;
   padding:1rem 1.1rem .75rem;
+  overflow:auto; /* leaf rows stay reachable; stage may scroll */
 }
-.grove-header{text-align:center; margin-bottom:.35rem; pointer-events:none}
+.grove-header{display:none} /* chrome stripped — painting + pills + leaves only */
 .grove-header .era-kicker{
   font-size:.7rem; letter-spacing:.22em; text-transform:uppercase;
   color:rgba(210,230,220,.85); font-weight:600; margin:0 0 .25rem;
@@ -166,23 +177,25 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .grove-tree{
   position:relative; flex:1; min-height:320px;
   margin:.25rem 0 .5rem;
+  overflow:visible; /* never clip full leaf rows */
 }
 .branch-node{
   position:absolute; z-index:3;
   display:flex; flex-direction:column; align-items:flex-start; gap:.28rem;
-  max-width:min(260px, 48vw);
+  max-width:none;
+  overflow:visible;
   transition:transform .15s;
 }
 .branch-node:hover{transform:translateY(-1px)}
 .branch-pill{
   display:inline-flex; align-items:center; gap:.4rem;
-  padding:.38rem .7rem .38rem .5rem; border-radius:999px;
+  padding:.34rem .62rem .34rem .45rem; border-radius:999px;
   background:rgba(4,8,12,.78); border:1px solid rgba(255,255,255,.16);
-  color:rgba(230,235,240,.92); font-size:.62rem; font-weight:700;
+  color:rgba(230,235,240,.92); font-size:.58rem; font-weight:700;
   letter-spacing:.08em; text-transform:uppercase;
   box-shadow:0 4px 16px rgba(0,0,0,.4);
   transition:border-color .15s, box-shadow .15s, background .15s;
-  white-space:nowrap; max-width:100%;
+  white-space:nowrap; max-width:min(200px, 36vw);
   pointer-events:none; /* click handled by .branch-node */
 }
 .branch-node:hover .branch-pill{
@@ -195,22 +208,42 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   background:rgba(10,24,26,.9); color:#e8faf6;
 }
 .branch-pill .bn{
-  display:grid; place-items:center; width:1.35rem; height:1.35rem; border-radius:50%;
-  background:rgba(255,255,255,.1); font-size:.58rem; flex-shrink:0;
+  display:grid; place-items:center; width:1.25rem; height:1.25rem; border-radius:50%;
+  background:rgba(255,255,255,.1); font-size:.55rem; flex-shrink:0;
 }
-.branch-pill .bi{width:14px;height:14px; flex-shrink:0; opacity:.9; display:grid; place-items:center}
-.branch-pill .bi svg{width:14px;height:14px}
-.branch-pill .bt{overflow:hidden; text-overflow:ellipsis}
+.branch-pill .bi{width:13px;height:13px; flex-shrink:0; opacity:.9; display:grid; place-items:center}
+.branch-pill .bi svg{width:13px;height:13px}
+.branch-pill .bt{overflow:hidden; text-overflow:ellipsis; min-width:0}
 
-/* skill leaf dots under each domain pill */
+/* skill leaf dots under each domain pill — every skill is a visible leaf */
 .leaf-row{
-  display:flex; flex-wrap:wrap; gap:3px; max-width:100%;
-  padding-left:.35rem; pointer-events:none;
+  display:flex; flex-wrap:wrap; gap:3px;
+  min-width:min(280px, 90vw);
+  max-width:min(340px, 42vw);
+  padding:.15rem .35rem .2rem;
+  pointer-events:auto;
+  overflow:visible;
+  border-radius:.45rem;
+  transition:background .15s, box-shadow .15s;
+}
+.branch-node.on .leaf-row{
+  background:rgba(61,155,143,.08);
+  box-shadow:0 0 14px rgba(61,155,143,.22);
 }
 .leaf-dot{
-  width:6px; height:6px; border-radius:50% 0 50% 50%;
+  width:8px; height:8px; border-radius:50% 0 50% 50%;
   transform:rotate(-45deg); opacity:.9; flex-shrink:0;
   box-shadow:0 0 4px currentColor;
+  cursor:pointer; pointer-events:auto;
+  transition:transform .12s, box-shadow .12s, outline-color .12s;
+}
+.leaf-dot:hover{transform:rotate(-45deg) scale(1.35); opacity:1}
+.leaf-dot.on{
+  outline:1.5px solid #e8faf6;
+  outline-offset:1px;
+  box-shadow:0 0 8px currentColor, 0 0 0 2px rgba(61,155,143,.55);
+  opacity:1;
+  transform:rotate(-45deg) scale(1.3);
 }
 .leaf-dot.seed{background:#8a93a8; color:#8a93a8; opacity:.4}
 .leaf-dot.inferred{background:transparent; border:1.3px solid #8fbf8a; color:#8fbf8a; opacity:.7; box-sizing:border-box}
@@ -220,30 +253,28 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .leaf-dot.withered{background:#8b5a3c; color:#8b5a3c; opacity:.55}
 
 .grove-legend{
-  display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:.55rem 1rem;
-  margin-top:auto; padding:.5rem .85rem;
-  background:rgba(6,10,16,.45); border:1px solid rgba(255,255,255,.08);
+  display:flex; flex-wrap:nowrap; align-items:center; justify-content:center; gap:.65rem;
+  margin-top:auto; padding:.4rem .75rem;
+  background:rgba(6,10,16,.4); border:1px solid rgba(255,255,255,.08);
   border-radius:999px; backdrop-filter:blur(8px);
-  font-size:.62rem; color:rgba(200,210,220,.75); align-self:center;
-  max-width:100%;
+  align-self:center; max-width:100%;
 }
 .grove-legend .lg{
-  display:inline-flex; align-items:center; gap:.3rem; white-space:nowrap;
+  display:inline-flex; align-items:center; justify-content:center;
+  width:1.35rem; height:1.35rem; border:0; padding:0; background:transparent;
+  cursor:default;
 }
 .grove-legend .lg i{
-  display:inline-block; width:10px; height:10px; border-radius:50% 0 50% 50%;
+  display:inline-block; width:11px; height:11px; border-radius:50% 0 50% 50%;
   transform:rotate(-45deg); flex-shrink:0;
 }
-.lg-seed i{background:transparent; border:1.5px solid #8a93a8; box-sizing:border-box}
+.lg-seed i{background:transparent; border:1.5px solid #8a93a8; box-sizing:border-box; opacity:.7}
 .lg-inferred i{background:transparent; border:1.5px dashed #8fbf8a; box-sizing:border-box}
 .lg-growing i{background:#9dce7a}
 .lg-proven i{background:#2f7a3a; box-shadow:0 0 6px #3dca6a}
 .lg-thirsty i{background:#d4a017}
 .lg-withered i{background:#8b5a3c}
-.grove-legend .legend-tag{
-  margin-left:.35rem; font-family:Fraunces,Georgia,serif; font-style:italic;
-  color:rgba(180,200,190,.65); font-size:.68rem;
-}
+.grove-legend .legend-tag{display:none}
 
 /* Right detail panel */
 .detail-panel{
@@ -253,11 +284,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
   padding:1rem .9rem .85rem; min-height:0; overflow:hidden;
 }
-.detail-quote{
-  margin:0 0 .85rem; padding:0 .15rem;
-  font-family:Fraunces,Georgia,serif; font-style:italic;
-  font-size:.78rem; line-height:1.45; color:rgba(190,205,200,.72);
+.detail-quote{display:none} /* quotes stripped */
+.detail-panel.is-empty .detail-head,
+.detail-panel.is-empty .skill-list,
+.detail-panel.is-empty .skill-preview{display:none}
+.detail-panel.is-empty::after{
+  content:""; flex:1;
 }
+.detail-empty{
+  flex:1; display:grid; place-items:center; padding:1rem;
+  color:rgba(160,175,185,.35); font-size:.72rem; letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.detail-panel:not(.is-empty) .detail-empty{display:none}
 .detail-head{
   display:flex; align-items:baseline; justify-content:space-between; gap:.5rem;
   margin-bottom:.55rem; padding:0 .1rem;
@@ -303,20 +342,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   margin-top:.55rem; padding:.65rem;
   border-radius:.9rem; border:1px solid rgba(255,255,255,.1);
   background:rgba(8,12,20,.42);
-  display:flex; flex-direction:column; gap:.5rem;
+  display:flex; flex-direction:column; gap:.45rem;
 }
-.preview-art{
-  border-radius:.7rem; aspect-ratio:16/7; overflow:hidden;
-  background:
-    linear-gradient(160deg, rgba(20,40,35,.3), rgba(10,16,24,.5)),
-    var(--grove-bg, #152218) center/cover no-repeat;
-  display:grid; place-items:center;
-}
-.preview-art svg{width:36px;height:36px; opacity:.85; filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+.preview-art{display:none} /* fluff art stripped */
 .preview-meta .ptitle{
-  font-family:Fraunces,Georgia,serif; font-size:.95rem; font-weight:700; margin:0 0 .15rem;
+  font-family:Fraunces,Georgia,serif; font-size:.9rem; font-weight:700; margin:0;
+  color:rgba(230,235,240,.92);
 }
-.preview-meta .pline{margin:0; font-size:.72rem; color:var(--muted)}
+.preview-meta .pline{display:none} /* fluff lines stripped */
 .begin-btn{
   display:flex; align-items:center; justify-content:center; gap:.4rem;
   width:100%; padding:.75rem; border-radius:.85rem;
@@ -364,7 +397,9 @@ body.land .dock, body.grove .dock{display:none}
     box-shadow:-12px 0 40px rgba(0,0,0,.4);
   }
   .grove-shell.panel-open .detail-panel{transform:translateX(0)}
-  .branch-pill{font-size:.55rem; padding:.32rem .55rem .32rem .4rem}
+  .branch-pill{font-size:.52rem; padding:.28rem .5rem .28rem .38rem; max-width:min(170px, 42vw)}
+  .leaf-row{min-width:min(240px, 85vw); max-width:min(300px, 55vw)}
+  .leaf-dot{width:7px;height:7px}
 }
 @media(max-width:640px){
   .grove-shell{grid-template-columns:1fr}
@@ -376,8 +411,7 @@ body.land .dock, body.grove .dock{display:none}
   .era-rail-brand,.era-rail-foot{display:none}
   .era-list{flex-direction:row; width:auto}
   .era-item{min-width:3.4rem; padding:.35rem .3rem}
-  .grove-legend{border-radius:1rem; font-size:.58rem; gap:.4rem .65rem}
-  .grove-legend .legend-tag{display:none}
+  .grove-legend{border-radius:1rem; gap:.5rem}
 }
 </style>
 </head>
@@ -409,29 +443,29 @@ body.land .dock, body.grove .dock{display:none}
 
       <div class="grove-tree" id="groveTree" aria-label="Domain branches"></div>
 
-      <div class="grove-legend" id="groveLegend">
-        <span class="lg lg-seed"><i></i>Seed</span>
-        <span class="lg lg-inferred"><i></i>Inferred</span>
-        <span class="lg lg-growing"><i></i>Growing</span>
-        <span class="lg lg-proven"><i></i>Proven</span>
-        <span class="lg lg-thirsty"><i></i>Thirsty</span>
-        <span class="lg lg-withered"><i></i>Withered</span>
-        <span class="legend-tag">Every leaf is a step forward.</span>
+      <div class="grove-legend" id="groveLegend" aria-label="Leaf states">
+        <span class="lg lg-seed" title="Seed"><i></i></span>
+        <span class="lg lg-inferred" title="Inferred"><i></i></span>
+        <span class="lg lg-growing" title="Growing"><i></i></span>
+        <span class="lg lg-proven" title="Proven"><i></i></span>
+        <span class="lg lg-thirsty" title="Thirsty"><i></i></span>
+        <span class="lg lg-withered" title="Withered"><i></i></span>
       </div>
     </main>
 
-    <aside class="detail-panel" id="detailPanel">
-      <p class="detail-quote" id="detailQuote">“To count is to notice that the world is full of things.”</p>
+    <aside class="detail-panel is-empty" id="detailPanel">
+      <p class="detail-quote" id="detailQuote" hidden></p>
+      <div class="detail-empty" id="detailEmpty" aria-hidden="true"></div>
       <div class="detail-head">
-        <h3 id="detailDomainTitle">1.1 COUNTING</h3>
-        <span class="dcount" id="detailDomainCount">16 skills</span>
+        <h3 id="detailDomainTitle"></h3>
+        <span class="dcount" id="detailDomainCount"></span>
       </div>
       <div class="skill-list" id="skillList"></div>
       <div class="skill-preview" id="skillPreview">
         <div class="preview-art" id="previewArt"></div>
         <div class="preview-meta">
-          <p class="ptitle" id="previewTitle">1.03 Count to 20</p>
-          <p class="pline" id="previewLine">Build your number sense.</p>
+          <p class="ptitle" id="previewTitle"></p>
+          <p class="pline" id="previewLine"></p>
         </div>
         <button type="button" class="begin-btn" id="beginBtn">
           <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4 2.5v11l10-5.5L4 2.5z"/></svg>
