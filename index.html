@@ -84,6 +84,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   filter:saturate(1.08) contrast(1.02);
 }
 .grove-shell > *{position:relative; z-index:1}
+.grove-shell.is-pointillist{
+  background:#030405;
+}
+.grove-shell.is-pointillist::before{
+  background:
+    radial-gradient(ellipse at 50% 42%, transparent 28%, rgba(2,3,5,.55) 72%, rgba(0,0,0,.82) 100%),
+    var(--grove-bg, radial-gradient(ellipse at 50% 40%, #12181a 0%, #080a0c 52%, #030405 100%)) center / cover no-repeat;
+  filter:none;
+}
 
 /* Left era rail */
 .era-rail{
@@ -251,6 +260,111 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 .leaf-dot.proven{background:#2f7a3a; color:#3dca6a}
 .leaf-dot.thirsty{background:#d4a017; color:#d4a017}
 .leaf-dot.withered{background:#8b5a3c; color:#8b5a3c; opacity:.55}
+
+/* ── Pointillist Living Grove (Count only) ── */
+.pointillist-grove{
+  position:absolute; inset:0;
+  min-height:100%;
+}
+.pointillist-grove .grove-sil{
+  position:absolute; inset:0; width:100%; height:100%;
+  pointer-events:none; z-index:0;
+  opacity:.95;
+}
+.grove-leaves{position:absolute; inset:0; z-index:2}
+.grove-anchors{position:absolute; inset:0; z-index:4; pointer-events:none}
+
+.grove-leaf{
+  position:absolute; z-index:2;
+  width:22px; height:22px; margin:0; padding:0;
+  border:0; background:transparent; border-radius:50%;
+  transform:translate(-50%, -50%);
+  cursor:pointer; pointer-events:auto;
+  display:grid; place-items:center;
+  transition:opacity .18s, filter .18s, transform .12s;
+}
+.grove-leaf::before{
+  content:""; width:9px; height:9px; border-radius:50%;
+  box-shadow:0 0 5px currentColor;
+  transition:transform .12s, box-shadow .12s, width .12s, height .12s;
+}
+.grove-leaf:hover::before{transform:scale(1.35); box-shadow:0 0 10px currentColor}
+.grove-leaf.on::before{
+  width:11px; height:11px;
+  box-shadow:0 0 0 2px rgba(232,250,246,.85), 0 0 14px currentColor, 0 0 28px rgba(61,155,143,.45);
+  transform:scale(1.25);
+}
+.grove-leaf.seed{color:#6a7388; opacity:.38}
+.grove-leaf.seed::before{background:#6a7388}
+.grove-leaf.inferred{color:#8fbf8a; opacity:.72}
+.grove-leaf.inferred::before{background:transparent; border:1.4px solid #8fbf8a; box-sizing:border-box}
+.grove-leaf.growing{color:#9dce7a; opacity:.95}
+.grove-leaf.growing::before{background:#9dce7a}
+.grove-leaf.proven{color:#3dca6a; opacity:1}
+.grove-leaf.proven::before{background:#2f7a3a; box-shadow:0 0 8px #3dca6a}
+.grove-leaf.thirsty{color:#d4a017; opacity:.95}
+.grove-leaf.thirsty::before{background:#d4a017; box-shadow:0 0 8px #d4a017}
+.grove-leaf.withered{color:#8b5a3c; opacity:.5}
+.grove-leaf.withered::before{background:#8b5a3c}
+
+.pointillist-grove.domain-focus .grove-leaf:not(.cluster-on){
+  opacity:.18; filter:grayscale(.45) brightness(.7);
+}
+.pointillist-grove.domain-focus .grove-leaf.cluster-on{
+  opacity:1; filter:none;
+}
+.pointillist-grove.domain-focus .grove-leaf.cluster-on.seed{opacity:.55}
+.pointillist-grove.domain-focus .grove-leaf.cluster-on.inferred{opacity:.9}
+.pointillist-grove.domain-focus .grove-leaf.cluster-on.withered{opacity:.65}
+
+.domain-anchor{
+  position:absolute; z-index:4; pointer-events:auto;
+  transform:translate(-50%, -50%);
+  display:inline-flex; align-items:center; gap:.32rem;
+  padding:.28rem .5rem .28rem .34rem; border-radius:999px;
+  background:rgba(4,8,12,.72); border:1px solid rgba(255,255,255,.12);
+  color:rgba(220,230,235,.78); font-size:.52rem; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase;
+  box-shadow:0 3px 12px rgba(0,0,0,.45);
+  transition:border-color .15s, box-shadow .15s, background .15s, color .15s, opacity .18s;
+  white-space:nowrap;
+}
+.domain-anchor:hover{
+  border-color:rgba(255,255,255,.28);
+  color:rgba(240,245,250,.95);
+  background:rgba(8,12,18,.88);
+}
+.domain-anchor.on{
+  border-color:rgba(61,155,143,.75);
+  box-shadow:0 0 0 1px rgba(61,155,143,.4), 0 4px 16px rgba(61,155,143,.28);
+  background:rgba(10,24,26,.92); color:#e8faf6;
+}
+.domain-anchor .bn{
+  display:grid; place-items:center; width:1.1rem; height:1.1rem; border-radius:50%;
+  background:rgba(255,255,255,.1); font-size:.5rem; flex-shrink:0;
+}
+.domain-anchor .bi{width:12px;height:12px; flex-shrink:0; opacity:.85; display:grid; place-items:center}
+.domain-anchor .bi svg{width:12px;height:12px}
+.domain-anchor .bt{font-size:.5rem; letter-spacing:.1em; opacity:.9}
+
+.pointillist-grove.domain-focus .domain-anchor:not(.on){opacity:.35}
+.pointillist-grove.domain-focus .domain-anchor.on{opacity:1}
+
+.grove-shell.is-pointillist .grove-tree{
+  position:relative; flex:1; min-height:min(62vh, 560px);
+  margin:0; overflow:hidden;
+}
+.grove-shell.is-pointillist .grove-legend{
+  background:rgba(4,6,10,.55);
+  border-color:rgba(255,255,255,.06);
+}
+
+@media(max-width:960px){
+  .grove-leaf{width:20px;height:20px}
+  .grove-leaf::before{width:8px;height:8px}
+  .domain-anchor{font-size:.48rem; padding:.24rem .42rem .24rem .3rem}
+  .domain-anchor .bt{display:none} /* icon + number only on narrow */
+}
 
 .grove-legend{
   display:flex; flex-wrap:nowrap; align-items:center; justify-content:center; gap:.65rem;

@@ -13,7 +13,7 @@
   const WORLD_META = {
     count: {
       title: "THE LIVING GROVE",
-      bg: "assets/tapestry/living-grove.jpg",
+      bg: null, /* pointillist SVG grove — no photographic tapestry */
       quote: "To count is to notice that the world is full of things.",
       previewLine: "Build your number sense.",
     },
@@ -77,14 +77,14 @@
 
   /* Branch pill positions (% of grove-tree) — per-era scatter over the painting */
   const BRANCH_POS = {
-    count: [  /* Living Grove canopy — 7 domains */
-      { left: "7%",  top: "16%" },
-      { left: "24%", top: "34%" },
-      { left: "5%",  top: "52%" },
-      { left: "26%", top: "70%" },
-      { left: "56%", top: "18%" },
-      { left: "60%", top: "42%" },
-      { left: "52%", top: "64%" },
+    count: [  /* Living Grove canopy gravity wells — 7 domains */
+      { left: "20%", top: "18%" },
+      { left: "40%", top: "12%" },
+      { left: "58%", top: "20%" },
+      { left: "14%", top: "42%" },
+      { left: "48%", top: "36%" },
+      { left: "30%", top: "56%" },
+      { left: "56%", top: "58%" },
     ],
     operate: [  /* Forge City — 10 domains around forge / streets */
       { left: "6%",  top: "14%" },
@@ -200,6 +200,87 @@
     });
   }
 
+  /* Deterministic 0..1 from string (avalanche mix — stable leaf jitter) */
+  function hash01(str, salt = 0) {
+    let h = 2166136261 ^ Math.imul(salt + 1, 2654435761);
+    const s = String(str) + "#" + salt;
+    for (let i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    h ^= h >>> 16;
+    h = Math.imul(h, 0x85ebca6b);
+    h ^= h >>> 13;
+    h = Math.imul(h, 0xc2b2ae35);
+    h ^= h >>> 16;
+    return (h >>> 0) / 4294967296;
+  }
+
+  function parsePct(v) {
+    return parseFloat(String(v).replace("%", "")) || 0;
+  }
+
+  /* Soft ellipse / golden-angle blob around a gravity well; positions in % of grove-tree */
+  function leafScatter(skillId, cx, cy, index, n, rx = 11.5, ry = 8.8) {
+    const golden = Math.PI * (3 - Math.sqrt(5));
+    const jA = hash01(skillId, 1);
+    const jR = hash01(skillId, 2);
+    const a = index * golden + (jA - 0.5) * 0.55;
+    const r = Math.sqrt((index + 0.35) / Math.max(n, 1)) * (0.78 + jR * 0.42);
+    let x = cx + Math.cos(a) * r * rx;
+    let y = cy + Math.sin(a) * r * ry;
+    x = Math.max(3, Math.min(74, x));
+    y = Math.max(4, Math.min(86, y));
+    return { left: x.toFixed(2) + "%", top: y.toFixed(2) + "%" };
+  }
+
+  function shortPillTitle(name) {
+    const n = String(name || "");
+    const map = {
+      "Counting": "COUNT",
+      "Comparing & Ordering": "COMPARE",
+      "Place Value": "PLACE",
+      "Addition & Subtraction": "ADD/SUB",
+      "Patterns & Logic": "PATTERN",
+      "Shape & Space": "SHAPE",
+      "Measure & Data": "MEASURE",
+    };
+    if (map[n]) return map[n];
+    return n.split(/[&,/]/)[0].trim().toUpperCase().slice(0, 8);
+  }
+
+  const GROVE_SILHOUETTE = `<svg class="grove-sil" viewBox="0 0 1000 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+  <defs>
+    <radialGradient id="groveVoid" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#101618" stop-opacity=".0"/>
+      <stop offset="70%" stop-color="#050708" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#020304" stop-opacity=".7"/>
+    </radialGradient>
+  </defs>
+  <rect width="1000" height="720" fill="url(#groveVoid)"/>
+  <!-- floating island -->
+  <path d="M300 575 C360 548, 430 535, 500 533 C570 535, 640 548, 700 575
+           C660 608, 580 622, 500 622 C420 622, 340 608, 300 575Z"
+        fill="none" stroke="rgba(170,190,180,.14)" stroke-width="1.4"/>
+  <ellipse cx="500" cy="590" rx="210" ry="28" fill="none" stroke="rgba(160,180,170,.08)" stroke-width="1"/>
+  <path d="M360 585 C400 600, 460 608, 500 608 C540 608, 600 600, 640 585"
+        fill="none" stroke="rgba(140,160,150,.07)" stroke-width="1"/>
+  <!-- trunk -->
+  <path d="M500 533 C496 470, 492 400, 494 310" fill="none" stroke="rgba(190,170,140,.2)" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M498 470 C460 440, 430 390, 418 340" fill="none" stroke="rgba(180,160,130,.11)" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M502 450 C540 415, 575 365, 588 315" fill="none" stroke="rgba(180,160,130,.11)" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M496 400 C470 375, 452 345, 445 315" fill="none" stroke="rgba(170,150,120,.08)" stroke-width="1"/>
+  <path d="M504 385 C535 355, 555 330, 562 300" fill="none" stroke="rgba(170,150,120,.08)" stroke-width="1"/>
+  <!-- canopy outline -->
+  <path d="M230 330 C270 175, 390 115, 500 122 C610 115, 730 175, 770 330
+           C720 395, 610 420, 500 415 C390 420, 280 395, 230 330Z"
+        fill="none" stroke="rgba(150,190,160,.13)" stroke-width="1.35"/>
+  <path d="M280 300 C320 200, 400 155, 500 160 C600 155, 680 200, 720 300
+           C680 350, 600 368, 500 365 C400 368, 320 350, 280 300Z"
+        fill="none" stroke="rgba(140,180,150,.08)" stroke-width="1"/>
+  <ellipse cx="500" cy="270" rx="265" ry="145" fill="none" stroke="rgba(130,170,145,.06)" stroke-width="1"/>
+</svg>`;
+
   const ORB_SVG = {
     count: `<svg viewBox="0 0 48 48" fill="none"><path d="M24 42 V18" stroke="#c4a574" stroke-width="3" stroke-linecap="round"/><path d="M24 22 C14 14, 12 8, 18 6 C22 12, 24 14, 24 14 C24 14, 26 12, 30 6 C36 8, 34 14, 24 22Z" fill="#5dca7a"/><path d="M24 28 C10 24, 8 16, 14 14 C18 20, 24 22, 24 22 C24 22, 30 20, 34 14 C40 16, 38 24, 24 28Z" fill="#3da85c"/></svg>`,
     operate: `<svg viewBox="0 0 48 48" fill="none"><rect x="10" y="22" width="10" height="16" rx="1" fill="#dcc09a"/><rect x="22" y="14" width="12" height="24" rx="1" fill="#c4a574"/><rect x="28" y="8" width="8" height="30" rx="1" fill="#e8d2a8"/></svg>`,
@@ -211,7 +292,7 @@
   };
 
   const BG_FALLBACK = {
-    count: "linear-gradient(180deg,#1a2a1c,#0a120c)",
+    count: "radial-gradient(ellipse at 50% 40%, #12181a 0%, #080a0c 52%, #030405 100%)",
     operate: "linear-gradient(180deg,#2a1c10,#0e0a06)",
     relate: "linear-gradient(180deg,#121a2c,#0a101c)",
     solve: "linear-gradient(180deg,#141c2a,#0a1018)",
@@ -346,6 +427,7 @@
       ? `url("${meta.bg}")`
       : (BG_FALLBACK[eraId] || BG_FALLBACK.count);
     shell.style.setProperty("--grove-bg", bg);
+    shell.classList.toggle("is-pointillist", eraId === "count");
 
     // Center stage is painting + pills + leaves only (header chrome stripped).
     // Right panel stays empty until a branch is clicked.
@@ -365,6 +447,10 @@
 
   function renderBranches() {
     const era = eraById(nav.eraId);
+    if (era.id === "count") {
+      renderPointillistGrove(era);
+      return;
+    }
     const tree = document.getElementById("groveTree");
     const positions = branchPositions(era.id, era.domains.length);
     const nodes = era.domains.map((d, i) => {
@@ -408,6 +494,65 @@
     });
   }
 
+  function renderPointillistGrove(era) {
+    const tree = document.getElementById("groveTree");
+    const positions = branchPositions(era.id, era.domains.length);
+    const focus = nav.domainIdx != null;
+    const focusCls = focus ? "domain-focus" : "";
+
+    const leafBtns = [];
+    const anchors = era.domains.map((d, i) => {
+      const pos = positions[i];
+      const cx = parsePct(pos.left);
+      const cy = parsePct(pos.top);
+      const on = i === nav.domainIdx ? "on" : "";
+      const clusterOn = !focus || i === nav.domainIdx;
+      const icon = DOMAIN_ICONS[i % DOMAIN_ICONS.length];
+
+      const nSkills = d.skills.length;
+      d.skills.forEach((s, si) => {
+        const st = s.state || "seed";
+        const sel = s.id === nav.skillId ? "on" : "";
+        const cl = clusterOn ? "cluster-on" : "";
+        const scat = leafScatter(s.id, cx, cy, si, nSkills);
+        leafBtns.push(
+          `<button type="button" class="grove-leaf ${st} ${sel} ${cl}" data-sid="${s.id}" data-di="${i}" ` +
+          `style="left:${scat.left};top:${scat.top}" title="${s.title}" aria-label="${s.title}"></button>`
+        );
+      });
+
+      return `<button type="button" class="domain-anchor ${on}" data-di="${i}"
+        style="left:${pos.left};top:${pos.top}" title="${d.name}">
+        <span class="bn">${i + 1}</span>
+        <span class="bi">${icon}</span>
+        <span class="bt">${shortPillTitle(d.name)}</span>
+      </button>`;
+    }).join("");
+
+    tree.innerHTML = `<div class="pointillist-grove ${focusCls}">
+      ${GROVE_SILHOUETTE}
+      <div class="grove-leaves" aria-label="Skills">${leafBtns.join("")}</div>
+      <div class="grove-anchors" aria-label="Domains">${anchors}</div>
+    </div>`;
+
+    tree.querySelectorAll(".domain-anchor").forEach(b => {
+      b.onclick = (e) => {
+        e.stopPropagation();
+        selectDomain(+b.dataset.di);
+      };
+    });
+    tree.querySelectorAll(".grove-leaf").forEach(leaf => {
+      leaf.onclick = (e) => {
+        e.stopPropagation();
+        nav.domainIdx = +leaf.dataset.di;
+        nav.skillId = leaf.dataset.sid;
+        renderBranches();
+        renderDetailPanel();
+        document.getElementById("groveShell").classList.add("panel-open");
+      };
+    });
+  }
+
   function selectDomain(di) {
     const era = eraById(nav.eraId);
     if (!era.domains[di]) return;
@@ -428,7 +573,7 @@
     nav.skillId = sid;
     const tree = document.getElementById("groveTree");
     if (tree) {
-      tree.querySelectorAll(".leaf-dot").forEach(el => {
+      tree.querySelectorAll(".leaf-dot, .grove-leaf").forEach(el => {
         el.classList.toggle("on", el.dataset.sid === sid);
       });
     }
