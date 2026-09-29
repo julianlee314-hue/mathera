@@ -392,16 +392,11 @@
     setView("universe");
     const root = document.getElementById("panels");
     root.innerHTML = ERAS.map((e, i) => {
-      const c = counts(e);
-      const img = PANEL_IMG[i] || PANEL_IMG[0];
       return `<button type="button" class="panel ${e.unlock ? "" : "locked"}" data-id="${e.id}">
-        <img src="${img}" alt="" loading="eager"/>
         ${e.unlock ? "" : '<span class="panel-lock">🔒</span>'}
         <div class="panel-body">
           <div class="panel-num">${i + 1}</div>
           <div class="panel-name">${e.name}</div>
-          <div class="panel-tag">${TAGS[e.id] || e.tagline || ""}</div>
-          <div class="panel-frac">${e.unlock ? `${c.proven} / ${c.total} proven` : "locked"}</div>
         </div>
       </button>`;
     }).join("");

@@ -35,16 +35,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   gap:1rem; padding:1.1rem 1.35rem; pointer-events:none;
 }
 .land-chrome *{pointer-events:auto}
-.land-brand{font-family:Fraunces,Georgia,serif}
-.land-brand .kicker{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;opacity:.85;margin-bottom:.25rem}
-.land-brand h1{margin:0;font-size:clamp(1.35rem,2.8vw,2rem);font-weight:700;letter-spacing:-.02em;text-shadow:0 2px 18px rgba(0,0,0,.55)}
-.land-brand .sub{margin:.2rem 0 0;font-size:.78rem;opacity:.8;letter-spacing:.06em}
-.land-quote{
-  max-width:15rem;text-align:center;font-family:Fraunces,Georgia,serif;font-style:italic;
-  font-size:clamp(.7rem,1.2vw,.85rem);opacity:.72;text-shadow:0 2px 14px rgba(0,0,0,.75);
-  margin-top:.35rem; padding:.35rem .55rem; border-radius:.5rem; background:rgba(0,0,0,.28);
-}
-.land-user{font-size:.78rem;opacity:.9;text-align:right;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.land-brand{font-family:Fraunces,Georgia,serif; pointer-events:none}
+.land-brand h1{margin:0;font-size:1.05rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;opacity:.55}
 
 .panels{
   flex:1; display:grid; grid-template-columns:repeat(7,minmax(0,1fr));
@@ -56,40 +48,30 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
   .land-quote{display:none}
 }
 .panel{
-  position:relative; overflow:hidden; border:0; padding:0; text-align:left;
-  isolation:isolate; transition:filter .25s;
+  position:relative; overflow:hidden; border:0; padding:0; text-align:center;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  background:#0c1018; border-right:1px solid rgba(255,255,255,.07);
+  transition:background .2s;
 }
-.panel::after{
-  content:""; position:absolute; inset:0; z-index:1;
-  background:
-    linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.08) 28%, rgba(0,0,0,.15) 48%, rgba(0,0,0,.72) 82%, rgba(0,0,0,.88) 100%);
-  pointer-events:none;
-}
-.panel img{
-  position:absolute; inset:0; width:100%; height:100%;
-  object-fit:cover; object-position:center center;
-  transform:scale(1.04); transition:transform .45s ease;
-}
-.panel:hover img{transform:scale(1.1)}
-.panel:hover{filter:brightness(1.06)}
-.panel.locked{filter:grayscale(.45) brightness(.72); cursor:default}
-.panel.locked:hover img{transform:scale(1.04)}
+.panel:last-child{border-right:0}
+.panel:hover{background:#121826}
+.panel.locked{opacity:.4; cursor:default}
+.panel.locked:hover{background:#0c1018}
 .panel-body{
-  position:absolute; inset:auto 0 0 0; z-index:2;
-  padding:1rem .8rem 1.5rem; color:#fff;
-  background:linear-gradient(180deg, transparent, rgba(0,0,0,.55) 30%, rgba(0,0,0,.75));
+  position:relative; z-index:2; padding:1.5rem 1rem; color:var(--ink);
+  display:flex; flex-direction:column; align-items:center; gap:.55rem;
 }
-.panel-num{font-size:.7rem;letter-spacing:.22em;opacity:.75;font-weight:600}
-.panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(1.15rem,2vw,1.65rem);font-weight:700;margin:.15rem 0;letter-spacing:-.01em;text-shadow:0 2px 14px rgba(0,0,0,.6)}
-.panel-tag{font-size:.72rem;opacity:.85;line-height:1.35;max-width:12rem}
-.panel-frac{margin-top:.55rem;font-size:.65rem;opacity:.75;font-variant-numeric:tabular-nums}
-.panel-lock{position:absolute;top:.85rem;right:.75rem;z-index:2;font-size:.85rem;opacity:.85}
-.land-foot{
-  position:absolute; bottom:1.15rem; left:50%; transform:translateX(-50%); z-index:5;
-  font-family:Fraunces,Georgia,serif; font-style:italic; font-size:.72rem; opacity:.75;
-  text-shadow:0 2px 10px rgba(0,0,0,.7); pointer-events:none;
-  padding:.25rem .65rem; border-radius:999px; background:rgba(0,0,0,.35);
+.panel-num{
+  font-family:Fraunces,Georgia,serif; font-size:clamp(2.4rem,5vw,3.6rem);
+  font-weight:700; letter-spacing:-.03em; line-height:1; color:rgba(238,243,255,.92);
 }
+.panel-name{
+  font-family:Fraunces,Georgia,serif; font-size:clamp(.95rem,1.6vw,1.25rem);
+  font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+  color:rgba(200,210,230,.75);
+}
+.panel-lock{position:absolute;top:1rem;right:1rem;z-index:2;font-size:.8rem;opacity:.7}
+
 
 /* ── World tapestry ── */
 .world-shell{min-height:100dvh; min-height:100vh; display:flex; flex-direction:column; padding-bottom:5.5rem}
@@ -209,15 +191,10 @@ body.land .dock{display:none}
   <div class="tapestry-land">
     <div class="land-chrome">
       <div class="land-brand">
-        <div class="kicker">The Math Garden</div>
-        <h1>Seven eras. A lifetime of discovery.</h1>
-        <div class="sub">Mathera</div>
+        <h1>Mathera</h1>
       </div>
-      <div class="land-quote">Not a collection of facts, but a map of a more beautiful mind.</div>
-      <div class="land-user">Welcome, Julius · Keep exploring</div>
     </div>
     <div class="panels" id="panels"></div>
-    <div class="land-foot">Same world. Deeper every time.</div>
   </div>
 </section>
 
