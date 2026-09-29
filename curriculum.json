@@ -7262,7 +7262,8 @@
             }
           ]
         }
-      ]
+      ],
+      "worldName": "Peak Range"
     },
     {
       "id": "prove",
@@ -9628,7 +9629,8 @@
             }
           ]
         }
-      ]
+      ],
+      "worldName": "Proof Palace"
     },
     {
       "id": "motion",
@@ -11986,7 +11988,8 @@
             }
           ]
         }
-      ]
+      ],
+      "worldName": "Tide Sea"
     },
     {
       "id": "space",
@@ -14692,7 +14695,8 @@
             }
           ]
         }
-      ]
+      ],
+      "worldName": "Star Vault"
     }
   ],
   "stepLabels": {
