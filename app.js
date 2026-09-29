@@ -234,6 +234,113 @@
     return { left: x.toFixed(2) + "%", top: y.toFixed(2) + "%" };
   }
 
+  /* Denser ellipse mass — slightly larger canopy fill around each domain */
+  function leafScatterMass(skillId, cx, cy, index, n) {
+    return leafScatter(skillId, cx, cy, index, n, 13.2, 10.4);
+  }
+
+  /* Trunk crown (% of grove-tree) — fork origin for vein layout */
+  const GROVE_CROWN = { x: 50, y: 44 };
+
+  /* Quadratic Bezier: trunk → bowed control → domain tip; skills along the vein */
+  function leafScatterVein(skillId, tipX, tipY, index, n, domainIdx) {
+    const trunk = GROVE_CROWN;
+    const dx = tipX - trunk.x;
+    const dy = tipY - trunk.y;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const nx = -dy / len;
+    const ny = dx / len;
+    const bow = (hash01("vein-bow-" + domainIdx, 3) - 0.5) * 14 + (domainIdx % 2 ? 5 : -5);
+    const midT = 0.45 + hash01("vein-mid-" + domainIdx, 4) * 0.12;
+    const cX = trunk.x + dx * midT + nx * bow;
+    const cY = trunk.y + dy * midT + ny * bow;
+    const jT = (hash01(skillId, 5) - 0.5) * 0.045;
+    const t = Math.max(0.08, Math.min(0.96, (index + 0.55) / Math.max(n, 1) * 0.88 + 0.08 + jT));
+    const omt = 1 - t;
+    let x = omt * omt * trunk.x + 2 * omt * t * cX + t * t * tipX;
+    let y = omt * omt * trunk.y + 2 * omt * t * cY + t * t * tipY;
+    const jPerp = (hash01(skillId, 6) - 0.5) * (1.8 + (1 - t) * 2.2);
+    const jAlong = (hash01(skillId, 7) - 0.5) * 1.1;
+    x += nx * jPerp + (dx / len) * jAlong;
+    y += ny * jPerp + (dy / len) * jAlong;
+    x = Math.max(3, Math.min(74, x));
+    y = Math.max(4, Math.min(86, y));
+    return { left: x.toFixed(2) + "%", top: y.toFixed(2) + "%" };
+  }
+
+  /* Constellation: skills alone shape the canopy — looser radial + slight tip pull */
+  function leafScatterStars(skillId, cx, cy, index, n) {
+    const golden = Math.PI * (3 - Math.sqrt(5));
+    const jA = hash01(skillId, 8);
+    const jR = hash01(skillId, 9);
+    const a = index * golden + (jA - 0.5) * 0.7;
+    const r = Math.sqrt((index + 0.2) / Math.max(n, 1)) * (0.85 + jR * 0.5);
+    const rx = 14.5, ry = 11.2;
+    let x = cx + Math.cos(a) * r * rx;
+    let y = cy + Math.sin(a) * r * ry;
+    /* soft pull toward crown so silhouette reads as one tree */
+    x = x * 0.82 + GROVE_CROWN.x * 0.18;
+    y = y * 0.78 + GROVE_CROWN.y * 0.22;
+    x = Math.max(3, Math.min(74, x));
+    y = Math.max(4, Math.min(86, y));
+    return { left: x.toFixed(2) + "%", top: y.toFixed(2) + "%" };
+  }
+
+  function placeSkillLeaf(mode, skillId, cx, cy, index, n, domainIdx) {
+    if (mode === "veins") return leafScatterVein(skillId, cx, cy, index, n, domainIdx);
+    if (mode === "stars") return leafScatterStars(skillId, cx, cy, index, n);
+    return leafScatterMass(skillId, cx, cy, index, n);
+  }
+
+  /* Non-interactive ambient dots filling the canopy mass (Seurat filler) */
+  function ambientCanopyDots(count, mode) {
+    const dots = [];
+    const cx = 50, cy = 30;
+    const rx = mode === "stars" ? 31 : 29.5;
+    const ry = mode === "stars" ? 19.5 : 18.5;
+    for (let i = 0; i < count; i++) {
+      const u = hash01("amb", i * 3 + 1);
+      const v = hash01("amb", i * 3 + 2);
+      const w = hash01("amb", i * 3 + 3);
+      const ang = u * Math.PI * 2;
+      /* denser core + soft rim — mix of sqrt and powered */
+      const rad = Math.pow(0.05 + v * 0.95, 0.62);
+      let x = cx + Math.cos(ang) * rad * rx * (0.9 + w * 0.2);
+      let y = cy + Math.sin(ang) * rad * ry * (0.88 + hash01("amby", i) * 0.22);
+      /* lower canopy drips / shoulder fill toward trunk forks */
+      const drip = hash01("ambd", i);
+      if (drip > 0.88) {
+        x = 50 + (hash01("ambdx", i) - 0.5) * 22;
+        y = 40 + hash01("ambdy", i) * 14;
+      } else if (drip > 0.78) {
+        x = 50 + (hash01("ambdx", i) - 0.5) * 34;
+        y = 34 + hash01("ambdy", i) * 10;
+      }
+      x = Math.max(3, Math.min(77, x));
+      y = Math.max(5, Math.min(64, y));
+      const sz = 2.2 + hash01("ambsz", i) * 5.0;
+      const op = 0.12 + hash01("ambop", i) * 0.28;
+      const hue = hash01("ambh", i) > 0.7 ? "110,145,130" : "85,125,105";
+      dots.push(
+        `<span class="grove-ambient" style="left:${x.toFixed(2)}%;top:${y.toFixed(2)}%;` +
+        `--asz:${sz.toFixed(1)}px;--aop:${op.toFixed(3)};--ahue:${hue}"></span>`
+      );
+    }
+    return dots.join("");
+  }
+
+  const GROVE_STYLE_KEY = "mathera.groveStyle";
+  function getGroveStyle() {
+    try {
+      const v = localStorage.getItem(GROVE_STYLE_KEY);
+      if (v === "mass" || v === "veins" || v === "stars") return v;
+    } catch (_) {}
+    return "veins";
+  }
+  function setGroveStyle(mode) {
+    try { localStorage.setItem(GROVE_STYLE_KEY, mode); } catch (_) {}
+  }
+
   function shortPillTitle(name) {
     const n = String(name || "");
     const map = {
@@ -249,37 +356,46 @@
     return n.split(/[&,/]/)[0].trim().toUpperCase().slice(0, 8);
   }
 
-  const GROVE_SILHOUETTE = `<svg class="grove-sil" viewBox="0 0 1000 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+  function groveSilhouette(mode) {
+    /* mass: soft structure; veins: faint guides; stars: almost no stroke */
+    const trunkA = mode === "stars" ? 0.015 : mode === "veins" ? 0.08 : 0.13;
+    const canopyA = mode === "stars" ? 0.015 : mode === "veins" ? 0.06 : 0.1;
+    const islandA = mode === "stars" ? 0.05 : 0.11;
+    return `<svg class="grove-sil style-${mode}" viewBox="0 0 1000 720" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
   <defs>
     <radialGradient id="groveVoid" cx="50%" cy="42%" r="58%">
       <stop offset="0%" stop-color="#101618" stop-opacity=".0"/>
       <stop offset="70%" stop-color="#050708" stop-opacity=".35"/>
       <stop offset="100%" stop-color="#020304" stop-opacity=".7"/>
     </radialGradient>
+    <radialGradient id="canopyMist" cx="50%" cy="38%" r="42%">
+      <stop offset="0%" stop-color="#1a2a22" stop-opacity=".22"/>
+      <stop offset="55%" stop-color="#0c1410" stop-opacity=".1"/>
+      <stop offset="100%" stop-color="#030405" stop-opacity="0"/>
+    </radialGradient>
   </defs>
   <rect width="1000" height="720" fill="url(#groveVoid)"/>
+  <ellipse cx="500" cy="270" rx="290" ry="168" fill="url(#canopyMist)"/>
   <!-- floating island -->
   <path d="M300 575 C360 548, 430 535, 500 533 C570 535, 640 548, 700 575
            C660 608, 580 622, 500 622 C420 622, 340 608, 300 575Z"
-        fill="none" stroke="rgba(170,190,180,.14)" stroke-width="1.4"/>
-  <ellipse cx="500" cy="590" rx="210" ry="28" fill="none" stroke="rgba(160,180,170,.08)" stroke-width="1"/>
-  <path d="M360 585 C400 600, 460 608, 500 608 C540 608, 600 600, 640 585"
-        fill="none" stroke="rgba(140,160,150,.07)" stroke-width="1"/>
-  <!-- trunk -->
-  <path d="M500 533 C496 470, 492 400, 494 310" fill="none" stroke="rgba(190,170,140,.2)" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M498 470 C460 440, 430 390, 418 340" fill="none" stroke="rgba(180,160,130,.11)" stroke-width="1.3" stroke-linecap="round"/>
-  <path d="M502 450 C540 415, 575 365, 588 315" fill="none" stroke="rgba(180,160,130,.11)" stroke-width="1.3" stroke-linecap="round"/>
-  <path d="M496 400 C470 375, 452 345, 445 315" fill="none" stroke="rgba(170,150,120,.08)" stroke-width="1"/>
-  <path d="M504 385 C535 355, 555 330, 562 300" fill="none" stroke="rgba(170,150,120,.08)" stroke-width="1"/>
+        fill="none" stroke="rgba(170,190,180,${islandA})" stroke-width="1.3"/>
+  <ellipse cx="500" cy="590" rx="210" ry="28" fill="none" stroke="rgba(160,180,170,${islandA * 0.55})" stroke-width="1"/>
+  <!-- trunk + forks (opacity keyed to style) -->
+  <path d="M500 533 C496 470, 492 400, 494 310" fill="none" stroke="rgba(190,170,140,${trunkA})" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M498 470 C460 440, 430 390, 418 340" fill="none" stroke="rgba(180,160,130,${trunkA * 0.55})" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M502 450 C540 415, 575 365, 588 315" fill="none" stroke="rgba(180,160,130,${trunkA * 0.55})" stroke-width="1.2" stroke-linecap="round"/>
+  <path d="M496 400 C470 375, 452 345, 445 315" fill="none" stroke="rgba(170,150,120,${trunkA * 0.4})" stroke-width="1"/>
+  <path d="M504 385 C535 355, 555 330, 562 300" fill="none" stroke="rgba(170,150,120,${trunkA * 0.4})" stroke-width="1"/>
   <!-- canopy outline -->
   <path d="M230 330 C270 175, 390 115, 500 122 C610 115, 730 175, 770 330
            C720 395, 610 420, 500 415 C390 420, 280 395, 230 330Z"
-        fill="none" stroke="rgba(150,190,160,.13)" stroke-width="1.35"/>
+        fill="none" stroke="rgba(150,190,160,${canopyA})" stroke-width="1.2"/>
   <path d="M280 300 C320 200, 400 155, 500 160 C600 155, 680 200, 720 300
            C680 350, 600 368, 500 365 C400 368, 320 350, 280 300Z"
-        fill="none" stroke="rgba(140,180,150,.08)" stroke-width="1"/>
-  <ellipse cx="500" cy="270" rx="265" ry="145" fill="none" stroke="rgba(130,170,145,.06)" stroke-width="1"/>
+        fill="none" stroke="rgba(140,180,150,${canopyA * 0.65})" stroke-width="1"/>
 </svg>`;
+  }
 
   const ORB_SVG = {
     count: `<svg viewBox="0 0 48 48" fill="none"><path d="M24 42 V18" stroke="#c4a574" stroke-width="3" stroke-linecap="round"/><path d="M24 22 C14 14, 12 8, 18 6 C22 12, 24 14, 24 14 C24 14, 26 12, 30 6 C36 8, 34 14, 24 22Z" fill="#5dca7a"/><path d="M24 28 C10 24, 8 16, 14 14 C18 20, 24 22, 24 22 C24 22, 30 20, 34 14 C40 16, 38 24, 24 28Z" fill="#3da85c"/></svg>`,
@@ -498,7 +614,9 @@
     const tree = document.getElementById("groveTree");
     const positions = branchPositions(era.id, era.domains.length);
     const focus = nav.domainIdx != null;
+    const mode = getGroveStyle();
     const focusCls = focus ? "domain-focus" : "";
+    const ambCount = mode === "stars" ? 380 : mode === "veins" ? 580 : 720;
 
     const leafBtns = [];
     const anchors = era.domains.map((d, i) => {
@@ -514,14 +632,16 @@
         const st = s.state || "seed";
         const sel = s.id === nav.skillId ? "on" : "";
         const cl = clusterOn ? "cluster-on" : "";
-        const scat = leafScatter(s.id, cx, cy, si, nSkills);
+        const bloom = (st === "proven" || st === "growing" || st === "thirsty") ? "bloom" : "";
+        const scat = placeSkillLeaf(mode, s.id, cx, cy, si, nSkills, i);
         leafBtns.push(
-          `<button type="button" class="grove-leaf ${st} ${sel} ${cl}" data-sid="${s.id}" data-di="${i}" ` +
+          `<button type="button" class="grove-leaf ${st} ${sel} ${cl} ${bloom}" data-sid="${s.id}" data-di="${i}" ` +
           `style="left:${scat.left};top:${scat.top}" title="${s.title}" aria-label="${s.title}"></button>`
         );
       });
 
-      return `<button type="button" class="domain-anchor ${on}" data-di="${i}"
+      const faint = mode === "stars" ? "faint" : "";
+      return `<button type="button" class="domain-anchor ${on} ${faint}" data-di="${i}"
         style="left:${pos.left};top:${pos.top}" title="${d.name}">
         <span class="bn">${i + 1}</span>
         <span class="bi">${icon}</span>
@@ -529,16 +649,50 @@
       </button>`;
     }).join("");
 
-    tree.innerHTML = `<div class="pointillist-grove ${focusCls}">
-      ${GROVE_SILHOUETTE}
+    const styleToggle = `
+      <div class="grove-style-toggle" role="group" aria-label="Grove style">
+        <button type="button" class="gst ${mode === "mass" ? "on" : ""}" data-style="mass" title="Dense canopy mass">Mass</button>
+        <button type="button" class="gst ${mode === "veins" ? "on" : ""}" data-style="veins" title="Skills along branch veins">Veins</button>
+        <button type="button" class="gst ${mode === "stars" ? "on" : ""}" data-style="stars" title="Constellation of skill dots">Stars</button>
+      </div>`;
+
+    tree.innerHTML = `<div class="pointillist-grove style-${mode} ${focusCls}">
+      ${groveSilhouette(mode)}
+      <div class="grove-ambient-layer" aria-hidden="true">${ambientCanopyDots(ambCount, mode)}</div>
       <div class="grove-leaves" aria-label="Skills">${leafBtns.join("")}</div>
       <div class="grove-anchors" aria-label="Domains">${anchors}</div>
+      ${styleToggle}
     </div>`;
 
+    tree.querySelectorAll(".gst").forEach(b => {
+      b.onclick = (e) => {
+        e.stopPropagation();
+        setGroveStyle(b.dataset.style);
+        renderBranches();
+      };
+    });
+
+    const grove = tree.querySelector(".pointillist-grove");
     tree.querySelectorAll(".domain-anchor").forEach(b => {
       b.onclick = (e) => {
         e.stopPropagation();
         selectDomain(+b.dataset.di);
+      };
+      b.onmouseenter = () => {
+        if (nav.domainIdx != null) return;
+        grove.classList.add("domain-hover");
+        grove.querySelectorAll(".grove-leaf").forEach(leaf => {
+          leaf.classList.toggle("cluster-on", +leaf.dataset.di === +b.dataset.di);
+        });
+        grove.querySelectorAll(".domain-anchor").forEach(a => {
+          a.classList.toggle("hover-on", a === b);
+        });
+      };
+      b.onmouseleave = () => {
+        if (nav.domainIdx != null) return;
+        grove.classList.remove("domain-hover");
+        grove.querySelectorAll(".grove-leaf").forEach(leaf => leaf.classList.add("cluster-on"));
+        grove.querySelectorAll(".domain-anchor").forEach(a => a.classList.remove("hover-on"));
       };
     });
     tree.querySelectorAll(".grove-leaf").forEach(leaf => {
@@ -549,6 +703,23 @@
         renderBranches();
         renderDetailPanel();
         document.getElementById("groveShell").classList.add("panel-open");
+      };
+      leaf.onmouseenter = () => {
+        if (nav.domainIdx != null) return;
+        const di = +leaf.dataset.di;
+        grove.classList.add("domain-hover");
+        grove.querySelectorAll(".grove-leaf").forEach(el => {
+          el.classList.toggle("cluster-on", +el.dataset.di === di);
+        });
+        grove.querySelectorAll(".domain-anchor").forEach(a => {
+          a.classList.toggle("hover-on", +a.dataset.di === di);
+        });
+      };
+      leaf.onmouseleave = () => {
+        if (nav.domainIdx != null) return;
+        grove.classList.remove("domain-hover");
+        grove.querySelectorAll(".grove-leaf").forEach(el => el.classList.add("cluster-on"));
+        grove.querySelectorAll(".domain-anchor").forEach(a => a.classList.remove("hover-on"));
       };
     });
   }
