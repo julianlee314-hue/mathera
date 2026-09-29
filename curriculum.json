@@ -1471,7 +1471,7 @@
       "unlock": true,
       "metaphor": "city",
       "tagline": "Do things to numbers.",
-      "total": 83,
+      "total": 135,
       "domains": [
         {
           "id": "II.1",
@@ -2590,9 +2590,710 @@
               "state": "seed"
             }
           ]
+        },
+        {
+          "id": "II.7",
+          "name": "Decimals",
+          "skills": [
+            {
+              "id": "II.7.01",
+              "title": "Tenths",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.02",
+              "title": "Hundredths",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.03",
+              "title": "Decimal place value",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.04",
+              "title": "Fractions and decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.05",
+              "title": "Compare decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.06",
+              "title": "Round decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.07",
+              "title": "Add decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.08",
+              "title": "Subtract decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.09",
+              "title": "Powers of ten and the point",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.10",
+              "title": "Decimal \u00d7 whole number",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.11",
+              "title": "Multiply decimals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.12",
+              "title": "Decimal \u00f7 whole number",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.13",
+              "title": "Divide by a decimal",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.7.14",
+              "title": "Money",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            }
+          ]
+        },
+        {
+          "id": "II.8",
+          "name": "Expressions",
+          "skills": [
+            {
+              "id": "II.8.01",
+              "title": "Order of operations",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.02",
+              "title": "Write numerical expressions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.03",
+              "title": "Evaluate expressions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.04",
+              "title": "Number patterns and rules",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.05",
+              "title": "Input-output tables",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.06",
+              "title": "Missing numbers",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.07",
+              "title": "Equivalent expressions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.08",
+              "title": "Problems to expressions",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.8.09",
+              "title": "Balance puzzles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            }
+          ]
+        },
+        {
+          "id": "II.9",
+          "name": "Measurement & Geometry",
+          "skills": [
+            {
+              "id": "II.9.01",
+              "title": "Metric length",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.02",
+              "title": "Imperial length",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.03",
+              "title": "Mass",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.04",
+              "title": "Capacity",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.05",
+              "title": "Time",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.06",
+              "title": "Perimeter",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.07",
+              "title": "Area by counting",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.08",
+              "title": "Area of rectangles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.09",
+              "title": "Perimeter vs area",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.10",
+              "title": "Volume by counting cubes",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.11",
+              "title": "Volume of boxes",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.12",
+              "title": "Points, lines and rays",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.13",
+              "title": "Angles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.14",
+              "title": "Measure angles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.15",
+              "title": "Add angles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.16",
+              "title": "Classify triangles",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.17",
+              "title": "Classify quadrilaterals",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.18",
+              "title": "Lines of symmetry",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.19",
+              "title": "The first quadrant",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.9.20",
+              "title": "Measurement problems",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            }
+          ]
+        },
+        {
+          "id": "II.10",
+          "name": "Data",
+          "skills": [
+            {
+              "id": "II.10.01",
+              "title": "Line plots",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.02",
+              "title": "Bar graphs with scales",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.03",
+              "title": "Pictographs with keys",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.04",
+              "title": "Tables and frequency",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.05",
+              "title": "The mean as a fair share",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.06",
+              "title": "A typical value",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.07",
+              "title": "Line graphs",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.08",
+              "title": "Collect and organize data",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            },
+            {
+              "id": "II.10.09",
+              "title": "Read graphs critically",
+              "star": false,
+              "was": null,
+              "steps": [
+                "a) see it",
+                "b) try it",
+                "c) use it",
+                "d) explain it"
+              ],
+              "state": "seed"
+            }
+          ]
         }
       ],
-      "worldName": "Forge City"
+      "worldName": "Forge City",
+      "note": "Full Era II from Julius screenshots including II.7\u2013II.10."
     },
     {
       "id": "relate",
