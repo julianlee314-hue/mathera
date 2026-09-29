@@ -395,7 +395,6 @@
       return `<button type="button" class="panel ${e.unlock ? "" : "locked"}" data-id="${e.id}">
         ${e.unlock ? "" : '<span class="panel-lock">🔒</span>'}
         <div class="panel-body">
-          <div class="panel-num">${i + 1}</div>
           <div class="panel-name">${e.name.toUpperCase()}</div>
         </div>
       </button>`;

@@ -56,22 +56,18 @@ button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 }
 .panel:last-child{border-right:0}
 .panel:hover{opacity:.92}
-.panel:hover .panel-name,.panel:hover .panel-num{color:#fff}
 .panel.locked{opacity:.35; cursor:default}
 .panel.locked:hover{opacity:.35}
 .panel-body{
   position:relative; z-index:2; padding:1.5rem .75rem; color:var(--ink);
-  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.45rem;
-}
-.panel-num{
-  font-family:Fraunces,Georgia,serif; font-size:clamp(2.2rem,4.5vw,3.4rem);
-  font-weight:700; letter-spacing:-.03em; line-height:1; color:rgba(238,243,255,.88);
+  display:flex; align-items:center; justify-content:center;
 }
 .panel-name{
-  font-family:Fraunces,Georgia,serif; font-size:clamp(.9rem,1.5vw,1.15rem);
-  font-weight:600; letter-spacing:.14em; text-transform:uppercase;
-  color:rgba(200,210,230,.7);
+  font-family:Fraunces,Georgia,serif; font-size:clamp(1rem,1.8vw,1.45rem);
+  font-weight:600; letter-spacing:.16em; text-transform:uppercase;
+  color:rgba(230,235,245,.88);
 }
+.panel:hover .panel-name{color:#fff}
 .panel-lock{position:absolute;top:1rem;right:1rem;z-index:2;font-size:.8rem;opacity:.7}
 
 
@@ -191,11 +187,6 @@ body.land .dock{display:none}
 
 <section class="view show" id="viewUniverse">
   <div class="tapestry-land">
-    <div class="land-chrome">
-      <div class="land-brand">
-        <h1>Mathera</h1>
-      </div>
-    </div>
     <div class="panels" id="panels"></div>
   </div>
 </section>
