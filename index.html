@@ -319,6 +319,12 @@ body.land #v-land{gap:0}
 .panel::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
   background:linear-gradient(180deg,rgba(5,7,12,.15) 0%,transparent 28%,transparent 72%,rgba(5,7,12,.35) 100%)}
 .panel:focus-visible{outline:2px solid rgba(244,241,234,.55);outline-offset:-2px;z-index:2}
+.panel-body{position:absolute;inset:auto 0 0 0;z-index:2;padding:0 0 1.35rem;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:.35rem;pointer-events:none;
+  background:linear-gradient(180deg,transparent 0%,rgba(5,7,12,.55) 100%)}
+.panel-num{font-family:var(--mono);font-size:.7rem;letter-spacing:.22em;opacity:.85;font-weight:500;color:rgba(244,241,234,.9);text-shadow:0 1px 8px rgba(0,0,0,.65)}
+.panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(.85rem,1.5vw,1.2rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.95);text-shadow:0 1px 10px rgba(0,0,0,.7)}
+.panel:hover .panel-name,.panel:focus-visible .panel-name{color:#fff}
+
 </style>
 
 <div class="app">
@@ -39330,6 +39336,10 @@ function renderLand() {
     const label = soon ? `Era ${e.k} ${e.name} — Coming Soon` : `Enter Era ${e.k} ${e.name}`;
     return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}">
       <img class="panel-art" src="land/${e.k}.jpg" alt="" decoding="async" fetchpriority="high" draggable="false">
+      <div class="panel-body">
+        <div class="panel-num">${e.k}</div>
+        <div class="panel-name">${e.name}</div>
+      </div>
     </button>`;
   }).join('');
 }

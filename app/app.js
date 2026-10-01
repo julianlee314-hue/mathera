@@ -244,6 +244,10 @@ function renderLand() {
     const label = soon ? `Era ${e.k} ${e.name} — Coming Soon` : `Enter Era ${e.k} ${e.name}`;
     return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}">
       <img class="panel-art" src="land/${e.k}.jpg" alt="" decoding="async" fetchpriority="high" draggable="false">
+      <div class="panel-body">
+        <div class="panel-num">${e.k}</div>
+        <div class="panel-name">${e.name}</div>
+      </div>
     </button>`;
   }).join('');
 }
