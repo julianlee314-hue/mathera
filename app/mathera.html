@@ -330,6 +330,33 @@ body.land #v-land{gap:0}
 .panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(.85rem,1.5vw,1.2rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.95);text-shadow:0 1px 10px rgba(0,0,0,.7)}
 .panel:hover .panel-name,.panel:focus-visible .panel-name{color:#fff}
 
+/* era-nav chrome (branches + under-construction share land tone) */
+body.era-nav{padding:0;background:#0a0e17;color:#f4f1ea;overflow:auto}
+body.era-nav .app{max-width:none;margin:0;min-height:100dvh;min-height:100vh}
+body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1.1rem 1.35rem;width:100%;box-sizing:border-box;
+  background:linear-gradient(180deg,rgba(5,7,12,.92) 0%,rgba(5,7,12,.55) 70%,transparent 100%)}
+body.era-nav .brand{color:rgba(244,241,234,.55);letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem}
+body.era-nav .brand span{display:none}
+body.era-nav .tabs{display:none}
+body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
+.era-screen{min-height:100dvh;min-height:100vh;padding:4.5rem clamp(1.25rem,4vw,3rem) 3.5rem;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:2rem;box-sizing:border-box}
+.era-head{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
+.era-head .era-roman{font-family:var(--mono);font-size:.75rem;letter-spacing:.28em;color:rgba(244,241,234,.45);font-weight:500}
+.era-head h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(1.85rem,4.5vw,2.75rem);letter-spacing:.12em;text-transform:uppercase;color:#f4f1ea;line-height:1.1}
+.era-head .era-sub{margin:0;font-size:.95rem;color:rgba(244,241,234,.45);max-width:42ch;line-height:1.45}
+.era-actions{display:flex;flex-wrap:wrap;gap:.6rem .85rem;margin-top:.35rem}
+.era-actions button,.era-link{border:1px solid rgba(244,241,234,.18);background:transparent;border-radius:999px;padding:.45rem 1rem;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,241,234,.65);font-family:var(--sans)}
+.era-actions button:hover,.era-link:hover{color:#fff;border-color:rgba(244,241,234,.4)}
+.branch-cols{column-width:15.5rem;column-gap:2.75rem;margin:0}
+.branch-cols button{break-inside:avoid;display:block;width:100%;text-align:left;border:0;border-bottom:1px solid rgba(255,255,255,.07);background:transparent;color:rgba(244,241,234,.88);font-family:Fraunces,Georgia,serif;font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;letter-spacing:.01em;padding:.7rem .15rem .75rem;cursor:pointer;line-height:1.25}
+.branch-cols button:hover,.branch-cols button:focus-visible{color:#fff;border-bottom-color:rgba(255,255,255,.28)}
+.branch-cols button .bid{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:rgba(244,241,234,.35);font-weight:500;margin-right:.65rem;vertical-align:middle}
+.branch-cols button.dim{color:rgba(244,241,234,.32);cursor:default;border-bottom-color:rgba(255,255,255,.04)}
+.branch-cols button.dim:hover{color:rgba(244,241,234,.38);border-bottom-color:rgba(255,255,255,.04)}
+.branch-cols.preview button{pointer-events:none;color:rgba(244,241,234,.28);border-bottom-color:rgba(255,255,255,.04);cursor:default}
+.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.55);border:1px solid rgba(244,241,234,.2);border-radius:999px;padding:.35rem .75rem;margin-top:.15rem}
+.uc-msg{margin:.4rem 0 0;font-size:1.05rem;color:rgba(244,241,234,.62);max-width:36ch;line-height:1.5;font-family:Fraunces,Georgia,serif;font-weight:500}
+
 </style>
 
 <div class="app">
@@ -349,6 +376,38 @@ body.land #v-land{gap:0}
   <!-- LAND / HOMEPAGE -->
   <section class="view" id="v-land" hidden>
     <div class="panels" id="landPanels" role="group" aria-label="Eras"></div>
+  </section>
+
+  <!-- BRANCH LIST (primary era nav) -->
+  <section class="view" id="v-branches" hidden>
+    <div class="era-screen">
+      <div class="era-head">
+        <div class="era-roman" id="brRoman"></div>
+        <h1 id="brTitle"></h1>
+        <p class="era-sub" id="brSub">Choose a branch to begin.</p>
+        <div class="era-actions">
+          <button type="button" id="brTreeBtn">View tree</button>
+          <button type="button" id="brLandBtn">← Land</button>
+        </div>
+      </div>
+      <div class="branch-cols" id="brCols" role="list"></div>
+    </div>
+  </section>
+
+  <!-- UNDER CONSTRUCTION (Eras VI–VII) -->
+  <section class="view" id="v-uc" hidden>
+    <div class="era-screen">
+      <div class="era-head">
+        <div class="era-roman" id="ucRoman"></div>
+        <h1 id="ucTitle"></h1>
+        <span class="uc-badge">Under construction</span>
+        <p class="uc-msg" id="ucMsg">This era is on the way. A quiet garden for now — check back in Mathera 2.0.</p>
+        <div class="era-actions">
+          <button type="button" id="ucLandBtn">← Back to the land</button>
+        </div>
+      </div>
+      <div class="branch-cols preview" id="ucCols" role="list" aria-hidden="true"></div>
+    </div>
   </section>
 
   <!-- WELCOME / PLACEMENT -->
@@ -39114,6 +39173,10 @@ const ERAS = {
 };
 // Eras IV and V: only units that already have questions appear; the rest arrive unit by unit
 const UP_UNITS = { IV: [["IV.1", "Equations & inequalities"], ["IV.2", "Functions"], ["IV.3", "Linear functions"], ["IV.4", "Systems"], ["IV.5", "Exponents & radicals"], ["IV.6", "Polynomials"], ["IV.7", "Quadratics"], ["IV.8", "Complex numbers"], ["IV.9", "Function toolkit"], ["IV.10", "Polynomial functions"], ["IV.11", "Rational & radical functions"], ["IV.12", "Exponential & logarithmic"], ["IV.13", "Sequences & series"], ["IV.14", "Counting & probability"], ["IV.15", "Data & distributions"]], V: [["V.1", "Logic & proof"], ["V.2", "Lines & angles"], ["V.3", "Triangles"], ["V.4", "Polygons"], ["V.5", "Similarity"], ["V.6", "Right-triangle trig"], ["V.7", "General triangles"], ["V.8", "Circles"], ["V.9", "Trig functions"], ["V.10", "Identities & equations"], ["V.11", "Coordinate geometry"], ["V.12", "Conic sections"], ["V.13", "Transformations"], ["V.14", "Solids"], ["V.15", "Constructions"]] };
+const SOON_UNITS = {
+  VI: [['VI.1', 'Limits & continuity'], ['VI.2', 'Derivatives'], ['VI.3', 'Applications of derivatives'], ['VI.4', 'Integrals'], ['VI.5', 'Integration techniques'], ['VI.6', 'Applications of integrals'], ['VI.7', 'Differential equations I'], ['VI.8', 'Parametric & polar'], ['VI.9', 'Sequences & series'], ['VI.10', 'Power & Taylor series'], ['VI.11', 'Statistical inference'], ['VI.12', 'Mechanics']],
+  VII: [['VII.1', 'Vectors in ℝⁿ'], ['VII.2', 'Linear systems'], ['VII.3', 'Matrix algebra'], ['VII.4', 'Vector spaces'], ['VII.5', 'Linear transformations'], ['VII.6', 'Determinants'], ['VII.7', 'Eigenvalues & eigenvectors'], ['VII.8', 'Orthogonality'], ['VII.9', 'Symmetric matrices & SVD'], ['VII.10', 'Functions of several variables'], ['VII.11', 'Partial derivatives'], ['VII.12', 'Optimization'], ['VII.13', 'Multiple integrals'], ['VII.14', 'Vector calculus'], ['VII.15', 'First-order equations'], ['VII.16', 'Second-order linear'], ['VII.17', 'Systems of ODEs'], ['VII.18', 'Laplace transform'], ['VII.19', 'Fourier series, a first look']],
+};
 for (const [k, E, name] of [['IV', G_E4(), 'Solve'], ['V', G_E5(), 'Prove']]) if (E && E.skills.length) { const have = new Set(E.skills.map(s => MM.unitOf(s.id))); ERAS[k] = { E, name, units: UP_UNITS[k].filter(([u]) => have.has(u)), total: UP_UNITS[k].length }; }
 function G_eng(name) { const g = typeof globalThis !== 'undefined' ? globalThis : (typeof window !== 'undefined' ? window : {}); const E = g[name]; return E && Array.isArray(E.skills) ? E : null; }
 function G_E4() { return G_eng('E4'); } function G_E5() { return G_eng('E5'); }
@@ -39126,6 +39189,13 @@ const ALL_ERAS = [
 ];
 const eraName = k => (ALL_ERAS.find(e => e.k === k) || {}).name || (ERAS[k] || {}).name || k;
 const eraSoon = k => !ERAS[k];
+// Full branch title roster for the branch-list screen (IV/V show the full curriculum even if some units are still preview)
+const BRANCHES = {
+  I: ERAS.I.units, II: ERAS.II.units, III: ERAS.III.units,
+  IV: UP_UNITS.IV, V: UP_UNITS.V,
+  VI: SOON_UNITS.VI, VII: SOON_UNITS.VII,
+};
+const branchesOf = k => BRANCHES[k] || [];
 const UPPER = k => k === 'IV' || k === 'V';
 const eraOf = id => id.split('.')[0];
 const ALL_UNITS = ERA_KEYS.flatMap(k => ERAS[k].units);
@@ -39316,7 +39386,9 @@ function teleSave() {
 
 /* ================= views ================= */
 let view = 'land';
-const VIEWS = ['loading', 'land', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+let navEra = 'II';
+const VIEWS = ['loading', 'land', 'branches', 'uc', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+const ERA_NAV_VIEWS = new Set(['branches', 'uc']);
 let toastT = 0;
 function toast(msg) {
   const el = $('toast'); if (!el) return;
@@ -39326,8 +39398,11 @@ function toast(msg) {
 function show(v) {
   view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
   document.body.classList.toggle('land', v === 'land');
+  document.body.classList.toggle('era-nav', ERA_NAV_VIEWS.has(v));
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === v || ((v === 'practice' || v === 'alarm') && b.dataset.v === 'home') ? 'page' : 'false'));
   if (v === 'land') renderLand();
+  if (v === 'branches') renderBranches();
+  if (v === 'uc') renderUc();
   if (v === 'home') renderHome(); if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
   window.scrollTo(0, 0);
 }
@@ -39338,8 +39413,9 @@ $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePr
 function renderLand() {
   $('landPanels').innerHTML = ALL_ERAS.map(e => {
     const soon = !!e.soon || eraSoon(e.k);
-    const label = soon ? `Era ${e.k} ${e.name} — Coming Soon` : `Enter Era ${e.k} ${e.name}`;
-    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}">
+    const label = soon ? `Era ${e.k} ${e.name} — Under construction` : `Enter Era ${e.k} ${e.name}`;
+    // VI–VII stay clickable (dedicated UC screen); no dim locked doors
+    return `<button type="button" class="panel" data-era="${e.k}" data-soon="${soon ? '1' : '0'}" aria-label="${label}">
       <img class="panel-art" src="land/${e.k}.jpg" alt="" decoding="async" fetchpriority="high" draggable="false">
       <div class="panel-body">
         <div class="panel-num">${e.k}</div>
@@ -39353,24 +39429,74 @@ $('landPanels').addEventListener('click', e => {
   enterEra(b.dataset.era);
 });
 function enterEra(k) {
-  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  navEra = k;
+  if (eraSoon(k)) { show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  show('branches');
+}
+
+/* ---- branch list (primary era screen) ---- */
+function renderBranches() {
+  const k = navEra || era;
+  const name = eraName(k);
+  const list = branchesOf(k);
+  const open = new Set((ERAS[k] && ERAS[k].units || []).map(([u]) => u));
+  $('brRoman').textContent = `Era ${k}`;
+  $('brTitle').textContent = name;
+  $('brSub').textContent = `${list.length} branches · pick one to practice`;
+  $('brCols').innerHTML = list.map(([u, n]) => {
+    const ready = open.has(u);
+    return `<button type="button" role="listitem" data-u="${u}" class="${ready ? '' : 'dim'}" ${ready ? '' : 'aria-disabled="true"'}><span class="bid">${u}</span>${esc(n)}</button>`;
+  }).join('');
+}
+function openBranch(u) {
+  const k = eraOf(u);
+  if (eraSoon(k)) { navEra = k; show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  navEra = k;
+  const ready = UNITS.some(([id]) => id === u);
+  if (!ready) { toast('This branch is still being planted — check back soon.'); return; }
+  if (!META.placed[k]) placeAt(u);
+  else { selUnit = u; show('home'); }
+}
+function openTree() {
+  const k = navEra || era;
+  if (eraSoon(k)) { show('uc'); return; }
   if (k !== era) { setEra(k); S = MM.session(); save(); }
   show(META.placed[k] ? 'home' : 'welcome');
 }
+$('brCols').addEventListener('click', e => {
+  const b = e.target.closest('button[data-u]'); if (!b || b.classList.contains('dim')) return;
+  openBranch(b.dataset.u);
+});
+$('brTreeBtn').addEventListener('click', openTree);
+$('brLandBtn').addEventListener('click', () => show('land'));
+
+/* ---- under construction (VI–VII) ---- */
+function renderUc() {
+  const k = navEra || 'VI';
+  const name = eraName(k);
+  const list = branchesOf(k);
+  $('ucRoman').textContent = `Era ${k}`;
+  $('ucTitle').textContent = name;
+  $('ucMsg').textContent = 'Under construction — a quiet garden for now. This era arrives in Mathera 2.0.';
+  $('ucCols').innerHTML = list.map(([u, n]) => `<button type="button" tabindex="-1"><span class="bid">${u}</span>${esc(n)}</button>`).join('');
+}
+$('ucLandBtn').addEventListener('click', () => show('land'));
 
 /* ---- era switcher ---- */
 function renderEraTabs(el) {
   $(el).innerHTML = ALL_ERAS.map(e => {
     const k = e.k;
-    if (e.soon || eraSoon(k) || !PS[k]) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Coming Soon</small></button>`;
+    if (e.soon || eraSoon(k) || !PS[k]) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Under construction</small></button>`;
     const c = MM.counts(PS[k], now());
     return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`;
   }).join('');
 }
 function switchEra(k) {
-  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  if (eraSoon(k)) { navEra = k; show('uc'); return; }
   if (k === era) return;
-  setEra(k); S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
+  setEra(k); navEra = k; S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
 }
 ['eraTabs', 'welTabs'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button[data-era]'); if (b) switchEra(b.dataset.era); }));
 
@@ -40038,11 +40164,11 @@ async function boot() {
     }
     save(); flush();
     selUnit = META.start[era] || selUnit;
-    if (view === 'land') { /* stay on homepage */ }
+    if (view === 'land' || view === 'branches' || view === 'uc') { /* stay on era-nav screens */ }
     else if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, era: () => era, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, BRANCHES };
 })();
 
 </script>

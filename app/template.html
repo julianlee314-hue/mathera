@@ -330,6 +330,33 @@ body.land #v-land{gap:0}
 .panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(.85rem,1.5vw,1.2rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.95);text-shadow:0 1px 10px rgba(0,0,0,.7)}
 .panel:hover .panel-name,.panel:focus-visible .panel-name{color:#fff}
 
+/* era-nav chrome (branches + under-construction share land tone) */
+body.era-nav{padding:0;background:#0a0e17;color:#f4f1ea;overflow:auto}
+body.era-nav .app{max-width:none;margin:0;min-height:100dvh;min-height:100vh}
+body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1.1rem 1.35rem;width:100%;box-sizing:border-box;
+  background:linear-gradient(180deg,rgba(5,7,12,.92) 0%,rgba(5,7,12,.55) 70%,transparent 100%)}
+body.era-nav .brand{color:rgba(244,241,234,.55);letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem}
+body.era-nav .brand span{display:none}
+body.era-nav .tabs{display:none}
+body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
+.era-screen{min-height:100dvh;min-height:100vh;padding:4.5rem clamp(1.25rem,4vw,3rem) 3.5rem;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:2rem;box-sizing:border-box}
+.era-head{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
+.era-head .era-roman{font-family:var(--mono);font-size:.75rem;letter-spacing:.28em;color:rgba(244,241,234,.45);font-weight:500}
+.era-head h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(1.85rem,4.5vw,2.75rem);letter-spacing:.12em;text-transform:uppercase;color:#f4f1ea;line-height:1.1}
+.era-head .era-sub{margin:0;font-size:.95rem;color:rgba(244,241,234,.45);max-width:42ch;line-height:1.45}
+.era-actions{display:flex;flex-wrap:wrap;gap:.6rem .85rem;margin-top:.35rem}
+.era-actions button,.era-link{border:1px solid rgba(244,241,234,.18);background:transparent;border-radius:999px;padding:.45rem 1rem;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,241,234,.65);font-family:var(--sans)}
+.era-actions button:hover,.era-link:hover{color:#fff;border-color:rgba(244,241,234,.4)}
+.branch-cols{column-width:15.5rem;column-gap:2.75rem;margin:0}
+.branch-cols button{break-inside:avoid;display:block;width:100%;text-align:left;border:0;border-bottom:1px solid rgba(255,255,255,.07);background:transparent;color:rgba(244,241,234,.88);font-family:Fraunces,Georgia,serif;font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;letter-spacing:.01em;padding:.7rem .15rem .75rem;cursor:pointer;line-height:1.25}
+.branch-cols button:hover,.branch-cols button:focus-visible{color:#fff;border-bottom-color:rgba(255,255,255,.28)}
+.branch-cols button .bid{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:rgba(244,241,234,.35);font-weight:500;margin-right:.65rem;vertical-align:middle}
+.branch-cols button.dim{color:rgba(244,241,234,.32);cursor:default;border-bottom-color:rgba(255,255,255,.04)}
+.branch-cols button.dim:hover{color:rgba(244,241,234,.38);border-bottom-color:rgba(255,255,255,.04)}
+.branch-cols.preview button{pointer-events:none;color:rgba(244,241,234,.28);border-bottom-color:rgba(255,255,255,.04);cursor:default}
+.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.55);border:1px solid rgba(244,241,234,.2);border-radius:999px;padding:.35rem .75rem;margin-top:.15rem}
+.uc-msg{margin:.4rem 0 0;font-size:1.05rem;color:rgba(244,241,234,.62);max-width:36ch;line-height:1.5;font-family:Fraunces,Georgia,serif;font-weight:500}
+
 </style>
 
 <div class="app">
@@ -349,6 +376,38 @@ body.land #v-land{gap:0}
   <!-- LAND / HOMEPAGE -->
   <section class="view" id="v-land" hidden>
     <div class="panels" id="landPanels" role="group" aria-label="Eras"></div>
+  </section>
+
+  <!-- BRANCH LIST (primary era nav) -->
+  <section class="view" id="v-branches" hidden>
+    <div class="era-screen">
+      <div class="era-head">
+        <div class="era-roman" id="brRoman"></div>
+        <h1 id="brTitle"></h1>
+        <p class="era-sub" id="brSub">Choose a branch to begin.</p>
+        <div class="era-actions">
+          <button type="button" id="brTreeBtn">View tree</button>
+          <button type="button" id="brLandBtn">← Land</button>
+        </div>
+      </div>
+      <div class="branch-cols" id="brCols" role="list"></div>
+    </div>
+  </section>
+
+  <!-- UNDER CONSTRUCTION (Eras VI–VII) -->
+  <section class="view" id="v-uc" hidden>
+    <div class="era-screen">
+      <div class="era-head">
+        <div class="era-roman" id="ucRoman"></div>
+        <h1 id="ucTitle"></h1>
+        <span class="uc-badge">Under construction</span>
+        <p class="uc-msg" id="ucMsg">This era is on the way. A quiet garden for now — check back in Mathera 2.0.</p>
+        <div class="era-actions">
+          <button type="button" id="ucLandBtn">← Back to the land</button>
+        </div>
+      </div>
+      <div class="branch-cols preview" id="ucCols" role="list" aria-hidden="true"></div>
+    </div>
   </section>
 
   <!-- WELCOME / PLACEMENT -->
