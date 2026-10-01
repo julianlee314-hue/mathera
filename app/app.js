@@ -241,12 +241,9 @@ $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePr
 function renderLand() {
   $('landPanels').innerHTML = ALL_ERAS.map(e => {
     const soon = !!e.soon || eraSoon(e.k);
-    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}">
-      <div class="panel-body">
-        <div class="panel-num">${e.k}</div>
-        <div class="panel-name">${e.name}</div>
-        ${soon ? '<div class="panel-soon">Coming Soon</div>' : ''}
-      </div>
+    const label = soon ? `Era ${e.k} ${e.name} — Coming Soon` : `Enter Era ${e.k} ${e.name}`;
+    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}" title="${label}">
+      <img class="panel-art" src="land/${e.k}.jpg" alt="" decoding="async" fetchpriority="high" draggable="false">
     </button>`;
   }).join('');
 }
