@@ -39325,7 +39325,7 @@ function renderLand() {
   $('landPanels').innerHTML = ALL_ERAS.map(e => {
     const soon = !!e.soon || eraSoon(e.k);
     const label = soon ? `Era ${e.k} ${e.name} — Coming Soon` : `Enter Era ${e.k} ${e.name}`;
-    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}" title="${label}">
+    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}" aria-label="${label}">
       <img class="panel-art" src="land/${e.k}.jpg" alt="" decoding="async" fetchpriority="high" draggable="false">
     </button>`;
   }).join('');
