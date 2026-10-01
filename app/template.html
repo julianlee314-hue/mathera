@@ -330,32 +330,67 @@ body.land #v-land{gap:0}
 .panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(.85rem,1.5vw,1.2rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.95);text-shadow:0 1px 10px rgba(0,0,0,.7)}
 .panel:hover .panel-name,.panel:focus-visible .panel-name{color:#fff}
 
-/* era-nav chrome (branches + under-construction share land tone) */
-body.era-nav{padding:0;background:#0a0e17;color:#f4f1ea;overflow:auto}
-body.era-nav .app{max-width:none;margin:0;min-height:100dvh;min-height:100vh}
-body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1.1rem 1.35rem;width:100%;box-sizing:border-box;
-  background:linear-gradient(180deg,rgba(5,7,12,.92) 0%,rgba(5,7,12,.55) 70%,transparent 100%)}
-body.era-nav .brand{color:rgba(244,241,234,.55);letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem}
-body.era-nav .brand span{display:none}
-body.era-nav .tabs{display:none}
-body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
-.era-screen{min-height:100dvh;min-height:100vh;padding:4.5rem clamp(1.25rem,4vw,3rem) 3.5rem;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:2rem;box-sizing:border-box}
-.era-head{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
-.era-head .era-roman{font-family:var(--mono);font-size:.75rem;letter-spacing:.28em;color:rgba(244,241,234,.45);font-weight:500}
-.era-head h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(1.85rem,4.5vw,2.75rem);letter-spacing:.12em;text-transform:uppercase;color:#f4f1ea;line-height:1.1}
-.era-head .era-sub{margin:0;font-size:.95rem;color:rgba(244,241,234,.45);max-width:42ch;line-height:1.45}
-.era-actions{display:flex;flex-wrap:wrap;gap:.6rem .85rem;margin-top:.35rem}
-.era-actions button,.era-link{border:1px solid rgba(244,241,234,.18);background:transparent;border-radius:999px;padding:.45rem 1rem;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,241,234,.65);font-family:var(--sans)}
-.era-actions button:hover,.era-link:hover{color:#fff;border-color:rgba(244,241,234,.4)}
-.branch-cols{column-width:15.5rem;column-gap:2.75rem;margin:0}
-.branch-cols button{break-inside:avoid;display:block;width:100%;text-align:left;border:0;border-bottom:1px solid rgba(255,255,255,.07);background:transparent;color:rgba(244,241,234,.88);font-family:Fraunces,Georgia,serif;font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;letter-spacing:.01em;padding:.7rem .15rem .75rem;cursor:pointer;line-height:1.25}
-.branch-cols button:hover,.branch-cols button:focus-visible{color:#fff;border-bottom-color:rgba(255,255,255,.28)}
-.branch-cols button .bid{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:rgba(244,241,234,.35);font-weight:500;margin-right:.65rem;vertical-align:middle}
-.branch-cols button.dim{color:rgba(244,241,234,.32);cursor:default;border-bottom-color:rgba(255,255,255,.04)}
-.branch-cols button.dim:hover{color:rgba(244,241,234,.38);border-bottom-color:rgba(255,255,255,.04)}
-.branch-cols.preview button{pointer-events:none;color:rgba(244,241,234,.28);border-bottom-color:rgba(255,255,255,.04);cursor:default}
-.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.55);border:1px solid rgba(244,241,234,.2);border-radius:999px;padding:.35rem .75rem;margin-top:.15rem}
-.uc-msg{margin:.4rem 0 0;font-size:1.05rem;color:rgba(244,241,234,.62);max-width:36ch;line-height:1.5;font-family:Fraunces,Georgia,serif;font-weight:500}
+/* era-nav chrome — light soft-minimalist (branch list, skills, tree, UC) */
+body.era-nav{
+  padding:0;overflow:auto;
+  background:var(--bg);color:var(--ink);
+  /* force light palette on nav screens even in OS dark mode */
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#15171C; --muted:#646A75; --faint:#9AA0AA; --rule:#E2E5EA;
+  --key:#EEF0F3; --keyp:#E2E5EA; --paper:#FBFBF8; --paper-rule:#ECEDE7; --qpaper:#FFFFFF;
+  --acc:oklch(0.52 0.13 150); --acc-soft:oklch(0.95 0.04 150); --on-acc:#FFFFFF;
+  --bad:oklch(0.55 0.16 25); --bad-soft:oklch(0.95 0.03 25);
+  --thirst:oklch(0.66 0.13 80); --thirst-soft:oklch(0.95 0.05 85);
+  --wilt:oklch(0.55 0.07 55); --bark:oklch(0.48 0.05 60);
+}
+body.era-nav .app{max-width:720px;margin:0 auto;min-height:100dvh;min-height:100vh;padding-inline:clamp(1rem,3.5vw,1.75rem);padding-block:0 3rem;box-sizing:border-box}
+body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1rem 0 .65rem;width:100%;box-sizing:border-box;
+  background:linear-gradient(180deg,var(--bg) 70%,transparent 100%)}
+body.era-nav .brand{color:var(--ink);letter-spacing:-.02em;text-transform:none;font-size:18px;font-weight:700}
+body.era-nav .brand span{display:inline;font-family:var(--mono);font-weight:400;font-size:11px;color:var(--faint);margin-left:6px;letter-spacing:0;text-transform:none}
+body.era-nav .tabs{display:flex}
+body.era-nav #v-branches,body.era-nav #v-uc,body.era-nav #v-skills,body.era-nav #v-tree{gap:0;padding:0}
+/* UC keeps light theme but can hide main tabs (era not ready) — still show for consistency */
+.nav-screen{display:flex;flex-direction:column;gap:1.35rem;padding-top:.35rem;padding-bottom:2rem}
+.nav-bar{display:flex;flex-wrap:wrap;gap:.5rem .65rem;align-items:center}
+.nav-bar button,.nav-pill-btn{
+  border:1px solid var(--rule);background:var(--surface);border-radius:999px;
+  padding:.42rem .95rem;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);font-family:var(--sans);font-weight:500}
+.nav-bar button:hover,.nav-pill-btn:hover{color:var(--ink);border-color:#C8CDD6}
+.nav-bar button.tree-btn{border-color:var(--acc);color:var(--ink);background:var(--acc-soft);letter-spacing:.12em;font-weight:600}
+.nav-head{display:flex;flex-direction:column;align-items:flex-start;gap:.4rem;padding-bottom:.35rem;border-bottom:1px solid var(--rule)}
+.nav-head .era-roman{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--faint);font-weight:500;text-transform:uppercase}
+.nav-head h1{margin:0;font-family:var(--sans);font-weight:600;font-size:clamp(1.45rem,3.8vw,1.85rem);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.15}
+.nav-head .era-sub{margin:0;font-size:.9rem;color:var(--muted);max-width:44ch;line-height:1.45}
+.branch-list{display:flex;flex-direction:column;margin:0}
+.branch-list button{
+  display:flex;align-items:baseline;gap:.75rem;width:100%;text-align:left;
+  border:0;border-bottom:1px solid var(--rule);background:transparent;color:var(--ink);
+  font-family:var(--sans);font-size:1.05rem;font-weight:500;padding:.85rem .1rem;cursor:pointer;line-height:1.3}
+.branch-list button:hover,.branch-list button:focus-visible{background:var(--surface)}
+.branch-list button .bid{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--faint);font-weight:500;min-width:3.2rem;flex:none}
+.branch-list button.dim{color:var(--faint);cursor:default}
+.branch-list button.dim:hover{background:transparent}
+.branch-list.preview button{pointer-events:none;color:var(--faint);cursor:default}
+.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:.35rem .75rem;margin-top:.1rem;background:var(--surface)}
+.uc-msg{margin:.35rem 0 0;font-size:1rem;color:var(--muted);max-width:40ch;line-height:1.5;font-weight:400}
+
+/* skills screen (mock: soft pills + skill rows) */
+.sk-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.sk-head h2{margin:0;font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sk-head span{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.sk-pills{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:thin}
+.sk-pills button{flex:none;border:1.5px solid var(--rule);background:transparent;border-radius:999px;padding:5px 12px;font-size:13px;font-family:var(--mono);color:var(--muted)}
+.sk-pills button[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft);color:var(--ink)}
+.sk-rows{display:flex;flex-direction:column}
+.sk-rows .r{display:grid;grid-template-columns:22px auto 1fr auto;gap:10px;align-items:center;padding:11px 4px;border:0;border-bottom:1px solid var(--rule);font-size:15px;background:transparent;text-align:left;width:100%;color:var(--ink)}
+.sk-rows .r:hover{background:var(--surface)}
+.sk-rows .r .id{font-family:var(--mono);font-size:12px;color:var(--faint);min-width:2.6em}
+.sk-rows .r .nm{font-weight:500;color:var(--ink)}
+.sk-rows .chip{font-family:var(--mono);font-size:11px;padding:3px 10px;border-radius:999px;border:1px solid var(--rule);white-space:nowrap;color:var(--faint);background:transparent}
+.tree-screen .tree{margin-top:.25rem}
+.tree-screen .continue{margin-top:.5rem}
+.tree-screen .where{margin:0}
 
 </style>
 
@@ -363,7 +398,8 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
   <div class="top">
     <button type="button" class="brand" id="brandBtn" title="Mathera homepage">Mathera<span>v0.5 beta</span></button>
     <nav class="tabs" aria-label="Main" id="tabs">
-      <button data-v="home" aria-current="page">Tree</button>
+      <button data-v="skills">Skills</button>
+      <button data-v="tree">Tree</button>
       <button data-v="id">ID card</button>
       <button data-v="rules">House Rules</button>
     </nav>
@@ -380,33 +416,70 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
 
   <!-- BRANCH LIST (primary era nav) -->
   <section class="view" id="v-branches" hidden>
-    <div class="era-screen">
-      <div class="era-head">
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="brLandBtn">← Land</button>
+      </div>
+      <div class="nav-head">
         <div class="era-roman" id="brRoman"></div>
         <h1 id="brTitle"></h1>
         <p class="era-sub" id="brSub">Choose a branch to begin.</p>
-        <div class="era-actions">
-          <button type="button" id="brTreeBtn">View tree</button>
-          <button type="button" id="brLandBtn">← Land</button>
-        </div>
       </div>
-      <div class="branch-cols" id="brCols" role="list"></div>
+      <div class="branch-list" id="brCols" role="list"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS (mock aesthetic) -->
+  <section class="view" id="v-skills" hidden>
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="skBranchesBtn">← Branches</button>
+        <button type="button" id="skLandBtn">Land</button>
+      </div>
+      <div class="sk-head">
+        <h2 id="skTitle"></h2>
+        <span id="skCount"></span>
+      </div>
+      <div class="sk-pills" id="skPills" role="group" aria-label="Branches"></div>
+      <div class="sk-rows" id="skList"></div>
+      <div class="sec-h"><h2>Inventions</h2><span id="skInvCount"></span></div>
+      <div class="shelf" id="skShelf"></div>
+    </div>
+  </section>
+
+  <!-- TREE (separate full-screen) -->
+  <section class="view" id="v-tree" hidden>
+    <div class="nav-screen tree-screen">
+      <div class="nav-bar">
+        <button type="button" id="trLandBtn">← Land</button>
+        <button type="button" id="trBranchesBtn">Branches</button>
+      </div>
+      <div class="where" id="trEra"></div>
+      <div class="tree">
+        <svg id="navTreeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: one branch per unit, one leaf per skill"></svg>
+        <div class="cap">tap a branch to open its skills</div>
+      </div>
+      <div class="legend" id="trLegend"></div>
+      <div class="continue">
+        <button class="big" id="trContBtn">Continue</button>
+        <div class="nextline" id="trNextLine"></div>
+      </div>
     </div>
   </section>
 
   <!-- UNDER CONSTRUCTION (Eras VI–VII) -->
   <section class="view" id="v-uc" hidden>
-    <div class="era-screen">
-      <div class="era-head">
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="ucLandBtn">← Back to the land</button>
+      </div>
+      <div class="nav-head">
         <div class="era-roman" id="ucRoman"></div>
         <h1 id="ucTitle"></h1>
         <span class="uc-badge">Under construction</span>
         <p class="uc-msg" id="ucMsg">This era is on the way. A quiet garden for now — check back in Mathera 2.0.</p>
-        <div class="era-actions">
-          <button type="button" id="ucLandBtn">← Back to the land</button>
-        </div>
       </div>
-      <div class="branch-cols preview" id="ucCols" role="list" aria-hidden="true"></div>
+      <div class="branch-list preview" id="ucCols" role="list" aria-hidden="true"></div>
     </div>
   </section>
 
@@ -424,27 +497,28 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
   </section>
 
   <!-- HOME -->
+  <!-- Legacy home kept for DOM hooks (treeSvg/upick); practice nav uses v-skills + v-tree -->
   <section class="view" id="v-home" hidden>
-    <div class="hero"><div class="who" id="whoLine"></div><div class="vs" id="vsLine"></div></div>
-    <div class="eras" id="eraTabs" role="group" aria-label="Era"></div>
-    <div class="where"><span id="homeCount"></span></div>
-    <div class="tree">
+    <div class="hero" hidden><div class="who" id="whoLine"></div><div class="vs" id="vsLine"></div></div>
+    <div class="eras" id="eraTabs" role="group" aria-label="Era" hidden></div>
+    <div class="where" hidden><span id="homeCount"></span></div>
+    <div class="tree" hidden>
       <svg id="treeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: one branch per unit, one leaf per skill"></svg>
       <div class="cap">tap a branch to see its skills</div>
     </div>
-    <div class="legend" id="legend"></div>
-    <div class="continue">
+    <div class="legend" id="legend" hidden></div>
+    <div class="continue" hidden>
       <button class="big" id="contBtn">Continue</button>
       <div class="nextline" id="nextLine"></div>
     </div>
-    <div class="unitpanel">
+    <div class="unitpanel" hidden>
       <div class="sec-h"><h2 id="upTitle"></h2><span id="upCount"></span></div>
       <div class="upick" id="upick" role="group" aria-label="Units"></div>
       <div class="skl" id="upList"></div>
     </div>
-    <div class="sec-h"><h2>Inventions</h2><span id="invCount"></span></div>
-    <div class="shelf" id="shelf"></div>
-    <div class="saved" id="savedHome"></div>
+    <div class="sec-h" hidden><h2>Inventions</h2><span id="invCount"></span></div>
+    <div class="shelf" id="shelf" hidden></div>
+    <div class="saved" id="savedHome" hidden></div>
   </section>
 
   <!-- ALARM -->
@@ -461,7 +535,7 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
 
   <!-- PRACTICE -->
   <section class="view" id="v-practice" hidden>
-    <div class="pbar"><button class="back" id="backBtn">← Tree</button><div class="sk" id="pSkill"></div></div>
+    <div class="pbar"><button class="back" id="backBtn">← Skills</button><div class="sk" id="pSkill"></div></div>
     <div class="ivbar" id="ivbar" hidden></div>
     <div class="savedcard" id="savedCard" hidden></div>
     <p class="story" id="story" hidden></p>

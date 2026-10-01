@@ -231,26 +231,54 @@ function teleSave() {
 /* ================= views ================= */
 let view = 'land';
 let navEra = 'II';
-const VIEWS = ['loading', 'land', 'branches', 'uc', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
-const ERA_NAV_VIEWS = new Set(['branches', 'uc']);
+const VIEWS = ['loading', 'land', 'branches', 'skills', 'tree', 'uc', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+const ERA_NAV_VIEWS = new Set(['branches', 'skills', 'tree', 'uc']);
 let toastT = 0;
+let treeBack = 'skills'; // where Tree's local back / leave goes
 function toast(msg) {
   const el = $('toast'); if (!el) return;
   el.textContent = msg; el.classList.add('show');
   clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2200);
 }
+function tabFor(v) {
+  if (v === 'skills' || v === 'branches') return 'skills';
+  if (v === 'tree') return 'tree';
+  if (v === 'practice' || v === 'alarm') return 'skills';
+  if (v === 'home') return 'skills';
+  return v;
+}
 function show(v) {
+  // legacy home chrome → skills flow
+  if (v === 'home') v = META.placed[era] ? 'skills' : 'welcome';
   view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
   document.body.classList.toggle('land', v === 'land');
   document.body.classList.toggle('era-nav', ERA_NAV_VIEWS.has(v));
-  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === v || ((v === 'practice' || v === 'alarm') && b.dataset.v === 'home') ? 'page' : 'false'));
+  const curTab = tabFor(v);
+  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === curTab ? 'page' : 'false'));
   if (v === 'land') renderLand();
   if (v === 'branches') renderBranches();
+  if (v === 'skills') renderSkills();
+  if (v === 'tree') renderTreeView();
   if (v === 'uc') renderUc();
-  if (v === 'home') renderHome(); if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
+  if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
   window.scrollTo(0, 0);
 }
-$('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (view === 'practice') leavePractice(); show(!META.placed[era] && b.dataset.v === 'home' ? 'welcome' : b.dataset.v); });
+function goSkillsTab() {
+  const k = navEra || era;
+  if (eraSoon(k)) { show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  if (!META.placed[k]) { show('branches'); return; }
+  if (!selUnit || !UNITS.some(([u]) => u === selUnit)) selUnit = META.start[k] || (UNITS[0] && UNITS[0][0]);
+  show('skills');
+}
+$('tabs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (view === 'practice') leavePractice();
+  const v = b.dataset.v;
+  if (v === 'skills') { goSkillsTab(); return; }
+  if (v === 'tree') { openTree(); return; }
+  show(v);
+});
 $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
 
 /* ---- land homepage ---- */
@@ -301,19 +329,20 @@ function openBranch(u) {
   const ready = UNITS.some(([id]) => id === u);
   if (!ready) { toast('This branch is still being planted — check back soon.'); return; }
   if (!META.placed[k]) placeAt(u);
-  else { selUnit = u; show('home'); }
+  else { selUnit = u; show('skills'); }
 }
 function openTree() {
   const k = navEra || era;
   if (eraSoon(k)) { show('uc'); return; }
   if (k !== era) { setEra(k); S = MM.session(); save(); }
-  show(META.placed[k] ? 'home' : 'welcome');
+  if (!META.placed[k]) { show('welcome'); return; }
+  treeBack = (view === 'branches' || view === 'skills' || view === 'tree') ? view : 'skills';
+  show('tree');
 }
 $('brCols').addEventListener('click', e => {
   const b = e.target.closest('button[data-u]'); if (!b || b.classList.contains('dim')) return;
   openBranch(b.dataset.u);
 });
-$('brTreeBtn').addEventListener('click', openTree);
 $('brLandBtn').addEventListener('click', () => show('land'));
 
 /* ---- under construction (VI–VII) ---- */
@@ -340,7 +369,7 @@ function renderEraTabs(el) {
 function switchEra(k) {
   if (eraSoon(k)) { navEra = k; show('uc'); return; }
   if (k === era) return;
-  setEra(k); navEra = k; S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
+  setEra(k); navEra = k; S = MM.session(); save(); show(META.placed[k] ? 'skills' : 'welcome');
 }
 ['eraTabs', 'welTabs'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button[data-era]'); if (b) switchEra(b.dataset.era); }));
 
@@ -359,7 +388,7 @@ function placeAt(u) {
     if (worked) return; if (i < cut) s.inf = 1; else delete s.inf; });
   META.start[era] = u; META.placed[era] = true; selUnit = u;
   UNITS.forEach(([x]) => markDirty(x));
-  show('home');
+  show('skills');
 }
 $('ulist').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) placeAt(b.dataset.u); });
 $('welTreeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) placeAt(b.dataset.u); });
@@ -429,8 +458,15 @@ function renderTree(svgId) {
 $('treeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) selectUnit(b.dataset.u, true); });
 $('treeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selectUnit(b.dataset.u, true); } });
 let selUnit = 'II.1';
-function selectUnit(u, scroll) { selUnit = u; renderTree(); renderUnitPanel(); if (scroll) $('upTitle').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+function selectUnit(u, scroll) {
+  selUnit = u;
+  if (view === 'tree') { show('skills'); return; }
+  if (view === 'skills') { renderSkills(); return; }
+  renderTree(); renderUnitPanel();
+  if (scroll && $('upTitle')) $('upTitle').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 function renderUnitPanel() {
+  if (!$('upTitle')) return;
   const t = now(), sks = unitSkills(selUnit);
   $('upTitle').textContent = `${selUnit} · ${UNAME[selUnit]}`;
   $('upCount').textContent = `${sks.filter(k => MM.proven(P, k.id)).length} of ${sks.length} proven`;
@@ -440,8 +476,8 @@ function renderUnitPanel() {
     const dot = st === 'inferred' ? `border:1.5px dashed var(--acc)` : st === 'seed' ? 'background:var(--rule)' : `background:color-mix(in oklch, ${STATE_COL[st]} ${st === 'growing' ? 35 : 80}%, transparent)`;
     return `<button class="r" data-sk="${sk.id}"><i class="dot" style="${dot}"></i><span><span class="id">${sk.id.split('.').slice(1).join('.')}</span>${esc(sk.name)}</span><span class="chip st-${st}">${STATE_WORD[st]}${st === 'growing' || st === 'planted' ? ' · ' + MM.curStep(P, sk.id) : ''}${(b => b.f ? ' ★★' : b.e ? ' ★' : '')(MM.braveEarned(P, sk.id))}</span></button>`; }).join('');
 }
-$('upick').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) selectUnit(b.dataset.u); });
-$('upList').addEventListener('click', e => { const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk); });
+if ($('upick')) $('upick').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) selectUnit(b.dataset.u); });
+if ($('upList')) $('upList').addEventListener('click', e => { const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk); });
 
 const hasInv = inv => { const Px = PS[eraOf(inv.u)]; const sks = unitSkills(inv.u); return sks.filter(k => MM.proven(Px, k.id)).length >= Math.ceil(sks.length / 2); };
 function shelfHTML() { return eraInv().map(inv => { const has = hasInv(inv); return `<div class="inv ${has ? '' : 'locked'}" title="${esc(inv.what)}">${icon(inv.id)}<b>${has ? esc(inv.name) : '???'}</b><small>${has ? esc(inv.what) : 'Prove half of ' + inv.u}</small></div>`; }).join(''); }
@@ -451,6 +487,65 @@ function fmtDur(ms) {
   if (d < 6.5) return `${Math.round(d)} day${Math.round(d) > 1 ? 's' : ''}`; if (d < 26) return `${Math.round(d / 7)} week${Math.round(d / 7) > 1 ? 's' : ''}`;
   if (d < 330) return `${Math.round(d / 30)} month${Math.round(d / 30) > 1 ? 's' : ''}`; return 'a year';
 }
+
+/* ---- skills screen (mock) ---- */
+function skillIndexLabel(id) {
+  // II.4.01 → 4.01 ; fall back to last two segments
+  const parts = id.split('.');
+  return parts.length >= 3 ? parts.slice(1).join('.') : parts.slice(-2).join('.');
+}
+function renderSkills() {
+  const t = now(); MM.tick(P, t);
+  if (!selUnit || !UNITS.some(([u]) => u === selUnit)) selUnit = META.start[era] || (UNITS[0] && UNITS[0][0]);
+  const sks = unitSkills(selUnit);
+  const name = (UNAME[selUnit] || '').toUpperCase();
+  $('skTitle').textContent = `${selUnit} · ${name}`;
+  $('skCount').textContent = `${sks.filter(k => MM.proven(P, k.id)).length} of ${sks.length} proven`;
+  $('skPills').innerHTML = UNITS.map(([u]) => `<button type="button" data-u="${u}" aria-pressed="${u === selUnit}">${u}</button>`).join('');
+  const sb = $('skPills').querySelector('[aria-pressed="true"]');
+  if (sb) $('skPills').scrollLeft = sb.offsetLeft - $('skPills').offsetLeft - 40;
+  $('skList').innerHTML = sks.map(sk => {
+    const st = MM.state(P, sk.id, t);
+    const dot = st === 'inferred' ? `border:1.5px dashed var(--acc);background:transparent` : st === 'seed' ? 'background:var(--rule)' : `background:color-mix(in oklch, ${STATE_COL[st]} ${st === 'growing' ? 35 : 80}%, transparent)`;
+    const chip = STATE_WORD[st] + (st === 'growing' || st === 'planted' ? ' · ' + MM.curStep(P, sk.id) : '') + ((b => b.f ? ' ★★' : b.e ? ' ★' : '')(MM.braveEarned(P, sk.id)));
+    return `<button type="button" class="r" data-sk="${sk.id}"><i class="dot" style="${dot}"></i><span class="id">${skillIndexLabel(sk.id)}</span><span class="nm">${esc(sk.name)}</span><span class="chip st-${st}">${chip}</span></button>`;
+  }).join('');
+  $('skShelf').innerHTML = shelfHTML();
+  $('skInvCount').textContent = `${eraInv().filter(hasInv).length} of ${eraInv().length}`;
+}
+$('skPills').addEventListener('click', e => {
+  const b = e.target.closest('button[data-u]'); if (!b) return;
+  selUnit = b.dataset.u; renderSkills();
+});
+$('skList').addEventListener('click', e => {
+  const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk);
+});
+$('skBranchesBtn').addEventListener('click', () => show('branches'));
+$('skLandBtn').addEventListener('click', () => show('land'));
+
+/* ---- separate tree view ---- */
+function renderTreeView() {
+  const t = now(); MM.tick(P, t);
+  $('trEra').textContent = `${eraLabel(era)} · ${MM.counts(P, t).proven + MM.counts(P, t).thirsty} of ${ORDER.length} proven`;
+  renderTree('navTreeSvg');
+  const c = MM.counts(P, t);
+  $('trLegend').innerHTML = [['seed', 'var(--faint)'], ['growing', 'color-mix(in oklch,var(--acc) 35%,transparent)'], ['proven', 'var(--acc)'], ['thirsty', 'var(--thirst)'], ['withered', 'var(--wilt)']].map(([k, col]) => `<span><i style="background:${col}"></i>${k}${c[k] ? ' ' + c[k] : ''}</span>`).join('') + `<span><i style="border:1.5px dashed var(--acc)"></i>inferred${c.inferred ? ' ' + c.inferred : ''}</span>`;
+  const w = MM.withered(P).length, th = c.thirsty;
+  $('trContBtn').classList.toggle('alarm', w > 0);
+  $('trContBtn').textContent = w ? 'Continue · garden alert' : 'Continue';
+  let line;
+  if (w) line = `${w > 1 ? w + ' leaves' : '1 leaf'} withered. Continue starts an Intervention.`;
+  else if (th) line = `${th > 1 ? th + ' leaves are' : '1 leaf is'} thirsty and will come up for watering.`;
+  else { const q = MM.next(P, MM.session(), t); const sk = q && BY[q.id]; line = sk ? `Next up: ${sk.name}, step ${q.step}` : 'Pick a branch to begin.';
+    const dues = ORDER.map(id => (P.skills[id] || {}).due).filter(Boolean); if (sk && dues.length) line += ` · next watering in ${fmtDur(Math.min(...dues) - t)}`; }
+  $('trNextLine').textContent = line;
+}
+$('navTreeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) { selUnit = b.dataset.u; show('skills'); } });
+$('navTreeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selUnit = b.dataset.u; show('skills'); } });
+$('trLandBtn').addEventListener('click', () => show('land'));
+$('trBranchesBtn').addEventListener('click', () => show('branches'));
+$('trContBtn').addEventListener('click', startContinue);
+
 function renderHome() {
   const t = now(); MM.tick(P, t);
   $('whoLine').innerHTML = `<b>${esc(hero())}</b>`;
@@ -704,11 +799,11 @@ function openAlarm() {
   show('alarm'); const c = $('alarmCard'); c.classList.remove('go-shake'); void c.offsetWidth; c.classList.add('go-shake'); sfx('alarm');
 }
 $('alarmGo').addEventListener('click', () => { MM.startIntervention(P, S, now()); enterPractice(); });
-$('alarmLater').addEventListener('click', () => show('home'));
-$('contBtn').addEventListener('click', startContinue);
+$('alarmLater').addEventListener('click', () => show('skills'));
+if ($('contBtn')) $('contBtn').addEventListener('click', startContinue);
 function enterPractice() { show('practice'); $('savedCard').hidden = true; syncFocus(); newQ(); }
 function leavePractice() { closeCalc(); clearTimeout(flashT); stopFocus(); }
-$('backBtn').addEventListener('click', () => { leavePractice(); show('home'); });
+$('backBtn').addEventListener('click', () => { leavePractice(); show('skills'); });
 
 const STEP_IDX = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 };
 function modeLabel(m) { return { learn: 'new', review: 'watering', confirm: 'quick check', iv: 'intervention', practice: 'practice', brave: 'master quest' }[m]; }
@@ -1009,8 +1104,11 @@ async function boot() {
     save(); flush();
     selUnit = META.start[era] || selUnit;
     if (view === 'land' || view === 'branches' || view === 'uc') { /* stay on era-nav screens */ }
-    else if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
+    else if (view === 'welcome' && META.placed[era]) show('skills');
+    else if (view === 'skills') renderSkills(); else if (view === 'tree') renderTreeView();
+    else if (view === 'branches') renderBranches(); else if (view === 'home') renderHome();
+    else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, BRANCHES };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
 })();

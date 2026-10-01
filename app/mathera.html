@@ -330,32 +330,67 @@ body.land #v-land{gap:0}
 .panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(.85rem,1.5vw,1.2rem);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,241,234,.95);text-shadow:0 1px 10px rgba(0,0,0,.7)}
 .panel:hover .panel-name,.panel:focus-visible .panel-name{color:#fff}
 
-/* era-nav chrome (branches + under-construction share land tone) */
-body.era-nav{padding:0;background:#0a0e17;color:#f4f1ea;overflow:auto}
-body.era-nav .app{max-width:none;margin:0;min-height:100dvh;min-height:100vh}
-body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1.1rem 1.35rem;width:100%;box-sizing:border-box;
-  background:linear-gradient(180deg,rgba(5,7,12,.92) 0%,rgba(5,7,12,.55) 70%,transparent 100%)}
-body.era-nav .brand{color:rgba(244,241,234,.55);letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem}
-body.era-nav .brand span{display:none}
-body.era-nav .tabs{display:none}
-body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
-.era-screen{min-height:100dvh;min-height:100vh;padding:4.5rem clamp(1.25rem,4vw,3rem) 3.5rem;max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:2rem;box-sizing:border-box}
-.era-head{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem}
-.era-head .era-roman{font-family:var(--mono);font-size:.75rem;letter-spacing:.28em;color:rgba(244,241,234,.45);font-weight:500}
-.era-head h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(1.85rem,4.5vw,2.75rem);letter-spacing:.12em;text-transform:uppercase;color:#f4f1ea;line-height:1.1}
-.era-head .era-sub{margin:0;font-size:.95rem;color:rgba(244,241,234,.45);max-width:42ch;line-height:1.45}
-.era-actions{display:flex;flex-wrap:wrap;gap:.6rem .85rem;margin-top:.35rem}
-.era-actions button,.era-link{border:1px solid rgba(244,241,234,.18);background:transparent;border-radius:999px;padding:.45rem 1rem;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,241,234,.65);font-family:var(--sans)}
-.era-actions button:hover,.era-link:hover{color:#fff;border-color:rgba(244,241,234,.4)}
-.branch-cols{column-width:15.5rem;column-gap:2.75rem;margin:0}
-.branch-cols button{break-inside:avoid;display:block;width:100%;text-align:left;border:0;border-bottom:1px solid rgba(255,255,255,.07);background:transparent;color:rgba(244,241,234,.88);font-family:Fraunces,Georgia,serif;font-size:clamp(1.05rem,1.7vw,1.28rem);font-weight:500;letter-spacing:.01em;padding:.7rem .15rem .75rem;cursor:pointer;line-height:1.25}
-.branch-cols button:hover,.branch-cols button:focus-visible{color:#fff;border-bottom-color:rgba(255,255,255,.28)}
-.branch-cols button .bid{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;color:rgba(244,241,234,.35);font-weight:500;margin-right:.65rem;vertical-align:middle}
-.branch-cols button.dim{color:rgba(244,241,234,.32);cursor:default;border-bottom-color:rgba(255,255,255,.04)}
-.branch-cols button.dim:hover{color:rgba(244,241,234,.38);border-bottom-color:rgba(255,255,255,.04)}
-.branch-cols.preview button{pointer-events:none;color:rgba(244,241,234,.28);border-bottom-color:rgba(255,255,255,.04);cursor:default}
-.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(244,241,234,.55);border:1px solid rgba(244,241,234,.2);border-radius:999px;padding:.35rem .75rem;margin-top:.15rem}
-.uc-msg{margin:.4rem 0 0;font-size:1.05rem;color:rgba(244,241,234,.62);max-width:36ch;line-height:1.5;font-family:Fraunces,Georgia,serif;font-weight:500}
+/* era-nav chrome — light soft-minimalist (branch list, skills, tree, UC) */
+body.era-nav{
+  padding:0;overflow:auto;
+  background:var(--bg);color:var(--ink);
+  /* force light palette on nav screens even in OS dark mode */
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#15171C; --muted:#646A75; --faint:#9AA0AA; --rule:#E2E5EA;
+  --key:#EEF0F3; --keyp:#E2E5EA; --paper:#FBFBF8; --paper-rule:#ECEDE7; --qpaper:#FFFFFF;
+  --acc:oklch(0.52 0.13 150); --acc-soft:oklch(0.95 0.04 150); --on-acc:#FFFFFF;
+  --bad:oklch(0.55 0.16 25); --bad-soft:oklch(0.95 0.03 25);
+  --thirst:oklch(0.66 0.13 80); --thirst-soft:oklch(0.95 0.05 85);
+  --wilt:oklch(0.55 0.07 55); --bark:oklch(0.48 0.05 60);
+}
+body.era-nav .app{max-width:720px;margin:0 auto;min-height:100dvh;min-height:100vh;padding-inline:clamp(1rem,3.5vw,1.75rem);padding-block:0 3rem;box-sizing:border-box}
+body.era-nav .top{position:sticky;top:0;z-index:6;margin:0;padding:1rem 0 .65rem;width:100%;box-sizing:border-box;
+  background:linear-gradient(180deg,var(--bg) 70%,transparent 100%)}
+body.era-nav .brand{color:var(--ink);letter-spacing:-.02em;text-transform:none;font-size:18px;font-weight:700}
+body.era-nav .brand span{display:inline;font-family:var(--mono);font-weight:400;font-size:11px;color:var(--faint);margin-left:6px;letter-spacing:0;text-transform:none}
+body.era-nav .tabs{display:flex}
+body.era-nav #v-branches,body.era-nav #v-uc,body.era-nav #v-skills,body.era-nav #v-tree{gap:0;padding:0}
+/* UC keeps light theme but can hide main tabs (era not ready) — still show for consistency */
+.nav-screen{display:flex;flex-direction:column;gap:1.35rem;padding-top:.35rem;padding-bottom:2rem}
+.nav-bar{display:flex;flex-wrap:wrap;gap:.5rem .65rem;align-items:center}
+.nav-bar button,.nav-pill-btn{
+  border:1px solid var(--rule);background:var(--surface);border-radius:999px;
+  padding:.42rem .95rem;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);font-family:var(--sans);font-weight:500}
+.nav-bar button:hover,.nav-pill-btn:hover{color:var(--ink);border-color:#C8CDD6}
+.nav-bar button.tree-btn{border-color:var(--acc);color:var(--ink);background:var(--acc-soft);letter-spacing:.12em;font-weight:600}
+.nav-head{display:flex;flex-direction:column;align-items:flex-start;gap:.4rem;padding-bottom:.35rem;border-bottom:1px solid var(--rule)}
+.nav-head .era-roman{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;color:var(--faint);font-weight:500;text-transform:uppercase}
+.nav-head h1{margin:0;font-family:var(--sans);font-weight:600;font-size:clamp(1.45rem,3.8vw,1.85rem);letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.15}
+.nav-head .era-sub{margin:0;font-size:.9rem;color:var(--muted);max-width:44ch;line-height:1.45}
+.branch-list{display:flex;flex-direction:column;margin:0}
+.branch-list button{
+  display:flex;align-items:baseline;gap:.75rem;width:100%;text-align:left;
+  border:0;border-bottom:1px solid var(--rule);background:transparent;color:var(--ink);
+  font-family:var(--sans);font-size:1.05rem;font-weight:500;padding:.85rem .1rem;cursor:pointer;line-height:1.3}
+.branch-list button:hover,.branch-list button:focus-visible{background:var(--surface)}
+.branch-list button .bid{font-family:var(--mono);font-size:.72rem;letter-spacing:.1em;color:var(--faint);font-weight:500;min-width:3.2rem;flex:none}
+.branch-list button.dim{color:var(--faint);cursor:default}
+.branch-list button.dim:hover{background:transparent}
+.branch-list.preview button{pointer-events:none;color:var(--faint);cursor:default}
+.uc-badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:.35rem .75rem;margin-top:.1rem;background:var(--surface)}
+.uc-msg{margin:.35rem 0 0;font-size:1rem;color:var(--muted);max-width:40ch;line-height:1.5;font-weight:400}
+
+/* skills screen (mock: soft pills + skill rows) */
+.sk-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.sk-head h2{margin:0;font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sk-head span{font-family:var(--mono);font-size:12px;color:var(--faint)}
+.sk-pills{display:flex;gap:6px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:thin}
+.sk-pills button{flex:none;border:1.5px solid var(--rule);background:transparent;border-radius:999px;padding:5px 12px;font-size:13px;font-family:var(--mono);color:var(--muted)}
+.sk-pills button[aria-pressed="true"]{border-color:var(--acc);background:var(--acc-soft);color:var(--ink)}
+.sk-rows{display:flex;flex-direction:column}
+.sk-rows .r{display:grid;grid-template-columns:22px auto 1fr auto;gap:10px;align-items:center;padding:11px 4px;border:0;border-bottom:1px solid var(--rule);font-size:15px;background:transparent;text-align:left;width:100%;color:var(--ink)}
+.sk-rows .r:hover{background:var(--surface)}
+.sk-rows .r .id{font-family:var(--mono);font-size:12px;color:var(--faint);min-width:2.6em}
+.sk-rows .r .nm{font-weight:500;color:var(--ink)}
+.sk-rows .chip{font-family:var(--mono);font-size:11px;padding:3px 10px;border-radius:999px;border:1px solid var(--rule);white-space:nowrap;color:var(--faint);background:transparent}
+.tree-screen .tree{margin-top:.25rem}
+.tree-screen .continue{margin-top:.5rem}
+.tree-screen .where{margin:0}
 
 </style>
 
@@ -363,7 +398,8 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
   <div class="top">
     <button type="button" class="brand" id="brandBtn" title="Mathera homepage">Mathera<span>v0.5 beta</span></button>
     <nav class="tabs" aria-label="Main" id="tabs">
-      <button data-v="home" aria-current="page">Tree</button>
+      <button data-v="skills">Skills</button>
+      <button data-v="tree">Tree</button>
       <button data-v="id">ID card</button>
       <button data-v="rules">House Rules</button>
     </nav>
@@ -380,33 +416,70 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
 
   <!-- BRANCH LIST (primary era nav) -->
   <section class="view" id="v-branches" hidden>
-    <div class="era-screen">
-      <div class="era-head">
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="brLandBtn">← Land</button>
+      </div>
+      <div class="nav-head">
         <div class="era-roman" id="brRoman"></div>
         <h1 id="brTitle"></h1>
         <p class="era-sub" id="brSub">Choose a branch to begin.</p>
-        <div class="era-actions">
-          <button type="button" id="brTreeBtn">View tree</button>
-          <button type="button" id="brLandBtn">← Land</button>
-        </div>
       </div>
-      <div class="branch-cols" id="brCols" role="list"></div>
+      <div class="branch-list" id="brCols" role="list"></div>
+    </div>
+  </section>
+
+  <!-- SKILLS (mock aesthetic) -->
+  <section class="view" id="v-skills" hidden>
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="skBranchesBtn">← Branches</button>
+        <button type="button" id="skLandBtn">Land</button>
+      </div>
+      <div class="sk-head">
+        <h2 id="skTitle"></h2>
+        <span id="skCount"></span>
+      </div>
+      <div class="sk-pills" id="skPills" role="group" aria-label="Branches"></div>
+      <div class="sk-rows" id="skList"></div>
+      <div class="sec-h"><h2>Inventions</h2><span id="skInvCount"></span></div>
+      <div class="shelf" id="skShelf"></div>
+    </div>
+  </section>
+
+  <!-- TREE (separate full-screen) -->
+  <section class="view" id="v-tree" hidden>
+    <div class="nav-screen tree-screen">
+      <div class="nav-bar">
+        <button type="button" id="trLandBtn">← Land</button>
+        <button type="button" id="trBranchesBtn">Branches</button>
+      </div>
+      <div class="where" id="trEra"></div>
+      <div class="tree">
+        <svg id="navTreeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: one branch per unit, one leaf per skill"></svg>
+        <div class="cap">tap a branch to open its skills</div>
+      </div>
+      <div class="legend" id="trLegend"></div>
+      <div class="continue">
+        <button class="big" id="trContBtn">Continue</button>
+        <div class="nextline" id="trNextLine"></div>
+      </div>
     </div>
   </section>
 
   <!-- UNDER CONSTRUCTION (Eras VI–VII) -->
   <section class="view" id="v-uc" hidden>
-    <div class="era-screen">
-      <div class="era-head">
+    <div class="nav-screen">
+      <div class="nav-bar">
+        <button type="button" id="ucLandBtn">← Back to the land</button>
+      </div>
+      <div class="nav-head">
         <div class="era-roman" id="ucRoman"></div>
         <h1 id="ucTitle"></h1>
         <span class="uc-badge">Under construction</span>
         <p class="uc-msg" id="ucMsg">This era is on the way. A quiet garden for now — check back in Mathera 2.0.</p>
-        <div class="era-actions">
-          <button type="button" id="ucLandBtn">← Back to the land</button>
-        </div>
       </div>
-      <div class="branch-cols preview" id="ucCols" role="list" aria-hidden="true"></div>
+      <div class="branch-list preview" id="ucCols" role="list" aria-hidden="true"></div>
     </div>
   </section>
 
@@ -424,27 +497,28 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
   </section>
 
   <!-- HOME -->
+  <!-- Legacy home kept for DOM hooks (treeSvg/upick); practice nav uses v-skills + v-tree -->
   <section class="view" id="v-home" hidden>
-    <div class="hero"><div class="who" id="whoLine"></div><div class="vs" id="vsLine"></div></div>
-    <div class="eras" id="eraTabs" role="group" aria-label="Era"></div>
-    <div class="where"><span id="homeCount"></span></div>
-    <div class="tree">
+    <div class="hero" hidden><div class="who" id="whoLine"></div><div class="vs" id="vsLine"></div></div>
+    <div class="eras" id="eraTabs" role="group" aria-label="Era" hidden></div>
+    <div class="where" hidden><span id="homeCount"></span></div>
+    <div class="tree" hidden>
       <svg id="treeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: one branch per unit, one leaf per skill"></svg>
       <div class="cap">tap a branch to see its skills</div>
     </div>
-    <div class="legend" id="legend"></div>
-    <div class="continue">
+    <div class="legend" id="legend" hidden></div>
+    <div class="continue" hidden>
       <button class="big" id="contBtn">Continue</button>
       <div class="nextline" id="nextLine"></div>
     </div>
-    <div class="unitpanel">
+    <div class="unitpanel" hidden>
       <div class="sec-h"><h2 id="upTitle"></h2><span id="upCount"></span></div>
       <div class="upick" id="upick" role="group" aria-label="Units"></div>
       <div class="skl" id="upList"></div>
     </div>
-    <div class="sec-h"><h2>Inventions</h2><span id="invCount"></span></div>
-    <div class="shelf" id="shelf"></div>
-    <div class="saved" id="savedHome"></div>
+    <div class="sec-h" hidden><h2>Inventions</h2><span id="invCount"></span></div>
+    <div class="shelf" id="shelf" hidden></div>
+    <div class="saved" id="savedHome" hidden></div>
   </section>
 
   <!-- ALARM -->
@@ -461,7 +535,7 @@ body.era-nav #v-branches,body.era-nav #v-uc{gap:0;padding:0}
 
   <!-- PRACTICE -->
   <section class="view" id="v-practice" hidden>
-    <div class="pbar"><button class="back" id="backBtn">← Tree</button><div class="sk" id="pSkill"></div></div>
+    <div class="pbar"><button class="back" id="backBtn">← Skills</button><div class="sk" id="pSkill"></div></div>
     <div class="ivbar" id="ivbar" hidden></div>
     <div class="savedcard" id="savedCard" hidden></div>
     <p class="story" id="story" hidden></p>
@@ -39387,26 +39461,54 @@ function teleSave() {
 /* ================= views ================= */
 let view = 'land';
 let navEra = 'II';
-const VIEWS = ['loading', 'land', 'branches', 'uc', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
-const ERA_NAV_VIEWS = new Set(['branches', 'uc']);
+const VIEWS = ['loading', 'land', 'branches', 'skills', 'tree', 'uc', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+const ERA_NAV_VIEWS = new Set(['branches', 'skills', 'tree', 'uc']);
 let toastT = 0;
+let treeBack = 'skills'; // where Tree's local back / leave goes
 function toast(msg) {
   const el = $('toast'); if (!el) return;
   el.textContent = msg; el.classList.add('show');
   clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2200);
 }
+function tabFor(v) {
+  if (v === 'skills' || v === 'branches') return 'skills';
+  if (v === 'tree') return 'tree';
+  if (v === 'practice' || v === 'alarm') return 'skills';
+  if (v === 'home') return 'skills';
+  return v;
+}
 function show(v) {
+  // legacy home chrome → skills flow
+  if (v === 'home') v = META.placed[era] ? 'skills' : 'welcome';
   view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
   document.body.classList.toggle('land', v === 'land');
   document.body.classList.toggle('era-nav', ERA_NAV_VIEWS.has(v));
-  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === v || ((v === 'practice' || v === 'alarm') && b.dataset.v === 'home') ? 'page' : 'false'));
+  const curTab = tabFor(v);
+  document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === curTab ? 'page' : 'false'));
   if (v === 'land') renderLand();
   if (v === 'branches') renderBranches();
+  if (v === 'skills') renderSkills();
+  if (v === 'tree') renderTreeView();
   if (v === 'uc') renderUc();
-  if (v === 'home') renderHome(); if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
+  if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
   window.scrollTo(0, 0);
 }
-$('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (view === 'practice') leavePractice(); show(!META.placed[era] && b.dataset.v === 'home' ? 'welcome' : b.dataset.v); });
+function goSkillsTab() {
+  const k = navEra || era;
+  if (eraSoon(k)) { show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  if (!META.placed[k]) { show('branches'); return; }
+  if (!selUnit || !UNITS.some(([u]) => u === selUnit)) selUnit = META.start[k] || (UNITS[0] && UNITS[0][0]);
+  show('skills');
+}
+$('tabs').addEventListener('click', e => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (view === 'practice') leavePractice();
+  const v = b.dataset.v;
+  if (v === 'skills') { goSkillsTab(); return; }
+  if (v === 'tree') { openTree(); return; }
+  show(v);
+});
 $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
 
 /* ---- land homepage ---- */
@@ -39457,19 +39559,20 @@ function openBranch(u) {
   const ready = UNITS.some(([id]) => id === u);
   if (!ready) { toast('This branch is still being planted — check back soon.'); return; }
   if (!META.placed[k]) placeAt(u);
-  else { selUnit = u; show('home'); }
+  else { selUnit = u; show('skills'); }
 }
 function openTree() {
   const k = navEra || era;
   if (eraSoon(k)) { show('uc'); return; }
   if (k !== era) { setEra(k); S = MM.session(); save(); }
-  show(META.placed[k] ? 'home' : 'welcome');
+  if (!META.placed[k]) { show('welcome'); return; }
+  treeBack = (view === 'branches' || view === 'skills' || view === 'tree') ? view : 'skills';
+  show('tree');
 }
 $('brCols').addEventListener('click', e => {
   const b = e.target.closest('button[data-u]'); if (!b || b.classList.contains('dim')) return;
   openBranch(b.dataset.u);
 });
-$('brTreeBtn').addEventListener('click', openTree);
 $('brLandBtn').addEventListener('click', () => show('land'));
 
 /* ---- under construction (VI–VII) ---- */
@@ -39496,7 +39599,7 @@ function renderEraTabs(el) {
 function switchEra(k) {
   if (eraSoon(k)) { navEra = k; show('uc'); return; }
   if (k === era) return;
-  setEra(k); navEra = k; S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
+  setEra(k); navEra = k; S = MM.session(); save(); show(META.placed[k] ? 'skills' : 'welcome');
 }
 ['eraTabs', 'welTabs'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button[data-era]'); if (b) switchEra(b.dataset.era); }));
 
@@ -39515,7 +39618,7 @@ function placeAt(u) {
     if (worked) return; if (i < cut) s.inf = 1; else delete s.inf; });
   META.start[era] = u; META.placed[era] = true; selUnit = u;
   UNITS.forEach(([x]) => markDirty(x));
-  show('home');
+  show('skills');
 }
 $('ulist').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) placeAt(b.dataset.u); });
 $('welTreeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) placeAt(b.dataset.u); });
@@ -39585,8 +39688,15 @@ function renderTree(svgId) {
 $('treeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) selectUnit(b.dataset.u, true); });
 $('treeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selectUnit(b.dataset.u, true); } });
 let selUnit = 'II.1';
-function selectUnit(u, scroll) { selUnit = u; renderTree(); renderUnitPanel(); if (scroll) $('upTitle').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+function selectUnit(u, scroll) {
+  selUnit = u;
+  if (view === 'tree') { show('skills'); return; }
+  if (view === 'skills') { renderSkills(); return; }
+  renderTree(); renderUnitPanel();
+  if (scroll && $('upTitle')) $('upTitle').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 function renderUnitPanel() {
+  if (!$('upTitle')) return;
   const t = now(), sks = unitSkills(selUnit);
   $('upTitle').textContent = `${selUnit} · ${UNAME[selUnit]}`;
   $('upCount').textContent = `${sks.filter(k => MM.proven(P, k.id)).length} of ${sks.length} proven`;
@@ -39596,8 +39706,8 @@ function renderUnitPanel() {
     const dot = st === 'inferred' ? `border:1.5px dashed var(--acc)` : st === 'seed' ? 'background:var(--rule)' : `background:color-mix(in oklch, ${STATE_COL[st]} ${st === 'growing' ? 35 : 80}%, transparent)`;
     return `<button class="r" data-sk="${sk.id}"><i class="dot" style="${dot}"></i><span><span class="id">${sk.id.split('.').slice(1).join('.')}</span>${esc(sk.name)}</span><span class="chip st-${st}">${STATE_WORD[st]}${st === 'growing' || st === 'planted' ? ' · ' + MM.curStep(P, sk.id) : ''}${(b => b.f ? ' ★★' : b.e ? ' ★' : '')(MM.braveEarned(P, sk.id))}</span></button>`; }).join('');
 }
-$('upick').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) selectUnit(b.dataset.u); });
-$('upList').addEventListener('click', e => { const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk); });
+if ($('upick')) $('upick').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) selectUnit(b.dataset.u); });
+if ($('upList')) $('upList').addEventListener('click', e => { const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk); });
 
 const hasInv = inv => { const Px = PS[eraOf(inv.u)]; const sks = unitSkills(inv.u); return sks.filter(k => MM.proven(Px, k.id)).length >= Math.ceil(sks.length / 2); };
 function shelfHTML() { return eraInv().map(inv => { const has = hasInv(inv); return `<div class="inv ${has ? '' : 'locked'}" title="${esc(inv.what)}">${icon(inv.id)}<b>${has ? esc(inv.name) : '???'}</b><small>${has ? esc(inv.what) : 'Prove half of ' + inv.u}</small></div>`; }).join(''); }
@@ -39607,6 +39717,65 @@ function fmtDur(ms) {
   if (d < 6.5) return `${Math.round(d)} day${Math.round(d) > 1 ? 's' : ''}`; if (d < 26) return `${Math.round(d / 7)} week${Math.round(d / 7) > 1 ? 's' : ''}`;
   if (d < 330) return `${Math.round(d / 30)} month${Math.round(d / 30) > 1 ? 's' : ''}`; return 'a year';
 }
+
+/* ---- skills screen (mock) ---- */
+function skillIndexLabel(id) {
+  // II.4.01 → 4.01 ; fall back to last two segments
+  const parts = id.split('.');
+  return parts.length >= 3 ? parts.slice(1).join('.') : parts.slice(-2).join('.');
+}
+function renderSkills() {
+  const t = now(); MM.tick(P, t);
+  if (!selUnit || !UNITS.some(([u]) => u === selUnit)) selUnit = META.start[era] || (UNITS[0] && UNITS[0][0]);
+  const sks = unitSkills(selUnit);
+  const name = (UNAME[selUnit] || '').toUpperCase();
+  $('skTitle').textContent = `${selUnit} · ${name}`;
+  $('skCount').textContent = `${sks.filter(k => MM.proven(P, k.id)).length} of ${sks.length} proven`;
+  $('skPills').innerHTML = UNITS.map(([u]) => `<button type="button" data-u="${u}" aria-pressed="${u === selUnit}">${u}</button>`).join('');
+  const sb = $('skPills').querySelector('[aria-pressed="true"]');
+  if (sb) $('skPills').scrollLeft = sb.offsetLeft - $('skPills').offsetLeft - 40;
+  $('skList').innerHTML = sks.map(sk => {
+    const st = MM.state(P, sk.id, t);
+    const dot = st === 'inferred' ? `border:1.5px dashed var(--acc);background:transparent` : st === 'seed' ? 'background:var(--rule)' : `background:color-mix(in oklch, ${STATE_COL[st]} ${st === 'growing' ? 35 : 80}%, transparent)`;
+    const chip = STATE_WORD[st] + (st === 'growing' || st === 'planted' ? ' · ' + MM.curStep(P, sk.id) : '') + ((b => b.f ? ' ★★' : b.e ? ' ★' : '')(MM.braveEarned(P, sk.id)));
+    return `<button type="button" class="r" data-sk="${sk.id}"><i class="dot" style="${dot}"></i><span class="id">${skillIndexLabel(sk.id)}</span><span class="nm">${esc(sk.name)}</span><span class="chip st-${st}">${chip}</span></button>`;
+  }).join('');
+  $('skShelf').innerHTML = shelfHTML();
+  $('skInvCount').textContent = `${eraInv().filter(hasInv).length} of ${eraInv().length}`;
+}
+$('skPills').addEventListener('click', e => {
+  const b = e.target.closest('button[data-u]'); if (!b) return;
+  selUnit = b.dataset.u; renderSkills();
+});
+$('skList').addEventListener('click', e => {
+  const b = e.target.closest('.r[data-sk]'); if (b) startFocus(b.dataset.sk);
+});
+$('skBranchesBtn').addEventListener('click', () => show('branches'));
+$('skLandBtn').addEventListener('click', () => show('land'));
+
+/* ---- separate tree view ---- */
+function renderTreeView() {
+  const t = now(); MM.tick(P, t);
+  $('trEra').textContent = `${eraLabel(era)} · ${MM.counts(P, t).proven + MM.counts(P, t).thirsty} of ${ORDER.length} proven`;
+  renderTree('navTreeSvg');
+  const c = MM.counts(P, t);
+  $('trLegend').innerHTML = [['seed', 'var(--faint)'], ['growing', 'color-mix(in oklch,var(--acc) 35%,transparent)'], ['proven', 'var(--acc)'], ['thirsty', 'var(--thirst)'], ['withered', 'var(--wilt)']].map(([k, col]) => `<span><i style="background:${col}"></i>${k}${c[k] ? ' ' + c[k] : ''}</span>`).join('') + `<span><i style="border:1.5px dashed var(--acc)"></i>inferred${c.inferred ? ' ' + c.inferred : ''}</span>`;
+  const w = MM.withered(P).length, th = c.thirsty;
+  $('trContBtn').classList.toggle('alarm', w > 0);
+  $('trContBtn').textContent = w ? 'Continue · garden alert' : 'Continue';
+  let line;
+  if (w) line = `${w > 1 ? w + ' leaves' : '1 leaf'} withered. Continue starts an Intervention.`;
+  else if (th) line = `${th > 1 ? th + ' leaves are' : '1 leaf is'} thirsty and will come up for watering.`;
+  else { const q = MM.next(P, MM.session(), t); const sk = q && BY[q.id]; line = sk ? `Next up: ${sk.name}, step ${q.step}` : 'Pick a branch to begin.';
+    const dues = ORDER.map(id => (P.skills[id] || {}).due).filter(Boolean); if (sk && dues.length) line += ` · next watering in ${fmtDur(Math.min(...dues) - t)}`; }
+  $('trNextLine').textContent = line;
+}
+$('navTreeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) { selUnit = b.dataset.u; show('skills'); } });
+$('navTreeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selUnit = b.dataset.u; show('skills'); } });
+$('trLandBtn').addEventListener('click', () => show('land'));
+$('trBranchesBtn').addEventListener('click', () => show('branches'));
+$('trContBtn').addEventListener('click', startContinue);
+
 function renderHome() {
   const t = now(); MM.tick(P, t);
   $('whoLine').innerHTML = `<b>${esc(hero())}</b>`;
@@ -39860,11 +40029,11 @@ function openAlarm() {
   show('alarm'); const c = $('alarmCard'); c.classList.remove('go-shake'); void c.offsetWidth; c.classList.add('go-shake'); sfx('alarm');
 }
 $('alarmGo').addEventListener('click', () => { MM.startIntervention(P, S, now()); enterPractice(); });
-$('alarmLater').addEventListener('click', () => show('home'));
-$('contBtn').addEventListener('click', startContinue);
+$('alarmLater').addEventListener('click', () => show('skills'));
+if ($('contBtn')) $('contBtn').addEventListener('click', startContinue);
 function enterPractice() { show('practice'); $('savedCard').hidden = true; syncFocus(); newQ(); }
 function leavePractice() { closeCalc(); clearTimeout(flashT); stopFocus(); }
-$('backBtn').addEventListener('click', () => { leavePractice(); show('home'); });
+$('backBtn').addEventListener('click', () => { leavePractice(); show('skills'); });
 
 const STEP_IDX = { a: 1, b: 2, c: 3, d: 4, e: 5, f: 6 };
 function modeLabel(m) { return { learn: 'new', review: 'watering', confirm: 'quick check', iv: 'intervention', practice: 'practice', brave: 'master quest' }[m]; }
@@ -40165,10 +40334,13 @@ async function boot() {
     save(); flush();
     selUnit = META.start[era] || selUnit;
     if (view === 'land' || view === 'branches' || view === 'uc') { /* stay on era-nav screens */ }
-    else if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
+    else if (view === 'welcome' && META.placed[era]) show('skills');
+    else if (view === 'skills') renderSkills(); else if (view === 'tree') renderTreeView();
+    else if (view === 'branches') renderBranches(); else if (view === 'home') renderHome();
+    else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, BRANCHES };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
 })();
 
 </script>
