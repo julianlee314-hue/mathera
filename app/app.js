@@ -335,7 +335,8 @@ function openTree() {
   const k = navEra || era;
   if (eraSoon(k)) { show('uc'); return; }
   if (k !== era) { setEra(k); S = MM.session(); save(); }
-  if (!META.placed[k]) { show('welcome'); return; }
+  // Unplaced: stay in Skills flow (branch list), don't dump into welcome tree chrome
+  if (!META.placed[k]) { show('branches'); toast('Pick a branch first — then Tree unlocks for this era.'); return; }
   treeBack = (view === 'branches' || view === 'skills' || view === 'tree') ? view : 'skills';
   show('tree');
 }
