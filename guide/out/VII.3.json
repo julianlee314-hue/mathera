@@ -1,0 +1,114 @@
+{
+  "branch": "VII.3",
+  "intro": "Matrices (rectangular tables of numbers) can be added and multiplied much like ordinary numbers, but with some surprising differences. This branch learns that arithmetic and how to undo a matrix with its inverse.",
+  "skills": {
+    "VII.3.01": {
+      "what": "The basic vocabulary of matrices: rectangular tables of numbers arranged in rows and columns.",
+      "levels": {
+        "a": "Identifies the rows (across) and columns (down) of a matrix.",
+        "b": "Locates an entry by its row number and column number.",
+        "c": "States a matrix's size as rows by columns.",
+        "d": "Recognizes special shapes such as square, diagonal and triangular matrices."
+      }
+    },
+    "VII.3.02": {
+      "what": "Adding matrices and multiplying them by a single number, done one entry at a time.",
+      "levels": {
+        "a": "Knows only matrices of the same size can be added.",
+        "b": "Adds two matrices by adding matching entries.",
+        "c": "Multiplies every entry of a matrix by the same number.",
+        "d": "Uses the familiar rules, such as order not mattering when adding."
+      }
+    },
+    "VII.3.03": {
+      "what": "Multiplying a matrix by a vector produces a new vector. It is the basic way a matrix acts on things.",
+      "levels": {
+        "a": "Multiplies by pairing each row with the vector and adding products.",
+        "b": "Sees the result as a mix of the matrix's columns.",
+        "c": "Checks the sizes match before multiplying.",
+        "d": "Uses the fact that this multiplication respects adding and scaling."
+      }
+    },
+    "VII.3.04": {
+      "what": "Multiplying two matrices together, which combines two actions into one.",
+      "levels": {
+        "a": "Checks which sizes can be multiplied and the size of the result.",
+        "b": "Computes each entry of the product from a row and a column.",
+        "c": "Computes the product one column at a time.",
+        "d": "Sees the product as doing one action and then the other."
+      }
+    },
+    "VII.3.05": {
+      "what": "The rules of matrix arithmetic, including the surprise that order matters: A times B is often different from B times A.",
+      "levels": {
+        "a": "Finds examples where swapping the order changes the product.",
+        "b": "Uses the rules that do still hold, such as regrouping and expanding brackets.",
+        "c": "Sees that you cannot simply cancel a matrix from both sides.",
+        "d": "Computes powers of a matrix by repeated multiplication."
+      }
+    },
+    "VII.3.06": {
+      "what": "The identity matrix acts like the number 1 and the zero matrix like 0. Some odd matrices become zero when multiplied by themselves.",
+      "levels": {
+        "a": "Recognizes the identity matrix: 1s down the diagonal, 0s elsewhere.",
+        "b": "Recognizes the zero matrix and its role.",
+        "c": "Shows multiplying by the identity leaves any matrix unchanged.",
+        "d": "Finds nonzero matrices whose powers eventually become zero."
+      }
+    },
+    "VII.3.07": {
+      "what": "The transpose flips a matrix over its diagonal, so rows become columns.",
+      "levels": {
+        "a": "Writes the transpose by turning rows into columns.",
+        "b": "Uses the rule that transposing a product reverses the order.",
+        "c": "Recognizes symmetric matrices, which equal their own transpose.",
+        "d": "Writes a dot product as a row times a column."
+      }
+    },
+    "VII.3.08": {
+      "what": "The inverse of a matrix undoes it, like dividing undoes multiplying. For 2-by-2 matrices there is a short formula.",
+      "levels": {
+        "a": "Uses the formula to find the inverse of a 2-by-2 matrix.",
+        "b": "Recognizes when the formula breaks down and no inverse exists.",
+        "c": "Solves a system of equations by multiplying by the inverse.",
+        "d": "Checks an inverse by multiplying back to get the identity."
+      }
+    },
+    "VII.3.09": {
+      "what": "Finding the inverse of a larger matrix using the same row operations used to solve equations.",
+      "levels": {
+        "a": "Places the identity matrix beside the matrix to start.",
+        "b": "Row-reduces the combined table.",
+        "c": "Reads the inverse from the right-hand half.",
+        "d": "Recognizes during the process when no inverse exists."
+      }
+    },
+    "VII.3.10": {
+      "what": "A single big theorem listing many facts about a square matrix that are all true together or all false together, such as having an inverse.",
+      "levels": {
+        "a": "Lists the equivalent facts, such as having an inverse and a pivot in every column.",
+        "b": "Uses one known fact to conclude the others.",
+        "c": "Knows the theorem applies only to square matrices.",
+        "d": "Uses quick checks to decide whether a matrix is invertible."
+      }
+    },
+    "VII.3.11": {
+      "what": "Each row operation can be carried out by multiplying by a simple matrix, which explains why row reduction works.",
+      "levels": {
+        "a": "Writes a single row operation as a matrix.",
+        "b": "Finds the matrix that undoes each such operation.",
+        "c": "Writes an inverse as a product of these simple matrices.",
+        "d": "Explains why row reduction finds inverses and solutions."
+      }
+    },
+    "VII.3.12": {
+      "what": "LU factorization splits a matrix into two triangular pieces, a shortcut computers use to solve many systems quickly.",
+      "levels": {
+        "a": "Recognizes a matrix written as lower-triangular times upper-triangular.",
+        "b": "Builds the two pieces from the steps of elimination.",
+        "c": "Solves a system in two easy triangular stages.",
+        "d": "Explains why this saves work when solving many similar systems."
+      }
+    }
+  }
+}

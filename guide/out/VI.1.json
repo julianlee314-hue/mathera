@@ -1,0 +1,186 @@
+{
+  "branch": "VI.1",
+  "intro": "This branch is about limits: what value a calculation is heading toward as its input gets closer and closer to some number. Limits are the foundation that the rest of calculus is built on.",
+  "skills": {
+    "VI.1.01": {
+      "what": "A limit is the value something heads toward as you get closer and closer, even if it never quite arrives. Think of walking halfway to a wall, again and again.",
+      "levels": {
+        "a": "Describes in words what it means for a quantity to approach a value.",
+        "b": "Explains that where a formula is heading can differ from its actual value there.",
+        "c": "Reads and writes the standard shorthand for a limit.",
+        "d": "Uses limits to untangle Zeno's paradox of halving the distance forever."
+      }
+    },
+    "VI.1.02": {
+      "what": "Guessing a limit by making a table of values that creep closer and closer to the point of interest.",
+      "levels": {
+        "a": "Builds a table of values for inputs getting close to a chosen number.",
+        "b": "Approaches the number from both below and above in the table.",
+        "c": "Reads the trend in the table to estimate the limit.",
+        "d": "Recognizes cases where a table gives a misleading answer and explains why."
+      }
+    },
+    "VI.1.03": {
+      "what": "Finding a limit by looking at a graph and following the curve toward a point.",
+      "levels": {
+        "a": "Traces a curve with a finger to see what height it approaches.",
+        "b": "Finds limits at a point where the graph has a hole.",
+        "c": "Reads graphs with jumps, where the two sides head to different heights.",
+        "d": "Explains that the limit ignores whatever happens exactly at the point itself."
+      }
+    },
+    "VI.1.04": {
+      "what": "Looking at the approach from just one side, the left or the right, and comparing the two.",
+      "levels": {
+        "a": "Finds the value approached when coming from the left only.",
+        "b": "Finds the value approached when coming from the right only.",
+        "c": "Explains that a full limit exists only when both sides agree.",
+        "d": "Finds one-sided limits for functions defined by different rules on different pieces."
+      }
+    },
+    "VI.1.05": {
+      "what": "Recognizing situations where a limit simply does not exist, and saying why.",
+      "levels": {
+        "a": "Spots a jump in a graph as a reason a limit fails.",
+        "b": "Spots values shooting off to infinity as a reason a limit fails.",
+        "c": "Spots endless wiggling, faster and faster, as a reason a limit fails.",
+        "d": "Explains in words exactly why a given limit does not exist."
+      }
+    },
+    "VI.1.06": {
+      "what": "Rules that let you break a complicated limit into simpler limits and combine the answers.",
+      "levels": {
+        "a": "Finds the limit of a sum or difference from the separate limits.",
+        "b": "Finds the limit of a product or quotient from the separate limits.",
+        "c": "Handles powers and roots of expressions with known limits.",
+        "d": "Uses the rules one careful step at a time, naming each rule used."
+      }
+    },
+    "VI.1.07": {
+      "what": "The simplest way to find a limit: just plug the number in, when that is allowed.",
+      "levels": {
+        "a": "Recognizes when plugging the number straight in gives the right answer.",
+        "b": "Plugs in to find limits of polynomials and fractions made of polynomials.",
+        "c": "Recognizes that getting zero over zero means more work is needed.",
+        "d": "Recognizes that a nonzero number over zero means the values blow up."
+      }
+    },
+    "VI.1.08": {
+      "what": "When plugging in gives zero over zero, factoring the top and bottom and canceling the troublemaker often reveals the limit.",
+      "levels": {
+        "a": "Factors the top and bottom of a fraction.",
+        "b": "Cancels the common factor that caused the zero over zero.",
+        "c": "Plugs in the number to the simplified expression to find the limit.",
+        "d": "Explains why canceling is allowed even though that input was a problem."
+      }
+    },
+    "VI.1.09": {
+      "what": "A trick for limits with square roots: multiply by a matching partner expression to clear the root out of the way.",
+      "levels": {
+        "a": "Multiplies top and bottom by the partner with the opposite sign (the conjugate).",
+        "b": "Simplifies the result, which removes the square root from one part.",
+        "c": "Cancels the factor that was causing zero over zero.",
+        "d": "Plugs in the number to finish the limit."
+      }
+    },
+    "VI.1.10": {
+      "what": "Finding limits of fractions that have smaller fractions stacked inside them.",
+      "levels": {
+        "a": "Combines the small fractions into one over a common bottom.",
+        "b": "Simplifies the stacked fraction into a single fraction.",
+        "c": "Cancels the factor that was causing zero over zero.",
+        "d": "Plugs in the number to finish the limit."
+      }
+    },
+    "VI.1.11": {
+      "what": "The squeeze theorem: if something is trapped between two things heading to the same value, it must head there too.",
+      "levels": {
+        "a": "Explains the squeeze idea with a picture of one curve trapped between two others.",
+        "b": "Finds two simpler expressions that trap the tricky one.",
+        "c": "Squeezes a wiggling expression, like x squared times sine of one over x.",
+        "d": "Writes out a complete squeeze argument in clear sentences."
+      }
+    },
+    "VI.1.12": {
+      "what": "Two famous limits involving sine and cosine near zero, which are needed later for the derivatives of trig functions.",
+      "levels": {
+        "a": "Uses the fact that sine of x divided by x approaches 1 near zero.",
+        "b": "Uses the fact that one minus cosine x, divided by x, approaches 0.",
+        "c": "Adjusts for a scaled angle, such as sine of 3x over x.",
+        "d": "Follows and explains a proof of the sine limit using a circle diagram."
+      }
+    },
+    "VI.1.13": {
+      "what": "Describing values that grow without end near a point, like dividing by a number shrinking toward zero.",
+      "levels": {
+        "a": "Recognizes when values grow without bound near a point.",
+        "b": "Decides whether values head to plus or minus infinity from each side.",
+        "c": "Finds the vertical lines (asymptotes) that a graph shoots up or down beside.",
+        "d": "Writes these results using correct limit notation with infinity."
+      }
+    },
+    "VI.1.14": {
+      "what": "Asking what happens to a formula as the input gets huge, in either the positive or negative direction.",
+      "levels": {
+        "a": "Describes where a function is heading as x becomes very large or very negative.",
+        "b": "Divides top and bottom by the biggest power of x to find the limit.",
+        "c": "Compares how fast exponentials and logarithms grow for huge inputs.",
+        "d": "Handles limits at infinity that involve square roots."
+      }
+    },
+    "VI.1.15": {
+      "what": "Using limits at infinity to find the flat lines a graph settles toward far out to the left or right.",
+      "levels": {
+        "a": "Finds the level a fraction settles to by comparing the highest powers.",
+        "b": "Handles graphs that settle to different levels on the left and right ends.",
+        "c": "Recognizes graphs that wiggle back and forth across their settling level.",
+        "d": "Sketches a graph showing its long-run flat lines."
+      }
+    },
+    "VI.1.16": {
+      "what": "A function is continuous at a point if its graph passes through without a break. Informally, you can draw it without lifting your pencil.",
+      "levels": {
+        "a": "Checks that the function actually has a value at the point.",
+        "b": "Checks that the limit at the point exists.",
+        "c": "Checks that the value and the limit are equal, completing the test.",
+        "d": "Decides whether a function is continuous over a whole stretch of inputs."
+      }
+    },
+    "VI.1.17": {
+      "what": "Naming the different ways a graph can break: a single missing point, a jump, or a shoot-off to infinity.",
+      "levels": {
+        "a": "Identifies a removable break, where just one point is missing or misplaced.",
+        "b": "Identifies a jump, where the graph leaps to a new height.",
+        "c": "Identifies an infinite break, where the graph shoots off near a vertical line.",
+        "d": "Classifies the type of break from the formula alone, without a graph."
+      }
+    },
+    "VI.1.18": {
+      "what": "Adjusting a function so its graph has no breaks, by filling a hole or choosing the right numbers.",
+      "levels": {
+        "a": "Fills a hole by defining the missing value as the limit.",
+        "b": "Chooses a constant so the two pieces of a split function meet up.",
+        "c": "Chooses two constants at once so several pieces all join smoothly.",
+        "d": "Checks carefully that the adjusted function is now continuous."
+      }
+    },
+    "VI.1.19": {
+      "what": "The intermediate value theorem: an unbroken curve going from below a height to above it must cross that height somewhere.",
+      "levels": {
+        "a": "States the theorem in plain words.",
+        "b": "Uses it to show an equation has a solution between two numbers.",
+        "c": "Explains why the theorem fails if the function has a break.",
+        "d": "Uses repeated halving (bisection) to close in on a solution."
+      }
+    },
+    "VI.1.20": {
+      "what": "The fully precise definition of a limit, using two small tolerances called epsilon and delta. It turns \"gets close\" into a checkable promise.",
+      "levels": {
+        "a": "Explains the precise definition in everyday words.",
+        "b": "Finds how close the input must be for a straight-line function.",
+        "c": "Does the same for a squared function, where it takes more care.",
+        "d": "Writes a full formal proof that a limit has a certain value."
+      }
+    }
+  }
+}

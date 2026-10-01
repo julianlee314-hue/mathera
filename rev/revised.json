@@ -1,0 +1,9794 @@
+{
+"skills": [
+{
+"id": "IV.1.01",
+"old": "IV.1.03",
+"name": "Fractions & decimals in equations",
+"steps": [
+"clear fractions with the LCD",
+"clear decimals by powers of 10",
+"solve the cleaned equation",
+"check with the original"
+],
+"unit": "IV.1"
+},
+{
+"id": "IV.1.02",
+"old": "IV.1.04",
+"name": "Literal equations",
+"steps": [
+"solve a formula for one letter",
+"treat other letters as numbers",
+"rearrange science formulas",
+"state restrictions (no dividing by 0)"
+],
+"unit": "IV.1"
+},
+{
+"id": "IV.1.03",
+"old": "IV.1.06",
+"name": "Absolute value equations",
+"steps": [
+"meaning as distance",
+"split into two cases",
+"isolate the absolute value first",
+"reject impossible cases"
+],
+"unit": "IV.1"
+},
+{
+"id": "IV.1.04",
+"old": "IV.1.08",
+"name": "Compound inequalities",
+"steps": [
+"\"and\" as overlap",
+"\"or\" as union",
+"solve three-part inequalities",
+"graph and write intervals"
+],
+"unit": "IV.1"
+},
+{
+"id": "IV.1.05",
+"old": "IV.1.09",
+"name": "Absolute value inequalities",
+"steps": [
+"less-than becomes \"and\"",
+"greater-than becomes \"or\"",
+"solve and graph",
+"tolerance word problems"
+],
+"unit": "IV.1"
+},
+{
+"id": "IV.2.01",
+"old": "IV.2.01",
+"name": "Function notation",
+"steps": [
+"read f(x) aloud and in meaning",
+"f(3) vs f(x) = 3",
+"notation in context",
+"write a function from words"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.02",
+"old": "IV.2.02",
+"name": "Evaluate functions",
+"steps": [
+"plug in numbers",
+"plug in negatives and fractions",
+"plug in expressions like f(a + 1)",
+"evaluate from a graph or table"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.03",
+"old": "IV.2.03",
+"name": "Domain & range",
+"steps": [
+"from a list of pairs",
+"from a graph",
+"from an equation (no ÷ 0, no √ negative)",
+"in interval notation"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.04",
+"old": "IV.2.04",
+"name": "Reading function graphs",
+"steps": [
+"find f(a) on a graph",
+"solve f(x) = k on a graph",
+"where f(x) > g(x)",
+"read intersections"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.05",
+"old": "IV.2.05",
+"name": "Functions in context",
+"steps": [
+"name input and output",
+"interpret f(a) = b in words",
+"reasonable domain",
+"units of input and output"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.06",
+"old": "IV.2.06",
+"name": "Average rate of change",
+"steps": [
+"formula over an interval",
+"from a table",
+"from a graph",
+"interpret in context"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.07",
+"old": "IV.2.07",
+"name": "Increasing & decreasing",
+"steps": [
+"spot intervals on a graph",
+"write them as intervals",
+"constant intervals",
+"connect to sign of rate of change"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.08",
+"old": "IV.2.08",
+"name": "Intercepts & zeros",
+"steps": [
+"y-intercept is f(0)",
+"zeros where f(x) = 0",
+"find them from a graph",
+"find them algebraically"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.09",
+"old": "IV.2.09",
+"name": "Maxima & minima",
+"steps": [
+"relative max and min",
+"absolute max and min",
+"read them from a graph",
+"interpret in context"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.10",
+"old": "IV.2.10",
+"name": "Piecewise functions",
+"steps": [
+"evaluate the right piece",
+"graph each piece",
+"open vs closed endpoints",
+"write one from a graph"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.11",
+"old": "IV.2.11",
+"name": "Step functions",
+"steps": [
+"floor and ceiling",
+"graph steps",
+"postage and parking models",
+"evaluate at the jumps"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.12",
+"old": "IV.2.12",
+"name": "Absolute value function",
+"steps": [
+"the V graph",
+"vertex and slopes",
+"as a piecewise function",
+"solve with the graph"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.13",
+"old": "IV.2.13",
+"name": "Combining functions",
+"steps": [
+"(f + g)(x)",
+"(f − g)(x)",
+"(fg)(x) and (f/g)(x)",
+"domain of the combination"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.14",
+"old": "IV.2.14",
+"name": "Composition",
+"steps": [
+"f(g(a)) with numbers",
+"f(g(x)) as an expression",
+"order matters",
+"decompose h into f(g(x))"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.2.15",
+"old": "IV.2.15",
+"name": "Inverse functions",
+"steps": [
+"undo a function in words",
+"swap x and y and solve",
+"reflect over y = x",
+"verify f(f⁻¹(x)) = x"
+],
+"unit": "IV.2"
+},
+{
+"id": "IV.3.01",
+"old": "IV.3.03",
+"name": "Point-slope form",
+"steps": [
+"meaning of y − y₁ = m(x − x₁)",
+"write from a point and slope",
+"write from two points",
+"graph from it"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.02",
+"old": "IV.3.04",
+"name": "Standard form",
+"steps": [
+"Ax + By = C",
+"intercepts from standard form",
+"graph by intercepts",
+"budget and combination contexts"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.03",
+"old": "IV.3.05",
+"name": "Converting forms",
+"steps": [
+"standard to slope-intercept",
+"point-slope to slope-intercept",
+"slope-intercept to standard",
+"pick the best form for a job"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.04",
+"old": "IV.3.06",
+"name": "Horizontal & vertical lines",
+"steps": [
+"y = k",
+"x = h",
+"slope 0 vs undefined",
+"which one is a function"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.05",
+"old": "IV.3.07",
+"name": "Parallel lines",
+"steps": [
+"equal slopes",
+"test two equations",
+"write a parallel line through a point",
+"prove sides parallel on a grid"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.06",
+"old": "IV.3.08",
+"name": "Perpendicular lines",
+"steps": [
+"negative reciprocal slopes",
+"test two equations",
+"write a perpendicular line through a point",
+"perpendicular bisector"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.07",
+"old": "IV.3.09",
+"name": "Intercepts of lines",
+"steps": [
+"x-intercept by y = 0",
+"y-intercept by x = 0",
+"meaning in context",
+"graph from intercepts"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.08",
+"old": "IV.3.10",
+"name": "Two-variable inequalities",
+"steps": [
+"solid vs dashed boundary",
+"test point to shade",
+"check if a point is a solution",
+"write one from a graph"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.3.09",
+"old": "IV.3.12",
+"name": "Linear regression & residuals",
+"steps": [
+"line of best fit with technology",
+"correlation coefficient r",
+"compute residuals",
+"read a residual plot"
+],
+"unit": "IV.3"
+},
+{
+"id": "IV.4.01",
+"old": "IV.4.01",
+"name": "What a solution is",
+"steps": [
+"check an ordered pair in both equations",
+"intersection meaning",
+"in context",
+"estimate from a graph"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.02",
+"old": "IV.4.02",
+"name": "Solve by graphing",
+"steps": [
+"graph both lines",
+"read the intersection",
+"check it",
+"limits of graphing"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.03",
+"old": "IV.4.03",
+"name": "Substitution",
+"steps": [
+"isolate a variable",
+"substitute",
+"solve and back-substitute",
+"check both equations"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.04",
+"old": "IV.4.04",
+"name": "Elimination",
+"steps": [
+"line up variables",
+"add or subtract to cancel",
+"solve and back-substitute",
+"check"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.05",
+"old": "IV.4.05",
+"name": "Elimination with multiplying",
+"steps": [
+"multiply one equation",
+"multiply both",
+"cancel and solve",
+"avoid sign mistakes"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.06",
+"old": "IV.4.06",
+"name": "Choosing a method",
+"steps": [
+"when graphing fits",
+"when substitution fits",
+"when elimination fits",
+"justify the choice"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.07",
+"old": "IV.4.07",
+"name": "No or infinite solutions",
+"steps": [
+"parallel lines",
+"same line",
+"spot them algebraically",
+"spot them from slopes"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.08",
+"old": "IV.4.08",
+"name": "Systems word problems",
+"steps": [
+"define two variables",
+"write two equations",
+"solve",
+"answer in context"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.09",
+"old": "IV.4.09",
+"name": "Mixture problems",
+"steps": [
+"amount equation",
+"value or concentration equation",
+"solve",
+"check reasonableness"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.10",
+"old": "IV.4.10",
+"name": "Rate & distance systems",
+"steps": [
+"with and against the current",
+"wind problems",
+"set up rate × time",
+"solve and interpret"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.11",
+"old": "IV.4.11",
+"name": "Systems of inequalities",
+"steps": [
+"graph each inequality",
+"find the overlap",
+"test a point",
+"write the system from a graph"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.12",
+"old": "IV.4.12",
+"name": "Linear programming basics",
+"steps": [
+"constraints",
+"feasible region",
+"vertices",
+"optimize the objective"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.13",
+"old": "IV.4.13",
+"name": "Three-variable systems",
+"steps": [
+"eliminate to two equations",
+"solve the pair",
+"back-substitute",
+"check all three"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.14",
+"old": "IV.4.14",
+"name": "Linear–quadratic systems",
+"steps": [
+"sketch a line and a parabola",
+"substitute",
+"0, 1 or 2 solutions",
+"solve and check"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.4.15",
+"old": "IV.4.15",
+"name": "Matrices for systems",
+"steps": [
+"write the augmented matrix",
+"row operations",
+"row echelon form",
+"read the solution"
+],
+"unit": "IV.4"
+},
+{
+"id": "IV.5.01",
+"old": "IV.5.06",
+"name": "Simplify radicals",
+"steps": [
+"pull out perfect-square factors",
+"with variables",
+"cube roots",
+"nth roots"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.02",
+"old": "IV.5.07",
+"name": "Add & subtract radicals",
+"steps": [
+"like radicals",
+"simplify first then combine",
+"with variables",
+"spot unlike radicals"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.03",
+"old": "IV.5.08",
+"name": "Multiply radicals",
+"steps": [
+"√a·√b = √ab",
+"distribute",
+"FOIL with radicals",
+"conjugate products"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.04",
+"old": "IV.5.09",
+"name": "Rationalize denominators",
+"steps": [
+"single square root",
+"cube root denominators",
+"binomial with conjugate",
+"simplify the result"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.05",
+"old": "IV.5.10",
+"name": "Rational exponents",
+"steps": [
+"a^(1/n) as a root",
+"a^(m/n)",
+"convert both ways",
+"simplify with exponent rules"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.06",
+"old": "IV.5.11",
+"name": "Radical equations",
+"steps": [
+"isolate the radical",
+"raise both sides",
+"solve",
+"check for extraneous roots"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.5.07",
+"old": "IV.5.12",
+"name": "Same-base exponent equations",
+"steps": [
+"rewrite with a common base",
+"set exponents equal",
+"solve",
+"check"
+],
+"unit": "IV.5"
+},
+{
+"id": "IV.6.01",
+"old": "IV.6.01",
+"name": "Polynomial vocabulary",
+"steps": [
+"terms and coefficients",
+"degree",
+"standard form",
+"name by degree and terms"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.02",
+"old": "IV.6.02",
+"name": "Add & subtract polynomials",
+"steps": [
+"combine like terms",
+"distribute the minus",
+"vertical layout",
+"perimeter problems"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.03",
+"old": "IV.6.03",
+"name": "Monomial × polynomial",
+"steps": [
+"distribute",
+"exponent rules on each term",
+"negative monomials",
+"area models"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.04",
+"old": "IV.6.04",
+"name": "Multiply binomials",
+"steps": [
+"area box",
+"FOIL",
+"with coefficients",
+"with negatives"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.05",
+"old": "IV.6.05",
+"name": "Special products",
+"steps": [
+"(a + b)²",
+"(a − b)²",
+"(a + b)(a − b)",
+"mental math uses"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.06",
+"old": "IV.6.06",
+"name": "Multiply polynomials",
+"steps": [
+"binomial × trinomial",
+"organize with a box",
+"three binomials",
+"check by substituting a number"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.07",
+"old": "IV.6.07",
+"name": "GCF factoring",
+"steps": [
+"find the GCF",
+"factor it out",
+"negative GCF",
+"binomial GCF"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.08",
+"old": "IV.6.08",
+"name": "Factor by grouping",
+"steps": [
+"group in pairs",
+"factor each pair",
+"pull out the common binomial",
+"regroup when stuck"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.09",
+"old": "IV.6.09",
+"name": "Factor x² + bx + c",
+"steps": [
+"find two numbers",
+"signs of the pair",
+"write the factors",
+"check by multiplying"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.10",
+"old": "IV.6.10",
+"name": "Factor ax² + bx + c",
+"steps": [
+"ac method",
+"split the middle term",
+"group",
+"guess and check alternative"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.11",
+"old": "IV.6.11",
+"name": "Difference of squares",
+"steps": [
+"recognize a² − b²",
+"factor",
+"with coefficients",
+"repeated (x⁴ − 16)"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.12",
+"old": "IV.6.12",
+"name": "Perfect square trinomials",
+"steps": [
+"recognize the pattern",
+"factor",
+"with coefficients",
+"build one by choosing c"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.13",
+"old": "IV.6.13",
+"name": "Sum & difference of cubes",
+"steps": [
+"recognize cubes",
+"sum formula",
+"difference formula",
+"SOAP sign pattern"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.14",
+"old": "IV.6.14",
+"name": "Factor completely",
+"steps": [
+"GCF first",
+"choose the pattern",
+"keep factoring",
+"prime polynomials"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.15",
+"old": "IV.6.15",
+"name": "Polynomial division",
+"steps": [
+"divide by a monomial",
+"long division",
+"synthetic division",
+"write quotient + remainder"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.6.16",
+"old": null,
+"name": "Polynomial identities",
+"steps": [
+"prove an identity by expanding",
+"(x² + y²)² = (x² − y²)² + (2xy)²",
+"generate Pythagorean triples",
+"use identities for mental math"
+],
+"unit": "IV.6"
+},
+{
+"id": "IV.7.01",
+"old": "IV.7.01",
+"name": "Parabola features",
+"steps": [
+"vertex",
+"axis of symmetry",
+"opens up or down",
+"intercepts"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.02",
+"old": "IV.7.02",
+"name": "Graph vertex form",
+"steps": [
+"read (h, k)",
+"effect of a",
+"plot symmetric points",
+"sketch"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.03",
+"old": "IV.7.03",
+"name": "Graph standard form",
+"steps": [
+"x = −b/2a",
+"find the vertex",
+"y-intercept c",
+"sketch"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.04",
+"old": "IV.7.04",
+"name": "Graph factored form",
+"steps": [
+"read the zeros",
+"vertex halfway between",
+"direction from a",
+"sketch"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.05",
+"old": "IV.7.05",
+"name": "Convert quadratic forms",
+"steps": [
+"vertex to standard",
+"factored to standard",
+"standard to factored",
+"what each form shows best"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.06",
+"old": "IV.7.06",
+"name": "Solve by square roots",
+"steps": [
+"isolate x²",
+"± root",
+"(x − h)² = k",
+"no real solution cases"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.07",
+"old": "IV.7.07",
+"name": "Solve by factoring",
+"steps": [
+"set equal to zero",
+"factor",
+"zero product property",
+"check both roots"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.08",
+"old": "IV.7.08",
+"name": "Completing the square",
+"steps": [
+"half b, square it",
+"add to both sides",
+"with a ≠ 1",
+"solve"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.09",
+"old": "IV.7.09",
+"name": "Vertex form by completing",
+"steps": [
+"group x terms",
+"complete the square",
+"balance the constant",
+"read the vertex"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.10",
+"old": "IV.7.10",
+"name": "Quadratic formula",
+"steps": [
+"identify a, b, c",
+"substitute carefully",
+"simplify the radical",
+"derive it from completing the square"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.11",
+"old": "IV.7.11",
+"name": "Discriminant",
+"steps": [
+"b² − 4ac",
+"two, one or no real roots",
+"rational vs irrational roots",
+"link to the graph"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.12",
+"old": "IV.7.12",
+"name": "Choosing a method",
+"steps": [
+"square roots when no b",
+"factoring when it factors",
+"formula always",
+"justify the choice"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.13",
+"old": "IV.7.13",
+"name": "Projectile motion",
+"steps": [
+"h(t) = −16t² + v₀t + h₀ or −4.9t²",
+"max height",
+"time to land",
+"when it reaches a height"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.14",
+"old": "IV.7.14",
+"name": "Area & optimization",
+"steps": [
+"write area as a quadratic",
+"find the vertex",
+"max area or revenue",
+"interpret the answer"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.15",
+"old": "IV.7.15",
+"name": "Quadratic inequalities",
+"steps": [
+"find the roots",
+"sign chart",
+"read from the graph",
+"interval answer"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.16",
+"old": "IV.7.16",
+"name": "Write a quadratic from features",
+"steps": [
+"from vertex and a point",
+"from zeros and a point",
+"from three points",
+"check with a graph"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.7.17",
+"old": "IV.7.17",
+"name": "Quadratic regression",
+"steps": [
+"spot a quadratic pattern",
+"second differences",
+"fit with technology",
+"predict and judge"
+],
+"unit": "IV.7"
+},
+{
+"id": "IV.8.01",
+"old": "IV.8.01",
+"name": "The number i",
+"steps": [
+"i² = −1",
+"why it was invented",
+"powers of i cycle",
+"simplify iⁿ"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.02",
+"old": "IV.8.02",
+"name": "Square roots of negatives",
+"steps": [
+"√−a = i√a",
+"simplify",
+"avoid √a·√b trap",
+"multiply correctly"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.03",
+"old": "IV.8.03",
+"name": "Standard form a + bi",
+"steps": [
+"real and imaginary parts",
+"equality of complex numbers",
+"write in standard form",
+"classify real, pure imaginary"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.04",
+"old": "IV.8.04",
+"name": "Add & subtract complex",
+"steps": [
+"combine real parts",
+"combine imaginary parts",
+"distribute minus",
+"as vectors"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.05",
+"old": "IV.8.05",
+"name": "Multiply complex",
+"steps": [
+"by a real",
+"by i",
+"FOIL and i² = −1",
+"squares of complex numbers"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.06",
+"old": "IV.8.06",
+"name": "Conjugates",
+"steps": [
+"write the conjugate",
+"z·z̅ is real",
+"reflection in the plane",
+"conjugate pairs of roots"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.07",
+"old": "IV.8.07",
+"name": "Divide complex",
+"steps": [
+"multiply by the conjugate",
+"simplify the denominator",
+"standard form answer",
+"reciprocals"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.08",
+"old": "IV.8.08",
+"name": "Complex plane",
+"steps": [
+"real and imaginary axes",
+"plot a + bi",
+"read a point",
+"addition as moving"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.09",
+"old": "IV.8.09",
+"name": "Modulus",
+"steps": [
+"modulus = √(a² + b²)",
+"distance from 0",
+"distance between two numbers",
+"midpoint"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.10",
+"old": "IV.8.10",
+"name": "Complex roots of quadratics",
+"steps": [
+"negative discriminant",
+"solve with the formula",
+"conjugate pair answers",
+"check by substituting"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.11",
+"old": "IV.8.11",
+"name": "Fundamental theorem of algebra",
+"steps": [
+"degree n has n roots",
+"count with multiplicity",
+"conjugate root theorem",
+"build a polynomial from roots"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.12",
+"old": "IV.8.12",
+"name": "Polar form",
+"steps": [
+"argument (angle)",
+"r(cos θ + i sin θ)",
+"convert rectangular to polar",
+"convert back"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.13",
+"old": "IV.8.13",
+"name": "Multiply & divide in polar",
+"steps": [
+"multiply moduli",
+"add arguments",
+"division rule",
+"rotation meaning"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.14",
+"old": "IV.8.14",
+"name": "De Moivre's theorem",
+"steps": [
+"powers in polar form",
+"compute zⁿ",
+"back to rectangular",
+"derive double-angle identities"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.15",
+"old": "IV.8.15",
+"name": "Roots of complex numbers",
+"steps": [
+"n roots exist",
+"formula with 2πk/n",
+"roots of unity",
+"roots as a regular polygon"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.8.16",
+"old": null,
+"name": "Complex loci",
+"steps": [
+"|z − a| = r is a circle",
+"|z − a| = |z − b| is a bisector",
+"arg(z − a) = θ is a half-line",
+"shade regions"
+],
+"unit": "IV.8"
+},
+{
+"id": "IV.9.01",
+"old": "IV.9.01",
+"name": "Parent functions",
+"steps": [
+"linear, quadratic, cubic",
+"root, absolute value, reciprocal",
+"exponential, log",
+"match graph to equation"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.02",
+"old": "IV.9.02",
+"name": "Vertical shifts",
+"steps": [
+"f(x) + k",
+"up vs down",
+"graph it",
+"write it from a graph"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.03",
+"old": "IV.9.03",
+"name": "Horizontal shifts",
+"steps": [
+"f(x − h)",
+"why the sign feels backwards",
+"graph it",
+"write it from a graph"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.04",
+"old": "IV.9.04",
+"name": "Reflections",
+"steps": [
+"−f(x) over the x-axis",
+"f(−x) over the y-axis",
+"graph them",
+"identify from equations"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.05",
+"old": "IV.9.05",
+"name": "Vertical stretch & compress",
+"steps": [
+"a·f(x)",
+"a > 1 vs 0 < a < 1",
+"effect on points",
+"write from a graph"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.06",
+"old": "IV.9.06",
+"name": "Horizontal stretch & compress",
+"steps": [
+"f(bx)",
+"factor 1/b",
+"effect on points",
+"write from a graph"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.07",
+"old": "IV.9.07",
+"name": "Combined transformations",
+"steps": [
+"order of operations",
+"map key points",
+"graph a full transformation",
+"describe one in words"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.08",
+"old": "IV.9.08",
+"name": "Even & odd functions",
+"steps": [
+"f(−x) = f(x)",
+"f(−x) = −f(x)",
+"test algebraically",
+"neither"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.09",
+"old": "IV.9.09",
+"name": "Symmetry of graphs",
+"steps": [
+"y-axis symmetry",
+"origin symmetry",
+"other lines of symmetry",
+"use symmetry to finish a sketch"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.10",
+"old": "IV.9.10",
+"name": "End behavior",
+"steps": [
+"arrows notation",
+"as x → ±∞",
+"from a graph",
+"from an equation"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.11",
+"old": "IV.9.11",
+"name": "Continuity informally",
+"steps": [
+"draw without lifting",
+"jumps",
+"holes",
+"breaks at asymptotes"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.12",
+"old": "IV.9.12",
+"name": "Asymptotes informally",
+"steps": [
+"vertical",
+"horizontal",
+"from a graph",
+"meaning in context"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.13",
+"old": "IV.9.13",
+"name": "One-to-one & inverses on graphs",
+"steps": [
+"horizontal line test",
+"reflect over y = x",
+"inverse points (b, a)",
+"inverse domain and range"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.14",
+"old": "IV.9.14",
+"name": "Restrict a domain",
+"steps": [
+"why restrict",
+"restrict a parabola",
+"find the inverse on that piece",
+"check it"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.15",
+"old": "IV.9.15",
+"name": "Composition on graphs & tables",
+"steps": [
+"f(g(a)) from tables",
+"from graphs",
+"domain of a composition",
+"in context"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.16",
+"old": "IV.9.16",
+"name": "Choosing a model",
+"steps": [
+"constant differences mean linear",
+"second differences mean quadratic",
+"constant ratios mean exponential",
+"justify from context"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.17",
+"old": "IV.9.17",
+"name": "Growth races",
+"steps": [
+"linear vs exponential",
+"exponential eventually wins",
+"compare with tables",
+"compare with graphs"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.9.18",
+"old": null,
+"name": "Modulus graphs",
+"steps": [
+"y = |f(x)| reflects the negative part",
+"y = f(|x|) mirrors the right half",
+"solve |f(x)| = k with the graph",
+"combine with other transformations"
+],
+"unit": "IV.9"
+},
+{
+"id": "IV.10.01",
+"old": "IV.10.01",
+"name": "Degree & leading coefficient",
+"steps": [
+"find the degree",
+"find the leading coefficient",
+"from factored form",
+"max number of zeros"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.02",
+"old": "IV.10.02",
+"name": "End behavior of polynomials",
+"steps": [
+"even degree",
+"odd degree",
+"sign of the leader",
+"match graphs"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.03",
+"old": "IV.10.03",
+"name": "Zeros & multiplicity",
+"steps": [
+"read zeros from factors",
+"count multiplicity",
+"total degree check",
+"from a graph"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.04",
+"old": "IV.10.04",
+"name": "Behavior at zeros",
+"steps": [
+"cross at odd multiplicity",
+"bounce at even",
+"flatten at triple",
+"predict the shape"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.05",
+"old": "IV.10.05",
+"name": "Sketch from factored form",
+"steps": [
+"plot zeros",
+"y-intercept",
+"end behavior",
+"join the pieces"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.06",
+"old": "IV.10.06",
+"name": "Turning points",
+"steps": [
+"at most n − 1",
+"find them with technology",
+"local max and min",
+"meaning in context"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.07",
+"old": "IV.10.07",
+"name": "Remainder theorem",
+"steps": [
+"f(a) is the remainder",
+"use synthetic division",
+"evaluate quickly",
+"solve for a missing coefficient"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.08",
+"old": "IV.10.08",
+"name": "Factor theorem",
+"steps": [
+"f(a) = 0 means (x − a) is a factor",
+"test a factor",
+"divide it out",
+"factor the rest"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.09",
+"old": "IV.10.09",
+"name": "Rational root theorem",
+"steps": [
+"list p/q candidates",
+"test them",
+"find a first root",
+"reduce the degree"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.10",
+"old": "IV.10.10",
+"name": "Find all zeros",
+"steps": [
+"rational roots first",
+"depressed quadratic",
+"irrational and complex roots",
+"write fully factored"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.11",
+"old": "IV.10.13",
+"name": "Write a polynomial from zeros",
+"steps": [
+"factors from zeros",
+"include multiplicity",
+"use conjugate pairs",
+"scale to fit a point"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.12",
+"old": "IV.10.14",
+"name": "Polynomial inequalities",
+"steps": [
+"find zeros",
+"sign chart",
+"read the graph",
+"interval answer"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.13",
+"old": "IV.10.15",
+"name": "Polynomial models",
+"steps": [
+"box volume problem",
+"fit a cubic",
+"find a max with technology",
+"realistic domain"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.10.14",
+"old": null,
+"name": "Roots & coefficients",
+"steps": [
+"sum and product of quadratic roots",
+"build a quadratic from root facts",
+"relationships for cubic roots",
+"equations with transformed roots"
+],
+"unit": "IV.10"
+},
+{
+"id": "IV.11.01",
+"old": "IV.11.01",
+"name": "Simplify rational expressions",
+"steps": [
+"factor top and bottom",
+"cancel common factors",
+"state excluded values",
+"(a − b)/(b − a) = −1"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.02",
+"old": "IV.11.02",
+"name": "Multiply & divide rational expressions",
+"steps": [
+"factor all",
+"multiply and cancel",
+"flip to divide",
+"excluded values"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.03",
+"old": "IV.11.03",
+"name": "Add & subtract rational expressions",
+"steps": [
+"like denominators",
+"find the LCD",
+"rewrite and combine",
+"simplify the result"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.04",
+"old": "IV.11.04",
+"name": "Complex fractions",
+"steps": [
+"combine top and bottom",
+"multiply by the LCD method",
+"simplify",
+"excluded values"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.05",
+"old": "IV.11.05",
+"name": "Rational equations",
+"steps": [
+"multiply by the LCD",
+"solve the result",
+"proportions shortcut",
+"check"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.06",
+"old": "IV.11.06",
+"name": "Extraneous solutions",
+"steps": [
+"why they appear",
+"spot them in rational equations",
+"in radical equations",
+"state the final set"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.07",
+"old": "IV.11.07",
+"name": "Vertical asymptotes",
+"steps": [
+"zeros of the denominator",
+"after cancelling",
+"behavior near them",
+"write the equations"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.08",
+"old": "IV.11.08",
+"name": "Horizontal asymptotes",
+"steps": [
+"compare degrees",
+"ratio of leaders",
+"y = 0 case",
+"can a graph cross it"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.09",
+"old": "IV.11.09",
+"name": "Holes",
+"steps": [
+"cancelled factors",
+"find the hole's coordinates",
+"show on a graph",
+"hole vs asymptote"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.10",
+"old": "IV.11.10",
+"name": "Graph rational functions",
+"steps": [
+"intercepts",
+"asymptotes and holes",
+"sign chart",
+"sketch"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.11",
+"old": "IV.11.11",
+"name": "Slant asymptotes",
+"steps": [
+"degree one higher",
+"divide to find it",
+"graph with it",
+"end behavior"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.12",
+"old": "IV.11.12",
+"name": "Inverse variation",
+"steps": [
+"y = k/x",
+"find k",
+"joint and combined variation",
+"word problems"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.13",
+"old": "IV.11.13",
+"name": "Root functions",
+"steps": [
+"graph √x and ∛x",
+"transform them",
+"domain and range",
+"inverse of a quadratic piece"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.11.14",
+"old": "IV.11.14",
+"name": "Work & rate problems",
+"steps": [
+"rate as 1/time",
+"add rates",
+"set up the equation",
+"solve and interpret"
+],
+"unit": "IV.11"
+},
+{
+"id": "IV.12.01",
+"old": "IV.12.01",
+"name": "Exponential growth",
+"steps": [
+"repeated multiplying",
+"y = a·bˣ with b > 1",
+"initial value and factor",
+"from a table"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.02",
+"old": "IV.12.02",
+"name": "Exponential decay",
+"steps": [
+"0 < b < 1",
+"decay factor vs rate",
+"from a table",
+"contexts"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.03",
+"old": "IV.12.03",
+"name": "Graph exponentials",
+"steps": [
+"key points",
+"horizontal asymptote",
+"domain and range",
+"growth vs decay shape"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.04",
+"old": "IV.12.04",
+"name": "Transform exponentials",
+"steps": [
+"shifts",
+"reflections",
+"stretches",
+"new asymptote"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.05",
+"old": "IV.12.05",
+"name": "Percent growth models",
+"steps": [
+"b = 1 + r",
+"b = 1 − r",
+"write the model",
+"convert period rates"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.06",
+"old": "IV.12.06",
+"name": "Compound interest",
+"steps": [
+"A = P(1 + r/n)^(nt)",
+"compounding periods",
+"compare offers",
+"solve for time with logs"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.07",
+"old": "IV.12.07",
+"name": "The number e",
+"steps": [
+"limit of compounding",
+"A = Pe^(rt)",
+"graph eˣ",
+"continuous growth contexts"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.08",
+"old": "IV.12.08",
+"name": "What a logarithm is",
+"steps": [
+"log as \"which exponent\"",
+"log_b(x) = y means bʸ = x",
+"common and natural logs",
+"log of 1 and of b"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.09",
+"old": "IV.12.09",
+"name": "Convert exponential and log",
+"steps": [
+"exponential to log",
+"log to exponential",
+"with e and ln",
+"solve simple ones"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.10",
+"old": "IV.12.10",
+"name": "Evaluate logs",
+"steps": [
+"by hand for exact powers",
+"fractional and negative results",
+"estimate between integers",
+"calculator"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.11",
+"old": "IV.12.11",
+"name": "Log properties",
+"steps": [
+"product rule",
+"quotient rule",
+"power rule",
+"expand and condense"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.12",
+"old": "IV.12.12",
+"name": "Change of base",
+"steps": [
+"the formula",
+"evaluate any base",
+"why it works",
+"compare logs"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.13",
+"old": "IV.12.13",
+"name": "Graph logs",
+"steps": [
+"inverse of exponential",
+"vertical asymptote",
+"transformations",
+"domain"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.14",
+"old": "IV.12.14",
+"name": "Solve exponential equations",
+"steps": [
+"same base when possible",
+"take logs of both sides",
+"isolate first",
+"exact vs decimal answers"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.15",
+"old": "IV.12.15",
+"name": "Solve log equations",
+"steps": [
+"convert to exponential",
+"condense then solve",
+"log = log",
+"check domain"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.16",
+"old": "IV.12.16",
+"name": "Half-life & doubling time",
+"steps": [
+"half-life models",
+"doubling models",
+"solve for time",
+"carbon dating"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.12.17",
+"old": "IV.12.17",
+"name": "Log scales & regression",
+"steps": [
+"decibels and pH",
+"Richter scale",
+"exponential regression",
+"linearize with logs"
+],
+"unit": "IV.12"
+},
+{
+"id": "IV.13.01",
+"old": "IV.13.01",
+"name": "Sequence notation",
+"steps": [
+"terms and aₙ",
+"find terms from a formula",
+"finite vs infinite",
+"write a formula from terms"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.02",
+"old": "IV.13.02",
+"name": "Arithmetic sequences",
+"steps": [
+"common difference",
+"explicit formula (d is the slope)",
+"find a term",
+"find which term"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.03",
+"old": "IV.13.03",
+"name": "Geometric sequences",
+"steps": [
+"common ratio",
+"explicit formula",
+"find a term",
+"find which term with logs"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.04",
+"old": "IV.13.04",
+"name": "Recursive vs explicit",
+"steps": [
+"read a recursive rule",
+"generate terms",
+"convert recursive to explicit",
+"when each is useful"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.05",
+"old": "IV.13.05",
+"name": "Arithmetic series",
+"steps": [
+"Gauss's pairing trick",
+"Sₙ formula",
+"find n or a₁",
+"stacking and seating problems"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.06",
+"old": "IV.13.06",
+"name": "Finite geometric series",
+"steps": [
+"the formula",
+"derive it by subtracting",
+"apply it",
+"find n"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.07",
+"old": "IV.13.07",
+"name": "Sigma notation",
+"steps": [
+"read Σ",
+"expand a sum",
+"write a sum in Σ",
+"properties of sums"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.08",
+"old": "IV.13.08",
+"name": "Infinite geometric series",
+"steps": [
+"when r is between −1 and 1",
+"S = a/(1 − r)",
+"repeating decimals as fractions",
+"shifted starting index and bouncing balls"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.09",
+"old": "IV.13.09",
+"name": "Convergence informally",
+"steps": [
+"partial sums",
+"converge vs diverge",
+"harmonic series surprise",
+"table and graph of partial sums"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.10",
+"old": "IV.13.10",
+"name": "Special recursive sequences",
+"steps": [
+"Fibonacci",
+"golden ratio from ratios",
+"triangular and square numbers",
+"find patterns"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.11",
+"old": "IV.13.11",
+"name": "Proof by induction preview",
+"steps": [
+"base case",
+"inductive step",
+"prove a sum formula",
+"domino picture"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.12",
+"old": "IV.13.12",
+"name": "Pascal's triangle",
+"steps": [
+"build it",
+"patterns in rows",
+"link to combinations",
+"row sums as powers of 2"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.13",
+"old": "IV.13.13",
+"name": "Binomial theorem",
+"steps": [
+"coefficients from Pascal",
+"expand (a + b)ⁿ",
+"find a specific term",
+"with negatives and coefficients"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.13.14",
+"old": "IV.13.14",
+"name": "Series in money",
+"steps": [
+"savings plans",
+"loan payments",
+"annuity formula",
+"compare plans"
+],
+"unit": "IV.13"
+},
+{
+"id": "IV.14.01",
+"old": null,
+"name": "Factorials & counting",
+"steps": [
+"the multiplication principle",
+"n!",
+"arrange every object",
+"simplify factorial expressions"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.02",
+"old": null,
+"name": "Permutations",
+"steps": [
+"arrange r of n",
+"the ⁿPᵣ formula",
+"with repeated letters",
+"circular arrangements"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.03",
+"old": null,
+"name": "Combinations",
+"steps": [
+"choose r of n",
+"the ⁿCᵣ formula",
+"does order matter?",
+"link to Pascal's triangle"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.04",
+"old": null,
+"name": "Counting with conditions",
+"steps": [
+"must include or exclude",
+"\"at least\" by the complement",
+"objects kept together",
+"committees with rules"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.05",
+"old": null,
+"name": "Probability by counting",
+"steps": [
+"equally likely outcomes",
+"cards and dice",
+"using combinations",
+"lottery odds"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.06",
+"old": null,
+"name": "Addition rule",
+"steps": [
+"\"or\" events",
+"mutually exclusive events",
+"subtract the overlap",
+"Venn diagrams"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.07",
+"old": null,
+"name": "Complements & \"at least one\"",
+"steps": [
+"P(not A)",
+"at least one, by the complement",
+"repeated trials",
+"the birthday problem"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.08",
+"old": null,
+"name": "Independent events",
+"steps": [
+"the multiplication rule",
+"test for independence",
+"with replacement",
+"independent vs mutually exclusive"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.09",
+"old": null,
+"name": "Conditional probability",
+"steps": [
+"what P(A | B) means",
+"from a two-way table",
+"the formula",
+"without replacement"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.10",
+"old": null,
+"name": "Tree diagrams",
+"steps": [
+"multiply along branches",
+"add the paths",
+"conditional branches",
+"reverse a tree"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.11",
+"old": null,
+"name": "Bayes' theorem",
+"steps": [
+"the formula",
+"medical test problems",
+"the base-rate trap",
+"with a tree or a table"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.14.12",
+"old": null,
+"name": "Expected value",
+"steps": [
+"a weighted average of outcomes",
+"fair games",
+"insurance and lotteries",
+"decide by expected value"
+],
+"unit": "IV.14"
+},
+{
+"id": "IV.15.01",
+"old": null,
+"name": "Standard deviation",
+"steps": [
+"deviations from the mean",
+"variance",
+"standard deviation",
+"population vs sample"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.02",
+"old": null,
+"name": "Summary statistics",
+"steps": [
+"from a frequency table",
+"estimates from grouped data",
+"from Σx and Σx²",
+"adding to or scaling the data"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.03",
+"old": null,
+"name": "z-scores",
+"steps": [
+"standardize a value",
+"compare across groups",
+"unusual values",
+"back to raw scores"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.04",
+"old": null,
+"name": "Random variables",
+"steps": [
+"a discrete distribution table",
+"probabilities sum to 1",
+"the mean E(X)",
+"the variance of X"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.05",
+"old": null,
+"name": "The binomial setting",
+"steps": [
+"the four conditions",
+"n and p",
+"spot a binomial situation",
+"when it fails"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.06",
+"old": null,
+"name": "Binomial probabilities",
+"steps": [
+"P(X = k) formula",
+"cumulative probabilities",
+"at least and at most",
+"with technology"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.07",
+"old": null,
+"name": "Binomial mean & spread",
+"steps": [
+"np",
+"√(np(1 − p))",
+"interpret them",
+"the shape of the distribution"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.08",
+"old": null,
+"name": "The normal distribution",
+"steps": [
+"the bell curve",
+"the 68–95–99.7 rule",
+"mean and standard deviation",
+"is it roughly normal?"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.09",
+"old": null,
+"name": "Normal probabilities",
+"steps": [
+"with z-scores",
+"between two values",
+"inverse normal: find a value",
+"with technology"
+],
+"unit": "IV.15"
+},
+{
+"id": "IV.15.10",
+"old": null,
+"name": "Scatter plots & correlation",
+"steps": [
+"direction, form and strength",
+"the correlation coefficient r",
+"correlation vs causation",
+"outliers and influence"
+],
+"unit": "IV.15"
+},
+{
+"id": "V.1.01",
+"old": "V.1.02",
+"name": "Undefined terms & definitions",
+"steps": [
+"point, line and plane",
+"segment, ray and angle",
+"what makes a definition precise",
+"reversible definitions and flawed ones"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.02",
+"old": "V.1.03",
+"name": "Conditional statements",
+"steps": [
+"hypothesis and conclusion",
+"if–then form",
+"truth value",
+"rewrite everyday claims"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.03",
+"old": "V.1.04",
+"name": "Related conditionals",
+"steps": [
+"converse",
+"inverse",
+"contrapositive",
+"which ones are equivalent"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.04",
+"old": "V.1.05",
+"name": "Biconditionals",
+"steps": [
+"if and only if",
+"split into two conditionals",
+"test both directions",
+"definitions as biconditionals"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.05",
+"old": "V.1.06",
+"name": "Truth tables",
+"steps": [
+"not, and, or",
+"the conditional's table",
+"build a table",
+"prove equivalence by table"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.06",
+"old": "V.1.07",
+"name": "Inductive vs deductive",
+"steps": [
+"patterns and conjectures",
+"why patterns can fail",
+"deduction from facts",
+"classify an argument"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.07",
+"old": "V.1.08",
+"name": "Counterexamples",
+"steps": [
+"what one counterexample does",
+"find one",
+"fix a false claim",
+"examples never prove \"all\""
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.08",
+"old": "V.1.09",
+"name": "Detachment & syllogism",
+"steps": [
+"law of detachment",
+"law of syllogism",
+"chain statements",
+"spot invalid reasoning"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.09",
+"old": "V.1.10",
+"name": "Properties of equality",
+"steps": [
+"reflexive, symmetric, transitive",
+"addition and multiplication properties",
+"substitution",
+"congruence versions"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.10",
+"old": "V.1.11",
+"name": "Algebraic proofs",
+"steps": [
+"justify each step of solving",
+"statement and reason pairs",
+"distributive property",
+"write a full one"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.11",
+"old": "V.1.12",
+"name": "Two-column proofs",
+"steps": [
+"given and prove",
+"plan backwards",
+"fill reasons",
+"write one from scratch"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.12",
+"old": "V.1.13",
+"name": "Paragraph & flow proofs",
+"steps": [
+"read a flow proof",
+"convert two-column to flow",
+"write a paragraph proof",
+"choose the clearest format"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.13",
+"old": "V.1.14",
+"name": "Indirect proof",
+"steps": [
+"assume the opposite",
+"reach a contradiction",
+"conclude",
+"prove √2 is irrational"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.14",
+"old": null,
+"name": "Proof by induction",
+"steps": [
+"base case and inductive step",
+"sum formulas",
+"divisibility",
+"inequalities"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.15",
+"old": null,
+"name": "Sets & Venn diagrams",
+"steps": [
+"set notation and membership",
+"union, intersection and complement",
+"Venn diagrams with counts",
+"set-builder notation"
+],
+"unit": "V.1"
+},
+{
+"id": "V.1.16",
+"old": null,
+"name": "Quantifiers",
+"steps": [
+"\"for all\" and \"there exists\"",
+"true or false over a set",
+"negate a quantified statement",
+"counterexamples for \"for all\""
+],
+"unit": "V.1"
+},
+{
+"id": "V.2.01",
+"old": "V.2.01",
+"name": "Segments & midpoints",
+"steps": [
+"segment addition postulate",
+"midpoint definition",
+"solve for x",
+"midpoint formula link"
+],
+"unit": "V.2"
+},
+{
+"id": "V.2.02",
+"old": "V.2.02",
+"name": "Angles & bisectors",
+"steps": [
+"angle addition postulate",
+"bisector definition",
+"solve for x",
+"linear pair postulate"
+],
+"unit": "V.2"
+},
+{
+"id": "V.2.03",
+"old": "V.2.03",
+"name": "Angle pair theorems",
+"steps": [
+"vertical angles theorem proof",
+"congruent supplements",
+"congruent complements",
+"use them in proofs"
+],
+"unit": "V.2"
+},
+{
+"id": "V.2.04",
+"old": "V.2.04",
+"name": "Parallel line theorems",
+"steps": [
+"corresponding angles postulate",
+"prove alternate interior",
+"prove same-side interior",
+"solve for x"
+],
+"unit": "V.2"
+},
+{
+"id": "V.2.05",
+"old": "V.2.05",
+"name": "Proving lines parallel",
+"steps": [
+"converses of the angle theorems",
+"choose which to use",
+"two-column proof",
+"transitivity of parallels"
+],
+"unit": "V.2"
+},
+{
+"id": "V.2.06",
+"old": "V.2.06",
+"name": "Perpendicular lines",
+"steps": [
+"right angle definitions",
+"perpendicular transversal theorem",
+"distance from a point to a line",
+"proofs with perpendiculars"
+],
+"unit": "V.2"
+},
+{
+"id": "V.3.01",
+"old": "V.3.01",
+"name": "Classify triangles",
+"steps": [
+"by sides",
+"by angles",
+"both at once",
+"on the coordinate plane"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.02",
+"old": "V.3.02",
+"name": "Triangle sum proof",
+"steps": [
+"draw the parallel line",
+"use alternate interior angles",
+"write the proof",
+"corollaries"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.03",
+"old": "V.3.03",
+"name": "Exterior angle theorem",
+"steps": [
+"remote interior angles",
+"prove it",
+"solve for x",
+"exterior angle inequality"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.04",
+"old": "V.3.04",
+"name": "Congruent figures",
+"steps": [
+"corresponding parts",
+"congruence statements",
+"order of letters matters",
+"third angles theorem"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.05",
+"old": "V.3.05",
+"name": "SSS",
+"steps": [
+"the postulate",
+"mark the diagram",
+"decide if it applies",
+"proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.06",
+"old": "V.3.06",
+"name": "SAS",
+"steps": [
+"included angle",
+"mark the diagram",
+"SSA does not work",
+"proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.07",
+"old": "V.3.07",
+"name": "ASA",
+"steps": [
+"included side",
+"mark the diagram",
+"decide if it applies",
+"proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.08",
+"old": "V.3.08",
+"name": "AAS",
+"steps": [
+"non-included side",
+"prove AAS from ASA",
+"decide if it applies",
+"proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.09",
+"old": "V.3.09",
+"name": "HL",
+"steps": [
+"right triangles only",
+"hypotenuse and leg",
+"decide if it applies",
+"proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.10",
+"old": "V.3.10",
+"name": "CPCTC proofs",
+"steps": [
+"prove triangles congruent first",
+"then conclude parts",
+"overlapping triangles",
+"two-step proofs"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.11",
+"old": "V.3.11",
+"name": "Isosceles triangles",
+"steps": [
+"base angles theorem",
+"its converse",
+"equilateral means equiangular",
+"solve for x"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.12",
+"old": "V.3.12",
+"name": "Triangle inequality",
+"steps": [
+"sum of two sides beats the third",
+"can these form a triangle",
+"range of the third side",
+"biggest angle opposite longest side"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.13",
+"old": "V.3.13",
+"name": "Midsegment theorem",
+"steps": [
+"parallel to the third side",
+"half as long",
+"solve for x",
+"coordinate proof"
+],
+"unit": "V.3"
+},
+{
+"id": "V.3.14",
+"old": "V.3.14",
+"name": "Points of concurrency",
+"steps": [
+"circumcenter from perpendicular bisectors",
+"incenter from angle bisectors",
+"centroid from medians (2:1)",
+"orthocenter from altitudes"
+],
+"unit": "V.3"
+},
+{
+"id": "V.4.01",
+"old": "V.4.01",
+"name": "Interior angle sums",
+"steps": [
+"split into triangles",
+"(n − 2)·180°",
+"one angle of a regular polygon",
+"find n from an angle"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.02",
+"old": "V.4.02",
+"name": "Exterior angle sum",
+"steps": [
+"always 360°",
+"walking-around explanation",
+"one exterior angle",
+"find n"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.03",
+"old": "V.4.03",
+"name": "Parallelogram properties",
+"steps": [
+"opposite sides",
+"opposite angles",
+"diagonals bisect",
+"prove a property"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.04",
+"old": "V.4.04",
+"name": "Proving parallelograms",
+"steps": [
+"both pairs of sides",
+"one pair parallel and congruent",
+"diagonals bisect",
+"on the coordinate plane"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.05",
+"old": "V.4.05",
+"name": "Rectangles, rhombi, squares",
+"steps": [
+"rectangle diagonals congruent",
+"rhombus diagonals perpendicular",
+"square has both",
+"solve for x"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.06",
+"old": "V.4.06",
+"name": "Trapezoids & kites",
+"steps": [
+"isosceles trapezoid properties",
+"trapezoid midsegment",
+"kite diagonals",
+"solve for x"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.07",
+"old": "V.4.07",
+"name": "Quadrilateral family tree",
+"steps": [
+"the hierarchy",
+"always, sometimes, never",
+"minimum conditions",
+"classify from facts"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.08",
+"old": "V.4.08",
+"name": "Regular polygon area",
+"steps": [
+"apothem",
+"A = ½·apothem·perimeter",
+"find the apothem with trig",
+"approach the circle"
+],
+"unit": "V.4"
+},
+{
+"id": "V.4.09",
+"old": "V.4.09",
+"name": "Coordinate proofs",
+"steps": [
+"place figures smartly",
+"slope for parallel and perpendicular",
+"distance for congruent sides",
+"midpoint for bisecting"
+],
+"unit": "V.4"
+},
+{
+"id": "V.5.01",
+"old": "V.5.01",
+"name": "Proportions in figures",
+"steps": [
+"set up a proportion",
+"cross multiply",
+"extended ratios",
+"golden ratio"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.02",
+"old": "V.5.02",
+"name": "Similar polygons",
+"steps": [
+"equal angles",
+"proportional sides",
+"similarity statements",
+"test two polygons"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.03",
+"old": "V.5.03",
+"name": "Scale factor",
+"steps": [
+"find it",
+"find a missing side",
+"enlargements vs reductions",
+"maps and models"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.04",
+"old": "V.5.04",
+"name": "AA similarity",
+"steps": [
+"the postulate",
+"find the angles",
+"nested triangles",
+"proof"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.05",
+"old": "V.5.05",
+"name": "SSS similarity",
+"steps": [
+"three ratios equal",
+"test",
+"find the scale factor",
+"proof"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.06",
+"old": "V.5.06",
+"name": "SAS similarity",
+"steps": [
+"two ratios and the included angle",
+"test",
+"solve for x",
+"proof"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.07",
+"old": "V.5.07",
+"name": "Triangle proportionality",
+"steps": [
+"parallel line splits sides proportionally",
+"its converse",
+"three parallel lines",
+"solve for x"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.08",
+"old": "V.5.08",
+"name": "Angle bisector theorem",
+"steps": [
+"the ratio of the split",
+"solve for a segment",
+"prove it",
+"with coordinates"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.09",
+"old": "V.5.09",
+"name": "Similar right triangles",
+"steps": [
+"altitude to the hypotenuse",
+"three similar triangles",
+"geometric mean",
+"prove Pythagoras with similarity"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.10",
+"old": "V.5.10",
+"name": "Perimeter & area ratios",
+"steps": [
+"perimeter ratio = k",
+"area ratio = k²",
+"find k from areas",
+"word problems"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.11",
+"old": "V.5.11",
+"name": "Volume ratios",
+"steps": [
+"volume ratio = k³",
+"surface area = k²",
+"find k from volumes",
+"why giants can't exist"
+],
+"unit": "V.5"
+},
+{
+"id": "V.5.12",
+"old": "V.5.12",
+"name": "Indirect measurement",
+"steps": [
+"shadows",
+"mirrors",
+"across a river",
+"check the answer is sensible"
+],
+"unit": "V.5"
+},
+{
+"id": "V.6.01",
+"old": "V.6.01",
+"name": "Naming the sides",
+"steps": [
+"hypotenuse",
+"opposite",
+"adjacent",
+"they change with the angle"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.02",
+"old": "V.6.02",
+"name": "Trig ratios from similarity",
+"steps": [
+"same angle, same ratio",
+"measure and compare",
+"SOH-CAH-TOA",
+"write all three ratios"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.03",
+"old": "V.6.03",
+"name": "Find a side with sine",
+"steps": [
+"choose sine",
+"set up",
+"unknown on top",
+"unknown on the bottom"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.04",
+"old": "V.6.04",
+"name": "Find a side with cosine",
+"steps": [
+"choose cosine",
+"set up",
+"unknown on top",
+"unknown on the bottom"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.05",
+"old": "V.6.05",
+"name": "Find a side with tangent",
+"steps": [
+"choose tangent",
+"set up",
+"unknown on top",
+"unknown on the bottom"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.06",
+"old": "V.6.06",
+"name": "Find an angle",
+"steps": [
+"inverse trig meaning",
+"sin⁻¹, cos⁻¹, tan⁻¹",
+"choose the ratio",
+"round sensibly"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.07",
+"old": "V.6.07",
+"name": "Solve a right triangle",
+"steps": [
+"all sides and angles",
+"given two sides",
+"given a side and angle",
+"check with Pythagoras"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.08",
+"old": "V.6.08",
+"name": "45–45–90 triangles",
+"steps": [
+"ratio 1 : 1 : √2",
+"from a leg",
+"from the hypotenuse",
+"square diagonals"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.09",
+"old": "V.6.09",
+"name": "30–60–90 triangles",
+"steps": [
+"ratio 1 : √3 : 2",
+"from the short leg",
+"from the other sides",
+"equilateral heights"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.10",
+"old": "V.6.10",
+"name": "Elevation & depression",
+"steps": [
+"draw the picture",
+"angle of elevation",
+"angle of depression",
+"two-triangle problems"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.11",
+"old": "V.6.11",
+"name": "Cofunctions",
+"steps": [
+"sin A = cos(90° − A)",
+"why it works",
+"solve with it",
+"the \"co\" in cosine"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.12",
+"old": "V.6.12",
+"name": "Pythagorean identity",
+"steps": [
+"sin² + cos² = 1 from the triangle",
+"find cos from sin",
+"find tan from both",
+"check exact values"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.13",
+"old": "V.6.13",
+"name": "Reciprocal ratios",
+"steps": [
+"cosecant",
+"secant",
+"cotangent",
+"evaluate from a triangle"
+],
+"unit": "V.6"
+},
+{
+"id": "V.6.14",
+"old": "V.6.14",
+"name": "Calculator trig",
+"steps": [
+"degree vs radian mode",
+"inverse keys",
+"rounding in steps",
+"exact vs approximate"
+],
+"unit": "V.6"
+},
+{
+"id": "V.7.01",
+"old": "V.7.01",
+"name": "Law of sines",
+"steps": [
+"the formula",
+"find a side",
+"find an angle",
+"derive it with an altitude"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.02",
+"old": "V.7.02",
+"name": "Ambiguous case",
+"steps": [
+"SSA setup",
+"zero, one or two triangles",
+"find both",
+"draw them"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.03",
+"old": "V.7.03",
+"name": "Law of cosines",
+"steps": [
+"the formula",
+"find a side (SAS)",
+"find an angle (SSS)",
+"Pythagoras as a special case"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.04",
+"old": "V.7.04",
+"name": "Choosing the law",
+"steps": [
+"SAS and SSS → cosines",
+"AAS, ASA → sines",
+"SSA → careful sines",
+"plan the full solution"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.05",
+"old": "V.7.05",
+"name": "Solve any triangle",
+"steps": [
+"first missing part",
+"angle sum",
+"last side",
+"check consistency"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.06",
+"old": "V.7.06",
+"name": "Area with sine",
+"steps": [
+"½·ab·sin C",
+"derive it",
+"find a missing side from area",
+"parallelogram area"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.07",
+"old": "V.7.07",
+"name": "Heron's formula",
+"steps": [
+"semi-perimeter",
+"the formula",
+"apply it",
+"compare with ½ab sin C"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.08",
+"old": "V.7.08",
+"name": "Bearings & navigation",
+"steps": [
+"bearing notation",
+"draw the route",
+"solve for distance",
+"solve for heading"
+],
+"unit": "V.7"
+},
+{
+"id": "V.7.09",
+"old": "V.7.09",
+"name": "Surveying problems",
+"steps": [
+"inaccessible distances",
+"two observation points",
+"land area",
+"check reasonableness"
+],
+"unit": "V.7"
+},
+{
+"id": "V.8.01",
+"old": "V.8.01",
+"name": "Circle vocabulary",
+"steps": [
+"chord, secant, tangent",
+"arcs: minor, major, semicircle",
+"concentric and congruent circles",
+"name parts in a diagram"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.02",
+"old": "V.8.02",
+"name": "Central angles & arcs",
+"steps": [
+"arc measure = central angle",
+"arc addition",
+"congruent arcs",
+"solve for x"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.03",
+"old": "V.8.03",
+"name": "Arc length",
+"steps": [
+"fraction of circumference",
+"formula in degrees",
+"find the angle or radius",
+"word problems"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.04",
+"old": "V.8.04",
+"name": "Sector area",
+"steps": [
+"fraction of area",
+"formula",
+"segment area",
+"word problems"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.05",
+"old": "V.8.05",
+"name": "Radians",
+"steps": [
+"arc length over radius",
+"convert degrees and radians",
+"s = rθ",
+"sector area ½r²θ"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.06",
+"old": "V.8.06",
+"name": "Inscribed angle theorem",
+"steps": [
+"half the intercepted arc",
+"prove it (three cases)",
+"same arc, equal angles",
+"solve for x"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.07",
+"old": "V.8.07",
+"name": "Inscribed angle corollaries",
+"steps": [
+"angle in a semicircle is 90°",
+"cyclic quadrilateral opposite angles",
+"find unknown angles",
+"proofs"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.08",
+"old": "V.8.08",
+"name": "Tangent & radius",
+"steps": [
+"tangent ⊥ radius",
+"find lengths with Pythagoras",
+"test for tangency",
+"proof"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.09",
+"old": "V.8.09",
+"name": "Two tangents from a point",
+"steps": [
+"equal tangent segments",
+"circumscribed polygons",
+"solve for x",
+"proof"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.10",
+"old": "V.8.10",
+"name": "Chord properties",
+"steps": [
+"⊥ from center bisects a chord",
+"equal chords, equal distance",
+"find chord lengths",
+"find the center"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.11",
+"old": "V.8.11",
+"name": "Angles from chords",
+"steps": [
+"chords crossing inside",
+"half the sum of arcs",
+"solve for an arc",
+"proof"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.12",
+"old": "V.8.12",
+"name": "Angles from secants & tangents",
+"steps": [
+"outside the circle",
+"half the difference of arcs",
+"tangent–chord angle",
+"solve for x"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.13",
+"old": "V.8.13",
+"name": "Intersecting chord lengths",
+"steps": [
+"product of parts equal",
+"set up",
+"solve",
+"proof by similar triangles"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.14",
+"old": "V.8.14",
+"name": "Secant & tangent lengths",
+"steps": [
+"secant–secant",
+"secant–tangent",
+"solve",
+"power of a point idea"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.15",
+"old": "V.8.15",
+"name": "Equation of a circle",
+"steps": [
+"(x − h)² + (y − k)² = r²",
+"from Pythagoras",
+"write from center and point",
+"graph it and find tangent lines"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.16",
+"old": "V.8.16",
+"name": "General form of a circle",
+"steps": [
+"recognize it",
+"complete the square twice",
+"read center and radius",
+"circle through three points"
+],
+"unit": "V.8"
+},
+{
+"id": "V.8.17",
+"old": "V.8.17",
+"name": "All circles are similar",
+"steps": [
+"by dilation",
+"why π is constant",
+"Archimedes' polygon squeeze",
+"circumference to area by slicing"
+],
+"unit": "V.8"
+},
+{
+"id": "V.9.01",
+"old": "V.9.01",
+"name": "Standard position",
+"steps": [
+"initial and terminal sides",
+"positive and negative rotation",
+"more than 360°",
+"quadrant of an angle"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.02",
+"old": "V.9.02",
+"name": "Coterminal angles",
+"steps": [
+"add or subtract 360°",
+"in radians 2π",
+"find the smallest positive",
+"general form"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.03",
+"old": "V.9.04",
+"name": "Unit circle definition",
+"steps": [
+"cos as x, sin as y",
+"tan as y/x",
+"why it extends right-triangle trig",
+"points on the circle"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.04",
+"old": "V.9.05",
+"name": "Special angles",
+"steps": [
+"30°, 45°, 60° points",
+"the axes",
+"fill the whole circle",
+"common angles by heart, in degrees and radians"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.05",
+"old": "V.9.06",
+"name": "Reference angles",
+"steps": [
+"find in each quadrant",
+"in radians",
+"use to evaluate",
+"negative angles"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.06",
+"old": "V.9.07",
+"name": "Signs by quadrant",
+"steps": [
+"which are positive where",
+"a memory trick",
+"find a quadrant from signs",
+"find all ratios from one"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.07",
+"old": "V.9.08",
+"name": "Trig of any angle",
+"steps": [
+"from a point (x, y)",
+"r = √(x² + y²)",
+"exact values",
+"undefined values"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.08",
+"old": "V.9.09",
+"name": "Graph sine & cosine",
+"steps": [
+"from the unit circle",
+"key points",
+"one full period",
+"how they relate"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.09",
+"old": "V.9.10",
+"name": "Amplitude & period",
+"steps": [
+"A in A sin(Bx)",
+"period 2π/B",
+"graph",
+"write from a graph"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.10",
+"old": "V.9.11",
+"name": "Phase & vertical shift",
+"steps": [
+"horizontal shift",
+"midline",
+"graph a full transformation",
+"write from a graph"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.11",
+"old": "V.9.12",
+"name": "Periodic models",
+"steps": [
+"tides",
+"Ferris wheels",
+"daylight hours",
+"fit a model to data"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.12",
+"old": "V.9.13",
+"name": "Graph tangent",
+"steps": [
+"asymptotes",
+"period π",
+"key points",
+"transformations"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.13",
+"old": "V.9.14",
+"name": "Reciprocal function graphs",
+"steps": [
+"csc from sin",
+"sec from cos",
+"cot from tan",
+"asymptotes and ranges"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.14",
+"old": "V.9.15",
+"name": "Inverse trig functions",
+"steps": [
+"restricted domains",
+"ranges of arcsin, arccos, arctan",
+"evaluate exactly",
+"graphs"
+],
+"unit": "V.9"
+},
+{
+"id": "V.9.15",
+"old": "V.9.16",
+"name": "Inverse trig compositions",
+"steps": [
+"sin(arcsin x)",
+"arcsin(sin x) traps",
+"triangle method",
+"algebraic expressions"
+],
+"unit": "V.9"
+},
+{
+"id": "V.10.01",
+"old": "V.10.01",
+"name": "Reciprocal & quotient identities",
+"steps": [
+"csc, sec, cot as reciprocals",
+"tan = sin/cos",
+"rewrite in sin and cos",
+"simplify"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.02",
+"old": "V.10.02",
+"name": "Pythagorean identities",
+"steps": [
+"sin² + cos² = 1",
+"1 + tan² = sec²",
+"1 + cot² = csc²",
+"derive the last two"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.03",
+"old": "V.10.03",
+"name": "Simplify trig expressions",
+"steps": [
+"factor",
+"common denominators",
+"substitute identities",
+"reach one function"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.04",
+"old": "V.10.04",
+"name": "Prove identities",
+"steps": [
+"work one side only",
+"convert to sin and cos",
+"multiply by a conjugate",
+"write it cleanly"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.05",
+"old": "V.10.05",
+"name": "Sum & difference formulas",
+"steps": [
+"cos(A ± B)",
+"sin(A ± B)",
+"tan(A ± B)",
+"exact values like sin 15°"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.06",
+"old": "V.10.06",
+"name": "Double-angle formulas",
+"steps": [
+"sin 2A",
+"three forms of cos 2A",
+"tan 2A",
+"evaluate from one ratio"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.07",
+"old": "V.10.07",
+"name": "Half-angle formulas",
+"steps": [
+"derive from cos 2A",
+"choose the sign",
+"exact values",
+"power reduction"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.08",
+"old": "V.10.08",
+"name": "Harmonic form",
+"steps": [
+"R and α from a and b",
+"a cos θ + b sin θ = R cos(θ − α)",
+"maximum and minimum values",
+"solve equations with it"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.09",
+"old": "V.10.09",
+"name": "Basic trig equations",
+"steps": [
+"isolate the function",
+"reference angle",
+"all quadrants that fit",
+"check"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.10",
+"old": "V.10.10",
+"name": "Intervals & general solutions",
+"steps": [
+"solutions in [0, 2π)",
+"add 2πk or πk",
+"trig inequalities on an interval",
+"count solutions"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.11",
+"old": "V.10.11",
+"name": "Equations by factoring & identities",
+"steps": [
+"quadratic in sin or cos",
+"factor",
+"swap with an identity",
+"reject impossible values"
+],
+"unit": "V.10"
+},
+{
+"id": "V.10.12",
+"old": "V.10.12",
+"name": "Multiple-angle equations",
+"steps": [
+"sin 2x = k",
+"widen the interval first",
+"divide back",
+"check the count"
+],
+"unit": "V.10"
+},
+{
+"id": "V.11.01",
+"old": "V.11.01",
+"name": "Distance formula",
+"steps": [
+"derive from Pythagoras",
+"apply",
+"find a missing coordinate",
+"exact radical answers"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.02",
+"old": "V.11.02",
+"name": "Midpoint formula",
+"steps": [
+"average the coordinates",
+"apply",
+"find an endpoint",
+"center of a circle from a diameter"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.03",
+"old": "V.11.03",
+"name": "Partition a segment",
+"steps": [
+"ratio a : b",
+"fraction of the way",
+"formula",
+"check on a graph"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.04",
+"old": "V.11.04",
+"name": "Slope criteria",
+"steps": [
+"prove parallel sides",
+"prove perpendicular sides",
+"find a missing vertex",
+"right angle tests"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.05",
+"old": "V.11.05",
+"name": "Special lines",
+"steps": [
+"perpendicular bisector equation",
+"altitude equation",
+"median equation",
+"find where they meet"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.06",
+"old": "V.11.06",
+"name": "Perimeter & area on the plane",
+"steps": [
+"perimeter with distances",
+"area by enclosing box",
+"shoelace formula",
+"compare methods"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.07",
+"old": "V.11.07",
+"name": "Point-to-line distance",
+"steps": [
+"drop a perpendicular",
+"find the foot",
+"the formula",
+"distance between parallel lines"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.08",
+"old": "V.11.08",
+"name": "Classify by coordinates",
+"steps": [
+"triangle types",
+"parallelogram test",
+"rectangle, rhombus, square tests",
+"write the argument"
+],
+"unit": "V.11"
+},
+{
+"id": "V.11.09",
+"old": "V.11.09",
+"name": "Coordinate proofs of triangles",
+"steps": [
+"place with variables",
+"midsegment proof",
+"isosceles proof",
+"centroid proof"
+],
+"unit": "V.11"
+},
+{
+"id": "V.12.01",
+"old": "V.12.01",
+"name": "Slicing a cone",
+"steps": [
+"circle",
+"ellipse",
+"parabola",
+"hyperbola and degenerate cases"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.02",
+"old": "V.12.02",
+"name": "Parabola as focus & directrix",
+"steps": [
+"the definition",
+"derive the equation",
+"find focus and directrix",
+"the value of p"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.03",
+"old": "V.12.03",
+"name": "Parabola equations",
+"steps": [
+"vertical opening",
+"horizontal opening",
+"write from features",
+"graph"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.04",
+"old": "V.12.05",
+"name": "Ellipse definition",
+"steps": [
+"sum of distances to foci",
+"string-and-pins drawing",
+"major and minor axes",
+"eccentricity"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.05",
+"old": "V.12.06",
+"name": "Ellipse equations & graphs",
+"steps": [
+"standard form",
+"horizontal vs vertical",
+"graph from equation",
+"write from graph"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.06",
+"old": "V.12.07",
+"name": "Ellipse foci",
+"steps": [
+"c² = a² − b²",
+"find the foci",
+"whispering galleries",
+"planet orbits"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.07",
+"old": "V.12.08",
+"name": "Hyperbola definition",
+"steps": [
+"difference of distances",
+"transverse and conjugate axes",
+"c² = a² + b²",
+"find the foci"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.08",
+"old": "V.12.09",
+"name": "Hyperbola graphs",
+"steps": [
+"standard form",
+"the central box",
+"asymptotes",
+"graph and write"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.09",
+"old": "V.12.10",
+"name": "Classify conics",
+"steps": [
+"complete the square",
+"signs of x² and y² terms",
+"discriminant B² − 4AC",
+"name and graph"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.10",
+"old": "V.12.11",
+"name": "Conics in the world",
+"steps": [
+"satellite dishes",
+"headlights",
+"orbits",
+"LORAN navigation"
+],
+"unit": "V.12"
+},
+{
+"id": "V.12.11",
+"old": "V.12.12",
+"name": "Systems with conics",
+"steps": [
+"line and conic",
+"two conics",
+"substitution or elimination",
+"count intersections"
+],
+"unit": "V.12"
+},
+{
+"id": "V.13.01",
+"old": "V.13.01",
+"name": "Rigid motions defined",
+"steps": [
+"preimage and image",
+"isometry",
+"what is preserved",
+"function notation for moves"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.02",
+"old": "V.13.02",
+"name": "Translation vectors",
+"steps": [
+"vector notation",
+"apply",
+"find the vector",
+"compose two translations"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.03",
+"old": "V.13.03",
+"name": "Reflections precisely",
+"steps": [
+"perpendicular bisector definition",
+"over any line",
+"find the line",
+"reflections in coordinates"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.04",
+"old": "V.13.04",
+"name": "Rotations about any point",
+"steps": [
+"center and angle",
+"around the origin rules",
+"around other points",
+"find the center"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.05",
+"old": "V.13.05",
+"name": "Compositions",
+"steps": [
+"order matters",
+"two reflections = translation or rotation",
+"describe a composition",
+"undo one"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.06",
+"old": "V.13.06",
+"name": "Glide reflections",
+"steps": [
+"definition",
+"apply",
+"footprints example",
+"identify from a picture"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.07",
+"old": "V.13.07",
+"name": "Symmetry",
+"steps": [
+"line symmetry",
+"rotational symmetry and order",
+"point symmetry",
+"symmetry of regular polygons"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.08",
+"old": "V.13.08",
+"name": "Dilations about any center",
+"steps": [
+"center and factor",
+"apply in coordinates",
+"negative scale factors",
+"lines map to parallel lines"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.09",
+"old": "V.13.09",
+"name": "Congruence by rigid motions",
+"steps": [
+"the definition",
+"find a sequence",
+"justify SAS, ASA, SSS",
+"prove congruence this way"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.10",
+"old": "V.13.10",
+"name": "Similarity by transformations",
+"steps": [
+"rigid motion plus dilation",
+"find a sequence",
+"justify AA",
+"prove similarity this way"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.11",
+"old": "V.13.11",
+"name": "Transformation matrices",
+"steps": [
+"points as vectors",
+"reflection and rotation matrices",
+"dilation matrices",
+"compose by multiplying"
+],
+"unit": "V.13"
+},
+{
+"id": "V.13.12",
+"old": "V.13.12",
+"name": "Tessellations",
+"steps": [
+"regular tessellations",
+"semi-regular ones",
+"angle sum test at a vertex",
+"Escher-style tiles"
+],
+"unit": "V.13"
+},
+{
+"id": "V.14.01",
+"old": "V.14.01",
+"name": "Cross-sections",
+"steps": [
+"of prisms",
+"of pyramids",
+"of cylinders and cones",
+"of a cube at odd angles"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.02",
+"old": "V.14.02",
+"name": "Solids of revolution",
+"steps": [
+"rotate a rectangle",
+"rotate a triangle",
+"rotate a semicircle",
+"find the resulting volume"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.03",
+"old": "V.14.03",
+"name": "Cavalieri's principle",
+"steps": [
+"equal slices, equal volumes",
+"oblique prisms",
+"oblique cylinders",
+"sphere from a cylinder minus a cone"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.04",
+"old": "V.14.04",
+"name": "Surface area of pyramids & cones",
+"steps": [
+"slant height",
+"lateral area",
+"total area",
+"from a net"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.05",
+"old": "V.14.05",
+"name": "Surface area of spheres",
+"steps": [
+"4πr²",
+"hemispheres",
+"find r from area",
+"Archimedes' cylinder link"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.06",
+"old": "V.14.06",
+"name": "Volume of pyramids & cones",
+"steps": [
+"one third of the prism",
+"apply",
+"find a missing height",
+"frustums"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.07",
+"old": "V.14.08",
+"name": "Composite solids",
+"steps": [
+"add parts",
+"subtract holes",
+"surface area of composites",
+"real objects"
+],
+"unit": "V.14"
+},
+{
+"id": "V.14.08",
+"old": "V.14.09",
+"name": "Density & design",
+"steps": [
+"density = mass / volume",
+"population density",
+"minimize material",
+"packaging problems"
+],
+"unit": "V.14"
+},
+{
+"id": "V.15.01",
+"old": "V.15.01",
+"name": "Copy a segment & an angle",
+"steps": [
+"compass as a length carrier",
+"copy a segment",
+"copy an angle",
+"justify with SSS"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.02",
+"old": "V.15.02",
+"name": "Bisect a segment",
+"steps": [
+"two arcs",
+"draw the bisector",
+"it is also perpendicular",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.03",
+"old": "V.15.03",
+"name": "Bisect an angle",
+"steps": [
+"arc on both sides",
+"two more arcs",
+"draw the ray",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.04",
+"old": "V.15.04",
+"name": "Perpendicular through a point",
+"steps": [
+"point on the line",
+"point off the line",
+"construct",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.05",
+"old": "V.15.05",
+"name": "Parallel through a point",
+"steps": [
+"copy a corresponding angle",
+"construct",
+"alternative with two perpendiculars",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.06",
+"old": "V.15.06",
+"name": "Triangle & hexagon in a circle",
+"steps": [
+"step the radius around",
+"regular hexagon",
+"equilateral triangle",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.07",
+"old": "V.15.07",
+"name": "Square in a circle",
+"steps": [
+"draw a diameter",
+"perpendicular diameter",
+"join the ends",
+"justify"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.08",
+"old": "V.15.08",
+"name": "Tangent from a point",
+"steps": [
+"midpoint to the center",
+"circle on that segment",
+"draw tangents",
+"justify with the semicircle angle"
+],
+"unit": "V.15"
+},
+{
+"id": "V.15.09",
+"old": "V.15.09",
+"name": "Inscribed & circumscribed circles",
+"steps": [
+"circumcenter construction",
+"circumcircle",
+"incenter construction",
+"incircle"
+],
+"unit": "V.15"
+},
+{
+"id": "VI.1.01",
+"old": "VI.1.01",
+"name": "Limits informally",
+"steps": [
+"\"approaches\" in words",
+"the value vs the limit",
+"limit notation",
+"Zeno's paradox"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.02",
+"old": "VI.1.02",
+"name": "Limits from tables",
+"steps": [
+"build a table",
+"from both sides",
+"read the trend",
+"where tables mislead"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.03",
+"old": "VI.1.03",
+"name": "Limits from graphs",
+"steps": [
+"follow the curve",
+"holes",
+"jumps",
+"the value at a point doesn't matter"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.04",
+"old": "VI.1.04",
+"name": "One-sided limits",
+"steps": [
+"left-hand",
+"right-hand",
+"both must agree",
+"piecewise functions"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.05",
+"old": "VI.1.05",
+"name": "When limits fail",
+"steps": [
+"jumps",
+"blow-ups",
+"oscillation like sin(1/x)",
+"explain why"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.06",
+"old": "VI.1.06",
+"name": "Limit laws",
+"steps": [
+"sum and difference",
+"product and quotient",
+"powers and roots",
+"use them step by step"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.07",
+"old": "VI.1.07",
+"name": "Direct substitution",
+"steps": [
+"when it works",
+"polynomials and rationals",
+"0/0 means more work",
+"k/0 means infinite trouble"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.08",
+"old": "VI.1.08",
+"name": "Factor & cancel",
+"steps": [
+"factor",
+"cancel",
+"substitute",
+"explain why it's allowed"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.09",
+"old": "VI.1.09",
+"name": "Rationalize",
+"steps": [
+"multiply by the conjugate",
+"simplify",
+"cancel",
+"substitute"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.10",
+"old": "VI.1.10",
+"name": "Complex-fraction limits",
+"steps": [
+"combine fractions",
+"simplify",
+"cancel",
+"substitute"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.11",
+"old": "VI.1.11",
+"name": "Squeeze theorem",
+"steps": [
+"the idea",
+"find the bounds",
+"x² sin(1/x)",
+"write the argument"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.12",
+"old": "VI.1.12",
+"name": "Special trig limits",
+"steps": [
+"sin x / x → 1",
+"(1 − cos x)/x → 0",
+"rescale the angle",
+"geometric proof"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.13",
+"old": "VI.1.13",
+"name": "Infinite limits",
+"steps": [
+"grows without bound",
+"sign from each side",
+"vertical asymptotes",
+"notation"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.14",
+"old": "VI.1.14",
+"name": "Limits at infinity",
+"steps": [
+"as x → ±∞",
+"divide by the highest power",
+"exponentials and logs",
+"radicals"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.15",
+"old": "VI.1.15",
+"name": "Horizontal asymptotes by limits",
+"steps": [
+"compare degrees",
+"two different ends",
+"oscillating approach",
+"sketch"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.16",
+"old": "VI.1.16",
+"name": "Continuity definition",
+"steps": [
+"f(a) exists",
+"limit exists",
+"they are equal",
+"on an interval"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.17",
+"old": "VI.1.17",
+"name": "Types of discontinuity",
+"steps": [
+"removable",
+"jump",
+"infinite",
+"classify from a formula"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.18",
+"old": "VI.1.18",
+"name": "Making things continuous",
+"steps": [
+"fill a hole",
+"choose a constant in a piecewise",
+"two constants at once",
+"check"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.19",
+"old": "VI.1.19",
+"name": "Intermediate value theorem",
+"steps": [
+"the statement",
+"show a root exists",
+"conditions matter",
+"bisection method"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.1.20",
+"old": "VI.1.20",
+"name": "Epsilon–delta",
+"steps": [
+"the definition in words",
+"find δ for a line",
+"for a quadratic",
+"write the proof"
+],
+"unit": "VI.1"
+},
+{
+"id": "VI.2.01",
+"old": "VI.2.01",
+"name": "Average vs instantaneous rate",
+"steps": [
+"average over an interval",
+"shrink the interval",
+"speedometer meaning",
+"estimate from a table"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.02",
+"old": "VI.2.02",
+"name": "Tangent as limit of secants",
+"steps": [
+"draw secants",
+"slopes approach a value",
+"tangent line",
+"zoom until straight"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.03",
+"old": "VI.2.03",
+"name": "Limit definition",
+"steps": [
+"(f(x + h) − f(x))/h",
+"compute for x²",
+"for 1/x and √x",
+"alternate form at a point"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.04",
+"old": "VI.2.04",
+"name": "Notation",
+"steps": [
+"f′(x)",
+"dy/dx",
+"derivative at a point",
+"units of a derivative"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.05",
+"old": "VI.2.05",
+"name": "Differentiability",
+"steps": [
+"corners",
+"cusps",
+"vertical tangents",
+"differentiable implies continuous"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.06",
+"old": "VI.2.06",
+"name": "Graph f′ from f",
+"steps": [
+"slopes to heights",
+"zeros at flat points",
+"sketch f′",
+"f from f′"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.07",
+"old": "VI.2.07",
+"name": "Power rule",
+"steps": [
+"positive integer powers",
+"negative powers",
+"fractional powers",
+"rewrite before differentiating"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.08",
+"old": "VI.2.08",
+"name": "Sum & constant rules",
+"steps": [
+"constants vanish",
+"constant multiples",
+"sums and differences",
+"polynomials fast"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.09",
+"old": "VI.2.09",
+"name": "Product rule",
+"steps": [
+"the formula",
+"apply it",
+"three factors",
+"why it isn't f′g′"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.10",
+"old": "VI.2.10",
+"name": "Quotient rule",
+"steps": [
+"the formula",
+"apply it",
+"simplify",
+"when to rewrite instead"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.11",
+"old": "VI.2.11",
+"name": "Trig derivatives",
+"steps": [
+"sin and cos",
+"tan and sec",
+"csc and cot",
+"derive from limits"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.12",
+"old": "VI.2.12",
+"name": "Exponential & log derivatives",
+"steps": [
+"eˣ",
+"aˣ",
+"ln x",
+"logₐ x"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.13",
+"old": "VI.2.13",
+"name": "Chain rule",
+"steps": [
+"inside and outside",
+"apply once",
+"nested chains",
+"with product and quotient"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.14",
+"old": "VI.2.14",
+"name": "Implicit differentiation",
+"steps": [
+"differentiate both sides",
+"dy/dx appears",
+"solve for it",
+"slope at a point"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.15",
+"old": "VI.2.15",
+"name": "Inverse function derivatives",
+"steps": [
+"1/f′(f⁻¹(x))",
+"arcsin, arccos",
+"arctan",
+"from a table"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.16",
+"old": "VI.2.16",
+"name": "Higher derivatives",
+"steps": [
+"second derivative",
+"nth derivative patterns",
+"implicit second derivative",
+"notation"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.17",
+"old": "VI.2.17",
+"name": "Logarithmic differentiation",
+"steps": [
+"take ln of both sides",
+"differentiate",
+"x^x type functions",
+"messy products"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.2.18",
+"old": null,
+"name": "Hyperbolic functions",
+"steps": [
+"sinh and cosh from eˣ",
+"their graphs",
+"cosh² − sinh² = 1",
+"derivatives"
+],
+"unit": "VI.2"
+},
+{
+"id": "VI.3.01",
+"old": "VI.3.01",
+"name": "Tangent & normal lines",
+"steps": [
+"slope from f′(a)",
+"point-slope equation",
+"normal line",
+"horizontal tangents"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.02",
+"old": "VI.3.02",
+"name": "Linear approximation",
+"steps": [
+"the tangent line as an estimate",
+"approximate a value",
+"over or under from concavity",
+"differentials"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.03",
+"old": "VI.3.03",
+"name": "Motion",
+"steps": [
+"velocity from position",
+"acceleration",
+"speeding up or slowing down",
+"total distance"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.04",
+"old": "VI.3.04",
+"name": "Rates in context",
+"steps": [
+"interpret f′(a) with units",
+"marginal cost",
+"population rates",
+"estimate from data"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.05",
+"old": "VI.3.05",
+"name": "Related rates setup",
+"steps": [
+"draw and label",
+"find the linking equation",
+"differentiate in time",
+"plug in last"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.06",
+"old": "VI.3.06",
+"name": "Related rates classics",
+"steps": [
+"ladder",
+"filling cone",
+"shadows",
+"angles with trig"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.07",
+"old": "VI.3.07",
+"name": "Critical points",
+"steps": [
+"f′ = 0",
+"f′ undefined",
+"find them",
+"not all are extrema"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.08",
+"old": "VI.3.08",
+"name": "Increasing & decreasing",
+"steps": [
+"sign of f′",
+"sign chart",
+"intervals",
+"from a graph of f′"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.09",
+"old": "VI.3.09",
+"name": "First derivative test",
+"steps": [
+"sign changes",
+"local max",
+"local min",
+"justify in words"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.10",
+"old": "VI.3.10",
+"name": "Concavity",
+"steps": [
+"sign of f″",
+"cup up and down",
+"intervals",
+"f′ increasing meaning"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.11",
+"old": "VI.3.11",
+"name": "Inflection points",
+"steps": [
+"concavity changes",
+"f″ = 0 is not enough",
+"find them",
+"from graphs of f′"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.12",
+"old": "VI.3.12",
+"name": "Second derivative test",
+"steps": [
+"f′ = 0 and f″ > 0",
+"f″ < 0",
+"inconclusive case",
+"justify"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.13",
+"old": "VI.3.13",
+"name": "Absolute extrema",
+"steps": [
+"extreme value theorem",
+"closed interval method",
+"compare candidates",
+"open intervals"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.14",
+"old": "VI.3.14",
+"name": "Mean value theorem",
+"steps": [
+"Rolle's theorem",
+"the MVT statement",
+"find c",
+"speeding ticket argument"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.15",
+"old": "VI.3.15",
+"name": "Curve sketching",
+"steps": [
+"domain and intercepts",
+"asymptotes",
+"f′ and f″ charts",
+"the full sketch"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.16",
+"old": "VI.3.16",
+"name": "Reading f, f′, f″ together",
+"steps": [
+"match three graphs",
+"features of f from f′",
+"features from f″",
+"justify with language"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.17",
+"old": "VI.3.17",
+"name": "Optimization setup",
+"steps": [
+"what to maximize",
+"constraint equation",
+"one-variable function",
+"domain"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.18",
+"old": "VI.3.18",
+"name": "Optimization solve",
+"steps": [
+"critical points",
+"test them",
+"answer the question",
+"classic fence, box and can problems"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.19",
+"old": "VI.3.19",
+"name": "L'Hôpital's rule",
+"steps": [
+"0/0 and ∞/∞",
+"apply",
+"repeat when needed",
+"other forms like 0·∞ and 1^∞"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.20",
+"old": "VI.3.20",
+"name": "Newton's method",
+"steps": [
+"the tangent idea",
+"the iteration formula",
+"run a few steps",
+"when it fails"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.3.21",
+"old": null,
+"name": "Fixed-point iteration",
+"steps": [
+"rearrange f(x) = 0 as x = g(x)",
+"iterate",
+"cobweb and staircase diagrams",
+"when it converges"
+],
+"unit": "VI.3"
+},
+{
+"id": "VI.4.01",
+"old": "VI.4.01",
+"name": "Area as accumulation",
+"steps": [
+"distance from a velocity graph",
+"rate × time as area",
+"negative area",
+"units of area under a curve"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.02",
+"old": "VI.4.02",
+"name": "Left & right sums",
+"steps": [
+"rectangles",
+"left endpoints",
+"right endpoints",
+"over or under estimate"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.03",
+"old": "VI.4.03",
+"name": "Midpoint & trapezoid sums",
+"steps": [
+"midpoint rule",
+"trapezoid rule",
+"from a table",
+"unequal widths"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.04",
+"old": "VI.4.04",
+"name": "Limit of Riemann sums",
+"steps": [
+"sigma form",
+"Δx and xᵢ",
+"take n → ∞",
+"convert a sum to an integral"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.05",
+"old": "VI.4.05",
+"name": "Definite integral notation",
+"steps": [
+"bounds and integrand",
+"dx meaning",
+"read aloud",
+"signed area"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.06",
+"old": "VI.4.06",
+"name": "Integral properties",
+"steps": [
+"reverse bounds",
+"split intervals",
+"constants and sums",
+"comparison properties"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.07",
+"old": "VI.4.07",
+"name": "Integrals by geometry",
+"steps": [
+"triangles and rectangles",
+"semicircles",
+"absolute value graphs",
+"odd function symmetry"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.08",
+"old": "VI.4.08",
+"name": "Antiderivatives",
+"steps": [
+"undo the derivative",
+"+ C",
+"family of curves",
+"check by differentiating"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.09",
+"old": "VI.4.09",
+"name": "Basic rules",
+"steps": [
+"power rule backwards",
+"sums and constants",
+"1/x → ln",
+"rewrite first"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.10",
+"old": "VI.4.10",
+"name": "Trig & exponential antiderivatives",
+"steps": [
+"sin and cos",
+"sec² and sec tan",
+"eˣ and aˣ",
+"inverse trig forms"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.11",
+"old": "VI.4.11",
+"name": "Initial value problems",
+"steps": [
+"find the general antiderivative",
+"use a point to find C",
+"position from velocity",
+"twice from acceleration"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.12",
+"old": "VI.4.12",
+"name": "FTC part 1",
+"steps": [
+"d/dx of ∫ from a to x",
+"with chain rule",
+"variable lower bound",
+"both bounds variable"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.13",
+"old": "VI.4.13",
+"name": "FTC part 2",
+"steps": [
+"F(b) − F(a)",
+"evaluate",
+"why it works",
+"with piecewise functions"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.14",
+"old": "VI.4.14",
+"name": "Accumulation functions",
+"steps": [
+"g(x) = ∫ f",
+"values from a graph of f",
+"where g increases",
+"extrema and concavity of g"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.4.15",
+"old": "VI.4.15",
+"name": "Average value",
+"steps": [
+"the formula",
+"compute it",
+"mean value theorem for integrals",
+"interpret in context"
+],
+"unit": "VI.4"
+},
+{
+"id": "VI.5.01",
+"old": "VI.5.01",
+"name": "u-substitution",
+"steps": [
+"spot the inside function",
+"find du",
+"rewrite and integrate",
+"substitute back"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.02",
+"old": "VI.5.02",
+"name": "u-substitution with bounds",
+"steps": [
+"change the bounds",
+"or substitute back",
+"evaluate",
+"odd and even tricks"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.03",
+"old": "VI.5.03",
+"name": "Log & inverse trig results",
+"steps": [
+"f′/f → ln",
+"1/(1 + x²) → arctan",
+"1/√(1 − x²) → arcsin",
+"scaled versions"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.04",
+"old": "VI.5.04",
+"name": "Divide first",
+"steps": [
+"improper rational functions",
+"long division",
+"integrate each piece",
+"split fractions"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.05",
+"old": "VI.5.05",
+"name": "Complete the square",
+"steps": [
+"quadratic denominators",
+"complete the square",
+"substitute",
+"arctan result"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.06",
+"old": "VI.5.06",
+"name": "Integration by parts",
+"steps": [
+"the formula from the product rule",
+"choose u (LIATE)",
+"apply",
+"with bounds"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.07",
+"old": "VI.5.07",
+"name": "Repeated parts",
+"steps": [
+"tabular method",
+"xⁿ eˣ type",
+"eˣ sin x loop",
+"solve for the integral"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.08",
+"old": "VI.5.08",
+"name": "Trig integrals",
+"steps": [
+"odd power of sin or cos",
+"even powers with half-angle",
+"tan and sec powers",
+"products of different angles"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.09",
+"old": "VI.5.09",
+"name": "Trig substitution",
+"steps": [
+"√(a² − x²)",
+"√(a² + x²)",
+"√(x² − a²)",
+"back-substitute with a triangle"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.10",
+"old": "VI.5.10",
+"name": "Partial fractions, linear",
+"steps": [
+"factor the denominator",
+"set up constants",
+"solve for them",
+"integrate to logs"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.11",
+"old": "VI.5.11",
+"name": "Partial fractions, harder",
+"steps": [
+"repeated factors",
+"irreducible quadratics",
+"solve the system",
+"integrate"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.12",
+"old": "VI.5.12",
+"name": "Improper integrals, infinite bounds",
+"steps": [
+"rewrite as a limit",
+"evaluate",
+"converge or diverge",
+"1/xᵖ test"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.13",
+"old": "VI.5.13",
+"name": "Improper integrals, blow-ups",
+"steps": [
+"find the bad point",
+"split and take limits",
+"evaluate",
+"comparison test"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.14",
+"old": "VI.5.14",
+"name": "Numerical integration",
+"steps": [
+"trapezoid error",
+"Simpson's rule",
+"compare accuracy",
+"when there is no formula"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.15",
+"old": "VI.5.15",
+"name": "Choosing a technique",
+"steps": [
+"simplify first",
+"substitution check",
+"parts or fractions",
+"tables and technology"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.5.16",
+"old": null,
+"name": "Inverse hyperbolic functions",
+"steps": [
+"arsinh, arcosh, artanh as logs",
+"their derivatives",
+"integrals that give them",
+"compare with inverse trig forms"
+],
+"unit": "VI.5"
+},
+{
+"id": "VI.6.01",
+"old": "VI.6.01",
+"name": "Displacement vs distance",
+"steps": [
+"integral of velocity",
+"integral of speed",
+"where velocity changes sign",
+"final position"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.02",
+"old": "VI.6.02",
+"name": "Net change",
+"steps": [
+"integral of a rate",
+"amount at a later time",
+"in and out rates",
+"from a table"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.03",
+"old": "VI.6.03",
+"name": "Area between curves in x",
+"steps": [
+"top minus bottom",
+"find intersections",
+"switching curves",
+"set up and evaluate"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.04",
+"old": "VI.6.04",
+"name": "Area between curves in y",
+"steps": [
+"right minus left",
+"solve for x",
+"when y is easier",
+"set up and evaluate"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.05",
+"old": "VI.6.05",
+"name": "Known cross-sections",
+"steps": [
+"squares",
+"semicircles",
+"triangles",
+"set up the integral"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.06",
+"old": "VI.6.06",
+"name": "Disk method",
+"steps": [
+"radius function",
+"πr² slices",
+"around the x-axis",
+"around the y-axis"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.07",
+"old": "VI.6.07",
+"name": "Washer method",
+"steps": [
+"outer and inner radius",
+"set up",
+"other axes of rotation",
+"evaluate"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.08",
+"old": "VI.6.08",
+"name": "Shell method",
+"steps": [
+"radius and height",
+"2πrh slices",
+"when shells are easier",
+"other axes"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.09",
+"old": "VI.6.09",
+"name": "Arc length",
+"steps": [
+"the formula from Pythagoras",
+"set up",
+"evaluate or approximate",
+"in dy form"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.10",
+"old": "VI.6.10",
+"name": "Surface area of revolution",
+"steps": [
+"the formula",
+"set up",
+"evaluate",
+"Gabriel's horn paradox"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.11",
+"old": "VI.6.11",
+"name": "Work",
+"steps": [
+"force × distance",
+"springs and Hooke's law",
+"pumping liquid",
+"lifting cables"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.12",
+"old": "VI.6.12",
+"name": "Fluid force",
+"steps": [
+"pressure with depth",
+"strips of a wall",
+"set up",
+"dams and windows"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.13",
+"old": "VI.6.13",
+"name": "Center of mass",
+"steps": [
+"moments",
+"centroid of a region",
+"symmetry shortcuts",
+"Pappus's theorem"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.14",
+"old": "VI.6.14",
+"name": "Probability densities",
+"steps": [
+"area = probability",
+"total area 1",
+"mean from an integral",
+"exponential distribution"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.6.15",
+"old": "VI.6.15",
+"name": "Economics",
+"steps": [
+"total from marginal",
+"consumer surplus",
+"producer surplus",
+"present value of a stream"
+],
+"unit": "VI.6"
+},
+{
+"id": "VI.7.01",
+"old": "VI.7.01",
+"name": "What a differential equation is",
+"steps": [
+"equation with a derivative",
+"order",
+"solution is a function",
+"read one in words"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.02",
+"old": "VI.7.02",
+"name": "Verify solutions",
+"steps": [
+"differentiate the candidate",
+"substitute",
+"check both sides",
+"find a constant that works"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.03",
+"old": "VI.7.03",
+"name": "Slope fields",
+"steps": [
+"draw little slopes",
+"match fields to equations",
+"sketch a solution curve",
+"isoclines and long-run behavior"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.04",
+"old": "VI.7.04",
+"name": "Euler's method",
+"steps": [
+"step along the tangent",
+"run steps by hand",
+"smaller steps",
+"over or under estimates"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.05",
+"old": "VI.7.05",
+"name": "Separable equations",
+"steps": [
+"separate variables",
+"integrate both sides",
+"solve for y",
+"use the initial condition; solutions lost by dividing"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.06",
+"old": "VI.7.06",
+"name": "Growth & decay",
+"steps": [
+"dy/dt = ky",
+"solution y = Ce^(kt)",
+"find k from data",
+"predict"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.07",
+"old": "VI.7.07",
+"name": "Newton's law of cooling",
+"steps": [
+"set up",
+"solve",
+"find k",
+"time of death problems"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.08",
+"old": "VI.7.08",
+"name": "Logistic growth",
+"steps": [
+"carrying capacity",
+"the equation",
+"fastest growth at half",
+"solve, read features, add harvesting"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.09",
+"old": "VI.7.09",
+"name": "General vs particular",
+"steps": [
+"families of solutions",
+"initial conditions pick one",
+"singular solutions",
+"graph the family"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.10",
+"old": "VI.7.10",
+"name": "Mixing problems",
+"steps": [
+"rate in minus rate out",
+"set up",
+"solve",
+"long-run amount"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.11",
+"old": "VI.7.11",
+"name": "Equilibrium & stability",
+"steps": [
+"find equilibria",
+"phase line",
+"stable vs unstable",
+"phase lines and bifurcations"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.7.12",
+"old": "VI.7.12",
+"name": "Modeling from words",
+"steps": [
+"\"proportional to\"",
+"write the equation",
+"state assumptions",
+"check units"
+],
+"unit": "VI.7"
+},
+{
+"id": "VI.8.01",
+"old": "VI.8.01",
+"name": "Parametric curves",
+"steps": [
+"x(t), y(t)",
+"plot by table",
+"direction of motion",
+"circles and ellipses"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.02",
+"old": "VI.8.02",
+"name": "Eliminate the parameter",
+"steps": [
+"solve for t",
+"use a trig identity",
+"restricted pieces",
+"compare graphs"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.03",
+"old": "VI.8.03",
+"name": "Parametric slope",
+"steps": [
+"dy/dx = (dy/dt)/(dx/dt)",
+"tangent lines",
+"horizontal tangents",
+"vertical tangents"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.04",
+"old": "VI.8.04",
+"name": "Parametric second derivative",
+"steps": [
+"the formula",
+"compute it",
+"concavity",
+"common mistakes"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.05",
+"old": "VI.8.05",
+"name": "Parametric arc length",
+"steps": [
+"the formula",
+"set up",
+"evaluate",
+"distance traveled"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.06",
+"old": "VI.8.06",
+"name": "Motion in the plane",
+"steps": [
+"position vector",
+"velocity and speed",
+"acceleration",
+"projectile paths"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.07",
+"old": "VI.8.07",
+"name": "Polar coordinates",
+"steps": [
+"(r, θ)",
+"convert to rectangular",
+"convert to polar",
+"many names for one point"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.08",
+"old": "VI.8.08",
+"name": "Polar graphs",
+"steps": [
+"circles and lines",
+"roses",
+"cardioids and limaçons",
+"spirals"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.09",
+"old": "VI.8.09",
+"name": "Polar slope",
+"steps": [
+"convert to parametric",
+"dy/dx formula",
+"tangents at the pole",
+"horizontal and vertical tangents"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.10",
+"old": "VI.8.10",
+"name": "Polar area",
+"steps": [
+"½∫r² dθ",
+"one petal",
+"bounds from r = 0",
+"symmetry"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.11",
+"old": "VI.8.11",
+"name": "Area between polar curves",
+"steps": [
+"find intersections",
+"outer minus inner",
+"set up",
+"evaluate"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.8.12",
+"old": "VI.8.12",
+"name": "Polar arc length",
+"steps": [
+"the formula",
+"set up",
+"evaluate",
+"approximate with technology"
+],
+"unit": "VI.8"
+},
+{
+"id": "VI.9.01",
+"old": "VI.9.01",
+"name": "Limits of sequences",
+"steps": [
+"converge or diverge",
+"use function limits",
+"squeeze",
+"monotone and bounded"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.02",
+"old": "VI.9.02",
+"name": "Series & partial sums",
+"steps": [
+"Sₙ",
+"series converges if Sₙ does",
+"telescoping series",
+"write in sigma"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.03",
+"old": "VI.9.04",
+"name": "nth term test",
+"steps": [
+"terms must go to 0",
+"apply it",
+"it can't prove convergence",
+"harmonic example"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.04",
+"old": "VI.9.05",
+"name": "Integral test",
+"steps": [
+"conditions",
+"apply",
+"remainder estimate",
+"link to improper integrals"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.05",
+"old": "VI.9.06",
+"name": "p-series",
+"steps": [
+"1/nᵖ",
+"p > 1 converges",
+"harmonic diverges",
+"use as a benchmark"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.06",
+"old": "VI.9.07",
+"name": "Direct comparison",
+"steps": [
+"pick a comparison",
+"bigger than divergent",
+"smaller than convergent",
+"write the argument"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.07",
+"old": "VI.9.08",
+"name": "Limit comparison",
+"steps": [
+"ratio of terms",
+"finite positive limit",
+"choose the partner",
+"conclude"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.08",
+"old": "VI.9.09",
+"name": "Alternating series test",
+"steps": [
+"alternating signs",
+"decreasing to zero",
+"conclude",
+"error bound"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.09",
+"old": "VI.9.10",
+"name": "Ratio test",
+"steps": [
+"the limit of aₙ₊₁/aₙ",
+"less than 1 converges",
+"equal to 1 is silent",
+"factorials"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.10",
+"old": "VI.9.11",
+"name": "Root test",
+"steps": [
+"nth root of terms",
+"apply",
+"when to prefer it",
+"compare with ratio test"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.9.11",
+"old": "VI.9.12",
+"name": "Absolute vs conditional",
+"steps": [
+"absolute convergence",
+"conditional convergence",
+"classify",
+"rearrangement surprise"
+],
+"unit": "VI.9"
+},
+{
+"id": "VI.10.01",
+"old": "VI.10.01",
+"name": "Power series",
+"steps": [
+"Σ cₙ(x − a)ⁿ",
+"a polynomial that never ends",
+"evaluate partial sums",
+"center and coefficients"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.02",
+"old": "VI.10.02",
+"name": "Radius of convergence",
+"steps": [
+"ratio test on a power series",
+"find R",
+"R = 0 and R = ∞",
+"center shifts"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.03",
+"old": "VI.10.03",
+"name": "Interval & endpoints",
+"steps": [
+"test each endpoint",
+"include or exclude",
+"write the interval",
+"behavior after differentiating"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.04",
+"old": "VI.10.04",
+"name": "Taylor polynomials",
+"steps": [
+"match derivatives at a point",
+"build degree n",
+"centered anywhere",
+"graph the approximation"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.05",
+"old": "VI.10.05",
+"name": "Series for eˣ",
+"steps": [
+"derive it",
+"approximate e",
+"e^(−x²) by substitution",
+"radius ∞"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.06",
+"old": "VI.10.06",
+"name": "Series for sin & cos",
+"steps": [
+"derive them",
+"odd and even powers",
+"approximate a value",
+"small-angle approximations"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.07",
+"old": "VI.10.07",
+"name": "Series for 1/(1 − x) & ln(1 + x)",
+"steps": [
+"geometric series as power series",
+"integrate to ln",
+"arctan by substitution",
+"radius 1"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.08",
+"old": "VI.10.08",
+"name": "New series from old",
+"steps": [
+"substitute",
+"multiply by xⁿ",
+"add two series",
+"find a coefficient fast"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.09",
+"old": "VI.10.09",
+"name": "Differentiate & integrate series",
+"steps": [
+"term by term",
+"radius stays",
+"find a sum by differentiating",
+"integrate a series"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.10",
+"old": "VI.10.10",
+"name": "Multiply & divide series",
+"steps": [
+"first few terms of a product",
+"tan x from sin/cos",
+"track degrees",
+"check with known series"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.11",
+"old": "VI.10.11",
+"name": "Lagrange error bound",
+"steps": [
+"the formula",
+"find M",
+"bound the error",
+"choose n for accuracy"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.12",
+"old": "VI.10.12",
+"name": "Alternating series error",
+"steps": [
+"next term bounds the error",
+"apply",
+"sign of the error",
+"compare with Lagrange"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.13",
+"old": "VI.10.13",
+"name": "Binomial series",
+"steps": [
+"(1 + x)^k for any k",
+"coefficients",
+"√(1 + x) approximation",
+"radius 1"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.14",
+"old": "VI.10.14",
+"name": "Euler's formula",
+"steps": [
+"e^(iθ) from series",
+"cos θ + i sin θ",
+"e^(iπ) + 1 = 0",
+"link to polar form"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.15",
+"old": "VI.10.15",
+"name": "Integrals by series",
+"steps": [
+"no elementary antiderivative",
+"integrate the series",
+"approximate a value",
+"error bound"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.10.16",
+"old": "VI.10.16",
+"name": "Limits by series",
+"steps": [
+"replace functions with series",
+"cancel leading terms",
+"find the limit",
+"compare with L'Hôpital"
+],
+"unit": "VI.10"
+},
+{
+"id": "VI.11.01",
+"old": null,
+"name": "Sampling methods",
+"steps": [
+"population vs sample",
+"random, stratified and systematic",
+"sources of bias",
+"choose a method"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.02",
+"old": null,
+"name": "Studies & experiments",
+"steps": [
+"observational studies",
+"experiments and control groups",
+"randomization and blinding",
+"what you can conclude"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.03",
+"old": null,
+"name": "Sampling distributions",
+"steps": [
+"statistics vary from sample to sample",
+"simulate a sampling distribution",
+"standard error",
+"bigger samples, less spread"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.04",
+"old": null,
+"name": "Central limit theorem",
+"steps": [
+"sample means are nearly normal",
+"mean and standard error",
+"probabilities about a sample mean",
+"when n is large enough"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.05",
+"old": null,
+"name": "Confidence intervals for a proportion",
+"steps": [
+"estimate ± margin of error",
+"compute one",
+"what 95% confidence means",
+"choose a sample size"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.06",
+"old": null,
+"name": "Confidence intervals for a mean",
+"steps": [
+"the formula with σ",
+"the t idea",
+"compute and interpret",
+"width vs sample size"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.07",
+"old": null,
+"name": "Hypothesis testing ideas",
+"steps": [
+"null and alternative",
+"significance level",
+"what a p-value means",
+"one- vs two-tailed"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.08",
+"old": null,
+"name": "Tests with the binomial",
+"steps": [
+"set up a test for a proportion",
+"critical region",
+"p-value",
+"conclude in context"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.11.09",
+"old": null,
+"name": "Tests for a mean",
+"steps": [
+"set up a z-test",
+"the test statistic",
+"conclude",
+"Type I and Type II errors"
+],
+"unit": "VI.11"
+},
+{
+"id": "VI.12.01",
+"old": null,
+"name": "Kinematics graphs",
+"steps": [
+"displacement–time gradient is velocity",
+"velocity–time gradient is acceleration",
+"area is displacement",
+"distance vs displacement"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.02",
+"old": null,
+"name": "Constant acceleration",
+"steps": [
+"the suvat equations",
+"choose the right one",
+"solve",
+"two-stage journeys"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.03",
+"old": null,
+"name": "Vertical motion",
+"steps": [
+"g acts downward",
+"up and back down",
+"maximum height",
+"time in the air"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.04",
+"old": null,
+"name": "Forces & Newton's laws",
+"steps": [
+"weight, normal reaction and tension",
+"resultant force",
+"F = ma",
+"Newton's third law"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.05",
+"old": null,
+"name": "Resolving forces",
+"steps": [
+"components with sin and cos",
+"equilibrium",
+"inclined planes",
+"find an unknown force"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.06",
+"old": null,
+"name": "Connected particles",
+"steps": [
+"tension in a string",
+"pulleys",
+"solve for acceleration",
+"lifts and towing"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.07",
+"old": null,
+"name": "Friction",
+"steps": [
+"F ≤ μR",
+"limiting friction",
+"on a slope",
+"will it slide?"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.08",
+"old": null,
+"name": "Projectiles",
+"steps": [
+"split into horizontal and vertical",
+"time of flight",
+"range and maximum height",
+"aim to hit a target"
+],
+"unit": "VI.12"
+},
+{
+"id": "VI.12.09",
+"old": null,
+"name": "Moments",
+"steps": [
+"force × perpendicular distance",
+"balanced rods",
+"on the point of tipping",
+"find a support force"
+],
+"unit": "VI.12"
+},
+{
+"id": "VII.1.01",
+"old": "VII.1.01",
+"name": "What a vector is",
+"steps": [
+"arrow picture",
+"list of numbers",
+"position vs free vectors",
+"vectors in ℝⁿ"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.02",
+"old": "VII.1.02",
+"name": "Vector addition",
+"steps": [
+"tip to tail",
+"parallelogram rule",
+"componentwise",
+"subtraction as difference"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.03",
+"old": "VII.1.03",
+"name": "Scalar multiplication",
+"steps": [
+"stretch and shrink",
+"flip with negatives",
+"componentwise",
+"parallel vectors"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.04",
+"old": "VII.1.04",
+"name": "Magnitude",
+"steps": [
+"length in ℝ²",
+"length in ℝ³ and ℝⁿ",
+"distance between points",
+"properties of length"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.05",
+"old": "VII.1.05",
+"name": "Unit vectors",
+"steps": [
+"normalize",
+"i, j, k",
+"direction from an angle",
+"write a vector as length × direction"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.06",
+"old": "VII.1.06",
+"name": "Linear combinations",
+"steps": [
+"combine with weights",
+"reach a target vector",
+"set up as a system",
+"picture on a grid"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.07",
+"old": "VII.1.07",
+"name": "Span, first look",
+"steps": [
+"span of one vector",
+"of two in ℝ²",
+"of two in ℝ³",
+"is a vector in the span"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.08",
+"old": "VII.1.08",
+"name": "Dot product",
+"steps": [
+"componentwise formula",
+"properties",
+"length from dot product",
+"work as force · distance"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.09",
+"old": "VII.1.09",
+"name": "Angle between vectors",
+"steps": [
+"cos θ formula",
+"compute an angle",
+"orthogonal when dot is 0",
+"Cauchy–Schwarz"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.10",
+"old": "VII.1.10",
+"name": "Projections",
+"steps": [
+"scalar projection",
+"vector projection",
+"orthogonal component",
+"closest point on a line"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.11",
+"old": "VII.1.11",
+"name": "Cross product",
+"steps": [
+"the determinant recipe",
+"right-hand rule",
+"area of a parallelogram",
+"triple product volume"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.1.12",
+"old": "VII.1.12",
+"name": "Lines & planes in 3D",
+"steps": [
+"vector equation of a line",
+"plane from a normal",
+"intersections",
+"distances"
+],
+"unit": "VII.1"
+},
+{
+"id": "VII.2.01",
+"old": "VII.2.01",
+"name": "Systems as matrices",
+"steps": [
+"coefficient matrix",
+"augmented matrix",
+"Ax = b form",
+"vector equation form"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.02",
+"old": "VII.2.02",
+"name": "Row operations",
+"steps": [
+"swap",
+"scale",
+"replace with a combination",
+"why they keep solutions"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.03",
+"old": "VII.2.03",
+"name": "Row echelon form",
+"steps": [
+"staircase shape",
+"forward elimination",
+"identify pivots",
+"back-substitute"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.04",
+"old": "VII.2.04",
+"name": "Reduced row echelon",
+"steps": [
+"leading 1s",
+"zeros above pivots",
+"Gauss–Jordan",
+"uniqueness of RREF"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.05",
+"old": "VII.2.05",
+"name": "Pivots & free variables",
+"steps": [
+"basic variables",
+"free variables",
+"count solutions",
+"predict from shape"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.06",
+"old": "VII.2.06",
+"name": "Parametric solutions",
+"steps": [
+"write in terms of free variables",
+"vector form",
+"geometric picture",
+"check a solution"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.07",
+"old": "VII.2.07",
+"name": "Consistency",
+"steps": [
+"a row 0 = c",
+"consistent or not",
+"conditions on b",
+"existence vs uniqueness"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.08",
+"old": "VII.2.08",
+"name": "Homogeneous systems",
+"steps": [
+"Ax = 0",
+"trivial solution",
+"nontrivial solutions",
+"solution set as a span"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.2.09",
+"old": "VII.2.09",
+"name": "Applications",
+"steps": [
+"network flow",
+"balance chemical equations",
+"electrical circuits",
+"fit a polynomial through points"
+],
+"unit": "VII.2"
+},
+{
+"id": "VII.3.01",
+"old": "VII.3.01",
+"name": "Matrix notation",
+"steps": [
+"rows and columns",
+"entry aᵢⱼ",
+"size m × n",
+"special shapes"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.02",
+"old": "VII.3.02",
+"name": "Add & scale matrices",
+"steps": [
+"same size only",
+"entrywise sum",
+"scalar multiple",
+"properties"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.03",
+"old": "VII.3.03",
+"name": "Matrix times vector",
+"steps": [
+"row · column method",
+"combination of columns",
+"size rules",
+"linearity"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.04",
+"old": "VII.3.04",
+"name": "Matrix multiplication",
+"steps": [
+"size rule",
+"entry by entry",
+"column by column",
+"as composition"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.05",
+"old": "VII.3.05",
+"name": "Algebra rules",
+"steps": [
+"AB ≠ BA",
+"associative and distributive",
+"no cancellation law",
+"powers of a matrix"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.06",
+"old": "VII.3.06",
+"name": "Identity & zero",
+"steps": [
+"identity matrix",
+"zero matrix",
+"AI = IA = A",
+"nilpotent examples"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.07",
+"old": "VII.3.07",
+"name": "Transpose",
+"steps": [
+"flip rows and columns",
+"(AB)ᵀ = BᵀAᵀ",
+"symmetric matrices",
+"dot product as xᵀy"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.08",
+"old": "VII.3.08",
+"name": "2 × 2 inverse",
+"steps": [
+"the formula",
+"when it fails",
+"solve Ax = b with it",
+"check AA⁻¹ = I"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.09",
+"old": "VII.3.09",
+"name": "Inverse by row reduction",
+"steps": [
+"augment with I",
+"reduce",
+"read the inverse",
+"detect no inverse"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.10",
+"old": "VII.3.10",
+"name": "Invertible matrix theorem",
+"steps": [
+"list the equivalent facts",
+"use one to get others",
+"square matrices only",
+"quick tests"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.11",
+"old": "VII.3.11",
+"name": "Elementary matrices",
+"steps": [
+"row operation as a matrix",
+"their inverses",
+"write A⁻¹ as a product",
+"why row reduction works"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.3.12",
+"old": "VII.3.12",
+"name": "LU factorization",
+"steps": [
+"lower times upper",
+"build it from elimination",
+"solve with two triangular steps",
+"why computers like it"
+],
+"unit": "VII.3"
+},
+{
+"id": "VII.4.01",
+"old": "VII.4.01",
+"name": "Vector space axioms",
+"steps": [
+"closure",
+"zero and negatives",
+"the other axioms",
+"check a candidate space"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.02",
+"old": "VII.4.02",
+"name": "Subspaces",
+"steps": [
+"contains zero",
+"closed under addition",
+"closed under scaling",
+"test examples and non-examples"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.03",
+"old": "VII.4.03",
+"name": "Span",
+"steps": [
+"all combinations",
+"span is a subspace",
+"spanning sets",
+"does a set span ℝⁿ"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.04",
+"old": "VII.4.04",
+"name": "Linear independence",
+"steps": [
+"definition with the zero combination",
+"test by row reduction",
+"dependence relations",
+"quick rules (too many vectors)"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.05",
+"old": "VII.4.05",
+"name": "Basis",
+"steps": [
+"independent and spanning",
+"find a basis",
+"standard bases",
+"trim or extend a set"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.06",
+"old": "VII.4.06",
+"name": "Dimension",
+"steps": [
+"all bases same size",
+"find the dimension",
+"subspace dimensions",
+"infinite-dimensional examples"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.07",
+"old": "VII.4.07",
+"name": "Null space",
+"steps": [
+"solutions of Ax = 0",
+"find a basis",
+"it's a subspace",
+"link to free variables"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.08",
+"old": "VII.4.08",
+"name": "Column space",
+"steps": [
+"span of columns",
+"pivot columns form a basis",
+"is b in it",
+"link to consistency"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.09",
+"old": "VII.4.09",
+"name": "Row space",
+"steps": [
+"span of rows",
+"basis from RREF",
+"row space of Aᵀ",
+"compare with column space"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.10",
+"old": "VII.4.10",
+"name": "Rank",
+"steps": [
+"number of pivots",
+"row rank = column rank",
+"full rank",
+"rank and invertibility"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.11",
+"old": "VII.4.11",
+"name": "Rank–nullity theorem",
+"steps": [
+"rank + nullity = n",
+"apply it",
+"predict solution sets",
+"prove it"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.12",
+"old": "VII.4.12",
+"name": "Coordinates",
+"steps": [
+"coordinates relative to a basis",
+"find them",
+"coordinate map",
+"isomorphism idea"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.13",
+"old": "VII.4.13",
+"name": "Change of basis",
+"steps": [
+"change-of-basis matrix",
+"convert coordinates",
+"between two nonstandard bases",
+"why bases matter"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.14",
+"old": "VII.4.14",
+"name": "Polynomial & function spaces",
+"steps": [
+"Pₙ as a vector space",
+"bases of polynomials",
+"function spaces",
+"independence of functions"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.15",
+"old": "VII.4.16",
+"name": "Solution sets as shifted subspaces",
+"steps": [
+"particular + homogeneous",
+"affine picture",
+"write any solution set",
+"link to differential equations"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.4.16",
+"old": "VII.4.17",
+"name": "The four fundamental subspaces",
+"steps": [
+"name all four",
+"their dimensions",
+"which are perpendicular",
+"the big picture diagram"
+],
+"unit": "VII.4"
+},
+{
+"id": "VII.5.01",
+"old": "VII.5.01",
+"name": "Definition",
+"steps": [
+"T(u + v) = T(u) + T(v)",
+"T(cu) = cT(u)",
+"test a map",
+"zero goes to zero"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.02",
+"old": "VII.5.02",
+"name": "Standard matrix",
+"steps": [
+"images of basis vectors",
+"build the matrix",
+"apply it",
+"every linear map on ℝⁿ is a matrix"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.03",
+"old": "VII.5.03",
+"name": "Geometric maps",
+"steps": [
+"rotations",
+"reflections",
+"shears and stretches",
+"projections"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.04",
+"old": "VII.5.04",
+"name": "Kernel & range",
+"steps": [
+"kernel is the null space",
+"range is the column space",
+"find bases",
+"dimensions"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.05",
+"old": "VII.5.05",
+"name": "One-to-one & onto",
+"steps": [
+"one-to-one via kernel",
+"onto via range",
+"test with pivots",
+"both means invertible"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.06",
+"old": "VII.5.06",
+"name": "Composition",
+"steps": [
+"apply one then another",
+"multiply matrices",
+"order of multiplication",
+"geometric sequences of moves"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.07",
+"old": "VII.5.07",
+"name": "Inverse transformations",
+"steps": [
+"undoing a map",
+"inverse matrix",
+"when it exists",
+"geometric inverses"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.08",
+"old": "VII.5.08",
+"name": "Maps between abstract spaces",
+"steps": [
+"differentiation as linear",
+"matrix relative to bases",
+"compute one",
+"integration as linear"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.5.09",
+"old": "VII.5.09",
+"name": "Similar matrices",
+"steps": [
+"B = P⁻¹AP",
+"same map, different basis",
+"shared properties",
+"choose a nice basis"
+],
+"unit": "VII.5"
+},
+{
+"id": "VII.6.01",
+"old": "VII.6.01",
+"name": "2 × 2 determinant",
+"steps": [
+"ad − bc",
+"compute",
+"zero means singular",
+"signed area"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.02",
+"old": "VII.6.02",
+"name": "Cofactor expansion",
+"steps": [
+"minors",
+"sign pattern",
+"expand along a row",
+"choose the row with zeros"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.03",
+"old": "VII.6.03",
+"name": "By row reduction",
+"steps": [
+"effect of each row operation",
+"reduce to triangular",
+"multiply the diagonal",
+"track the changes"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.04",
+"old": "VII.6.04",
+"name": "Properties",
+"steps": [
+"triangular matrices",
+"transpose",
+"identical or zero rows",
+"scaling a matrix"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.05",
+"old": "VII.6.05",
+"name": "Determinant & invertibility",
+"steps": [
+"det ≠ 0 test",
+"find values that make a matrix singular",
+"link to the invertible matrix theorem",
+"det(A⁻¹)"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.06",
+"old": "VII.6.06",
+"name": "Area & volume",
+"steps": [
+"parallelogram area",
+"parallelepiped volume",
+"scaling factor of a map",
+"orientation sign"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.07",
+"old": "VII.6.07",
+"name": "Product rule",
+"steps": [
+"det(AB) = det A · det B",
+"apply it",
+"det of powers",
+"why det(A + B) doesn't split"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.08",
+"old": "VII.6.08",
+"name": "Cramer's rule",
+"steps": [
+"the formula",
+"solve a 2 × 2",
+"solve a 3 × 3",
+"when it's impractical"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.6.09",
+"old": "VII.6.09",
+"name": "Adjugate & inverse",
+"steps": [
+"cofactor matrix",
+"adjugate",
+"A⁻¹ = adj(A)/det A",
+"check"
+],
+"unit": "VII.6"
+},
+{
+"id": "VII.7.01",
+"old": "VII.7.01",
+"name": "Definition",
+"steps": [
+"Av = λv",
+"directions that only stretch",
+"check a candidate",
+"picture in ℝ²"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.02",
+"old": "VII.7.02",
+"name": "Characteristic equation",
+"steps": [
+"det(A − λI) = 0",
+"expand",
+"degree n polynomial",
+"trace and determinant links"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.03",
+"old": "VII.7.03",
+"name": "Find eigenvalues",
+"steps": [
+"2 × 2",
+"triangular matrices",
+"3 × 3",
+"multiplicity"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.04",
+"old": "VII.7.04",
+"name": "Eigenspaces",
+"steps": [
+"null space of A − λI",
+"find a basis",
+"geometric multiplicity",
+"compare with algebraic"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.05",
+"old": "VII.7.05",
+"name": "Diagonalization",
+"steps": [
+"A = PDP⁻¹",
+"when it's possible",
+"build P and D",
+"check"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.06",
+"old": "VII.7.06",
+"name": "Matrix powers",
+"steps": [
+"Aᵏ = PDᵏP⁻¹",
+"compute a high power",
+"long-run behavior",
+"Fibonacci by matrices"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.07",
+"old": "VII.7.07",
+"name": "Complex eigenvalues",
+"steps": [
+"when they appear",
+"conjugate pairs",
+"rotation plus scaling",
+"spiral picture"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.08",
+"old": "VII.7.08",
+"name": "Markov chains",
+"steps": [
+"stochastic matrices",
+"state vectors",
+"steady state as eigenvector",
+"long-run prediction"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.7.09",
+"old": "VII.7.09",
+"name": "Discrete dynamical systems",
+"steps": [
+"xₖ₊₁ = Axₖ",
+"eigenvector decomposition",
+"attractors and repellers",
+"predator–prey models"
+],
+"unit": "VII.7"
+},
+{
+"id": "VII.8.01",
+"old": "VII.8.01",
+"name": "Inner products",
+"steps": [
+"dot product in ℝⁿ",
+"length and distance",
+"other inner products",
+"properties"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.02",
+"old": "VII.8.02",
+"name": "Orthogonal vectors",
+"steps": [
+"dot product zero",
+"Pythagorean theorem in ℝⁿ",
+"test sets",
+"find an orthogonal vector"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.03",
+"old": "VII.8.03",
+"name": "Orthogonal complements",
+"steps": [
+"W⊥ definition",
+"find a basis",
+"row space ⊥ null space",
+"dimensions add to n"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.04",
+"old": "VII.8.04",
+"name": "Orthogonal bases",
+"steps": [
+"orthogonal sets are independent",
+"coordinates by dot products",
+"check a basis",
+"why they're convenient"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.05",
+"old": "VII.8.05",
+"name": "Orthonormal bases",
+"steps": [
+"normalize",
+"UᵀU = I",
+"coordinates fast",
+"preserve lengths"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.06",
+"old": "VII.8.06",
+"name": "Projection onto a subspace",
+"steps": [
+"formula with an orthogonal basis",
+"compute it",
+"decomposition y = ŷ + z",
+"projection matrix"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.07",
+"old": "VII.8.07",
+"name": "Best approximation",
+"steps": [
+"closest point theorem",
+"distance to a subspace",
+"compute it",
+"why projection is best"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.08",
+"old": "VII.8.08",
+"name": "Gram–Schmidt",
+"steps": [
+"subtract projections",
+"run it on 2 vectors",
+"on 3 vectors",
+"normalize at the end"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.09",
+"old": "VII.8.09",
+"name": "QR factorization",
+"steps": [
+"Q from Gram–Schmidt",
+"R = QᵀA",
+"check",
+"uses in computing"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.10",
+"old": "VII.8.10",
+"name": "Least squares",
+"steps": [
+"no exact solution",
+"normal equations AᵀAx = Aᵀb",
+"solve",
+"least-squares error"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.11",
+"old": "VII.8.11",
+"name": "Least-squares lines",
+"steps": [
+"design matrix",
+"fit a line",
+"fit a curve",
+"link to regression"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.8.12",
+"old": "VII.8.12",
+"name": "Orthogonal matrices",
+"steps": [
+"columns orthonormal",
+"inverse is transpose",
+"preserve lengths and angles",
+"rotations and reflections"
+],
+"unit": "VII.8"
+},
+{
+"id": "VII.9.01",
+"old": "VII.9.01",
+"name": "Symmetric matrices",
+"steps": [
+"A = Aᵀ",
+"real eigenvalues",
+"orthogonal eigenvectors",
+"examples"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.02",
+"old": "VII.9.02",
+"name": "Orthogonal diagonalization",
+"steps": [
+"A = PDPᵀ",
+"build P from eigenvectors",
+"repeated eigenvalues",
+"check"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.03",
+"old": "VII.9.03",
+"name": "Spectral theorem",
+"steps": [
+"the statement",
+"spectral decomposition",
+"sum of projections",
+"why it matters"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.04",
+"old": "VII.9.04",
+"name": "Quadratic forms",
+"steps": [
+"xᵀAx",
+"matrix from a form",
+"remove cross terms",
+"principal axes"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.05",
+"old": "VII.9.05",
+"name": "Definiteness",
+"steps": [
+"positive definite",
+"negative and indefinite",
+"test by eigenvalues",
+"link to second-derivative test"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.06",
+"old": "VII.9.06",
+"name": "Constrained optimization",
+"steps": [
+"max of xᵀAx on the unit sphere",
+"largest eigenvalue",
+"smallest eigenvalue",
+"where it's attained"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.07",
+"old": "VII.9.07",
+"name": "Singular values",
+"steps": [
+"eigenvalues of AᵀA",
+"σ = √λ",
+"meaning as stretch amounts",
+"rank from singular values"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.9.08",
+"old": "VII.9.08",
+"name": "Computing the SVD",
+"steps": [
+"V from AᵀA",
+"Σ",
+"U from AV",
+"check A = UΣVᵀ"
+],
+"unit": "VII.9"
+},
+{
+"id": "VII.10.01",
+"old": "VII.10.01",
+"name": "Domains",
+"steps": [
+"f(x, y) notation",
+"find the domain",
+"sketch it in the plane",
+"three variables"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.10.02",
+"old": "VII.10.02",
+"name": "Surfaces",
+"steps": [
+"z = f(x, y) as a landscape",
+"traces",
+"common surfaces",
+"match graphs to formulas"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.10.03",
+"old": "VII.10.03",
+"name": "Level curves",
+"steps": [
+"contour maps",
+"draw level curves",
+"read steepness from spacing",
+"weather and topo maps"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.10.04",
+"old": "VII.10.04",
+"name": "Level surfaces",
+"steps": [
+"f(x, y, z) = k",
+"spheres and ellipsoids",
+"quadric surfaces",
+"match to equations"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.10.05",
+"old": "VII.10.05",
+"name": "Limits in 2D",
+"steps": [
+"many paths to a point",
+"show a limit fails by two paths",
+"polar trick",
+"squeeze in 2D"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.10.06",
+"old": "VII.10.06",
+"name": "Continuity in 2D",
+"steps": [
+"definition",
+"combinations of continuous functions",
+"find where continuous",
+"remove a discontinuity"
+],
+"unit": "VII.10"
+},
+{
+"id": "VII.11.01",
+"old": "VII.11.01",
+"name": "Partial derivative idea",
+"steps": [
+"hold other variables fixed",
+"slope in one direction",
+"notation",
+"limit definition"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.02",
+"old": "VII.11.02",
+"name": "Compute partials",
+"steps": [
+"with respect to x",
+"with respect to y",
+"three variables",
+"from a contour map"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.03",
+"old": "VII.11.03",
+"name": "Higher partials",
+"steps": [
+"second partials",
+"mixed partials",
+"Clairaut's theorem",
+"Laplace equation check"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.04",
+"old": "VII.11.04",
+"name": "Tangent planes",
+"steps": [
+"the formula",
+"find one",
+"for level surfaces",
+"normal lines"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.05",
+"old": "VII.11.05",
+"name": "Linear approximation",
+"steps": [
+"plane as an estimate",
+"approximate a value",
+"total differential",
+"error propagation"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.06",
+"old": "VII.11.06",
+"name": "Differentiability",
+"steps": [
+"more than partials existing",
+"continuous partials suffice",
+"a counterexample",
+"link to tangent planes"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.07",
+"old": "VII.11.07",
+"name": "Multivariable chain rule",
+"steps": [
+"tree diagrams",
+"one parameter",
+"two parameters",
+"related rates in 3D"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.08",
+"old": "VII.11.08",
+"name": "Implicit differentiation",
+"steps": [
+"F(x, y) = 0 formula",
+"F(x, y, z) = 0",
+"apply",
+"compare with single-variable"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.09",
+"old": "VII.11.09",
+"name": "Gradient",
+"steps": [
+"vector of partials",
+"compute it",
+"points uphill",
+"length is the max slope"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.10",
+"old": "VII.11.10",
+"name": "Directional derivatives",
+"steps": [
+"unit direction",
+"∇f · u",
+"max and min rates",
+"interpret on a map"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.11",
+"old": "VII.11.11",
+"name": "Gradient and level sets",
+"steps": [
+"gradient ⊥ level curves",
+"gradient ⊥ level surfaces",
+"tangent planes by gradient",
+"steepest ascent paths"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.11.12",
+"old": "VII.11.12",
+"name": "Space curves",
+"steps": [
+"r(t) and r′(t)",
+"arc length",
+"unit tangent and normal",
+"curvature"
+],
+"unit": "VII.11"
+},
+{
+"id": "VII.12.01",
+"old": "VII.12.01",
+"name": "Critical points",
+"steps": [
+"gradient is zero",
+"solve the system",
+"undefined partials",
+"list candidates"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.02",
+"old": "VII.12.02",
+"name": "Second derivative test",
+"steps": [
+"Hessian determinant",
+"max and min",
+"saddle",
+"inconclusive case"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.03",
+"old": "VII.12.03",
+"name": "Saddle points",
+"steps": [
+"the shape",
+"up one way, down another",
+"find them",
+"on a contour map"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.04",
+"old": "VII.12.04",
+"name": "Closed regions",
+"steps": [
+"interior critical points",
+"boundary pieces",
+"corners",
+"compare all values"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.05",
+"old": "VII.12.05",
+"name": "Lagrange multipliers",
+"steps": [
+"∇f = λ∇g",
+"set up the system",
+"solve",
+"the geometric picture"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.06",
+"old": "VII.12.06",
+"name": "Two constraints",
+"steps": [
+"two multipliers",
+"set up",
+"solve",
+"curve of intersection picture"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.07",
+"old": "VII.12.07",
+"name": "Applied optimization",
+"steps": [
+"boxes with least material",
+"cost and production",
+"distance to a surface",
+"check reasonableness"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.12.08",
+"old": "VII.12.09",
+"name": "Gradient descent",
+"steps": [
+"step downhill",
+"step size",
+"run a few steps",
+"how machine learning uses it"
+],
+"unit": "VII.12"
+},
+{
+"id": "VII.13.01",
+"old": "VII.13.01",
+"name": "Double integrals over rectangles",
+"steps": [
+"volume under a surface",
+"Riemann sums in 2D",
+"notation",
+"estimate from a table"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.02",
+"old": "VII.13.02",
+"name": "Iterated integrals",
+"steps": [
+"inside first",
+"Fubini's theorem",
+"evaluate",
+"separable integrands"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.03",
+"old": "VII.13.03",
+"name": "General regions",
+"steps": [
+"type I",
+"type II",
+"find the bounds",
+"evaluate"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.04",
+"old": "VII.13.04",
+"name": "Reverse the order",
+"steps": [
+"sketch the region",
+"rewrite bounds",
+"why it helps",
+"impossible-looking integrals"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.05",
+"old": "VII.13.05",
+"name": "Polar double integrals",
+"steps": [
+"dA = r dr dθ",
+"convert region and integrand",
+"evaluate",
+"the Gaussian integral"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.06",
+"old": "VII.13.06",
+"name": "Applications",
+"steps": [
+"area and mass",
+"center of mass",
+"moments of inertia",
+"joint probability"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.07",
+"old": "VII.13.07",
+"name": "Triple integrals",
+"steps": [
+"volume and mass",
+"set up bounds",
+"six orders",
+"evaluate"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.08",
+"old": "VII.13.08",
+"name": "Cylindrical & spherical",
+"steps": [
+"cylindrical coordinates",
+"spherical coordinates",
+"volume elements",
+"choose the best system"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.13.09",
+"old": "VII.13.09",
+"name": "Change of variables",
+"steps": [
+"the Jacobian",
+"compute it",
+"transform a region",
+"evaluate"
+],
+"unit": "VII.13"
+},
+{
+"id": "VII.14.01",
+"old": "VII.14.01",
+"name": "Vector fields",
+"steps": [
+"arrows at every point",
+"sketch a field",
+"flow lines",
+"wind, water, gravity examples"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.02",
+"old": "VII.14.02",
+"name": "Gradient fields",
+"steps": [
+"F = ∇f",
+"potential functions",
+"find a potential",
+"gravity as a gradient"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.03",
+"old": "VII.14.03",
+"name": "Scalar line integrals",
+"steps": [
+"along a curve",
+"parametrize",
+"ds",
+"mass of a wire"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.04",
+"old": "VII.14.04",
+"name": "Vector line integrals",
+"steps": [
+"F · dr",
+"work along a path",
+"evaluate",
+"direction matters"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.05",
+"old": "VII.14.05",
+"name": "Fundamental theorem for line integrals",
+"steps": [
+"f(end) − f(start)",
+"apply",
+"closed loops give 0",
+"compare with FTC"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.06",
+"old": "VII.14.06",
+"name": "Conservative field tests",
+"steps": [
+"mixed partials test in 2D",
+"curl test in 3D",
+"simply connected domains",
+"the vortex counterexample"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.07",
+"old": "VII.14.07",
+"name": "Path independence",
+"steps": [
+"equivalent statements",
+"pick an easy path",
+"energy conservation",
+"check a claim"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.08",
+"old": "VII.14.08",
+"name": "Green's theorem, circulation",
+"steps": [
+"the statement",
+"orientation",
+"evaluate both sides",
+"area by a line integral"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.09",
+"old": "VII.14.09",
+"name": "Green's theorem, flux",
+"steps": [
+"normal form",
+"outward flux",
+"evaluate",
+"regions with holes"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.10",
+"old": "VII.14.10",
+"name": "Curl",
+"steps": [
+"the formula",
+"spinning paddle picture",
+"compute it",
+"irrotational fields"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.11",
+"old": "VII.14.11",
+"name": "Divergence",
+"steps": [
+"the formula",
+"source and sink picture",
+"compute it",
+"incompressible fields"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.12",
+"old": "VII.14.12",
+"name": "Parametric surfaces",
+"steps": [
+"r(u, v)",
+"sphere, cylinder, cone",
+"graphs as surfaces",
+"tangent planes"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.13",
+"old": "VII.14.13",
+"name": "Surface area",
+"steps": [
+"cross product of partials",
+"set up",
+"evaluate",
+"graph formula"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.14",
+"old": "VII.14.14",
+"name": "Scalar surface integrals",
+"steps": [
+"f dS",
+"set up",
+"evaluate",
+"mass of a shell"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.15",
+"old": "VII.14.15",
+"name": "Flux integrals",
+"steps": [
+"F · n dS",
+"set up",
+"evaluate",
+"flow through a net"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.16",
+"old": "VII.14.16",
+"name": "Orientation",
+"steps": [
+"choose a normal",
+"outward for closed surfaces",
+"boundary orientation",
+"Möbius strip problem"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.17",
+"old": "VII.14.17",
+"name": "Stokes' theorem",
+"steps": [
+"the statement",
+"match orientations",
+"evaluate the easier side",
+"surface independence"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.14.18",
+"old": "VII.14.18",
+"name": "Divergence theorem",
+"steps": [
+"the statement",
+"evaluate the easier side",
+"closed-surface flux",
+"Gauss's law"
+],
+"unit": "VII.14"
+},
+{
+"id": "VII.15.01",
+"old": "VII.15.01",
+"name": "Classify ODEs",
+"steps": [
+"order",
+"linear vs nonlinear",
+"autonomous",
+"ODE vs PDE"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.02",
+"old": "VII.15.04",
+"name": "Linear first-order",
+"steps": [
+"standard form",
+"integrating factor",
+"solve",
+"initial value problems"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.03",
+"old": "VII.15.05",
+"name": "Exact equations",
+"steps": [
+"test for exactness",
+"find the potential",
+"solve",
+"integrating factors to make exact"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.04",
+"old": "VII.15.06",
+"name": "Substitutions",
+"steps": [
+"homogeneous equations",
+"Bernoulli equations",
+"y = vx",
+"choose the substitution"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.05",
+"old": "VII.15.07",
+"name": "Existence & uniqueness",
+"steps": [
+"the theorem",
+"check conditions",
+"non-unique example",
+"interval of existence"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.06",
+"old": "VII.15.10",
+"name": "Circuits & mixing",
+"steps": [
+"RC circuits",
+"RL circuits",
+"tank mixing",
+"interpret long-run behavior"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.15.07",
+"old": "VII.15.11",
+"name": "Numerical methods",
+"steps": [
+"Euler's method",
+"improved Euler",
+"Runge–Kutta",
+"compare errors"
+],
+"unit": "VII.15"
+},
+{
+"id": "VII.16.01",
+"old": "VII.16.01",
+"name": "Structure of solutions",
+"steps": [
+"superposition",
+"two independent solutions",
+"Wronskian",
+"general solution"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.02",
+"old": "VII.16.02",
+"name": "Distinct real roots",
+"steps": [
+"characteristic equation",
+"two exponentials",
+"solve an IVP",
+"long-run behavior"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.03",
+"old": "VII.16.03",
+"name": "Repeated roots",
+"steps": [
+"one root twice",
+"the te^(rt) solution",
+"solve an IVP",
+"why it works"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.04",
+"old": "VII.16.04",
+"name": "Complex roots",
+"steps": [
+"α ± βi",
+"e^(αt) cos and sin",
+"solve an IVP",
+"amplitude–phase form"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.05",
+"old": "VII.16.05",
+"name": "Reduction of order",
+"steps": [
+"one known solution",
+"guess v(t)y₁",
+"solve for v",
+"variable coefficients"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.06",
+"old": "VII.16.06",
+"name": "Undetermined coefficients",
+"steps": [
+"guess the form",
+"solve for constants",
+"the resonance fix",
+"sums of forcings"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.07",
+"old": "VII.16.07",
+"name": "Variation of parameters",
+"steps": [
+"the formula",
+"set up",
+"evaluate",
+"when guessing fails"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.08",
+"old": "VII.16.08",
+"name": "Free spring motion",
+"steps": [
+"mx″ + kx = 0",
+"period and frequency",
+"amplitude",
+"pendulum approximation"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.09",
+"old": "VII.16.09",
+"name": "Damped motion",
+"steps": [
+"underdamped",
+"critically damped",
+"overdamped",
+"car shock absorbers"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.10",
+"old": "VII.16.10",
+"name": "Forced motion & resonance",
+"steps": [
+"steady state",
+"transient",
+"resonance",
+"beats"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.11",
+"old": "VII.16.11",
+"name": "RLC circuits",
+"steps": [
+"the equation",
+"analogy with springs",
+"solve",
+"tuning a radio"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.12",
+"old": null,
+"name": "Series solutions",
+"steps": [
+"assume y = Σ aₙxⁿ",
+"substitute and shift indices",
+"a recurrence for the coefficients",
+"solve y″ + y = 0 by series"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.16.13",
+"old": null,
+"name": "Cauchy–Euler equations",
+"steps": [
+"recognize x²y″ + axy′ + by = 0",
+"try y = xʳ",
+"the three root cases",
+"solve an initial value problem"
+],
+"unit": "VII.16"
+},
+{
+"id": "VII.17.01",
+"old": "VII.17.01",
+"name": "Writing a system",
+"steps": [
+"two coupled equations",
+"state variables",
+"initial conditions",
+"contexts"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.02",
+"old": "VII.17.02",
+"name": "Higher order to first order",
+"steps": [
+"new variables for derivatives",
+"convert",
+"matrix form",
+"why it helps"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.03",
+"old": "VII.17.03",
+"name": "Matrix form",
+"steps": [
+"x′ = Ax",
+"verify a solution",
+"superposition",
+"fundamental matrix"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.04",
+"old": "VII.17.04",
+"name": "Real distinct eigenvalues",
+"steps": [
+"eigenvector solutions",
+"general solution",
+"solve an IVP",
+"straight-line solutions"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.05",
+"old": "VII.17.05",
+"name": "Phase portraits",
+"steps": [
+"trajectories",
+"nodes",
+"saddles",
+"sketch from eigenvectors"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.06",
+"old": "VII.17.06",
+"name": "Complex eigenvalues",
+"steps": [
+"real solutions from complex ones",
+"spirals",
+"centers",
+"direction of rotation"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.07",
+"old": "VII.17.07",
+"name": "Repeated eigenvalues",
+"steps": [
+"one eigenvector case",
+"generalized eigenvector",
+"general solution",
+"degenerate nodes"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.08",
+"old": "VII.17.08",
+"name": "Stability map",
+"steps": [
+"trace–determinant plane",
+"classify an equilibrium",
+"stable vs unstable",
+"borderline cases"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.09",
+"old": "VII.17.09",
+"name": "Nonhomogeneous systems",
+"steps": [
+"x′ = Ax + f",
+"undetermined coefficients",
+"variation of parameters",
+"steady states"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.10",
+"old": "VII.17.10",
+"name": "Nonlinear systems",
+"steps": [
+"find equilibria",
+"Jacobian",
+"linearize",
+"classify locally"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.17.11",
+"old": "VII.17.11",
+"name": "Applications",
+"steps": [
+"predator–prey",
+"competing species",
+"coupled springs",
+"SIR epidemic model"
+],
+"unit": "VII.17"
+},
+{
+"id": "VII.18.01",
+"old": "VII.18.01",
+"name": "Definition",
+"steps": [
+"the improper integral",
+"transform of 1 and e^(at)",
+"existence",
+"the big idea: calculus to algebra"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.02",
+"old": "VII.18.02",
+"name": "Transform table",
+"steps": [
+"powers of t",
+"sin and cos",
+"read the table",
+"derive one entry"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.03",
+"old": "VII.18.03",
+"name": "Properties",
+"steps": [
+"linearity",
+"s-shift",
+"transform of derivatives",
+"multiply by t"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.04",
+"old": "VII.18.04",
+"name": "Inverse transforms",
+"steps": [
+"read the table backwards",
+"linearity",
+"complete the square",
+"shifts"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.05",
+"old": "VII.18.05",
+"name": "Partial fractions for inverses",
+"steps": [
+"distinct factors",
+"repeated factors",
+"quadratic factors",
+"invert each piece"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.06",
+"old": "VII.18.06",
+"name": "Solve IVPs",
+"steps": [
+"transform the equation",
+"solve for Y(s)",
+"invert",
+"check initial conditions"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.07",
+"old": "VII.18.07",
+"name": "Step functions",
+"steps": [
+"unit step",
+"switched forcing",
+"t-shift theorem",
+"solve with a switch"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.08",
+"old": "VII.18.08",
+"name": "Impulses",
+"steps": [
+"Dirac delta idea",
+"its transform",
+"hammer-strike problems",
+"impulse response"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.18.09",
+"old": "VII.18.09",
+"name": "Convolution",
+"steps": [
+"definition",
+"convolution theorem",
+"invert products",
+"transfer functions"
+],
+"unit": "VII.18"
+},
+{
+"id": "VII.19.01",
+"old": "VII.19.01",
+"name": "Periodic functions & orthogonality",
+"steps": [
+"period 2L",
+"sin and cos are orthogonal",
+"integrals of products",
+"why this lets us pick out pieces"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.02",
+"old": "VII.19.02",
+"name": "Fourier coefficients",
+"steps": [
+"a₀",
+"aₙ",
+"bₙ",
+"write the series"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.03",
+"old": "VII.19.03",
+"name": "Square wave",
+"steps": [
+"compute coefficients",
+"only odd harmonics",
+"partial sums graph",
+"hear it"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.04",
+"old": "VII.19.04",
+"name": "Sawtooth & triangle waves",
+"steps": [
+"sawtooth coefficients",
+"triangle coefficients",
+"how fast they shrink",
+"compare sounds"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.05",
+"old": "VII.19.05",
+"name": "Even & odd extensions",
+"steps": [
+"cosine series",
+"sine series",
+"half-range expansions",
+"choose one"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.06",
+"old": "VII.19.06",
+"name": "Convergence & Gibbs",
+"steps": [
+"converges to the average at jumps",
+"Gibbs overshoot",
+"smoothness and decay",
+"Parseval's identity"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.07",
+"old": "VII.19.07",
+"name": "Complex form",
+"steps": [
+"e^(inx) basis",
+"complex coefficients",
+"convert to real form",
+"spectrum picture"
+],
+"unit": "VII.19"
+},
+{
+"id": "VII.19.08",
+"old": "VII.19.08",
+"name": "Heat equation",
+"steps": [
+"the PDE",
+"separation of variables",
+"Fourier sine series for initial data",
+"how heat smooths"
+],
+"unit": "VII.19"
+}
+],
+"units": {
+"IV.1": "Equations & inequalities",
+"IV.2": "Functions",
+"IV.3": "Linear functions",
+"IV.4": "Systems",
+"IV.5": "Exponents & radicals",
+"IV.6": "Polynomials",
+"IV.7": "Quadratics",
+"IV.8": "Complex numbers",
+"IV.9": "Function toolkit",
+"IV.10": "Polynomial functions",
+"IV.11": "Rational & radical functions",
+"IV.12": "Exponential & logarithmic",
+"IV.13": "Sequences & series",
+"IV.14": "Counting & probability",
+"IV.15": "Data & distributions",
+"V.1": "Logic & proof",
+"V.2": "Lines & angles",
+"V.3": "Triangles",
+"V.4": "Polygons",
+"V.5": "Similarity",
+"V.6": "Right-triangle trig",
+"V.7": "General triangles",
+"V.8": "Circles",
+"V.9": "Trig functions",
+"V.10": "Identities & equations",
+"V.11": "Coordinate geometry",
+"V.12": "Conic sections",
+"V.13": "Transformations",
+"V.14": "Solids",
+"V.15": "Constructions",
+"VI.1": "Limits & continuity",
+"VI.2": "Derivatives",
+"VI.3": "Applications of derivatives",
+"VI.4": "Integrals",
+"VI.5": "Integration techniques",
+"VI.6": "Applications of integrals",
+"VI.7": "Differential equations I",
+"VI.8": "Parametric & polar",
+"VI.9": "Sequences & series",
+"VI.10": "Power & Taylor series",
+"VI.11": "Statistical inference",
+"VI.12": "Mechanics",
+"VII.1": "Vectors in ℝⁿ",
+"VII.2": "Linear systems",
+"VII.3": "Matrix algebra",
+"VII.4": "Vector spaces",
+"VII.5": "Linear transformations",
+"VII.6": "Determinants",
+"VII.7": "Eigenvalues & eigenvectors",
+"VII.8": "Orthogonality",
+"VII.9": "Symmetric matrices & SVD",
+"VII.10": "Functions of several variables",
+"VII.11": "Partial derivatives",
+"VII.12": "Optimization",
+"VII.13": "Multiple integrals",
+"VII.14": "Vector calculus",
+"VII.15": "First-order equations",
+"VII.16": "Second-order linear",
+"VII.17": "Systems of ODEs",
+"VII.18": "Laplace transform",
+"VII.19": "Fourier series, a first look"
+},
+"map": {
+"IV.1.03": "IV.1.01",
+"IV.1.04": "IV.1.02",
+"IV.1.06": "IV.1.03",
+"IV.1.08": "IV.1.04",
+"IV.1.09": "IV.1.05",
+"IV.2.01": "IV.2.01",
+"IV.2.02": "IV.2.02",
+"IV.2.03": "IV.2.03",
+"IV.2.04": "IV.2.04",
+"IV.2.05": "IV.2.05",
+"IV.2.06": "IV.2.06",
+"IV.2.07": "IV.2.07",
+"IV.2.08": "IV.2.08",
+"IV.2.09": "IV.2.09",
+"IV.2.10": "IV.2.10",
+"IV.2.11": "IV.2.11",
+"IV.2.12": "IV.2.12",
+"IV.2.13": "IV.2.13",
+"IV.2.14": "IV.2.14",
+"IV.2.15": "IV.2.15",
+"IV.3.03": "IV.3.01",
+"IV.3.04": "IV.3.02",
+"IV.3.05": "IV.3.03",
+"IV.3.06": "IV.3.04",
+"IV.3.07": "IV.3.05",
+"IV.3.08": "IV.3.06",
+"IV.3.09": "IV.3.07",
+"IV.3.10": "IV.3.08",
+"IV.3.12": "IV.3.09",
+"IV.4.01": "IV.4.01",
+"IV.4.02": "IV.4.02",
+"IV.4.03": "IV.4.03",
+"IV.4.04": "IV.4.04",
+"IV.4.05": "IV.4.05",
+"IV.4.06": "IV.4.06",
+"IV.4.07": "IV.4.07",
+"IV.4.08": "IV.4.08",
+"IV.4.09": "IV.4.09",
+"IV.4.10": "IV.4.10",
+"IV.4.11": "IV.4.11",
+"IV.4.12": "IV.4.12",
+"IV.4.13": "IV.4.13",
+"IV.4.14": "IV.4.14",
+"IV.4.15": "IV.4.15",
+"IV.5.06": "IV.5.01",
+"IV.5.07": "IV.5.02",
+"IV.5.08": "IV.5.03",
+"IV.5.09": "IV.5.04",
+"IV.5.10": "IV.5.05",
+"IV.5.11": "IV.5.06",
+"IV.5.12": "IV.5.07",
+"IV.6.01": "IV.6.01",
+"IV.6.02": "IV.6.02",
+"IV.6.03": "IV.6.03",
+"IV.6.04": "IV.6.04",
+"IV.6.05": "IV.6.05",
+"IV.6.06": "IV.6.06",
+"IV.6.07": "IV.6.07",
+"IV.6.08": "IV.6.08",
+"IV.6.09": "IV.6.09",
+"IV.6.10": "IV.6.10",
+"IV.6.11": "IV.6.11",
+"IV.6.12": "IV.6.12",
+"IV.6.13": "IV.6.13",
+"IV.6.14": "IV.6.14",
+"IV.6.15": "IV.6.15",
+"IV.7.01": "IV.7.01",
+"IV.7.02": "IV.7.02",
+"IV.7.03": "IV.7.03",
+"IV.7.04": "IV.7.04",
+"IV.7.05": "IV.7.05",
+"IV.7.06": "IV.7.06",
+"IV.7.07": "IV.7.07",
+"IV.7.08": "IV.7.08",
+"IV.7.09": "IV.7.09",
+"IV.7.10": "IV.7.10",
+"IV.7.11": "IV.7.11",
+"IV.7.12": "IV.7.12",
+"IV.7.13": "IV.7.13",
+"IV.7.14": "IV.7.14",
+"IV.7.15": "IV.7.15",
+"IV.7.16": "IV.7.16",
+"IV.7.17": "IV.7.17",
+"IV.8.01": "IV.8.01",
+"IV.8.02": "IV.8.02",
+"IV.8.03": "IV.8.03",
+"IV.8.04": "IV.8.04",
+"IV.8.05": "IV.8.05",
+"IV.8.06": "IV.8.06",
+"IV.8.07": "IV.8.07",
+"IV.8.08": "IV.8.08",
+"IV.8.09": "IV.8.09",
+"IV.8.10": "IV.8.10",
+"IV.8.11": "IV.8.11",
+"IV.8.12": "IV.8.12",
+"IV.8.13": "IV.8.13",
+"IV.8.14": "IV.8.14",
+"IV.8.15": "IV.8.15",
+"IV.9.01": "IV.9.01",
+"IV.9.02": "IV.9.02",
+"IV.9.03": "IV.9.03",
+"IV.9.04": "IV.9.04",
+"IV.9.05": "IV.9.05",
+"IV.9.06": "IV.9.06",
+"IV.9.07": "IV.9.07",
+"IV.9.08": "IV.9.08",
+"IV.9.09": "IV.9.09",
+"IV.9.10": "IV.9.10",
+"IV.9.11": "IV.9.11",
+"IV.9.12": "IV.9.12",
+"IV.9.13": "IV.9.13",
+"IV.9.14": "IV.9.14",
+"IV.9.15": "IV.9.15",
+"IV.9.16": "IV.9.16",
+"IV.9.17": "IV.9.17",
+"IV.10.01": "IV.10.01",
+"IV.10.02": "IV.10.02",
+"IV.10.03": "IV.10.03",
+"IV.10.04": "IV.10.04",
+"IV.10.05": "IV.10.05",
+"IV.10.06": "IV.10.06",
+"IV.10.07": "IV.10.07",
+"IV.10.08": "IV.10.08",
+"IV.10.09": "IV.10.09",
+"IV.10.10": "IV.10.10",
+"IV.10.13": "IV.10.11",
+"IV.10.14": "IV.10.12",
+"IV.10.15": "IV.10.13",
+"IV.11.01": "IV.11.01",
+"IV.11.02": "IV.11.02",
+"IV.11.03": "IV.11.03",
+"IV.11.04": "IV.11.04",
+"IV.11.05": "IV.11.05",
+"IV.11.06": "IV.11.06",
+"IV.11.07": "IV.11.07",
+"IV.11.08": "IV.11.08",
+"IV.11.09": "IV.11.09",
+"IV.11.10": "IV.11.10",
+"IV.11.11": "IV.11.11",
+"IV.11.12": "IV.11.12",
+"IV.11.13": "IV.11.13",
+"IV.11.14": "IV.11.14",
+"IV.12.01": "IV.12.01",
+"IV.12.02": "IV.12.02",
+"IV.12.03": "IV.12.03",
+"IV.12.04": "IV.12.04",
+"IV.12.05": "IV.12.05",
+"IV.12.06": "IV.12.06",
+"IV.12.07": "IV.12.07",
+"IV.12.08": "IV.12.08",
+"IV.12.09": "IV.12.09",
+"IV.12.10": "IV.12.10",
+"IV.12.11": "IV.12.11",
+"IV.12.12": "IV.12.12",
+"IV.12.13": "IV.12.13",
+"IV.12.14": "IV.12.14",
+"IV.12.15": "IV.12.15",
+"IV.12.16": "IV.12.16",
+"IV.12.17": "IV.12.17",
+"IV.13.01": "IV.13.01",
+"IV.13.02": "IV.13.02",
+"IV.13.03": "IV.13.03",
+"IV.13.04": "IV.13.04",
+"IV.13.05": "IV.13.05",
+"IV.13.06": "IV.13.06",
+"IV.13.07": "IV.13.07",
+"IV.13.08": "IV.13.08",
+"IV.13.09": "IV.13.09",
+"IV.13.10": "IV.13.10",
+"IV.13.11": "IV.13.11",
+"IV.13.12": "IV.13.12",
+"IV.13.13": "IV.13.13",
+"IV.13.14": "IV.13.14",
+"V.1.02": "V.1.01",
+"V.1.03": "V.1.02",
+"V.1.04": "V.1.03",
+"V.1.05": "V.1.04",
+"V.1.06": "V.1.05",
+"V.1.07": "V.1.06",
+"V.1.08": "V.1.07",
+"V.1.09": "V.1.08",
+"V.1.10": "V.1.09",
+"V.1.11": "V.1.10",
+"V.1.12": "V.1.11",
+"V.1.13": "V.1.12",
+"V.1.14": "V.1.13",
+"V.2.01": "V.2.01",
+"V.2.02": "V.2.02",
+"V.2.03": "V.2.03",
+"V.2.04": "V.2.04",
+"V.2.05": "V.2.05",
+"V.2.06": "V.2.06",
+"V.3.01": "V.3.01",
+"V.3.02": "V.3.02",
+"V.3.03": "V.3.03",
+"V.3.04": "V.3.04",
+"V.3.05": "V.3.05",
+"V.3.06": "V.3.06",
+"V.3.07": "V.3.07",
+"V.3.08": "V.3.08",
+"V.3.09": "V.3.09",
+"V.3.10": "V.3.10",
+"V.3.11": "V.3.11",
+"V.3.12": "V.3.12",
+"V.3.13": "V.3.13",
+"V.3.14": "V.3.14",
+"V.4.01": "V.4.01",
+"V.4.02": "V.4.02",
+"V.4.03": "V.4.03",
+"V.4.04": "V.4.04",
+"V.4.05": "V.4.05",
+"V.4.06": "V.4.06",
+"V.4.07": "V.4.07",
+"V.4.08": "V.4.08",
+"V.4.09": "V.4.09",
+"V.5.01": "V.5.01",
+"V.5.02": "V.5.02",
+"V.5.03": "V.5.03",
+"V.5.04": "V.5.04",
+"V.5.05": "V.5.05",
+"V.5.06": "V.5.06",
+"V.5.07": "V.5.07",
+"V.5.08": "V.5.08",
+"V.5.09": "V.5.09",
+"V.5.10": "V.5.10",
+"V.5.11": "V.5.11",
+"V.5.12": "V.5.12",
+"V.6.01": "V.6.01",
+"V.6.02": "V.6.02",
+"V.6.03": "V.6.03",
+"V.6.04": "V.6.04",
+"V.6.05": "V.6.05",
+"V.6.06": "V.6.06",
+"V.6.07": "V.6.07",
+"V.6.08": "V.6.08",
+"V.6.09": "V.6.09",
+"V.6.10": "V.6.10",
+"V.6.11": "V.6.11",
+"V.6.12": "V.6.12",
+"V.6.13": "V.6.13",
+"V.6.14": "V.6.14",
+"V.7.01": "V.7.01",
+"V.7.02": "V.7.02",
+"V.7.03": "V.7.03",
+"V.7.04": "V.7.04",
+"V.7.05": "V.7.05",
+"V.7.06": "V.7.06",
+"V.7.07": "V.7.07",
+"V.7.08": "V.7.08",
+"V.7.09": "V.7.09",
+"V.8.01": "V.8.01",
+"V.8.02": "V.8.02",
+"V.8.03": "V.8.03",
+"V.8.04": "V.8.04",
+"V.8.05": "V.8.05",
+"V.8.06": "V.8.06",
+"V.8.07": "V.8.07",
+"V.8.08": "V.8.08",
+"V.8.09": "V.8.09",
+"V.8.10": "V.8.10",
+"V.8.11": "V.8.11",
+"V.8.12": "V.8.12",
+"V.8.13": "V.8.13",
+"V.8.14": "V.8.14",
+"V.8.15": "V.8.15",
+"V.8.16": "V.8.16",
+"V.8.17": "V.8.17",
+"V.9.01": "V.9.01",
+"V.9.02": "V.9.02",
+"V.9.04": "V.9.03",
+"V.9.05": "V.9.04",
+"V.9.06": "V.9.05",
+"V.9.07": "V.9.06",
+"V.9.08": "V.9.07",
+"V.9.09": "V.9.08",
+"V.9.10": "V.9.09",
+"V.9.11": "V.9.10",
+"V.9.12": "V.9.11",
+"V.9.13": "V.9.12",
+"V.9.14": "V.9.13",
+"V.9.15": "V.9.14",
+"V.9.16": "V.9.15",
+"V.10.01": "V.10.01",
+"V.10.02": "V.10.02",
+"V.10.03": "V.10.03",
+"V.10.04": "V.10.04",
+"V.10.05": "V.10.05",
+"V.10.06": "V.10.06",
+"V.10.07": "V.10.07",
+"V.10.08": "V.10.08",
+"V.10.09": "V.10.09",
+"V.10.10": "V.10.10",
+"V.10.11": "V.10.11",
+"V.10.12": "V.10.12",
+"V.11.01": "V.11.01",
+"V.11.02": "V.11.02",
+"V.11.03": "V.11.03",
+"V.11.04": "V.11.04",
+"V.11.05": "V.11.05",
+"V.11.06": "V.11.06",
+"V.11.07": "V.11.07",
+"V.11.08": "V.11.08",
+"V.11.09": "V.11.09",
+"V.12.01": "V.12.01",
+"V.12.02": "V.12.02",
+"V.12.03": "V.12.03",
+"V.12.05": "V.12.04",
+"V.12.06": "V.12.05",
+"V.12.07": "V.12.06",
+"V.12.08": "V.12.07",
+"V.12.09": "V.12.08",
+"V.12.10": "V.12.09",
+"V.12.11": "V.12.10",
+"V.12.12": "V.12.11",
+"V.13.01": "V.13.01",
+"V.13.02": "V.13.02",
+"V.13.03": "V.13.03",
+"V.13.04": "V.13.04",
+"V.13.05": "V.13.05",
+"V.13.06": "V.13.06",
+"V.13.07": "V.13.07",
+"V.13.08": "V.13.08",
+"V.13.09": "V.13.09",
+"V.13.10": "V.13.10",
+"V.13.11": "V.13.11",
+"V.13.12": "V.13.12",
+"V.14.01": "V.14.01",
+"V.14.02": "V.14.02",
+"V.14.03": "V.14.03",
+"V.14.04": "V.14.04",
+"V.14.05": "V.14.05",
+"V.14.06": "V.14.06",
+"V.14.08": "V.14.07",
+"V.14.09": "V.14.08",
+"V.15.01": "V.15.01",
+"V.15.02": "V.15.02",
+"V.15.03": "V.15.03",
+"V.15.04": "V.15.04",
+"V.15.05": "V.15.05",
+"V.15.06": "V.15.06",
+"V.15.07": "V.15.07",
+"V.15.08": "V.15.08",
+"V.15.09": "V.15.09",
+"VI.1.01": "VI.1.01",
+"VI.1.02": "VI.1.02",
+"VI.1.03": "VI.1.03",
+"VI.1.04": "VI.1.04",
+"VI.1.05": "VI.1.05",
+"VI.1.06": "VI.1.06",
+"VI.1.07": "VI.1.07",
+"VI.1.08": "VI.1.08",
+"VI.1.09": "VI.1.09",
+"VI.1.10": "VI.1.10",
+"VI.1.11": "VI.1.11",
+"VI.1.12": "VI.1.12",
+"VI.1.13": "VI.1.13",
+"VI.1.14": "VI.1.14",
+"VI.1.15": "VI.1.15",
+"VI.1.16": "VI.1.16",
+"VI.1.17": "VI.1.17",
+"VI.1.18": "VI.1.18",
+"VI.1.19": "VI.1.19",
+"VI.1.20": "VI.1.20",
+"VI.2.01": "VI.2.01",
+"VI.2.02": "VI.2.02",
+"VI.2.03": "VI.2.03",
+"VI.2.04": "VI.2.04",
+"VI.2.05": "VI.2.05",
+"VI.2.06": "VI.2.06",
+"VI.2.07": "VI.2.07",
+"VI.2.08": "VI.2.08",
+"VI.2.09": "VI.2.09",
+"VI.2.10": "VI.2.10",
+"VI.2.11": "VI.2.11",
+"VI.2.12": "VI.2.12",
+"VI.2.13": "VI.2.13",
+"VI.2.14": "VI.2.14",
+"VI.2.15": "VI.2.15",
+"VI.2.16": "VI.2.16",
+"VI.2.17": "VI.2.17",
+"VI.3.01": "VI.3.01",
+"VI.3.02": "VI.3.02",
+"VI.3.03": "VI.3.03",
+"VI.3.04": "VI.3.04",
+"VI.3.05": "VI.3.05",
+"VI.3.06": "VI.3.06",
+"VI.3.07": "VI.3.07",
+"VI.3.08": "VI.3.08",
+"VI.3.09": "VI.3.09",
+"VI.3.10": "VI.3.10",
+"VI.3.11": "VI.3.11",
+"VI.3.12": "VI.3.12",
+"VI.3.13": "VI.3.13",
+"VI.3.14": "VI.3.14",
+"VI.3.15": "VI.3.15",
+"VI.3.16": "VI.3.16",
+"VI.3.17": "VI.3.17",
+"VI.3.18": "VI.3.18",
+"VI.3.19": "VI.3.19",
+"VI.3.20": "VI.3.20",
+"VI.4.01": "VI.4.01",
+"VI.4.02": "VI.4.02",
+"VI.4.03": "VI.4.03",
+"VI.4.04": "VI.4.04",
+"VI.4.05": "VI.4.05",
+"VI.4.06": "VI.4.06",
+"VI.4.07": "VI.4.07",
+"VI.4.08": "VI.4.08",
+"VI.4.09": "VI.4.09",
+"VI.4.10": "VI.4.10",
+"VI.4.11": "VI.4.11",
+"VI.4.12": "VI.4.12",
+"VI.4.13": "VI.4.13",
+"VI.4.14": "VI.4.14",
+"VI.4.15": "VI.4.15",
+"VI.5.01": "VI.5.01",
+"VI.5.02": "VI.5.02",
+"VI.5.03": "VI.5.03",
+"VI.5.04": "VI.5.04",
+"VI.5.05": "VI.5.05",
+"VI.5.06": "VI.5.06",
+"VI.5.07": "VI.5.07",
+"VI.5.08": "VI.5.08",
+"VI.5.09": "VI.5.09",
+"VI.5.10": "VI.5.10",
+"VI.5.11": "VI.5.11",
+"VI.5.12": "VI.5.12",
+"VI.5.13": "VI.5.13",
+"VI.5.14": "VI.5.14",
+"VI.5.15": "VI.5.15",
+"VI.6.01": "VI.6.01",
+"VI.6.02": "VI.6.02",
+"VI.6.03": "VI.6.03",
+"VI.6.04": "VI.6.04",
+"VI.6.05": "VI.6.05",
+"VI.6.06": "VI.6.06",
+"VI.6.07": "VI.6.07",
+"VI.6.08": "VI.6.08",
+"VI.6.09": "VI.6.09",
+"VI.6.10": "VI.6.10",
+"VI.6.11": "VI.6.11",
+"VI.6.12": "VI.6.12",
+"VI.6.13": "VI.6.13",
+"VI.6.14": "VI.6.14",
+"VI.6.15": "VI.6.15",
+"VI.7.01": "VI.7.01",
+"VI.7.02": "VI.7.02",
+"VI.7.03": "VI.7.03",
+"VI.7.04": "VI.7.04",
+"VI.7.05": "VI.7.05",
+"VI.7.06": "VI.7.06",
+"VI.7.07": "VI.7.07",
+"VI.7.08": "VI.7.08",
+"VI.7.09": "VI.7.09",
+"VI.7.10": "VI.7.10",
+"VI.7.11": "VI.7.11",
+"VI.7.12": "VI.7.12",
+"VI.8.01": "VI.8.01",
+"VI.8.02": "VI.8.02",
+"VI.8.03": "VI.8.03",
+"VI.8.04": "VI.8.04",
+"VI.8.05": "VI.8.05",
+"VI.8.06": "VI.8.06",
+"VI.8.07": "VI.8.07",
+"VI.8.08": "VI.8.08",
+"VI.8.09": "VI.8.09",
+"VI.8.10": "VI.8.10",
+"VI.8.11": "VI.8.11",
+"VI.8.12": "VI.8.12",
+"VI.9.01": "VI.9.01",
+"VI.9.02": "VI.9.02",
+"VI.9.04": "VI.9.03",
+"VI.9.05": "VI.9.04",
+"VI.9.06": "VI.9.05",
+"VI.9.07": "VI.9.06",
+"VI.9.08": "VI.9.07",
+"VI.9.09": "VI.9.08",
+"VI.9.10": "VI.9.09",
+"VI.9.11": "VI.9.10",
+"VI.9.12": "VI.9.11",
+"VI.10.01": "VI.10.01",
+"VI.10.02": "VI.10.02",
+"VI.10.03": "VI.10.03",
+"VI.10.04": "VI.10.04",
+"VI.10.05": "VI.10.05",
+"VI.10.06": "VI.10.06",
+"VI.10.07": "VI.10.07",
+"VI.10.08": "VI.10.08",
+"VI.10.09": "VI.10.09",
+"VI.10.10": "VI.10.10",
+"VI.10.11": "VI.10.11",
+"VI.10.12": "VI.10.12",
+"VI.10.13": "VI.10.13",
+"VI.10.14": "VI.10.14",
+"VI.10.15": "VI.10.15",
+"VI.10.16": "VI.10.16",
+"VII.1.01": "VII.1.01",
+"VII.1.02": "VII.1.02",
+"VII.1.03": "VII.1.03",
+"VII.1.04": "VII.1.04",
+"VII.1.05": "VII.1.05",
+"VII.1.06": "VII.1.06",
+"VII.1.07": "VII.1.07",
+"VII.1.08": "VII.1.08",
+"VII.1.09": "VII.1.09",
+"VII.1.10": "VII.1.10",
+"VII.1.11": "VII.1.11",
+"VII.1.12": "VII.1.12",
+"VII.2.01": "VII.2.01",
+"VII.2.02": "VII.2.02",
+"VII.2.03": "VII.2.03",
+"VII.2.04": "VII.2.04",
+"VII.2.05": "VII.2.05",
+"VII.2.06": "VII.2.06",
+"VII.2.07": "VII.2.07",
+"VII.2.08": "VII.2.08",
+"VII.2.09": "VII.2.09",
+"VII.3.01": "VII.3.01",
+"VII.3.02": "VII.3.02",
+"VII.3.03": "VII.3.03",
+"VII.3.04": "VII.3.04",
+"VII.3.05": "VII.3.05",
+"VII.3.06": "VII.3.06",
+"VII.3.07": "VII.3.07",
+"VII.3.08": "VII.3.08",
+"VII.3.09": "VII.3.09",
+"VII.3.10": "VII.3.10",
+"VII.3.11": "VII.3.11",
+"VII.3.12": "VII.3.12",
+"VII.4.01": "VII.4.01",
+"VII.4.02": "VII.4.02",
+"VII.4.03": "VII.4.03",
+"VII.4.04": "VII.4.04",
+"VII.4.05": "VII.4.05",
+"VII.4.06": "VII.4.06",
+"VII.4.07": "VII.4.07",
+"VII.4.08": "VII.4.08",
+"VII.4.09": "VII.4.09",
+"VII.4.10": "VII.4.10",
+"VII.4.11": "VII.4.11",
+"VII.4.12": "VII.4.12",
+"VII.4.13": "VII.4.13",
+"VII.4.14": "VII.4.14",
+"VII.4.16": "VII.4.15",
+"VII.4.17": "VII.4.16",
+"VII.5.01": "VII.5.01",
+"VII.5.02": "VII.5.02",
+"VII.5.03": "VII.5.03",
+"VII.5.04": "VII.5.04",
+"VII.5.05": "VII.5.05",
+"VII.5.06": "VII.5.06",
+"VII.5.07": "VII.5.07",
+"VII.5.08": "VII.5.08",
+"VII.5.09": "VII.5.09",
+"VII.6.01": "VII.6.01",
+"VII.6.02": "VII.6.02",
+"VII.6.03": "VII.6.03",
+"VII.6.04": "VII.6.04",
+"VII.6.05": "VII.6.05",
+"VII.6.06": "VII.6.06",
+"VII.6.07": "VII.6.07",
+"VII.6.08": "VII.6.08",
+"VII.6.09": "VII.6.09",
+"VII.7.01": "VII.7.01",
+"VII.7.02": "VII.7.02",
+"VII.7.03": "VII.7.03",
+"VII.7.04": "VII.7.04",
+"VII.7.05": "VII.7.05",
+"VII.7.06": "VII.7.06",
+"VII.7.07": "VII.7.07",
+"VII.7.08": "VII.7.08",
+"VII.7.09": "VII.7.09",
+"VII.8.01": "VII.8.01",
+"VII.8.02": "VII.8.02",
+"VII.8.03": "VII.8.03",
+"VII.8.04": "VII.8.04",
+"VII.8.05": "VII.8.05",
+"VII.8.06": "VII.8.06",
+"VII.8.07": "VII.8.07",
+"VII.8.08": "VII.8.08",
+"VII.8.09": "VII.8.09",
+"VII.8.10": "VII.8.10",
+"VII.8.11": "VII.8.11",
+"VII.8.12": "VII.8.12",
+"VII.9.01": "VII.9.01",
+"VII.9.02": "VII.9.02",
+"VII.9.03": "VII.9.03",
+"VII.9.04": "VII.9.04",
+"VII.9.05": "VII.9.05",
+"VII.9.06": "VII.9.06",
+"VII.9.07": "VII.9.07",
+"VII.9.08": "VII.9.08",
+"VII.10.01": "VII.10.01",
+"VII.10.02": "VII.10.02",
+"VII.10.03": "VII.10.03",
+"VII.10.04": "VII.10.04",
+"VII.10.05": "VII.10.05",
+"VII.10.06": "VII.10.06",
+"VII.11.01": "VII.11.01",
+"VII.11.02": "VII.11.02",
+"VII.11.03": "VII.11.03",
+"VII.11.04": "VII.11.04",
+"VII.11.05": "VII.11.05",
+"VII.11.06": "VII.11.06",
+"VII.11.07": "VII.11.07",
+"VII.11.08": "VII.11.08",
+"VII.11.09": "VII.11.09",
+"VII.11.10": "VII.11.10",
+"VII.11.11": "VII.11.11",
+"VII.11.12": "VII.11.12",
+"VII.12.01": "VII.12.01",
+"VII.12.02": "VII.12.02",
+"VII.12.03": "VII.12.03",
+"VII.12.04": "VII.12.04",
+"VII.12.05": "VII.12.05",
+"VII.12.06": "VII.12.06",
+"VII.12.07": "VII.12.07",
+"VII.12.09": "VII.12.08",
+"VII.13.01": "VII.13.01",
+"VII.13.02": "VII.13.02",
+"VII.13.03": "VII.13.03",
+"VII.13.04": "VII.13.04",
+"VII.13.05": "VII.13.05",
+"VII.13.06": "VII.13.06",
+"VII.13.07": "VII.13.07",
+"VII.13.08": "VII.13.08",
+"VII.13.09": "VII.13.09",
+"VII.14.01": "VII.14.01",
+"VII.14.02": "VII.14.02",
+"VII.14.03": "VII.14.03",
+"VII.14.04": "VII.14.04",
+"VII.14.05": "VII.14.05",
+"VII.14.06": "VII.14.06",
+"VII.14.07": "VII.14.07",
+"VII.14.08": "VII.14.08",
+"VII.14.09": "VII.14.09",
+"VII.14.10": "VII.14.10",
+"VII.14.11": "VII.14.11",
+"VII.14.12": "VII.14.12",
+"VII.14.13": "VII.14.13",
+"VII.14.14": "VII.14.14",
+"VII.14.15": "VII.14.15",
+"VII.14.16": "VII.14.16",
+"VII.14.17": "VII.14.17",
+"VII.14.18": "VII.14.18",
+"VII.15.01": "VII.15.01",
+"VII.15.04": "VII.15.02",
+"VII.15.05": "VII.15.03",
+"VII.15.06": "VII.15.04",
+"VII.15.07": "VII.15.05",
+"VII.15.10": "VII.15.06",
+"VII.15.11": "VII.15.07",
+"VII.16.01": "VII.16.01",
+"VII.16.02": "VII.16.02",
+"VII.16.03": "VII.16.03",
+"VII.16.04": "VII.16.04",
+"VII.16.05": "VII.16.05",
+"VII.16.06": "VII.16.06",
+"VII.16.07": "VII.16.07",
+"VII.16.08": "VII.16.08",
+"VII.16.09": "VII.16.09",
+"VII.16.10": "VII.16.10",
+"VII.16.11": "VII.16.11",
+"VII.17.01": "VII.17.01",
+"VII.17.02": "VII.17.02",
+"VII.17.03": "VII.17.03",
+"VII.17.04": "VII.17.04",
+"VII.17.05": "VII.17.05",
+"VII.17.06": "VII.17.06",
+"VII.17.07": "VII.17.07",
+"VII.17.08": "VII.17.08",
+"VII.17.09": "VII.17.09",
+"VII.17.10": "VII.17.10",
+"VII.17.11": "VII.17.11",
+"VII.18.01": "VII.18.01",
+"VII.18.02": "VII.18.02",
+"VII.18.03": "VII.18.03",
+"VII.18.04": "VII.18.04",
+"VII.18.05": "VII.18.05",
+"VII.18.06": "VII.18.06",
+"VII.18.07": "VII.18.07",
+"VII.18.08": "VII.18.08",
+"VII.18.09": "VII.18.09",
+"VII.19.01": "VII.19.01",
+"VII.19.02": "VII.19.02",
+"VII.19.03": "VII.19.03",
+"VII.19.04": "VII.19.04",
+"VII.19.05": "VII.19.05",
+"VII.19.06": "VII.19.06",
+"VII.19.07": "VII.19.07",
+"VII.19.08": "VII.19.08",
+"IV.1.01": {
+"cut": true,
+"into": "III.6.05"
+},
+"IV.1.02": {
+"cut": true,
+"into": "III.6.06"
+},
+"IV.1.05": {
+"cut": true,
+"into": "III.6.06"
+},
+"IV.1.07": {
+"cut": true,
+"into": "III.6.10"
+},
+"IV.3.01": {
+"cut": true,
+"into": "III.7.04"
+},
+"IV.3.02": {
+"cut": true,
+"into": "III.7.06"
+},
+"IV.5.01": {
+"cut": true,
+"into": "III.4.04"
+},
+"IV.5.02": {
+"cut": true,
+"into": "III.4.06"
+},
+"IV.5.03": {
+"cut": true,
+"into": "III.4.07"
+},
+"IV.5.04": {
+"cut": true,
+"into": "III.4.09"
+},
+"IV.5.05": {
+"cut": true,
+"into": "III.4.11"
+},
+"IV.3.11": {
+"cut": true,
+"into": "IV.13.02"
+},
+"VI.9.03": {
+"cut": true,
+"into": "IV.13.08"
+},
+"V.9.03": {
+"cut": true,
+"into": "V.8.05"
+},
+"V.12.04": {
+"cut": true,
+"into": "V.8.15"
+},
+"V.14.07": {
+"cut": true,
+"into": "V.14.03"
+},
+"V.1.01": {
+"cut": true,
+"into": "V.1.02"
+},
+"VII.15.02": {
+"cut": true,
+"into": "VI.7.03"
+},
+"VII.15.03": {
+"cut": true,
+"into": "VI.7.05"
+},
+"VII.15.08": {
+"cut": true,
+"into": "VI.7.11"
+},
+"VII.15.09": {
+"cut": true,
+"into": "VI.7.08"
+},
+"VII.12.08": {
+"cut": true,
+"into": "VII.8.10"
+},
+"IV.10.11": {
+"cut": true,
+"into": null
+},
+"IV.10.12": {
+"cut": true,
+"into": "VI.1.19"
+},
+"VII.4.15": {
+"cut": true,
+"into": null
+},
+"V.9.17": {
+"fieldTrip": true
+},
+"VI.10.17": {
+"fieldTrip": true
+},
+"VII.9.09": {
+"fieldTrip": true
+},
+"VII.14.19": {
+"fieldTrip": true
+},
+"VII.14.20": {
+"fieldTrip": true
+},
+"VII.19.09": {
+"fieldTrip": true
+}
+}
+}

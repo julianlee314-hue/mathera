@@ -1,0 +1,123 @@
+{
+  "branch": "VII.16",
+  "intro": "Second-order equations involve acceleration as well as speed, so they describe things that vibrate and swing, like springs, pendulums and electrical circuits. This branch solves them and uses them to understand bouncing, damping and resonance.",
+  "skills": {
+    "VII.16.01": {
+      "what": "The solutions of these equations have a neat structure: any solution is a mix of two basic ones.",
+      "levels": {
+        "a": "Adds and scales known solutions to make new ones (superposition).",
+        "b": "Knows two genuinely different solutions are needed.",
+        "c": "Uses the Wronskian, a determinant, to check they are different enough.",
+        "d": "Writes the general solution covering every case."
+      }
+    },
+    "VII.16.02": {
+      "what": "Solving constant-coefficient equations whose helper polynomial has two different real roots, giving two exponential solutions.",
+      "levels": {
+        "a": "Writes the characteristic equation, a helper polynomial.",
+        "b": "Builds the solution from two exponential growth or decay terms.",
+        "c": "Finds the one solution matching given starting values.",
+        "d": "Describes what the solution does in the long run."
+      }
+    },
+    "VII.16.03": {
+      "what": "Solving when the helper polynomial has one root repeated, which needs a second, slightly different solution.",
+      "levels": {
+        "a": "Recognizes a repeated root.",
+        "b": "Uses t times the exponential as the second solution.",
+        "c": "Finds the solution matching given starting values.",
+        "d": "Explains why the extra factor of t works."
+      }
+    },
+    "VII.16.04": {
+      "what": "Solving when the helper polynomial has complex roots, which produces wavy, oscillating solutions.",
+      "levels": {
+        "a": "Recognizes complex roots and their real and imaginary parts.",
+        "b": "Writes solutions using exponentials times sines and cosines.",
+        "c": "Finds the solution matching given starting values.",
+        "d": "Rewrites the answer as a single wave with a size and a shift."
+      }
+    },
+    "VII.16.05": {
+      "what": "Reduction of order finds a second solution when one solution is already known.",
+      "levels": {
+        "a": "Starts from one known solution.",
+        "b": "Guesses the second as an unknown function times the first.",
+        "c": "Solves for that unknown function.",
+        "d": "Applies the method to equations with changing coefficients."
+      }
+    },
+    "VII.16.06": {
+      "what": "Undetermined coefficients is an educated-guess method for equations with an outside push, such as a steady or wavy force.",
+      "levels": {
+        "a": "Guesses the form of the solution from the push.",
+        "b": "Solves for the unknown numbers in the guess.",
+        "c": "Adjusts the guess when it overlaps a basic solution (resonance).",
+        "d": "Handles pushes made of several parts added together."
+      }
+    },
+    "VII.16.07": {
+      "what": "Variation of parameters is a general formula for equations with an outside push, working even when guessing fails.",
+      "levels": {
+        "a": "Learns the formula.",
+        "b": "Sets it up for a given equation.",
+        "c": "Evaluates the integrals to find the solution.",
+        "d": "Uses it for pushes where guessing does not work."
+      }
+    },
+    "VII.16.08": {
+      "what": "Modeling a weight bouncing on a spring with no friction, which moves back and forth forever in a smooth wave.",
+      "levels": {
+        "a": "Sets up the spring equation from mass and stiffness.",
+        "b": "Finds how long one bounce takes and how often it repeats.",
+        "c": "Finds how far the weight swings (the amplitude).",
+        "d": "Approximates a swinging pendulum the same way."
+      }
+    },
+    "VII.16.09": {
+      "what": "Adding friction to the spring model, so the motion dies away over time.",
+      "levels": {
+        "a": "Analyzes light damping, where it bounces while slowly settling.",
+        "b": "Analyzes critical damping, the fastest settling with no bounce.",
+        "c": "Analyzes heavy damping, a slow creep back with no bounce.",
+        "d": "Explains how car shock absorbers are tuned."
+      }
+    },
+    "VII.16.10": {
+      "what": "Pushing a spring repeatedly, which can build huge swings when the push matches its natural rhythm (resonance).",
+      "levels": {
+        "a": "Finds the steady motion that lasts once things settle.",
+        "b": "Finds the short-lived motion that fades away.",
+        "c": "Explains resonance, when swings grow larger and larger.",
+        "d": "Explains beats, a slow pulsing when two rhythms nearly match."
+      }
+    },
+    "VII.16.11": {
+      "what": "Circuits with a resistor, coil and capacitor obey the same equation as a spring, so the same math applies.",
+      "levels": {
+        "a": "Sets up the circuit equation.",
+        "b": "Matches circuit parts to spring parts.",
+        "c": "Solves the circuit equation.",
+        "d": "Explains how tuning a radio uses resonance."
+      }
+    },
+    "VII.16.12": {
+      "what": "Series solutions build an answer as an endless sum of powers of x, useful when no simple formula exists.",
+      "levels": {
+        "a": "Assumes the solution is an endless polynomial with unknown coefficients.",
+        "b": "Substitutes it in and lines up matching powers.",
+        "c": "Finds a rule giving each coefficient from earlier ones.",
+        "d": "Solves a simple spring equation this way and recognizes sine and cosine."
+      }
+    },
+    "VII.16.13": {
+      "what": "Cauchy–Euler equations are a special type with changing coefficients that powers of x solve neatly.",
+      "levels": {
+        "a": "Recognizes the special pattern of these equations.",
+        "b": "Tries a power of x as a solution.",
+        "c": "Handles the three cases for the resulting roots.",
+        "d": "Finds the solution matching given starting values."
+      }
+    }
+  }
+}

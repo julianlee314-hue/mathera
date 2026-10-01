@@ -1,0 +1,93 @@
+{
+  "branch": "V.15",
+  "intro": "This branch teaches classic constructions: drawing exact figures with only a compass and an unmarked straightedge (ruler with no measurements). Each one is then shown to work, by putting construction or proof steps in order, picking the reason, or working out a length or angle the construction creates.",
+  "skills": {
+    "V.15.01": {
+      "what": "Using a compass to copy a length or an angle exactly, without measuring.",
+      "levels": {
+        "a": "Understands that a compass carries a length: a copied arc has the same length.",
+        "b": "Puts in order the steps for copying segments, such as building one as long as two others combined.",
+        "c": "Puts in order the steps for copying an angle.",
+        "d": "Picks the reason the copied angle is equal: the triangles match side-side-side (SSS)."
+      }
+    },
+    "V.15.02": {
+      "what": "Constructing the line that cuts a segment exactly in half at a right angle (its perpendicular bisector).",
+      "levels": {
+        "a": "Knows the compass must open more than half the segment for the arcs to meet.",
+        "b": "Uses the construction to find the midpoint.",
+        "c": "Uses the right angle the construction makes to find a missing angle.",
+        "d": "Puts the lines of a proof that the construction works in order."
+      }
+    },
+    "V.15.03": {
+      "what": "Constructing the line that cuts an angle exactly in half (its bisector).",
+      "levels": {
+        "a": "Works out lengths made by the first arc across both sides of the angle.",
+        "b": "Recognizes the kite shape the construction arcs create.",
+        "c": "Uses the bisector to find the two equal half angles.",
+        "d": "Puts the lines of a proof that the construction works in order."
+      }
+    },
+    "V.15.04": {
+      "what": "Constructing a line at a right angle to a given line, through a chosen point.",
+      "levels": {
+        "a": "Finds lengths made by the first arc, drawn around a point that lies on the line.",
+        "b": "Works out the distance to the line when the point is off the line.",
+        "c": "Puts the construction steps in order.",
+        "d": "Picks the reason the construction gives a right angle."
+      }
+    },
+    "V.15.05": {
+      "what": "Constructing a line through a point that runs parallel to a given line.",
+      "levels": {
+        "a": "Knows the method copies an angle to make matching (corresponding) angles equal.",
+        "b": "Puts the construction steps in order.",
+        "c": "Orders the steps of another method: two perpendiculars in a row make a parallel line.",
+        "d": "Picks the reason the new line is parallel."
+      }
+    },
+    "V.15.06": {
+      "what": "Constructing a regular hexagon and an equilateral triangle inside a circle by stepping the radius around it.",
+      "levels": {
+        "a": "Finds the angle at the center made by one radius-length step.",
+        "b": "Uses the fact that the hexagon's sides equal the radius.",
+        "c": "Finds the exact side of the triangle made by joining every other point.",
+        "d": "Picks the reason each step makes a 60 degree angle at the center.",
+        "e": "Uses circle angle facts to find angles inside the hexagon.",
+        "f": "Finds the exact area of one point of the six-pointed star made by two triangles."
+      }
+    },
+    "V.15.07": {
+      "what": "Constructing a square inside a circle using two diameters that cross at right angles.",
+      "levels": {
+        "a": "Draws a diameter, a line through the center from edge to edge.",
+        "b": "Puts in order the steps for a second diameter at a right angle to the first.",
+        "c": "Joins the four ends and finds the square's exact side.",
+        "d": "Picks why the shape made must be a square."
+      }
+    },
+    "V.15.08": {
+      "what": "Constructing the lines from an outside point that just touch a circle (tangents).",
+      "levels": {
+        "a": "Finds the midpoint between the point and the circle's center.",
+        "b": "Finds the radius of the helper circle drawn on that segment.",
+        "c": "Finds a tangent's length, using the right angle where it touches.",
+        "d": "Uses the right angle in a half circle to find missing angles.",
+        "e": "Finds the area of the kite formed by both tangents and two radii.",
+        "f": "Finds the length of a tangent shared by two circles."
+      }
+    },
+    "V.15.09": {
+      "what": "Constructing the circle that passes through a triangle's three corners, and the circle that fits snugly inside it.",
+      "levels": {
+        "a": "Finds where the perpendicular bisectors meet, the center of the outside circle.",
+        "b": "Finds the radius of the outside circle.",
+        "c": "Uses the fact that the angle bisectors meet at a point equally far from all three sides.",
+        "d": "Finds the radius of the inside circle from the area.",
+        "e": "Uses circle angle facts to find an angle at the outside circle's center.",
+        "f": "Finds a triangle's area from where its inside circle touches the longest side."
+      }
+    }
+  }
+}

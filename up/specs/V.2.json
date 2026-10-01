@@ -1,0 +1,78 @@
+{
+ "unit": "V.2",
+ "name": "Lines & angles",
+ "skills": [
+  {
+   "id": "V.2.01",
+   "name": "Segments & midpoints",
+   "steps": {
+    "a": "segment addition postulate",
+    "b": "midpoint definition",
+    "c": "solve for x",
+    "d": "midpoint formula link"
+   },
+   "wrong_turn": "The midpoint splits the segment in half: if AM = 7, then AB = 14, not 7. Solve for x, then give the length asked for.",
+   "rule": "Segment addition: if B is between A and C, then AB+BC=AC."
+  },
+  {
+   "id": "V.2.02",
+   "name": "Angles & bisectors",
+   "steps": {
+    "a": "angle addition postulate",
+    "b": "bisector definition",
+    "c": "solve for x",
+    "d": "linear pair postulate"
+   },
+   "wrong_turn": "A bisector makes two halves, each half the whole: if m∠ABC = 80°, each half is 40°, not 80°.",
+   "rule": "Angle addition: if D is inside ∠ABC, then m∠ABD+m∠DBC=m∠ABC."
+  },
+  {
+   "id": "V.2.03",
+   "name": "Angle pair theorems",
+   "steps": {
+    "a": "vertical angles theorem proof",
+    "b": "congruent supplements",
+    "c": "congruent complements",
+    "d": "use them in proofs"
+   },
+   "wrong_turn": "Vertical angles are opposite each other across the crossing, not side by side. Side-by-side angles there are supplementary, not equal.",
+   "rule": "Vertical angles are congruent. Angles supplementary (or complementary) to the same angle are congruent."
+  },
+  {
+   "id": "V.2.04",
+   "name": "Parallel line theorems",
+   "steps": {
+    "a": "corresponding angles postulate",
+    "b": "prove alternate interior",
+    "c": "prove same-side interior",
+    "d": "solve for x"
+   },
+   "wrong_turn": "These angle facts need parallel lines. If the lines aren't parallel, corresponding angles need not be equal.",
+   "rule": "Parallel lines cut by a transversal: corresponding and alternate angles are congruent; same-side interior angles are supplementary."
+  },
+  {
+   "id": "V.2.05",
+   "name": "Proving lines parallel",
+   "steps": {
+    "a": "converses of the angle theorems",
+    "b": "choose which to use",
+    "c": "two-column proof",
+    "d": "transitivity of parallels"
+   },
+   "wrong_turn": "Don't use the theorem to prove its converse. To show lines are parallel, reason from the angles, never from \"since the lines are parallel\".",
+   "rule": "Congruent corresponding or alternate interior angles, or supplementary same-side interior angles, make lines parallel."
+  },
+  {
+   "id": "V.2.06",
+   "name": "Perpendicular lines",
+   "steps": {
+    "a": "right angle definitions",
+    "b": "perpendicular transversal theorem",
+    "c": "distance from a point to a line",
+    "d": "proofs with perpendiculars"
+   },
+   "wrong_turn": "Distance to a line is along the perpendicular, not along any segment. From (0, 5) to y = 1 it's 4, though (3, 1) is 5 away.",
+   "rule": "Perpendicular lines meet at right angles; the distance from a point to a line is measured along the perpendicular."
+  }
+ ]
+}

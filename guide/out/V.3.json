@@ -1,0 +1,140 @@
+{
+  "branch": "V.3",
+  "intro": "This branch is about triangles, the most important shape in geometry. The learner proves why triangle facts are true and learns the shortcuts for showing two triangles are congruent (exact copies of each other).",
+  "skills": {
+    "V.3.01": {
+      "what": "Sorting triangles by their side lengths and by their angles.",
+      "levels": {
+        "a": "Decides whether a triangle with given side lengths is scalene, isosceles or equilateral.",
+        "b": "Classifies a triangle as acute, right or obtuse from two marked angles.",
+        "c": "Classifies a triangle by its sides and its angles at the same time.",
+        "d": "Does the same for a triangle drawn on a grid, working out side lengths and angles from coordinates."
+      }
+    },
+    "V.3.02": {
+      "what": "Proving that the three angles of any triangle always add up to 180 degrees.",
+      "levels": {
+        "a": "Explains why drawing a line parallel to one side helps prove the angles add to 180 degrees.",
+        "b": "Uses the equal 'Z-shaped' angles beside that parallel line to find a missing angle.",
+        "c": "Puts the steps of the proof in order, or finds the one mistaken step.",
+        "d": "Uses the 180-degree fact to find missing angles, including in right triangles.",
+        "e": "Finds an angle on a bent path between two parallel lines by drawing an extra parallel line.",
+        "f": "Finds the angle at the fifth point of a star, using that a star's five point angles add to 180 degrees."
+      }
+    },
+    "V.3.03": {
+      "what": "Proving that an outside angle of a triangle equals the two far inside angles added together.",
+      "levels": {
+        "a": "Picks out the two far inside angles that match an outside angle, and uses them to find x.",
+        "b": "Puts the steps of the proof in order, or finds the one mistaken step.",
+        "c": "Solves for x or finds the size of an outside angle from expressions.",
+        "d": "Decides whether an inside angle could have a given size, knowing it must be smaller than the outside angle."
+      }
+    },
+    "V.3.04": {
+      "what": "Understanding congruent figures, which are exact copies of each other, and how to match their parts correctly.",
+      "levels": {
+        "a": "Names the matching angle or side in two congruent triangles from the way they are labelled.",
+        "b": "Picks the correct congruence statement from the marks on a diagram.",
+        "c": "Uses the order of the letters to find a matching angle, and spots reorderings that break the match.",
+        "d": "Puts in order the steps proving that if two angles match, the third angles match too."
+      }
+    },
+    "V.3.05": {
+      "what": "The side-side-side rule: if all three sides of one triangle match the three sides of another, the triangles are congruent.",
+      "levels": {
+        "a": "Uses three matching sides to set up and solve for an unknown length.",
+        "b": "Finds the third pair of matching sides, often a side the two triangles share.",
+        "c": "Decides whether two triangles are congruent by the side-side-side rule.",
+        "d": "Completes a short congruence proof: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.3.06": {
+      "what": "The side-angle-side rule: two matching sides and the matching angle between them guarantee congruent triangles.",
+      "levels": {
+        "a": "Names the angle that sits between two given sides.",
+        "b": "Picks the pair of sides still needed to use the side-angle-side rule.",
+        "c": "Counts how many different triangles fit two sides and an angle not between them, showing that shortcut fails.",
+        "d": "Completes a short congruence proof: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.3.07": {
+      "what": "The angle-side-angle rule: two matching angles and the matching side between them guarantee congruent triangles.",
+      "levels": {
+        "a": "Names the side that sits between two given angles.",
+        "b": "Picks the pair of angles still needed to use the angle-side-angle rule.",
+        "c": "Chooses which congruence rule the marked parts prove.",
+        "d": "Completes a short congruence proof: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.3.08": {
+      "what": "The angle-angle-side rule: two matching angles and a matching side not between them also guarantee congruent triangles.",
+      "levels": {
+        "a": "Picks the extra matching parts that would let the angle-angle-side rule work.",
+        "b": "Shows why angle-angle-side works by turning it into angle-side-angle: orders steps or finds the mistake.",
+        "c": "Chooses which congruence rule the marked parts prove.",
+        "d": "Completes a short congruence proof: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.3.09": {
+      "what": "The hypotenuse-leg rule, a shortcut for right triangles: matching longest sides and one other matching side mean congruent triangles.",
+      "levels": {
+        "a": "Decides whether the hypotenuse-leg rule can be used, remembering it works for right triangles only.",
+        "b": "Identifies the hypotenuse and picks the extra matching side needed.",
+        "c": "Chooses which congruence rule the marked parts prove.",
+        "d": "Completes a short proof for right triangles: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.3.10": {
+      "what": "Proving two parts are equal by first proving the triangles containing them are congruent, since matching parts of congruent triangles are equal.",
+      "levels": {
+        "a": "Says which triangles must be shown congruent first before claiming two parts are equal.",
+        "b": "Names a pair of parts that must match once triangles are congruent, and uses it to solve for x.",
+        "c": "Completes a proof with overlapping triangles that share a side, finding a reason or a mistake.",
+        "d": "Completes a two-stage proof: one pair of congruent triangles leads to a second pair."
+      }
+    },
+    "V.3.11": {
+      "what": "Proving facts about isosceles triangles, which have two equal sides, and equilateral triangles, which have three.",
+      "levels": {
+        "a": "Completes the proof that the angles opposite the equal sides match: names a reason or finds a mistake.",
+        "b": "Uses two equal angles to conclude two sides are equal and find a length.",
+        "c": "Uses the fact that an equilateral triangle has three 60-degree angles to find x.",
+        "d": "Solves for x in an isosceles triangle using its equal sides or equal angles.",
+        "e": "Chains two isosceles triangles, one inside the other, to find a hidden angle.",
+        "f": "Finds the angles when a triangle is cut into isosceles pieces with several equal lengths, competition style."
+      }
+    },
+    "V.3.12": {
+      "what": "The triangle inequality: any two sides of a triangle together are longer than the third, so not every three lengths make a triangle.",
+      "levels": {
+        "a": "Picks a possible third side, knowing any two sides together must be longer than the third.",
+        "b": "Decides whether three given lengths can form a triangle.",
+        "c": "Finds the range of possible lengths for the third side, or counts the whole-number options.",
+        "d": "Orders sides or angles, knowing the biggest angle is opposite the longest side.",
+        "e": "Finds the perimeter of an isosceles triangle when only one arrangement of its sides is possible.",
+        "f": "Counts every triangle with whole-number sides and a given perimeter."
+      }
+    },
+    "V.3.13": {
+      "what": "The midsegment of a triangle joins the midpoints of two sides; it is always parallel to the third side and half as long.",
+      "levels": {
+        "a": "Names the side that a segment joining two midpoints runs parallel to.",
+        "b": "Finds the length of that segment, which is half the third side.",
+        "c": "Solves for x or for a missing side using the half-as-long fact.",
+        "d": "Explains what a coordinate calculation of slopes and lengths has proved about the midsegment."
+      }
+    },
+    "V.3.14": {
+      "what": "Special points where three lines drawn inside a triangle all meet at one spot, such as the balance point (centroid).",
+      "levels": {
+        "a": "Shows that the three perpendicular bisectors meet at one point: orders proof steps or finds a mistake.",
+        "b": "Shows that the three angle bisectors meet at one point: names a reason or finds a mistake.",
+        "c": "Uses the balance point (centroid), which splits each median two-to-one, to find lengths.",
+        "d": "Locates where the three altitudes (heights) meet: inside, on or outside the triangle.",
+        "e": "Finds areas of pieces cut off by the medians.",
+        "f": "Finds exact distances between the special points of a right triangle."
+      }
+    }
+  }
+}

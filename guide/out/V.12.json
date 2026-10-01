@@ -1,0 +1,111 @@
+{
+  "branch": "V.12",
+  "intro": "This branch studies conic sections: the curves made by slicing a cone, namely circles, ellipses (ovals), parabolas and hyperbolas. They describe planet orbits, satellite dishes and headlights, and a few skills ask the learner to put the steps of a short derivation in order.",
+  "skills": {
+    "V.12.01": {
+      "what": "The four conic curves all come from slicing a double cone (two cones tip to tip) with a flat plane at different tilts.",
+      "levels": {
+        "a": "Sees that a cut straight across the cone makes a circle.",
+        "b": "Sees that a cut less steep than the cone's sides makes an ellipse (an oval).",
+        "c": "Tells a parabola from a hyperbola by comparing the cut's tilt with the cone's sides.",
+        "d": "Names any slice, including special cuts through the tip that give a point, a line or two crossing lines."
+      }
+    },
+    "V.12.02": {
+      "what": "A parabola is every point the same distance from a fixed point (the focus) and a fixed line (the directrix).",
+      "levels": {
+        "a": "Uses the equal-distance rule to find a point on a parabola.",
+        "b": "Puts in order the steps that turn the equal-distance rule into an equation.",
+        "c": "Finds the focus and directrix from an equation.",
+        "d": "Finds the number p, the distance from the turning point to the focus, after rearranging the equation.",
+        "e": "Finds a point's distance to the focus quickly by measuring to the directrix instead.",
+        "f": "Works with a line through the focus, finding one end's distance from the other's."
+      }
+    },
+    "V.12.03": {
+      "what": "Writing and reading parabola equations that open up, down, left or right.",
+      "levels": {
+        "a": "Finds the focus of a parabola that opens up or down.",
+        "b": "Finds the focus of a parabola that opens left or right.",
+        "c": "Writes the equation from the turning point and the focus or directrix.",
+        "d": "Picks the graph that matches an equation."
+      }
+    },
+    "V.12.04": {
+      "what": "An ellipse is every point whose distances to two fixed points (the foci) add up to the same total.",
+      "levels": {
+        "a": "Uses the constant total to find a missing distance to a focus.",
+        "b": "Connects this to drawing an ellipse with a loop of string around two pins.",
+        "c": "Reads the lengths of the long and short axes from an equation.",
+        "d": "Finds the eccentricity, a number saying how stretched the oval is."
+      }
+    },
+    "V.12.05": {
+      "what": "Writing and graphing ellipse equations.",
+      "levels": {
+        "a": "Writes the standard equation from the center and the ends of the axes.",
+        "b": "Tells whether the ellipse is wide or tall from its equation.",
+        "c": "Picks the graph that matches an equation.",
+        "d": "Writes the equation of an ellipse from its graph."
+      }
+    },
+    "V.12.06": {
+      "what": "Locating the two foci of an ellipse and using them in real settings.",
+      "levels": {
+        "a": "Finds the distance from the center to each focus with a Pythagoras-like rule.",
+        "b": "Finds the coordinates of both foci.",
+        "c": "Uses foci to explain whispering galleries, where a whisper at one focus is heard at the other.",
+        "d": "Works out how stretched a planet's orbit is from its closest and farthest distances.",
+        "e": "Works backwards from the foci and one point on the curve to write the equation.",
+        "f": "Finds the area of the triangle formed by a point on the ellipse and the two foci."
+      }
+    },
+    "V.12.07": {
+      "what": "A hyperbola is every point whose distances to two foci differ by the same amount. It has two separate branches.",
+      "levels": {
+        "a": "Uses the constant difference to find a missing distance to a focus.",
+        "b": "Finds the vertices (turning points) from an equation.",
+        "c": "Finds the distance from the center to each focus.",
+        "d": "Finds the coordinates of both foci."
+      }
+    },
+    "V.12.08": {
+      "what": "Writing and graphing hyperbola equations, using a guide box and slanted guide lines (asymptotes) the branches approach.",
+      "levels": {
+        "a": "Writes the standard equation from the center, a vertex and a focus.",
+        "b": "Puts in order a short proof that the guide box's corners are as far from the center as the foci.",
+        "c": "Finds the equations of the asymptotes.",
+        "d": "Picks the equation that matches a graph."
+      }
+    },
+    "V.12.09": {
+      "what": "Telling which conic a general equation describes.",
+      "levels": {
+        "a": "Completes the square to rewrite an equation in standard form and find its center.",
+        "b": "Uses the signs and sizes of the x squared and y squared terms to name the conic.",
+        "c": "Calculates a test number (the discriminant) for equations with an xy term.",
+        "d": "Names the graph, including unusual cases such as two crossing lines or a single point."
+      }
+    },
+    "V.12.10": {
+      "what": "Seeing conics at work in the real world.",
+      "levels": {
+        "a": "Finds the depth of a satellite dish with the receiver at its focus.",
+        "b": "Writes the shape of a headlight reflector, with the bulb at the focus.",
+        "c": "Uses eccentricity to find where a star sits in a planet's orbit.",
+        "d": "Uses signal timing from two radio stations (LORAN navigation) to locate a ship."
+      }
+    },
+    "V.12.11": {
+      "what": "Finding where a conic meets a line or another conic by solving their equations together.",
+      "levels": {
+        "a": "Finds where a line crosses a parabola.",
+        "b": "Finds where two conics cross.",
+        "c": "Chooses substitution or elimination to solve a system.",
+        "d": "Works out how many crossing points there are.",
+        "e": "Finds the value that makes a line just touch a curve (be tangent to it).",
+        "f": "Finds which values of a changing number give exactly one meeting point."
+      }
+    }
+  }
+}

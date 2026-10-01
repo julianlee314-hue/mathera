@@ -1,0 +1,292 @@
+[
+ {
+  "id": "IV.6.16",
+  "not": "\\((a + b)^{2}\\) is not \\(a^{2} + b^{2}\\). \\((3 + 4)^{2} = 49\\), but \\(3^{2} + 4^{2} = 25\\).",
+  "apples": {
+   "stone": "An identity is two recipes that always make the same number.",
+   "text": "Some number tricks work for every number you try. 5 × 5 is 25, and 4 × 6 is 24: one less. 10 × 10 is 100, and 9 × 11 is 99: one less again. It always works, and algebra shows why.",
+   "example": "To work out 29 × 31, think 30 × 30 = 900, then take away 1: 899."
+  },
+  "class": {
+   "stone": "\\[ (x^{2} + y^{2})^{2} = (x^{2} - y^{2})^{2} + (2xy)^{2} \\]",
+   "text": "An identity is an equation that is true for every value of its variables. Prove it by expanding one side, or both, until they match. The identity above turns any whole numbers \\(x > y > 0\\) into a Pythagorean triple: legs \\(x^{2} - y^{2}\\) and \\(2xy\\), hypotenuse \\(x^{2} + y^{2}\\). Identities such as \\((a - b)(a + b) = a^{2} - b^{2}\\) also make mental math quick.",
+   "example": "\\(x = 3\\), \\(y = 2\\): legs \\(9 - 4 = 5\\) and \\(2 \\cdot 3 \\cdot 2 = 12\\), hypotenuse \\(9 + 4 = 13\\). Check: \\(25 + 144 = 169 = 13^{2}\\)."
+  },
+  "proof": {
+   "stone": "Expand both sides: each gives \\(x^{4} + 2x^{2}y^{2} + y^{4}\\).",
+   "text": "Left: \\((x^{2} + y^{2})^{2} = x^{4} + 2x^{2}y^{2} + y^{4}\\). Right: \\((x^{2} - y^{2})^{2} + 4x^{2}y^{2} = x^{4} - 2x^{2}y^{2} + y^{4} + 4x^{2}y^{2} = x^{4} + 2x^{2}y^{2} + y^{4}\\). The two sides are the same polynomial, so they agree for every \\(x\\) and \\(y\\). Checking a few values is not a proof; expanding is.",
+   "example": "\\(x = 4\\), \\(y = 1\\): left \\(17^{2} = 289\\); right \\(15^{2} + 8^{2} = 225 + 64 = 289\\)."
+  },
+  "professor": {
+   "stone": "Every primitive Pythagorean triple comes from this identity, with coprime \\(x > y\\) of opposite parity (up to swapping the legs).",
+   "text": "The formula for triples appears in Euclid's Elements. The identity is a special case of the Brahmagupta–Fibonacci identity \\((a^{2} + b^{2})(c^{2} + d^{2}) = (ac - bd)^{2} + (ad + bc)^{2}\\), with \\(a = c = x\\) and \\(b = d = y\\). In complex numbers it says \\(|z|^{2}|w|^{2} = |zw|^{2}\\): a product of sums of two squares is again a sum of two squares.",
+   "example": "\\((2 + i)^{2} = 3 + 4i\\), and \\(|3 + 4i| = 5 = |2 + i|^{2}\\): squaring a Gaussian integer makes the triple 3, 4, 5."
+  }
+ },
+ {
+  "id": "IV.8.16",
+  "not": "Flip the sign to read the center. \\(|z + 2i| = 3\\) is \\(|z - (-2i)| = 3\\): a circle centered at \\(-2i\\), not \\(2i\\).",
+  "apples": {
+   "stone": "All the points the same distance from a pin make a circle.",
+   "text": "Tie a goat to a post with a 5-meter rope and let it walk with the rope tight: it traces a circle. Now stand exactly as far from your house as from a friend's house. Every such spot lies on one straight line halfway between the houses. Rules about distance draw shapes.",
+   "example": "Points equally far from two trees 10 meters apart lie on the line through the 5-meter mark, at a right angle to the line joining the trees."
+  },
+  "class": {
+   "stone": "\\[ |z - a| = r \\quad |z - a| = |z - b| \\quad \\mathrm{arg}(z - a) = \\theta \\]",
+   "text": "\\(|z - a|\\) is the distance from \\(z\\) to \\(a\\). So \\(|z - a| = r\\) is the circle with center \\(a\\) and radius \\(r\\); \\(|z - a| = |z - b|\\) is the perpendicular bisector of the segment from \\(a\\) to \\(b\\); and \\(\\mathrm{arg}(z - a) = \\theta\\) is the half-line from \\(a\\) at angle \\(\\theta\\), with \\(a\\) itself left out. To shade a region, replace \\(=\\) with \\(\\le\\) or \\(<\\): \\(|z - a| \\le r\\) is the disk.",
+   "example": "\\(|z - 1| = |z - i|\\): with \\(z = x + iy\\), \\((x - 1)^{2} + y^{2} = x^{2} + (y - 1)^{2}\\), so \\(-2x = -2y\\): the line \\(y = x\\)."
+  },
+  "proof": {
+   "stone": "Subtraction is an arrow: \\(z - a\\) points from \\(a\\) to \\(z\\).",
+   "text": "If \\(z = x + iy\\) and \\(a = p + iq\\), then \\(|z - a| = \\sqrt{(x - p)^{2} + (y - q)^{2}}\\), the distance formula. Setting it equal to \\(r\\) and squaring gives \\((x - p)^{2} + (y - q)^{2} = r^{2}\\), a circle. For \\(|z - a| = |z - b|\\), square both sides: the \\(x^{2}\\) and \\(y^{2}\\) terms cancel and a linear equation remains, a line through the midpoint perpendicular to \\(b - a\\). The argument of \\(z - a\\) is the direction of the arrow from \\(a\\) to \\(z\\), so fixing it fixes a ray from \\(a\\).",
+   "example": "\\(|z - (2 + i)| = 3\\) squares to \\((x - 2)^{2} + (y - 1)^{2} = 9\\): center \\((2, 1)\\), radius 3. The point \\(z = 5 + i\\) is on it: \\(|3| = 3\\)."
+  },
+  "professor": {
+   "stone": "Every circle and every line is \\(|z - a| = k|z - b|\\) for some \\(a\\), \\(b\\) and \\(k\\).",
+   "text": "For \\(k \\ne 1\\) the locus is a circle of Apollonius; \\(k = 1\\) gives the bisector. Möbius maps \\(w = \\frac{\\alpha z + \\beta}{\\gamma z + \\delta}\\) with \\(\\alpha\\delta - \\beta\\gamma \\ne 0\\) send this family of circles and lines to itself, which is why a line is best seen as a circle through \\(\\infty\\). By the inscribed angle theorem, \\(\\mathrm{arg}\\frac{z - a}{z - b} = \\theta\\) is an arc of a circle through \\(a\\) and \\(b\\).",
+   "example": "\\(|z| = 2|z - 3|\\): \\(x^{2} + y^{2} = 4(x - 3)^{2} + 4y^{2}\\), so \\(x^{2} - 8x + 12 + y^{2} = 0\\), that is \\((x - 4)^{2} + y^{2} = 4\\): center 4, radius 2. Check \\(z = 6\\): \\(6 = 2 \\cdot 3\\)."
+  }
+ },
+ {
+  "id": "IV.9.18",
+  "not": "Don't mix up the two. \\(y = f(|x|)\\) copies the right half onto the left; it doesn't flip what is below the axis. For \\(f(x) = x - 2\\) at \\(x = -5\\): \\(f(|x|) = 3\\), but \\(|f(x)| = 7\\).",
+  "apples": {
+   "stone": "Taking the size of a number throws away its minus sign.",
+   "text": "Picture a path that dips below sea level. Now use a rule that no depth may count as negative: every dip becomes a hill of the same height. That is what the size rule does to a graph. The parts below the line fold up like paper.",
+   "example": "Minus 3 degrees and 3 degrees are both 3 degrees away from zero."
+  },
+  "class": {
+   "stone": "\\(y = |f(x)|\\): reflect the part below the \\(x\\)-axis up. \\(y = f(|x|)\\): drop the left half and mirror the right half.",
+   "text": "For \\(y = |f(x)|\\), keep the graph where \\(f(x) \\ge 0\\) and reflect it in the \\(x\\)-axis where \\(f(x) < 0\\); the result never goes below the axis. For \\(y = f(|x|)\\), keep the graph for \\(x \\ge 0\\) and mirror it in the \\(y\\)-axis; the result is even. To solve \\(|f(x)| = k\\) with \\(k > 0\\), count where the line \\(y = k\\) meets the graph; algebraically, solve \\(f(x) = k\\) and \\(f(x) = -k\\). With shifts, order matters: \\(y = |x| - 2\\) and \\(y = |x - 2|\\) are different graphs.",
+   "example": "Solve \\(|2x - 3| = 5\\): \\(2x - 3 = 5\\) gives \\(x = 4\\), and \\(2x - 3 = -5\\) gives \\(x = -1\\). The line \\(y = 5\\) meets the V twice."
+  },
+  "proof": {
+   "stone": "\\(|y|\\) is \\(y\\) when \\(y \\ge 0\\) and \\(-y\\) when \\(y < 0\\), and \\((x, y)\\) to \\((x, -y)\\) is a reflection.",
+   "text": "A point \\((x, f(x))\\) with \\(f(x) < 0\\) becomes \\((x, -f(x))\\), its mirror image in the \\(x\\)-axis; points with \\(f(x) \\ge 0\\) stay put. For \\(f(|x|)\\), nothing changes when \\(x \\ge 0\\); when \\(x < 0\\), the height at \\(x\\) equals the height at \\(-x\\), so the left half mirrors the right half. Since \\(|f(x)| = k\\) with \\(k > 0\\) means \\(f(x) = \\pm k\\), its solutions are where \\(y = f(x)\\) meets the two lines \\(y = k\\) and \\(y = -k\\).",
+   "example": "\\(f(x) = x^{2} - 4\\): \\(f(1) = -3\\), so \\(|f(1)| = 3\\), and \\((1, -3)\\) reflects to \\((1, 3)\\). At \\(x = -1\\), \\(f(|x|) = f(1) = -3\\), the same height as at \\(x = 1\\)."
+  },
+  "professor": {
+   "stone": "\\(|f|\\) is continuous whenever \\(f\\) is, but it gets a corner wherever \\(f\\) crosses zero with nonzero slope.",
+   "text": "The positive and negative parts \\(f^{+} = \\max(f, 0)\\) and \\(f^{-} = \\max(-f, 0)\\) give \\(f = f^{+} - f^{-}\\) and \\(|f| = f^{+} + f^{-}\\); this split is the first step in building the Lebesgue integral. Likewise \\(f(|x|)\\) is the even extension of \\(f\\) from \\(x \\ge 0\\), the same extension that produces Fourier cosine series.",
+   "example": "\\(y = |x^{2} - 4|\\) has corners at \\(x = \\pm 2\\): at \\(x = 2\\) the slope jumps from \\(-4\\) to \\(4\\)."
+  }
+ },
+ {
+  "id": "IV.10.14",
+  "not": "The sum of the roots of \\(ax^{2} + bx + c = 0\\) is \\(-\\frac{b}{a}\\), not \\(\\frac{b}{a}\\). For \\(x^{2} - 5x + 6 = 0\\), the roots 2 and 3 sum to 5, not \\(-5\\).",
+  "apples": {
+   "stone": "Knowing what two numbers add to and multiply to pins them down.",
+   "text": "I am thinking of two numbers. They add to 7 and multiply to 12. Only 3 and 4 fit. Equations in algebra hide exactly these two clues in their numbers.",
+   "example": "A rectangle has perimeter 20 and area 24. Its sides add to 10 and multiply to 24, so they are 4 and 6."
+  },
+  "class": {
+   "stone": "\\[ \\alpha + \\beta = -\\frac{b}{a}, \\quad \\alpha\\beta = \\frac{c}{a} \\]",
+   "text": "Here \\(\\alpha\\) and \\(\\beta\\) are the roots of \\(ax^{2} + bx + c = 0\\), real or complex. Conversely, a quadratic with roots \\(\\alpha\\) and \\(\\beta\\) is \\(x^{2} - (\\alpha + \\beta)x + \\alpha\\beta = 0\\). For a cubic \\(ax^{3} + bx^{2} + cx + d = 0\\) with roots \\(\\alpha, \\beta, \\gamma\\): \\(\\alpha + \\beta + \\gamma = -\\frac{b}{a}\\), \\(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = \\frac{c}{a}\\), \\(\\alpha\\beta\\gamma = -\\frac{d}{a}\\). For an equation whose roots are \\(2\\alpha, 2\\beta\\), substitute \\(x = \\frac{y}{2}\\).",
+   "example": "For \\(2x^{2} - 6x + 1 = 0\\): \\(\\alpha + \\beta = 3\\), \\(\\alpha\\beta = \\frac{1}{2}\\). Then \\(\\alpha^{2} + \\beta^{2} = (\\alpha + \\beta)^{2} - 2\\alpha\\beta = 9 - 1 = 8\\)."
+  },
+  "proof": {
+   "stone": "Multiply out \\(a(x - \\alpha)(x - \\beta)\\) and match coefficients.",
+   "text": "A quadratic with roots \\(\\alpha, \\beta\\) and leading coefficient \\(a\\) factors as \\(a(x - \\alpha)(x - \\beta) = ax^{2} - a(\\alpha + \\beta)x + a\\alpha\\beta\\). Matching with \\(ax^{2} + bx + c\\) gives \\(b = -a(\\alpha + \\beta)\\) and \\(c = a\\alpha\\beta\\). For the cubic, \\(a(x - \\alpha)(x - \\beta)(x - \\gamma) = a[x^{3} - (\\alpha + \\beta + \\gamma)x^{2} + (\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha)x - \\alpha\\beta\\gamma]\\), and the signs alternate the same way.",
+   "example": "\\((x - 1)(x - 2)(x - 3) = x^{3} - 6x^{2} + 11x - 6\\): sum \\(1 + 2 + 3 = 6\\), pair products \\(2 + 6 + 3 = 11\\), product 6."
+  },
+  "professor": {
+   "stone": "Up to sign, the coefficients are the elementary symmetric polynomials of the roots.",
+   "text": "These are Vieta's formulas, named for François Viète. The fundamental theorem of symmetric polynomials says every symmetric polynomial in the roots is a polynomial in these, so it can be found from the coefficients without solving. Newton's identities do this for the power sums \\(\\alpha^{k} + \\beta^{k} + \\gamma^{k}\\).",
+   "example": "For \\(x^{3} - x - 1 = 0\\): \\(e_{1} = 0\\), \\(e_{2} = -1\\), so \\(\\alpha^{2} + \\beta^{2} + \\gamma^{2} = e_{1}^{2} - 2e_{2} = 2\\), though the roots themselves are messy."
+  }
+ },
+ {
+  "id": "V.1.14",
+  "not": "The inductive step alone proves nothing. If \\(n^{2} + n\\) were odd, \\((n + 1)^{2} + (n + 1) = n^{2} + n + 2(n + 1)\\) would be odd too, yet \\(n^{2} + n\\) is always even: there is no base case.",
+  "apples": {
+   "stone": "If the first domino falls, and each one knocks over the next, they all fall.",
+   "text": "Line up dominoes. You need two things: push the first one, and space them so each falling domino hits the next. Then every domino falls, however long the line. Proof by induction works the same way for the numbers 1, 2, 3 and on forever.",
+   "example": "A ladder: if you can reach the first rung, and from any rung you can reach the next, you can climb as high as the ladder goes."
+  },
+  "class": {
+   "stone": "To prove \\(P(n)\\) for all \\(n \\ge 1\\): prove \\(P(1)\\), then prove that \\(P(k)\\) implies \\(P(k + 1)\\).",
+   "text": "The base case checks the first value. The inductive step assumes \\(P(k)\\) for an arbitrary \\(k\\), the inductive hypothesis, and derives \\(P(k + 1)\\). It proves sum formulas, divisibility claims such as \\(3 \\mid 4^{n} - 1\\), and inequalities such as \\(2^{n} > n\\). The base case can start elsewhere, say at \\(n = 4\\), and then the result holds from there on.",
+   "example": "Claim \\(1 + 2 + \\ldots + n = \\frac{n(n + 1)}{2}\\). Base: \\(1 = \\frac{1 \\cdot 2}{2}\\). Step: \\(\\frac{k(k + 1)}{2} + (k + 1) = \\frac{(k + 1)(k + 2)}{2}\\).",
+   "env": "Principle"
+  },
+  "proof": {
+   "stone": "A smallest counterexample can't exist, so no counterexample does.",
+   "text": "Suppose \\(P(1)\\) holds and \\(P(k)\\) implies \\(P(k + 1)\\) for every \\(k \\ge 1\\), but \\(P\\) fails somewhere. Every nonempty set of positive integers has a least element, so let \\(m\\) be the smallest \\(n\\) where \\(P(n)\\) fails. Then \\(m \\ne 1\\), so \\(m - 1 \\ge 1\\) and \\(P(m - 1)\\) holds because \\(m\\) was smallest. The step gives \\(P(m)\\), a contradiction.",
+   "example": "Divisibility: \\(4^{k + 1} - 1 = 4(4^{k} - 1) + 3\\). If 3 divides \\(4^{k} - 1\\), it divides both terms. Base: \\(4^{1} - 1 = 3\\). So 3 divides 15, 63, 255, and so on."
+  },
+  "professor": {
+   "stone": "Induction is equivalent to the well-ordering of the positive integers: every nonempty set has a least element.",
+   "text": "Peano made induction one of his axioms for the natural numbers in 1889. Strong induction, which assumes \\(P(1), \\ldots, P(k)\\), proves nothing more than ordinary induction, and transfinite induction extends the idea to any well-ordered set. For inequalities, proving a stronger claim often makes the step easier, because the hypothesis gives more to work with.",
+   "example": "\\(\\sum_{i=1}^{n} \\frac{1}{i^{2}} < 2\\) resists direct induction, but \\(\\sum_{i=1}^{n} \\frac{1}{i^{2}} \\le 2 - \\frac{1}{n}\\) goes through: \\(\\frac{1}{(k + 1)^{2}} \\le \\frac{1}{k(k + 1)} = \\frac{1}{k} - \\frac{1}{k + 1}\\)."
+  }
+ },
+ {
+  "id": "V.1.15",
+  "not": "Don't just add the two circles: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\). With 20 in French, 15 in Spanish and 5 in both, 30 take a language, not 35.",
+  "apples": {
+   "stone": "A set is a bag of things, and a Venn diagram shows which bags overlap.",
+   "text": "Draw one circle for kids who like cats and one for kids who like dogs. Kids who like both stand where the circles overlap. Kids who like neither stand outside both circles. Count each region once, and nobody gets counted twice.",
+   "example": "In a class of 25, 12 like cats, 10 like dogs and 4 like both. That's 12 + 10 − 4 = 18 who like at least one, so 7 like neither."
+  },
+  "class": {
+   "stone": "\\[ |A \\cup B| = |A| + |B| - |A \\cap B| \\]",
+   "text": "A set is a collection of distinct elements, and \\(x \\in A\\) means \\(x\\) is in \\(A\\). The union \\(A \\cup B\\) holds the elements in either set, the intersection \\(A \\cap B\\) those in both, and the complement \\(A'\\) everything in the universal set that is not in \\(A\\). Set-builder notation describes a set by a rule: \\(\\{x \\in \\mathbb{Z} \\mid 0 < x < 5\\} = \\{1, 2, 3, 4\\}\\). In a Venn diagram, fill in counts from the inside out, starting with the overlap.",
+   "example": "\\(U = \\{1, \\ldots, 10\\}\\), \\(A\\) the even numbers, \\(B\\) the multiples of 3: \\(A \\cap B = \\{6\\}\\), \\(A \\cup B = \\{2, 3, 4, 6, 8, 9, 10\\}\\), \\((A \\cup B)' = \\{1, 5, 7\\}\\)."
+  },
+  "proof": {
+   "stone": "In \\(|A| + |B|\\), each element of \\(A \\cap B\\) is counted twice, so subtract it once.",
+   "text": "Split \\(A \\cup B\\) into three disjoint pieces: only in \\(A\\), only in \\(B\\), and in both. \\(|A|\\) counts the first and third pieces, \\(|B|\\) the second and third, so \\(|A| + |B| = |A \\cup B| + |A \\cap B|\\). De Morgan's laws follow the same way: \\(x\\) is outside \\(A \\cup B\\) exactly when it is outside \\(A\\) and outside \\(B\\), so \\((A \\cup B)' = A' \\cap B'\\).",
+   "example": "With the sets above: \\(|A| + |B| = 5 + 3 = 8\\), \\(|A \\cap B| = 1\\), and \\(|A \\cup B| = 7 = 8 - 1\\)."
+  },
+  "professor": {
+   "stone": "For three sets, add the singles, subtract the pairs, add back the triple: inclusion–exclusion alternates.",
+   "text": "John Venn introduced his diagrams in 1880. In general \\(|A_{1} \\cup \\ldots \\cup A_{n}|\\) is an alternating sum over all nonempty intersections, and the same pattern counts derangements and gives Euler's totient. Set-builder notation needs care: Russell's paradox shows \\(\\{x \\mid x \\notin x\\}\\) cannot be a set, which is why modern set theory only carves subsets out of sets it already has.",
+   "example": "Numbers from 1 to 30 divisible by 2, 3 or 5: \\(15 + 10 + 6 - 5 - 3 - 2 + 1 = 22\\), so 8 are divisible by none: 1, 7, 11, 13, 17, 19, 23, 29."
+  }
+ },
+ {
+  "id": "V.1.16",
+  "not": "The negation of \"all swans are white\" is \"some swan is not white\", not \"no swan is white\". The negation of \\(\\forall x, x > 0\\) is \\(\\exists x, x \\le 0\\), not \\(\\forall x, x \\le 0\\).",
+  "apples": {
+   "stone": "One example breaks an \"every\"; one example proves a \"some\".",
+   "text": "Someone says every dog in the park is brown. To prove them wrong, you only need to find one spotted dog. Someone else says some dog in the park is brown. To prove that right, you only need to point at one brown dog.",
+   "example": "\"Every number is less than 100\" is false: 150 is not."
+  },
+  "class": {
+   "stone": "\\[ \\neg\\, \\forall x\\, P(x) \\text{ means } \\exists x\\, \\neg P(x) \\]",
+   "text": "\\(\\forall x \\in S, P(x)\\) says \\(P\\) holds for every element of \\(S\\); \\(\\exists x \\in S, P(x)\\) says it holds for at least one. The truth value depends on the set: \\(\\exists x, x^{2} = 2\\) is true over \\(\\mathbb{R}\\) and false over \\(\\mathbb{Q}\\). To negate, swap each quantifier and negate the statement inside. One counterexample refutes a \"for all\", but no number of examples proves one over an infinite set.",
+   "example": "Is \\(n^{2} + n + 41\\) prime for all \\(n \\in \\mathbb{N}\\)? No: \\(n = 40\\) gives \\(1600 + 40 + 41 = 1681 = 41^{2}\\)."
+  },
+  "proof": {
+   "stone": "\"Not everything works\" is the same as \"something fails\".",
+   "text": "\\(\\forall x\\, P(x)\\) is false exactly when at least one \\(x\\) makes \\(P(x)\\) false, which is \\(\\exists x\\, \\neg P(x)\\). Likewise \\(\\exists x\\, P(x)\\) is false exactly when every \\(x\\) makes \\(P(x)\\) false, which is \\(\\forall x\\, \\neg P(x)\\). Applying these one quantifier at a time pushes \\(\\neg\\) inward, flipping each quantifier it passes.",
+   "example": "Negate \\(\\forall x\\, \\exists y, y > x\\) (no largest number): \\(\\exists x\\, \\forall y, y \\le x\\) (some number is at least every number). Over \\(\\mathbb{R}\\) the first is true, so the second is false."
+  },
+  "professor": {
+   "stone": "Order matters: \\(\\forall x\\, \\exists y\\) and \\(\\exists y\\, \\forall x\\) say different things.",
+   "text": "\"Everyone has a mother\" is \\(\\forall x\\, \\exists y\\); \"someone is everyone's mother\" is \\(\\exists y\\, \\forall x\\). Continuity and uniform continuity differ only by this swap: in uniform continuity, \\(\\exists \\delta\\) moves in front of \\(\\forall x\\). Frege introduced quantifiers in their modern sense in his Begriffsschrift of 1879.",
+   "example": "\\(f(x) = x^{2}\\) on \\(\\mathbb{R}\\): for each \\(x\\) and \\(\\varepsilon\\) some \\(\\delta\\) works, but no single \\(\\delta\\) works for every \\(x\\). It is continuous but not uniformly continuous."
+  }
+ },
+ {
+  "id": "VI.2.18",
+  "not": "Trig habits mislead: \\(\\cosh^{2} x - \\sinh^{2} x = 1\\), with a minus. With a plus it fails: \\(\\cosh 1 \\approx 1.543\\), \\(\\sinh 1 \\approx 1.175\\), and \\(1.543^{2} + 1.175^{2} \\approx 3.76\\).",
+  "apples": {
+   "stone": "A chain hanging between two posts makes the curve called cosh.",
+   "text": "Hold a necklace by its two ends and let it hang. The curve looks like a U, but it is not quite the U you get from throwing a ball. Mathematicians build it by averaging a curve that grows fast with its mirror image. That average is the hyperbolic cosine.",
+   "example": "Power lines sagging between two poles hang in this curve."
+  },
+  "class": {
+   "stone": "\\[ \\cosh x = \\frac{e^{x} + e^{-x}}{2}, \\quad \\sinh x = \\frac{e^{x} - e^{-x}}{2} \\]",
+   "text": "\\(\\cosh\\) is even, with minimum \\(\\cosh 0 = 1\\) and a U-shaped graph; \\(\\sinh\\) is odd, increasing, and passes through the origin. For large \\(x\\) both are close to \\(\\frac{e^{x}}{2}\\). They satisfy \\(\\cosh^{2} x - \\sinh^{2} x = 1\\), and \\(\\frac{d}{dx}\\sinh x = \\cosh x\\), \\(\\frac{d}{dx}\\cosh x = \\sinh x\\), with no minus sign. \\(\\tanh x = \\frac{\\sinh x}{\\cosh x}\\) stays between \\(-1\\) and \\(1\\).",
+   "example": "\\(\\cosh(\\ln 2) = \\frac{2 + \\frac{1}{2}}{2} = \\frac{5}{4}\\), \\(\\sinh(\\ln 2) = \\frac{2 - \\frac{1}{2}}{2} = \\frac{3}{4}\\), and \\(\\frac{25}{16} - \\frac{9}{16} = 1\\).",
+   "env": "Definition"
+  },
+  "proof": {
+   "stone": "\\(\\cosh x + \\sinh x = e^{x}\\) and \\(\\cosh x - \\sinh x = e^{-x}\\); multiply them.",
+   "text": "Adding and subtracting the definitions gives \\(\\cosh x + \\sinh x = e^{x}\\) and \\(\\cosh x - \\sinh x = e^{-x}\\). Their product is \\(\\cosh^{2} x - \\sinh^{2} x = e^{x}e^{-x} = 1\\). For derivatives, \\(\\frac{d}{dx}e^{-x} = -e^{-x}\\), so differentiating \\(\\frac{e^{x} - e^{-x}}{2}\\) gives \\(\\frac{e^{x} + e^{-x}}{2}\\), and differentiating \\(\\frac{e^{x} + e^{-x}}{2}\\) gives \\(\\frac{e^{x} - e^{-x}}{2}\\).",
+   "example": "At \\(x = \\ln 3\\): \\(\\cosh x = \\frac{5}{3}\\), \\(\\sinh x = \\frac{4}{3}\\). Sum \\(3 = e^{\\ln 3}\\), difference \\(\\frac{1}{3}\\), product 1."
+  },
+  "professor": {
+   "stone": "\\((\\cosh t, \\sinh t)\\) runs along the hyperbola \\(x^{2} - y^{2} = 1\\) the way \\((\\cos t, \\sin t)\\) runs around the circle.",
+   "text": "In both cases \\(t\\) is twice the area of the sector swept from the origin. Through complex numbers the families are one: \\(\\cosh x = \\cos(ix)\\) and \\(\\sinh x = -i\\sin(ix)\\). The hanging chain, the catenary \\(y = a\\cosh\\frac{x}{a}\\), was found in 1691 by Leibniz, Huygens and Johann Bernoulli.",
+   "example": "\\(\\cos(ix) = \\frac{e^{-x} + e^{x}}{2} = \\cosh x\\): the circle's cosine at an imaginary angle is the hyperbola's."
+  }
+ },
+ {
+  "id": "VI.3.21",
+  "not": "Not every rearrangement converges. For \\(x^{2} - x - 1 = 0\\), iterating \\(x = x^{2} - 1\\) from 1.6 gives 1.56, 1.4336, 1.0552, and so on, moving away from the root 1.618, because \\(|g'| > 1\\) there.",
+  "apples": {
+   "stone": "Guess, improve the guess, repeat, and the guesses settle down.",
+   "text": "Pick any number, halve it, and add 3. Do the same to the answer, again and again. The numbers creep toward 6. At 6 the rule gives back 6: that number is stuck, and it is the answer we were hunting.",
+   "example": "Start at 20: 13, 9.5, 7.75, 6.875, 6.4375, closer to 6 each time."
+  },
+  "class": {
+   "stone": "Rewrite \\(f(x) = 0\\) as \\(x = g(x)\\) and iterate \\(x_{n+1} = g(x_{n})\\). It converges near a root \\(\\alpha\\) when \\(|g'(\\alpha)| < 1\\).",
+   "text": "A root \\(\\alpha\\) of \\(f\\) is then a fixed point: \\(g(\\alpha) = \\alpha\\). The iteration converges for starts close enough to \\(\\alpha\\) when \\(|g'(\\alpha)| < 1\\), and moves away when \\(|g'(\\alpha)| > 1\\). On a graph of \\(y = g(x)\\) and \\(y = x\\), go vertically to the curve and horizontally to the line: a staircase if \\(0 < g'(\\alpha) < 1\\), a cobweb spiraling in if \\(-1 < g'(\\alpha) < 0\\). Different rearrangements of the same equation can behave differently.",
+   "example": "\\(x^{3} - x - 1 = 0\\) as \\(x = \\sqrt[3]{x + 1}\\), \\(x_{0} = 1\\): \\(x_{1} \\approx 1.2599\\), \\(x_{2} \\approx 1.3123\\), \\(x_{3} \\approx 1.3224\\), heading to \\(\\alpha \\approx 1.3247\\)."
+  },
+  "proof": {
+   "stone": "Each step multiplies the error by about \\(g'(\\alpha)\\).",
+   "text": "Let \\(e_{n} = x_{n} - \\alpha\\). By the mean value theorem, \\(x_{n+1} - \\alpha = g(x_{n}) - g(\\alpha) = g'(c_{n})(x_{n} - \\alpha)\\) for some \\(c_{n}\\) between \\(x_{n}\\) and \\(\\alpha\\). If \\(|g'| \\le L < 1\\) on an interval centered at \\(\\alpha\\), then \\(|e_{n+1}| \\le L|e_{n}|\\), the iterates stay in the interval, and \\(|e_{n}| \\le L^{n}|e_{0}| \\to 0\\). A positive \\(g'\\) keeps the error's sign (staircase); a negative one flips it each step (cobweb).",
+   "example": "For \\(g(x) = \\sqrt[3]{x + 1}\\), \\(g'(\\alpha) = \\frac{1}{3\\alpha^{2}} \\approx 0.19\\), since \\(\\sqrt[3]{\\alpha + 1} = \\alpha\\). The errors \\(-0.065, -0.012, -0.0024\\) shrink by about 5 each step, keeping their sign: a staircase."
+  },
+  "professor": {
+   "stone": "A contraction of a complete metric space has exactly one fixed point, and iteration finds it from any start.",
+   "text": "This is the Banach fixed-point theorem, from Banach's 1922 paper. It gives a clean proof of the Picard–Lindelöf existence theorem for ODEs. Newton's method is fixed-point iteration with \\(g(x) = x - \\frac{f(x)}{f'(x)}\\); at a simple root \\(g'(\\alpha) = 0\\), which is why its convergence is quadratic. When \\(|g'(\\alpha)| = 1\\), the test says nothing.",
+   "example": "\\(x_{n+1} = \\cos x_{n}\\) converges from any real start to about \\(0.739085\\), the only solution of \\(\\cos x = x\\)."
+  }
+ },
+ {
+  "id": "VI.5.16",
+  "not": "\\(\\mathrm{arcosh}\\, x = \\ln(x + \\sqrt{x^{2} - 1})\\), with a minus under the root; the plus belongs to arsinh. At \\(x = 1\\): \\(\\mathrm{arcosh}\\, 1 = 0\\), but \\(\\ln(1 + \\sqrt{2}) \\approx 0.881\\).",
+  "apples": {
+   "stone": "Every curve that keeps growing has a rule that runs it backward.",
+   "text": "Every rule that turns one number into another can be run backward. If a rule doubles, the backward rule halves. The hanging-chain curves have backward rules too. They are found by asking how long something takes to grow to a given size.",
+   "example": "If money doubles every year, going from 1 dollar to 8 dollars takes 3 years. Asking \"how long?\" runs growth backward."
+  },
+  "class": {
+   "stone": "\\[ \\mathrm{arsinh}\\, x = \\ln(x + \\sqrt{x^{2} + 1}), \\quad \\mathrm{arcosh}\\, x = \\ln(x + \\sqrt{x^{2} - 1}), \\quad \\mathrm{artanh}\\, x = \\frac{1}{2}\\ln\\frac{1 + x}{1 - x} \\]",
+   "text": "\\(\\mathrm{arcosh}\\) needs \\(x \\ge 1\\) and gives the nonnegative value; \\(\\mathrm{artanh}\\) needs \\(-1 < x < 1\\). Their derivatives are \\(\\frac{1}{\\sqrt{x^{2} + 1}}\\), \\(\\frac{1}{\\sqrt{x^{2} - 1}}\\) and \\(\\frac{1}{1 - x^{2}}\\), so \\(\\int \\frac{dx}{\\sqrt{x^{2} + a^{2}}} = \\mathrm{arsinh}\\frac{x}{a} + C\\) and \\(\\int \\frac{dx}{\\sqrt{x^{2} - a^{2}}} = \\mathrm{arcosh}\\frac{x}{a} + C\\) for \\(x > a > 0\\). Compare \\(\\int \\frac{dx}{\\sqrt{a^{2} - x^{2}}} = \\mathrm{arcsin}\\frac{x}{a} + C\\): the signs under the root choose trig or hyperbolic.",
+   "example": "\\(\\int_{0}^{4} \\frac{dx}{\\sqrt{x^{2} + 9}} = \\mathrm{arsinh}\\frac{4}{3} = \\ln\\left(\\frac{4}{3} + \\frac{5}{3}\\right) = \\ln 3\\)."
+  },
+  "proof": {
+   "stone": "To solve \\(y = \\sinh x\\) for \\(x\\), treat it as a quadratic in \\(e^{x}\\).",
+   "text": "\\(y = \\frac{e^{x} - e^{-x}}{2}\\) gives \\(e^{2x} - 2ye^{x} - 1 = 0\\), so \\(e^{x} = y \\pm \\sqrt{y^{2} + 1}\\). Only the plus sign gives a positive value, so \\(x = \\ln(y + \\sqrt{y^{2} + 1})\\). For the derivative, differentiate \\(\\sinh u = x\\): \\(\\cosh u \\cdot u' = 1\\), and \\(\\cosh u = \\sqrt{1 + \\sinh^{2} u} = \\sqrt{1 + x^{2}}\\), so \\(u' = \\frac{1}{\\sqrt{1 + x^{2}}}\\).",
+   "example": "\\(\\sinh x = \\frac{3}{4}\\): \\(e^{x} = \\frac{3}{4} + \\frac{5}{4} = 2\\), so \\(x = \\ln 2\\), matching \\(\\sinh(\\ln 2) = \\frac{3}{4}\\)."
+  },
+  "professor": {
+   "stone": "The prefix is ar- for area, not arc-: the output is twice the area of a hyperbolic sector.",
+   "text": "In the complex plane the families merge: \\(\\mathrm{arsinh}\\, z = -i\\,\\mathrm{arcsin}(iz)\\), up to the choice of branch. The substitution \\(x = a\\sinh u\\) clears \\(\\sqrt{x^{2} + a^{2}}\\) just as \\(x = a\\sin u\\) clears \\(\\sqrt{a^{2} - x^{2}}\\). In special relativity, rapidity \\(\\mathrm{artanh}\\frac{v}{c}\\) adds when velocities along a line are combined.",
+   "example": "\\(0.6c\\) combined with \\(0.6c\\) gives \\(\\frac{0.6 + 0.6}{1 + 0.36}c = \\frac{15}{17}c\\). In rapidities: \\(\\mathrm{artanh}\\, 0.6 = \\frac{1}{2}\\ln 4 = \\ln 2\\), and \\(\\mathrm{artanh}\\frac{15}{17} = \\frac{1}{2}\\ln 16 = \\ln 2 + \\ln 2\\)."
+  }
+ },
+ {
+  "id": "VII.16.12",
+  "not": "Shift the index when you shift the power. \\(\\sum_{n=2}^{\\infty} n(n - 1)a_{n}x^{n-2}\\) becomes \\(\\sum_{m=0}^{\\infty} (m + 2)(m + 1)a_{m+2}x^{m}\\), not \\(\\sum_{m=0}^{\\infty} m(m - 1)a_{m}x^{m}\\).",
+  "apples": {
+   "stone": "Build the answer one piece at a time, each piece fixed by the ones before.",
+   "text": "Imagine a tower where each new block's size depends on the block two below it. You choose the first two blocks yourself. After that, the rule decides every block. Some hard equations are solved like that: pick two starting numbers, and a simple rule makes the rest.",
+   "example": "Start with 1 and 1. Each new number is the one two places back, halved: 1, 1, 0.5, 0.5, 0.25, 0.25."
+  },
+  "class": {
+   "stone": "\\[ y = \\sum_{n=0}^{\\infty} a_{n}x^{n} \\]",
+   "text": "Substitute the series and its derivatives \\(y' = \\sum n a_{n}x^{n-1}\\) and \\(y'' = \\sum n(n - 1)a_{n}x^{n-2}\\) into the equation. Shift indices so every sum runs over \\(x^{n}\\), then set each coefficient to zero. This gives a recurrence for \\(a_{n}\\); \\(a_{0} = y(0)\\) and \\(a_{1} = y'(0)\\) stay free. Near an ordinary point the series converges at least out to the nearest singular point, real or complex.",
+   "example": "\\(y'' + y = 0\\): \\((n + 2)(n + 1)a_{n+2} + a_{n} = 0\\), so \\(a_{n+2} = -\\frac{a_{n}}{(n + 2)(n + 1)}\\). With \\(a_{0} = 1\\), \\(a_{1} = 0\\): \\(y = 1 - \\frac{x^{2}}{2} + \\frac{x^{4}}{24} - \\ldots = \\cos x\\)."
+  },
+  "proof": {
+   "stone": "Two power series are equal only if every coefficient matches.",
+   "text": "For \\(y'' + y = 0\\): \\(y'' = \\sum_{n=2}^{\\infty} n(n - 1)a_{n}x^{n-2} = \\sum_{n=0}^{\\infty} (n + 2)(n + 1)a_{n+2}x^{n}\\). So \\(y'' + y = \\sum_{n=0}^{\\infty} [(n + 2)(n + 1)a_{n+2} + a_{n}]x^{n} = 0\\) for all \\(x\\) near 0, and a power series that is identically zero has every coefficient zero. The recurrence gives \\(a_{2k} = \\frac{(-1)^{k}a_{0}}{(2k)!}\\) and \\(a_{2k+1} = \\frac{(-1)^{k}a_{1}}{(2k + 1)!}\\), so \\(y = a_{0}\\cos x + a_{1}\\sin x\\).",
+   "example": "\\(a_{0} = 0\\), \\(a_{1} = 1\\): \\(a_{3} = -\\frac{1}{6}\\), \\(a_{5} = \\frac{1}{120}\\), giving \\(x - \\frac{x^{3}}{6} + \\frac{x^{5}}{120} - \\ldots = \\sin x\\)."
+  },
+  "professor": {
+   "stone": "Series solutions define new functions: Airy, Bessel and Legendre functions arise this way.",
+   "text": "Airy's equation \\(y'' = xy\\) gives \\(a_{2} = 0\\) and \\(a_{n+3} = \\frac{a_{n}}{(n + 3)(n + 2)}\\), and its solutions are not elementary functions. At a regular singular point, the method of Frobenius tries \\(y = x^{r}\\sum a_{n}x^{n}\\) instead, which is how Bessel functions arise. Its indicial equation is the Cauchy–Euler equation hiding at that point.",
+   "example": "For \\((1 + x^{2})y'' + y = 0\\), the series about 0 is guaranteed only for \\(|x| < 1\\): \\(1 + x^{2}\\) vanishes at \\(\\pm i\\), distance 1 away, though the real line has no singular point."
+  }
+ },
+ {
+  "id": "VII.16.13",
+  "not": "For a repeated root \\(r\\), the second solution is \\(x^{r}\\ln x\\), not \\(x^{r+1}\\). For \\(x^{2}y'' - xy' + y = 0\\), \\(r = 1\\) twice, and \\(y = x^{2}\\) gives \\(2x^{2} - 2x^{2} + x^{2} = x^{2} \\ne 0\\).",
+  "apples": {
+   "stone": "Some rules look the same at every zoom, and their answers are powers.",
+   "text": "Zoom in on a photo of a spiral shell and the pattern looks the same, just smaller. Some equations share that trait: making every length twice as big doesn't change them. For those, the answers are powers, like a number times itself, or times itself three times.",
+   "example": "Double a square's side and its area becomes 4 times bigger, whatever size you start with."
+  },
+  "class": {
+   "stone": "\\[ x^{2}y'' + axy' + by = 0: \\quad \\text{try } y = x^{r}, \\quad r(r - 1) + ar + b = 0 \\]",
+   "text": "Each derivative is multiplied by the matching power of \\(x\\), so \\(y = x^{r}\\) turns every term into a multiple of \\(x^{r}\\), leaving the indicial equation. On \\(x > 0\\): distinct real roots give \\(y = c_{1}x^{r_{1}} + c_{2}x^{r_{2}}\\); a repeated root \\(r\\) gives \\(y = (c_{1} + c_{2}\\ln x)x^{r}\\); complex roots \\(\\alpha \\pm \\beta i\\) give \\(y = x^{\\alpha}[c_{1}\\cos(\\beta\\ln x) + c_{2}\\sin(\\beta\\ln x)]\\). Initial conditions go at some \\(x_{0} > 0\\), never at 0, where the equation is singular.",
+   "example": "\\(x^{2}y'' - 2xy' + 2y = 0\\), \\(y(1) = 3\\), \\(y'(1) = 4\\): \\(r^{2} - 3r + 2 = 0\\), so \\(r = 1, 2\\). \\(y = c_{1}x + c_{2}x^{2}\\) with \\(c_{1} + c_{2} = 3\\) and \\(c_{1} + 2c_{2} = 4\\): \\(y = 2x + x^{2}\\)."
+  },
+  "proof": {
+   "stone": "Substitute \\(x = e^{t}\\) and it becomes a constant-coefficient equation.",
+   "text": "With \\(x = e^{t}\\), \\(x\\frac{dy}{dx} = y_{t}\\) and \\(x^{2}\\frac{d^{2}y}{dx^{2}} = y_{tt} - y_{t}\\). The equation becomes \\(y_{tt} + (a - 1)y_{t} + by = 0\\), whose characteristic equation \\(r^{2} + (a - 1)r + b = 0\\) is exactly the indicial equation. So \\(e^{rt} = x^{r}\\), \\(te^{rt} = x^{r}\\ln x\\), and \\(e^{\\alpha t}\\cos\\beta t = x^{\\alpha}\\cos(\\beta\\ln x)\\): the three cases come straight from the constant-coefficient ones.",
+   "example": "\\(x^{2}y'' - xy' + y = 0\\) becomes \\(y_{tt} - 2y_{t} + y = 0\\), with solutions \\(e^{t}\\) and \\(te^{t}\\), that is, \\(x\\) and \\(x\\ln x\\)."
+  },
+  "professor": {
+   "stone": "Cauchy–Euler equations are the model regular singular point: near such a point, every equation looks like one to leading order.",
+   "text": "They are scale-invariant: replacing \\(x\\) by \\(\\lambda x\\) leaves the equation unchanged, which is why powers solve them. The method of Frobenius for \\(x^{2}y'' + xp(x)y' + q(x)y = 0\\) uses \\(r(r - 1) + p(0)r + q(0) = 0\\), the indicial equation of the Cauchy–Euler equation with \\(p\\) and \\(q\\) frozen at 0. Laplace's equation in polar coordinates gives the radial equation \\(\\rho^{2}R'' + \\rho R' - n^{2}R = 0\\), a Cauchy–Euler equation with solutions \\(\\rho^{n}\\) and \\(\\rho^{-n}\\).",
+   "example": "\\(x^{2}y'' + xy' + y = 0\\) has \\(r = \\pm i\\) and solutions \\(\\cos(\\ln x)\\) and \\(\\sin(\\ln x)\\), which oscillate infinitely often as \\(x \\to 0\\)."
+  }
+ }
+]

@@ -1,0 +1,114 @@
+{
+ "unit": "V.7",
+ "name": "General triangles",
+ "skills": [
+  {
+   "id": "V.7.01",
+   "name": "Law of sines",
+   "steps": {
+    "a": "the formula",
+    "b": "find a side",
+    "c": "find an angle",
+    "d": "derive it with an altitude"
+   },
+   "wrong_turn": "Match each side with the angle across from it. Side a pairs with angle A on the far side, not with an angle at one of its ends.",
+   "rule": "(asinA)=(bsinB)=(csinC)"
+  },
+  {
+   "id": "V.7.02",
+   "name": "Ambiguous case",
+   "steps": {
+    "a": "SSA setup",
+    "b": "zero, one or two triangles",
+    "c": "find both",
+    "d": "draw them"
+   },
+   "wrong_turn": "When sin B gives an acute B, don't stop. Check whether 180° − B also fits: with SSA there may be two triangles.",
+   "rule": "SSA with acute A: compare a with the height h=bsinA."
+  },
+  {
+   "id": "V.7.03",
+   "name": "Law of cosines",
+   "steps": {
+    "a": "the formula",
+    "b": "find a side (SAS)",
+    "c": "find an angle (SSS)",
+    "d": "Pythagoras as a special case"
+   },
+   "wrong_turn": "Multiply before subtracting. In c² = 49 + 64 − 112 cos C, don't compute (113 − 112) cos C.",
+   "rule": "c2=a2+b2−2abcosC"
+  },
+  {
+   "id": "V.7.04",
+   "name": "Choosing the law",
+   "steps": {
+    "a": "SAS and SSS → cosines",
+    "b": "AAS, ASA → sines",
+    "c": "SSA → careful sines",
+    "d": "plan the full solution"
+   },
+   "wrong_turn": "The law of sines can't start an SAS or SSS problem. There is no side with its opposite angle known yet.",
+   "rule": "SAS or SSS: law of cosines. AAS or ASA: law of sines. SSA: law of sines, carefully."
+  },
+  {
+   "id": "V.7.05",
+   "name": "Solve any triangle",
+   "steps": {
+    "a": "first missing part",
+    "b": "angle sum",
+    "c": "last side",
+    "d": "check consistency"
+   },
+   "wrong_turn": "Don't force a triangle that can't exist. 3, 4, 8 fails 3 + 4 > 8, and the law of cosines gives cos C = −1.625, which is impossible.",
+   "rule": "Find the first missing part with the right law, the next angle by the angle sum, the last side by sines."
+  },
+  {
+   "id": "V.7.06",
+   "name": "Area with sine",
+   "steps": {
+    "a": "½·ab·sin C",
+    "b": "derive it",
+    "c": "find a missing side from area",
+    "d": "parallelogram area"
+   },
+   "wrong_turn": "The angle must be between the two sides you use. With sides a and b, use angle C, not A or B.",
+   "rule": "Area=(12)absinC"
+  },
+  {
+   "id": "V.7.07",
+   "name": "Heron's formula",
+   "steps": {
+    "a": "semi-perimeter",
+    "b": "the formula",
+    "c": "apply it",
+    "d": "compare with ½ab sin C"
+   },
+   "wrong_turn": "s is half the perimeter, not the whole perimeter. For 13, 14, 15, s = 21, not 42.",
+   "rule": "Area=s(s−a)(s−b)(s−c), where s=(a+b+c2)."
+  },
+  {
+   "id": "V.7.08",
+   "name": "Bearings & navigation",
+   "steps": {
+    "a": "bearing notation",
+    "b": "draw the route",
+    "c": "solve for distance",
+    "d": "solve for heading"
+   },
+   "wrong_turn": "Bearings go clockwise from north, not counterclockwise from east like math angles. Bearing 030° is the math angle 60°.",
+   "rule": "A bearing is the clockwise angle from north, written with three digits: 045°, 210°."
+  },
+  {
+   "id": "V.7.09",
+   "name": "Surveying problems",
+   "steps": {
+    "a": "inaccessible distances",
+    "b": "two observation points",
+    "c": "land area",
+    "d": "check reasonableness"
+   },
+   "wrong_turn": "The angle at the far point is 180° − A − B, not one you measured. It sits opposite the baseline in the law of sines.",
+   "rule": "Measure a baseline and the two angles at its ends; then use the law of sines."
+  }
+ ]
+}

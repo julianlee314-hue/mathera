@@ -1,0 +1,93 @@
+{
+  "branch": "II.8",
+  "intro": "This branch moves from single calculations to expressions: short strings of numbers and operations, like 32 + 8 times 6. Learning the order to work them out, and spotting rules and missing numbers, prepares the ground for algebra.",
+  "skills": {
+    "II.8.01": {
+      "what": "Following the agreed order of operations, so everyone gets the same answer to a calculation with several steps.",
+      "levels": {
+        "a": "Works left to right when there is only adding and subtracting.",
+        "b": "Does multiplying and dividing before adding and subtracting.",
+        "c": "Works out anything in brackets first.",
+        "d": "Handles calculations that mix all of these rules.",
+        "e": "Chooses where the brackets go so a calculation gives a target answer.",
+        "f": "Places plus, minus and times signs between numbers to make the largest possible value."
+      }
+    },
+    "II.8.02": {
+      "what": "Turning a description in words into a calculation written with numbers and symbols, and back again.",
+      "levels": {
+        "a": "Picks the calculation that matches a description in words.",
+        "b": "Writes a calculation using brackets to show what comes first, then finds its value.",
+        "c": "Compares calculations without working them out, as in 6 times a sum is six times as big.",
+        "d": "Picks the words that correctly describe a written calculation."
+      }
+    },
+    "II.8.03": {
+      "what": "Working out the value of a calculation with several steps.",
+      "levels": {
+        "a": "Works out a calculation with two operations.",
+        "b": "Works out a calculation with three operations.",
+        "c": "Works out a calculation that includes brackets.",
+        "d": "Finds the first wrong step in someone else's working."
+      }
+    },
+    "II.8.04": {
+      "what": "Finding the rule behind a number pattern and using it to continue the pattern.",
+      "levels": {
+        "a": "Finds the rule of a pattern, such as add 10.",
+        "b": "Uses the rule to find the next numbers.",
+        "c": "Follows two patterns at once and compares them step by step.",
+        "d": "Pairs up numbers from two patterns and predicts which pairs will appear.",
+        "e": "Works out which position in a pattern a given number appears at.",
+        "f": "Adds all the numbers from 1 up to a big number by pairing the ends."
+      }
+    },
+    "II.8.05": {
+      "what": "Using input–output tables, where a rule turns each number going in into a number coming out.",
+      "levels": {
+        "a": "Uses the rule to find a missing output.",
+        "b": "Finds the rule that fits every column of the table.",
+        "c": "Works backwards from an output to find the input.",
+        "d": "Works with two-step rules, like times 2 then add 8, including backwards."
+      }
+    },
+    "II.8.06": {
+      "what": "Finding the missing number that makes a calculation true.",
+      "levels": {
+        "a": "Finds the missing number in an addition.",
+        "b": "Finds the missing number in a multiplication.",
+        "c": "Finds a missing number anywhere in a calculation, including subtraction.",
+        "d": "Finds the number in a box inside a longer calculation with brackets."
+      }
+    },
+    "II.8.07": {
+      "what": "Recognizing that two calculations written differently can have the same value.",
+      "levels": {
+        "a": "Sees that 3 times 8 plus 3 times 3 is the same as 3 times 11.",
+        "b": "Regroups numbers when multiplying, as in 2 times 5 times 16 is 10 times 16.",
+        "c": "Decides whether two calculations are equal.",
+        "d": "Explains why moving brackets changes a subtraction but not an addition."
+      }
+    },
+    "II.8.08": {
+      "what": "Writing a word problem as a single calculation, then solving it.",
+      "levels": {
+        "a": "Picks the calculation for a one-step problem.",
+        "b": "Picks the calculation for a two-step problem.",
+        "c": "Picks a calculation that needs brackets, like adults and children buying tickets at one price.",
+        "d": "Writes one calculation for a problem and works it out."
+      }
+    },
+    "II.8.09": {
+      "what": "Solving balance puzzles, where both sides of a scale weigh the same, as a first step toward equations.",
+      "levels": {
+        "a": "Finds the weight of one box on a level pan balance.",
+        "b": "Finds the weight of one box when several equal boxes are on one side.",
+        "c": "Uses two balances together to find two different unknown weights.",
+        "d": "Writes a balance as an equation, using a box for the unknown weight.",
+        "e": "Swaps one shape for what it equals to solve two linked balance clues.",
+        "f": "Finds three unknown weights from three pair clues, by adding all the clues together."
+      }
+    }
+  }
+}

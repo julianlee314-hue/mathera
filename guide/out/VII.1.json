@@ -1,0 +1,114 @@
+{
+  "branch": "VII.1",
+  "intro": "Vectors are quantities with both a size and a direction, like a push, a velocity, or a step on a map. This branch builds the basic toolkit for working with them, the foundation for everything else in this era.",
+  "skills": {
+    "VII.1.01": {
+      "what": "A vector is an arrow with a length and a direction, or equally a short list of numbers. A wind of 10 mph blowing northeast is a vector.",
+      "levels": {
+        "a": "Draws and reads vectors as arrows with a length and a direction.",
+        "b": "Writes a vector as a list of numbers, such as 3 steps right and 2 up.",
+        "c": "Tells apart an arrow pinned to a spot from one that can slide anywhere.",
+        "d": "Works with vectors that have any number of entries, not just two or three."
+      }
+    },
+    "VII.1.02": {
+      "what": "Adding vectors means combining two moves into one, like walking 3 blocks east and then 4 blocks north.",
+      "levels": {
+        "a": "Adds two arrows by placing the tail of the second at the tip of the first.",
+        "b": "Adds two arrows from the same starting point by completing a parallelogram.",
+        "c": "Adds vectors as lists by adding matching entries.",
+        "d": "Subtracts vectors and sees the result as the arrow from one tip to the other."
+      }
+    },
+    "VII.1.03": {
+      "what": "Multiplying a vector by an ordinary number (a scalar) stretches or shrinks it, like doubling a speed while keeping the direction.",
+      "levels": {
+        "a": "Stretches or shrinks an arrow by multiplying it by a number.",
+        "b": "Sees that multiplying by a negative number flips the arrow around.",
+        "c": "Multiplies each entry of a vector list by the number.",
+        "d": "Recognizes when two vectors point along the same line (are parallel)."
+      }
+    },
+    "VII.1.04": {
+      "what": "The magnitude of a vector is its length, found with the Pythagorean theorem. It tells how big the push or movement is.",
+      "levels": {
+        "a": "Finds the length of a flat, two-entry vector.",
+        "b": "Finds lengths of vectors in 3D and with more entries.",
+        "c": "Finds the distance between two points as the length of the arrow joining them.",
+        "d": "Uses basic facts about length, such as a detour never being shorter."
+      }
+    },
+    "VII.1.05": {
+      "what": "A unit vector has length exactly 1 and just records a direction, like a compass heading with no distance attached.",
+      "levels": {
+        "a": "Shrinks or stretches a vector to length 1 while keeping its direction.",
+        "b": "Uses the three standard unit arrows that point along the x, y and z axes.",
+        "c": "Builds a direction vector from a given angle.",
+        "d": "Writes any vector as its length times its direction."
+      }
+    },
+    "VII.1.06": {
+      "what": "A linear combination mixes vectors using chosen amounts of each, like a recipe: 2 parts of one move plus 3 parts of another.",
+      "levels": {
+        "a": "Combines vectors using given amounts (weights) of each.",
+        "b": "Finds the amounts needed to reach a given target vector.",
+        "c": "Sets up that search as a set of equations to solve together.",
+        "d": "Pictures combinations as a slanted grid covering the plane."
+      }
+    },
+    "VII.1.07": {
+      "what": "The span of some vectors is every point you can reach by combining them. One arrow gives a line; two different arrows usually give a flat plane.",
+      "levels": {
+        "a": "Sees that one vector's span is a line through the starting point.",
+        "b": "Decides whether two flat vectors reach the whole plane or just a line.",
+        "c": "Describes what two vectors in 3D reach: a plane or a line.",
+        "d": "Checks whether a given vector can be reached from a set of vectors."
+      }
+    },
+    "VII.1.08": {
+      "what": "The dot product multiplies two vectors to get a single number that measures how much they point the same way.",
+      "levels": {
+        "a": "Computes a dot product by multiplying matching entries and adding them up.",
+        "b": "Uses its basic rules, such as order not mattering.",
+        "c": "Finds a vector's length from its dot product with itself.",
+        "d": "Computes work done as force times distance moved, using the dot product."
+      }
+    },
+    "VII.1.09": {
+      "what": "The dot product can reveal the angle between two arrows. When it is zero, the arrows are at right angles.",
+      "levels": {
+        "a": "Learns the formula linking the dot product to the angle's cosine.",
+        "b": "Computes the angle between two given vectors.",
+        "c": "Recognizes perpendicular vectors because their dot product is zero.",
+        "d": "Uses the fact that a dot product can never exceed the product of the lengths."
+      }
+    },
+    "VII.1.10": {
+      "what": "Projecting one vector onto another finds its shadow along that direction, like the part of a slanted push that moves a cart forward.",
+      "levels": {
+        "a": "Finds how long the shadow of one vector on another is.",
+        "b": "Finds the shadow itself as a vector.",
+        "c": "Finds the leftover part of the vector that sits at right angles.",
+        "d": "Finds the point on a line closest to a given point."
+      }
+    },
+    "VII.1.11": {
+      "what": "The cross product takes two 3D arrows and gives a third arrow at right angles to both. Its length equals the area they outline.",
+      "levels": {
+        "a": "Computes a cross product with a set recipe of multiplications.",
+        "b": "Uses the right-hand rule to tell which way the result points.",
+        "c": "Finds the area of a parallelogram from its two side vectors.",
+        "d": "Finds the volume of a slanted box from its three edge vectors."
+      }
+    },
+    "VII.1.12": {
+      "what": "Vectors describe straight lines and flat planes in 3D space, the way a pilot might describe a flight path or a runway surface.",
+      "levels": {
+        "a": "Writes a line as a starting point plus any amount of a direction vector.",
+        "b": "Writes a plane's equation from an arrow sticking straight out of it.",
+        "c": "Finds where lines and planes meet each other.",
+        "d": "Finds shortest distances between points, lines and planes."
+      }
+    }
+  }
+}

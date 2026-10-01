@@ -1,0 +1,225 @@
+{
+  "branch": "I.4",
+  "intro": "This branch introduces adding and taking away, first with objects and stories, then with quick mental strategies. By the end, learners know their facts up to 20 by heart and can add and subtract two-digit numbers.",
+  "skills": {
+    "I.4.01": {
+      "what": "Adding by putting two groups together and finding how many there are altogether.",
+      "levels": {
+        "a": "Joins two small groups and finds the total, up to 5.",
+        "b": "The same with totals up to 10.",
+        "c": "Counts every item in both groups once to find the total.",
+        "d": "Matches a picture to a number sentence using the plus sign, like 3 + 1 = 4."
+      }
+    },
+    "I.4.02": {
+      "what": "Subtracting by taking some away from a group and finding how many are left.",
+      "levels": {
+        "a": "Takes some away from a group of up to 5 and counts what remains.",
+        "b": "The same with groups of up to 10.",
+        "c": "Solves simple giving-away situations by counting what is left.",
+        "d": "Matches a picture to a number sentence using the minus sign, like 4 − 3 = 1."
+      }
+    },
+    "I.4.03": {
+      "what": "Solving short stories where things are added, like more fish swimming in.",
+      "levels": {
+        "a": "Solves an adding story with objects or pictures to count.",
+        "b": "Picks the picture that shows what happens in the story.",
+        "c": "Picks the number sentence, like 2 + 2 = 4, that matches the story.",
+        "d": "Solves adding stories with no pictures at all."
+      }
+    },
+    "I.4.04": {
+      "what": "Solving short stories where things are taken away, like giving away stickers.",
+      "levels": {
+        "a": "Solves a taking-away story with objects or pictures to count.",
+        "b": "Picks the picture that shows what happens in the story.",
+        "c": "Picks the number sentence, like 4 − 3 = 1, that matches the story.",
+        "d": "Solves taking-away stories with no pictures at all."
+      }
+    },
+    "I.4.05": {
+      "what": "Seeing a number as a whole made of two parts, like 4 being 3 and 1.",
+      "levels": {
+        "a": "Picks two parts that together make a given number.",
+        "b": "Puts two parts together to find the whole.",
+        "c": "Knows the whole and one part, and finds the hidden part.",
+        "d": "Uses a diagram of a whole joined to its two parts to find a missing number."
+      }
+    },
+    "I.4.06": {
+      "what": "Knowing all the pairs of numbers that add up to 3, 4 and 5 (called number bonds).",
+      "levels": {
+        "a": "Picks pairs that make 3, like 2 and 1.",
+        "b": "Picks pairs that make 4.",
+        "c": "Picks pairs that make 5.",
+        "d": "Lists every pair that makes 5, from 0 and 5 up to 5 and 0."
+      }
+    },
+    "I.4.07": {
+      "what": "Knowing the pairs of numbers that add up to 6, 7, 8, 9 and 10, especially the pairs that make 10.",
+      "levels": {
+        "a": "Picks pairs that make 6.",
+        "b": "Finds the missing partner to make 7 or 8, like 5 and what makes 7.",
+        "c": "Finds the missing partner to make 9 or 10.",
+        "d": "Quickly gives the partner that makes 10 for any number, like 2 and 8.",
+        "e": "Finds the missing number when three numbers must add up to 10.",
+        "f": "Counts every way to share a few apples between two baskets, following a rule."
+      }
+    },
+    "I.4.08": {
+      "what": "Adding a number to itself, like 6 + 6, which are facts that are easy to remember.",
+      "levels": {
+        "a": "Adds doubles up to 5 + 5, often using matching dice.",
+        "b": "Adds doubles up to 10 + 10.",
+        "c": "Recognizes doubles and knows them by heart.",
+        "d": "Solves short stories that use a double, like 3 pages and 3 more.",
+        "e": "Works backwards: given the result of doubling (and maybe taking away), finds the start number.",
+        "f": "Solves a story where two people start equal, one gets extra, and the total is known."
+      }
+    },
+    "I.4.09": {
+      "what": "Using a known double to solve a sum that is one away from it, like 4 + 3 being one less than 4 + 4.",
+      "levels": {
+        "a": "Solves sums like 3 + 2 as a double plus one.",
+        "b": "Solves sums like 2 + 3 as a double minus one, using 3 + 3.",
+        "c": "Picks which double helps with a given sum.",
+        "d": "Solves a mix of doubles and near doubles."
+      }
+    },
+    "I.4.10": {
+      "what": "Adding by first filling up to 10, then adding what is left, like 8 + 5 as 8 + 2 + 3.",
+      "levels": {
+        "a": "Chooses how to split a number so the first part makes ten.",
+        "b": "Adds 9 and a number by moving 1 over to make 10.",
+        "c": "Adds 8 and a number by moving 2 over to make 10.",
+        "d": "Uses the same trick with 7 and other numbers."
+      }
+    },
+    "I.4.11": {
+      "what": "Adding a small number by starting at the other number and counting up.",
+      "levels": {
+        "a": "Adds 0, 1 or 2, knowing that adding 0 changes nothing.",
+        "b": "Adds 3 by counting on three steps.",
+        "c": "Starts from the bigger number, since that means fewer steps.",
+        "d": "Counts on to add, with totals up to 20."
+      }
+    },
+    "I.4.12": {
+      "what": "Understanding that numbers can be added in any order, and using that to add three numbers easily.",
+      "levels": {
+        "a": "Knows 3 + 5 gives the same as 5 + 3, and spots when a swap is wrong.",
+        "b": "Adds three small numbers together.",
+        "c": "Looks for two numbers that make ten and adds them first.",
+        "d": "Looks for a double to add first, like 4 + 7 + 4."
+      }
+    },
+    "I.4.13": {
+      "what": "Subtracting a small number by starting at the bigger number and counting backward.",
+      "levels": {
+        "a": "Takes away 0, 1 or 2, knowing that taking away 0 changes nothing.",
+        "b": "Takes away 3 by counting back three steps.",
+        "c": "Counts back to subtract, starting from numbers up to 20.",
+        "d": "Recognizes when counting back is the easiest method: taking away a small number."
+      }
+    },
+    "I.4.14": {
+      "what": "Subtracting by counting up from the smaller number to the bigger one, like finding 12 − 9 by counting 10, 11, 12.",
+      "levels": {
+        "a": "Turns a take-away into an adding question, like 3 + ? = 4.",
+        "b": "Counts up to find a difference, staying within 10.",
+        "c": "Counts up in two hops, first to 10 and then beyond, like 6 to 10 to 14.",
+        "d": "Decides whether counting back or counting up is quicker."
+      }
+    },
+    "I.4.15": {
+      "what": "Subtracting from teen numbers by stepping down to 10 first, then taking away the rest.",
+      "levels": {
+        "a": "Takes a number away from 10, using the pairs that make 10.",
+        "b": "Takes away just enough to land on 10, like 14 − 4.",
+        "c": "Subtracts in two steps through 10, like 14 − 6 as 14 − 4 − 2.",
+        "d": "Chooses the easiest method for a given subtraction."
+      }
+    },
+    "I.4.16": {
+      "what": "Seeing how three numbers, like 8, 1 and 9, make a family of two additions and two subtractions.",
+      "levels": {
+        "a": "Picks the other addition in the family, like 1 + 8 = 9 for 8 + 1 = 9.",
+        "b": "Picks the subtractions in the same family, like 9 − 1 = 8.",
+        "c": "Writes all four facts in a family.",
+        "d": "Uses one fact in a family to answer another.",
+        "e": "Spots the one fact that does not belong to a given family.",
+        "f": "Given two members of a family, finds the smallest or biggest the third could be."
+      }
+    },
+    "I.4.17": {
+      "what": "Finding the missing number in an addition, like 3 + ? = 5.",
+      "levels": {
+        "a": "Finds how many more are needed to reach a small number, with pictures.",
+        "b": "Finds the missing number in additions up to 10.",
+        "c": "The same with totals up to 20.",
+        "d": "Finds a missing number that comes first, like ? + 6 = 9."
+      }
+    },
+    "I.4.18": {
+      "what": "Understanding that the equal sign means both sides have the same value, like a balanced scale.",
+      "levels": {
+        "a": "Decides whether statements like 3 = 5 are true or false.",
+        "b": "Finds the number that balances a sum, like ? = 3 + 1.",
+        "c": "Balances a sum on each side, like 4 + 1 = 3 + ?.",
+        "d": "Decides whether number sentences such as 6 − 2 = 3 are true or false.",
+        "e": "Balances a sum on each side with bigger numbers, like 6 + 3 = 7 + ?.",
+        "f": "Solves balance-scale picture puzzles to find how many cubes weigh the same as one shape."
+      }
+    },
+    "I.4.19": {
+      "what": "Knowing the addition facts with totals up to 20 quickly and accurately.",
+      "levels": {
+        "a": "Adds pairs of numbers with totals up to 10.",
+        "b": "Adds pairs that go past 10, like 3 + 9.",
+        "c": "Answers a mix of both kinds.",
+        "d": "Recalls these facts from memory, quickly."
+      }
+    },
+    "I.4.20": {
+      "what": "Knowing the subtraction facts starting from numbers up to 20 quickly and accurately.",
+      "levels": {
+        "a": "Subtracts within 10.",
+        "b": "Subtracts from teen numbers without going below 10, like 12 − 2.",
+        "c": "Subtracts from teen numbers going below 10, like 11 − 8.",
+        "d": "Recalls these facts from memory, quickly."
+      }
+    },
+    "I.4.21": {
+      "what": "Adding and subtracting whole tens, like 30 + 40 or 45 − 30, by thinking in tens.",
+      "levels": {
+        "a": "Adds ten to some tens, like 10 + 40.",
+        "b": "Adds two numbers of tens, like 20 + 70.",
+        "c": "Adds tens to a two-digit number, like 23 + 10, changing only the tens digit.",
+        "d": "Takes tens away from a two-digit number, like 45 − 30."
+      }
+    },
+    "I.4.22": {
+      "what": "Adding two-digit numbers, using blocks or a number line to see the tens and ones.",
+      "levels": {
+        "a": "Adds tens to tens and ones to ones when the ones don't reach ten.",
+        "b": "Adds when the ones make a new ten, bundling them into the tens.",
+        "c": "Adds by making jumps of ten and then ones along a number line.",
+        "d": "Solves story problems that need two-digit addition.",
+        "e": "Finds a missing digit in a two-digit addition, like 19 + 6 blank = 84.",
+        "f": "Arranges four digit cards into two numbers to make the smallest possible total."
+      }
+    },
+    "I.4.23": {
+      "what": "Subtracting two-digit numbers, using blocks or a number line to see the tens and ones.",
+      "levels": {
+        "a": "Takes away tens from tens and ones from ones when there are enough ones.",
+        "b": "Breaks a ten into ones when there are not enough ones to take away.",
+        "c": "Subtracts by jumping back in tens and then ones along a number line.",
+        "d": "Solves story problems that need two-digit subtraction.",
+        "e": "Works backwards: knows what was taken away and what is left, finds the starting amount.",
+        "f": "Arranges four digit cards into two numbers to make the smallest possible difference."
+      }
+    }
+  }
+}

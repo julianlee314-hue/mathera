@@ -1,0 +1,126 @@
+{
+ "unit": "IV.15",
+ "name": "Data & distributions",
+ "skills": [
+  {
+   "id": "IV.15.01",
+   "name": "Standard deviation",
+   "steps": {
+    "a": "deviations from the mean",
+    "b": "variance",
+    "c": "standard deviation",
+    "d": "population vs sample"
+   },
+   "wrong_turn": "Don't forget to square. For 2, 4, 6 the deviations from the mean 4 are −2, 0, 2, which add to 0. Square them first: the variance is (4+0+43)=(83), not 0.",
+   "rule": "σ=(∑(x−μ)2n),s=(∑(x−x‾)2n−1)"
+  },
+  {
+   "id": "IV.15.02",
+   "name": "Summary statistics",
+   "steps": {
+    "a": "from a frequency table",
+    "b": "estimates from grouped data",
+    "c": "from Σx and Σx²",
+    "d": "adding to or scaling the data"
+   },
+   "wrong_turn": "Adding a constant moves the center, not the spread. Add 10 to every score and the mean rises by 10, but the standard deviation stays the same, not 10 more.",
+   "rule": "x‾=(∑fx∑f),σ2=(∑x2n)−x‾2"
+  },
+  {
+   "id": "IV.15.03",
+   "name": "z-scores",
+   "steps": {
+    "a": "standardize a value",
+    "b": "compare across groups",
+    "c": "unusual values",
+    "d": "back to raw scores"
+   },
+   "wrong_turn": "Subtract first, then divide. For x=80, μ=70, σ=5: z=(80−705)=2, not 80−(705)=66.",
+   "rule": "z=(x−μσ),x=μ+zσ"
+  },
+  {
+   "id": "IV.15.04",
+   "name": "Random variables",
+   "steps": {
+    "a": "a discrete distribution table",
+    "b": "probabilities sum to 1",
+    "c": "the mean E(X)",
+    "d": "the variance of X"
+   },
+   "wrong_turn": "E(X) is not the most likely value. For a die, E(X)=3.5, a value that never comes up.",
+   "rule": "E(X)=∑xP(X=x),Var(X)=∑(x−μ)2P(X=x)"
+  },
+  {
+   "id": "IV.15.05",
+   "name": "The binomial setting",
+   "steps": {
+    "a": "the four conditions",
+    "b": "n and p",
+    "c": "spot a binomial situation",
+    "d": "when it fails"
+   },
+   "wrong_turn": "Drawing without replacement is not binomial. Draw 5 cards and count hearts: after a heart, the chance of the next heart drops from (1352) to (1251), so p is not fixed.",
+   "rule": "X∼B(n,p)"
+  },
+  {
+   "id": "IV.15.06",
+   "name": "Binomial probabilities",
+   "steps": {
+    "a": "P(X = k) formula",
+    "b": "cumulative probabilities",
+    "c": "at least and at most",
+    "d": "with technology"
+   },
+   "wrong_turn": "'At least 1' is not P(X=1). For 4 dice, P(at least one six)=1−((56))4≈0.518, not P(X=1)≈0.386.",
+   "rule": "P(X=k)=((nk))pk(1−p)n−k"
+  },
+  {
+   "id": "IV.15.07",
+   "name": "Binomial mean & spread",
+   "steps": {
+    "a": "np",
+    "b": "√(np(1 − p))",
+    "c": "interpret them",
+    "d": "the shape of the distribution"
+   },
+   "wrong_turn": "The standard deviation is np(1−p), not np(1−p). For n=100, p=0.5: σ=25=5, not 25.",
+   "rule": "μ=np,σ=np(1−p)"
+  },
+  {
+   "id": "IV.15.08",
+   "name": "The normal distribution",
+   "steps": {
+    "a": "the bell curve",
+    "b": "the 68–95–99.7 rule",
+    "c": "mean and standard deviation",
+    "d": "is it roughly normal?"
+   },
+   "wrong_turn": "The 68–95–99.7 rule counts both sides. About 95% of values lie within 2 standard deviations of the mean, so about 2.5% lie above μ+2σ, not 5%.",
+   "rule": "X∼N(μ,σ2)"
+  },
+  {
+   "id": "IV.15.09",
+   "name": "Normal probabilities",
+   "steps": {
+    "a": "with z-scores",
+    "b": "between two values",
+    "c": "inverse normal: find a value",
+    "d": "with technology"
+   },
+   "wrong_turn": "Table values are areas to the left. For z=1, P(Z≤1)≈0.8413, so P(Z≥1)≈0.1587, not 0.8413.",
+   "rule": "P(a≤X≤b)=P((a−μσ)≤Z≤(b−μσ))"
+  },
+  {
+   "id": "IV.15.10",
+   "name": "Scatter plots & correlation",
+   "steps": {
+    "a": "direction, form and strength",
+    "b": "the correlation coefficient r",
+    "c": "correlation vs causation",
+    "d": "outliers and influence"
+   },
+   "wrong_turn": "Correlation is not causation. Ice cream sales and drownings rise together, but hot weather drives both; banning ice cream won't prevent drownings.",
+   "rule": "r=(1n−1)∑((x−x‾sx))((y−y‾sy))"
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+  "branch": "VII.4",
+  "intro": "A vector space is any collection of things that can be added and scaled the way arrows can, including lists of numbers, polynomials and even functions. This branch learns the shared language for measuring the size and shape of such collections.",
+  "skills": {
+    "VII.4.01": {
+      "what": "A vector space is a collection where adding and scaling always work and follow the usual rules. Arrows in the plane are the standard example.",
+      "levels": {
+        "a": "Checks that adding or scaling never takes you outside the collection.",
+        "b": "Checks there is a zero element and every element has a negative.",
+        "c": "Checks the remaining rules, such as brackets and order not mattering.",
+        "d": "Tests whether a proposed collection really is a vector space."
+      }
+    },
+    "VII.4.02": {
+      "what": "A subspace is a smaller vector space sitting inside a bigger one, like a flat plane through the center of 3D space.",
+      "levels": {
+        "a": "Checks that the collection contains the zero vector.",
+        "b": "Checks that adding two members always gives another member.",
+        "c": "Checks that scaling a member always gives another member.",
+        "d": "Sorts examples into subspaces and non-subspaces, with reasons."
+      }
+    },
+    "VII.4.03": {
+      "what": "The span of a set is everything you can build by mixing its members in any amounts.",
+      "levels": {
+        "a": "Describes a span as all possible combinations of the vectors.",
+        "b": "Shows a span is always a subspace.",
+        "c": "Finds sets of vectors that span a given space.",
+        "d": "Decides whether a set reaches every vector in the whole space."
+      }
+    },
+    "VII.4.04": {
+      "what": "Vectors are linearly independent if none of them can be built from the others, so none is redundant.",
+      "levels": {
+        "a": "Uses the definition: only the all-zero mix gives the zero vector.",
+        "b": "Tests independence by row reduction.",
+        "c": "Finds the exact relation when vectors do depend on each other.",
+        "d": "Uses quick rules, such as too many vectors always being dependent."
+      }
+    },
+    "VII.4.05": {
+      "what": "A basis is a set of building blocks with no redundancy that can build everything in the space, like the directions east, north and up.",
+      "levels": {
+        "a": "Checks a set is both independent and spanning.",
+        "b": "Finds a basis for a given space.",
+        "c": "Uses the standard basis for common spaces.",
+        "d": "Removes extra vectors from a set, or adds missing ones, to make a basis."
+      }
+    },
+    "VII.4.06": {
+      "what": "The dimension of a space is the number of vectors in any basis, a precise version of how many directions it has.",
+      "levels": {
+        "a": "Understands why every basis of a space has the same size.",
+        "b": "Finds the dimension of a given space.",
+        "c": "Relates the dimension of a subspace to the space containing it.",
+        "d": "Meets spaces that no finite basis can cover, such as all polynomials."
+      }
+    },
+    "VII.4.07": {
+      "what": "The null space of a matrix is every input the matrix sends to zero.",
+      "levels": {
+        "a": "Describes it as all solutions of the system that equals zero.",
+        "b": "Finds a basis for it.",
+        "c": "Shows it is a subspace.",
+        "d": "Connects its size to the number of free variables."
+      }
+    },
+    "VII.4.08": {
+      "what": "The column space of a matrix is every output it can produce, built from its columns.",
+      "levels": {
+        "a": "Describes it as the span of the matrix's columns.",
+        "b": "Finds a basis using the pivot columns of the original matrix.",
+        "c": "Decides whether a given vector is in it.",
+        "d": "Links it to when a system has a solution."
+      }
+    },
+    "VII.4.09": {
+      "what": "The row space of a matrix is everything built from its rows.",
+      "levels": {
+        "a": "Describes it as the span of the rows.",
+        "b": "Finds a basis from the nonzero rows of the tidied matrix.",
+        "c": "Sees it as the column space of the transpose.",
+        "d": "Compares it with the column space and their sizes."
+      }
+    },
+    "VII.4.10": {
+      "what": "The rank of a matrix is how many truly independent rows or columns it has, a measure of how much information it carries.",
+      "levels": {
+        "a": "Finds the rank by counting pivots.",
+        "b": "Learns that counting by rows or by columns gives the same rank.",
+        "c": "Recognizes full-rank matrices.",
+        "d": "Uses rank to decide whether a matrix has an inverse."
+      }
+    },
+    "VII.4.11": {
+      "what": "The rank–nullity theorem says the directions a matrix keeps plus the directions it crushes to zero add up to the number of inputs.",
+      "levels": {
+        "a": "States the theorem: rank plus nullity equals the number of columns.",
+        "b": "Uses it to find one number from the other.",
+        "c": "Predicts how big a solution set will be.",
+        "d": "Explains why the theorem is true."
+      }
+    },
+    "VII.4.12": {
+      "what": "Coordinates describe a vector by how much of each basis vector it takes, like giving an address in a chosen grid.",
+      "levels": {
+        "a": "Understands coordinates relative to a chosen basis.",
+        "b": "Finds a vector's coordinates in a given basis.",
+        "c": "Treats turning vectors into coordinates as a map.",
+        "d": "Sees that any space of dimension n behaves just like lists of n numbers."
+      }
+    },
+    "VII.4.13": {
+      "what": "Changing basis means translating coordinates from one grid to another, like converting between two map systems.",
+      "levels": {
+        "a": "Builds the matrix that converts between bases.",
+        "b": "Uses it to convert coordinates.",
+        "c": "Converts between two unusual bases.",
+        "d": "Explains why a well-chosen basis can make a problem much simpler."
+      }
+    },
+    "VII.4.14": {
+      "what": "Polynomials and functions can also be added and scaled, so they form vector spaces too.",
+      "levels": {
+        "a": "Treats polynomials up to a certain degree as a vector space.",
+        "b": "Finds and uses bases made of polynomials.",
+        "c": "Works with spaces made of functions.",
+        "d": "Tests whether a set of functions is independent."
+      }
+    },
+    "VII.4.15": {
+      "what": "Every solution set of a system is one particular solution plus all solutions of the matching zero system, like a plane shifted off the center.",
+      "levels": {
+        "a": "Writes solutions as one particular solution plus the zero-system solutions.",
+        "b": "Pictures the solution set as a shifted line or plane.",
+        "c": "Writes any solution set in this form.",
+        "d": "Sees the same pattern in differential equations later on."
+      }
+    },
+    "VII.4.16": {
+      "what": "Every matrix comes with four key subspaces that together give a complete picture of what the matrix does.",
+      "levels": {
+        "a": "Names the four: column space, row space, null space, and the null space of the transpose.",
+        "b": "Finds the dimension of each.",
+        "c": "Identifies which pairs sit at right angles to each other.",
+        "d": "Draws the big-picture diagram connecting all four."
+      }
+    }
+  }
+}

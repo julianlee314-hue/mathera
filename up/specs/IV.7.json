@@ -1,0 +1,210 @@
+{
+ "unit": "IV.7",
+ "name": "Quadratics",
+ "skills": [
+  {
+   "id": "IV.7.01",
+   "name": "Parabola features",
+   "steps": {
+    "a": "vertex",
+    "b": "axis of symmetry",
+    "c": "opens up or down",
+    "d": "intercepts"
+   },
+   "wrong_turn": "The vertex isn't always the y-intercept. For y = x² − 4x + 3 the y-intercept is (0, 3), but the vertex is (2, −1).",
+   "rule": "A parabola has a vertex, an axis of symmetry through it, a direction (up or down) and intercepts."
+  },
+  {
+   "id": "IV.7.02",
+   "name": "Graph vertex form",
+   "steps": {
+    "a": "read (h, k)",
+    "b": "effect of a",
+    "c": "plot symmetric points",
+    "d": "sketch"
+   },
+   "wrong_turn": "In y = (x + 1)² the vertex is at x = −1, not +1. The sign inside flips.",
+   "rule": "y=a(x−h)2+k has vertex (h,k); a sets the direction and width."
+  },
+  {
+   "id": "IV.7.03",
+   "name": "Graph standard form",
+   "steps": {
+    "a": "x = −b/2a",
+    "b": "find the vertex",
+    "c": "y-intercept c",
+    "d": "sketch"
+   },
+   "wrong_turn": "The vertex x is −b/(2a), not −b/a or b/(2a). For 2x² − 8x + 5, it's 8/4 = 2.",
+   "rule": "For y=ax2+bx+c, the vertex is at x=−(b2a)."
+  },
+  {
+   "id": "IV.7.04",
+   "name": "Graph factored form",
+   "steps": {
+    "a": "read the zeros",
+    "b": "vertex halfway between",
+    "c": "direction from a",
+    "d": "sketch"
+   },
+   "wrong_turn": "y = (x + 1)(x − 5) has zeros −1 and 5, not 1 and −5. Set each factor equal to 0.",
+   "rule": "y=a(x−r)(x−s) has zeros r and s and vertex at x=(r+s2)."
+  },
+  {
+   "id": "IV.7.05",
+   "name": "Convert quadratic forms",
+   "steps": {
+    "a": "vertex to standard",
+    "b": "factored to standard",
+    "c": "standard to factored",
+    "d": "what each form shows best"
+   },
+   "wrong_turn": "Expanding 2(x − 3)² − 8: square first, then multiply by 2: 2(x² − 6x + 9) − 8, not (2x − 6)² − 8.",
+   "rule": "Vertex form shows the vertex, factored form shows the zeros, standard form shows the y-intercept."
+  },
+  {
+   "id": "IV.7.06",
+   "name": "Solve by square roots",
+   "steps": {
+    "a": "isolate x²",
+    "b": "± root",
+    "c": "(x − h)² = k",
+    "d": "no real solution cases"
+   },
+   "wrong_turn": "x² = 25 has two solutions, 5 and −5. Taking √ on both sides needs the ±.",
+   "rule": "If x2=k with k>0, then x=±k."
+  },
+  {
+   "id": "IV.7.07",
+   "name": "Solve by factoring",
+   "steps": {
+    "a": "set equal to zero",
+    "b": "factor",
+    "c": "zero product property",
+    "d": "check both roots"
+   },
+   "wrong_turn": "(x − 2)(x + 3) = 6 does not give x − 2 = 6 or x + 3 = 6. Only a product equal to 0 splits.",
+   "rule": "If ab=0, then a=0 or b=0."
+  },
+  {
+   "id": "IV.7.08",
+   "name": "Completing the square",
+   "steps": {
+    "a": "half b, square it",
+    "b": "add to both sides",
+    "c": "with a ≠ 1",
+    "d": "solve"
+   },
+   "wrong_turn": "Add (b/2)² to both sides. Adding 9 on the left of x² + 6x = 7 but not the right breaks the equation.",
+   "rule": "Add ((b2))2 to x2+bx to get (x+(b2))2."
+  },
+  {
+   "id": "IV.7.09",
+   "name": "Vertex form by completing",
+   "steps": {
+    "a": "group x terms",
+    "b": "complete the square",
+    "c": "balance the constant",
+    "d": "read the vertex"
+   },
+   "wrong_turn": "When a ≠ 1, the added number is multiplied by a: 2(x² + 4x + 4) adds 8, so subtract 8, not 4.",
+   "rule": "Complete the square inside a(x2+(ba)x)+c to reach a(x−h)2+k."
+  },
+  {
+   "id": "IV.7.10",
+   "name": "Quadratic formula",
+   "steps": {
+    "a": "identify a, b, c",
+    "b": "substitute carefully",
+    "c": "simplify the radical",
+    "d": "rearrange first, then use the formula"
+   },
+   "wrong_turn": "The whole numerator is over 2a: x = (−b ± √(b² − 4ac))/(2a), not −b ± √(b² − 4ac)/2a.",
+   "rule": "ax2+bx+c=0⟺x=(−b±b2−4ac2a)"
+  },
+  {
+   "id": "IV.7.11",
+   "name": "Discriminant",
+   "steps": {
+    "a": "b² − 4ac",
+    "b": "two, one or no real roots",
+    "c": "rational vs irrational roots",
+    "d": "link to the graph"
+   },
+   "wrong_turn": "The discriminant is b² − 4ac, not √(b² − 4ac). Negative b² − 4ac means no real roots, not a negative root.",
+   "rule": "Δ=b2−4ac: positive gives two real roots, zero gives one, negative gives none."
+  },
+  {
+   "id": "IV.7.12",
+   "name": "Choosing a method",
+   "steps": {
+    "a": "square roots when no b",
+    "b": "factoring when it factors",
+    "c": "formula always",
+    "d": "justify the choice"
+   },
+   "wrong_turn": "Factoring only works when it factors nicely. Don't spend long on 3x² − 7x + 1: its discriminant 37 isn't a perfect square.",
+   "rule": "No b term: square roots. Easy factors: factoring. Otherwise: the quadratic formula, which always works."
+  },
+  {
+   "id": "IV.7.13",
+   "name": "Projectile motion",
+   "steps": {
+    "a": "h(t) = −16t² + v₀t + h₀ or −4.9t²",
+    "b": "max height",
+    "c": "time to land",
+    "d": "when it reaches a height"
+   },
+   "wrong_turn": "The −16 is already half of 32. Don't write h(t) = −32t² + v₀t + h₀ in feet.",
+   "rule": "h(t)=−16t2+v0t+h0 in feet, or −4.9t2+v0t+h0 in metres."
+  },
+  {
+   "id": "IV.7.14",
+   "name": "Area & optimization",
+   "steps": {
+    "a": "write area as a quadratic",
+    "b": "find the vertex",
+    "c": "max area or revenue",
+    "d": "interpret the answer"
+   },
+   "wrong_turn": "Answer the question asked: the vertex x = 10 is a side length; the maximum area is the y-value, 100 m².",
+   "rule": "Write the quantity as a quadratic; its vertex gives the maximum or minimum."
+  },
+  {
+   "id": "IV.7.15",
+   "name": "Quadratic inequalities",
+   "steps": {
+    "a": "find the roots",
+    "b": "sign chart",
+    "c": "read from the graph",
+    "d": "interval answer"
+   },
+   "wrong_turn": "x² > 9 is not just x > 3. It's x < −3 or x > 3: both sides of the roots.",
+   "rule": "Find the roots, then test the sign of each interval between them."
+  },
+  {
+   "id": "IV.7.16",
+   "name": "Write a quadratic from features",
+   "steps": {
+    "a": "from vertex and a point",
+    "b": "from zeros and a point",
+    "c": "from three points",
+    "d": "check with a graph"
+   },
+   "wrong_turn": "A vertex and one point fix a, but the vertex must go in as (h, k): vertex (1, −2) gives y = a(x − 1)² − 2.",
+   "rule": "Use vertex form with a vertex, factored form with zeros, or a system with three points; then find a."
+  },
+  {
+   "id": "IV.7.17",
+   "name": "Quadratic regression",
+   "steps": {
+    "a": "spot a quadratic pattern",
+    "b": "second differences",
+    "c": "fit with technology",
+    "d": "predict and judge"
+   },
+   "wrong_turn": "A high R² doesn't make predictions far outside the data safe. A quadratic can turn and head the wrong way.",
+   "rule": "Constant second differences (for equally spaced x) mean a quadratic fits."
+  }
+ ]
+}

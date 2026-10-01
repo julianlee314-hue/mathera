@@ -1,0 +1,174 @@
+{
+ "unit": "V.6",
+ "name": "Right-triangle trig",
+ "skills": [
+  {
+   "id": "V.6.01",
+   "name": "Naming the sides",
+   "steps": {
+    "a": "hypotenuse",
+    "b": "opposite",
+    "c": "adjacent",
+    "d": "they change with the angle"
+   },
+   "wrong_turn": "The hypotenuse touches the angle too, but it is never the adjacent side. Adjacent means the leg next to the angle.",
+   "rule": "Hypotenuse: opposite the right angle. Opposite: across from θ. Adjacent: the other side touching θ."
+  },
+  {
+   "id": "V.6.02",
+   "name": "Trig ratios from similarity",
+   "steps": {
+    "a": "same angle, same ratio",
+    "b": "measure and compare",
+    "c": "SOH-CAH-TOA",
+    "d": "write all three ratios"
+   },
+   "wrong_turn": "Tangent doesn't use the hypotenuse. tan θ = opposite/adjacent, not opposite/hypotenuse.",
+   "rule": "sinθ=(opphyp), cosθ=(adjhyp), tanθ=(oppadj)."
+  },
+  {
+   "id": "V.6.03",
+   "name": "Find a side with sine",
+   "steps": {
+    "a": "choose sine",
+    "b": "set up",
+    "c": "unknown on top",
+    "d": "unknown on the bottom"
+   },
+   "wrong_turn": "When the unknown is on the bottom, divide. From sin 30° = 5/h, h = 5/sin 30° = 10, not 5 × sin 30°.",
+   "rule": "opp=hyp⋅sinθ and hyp=(oppsinθ)."
+  },
+  {
+   "id": "V.6.04",
+   "name": "Find a side with cosine",
+   "steps": {
+    "a": "choose cosine",
+    "b": "set up",
+    "c": "unknown on top",
+    "d": "unknown on the bottom"
+   },
+   "wrong_turn": "Cosine pairs the adjacent side with the hypotenuse. Using cos θ for the opposite side swaps the two legs.",
+   "rule": "adj=hyp⋅cosθ and hyp=(adjcosθ)."
+  },
+  {
+   "id": "V.6.05",
+   "name": "Find a side with tangent",
+   "steps": {
+    "a": "choose tangent",
+    "b": "set up",
+    "c": "unknown on top",
+    "d": "unknown on the bottom"
+   },
+   "wrong_turn": "Tangent never uses the hypotenuse. If the hypotenuse is given or wanted, use sine or cosine.",
+   "rule": "opp=adj⋅tanθ and adj=(opptanθ)."
+  },
+  {
+   "id": "V.6.06",
+   "name": "Find an angle",
+   "steps": {
+    "a": "inverse trig meaning",
+    "b": "sin⁻¹, cos⁻¹, tan⁻¹",
+    "c": "choose the ratio",
+    "d": "round sensibly"
+   },
+   "wrong_turn": "sin⁻¹ x is the inverse sine, not 1/sin x. sin⁻¹(0.5) = 30°, but 1/sin 30° = 2.",
+   "rule": "θ=sin−1((opphyp)), and likewise with cos−1 and tan−1."
+  },
+  {
+   "id": "V.6.07",
+   "name": "Solve a right triangle",
+   "steps": {
+    "a": "all sides and angles",
+    "b": "given two sides",
+    "c": "given a side and angle",
+    "d": "check with Pythagoras"
+   },
+   "wrong_turn": "Solving means all three sides and all three angles. And the two acute angles must add to 90°: if they don't, something is wrong.",
+   "rule": "Given two sides, or one side and an acute angle, find all three sides and all three angles."
+  },
+  {
+   "id": "V.6.08",
+   "name": "45–45–90 triangles",
+   "steps": {
+    "a": "ratio 1 : 1 : √2",
+    "b": "from a leg",
+    "c": "from the hypotenuse",
+    "d": "square diagonals"
+   },
+   "wrong_turn": "The √2 goes on the hypotenuse, not the legs. Legs 5 give hypotenuse 5√2, but hypotenuse 5 gives legs 5/√2 ≈ 3.54.",
+   "rule": "The sides are in ratio 1:1:2."
+  },
+  {
+   "id": "V.6.09",
+   "name": "30–60–90 triangles",
+   "steps": {
+    "a": "ratio 1 : √3 : 2",
+    "b": "from the short leg",
+    "c": "from the other sides",
+    "d": "equilateral heights"
+   },
+   "wrong_turn": "The √3 goes on the longer leg, opposite 60°, not on the hypotenuse. The hypotenuse is exactly twice the short leg.",
+   "rule": "The sides are in ratio 1:3:2, opposite 30°, 60° and 90°."
+  },
+  {
+   "id": "V.6.10",
+   "name": "Elevation & depression",
+   "steps": {
+    "a": "draw the picture",
+    "b": "angle of elevation",
+    "c": "angle of depression",
+    "d": "two-triangle problems"
+   },
+   "wrong_turn": "The angle of depression is measured down from the horizontal, not from the vertical cliff or wall.",
+   "rule": "Elevation and depression are measured from the horizontal, and they are equal."
+  },
+  {
+   "id": "V.6.11",
+   "name": "Cofunctions",
+   "steps": {
+    "a": "sin A = cos(90° − A)",
+    "b": "why it works",
+    "c": "solve with it",
+    "d": "the \"co\" in cosine"
+   },
+   "wrong_turn": "Complements add to 90°, not 180°. sin 20° = cos 70°, not cos 160°.",
+   "rule": "sinA=cos(90°−A) and cosA=sin(90°−A)."
+  },
+  {
+   "id": "V.6.12",
+   "name": "Pythagorean identity",
+   "steps": {
+    "a": "sin² + cos² = 1 from the triangle",
+    "b": "find cos from sin",
+    "c": "find tan from both",
+    "d": "check exact values"
+   },
+   "wrong_turn": "sin²θ + cos²θ = 1 is about squares. sin θ + cos θ is not 1: at 45° it is √2 ≈ 1.41.",
+   "rule": "sin2θ+cos2θ=1"
+  },
+  {
+   "id": "V.6.13",
+   "name": "Reciprocal ratios",
+   "steps": {
+    "a": "cosecant",
+    "b": "secant",
+    "c": "cotangent",
+    "d": "evaluate from a triangle"
+   },
+   "wrong_turn": "Secant goes with cosine and cosecant goes with sine: sec θ = 1/cos θ, not 1/sin θ.",
+   "rule": "cscθ=(1sinθ), secθ=(1cosθ), cotθ=(1tanθ)."
+  },
+  {
+   "id": "V.6.14",
+   "name": "Calculator trig",
+   "steps": {
+    "a": "degree vs radian mode",
+    "b": "inverse keys",
+    "c": "rounding in steps",
+    "d": "exact vs approximate"
+   },
+   "wrong_turn": "In radian mode a calculator gives wrong answers for degree angles without warning: sin 90 shows 0.894, not 1.",
+   "rule": "Check degree or radian mode; round only the final answer."
+  }
+ ]
+}

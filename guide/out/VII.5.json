@@ -1,0 +1,87 @@
+{
+  "branch": "VII.5",
+  "intro": "A linear transformation is a rule that moves vectors around while keeping straight lines straight, such as a rotation or a stretch. This branch shows that every such rule can be captured by a matrix.",
+  "skills": {
+    "VII.5.01": {
+      "what": "A linear transformation is a function on vectors that respects adding and scaling. Rotating a picture is an example.",
+      "levels": {
+        "a": "Checks that transforming a sum equals the sum of the transformed parts.",
+        "b": "Checks that scaling before or after transforming gives the same result.",
+        "c": "Tests whether a given rule is linear.",
+        "d": "Uses the fact that a linear map always sends zero to zero."
+      }
+    },
+    "VII.5.02": {
+      "what": "Every linear transformation of ordinary space can be written as a matrix, found by seeing where the basic directions go.",
+      "levels": {
+        "a": "Finds where the basic unit arrows are sent.",
+        "b": "Builds the matrix from those images.",
+        "c": "Applies the matrix to transform any vector.",
+        "d": "Understands that every such linear map comes from a matrix."
+      }
+    },
+    "VII.5.03": {
+      "what": "Familiar geometric moves such as turning, mirroring and slanting are all linear transformations with simple matrices.",
+      "levels": {
+        "a": "Writes and uses matrices for rotations.",
+        "b": "Writes and uses matrices for reflections in a line.",
+        "c": "Writes matrices for shears (slants) and stretches.",
+        "d": "Writes matrices that project vectors flat onto a line."
+      }
+    },
+    "VII.5.04": {
+      "what": "The kernel is everything a transformation squashes to zero; the range is everything it can reach.",
+      "levels": {
+        "a": "Identifies the kernel with the matrix's null space.",
+        "b": "Identifies the range with the matrix's column space.",
+        "c": "Finds bases for both.",
+        "d": "Finds their dimensions and relates them."
+      }
+    },
+    "VII.5.05": {
+      "what": "A map is one-to-one if different inputs never land in the same place, and onto if every possible output is reached.",
+      "levels": {
+        "a": "Tests one-to-one by checking only zero goes to zero.",
+        "b": "Tests onto by checking the range fills the whole space.",
+        "c": "Uses pivot positions to test both quickly.",
+        "d": "Sees that a map with both properties can be undone."
+      }
+    },
+    "VII.5.06": {
+      "what": "Composition means doing one transformation and then another, which matches multiplying their matrices.",
+      "levels": {
+        "a": "Applies one map and then a second.",
+        "b": "Finds the combined matrix by multiplying.",
+        "c": "Gets the order of multiplication right, since it matters.",
+        "d": "Combines geometric moves, such as a rotation then a reflection."
+      }
+    },
+    "VII.5.07": {
+      "what": "An inverse transformation undoes the original, like rotating back the other way.",
+      "levels": {
+        "a": "Describes the map that undoes a given one.",
+        "b": "Finds it using the inverse matrix.",
+        "c": "Decides when an inverse exists.",
+        "d": "Describes inverses of geometric moves, such as undoing a shear."
+      }
+    },
+    "VII.5.08": {
+      "what": "Linear maps also act on polynomials and functions. Taking a derivative is itself a linear transformation.",
+      "levels": {
+        "a": "Sees taking the derivative as a linear map.",
+        "b": "Represents such a map by a matrix once bases are chosen.",
+        "c": "Computes that matrix for a given map.",
+        "d": "Sees integration as a linear map too."
+      }
+    },
+    "VII.5.09": {
+      "what": "Similar matrices describe the same transformation seen through different coordinate systems.",
+      "levels": {
+        "a": "Recognizes the change-of-basis sandwich that makes matrices similar.",
+        "b": "Explains it as one map described in two bases.",
+        "c": "Lists properties that similar matrices share.",
+        "d": "Chooses a basis that makes the matrix especially simple."
+      }
+    }
+  }
+}

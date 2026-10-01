@@ -1,0 +1,149 @@
+{
+  "branch": "II.3",
+  "intro": "This branch teaches division as sharing and grouping, then builds up to long division. Division undoes multiplication, and knowing how to handle leftovers makes it useful in real life.",
+  "skills": {
+    "II.3.01": {
+      "what": "Dividing by sharing things out equally, so each group gets the same amount.",
+      "levels": {
+        "a": "Shares objects equally between 2 groups.",
+        "b": "Shares objects equally among 3, 4 or 5 groups.",
+        "c": "Works out how many each gets in a sharing story, without a picture.",
+        "d": "Writes a sharing situation as a division, like 10 divided by 2."
+      }
+    },
+    "II.3.02": {
+      "what": "Dividing by making groups of a set size and counting how many groups there are.",
+      "levels": {
+        "a": "Makes groups of a given size from a set of objects.",
+        "b": "Works out how many groups a story makes, like packs of 3 cards.",
+        "c": "Writes a grouping situation as a division.",
+        "d": "Tells whether a story is about sharing out or making groups."
+      }
+    },
+    "II.3.03": {
+      "what": "Seeing division as a multiplication with a missing number: 12 divided by 3 asks what times 3 makes 12.",
+      "levels": {
+        "a": "Answers a division by thinking of the matching multiplication.",
+        "b": "Knows the fact family: the four related facts made from three numbers, like 2, 9 and 18.",
+        "c": "Uses known times table facts to answer divisions.",
+        "d": "Finds a missing number wherever it sits in a multiplication or division."
+      }
+    },
+    "II.3.04": {
+      "what": "Learning the division facts that go with the times tables.",
+      "levels": {
+        "a": "Divides by 1, 2, 5 and 10.",
+        "b": "Divides by 3 and 4.",
+        "c": "Divides by 6, 7, 8 and 9.",
+        "d": "Recalls any division fact from memory."
+      }
+    },
+    "II.3.05": {
+      "what": "Learning the special cases of dividing with 0 and 1, including why nothing can be divided by zero.",
+      "levels": {
+        "a": "Knows that dividing by 1 leaves a number unchanged.",
+        "b": "Knows that any number divided by itself is 1.",
+        "c": "Knows that 0 divided by any number is 0.",
+        "d": "Explains why dividing by 0 has no answer."
+      }
+    },
+    "II.3.06": {
+      "what": "Dealing with remainders, the amount left over when a number doesn't divide exactly.",
+      "levels": {
+        "a": "Finds how many are left over after making equal groups.",
+        "b": "Writes a division with a remainder, like 26 divided by 3 is 8 R 2.",
+        "c": "Knows the remainder must always be smaller than the number being divided by.",
+        "d": "Works backwards from an answer and remainder to find the starting number.",
+        "e": "Finds the largest or smallest number that leaves a given remainder.",
+        "f": "Finds a mystery number from two remainder clues, testing numbers in a range."
+      }
+    },
+    "II.3.07": {
+      "what": "Deciding what a remainder means in a real situation, since the right answer depends on the story.",
+      "levels": {
+        "a": "Rounds up when everyone needs a place, like tables or buses.",
+        "b": "Drops the remainder when only full groups count, like complete teams.",
+        "c": "Shares the remainder as a fraction, like cutting ribbon into equal pieces.",
+        "d": "Chooses which of these makes sense for a given problem.",
+        "e": "Solves problems that need a step or two before dividing, like adding teachers to students.",
+        "f": "Uses the remainder after dividing by 7 to find the weekday many days from now."
+      }
+    },
+    "II.3.08": {
+      "what": "Dividing numbers that end in zeros, like 2,400 divided by 3, using known facts.",
+      "levels": {
+        "a": "Divides a tens number by a single digit, like 240 divided by 3.",
+        "b": "Divides a hundreds or thousands number by a single digit.",
+        "c": "Divides by a multiple of ten, like 240 divided by 30.",
+        "d": "Uses one fact to complete a pattern, such as 24, 240 and 2,400 divided by 3."
+      }
+    },
+    "II.3.09": {
+      "what": "Dividing a two-digit number by a one-digit number, such as 84 divided by 4.",
+      "levels": {
+        "a": "Shares place value blocks (tens and ones) into equal groups.",
+        "b": "Takes away easy chunks, like 40 groups of 2, and adds up the chunks.",
+        "c": "Follows the steps of long division: divide, subtract, bring down.",
+        "d": "Does long division when there is a remainder."
+      }
+    },
+    "II.3.10": {
+      "what": "Using long division to divide bigger numbers by a one-digit number.",
+      "levels": {
+        "a": "Divides a three-digit number by a single digit.",
+        "b": "The same with four-digit numbers.",
+        "c": "Handles answers with a zero in the middle.",
+        "d": "Checks a division by multiplying the answer back.",
+        "e": "Finds missing digits in a long division, checking by multiplying back.",
+        "f": "Counts how many numbers in a range divide exactly by a given number."
+      }
+    },
+    "II.3.11": {
+      "what": "Dividing by a two-digit number, such as 1,377 divided by 17.",
+      "levels": {
+        "a": "Picks a sensible estimate for the answer.",
+        "b": "Takes away large easy chunks of the divisor and adds them up.",
+        "c": "Uses long division with a two-digit divisor.",
+        "d": "Adjusts a first guess that turns out too small or too big."
+      }
+    },
+    "II.3.12": {
+      "what": "Using quick tests to tell whether a number divides exactly by 2, 3, 4, 5, 6, 9 or 10.",
+      "levels": {
+        "a": "Tests for 2, 5 and 10 by looking at the last digit.",
+        "b": "Tests for 3 and 9 by adding up the digits.",
+        "c": "Tests for 4 and 6.",
+        "d": "Applies the right test to decide about a given number.",
+        "e": "Finds the smallest missing digit that makes a number pass a divisibility test.",
+        "f": "Counts numbers in a range that divide by one number but not by another."
+      }
+    },
+    "II.3.13": {
+      "what": "Using division to solve everyday word problems.",
+      "levels": {
+        "a": "Solves problems about sharing equally.",
+        "b": "Solves problems about making groups of a set size.",
+        "c": "Solves problems with leftovers, giving full groups and the amount left.",
+        "d": "Solves problems that take more than one step."
+      }
+    },
+    "II.3.14": {
+      "what": "Solving word problems that could need any of the four operations: adding, subtracting, multiplying or dividing.",
+      "levels": {
+        "a": "Chooses which operation a problem needs.",
+        "b": "Solves problems that take two steps with different operations.",
+        "c": "Picks out which answer is reasonable.",
+        "d": "Writes an equation, using a letter for the unknown amount, that fits a story."
+      }
+    },
+    "II.3.15": {
+      "what": "Estimating the answer to a division to get a quick idea of its size.",
+      "levels": {
+        "a": "Swaps in nearby numbers that divide easily, like 540 divided by 6.",
+        "b": "Rounds both numbers to the nearest ten before dividing.",
+        "c": "Tells which two numbers the answer lies between.",
+        "d": "Uses an estimate to spot a wrong answer."
+      }
+    }
+  }
+}

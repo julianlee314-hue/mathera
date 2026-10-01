@@ -1,0 +1,175 @@
+{
+  "branch": "IV.12",
+  "intro": "Exponential functions describe things that grow or shrink by the same percent each step, like savings with interest or a cooling cup of tea. Logarithms are the reverse tool, answering \"what power do I need?\", and this branch uses both to solve real problems about growth, decay and scales like decibels.",
+  "skills": {
+    "IV.12.01": {
+      "what": "Understanding exponential growth: a quantity that is multiplied by the same number each step, like bacteria doubling every hour.",
+      "levels": {
+        "a": "Works out a growing amount by multiplying step after step.",
+        "b": "Uses a growth formula, starting amount times growth factor to the power x.",
+        "c": "Writes the formula from a starting amount and growth factor.",
+        "d": "Finds the starting amount and growth factor from a table.",
+        "e": "Finds the formula from two points on the curve.",
+        "f": "Finds a missing value from two others without working out the full formula."
+      }
+    },
+    "IV.12.02": {
+      "what": "Understanding exponential decay: a quantity that shrinks by the same percent each step, like a car losing value.",
+      "levels": {
+        "a": "Tells growth from decay by whether the multiplier is above or below 1.",
+        "b": "Converts a decay multiplier, like 0.96, into a percent loss, like 4 percent.",
+        "c": "Finds the decay multiplier and percent loss from a table.",
+        "d": "Solves real problems, such as a car's value after several years."
+      }
+    },
+    "IV.12.03": {
+      "what": "Graphing exponential functions and recognizing their shape: a curve that levels off on one side and shoots up or down on the other.",
+      "levels": {
+        "a": "Finds key points on an exponential graph.",
+        "b": "Describes the flat line the graph approaches on one side.",
+        "c": "Gives the allowed inputs and possible outputs.",
+        "d": "Tells a growth curve from a decay curve.",
+        "e": "Finds the growth factor from a point on the graph.",
+        "f": "Counts solutions of an equation by picturing two graphs, without solving."
+      }
+    },
+    "IV.12.04": {
+      "what": "Shifting, flipping and stretching exponential graphs.",
+      "levels": {
+        "a": "Describes shifts up, down, left and right.",
+        "b": "Recognizes flips over the x-axis.",
+        "c": "Tracks how a point moves under a stretch and flip.",
+        "d": "Finds the new flat line the graph approaches and the new range.",
+        "e": "Finds three unknown numbers in the formula from three points.",
+        "f": "Shows that a stretch of an exponential graph is really a sideways shift."
+      }
+    },
+    "IV.12.05": {
+      "what": "Writing growth and decay models from percent changes, like prices rising 3 percent a year.",
+      "levels": {
+        "a": "Turns a percent increase into a multiplier, such as 3 percent becoming 1.03.",
+        "b": "Turns a percent decrease into a multiplier, such as 3 percent becoming 0.97.",
+        "c": "Writes the full model from a starting amount and a percent rate.",
+        "d": "Converts a weekly rate into the equivalent yearly rate."
+      }
+    },
+    "IV.12.06": {
+      "what": "Calculating compound interest, where interest is added to savings regularly and then earns interest itself.",
+      "levels": {
+        "a": "Uses the compound interest formula to find a final amount.",
+        "b": "Works out the rate per period and the number of periods, such as quarterly.",
+        "c": "Compares two savings offers to see which pays more.",
+        "d": "Finds how long money takes to reach a target, using logarithms."
+      }
+    },
+    "IV.12.07": {
+      "what": "Meeting the number e, about 2.718, which arises when interest is compounded continuously and appears throughout science.",
+      "levels": {
+        "a": "Sees e emerge by compounding more and more often.",
+        "b": "Uses the continuous growth formula for money.",
+        "c": "Evaluates points on the graph of e to the power x.",
+        "d": "Uses continuous growth for populations and similar settings.",
+        "e": "Finds exact rates and times, such as a doubling time.",
+        "f": "Finds a limit value that turns out to be a power of e."
+      }
+    },
+    "IV.12.08": {
+      "what": "Understanding a logarithm as the answer to \"what power?\": log base 3 of 243 asks what power of 3 gives 243.",
+      "levels": {
+        "a": "Finds a logarithm by asking which power gives the number.",
+        "b": "Uses the link between a logarithm statement and a power statement.",
+        "c": "Uses common logs (base 10) and natural logs (base e).",
+        "d": "Knows the log of 1 is 0 and the log of the base is 1, and that logs and powers undo each other."
+      }
+    },
+    "IV.12.09": {
+      "what": "Switching between power form, such as 2 to the 4 equals 16, and logarithm form, log base 2 of 16 equals 4.",
+      "levels": {
+        "a": "Rewrites a power statement as a logarithm.",
+        "b": "Rewrites a logarithm as a power statement.",
+        "c": "Does the same with e and the natural log.",
+        "d": "Solves simple log equations by switching forms."
+      }
+    },
+    "IV.12.10": {
+      "what": "Working out the value of logarithms, by hand when possible and by calculator otherwise.",
+      "levels": {
+        "a": "Evaluates logs of exact powers by hand.",
+        "b": "Evaluates logs whose answers are fractions or negative numbers.",
+        "c": "Estimates a log between two whole numbers.",
+        "d": "Uses a calculator for other logs.",
+        "e": "Evaluates logs involving roots and bases that are themselves powers.",
+        "f": "Multiplies a long chain of logs that collapses to one simple value."
+      }
+    },
+    "IV.12.11": {
+      "what": "Using the log rules, which turn multiplying into adding, dividing into subtracting, and powers into multiplying.",
+      "levels": {
+        "a": "Uses the rule that the log of a product is a sum of logs.",
+        "b": "Uses the rule that the log of a quotient is a difference of logs.",
+        "c": "Uses the rule that the log of a power brings the power to the front.",
+        "d": "Expands one log into several, and combines several into one."
+      }
+    },
+    "IV.12.12": {
+      "what": "Changing the base of a logarithm, which lets a calculator work out logs in any base.",
+      "levels": {
+        "a": "Recognizes the change-of-base formula.",
+        "b": "Evaluates a log in any base with a calculator.",
+        "c": "Explains why the formula works using power form.",
+        "d": "Compares the sizes of logs in different bases."
+      }
+    },
+    "IV.12.13": {
+      "what": "Graphing logarithmic functions, which rise quickly at first and then ever more slowly.",
+      "levels": {
+        "a": "Sees the log graph as the mirror image of an exponential graph.",
+        "b": "Finds the upright line the graph approaches but never reaches.",
+        "c": "Tracks how points move under shifts and stretches.",
+        "d": "Finds the allowed inputs, which must keep the inside positive.",
+        "e": "Finds the base and shift from features of the graph.",
+        "f": "Solves an equation mixing a log and a straight line by spotting the single crossing."
+      }
+    },
+    "IV.12.14": {
+      "what": "Solving exponential equations, where the unknown is in the power.",
+      "levels": {
+        "a": "Rewrites both sides with the same base when possible.",
+        "b": "Takes logs of both sides to bring the unknown down.",
+        "c": "Gets the power alone before taking logs.",
+        "d": "Gives both an exact answer and a decimal.",
+        "e": "Pulls out a shared power before solving.",
+        "f": "Solves an equation that is really a quadratic in 3 to the power x."
+      }
+    },
+    "IV.12.15": {
+      "what": "Solving equations that contain logarithms.",
+      "levels": {
+        "a": "Rewrites a log equation in power form to solve it.",
+        "b": "Combines logs into one first, then solves.",
+        "c": "Sets the insides equal when a log equals a log in the same base.",
+        "d": "Checks answers, rejecting any that make a log's inside zero or negative.",
+        "e": "Solves when logs have different bases.",
+        "f": "Solves an equation that is a quadratic in the log itself."
+      }
+    },
+    "IV.12.16": {
+      "what": "Using half-life (time to halve) and doubling time to model decay and growth, such as carbon dating.",
+      "levels": {
+        "a": "Finds how much remains after a time, given the half-life.",
+        "b": "Finds how many there are after a time, given the doubling time.",
+        "c": "Finds the time taken to reach a given amount.",
+        "d": "Estimates the age of an old object by carbon dating."
+      }
+    },
+    "IV.12.17": {
+      "what": "Using log scales, like decibels, pH and earthquake magnitudes, and fitting exponential models to data.",
+      "levels": {
+        "a": "Uses the formulas for pH and decibels.",
+        "b": "Compares earthquake sizes, where each step up means ten times the shaking.",
+        "c": "Uses a calculator to fit an exponential model to data.",
+        "d": "Takes logs of data to turn a curve into a straight line."
+      }
+    }
+  }
+}

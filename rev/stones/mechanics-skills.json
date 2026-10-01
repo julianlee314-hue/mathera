@@ -1,0 +1,101 @@
+[
+ {
+  "id": "VI.12.01",
+  "name": "Kinematics graphs",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "displacement–time gradient is velocity",
+   "b": "velocity–time gradient is acceleration",
+   "c": "area is displacement",
+   "d": "distance vs displacement"
+  }
+ },
+ {
+  "id": "VI.12.02",
+  "name": "Constant acceleration",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "the suvat equations",
+   "b": "choose the right one",
+   "c": "solve",
+   "d": "two-stage journeys"
+  }
+ },
+ {
+  "id": "VI.12.03",
+  "name": "Vertical motion",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "g acts downward",
+   "b": "up and back down",
+   "c": "maximum height",
+   "d": "time in the air"
+  }
+ },
+ {
+  "id": "VI.12.04",
+  "name": "Forces & Newton's laws",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "weight, normal reaction and tension",
+   "b": "resultant force",
+   "c": "F = ma",
+   "d": "Newton's third law"
+  }
+ },
+ {
+  "id": "VI.12.05",
+  "name": "Resolving forces",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "components with sin and cos",
+   "b": "equilibrium",
+   "c": "inclined planes",
+   "d": "find an unknown force"
+  }
+ },
+ {
+  "id": "VI.12.06",
+  "name": "Connected particles",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "tension in a string",
+   "b": "pulleys",
+   "c": "solve for acceleration",
+   "d": "lifts and towing"
+  }
+ },
+ {
+  "id": "VI.12.07",
+  "name": "Friction",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "F ≤ μR",
+   "b": "limiting friction",
+   "c": "on a slope",
+   "d": "will it slide?"
+  }
+ },
+ {
+  "id": "VI.12.08",
+  "name": "Projectiles",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "split into horizontal and vertical",
+   "b": "time of flight",
+   "c": "range and maximum height",
+   "d": "aim to hit a target"
+  }
+ },
+ {
+  "id": "VI.12.09",
+  "name": "Moments",
+  "unit": "VI.12 Mechanics",
+  "steps": {
+   "a": "force × perpendicular distance",
+   "b": "balanced rods",
+   "c": "on the point of tipping",
+   "d": "find a support force"
+  }
+ }
+]

@@ -1,0 +1,149 @@
+{
+  "branch": "III.1",
+  "intro": "This branch introduces negative numbers (numbers below zero) and fractions and decimals that can be negative too. They are the everyday language of temperatures, debts, and depths, and every later topic in algebra depends on them.",
+  "skills": {
+    "III.1.01": {
+      "what": "Understanding numbers below zero through real situations like cold weather, depths, and money owed.",
+      "levels": {
+        "a": "Reads temperatures below zero and works out the new temperature after a drop.",
+        "b": "Writes heights below sea level as negative numbers.",
+        "c": "Writes a debt as a negative amount of money.",
+        "d": "Finds the opposite of a number, the same distance from zero on the other side."
+      }
+    },
+    "III.1.02": {
+      "what": "Placing positive and negative whole numbers (integers) on a number line and using it to compare them.",
+      "levels": {
+        "a": "Names the whole number marked at a point on a number line, including below zero.",
+        "b": "Finds a pair of opposites on a number line from the gap between them.",
+        "c": "Compares two negative numbers, knowing that further left means smaller.",
+        "d": "Puts a mixed list of positive and negative numbers in order from least to greatest."
+      }
+    },
+    "III.1.03": {
+      "what": "Absolute value is a number's distance from zero, ignoring whether it is positive or negative.",
+      "levels": {
+        "a": "Says how far a number is from zero on a number line.",
+        "b": "Reads the absolute value symbol, two straight bars around a number, and works inside it first.",
+        "c": "Compares the sizes of two numbers using their absolute values.",
+        "d": "Uses absolute value in real settings, like which of two things is farther from sea level.",
+        "e": "Finds both numbers a set distance from a point, or counts whole numbers within that distance.",
+        "f": "Finds the point that makes a total of distances to three numbers as small as possible."
+      }
+    },
+    "III.1.04": {
+      "what": "Adding positive and negative numbers, and understanding why the answer comes out the way it does.",
+      "levels": {
+        "a": "Adds two numbers with the same sign by adding their sizes.",
+        "b": "Adds a negative and a positive number by moving along a number line.",
+        "c": "Uses plus and minus counters that cancel in pairs to add numbers with different signs.",
+        "d": "Uses the rules directly to add numbers with different signs, without a picture.",
+        "e": "Finds the missing number in a subtraction with negative answers, like 18 minus what makes negative 1.",
+        "f": "Adds a long list with alternating plus and minus signs by pairing terms up."
+      }
+    },
+    "III.1.05": {
+      "what": "Subtracting positive and negative numbers, including taking away a negative.",
+      "levels": {
+        "a": "Rewrites a subtraction as adding the opposite, so taking away minus 15 means adding 15.",
+        "b": "Subtracts by moving left along a number line.",
+        "c": "Finds the distance between two points on a number line, even across zero.",
+        "d": "Works through a string of additions and subtractions with mixed signs."
+      }
+    },
+    "III.1.06": {
+      "what": "Multiplying positive and negative numbers and knowing whether the answer is positive or negative.",
+      "levels": {
+        "a": "Continues a multiplication pattern past zero to see why a positive times a negative is negative.",
+        "b": "Uses the sign rules: same signs give a positive, different signs give a negative.",
+        "c": "Multiplies three or more numbers, counting the negatives to decide the sign.",
+        "d": "Uses multiplication with negatives in real settings, like a steady temperature fall."
+      }
+    },
+    "III.1.07": {
+      "what": "Dividing positive and negative numbers, using the same sign rules as multiplication.",
+      "levels": {
+        "a": "Divides using the sign rules, such as a negative divided by a negative is positive.",
+        "b": "Uses a known multiplication fact to answer the matching division.",
+        "c": "Reads a fraction bar as division and works out fractions that include negatives.",
+        "d": "Works through mixed division and multiplication, left to right."
+      }
+    },
+    "III.1.08": {
+      "what": "Doing calculations in the right order (brackets, then multiplying and dividing, then adding and subtracting) with negative numbers.",
+      "levels": {
+        "a": "Works out calculations with two operations, doing multiplying or dividing first.",
+        "b": "Works out the part in brackets first, then the rest.",
+        "c": "Handles longer calculations that mix brackets, operations, and negative numbers.",
+        "d": "Spots the mistake in someone else's worked calculation and explains what went wrong.",
+        "e": "Chooses where brackets go, with negative numbers, to reach a target answer.",
+        "f": "Chooses plus, minus or times signs between negative and positive numbers to make the smallest value."
+      }
+    },
+    "III.1.09": {
+      "what": "A rational number is any number that can be written as a fraction of two whole numbers, including negatives.",
+      "levels": {
+        "a": "Shows that a whole number like minus 13 can be written as a fraction.",
+        "b": "Places negative fractions correctly on a number line.",
+        "c": "Rewrites a negative decimal as a fraction in simplest form.",
+        "d": "Simplifies fractions with negative signs, such as a negative over a negative."
+      }
+    },
+    "III.1.10": {
+      "what": "Adding and subtracting fractions and decimals that may be negative.",
+      "levels": {
+        "a": "Adds and subtracts negative fractions and simplifies the answer.",
+        "b": "Adds and subtracts negative decimals.",
+        "c": "Combines a fraction and a decimal in one calculation.",
+        "d": "Solves real problems, like a temperature warming up from below zero."
+      }
+    },
+    "III.1.11": {
+      "what": "Multiplying and dividing fractions and decimals that may be negative.",
+      "levels": {
+        "a": "Multiplies fractions where one is negative and simplifies the answer.",
+        "b": "Multiplies negative decimals.",
+        "c": "Finds a reciprocal (the number that multiplies to make 1), such as minus one third for minus 3.",
+        "d": "Finds a fraction of a negative fraction, such as four fifths of minus three fifths."
+      }
+    },
+    "III.1.12": {
+      "what": "Turning fractions into decimals and noticing whether the decimal stops or repeats forever.",
+      "levels": {
+        "a": "Divides the top of a fraction by the bottom to get a decimal.",
+        "b": "Matches decimals that end, like 0.8, with their fractions.",
+        "c": "Writes a repeating decimal, like 0.181818…, using a bar over the repeating part.",
+        "d": "Predicts from the bottom of a fraction whether its decimal will end or repeat."
+      }
+    },
+    "III.1.13": {
+      "what": "Turning a repeating decimal back into an exact fraction.",
+      "levels": {
+        "a": "Turns a single repeating digit, like 0.222…, into a fraction.",
+        "b": "Turns a repeating pair of digits, like 0.141414…, into a fraction.",
+        "c": "Handles decimals where the repeat starts later, like 0.1888….",
+        "d": "Understands that a repeating 9 equals the next number up, so 0.999… is exactly 1.",
+        "e": "Turns a decimal where the repeat starts one place later, like 0.7555…, into a fraction.",
+        "f": "Adds two decimals with repeating pairs of digits and gives the answer as a simple fraction."
+      }
+    },
+    "III.1.14": {
+      "what": "Comparing and ordering fractions and decimals, both positive and negative.",
+      "levels": {
+        "a": "Compares a fraction with a decimal to see which is larger.",
+        "b": "Compares negative fractions and decimals, including ones that are equal.",
+        "c": "Finds where a negative fraction sits on a number line.",
+        "d": "Orders a mixed list of positive and negative fractions and decimals."
+      }
+    },
+    "III.1.15": {
+      "what": "Using a full coordinate grid, with negative numbers on both axes, to locate points.",
+      "levels": {
+        "a": "Names which of the four quarters of the grid a point lies in.",
+        "b": "Finds a point on the grid from its pair of coordinates, including negatives.",
+        "c": "Reflects a point across the axes, like a mirror, and gives where it lands.",
+        "d": "Finds the distance between two points that sit on the same row or column."
+      }
+    }
+  }
+}

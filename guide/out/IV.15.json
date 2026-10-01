@@ -1,0 +1,106 @@
+{
+  "branch": "IV.15",
+  "intro": "This branch covers how to measure the spread of data and how to model chance with standard patterns, like the bell curve. These are the basic tools behind surveys, test scores and scientific studies.",
+  "skills": {
+    "IV.15.01": {
+      "what": "Finding the standard deviation: a measure of how spread out data are around the average.",
+      "levels": {
+        "a": "Finds how far each value is from the average.",
+        "b": "Finds the variance, the average of those distances squared.",
+        "c": "Finds the standard deviation, the square root of the variance.",
+        "d": "Uses the slightly different formula for a sample rather than a whole population."
+      }
+    },
+    "IV.15.02": {
+      "what": "Calculating summary statistics, such as the average and spread, from tables and totals rather than raw lists.",
+      "levels": {
+        "a": "Finds the mode and other summaries from a frequency table.",
+        "b": "Estimates the average from data grouped into ranges.",
+        "c": "Finds the average and spread from given totals.",
+        "d": "Works out how the average and spread change when every value is scaled or shifted.",
+        "e": "Combines the summaries of two groups into one.",
+        "f": "Corrects the average and spread after one value turns out to be wrong."
+      }
+    },
+    "IV.15.03": {
+      "what": "Using z-scores, which say how many standard deviations a value is above or below average.",
+      "levels": {
+        "a": "Converts a value into a z-score.",
+        "b": "Compares performance across different groups using z-scores.",
+        "c": "Identifies unusual values, more than 2 standard deviations from average.",
+        "d": "Converts a z-score back into the original value.",
+        "e": "Finds the average and spread from two values and their z-scores.",
+        "f": "Works out how a z-score changes when every score is transformed."
+      }
+    },
+    "IV.15.04": {
+      "what": "Working with random variables: a number whose value depends on chance, described by a table of values and probabilities.",
+      "levels": {
+        "a": "Reads chances from a probability table.",
+        "b": "Uses the fact that all the probabilities must add up to 1.",
+        "c": "Finds the expected value, the long-run average.",
+        "d": "Finds the variance, a measure of spread."
+      }
+    },
+    "IV.15.05": {
+      "what": "Recognizing a binomial setting: a fixed number of independent tries, each with the same chance of success.",
+      "levels": {
+        "a": "Knows the four conditions a binomial setting must meet.",
+        "b": "Identifies the number of tries and the chance of success.",
+        "c": "Decides whether a real situation is binomial.",
+        "d": "Identifies which condition fails when it is not."
+      }
+    },
+    "IV.15.06": {
+      "what": "Calculating binomial probabilities: the chance of getting a certain number of successes in a set of tries.",
+      "levels": {
+        "a": "Uses the formula for exactly a given number of successes.",
+        "b": "Adds chances to find the chance of up to a given number.",
+        "c": "Finds chances of \"at least\" and \"at most\" a number.",
+        "d": "Uses a calculator for bigger problems.",
+        "e": "Finds how many tries are needed to reach a target chance.",
+        "f": "Finds the success chance that makes two counts equally likely."
+      }
+    },
+    "IV.15.07": {
+      "what": "Finding the average and spread of a binomial count, using short formulas.",
+      "levels": {
+        "a": "Finds the expected count: number of tries times chance of success.",
+        "b": "Finds the standard deviation with its formula.",
+        "c": "Uses them to judge whether a result is unusual.",
+        "d": "Describes the shape of the distribution, balanced or lopsided.",
+        "e": "Works backwards from the average and variance to the tries and chance.",
+        "f": "Finds the tries and chance from the average of the count squared."
+      }
+    },
+    "IV.15.08": {
+      "what": "Understanding the normal distribution, the familiar bell curve that describes many measurements like heights.",
+      "levels": {
+        "a": "Recognizes the bell curve and finds its center.",
+        "b": "Uses the rule that about 68, 95 and 99.7 percent lie within 1, 2 and 3 standard deviations.",
+        "c": "Finds the average and standard deviation from the rule.",
+        "d": "Judges whether data are roughly bell-shaped.",
+        "e": "Runs the rule backwards to find the average and spread from percentages.",
+        "f": "Uses the rule to find a chance given that a value is above average."
+      }
+    },
+    "IV.15.09": {
+      "what": "Finding probabilities for bell-curve data using z-scores or a calculator.",
+      "levels": {
+        "a": "Uses z-scores to find the chance of being above or below a value.",
+        "b": "Finds the chance of falling between two values.",
+        "c": "Works backwards from a chance to the value that gives it.",
+        "d": "Uses a calculator for normal chances."
+      }
+    },
+    "IV.15.10": {
+      "what": "Reading scatter plots and correlation: how strongly two measurements move together in a straight-line pattern.",
+      "levels": {
+        "a": "Describes the direction, shape and strength of a pattern in a scatter plot.",
+        "b": "Matches a scatter plot to its correlation number r, between minus 1 and 1.",
+        "c": "Explains why two things moving together does not prove one causes the other.",
+        "d": "Sees how one far-off point can strengthen or weaken the pattern."
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "branch": "VI.2",
+  "intro": "This branch introduces the derivative, which measures how fast something is changing at a single moment. It covers what the derivative means and the rules for calculating it quickly.",
+  "skills": {
+    "VI.2.01": {
+      "what": "The difference between average speed over a trip and your exact speed at one instant. The instant speed is what a speedometer shows.",
+      "levels": {
+        "a": "Finds the average rate of change over a stretch, like average speed.",
+        "b": "Shrinks the stretch smaller and smaller to close in on the instant rate.",
+        "c": "Explains the instant rate as a speedometer-style reading.",
+        "d": "Estimates an instant rate from a table of measured values."
+      }
+    },
+    "VI.2.02": {
+      "what": "Finding the line that just touches a curve at one point (the tangent) by looking at lines through two nearby points.",
+      "levels": {
+        "a": "Draws lines through two points on a curve (secant lines).",
+        "b": "Sees the slopes of these lines settle on one value as the points get closer.",
+        "c": "Identifies that settled line as the tangent line at the point.",
+        "d": "Zooms into a smooth curve until it looks straight, matching the tangent."
+      }
+    },
+    "VI.2.03": {
+      "what": "The official definition of a derivative as a limit: the slope between two points as the gap between them shrinks to nothing.",
+      "levels": {
+        "a": "Writes the slope formula between x and a nearby point x plus h.",
+        "b": "Computes the derivative of x squared directly from the definition.",
+        "c": "Does the same for one over x and the square root of x.",
+        "d": "Uses a second version of the definition to find the slope at one specific point."
+      }
+    },
+    "VI.2.04": {
+      "what": "The different ways derivatives are written, and what each piece of notation means.",
+      "levels": {
+        "a": "Reads and writes the \"f prime\" notation for a derivative.",
+        "b": "Reads and writes the \"dy over dx\" notation.",
+        "c": "Writes the derivative at one specific input, a single number.",
+        "d": "Gives the units of a derivative, such as meters per second."
+      }
+    },
+    "VI.2.05": {
+      "what": "A function is differentiable where its graph is smooth enough to have a clear slope. Sharp points and vertical spots are where this fails.",
+      "levels": {
+        "a": "Spots sharp corners, where there is no single slope.",
+        "b": "Spots cusps, where the graph comes to a pointed tip.",
+        "c": "Spots places where the tangent line is vertical.",
+        "d": "Explains why a function with a slope at a point must be unbroken there."
+      }
+    },
+    "VI.2.06": {
+      "what": "Sketching the graph of the derivative by reading slopes off the original graph, and working back the other way.",
+      "levels": {
+        "a": "Turns steepness on the original graph into height on the new graph.",
+        "b": "Marks zeros of the derivative where the original graph is flat.",
+        "c": "Sketches the whole derivative graph from the original.",
+        "d": "Works backwards, sketching the original graph from the derivative graph."
+      }
+    },
+    "VI.2.07": {
+      "what": "The power rule, a shortcut for the derivative of x raised to any power: bring the power down and lower it by one.",
+      "levels": {
+        "a": "Uses the power rule for whole-number powers like x cubed.",
+        "b": "Uses it for negative powers, such as one over x squared.",
+        "c": "Uses it for fractional powers, such as square roots.",
+        "d": "Rewrites roots and fractions as powers first, then differentiates."
+      }
+    },
+    "VI.2.08": {
+      "what": "Basic rules: constants have zero rate of change, multipliers carry through, and sums can be done piece by piece.",
+      "levels": {
+        "a": "Knows the derivative of a plain constant is zero.",
+        "b": "Keeps a number multiplier in front while differentiating.",
+        "c": "Differentiates sums and differences term by term.",
+        "d": "Differentiates whole polynomials quickly in one line."
+      }
+    },
+    "VI.2.09": {
+      "what": "The product rule, for finding the derivative of two things multiplied together.",
+      "levels": {
+        "a": "States the product rule formula.",
+        "b": "Applies it to a product of two functions.",
+        "c": "Extends it to a product of three functions.",
+        "d": "Explains why the answer is not simply the two derivatives multiplied."
+      }
+    },
+    "VI.2.10": {
+      "what": "The quotient rule, for finding the derivative of one thing divided by another.",
+      "levels": {
+        "a": "States the quotient rule formula.",
+        "b": "Applies it to a fraction of two functions.",
+        "c": "Simplifies the often messy result into a neat final answer.",
+        "d": "Recognizes when rewriting the fraction first is easier than the quotient rule."
+      }
+    },
+    "VI.2.11": {
+      "what": "The derivatives of the trigonometry functions, like sine and cosine, which describe waves and rotation.",
+      "levels": {
+        "a": "Uses the derivatives of sine and cosine.",
+        "b": "Uses the derivatives of tangent and secant.",
+        "c": "Uses the derivatives of cosecant and cotangent.",
+        "d": "Derives the sine and cosine rules from the limit definition."
+      }
+    },
+    "VI.2.12": {
+      "what": "The derivatives of exponential functions, which describe growth like compound interest, and of logarithms, which undo them.",
+      "levels": {
+        "a": "Uses the fact that e to the x is its own derivative.",
+        "b": "Differentiates other bases, like 2 to the x.",
+        "c": "Differentiates the natural logarithm, ln x.",
+        "d": "Differentiates logarithms in other bases."
+      }
+    },
+    "VI.2.13": {
+      "what": "The chain rule, for functions nested inside other functions. Multiply the rate of the outer layer by the rate of the inner layer.",
+      "levels": {
+        "a": "Identifies the inside and outside functions of a nested expression.",
+        "b": "Applies the chain rule once to find a derivative.",
+        "c": "Applies it several times for functions nested more than two deep.",
+        "d": "Combines the chain rule with the product and quotient rules."
+      }
+    },
+    "VI.2.14": {
+      "what": "Finding slopes on curves like circles, where y is mixed in with x and cannot easily be separated out.",
+      "levels": {
+        "a": "Differentiates both sides of an equation involving x and y.",
+        "b": "Recognizes where \"dy over dx\" appears when differentiating y terms.",
+        "c": "Rearranges to solve for \"dy over dx\".",
+        "d": "Finds the slope of the curve at a specific point."
+      }
+    },
+    "VI.2.15": {
+      "what": "Finding the derivative of a function that undoes another, such as arcsine undoing sine.",
+      "levels": {
+        "a": "Uses the general formula linking the slopes of a function and its inverse.",
+        "b": "Differentiates arcsine and arccosine.",
+        "c": "Differentiates arctangent.",
+        "d": "Finds the slope of an inverse function using only a table of values."
+      }
+    },
+    "VI.2.16": {
+      "what": "Taking the derivative again, and again. The second derivative measures how the rate itself is changing, like acceleration.",
+      "levels": {
+        "a": "Finds the second derivative by differentiating twice.",
+        "b": "Spots patterns to write the derivative after any number of steps.",
+        "c": "Finds second derivatives for curves where x and y are mixed.",
+        "d": "Reads and writes the notation for higher derivatives."
+      }
+    },
+    "VI.2.17": {
+      "what": "A trick for messy derivatives: take the logarithm of both sides first, which turns products and powers into simpler sums.",
+      "levels": {
+        "a": "Takes the natural log of both sides of an equation.",
+        "b": "Differentiates the result and solves for the derivative.",
+        "c": "Handles functions like x to the power x, with the variable in both places.",
+        "d": "Uses the method to tame long products and quotients."
+      }
+    },
+    "VI.2.18": {
+      "what": "Hyperbolic functions are cousins of sine and cosine built from exponentials. One of them describes the shape of a hanging chain.",
+      "levels": {
+        "a": "Defines hyperbolic sine and cosine using e to the x.",
+        "b": "Sketches their graphs.",
+        "c": "Checks their key identity: cosh squared minus sinh squared equals one.",
+        "d": "Finds their derivatives."
+      }
+    }
+  }
+}

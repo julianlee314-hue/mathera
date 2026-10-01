@@ -1,0 +1,140 @@
+{
+  "branch": "II.7",
+  "intro": "This branch introduces decimals, the numbers with a point like 2.75, which are another way to write tenths and hundredths. They connect fractions to money and measurement, and the learner learns to calculate with them.",
+  "skills": {
+    "II.7.01": {
+      "what": "Understanding tenths written as decimals, where 0.1 means one tenth of a whole.",
+      "levels": {
+        "a": "Sees that 0.1 is one tenth, so 0.2 is two tenths.",
+        "b": "Names the decimal shown by a bar cut into ten parts.",
+        "c": "Names decimals marked on a number line.",
+        "d": "Matches a decimal like 2.8 to its words, two and eight tenths."
+      }
+    },
+    "II.7.02": {
+      "what": "Understanding hundredths written as decimals, where 0.01 means one hundredth of a whole.",
+      "levels": {
+        "a": "Writes a number of hundredths as a decimal, as in 81 hundredths is 0.81.",
+        "b": "Names the decimal shown on a grid of 100 squares.",
+        "c": "Matches a decimal like 1.83 to its words.",
+        "d": "Knows that 0.8 (eight tenths) is more than 0.06 (six hundredths)."
+      }
+    },
+    "II.7.03": {
+      "what": "Knowing what each digit after the decimal point is worth: tenths, then hundredths, then thousandths.",
+      "levels": {
+        "a": "Tells the value of a digit in the tenths place.",
+        "b": "Tells the value of a digit in the hundredths place.",
+        "c": "Tells the value of a digit in the thousandths place.",
+        "d": "Breaks a decimal into the value of each digit, as in 2.786 = 2 + 0.7 + 0.08 + 0.006."
+      }
+    },
+    "II.7.04": {
+      "what": "Switching between fractions and decimals, since they are two ways of writing the same amount.",
+      "levels": {
+        "a": "Writes tenths as fractions and decimals, as in 0.8 is eight tenths.",
+        "b": "Writes hundredths as decimals, including fractions that can be scaled to hundredths.",
+        "c": "Knows the common ones: one half is 0.5, one quarter 0.25, three quarters 0.75.",
+        "d": "Writes a decimal as a fraction in simplest form."
+      }
+    },
+    "II.7.05": {
+      "what": "Deciding which of two or more decimals is bigger, and putting them in order.",
+      "levels": {
+        "a": "Compares decimals with the same number of digits after the point.",
+        "b": "Compares decimals of different lengths, knowing 0.5 is more than 0.45.",
+        "c": "Names decimals on a finely marked number line.",
+        "d": "Puts a list of decimals in order from least to greatest.",
+        "e": "Counts which digits can fill a gap and keep a decimal comparison true.",
+        "f": "Counts every decimal with up to two places that lies between two given numbers."
+      }
+    },
+    "II.7.06": {
+      "what": "Rounding decimals to a simpler nearby number, such as the nearest whole number or tenth.",
+      "levels": {
+        "a": "Rounds a decimal to the nearest whole number.",
+        "b": "Rounds a decimal to the nearest tenth.",
+        "c": "Rounds a decimal to the nearest hundredth.",
+        "d": "Rounds to estimate an answer, as in 9.8 times 6 is about 60."
+      }
+    },
+    "II.7.07": {
+      "what": "Adding decimals, keeping the decimal points lined up so tenths add to tenths.",
+      "levels": {
+        "a": "Adds decimals with tenths.",
+        "b": "Adds decimals with hundredths in columns.",
+        "c": "Lines up the points correctly when adding a whole number to a decimal.",
+        "d": "Adds decimals with different numbers of digits after the point.",
+        "e": "Finds missing digits in a decimal addition, using what was carried.",
+        "f": "Places four digits in two decimals to make a sum as close as possible to a target."
+      }
+    },
+    "II.7.08": {
+      "what": "Subtracting decimals, keeping the decimal points lined up.",
+      "levels": {
+        "a": "Subtracts decimals with tenths.",
+        "b": "Subtracts decimals with hundredths in columns, borrowing when needed.",
+        "c": "Lines up the points correctly when the numbers have different lengths.",
+        "d": "Subtracts a decimal from a whole number by filling in zeros, as in 17 minus 13.85."
+      }
+    },
+    "II.7.09": {
+      "what": "Multiplying and dividing decimals by 10, 100 and 1,000, and understanding what really happens.",
+      "levels": {
+        "a": "Multiplies a decimal by 10.",
+        "b": "Multiplies a decimal by 100 and by 1,000.",
+        "c": "Divides a decimal by 10.",
+        "d": "Explains that the digits move to new places while the point stays still."
+      }
+    },
+    "II.7.10": {
+      "what": "Multiplying a decimal by a whole number, like 8.3 times 8.",
+      "levels": {
+        "a": "Uses pictures of bars to multiply, such as 2 lots of 0.8.",
+        "b": "Uses the written method to multiply.",
+        "c": "Multiplies as if there were no point, then puts the point back in the right place.",
+        "d": "Estimates the answer by rounding first."
+      }
+    },
+    "II.7.11": {
+      "what": "Multiplying one decimal by another, like 1.8 times 3.6.",
+      "levels": {
+        "a": "Uses a split rectangle (area model) to multiply the parts.",
+        "b": "Counts the digits after the points to place the point in the answer.",
+        "c": "Uses the written method to multiply decimals.",
+        "d": "Estimates the answer by rounding first.",
+        "e": "Works backwards: finds the missing number in a decimal multiplication.",
+        "f": "Uses one known product, like 15 times 23, to work out related decimal products quickly."
+      }
+    },
+    "II.7.12": {
+      "what": "Dividing a decimal by a whole number, including money amounts.",
+      "levels": {
+        "a": "Shares a decimal amount on a hundred grid into equal groups.",
+        "b": "Uses long division, keeping the point in line.",
+        "c": "Adds zeros after the point to keep dividing until nothing is left.",
+        "d": "Shares a sum of money equally."
+      }
+    },
+    "II.7.13": {
+      "what": "Dividing by a decimal, such as how many 0.8 m pieces fit in 16.8 m.",
+      "levels": {
+        "a": "Multiplies both numbers by 10 or 100 to make the divisor a whole number.",
+        "b": "Uses the written method to divide by a decimal.",
+        "c": "Estimates the answer by rounding first.",
+        "d": "Solves word problems, like cutting a ribbon into equal pieces."
+      }
+    },
+    "II.7.14": {
+      "what": "Using decimals to work with money in dollars and cents.",
+      "levels": {
+        "a": "Writes cents as part of a dollar, as in 83 cents is $0.83.",
+        "b": "Adds and subtracts money, such as working out change.",
+        "c": "Multiplies a price by a number of items.",
+        "d": "Works out what is left of a budget after several purchases.",
+        "e": "Solves shopping problems that need several steps to find one item's price.",
+        "f": "Solves a puzzle: two items' total and difference in price are known; finds each price."
+      }
+    }
+  }
+}

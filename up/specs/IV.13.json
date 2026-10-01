@@ -1,0 +1,174 @@
+{
+ "unit": "IV.13",
+ "name": "Sequences & series",
+ "skills": [
+  {
+   "id": "IV.13.01",
+   "name": "Sequence notation",
+   "steps": {
+    "a": "terms and aₙ",
+    "b": "find terms from a formula",
+    "c": "finite vs infinite",
+    "d": "write a formula from terms"
+   },
+   "wrong_turn": "The 1st term uses n = 1, not n = 0: for aₙ = 3n − 1 the first term is 2, not −1.",
+   "rule": "an is the nth term; a formula for an gives any term from its position."
+  },
+  {
+   "id": "IV.13.02",
+   "name": "Arithmetic sequences",
+   "steps": {
+    "a": "common difference",
+    "b": "explicit formula (d is the slope)",
+    "c": "find a term",
+    "d": "find which term"
+   },
+   "wrong_turn": "Which term is 203? Solve for n; don't divide 203 by d. The start value matters.",
+   "rule": "an=a1+(n−1)d, where d is the common difference."
+  },
+  {
+   "id": "IV.13.03",
+   "name": "Geometric sequences",
+   "steps": {
+    "a": "common ratio",
+    "b": "explicit formula",
+    "c": "find a term",
+    "d": "find which term with logs"
+   },
+   "wrong_turn": "The ratio is found by dividing, not subtracting: 3, 6, 12 has r = 2, not 3 or 6.",
+   "rule": "an=a1⋅rn−1, where r is the common ratio."
+  },
+  {
+   "id": "IV.13.04",
+   "name": "Recursive vs explicit",
+   "steps": {
+    "a": "read a recursive rule",
+    "b": "generate terms",
+    "c": "convert recursive to explicit",
+    "d": "when each is useful"
+   },
+   "wrong_turn": "A recursive rule needs a starting value: aₙ = aₙ₋₁ + 3 alone could be 1, 4, 7 or 5, 8, 11.",
+   "rule": "Recursive: a1 and a rule for an from an−1. Explicit: a formula in n."
+  },
+  {
+   "id": "IV.13.05",
+   "name": "Arithmetic series",
+   "steps": {
+    "a": "Gauss's pairing trick",
+    "b": "Sₙ formula",
+    "c": "find n or a₁",
+    "d": "stacking and seating problems"
+   },
+   "wrong_turn": "The number of terms from 5 to 50 by 5s is 10, not 45 or 9. Count terms carefully before using the formula.",
+   "rule": "Sn=(n(a1+an)2)"
+  },
+  {
+   "id": "IV.13.06",
+   "name": "Finite geometric series",
+   "steps": {
+    "a": "the formula",
+    "b": "sum it by multiplying and subtracting",
+    "c": "apply it",
+    "d": "find n"
+   },
+   "wrong_turn": "The exponent in the formula is n, the number of terms, not n − 1: eight terms of 3·2^(k−1) use 2⁸.",
+   "rule": "Sn=a1(1−rn1−r),r≠1"
+  },
+  {
+   "id": "IV.13.07",
+   "name": "Sigma notation",
+   "steps": {
+    "a": "read Σ",
+    "b": "expand a sum",
+    "c": "write a sum in Σ",
+    "d": "properties of sums"
+   },
+   "wrong_turn": "Σ from k = 1 to 5 of 2 is 10, not 2. A constant term is added once for each value of k.",
+   "rule": "∑k=1nak=a1+a2+⋯+an"
+  },
+  {
+   "id": "IV.13.08",
+   "name": "Infinite geometric series",
+   "steps": {
+    "a": "when r is between −1 and 1",
+    "b": "S = a/(1 − r)",
+    "c": "repeating decimals as fractions",
+    "d": "shifted starting index and bouncing balls"
+   },
+   "wrong_turn": "1 + 2 + 4 + 8 + … has no sum: r = 2, so a/(1 − r) = −1 is meaningless here. Check |r| < 1 first.",
+   "rule": "∑k=0∞ark=(a1−r)when |r|<1"
+  },
+  {
+   "id": "IV.13.09",
+   "name": "Convergence informally",
+   "steps": {
+    "a": "partial sums",
+    "b": "converge vs diverge",
+    "c": "harmonic series surprise",
+    "d": "table and graph of partial sums"
+   },
+   "wrong_turn": "Terms going to 0 doesn't make a series converge: 1/n → 0, but 1 + 1/2 + 1/3 + … grows forever.",
+   "rule": "A series converges if its partial sums approach a finite number; otherwise it diverges."
+  },
+  {
+   "id": "IV.13.10",
+   "name": "Special recursive sequences",
+   "steps": {
+    "a": "Fibonacci",
+    "b": "golden ratio from ratios",
+    "c": "triangular and square numbers",
+    "d": "find patterns"
+   },
+   "wrong_turn": "Fibonacci doesn't double: 1, 1, 2, 3, 5, 8 grows by about 1.618 each step, not 2.",
+   "rule": "Fibonacci: F1=F2=1, Fn=Fn−1+Fn−2. Triangular: Tn=(n(n+1)2). Square: n2."
+  },
+  {
+   "id": "IV.13.11",
+   "name": "Sums of powers",
+   "steps": {
+    "a": "sum of 1 to n: n(n + 1)/2",
+    "b": "sum of squares: n(n + 1)(2n + 1)/6",
+    "c": "sum of cubes: (n(n + 1)/2)²",
+    "d": "mix them: Σ(ak² + bk + c)"
+   },
+   "wrong_turn": "Σk² from 1 to n is n(n + 1)(2n + 1)/6, not (n(n + 1)/2)²: that square is the sum of cubes.",
+   "rule": "Σk = n(n+1)/2, Σk² = n(n+1)(2n+1)/6, Σk³ = (n(n+1)/2)²."
+  },
+  {
+   "id": "IV.13.12",
+   "name": "Pascal's triangle",
+   "steps": {
+    "a": "build it",
+    "b": "patterns in rows",
+    "c": "link to combinations",
+    "d": "row sums as powers of 2"
+   },
+   "wrong_turn": "Rows start at 0: row 4 is 1, 4, 6, 4, 1, whose second entry is 4, not 3.",
+   "rule": "((nk))=((n−1k−1))+((n−1k))"
+  },
+  {
+   "id": "IV.13.13",
+   "name": "Binomial theorem",
+   "steps": {
+    "a": "coefficients from Pascal",
+    "b": "expand (a + b)ⁿ",
+    "c": "find a specific term",
+    "d": "with negatives and coefficients"
+   },
+   "wrong_turn": "(x + 2)⁴ is not x⁴ + 16. The middle terms carry both the Pascal numbers and powers of 2.",
+   "rule": "(a+b)n=∑k=0n((nk))an−kbk"
+  },
+  {
+   "id": "IV.13.14",
+   "name": "Series in money",
+   "steps": {
+    "a": "savings plans",
+    "b": "loan payments",
+    "c": "annuity formula",
+    "d": "compare plans"
+   },
+   "wrong_turn": "Saving $100 a month for 10 years isn't 100·(1.005)^120. Each deposit grows for a different time; sum them as a series.",
+   "rule": "Saving P per period at rate i for n periods: FV=P((1+i)n−1i)"
+  }
+ ]
+}

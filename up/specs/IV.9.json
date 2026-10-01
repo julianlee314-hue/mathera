@@ -1,0 +1,222 @@
+{
+ "unit": "IV.9",
+ "name": "Function toolkit",
+ "skills": [
+  {
+   "id": "IV.9.01",
+   "name": "Parent functions",
+   "steps": {
+    "a": "linear, quadratic, cubic",
+    "b": "root, absolute value, reciprocal",
+    "c": "exponential, log",
+    "d": "match graph to equation"
+   },
+   "wrong_turn": "√x and x² aren't the same curve: √x is only the right half of a parabola lying on its side, with domain x ≥ 0.",
+   "rule": "The parent functions: x, x2, x3, x, |x|, (1x), bx, logbx."
+  },
+  {
+   "id": "IV.9.02",
+   "name": "Vertical shifts",
+   "steps": {
+    "a": "f(x) + k",
+    "b": "up vs down",
+    "c": "graph it",
+    "d": "write it from a graph"
+   },
+   "wrong_turn": "y = x² − 3 moves down 3, not right 3. A number outside f moves the graph vertically.",
+   "rule": "y=f(x)+k shifts the graph of f up k units (down if k<0)."
+  },
+  {
+   "id": "IV.9.03",
+   "name": "Horizontal shifts",
+   "steps": {
+    "a": "f(x − h)",
+    "b": "why the sign feels backwards",
+    "c": "graph it",
+    "d": "write it from a graph"
+   },
+   "wrong_turn": "y = (x + 2)² moves left 2, not right 2. Where the inside equals 0 is the new vertex.",
+   "rule": "y=f(x−h) shifts the graph of f right h units (left if h<0)."
+  },
+  {
+   "id": "IV.9.04",
+   "name": "Reflections",
+   "steps": {
+    "a": "−f(x) over the x-axis",
+    "b": "f(−x) over the y-axis",
+    "c": "graph them",
+    "d": "identify from equations"
+   },
+   "wrong_turn": "−f(x) and f(−x) are different: for √x, −√x points down, √(−x) points left.",
+   "rule": "y=−f(x) reflects over the x-axis; y=f(−x) reflects over the y-axis."
+  },
+  {
+   "id": "IV.9.05",
+   "name": "Vertical stretch & compress",
+   "steps": {
+    "a": "a·f(x)",
+    "b": "a > 1 vs 0 < a < 1",
+    "c": "effect on points",
+    "d": "write from a graph"
+   },
+   "wrong_turn": "2f(x) doubles heights, not x-values: the zeros of 2f stay where f's zeros are.",
+   "rule": "y=af(x) stretches vertically by a if a>1 and compresses if 0<a<1."
+  },
+  {
+   "id": "IV.9.06",
+   "name": "Horizontal stretch & compress",
+   "steps": {
+    "a": "f(bx)",
+    "b": "factor 1/b",
+    "c": "effect on points",
+    "d": "write from a graph"
+   },
+   "wrong_turn": "f(2x) is squeezed by half, not stretched by 2. The point (4, 2) on √x becomes (2, 2) on √(2x).",
+   "rule": "y=f(bx) compresses horizontally by a factor (1b) (for b>1) and stretches it for 0<b<1."
+  },
+  {
+   "id": "IV.9.07",
+   "name": "Combined transformations",
+   "steps": {
+    "a": "order of operations",
+    "b": "map key points",
+    "c": "graph a full transformation",
+    "d": "describe one in words"
+   },
+   "wrong_turn": "In √(2x − 6), the start is x = 3, not 6. Factor out the 2 first: √(2(x − 3)).",
+   "rule": "For y=af(b(x−h))+k, a point (x,y) of f goes to ((xb)+h,ay+k)."
+  },
+  {
+   "id": "IV.9.08",
+   "name": "Even & odd functions",
+   "steps": {
+    "a": "f(−x) = f(x)",
+    "b": "f(−x) = −f(x)",
+    "c": "test algebraically",
+    "d": "neither"
+   },
+   "wrong_turn": "Odd functions aren't those with odd numbers: x³ + 1 is not odd. Test f(−x) = −f(x).",
+   "rule": "Even: f(−x)=f(x). Odd: f(−x)=−f(x)."
+  },
+  {
+   "id": "IV.9.09",
+   "name": "Symmetry of graphs",
+   "steps": {
+    "a": "y-axis symmetry",
+    "b": "origin symmetry",
+    "c": "other lines of symmetry",
+    "d": "use symmetry to finish a sketch"
+   },
+   "wrong_turn": "A function can't have x-axis symmetry unless it's y = 0: (x, y) and (x, −y) would give one input two outputs.",
+   "rule": "y-axis symmetry: (−x,y) is on the graph. Origin symmetry: (−x,−y) is. x-axis symmetry: (x,−y) is."
+  },
+  {
+   "id": "IV.9.10",
+   "name": "End behavior",
+   "steps": {
+    "a": "arrows notation",
+    "b": "as x → ±∞",
+    "c": "from a graph",
+    "d": "from an equation"
+   },
+   "wrong_turn": "\"f(x) → ∞\" doesn't mean f reaches a number called infinity. It means f grows past every number.",
+   "rule": "End behaviour describes f(x) as x→∞ and x→−∞."
+  },
+  {
+   "id": "IV.9.11",
+   "name": "Continuity informally",
+   "steps": {
+    "a": "draw without lifting",
+    "b": "jumps",
+    "c": "holes",
+    "d": "breaks at asymptotes"
+   },
+   "wrong_turn": "1/x isn't \"discontinuous at 0\" in the usual sense: 0 isn't in its domain. It's continuous everywhere it's defined.",
+   "rule": "Informally, f is continuous if its graph has no jumps, holes or breaks."
+  },
+  {
+   "id": "IV.9.12",
+   "name": "Asymptotes informally",
+   "steps": {
+    "a": "vertical",
+    "b": "horizontal",
+    "c": "from a graph",
+    "d": "meaning in context"
+   },
+   "wrong_turn": "A graph can cross its horizontal asymptote. The asymptote only describes what happens far out.",
+   "rule": "A vertical asymptote x=a is where f blows up; a horizontal asymptote y=L is a level f approaches at the ends."
+  },
+  {
+   "id": "IV.9.13",
+   "name": "One-to-one & inverses on graphs",
+   "steps": {
+    "a": "horizontal line test",
+    "b": "reflect over y = x",
+    "c": "inverse points (b, a)",
+    "d": "inverse domain and range"
+   },
+   "wrong_turn": "The vertical line test checks for a function; the horizontal line test checks for an inverse. Don't mix them up.",
+   "rule": "A function is one-to-one exactly when every horizontal line hits its graph at most once."
+  },
+  {
+   "id": "IV.9.14",
+   "name": "Restrict a domain",
+   "steps": {
+    "a": "why restrict",
+    "b": "restrict a parabola",
+    "c": "find the inverse on that piece",
+    "d": "check it"
+   },
+   "wrong_turn": "√(x²) is |x|, not x. On x ≤ 0, the inverse of x² is −√x.",
+   "rule": "Restrict the domain to a piece where f is one-to-one; then find the inverse on that piece."
+  },
+  {
+   "id": "IV.9.15",
+   "name": "Composition on graphs & tables",
+   "steps": {
+    "a": "f(g(a)) from tables",
+    "b": "from graphs",
+    "c": "domain of a composition",
+    "d": "in context"
+   },
+   "wrong_turn": "For f(g(2)), start with g: look up g(2) first, then use it as f's input. Not f(2) first.",
+   "rule": "To find f(g(a)) from tables or graphs, find g(a), then look up f at that value."
+  },
+  {
+   "id": "IV.9.16",
+   "name": "Choosing a model",
+   "steps": {
+    "a": "constant differences mean linear",
+    "b": "second differences mean quadratic",
+    "c": "constant ratios mean exponential",
+    "d": "justify from context"
+   },
+   "wrong_turn": "Increasing by bigger amounts each time isn't enough for exponential. Check ratios: 1, 4, 9, 16 has ratios 4, 2.25, 1.78: quadratic.",
+   "rule": "Constant differences: linear. Constant second differences: quadratic. Constant ratios: exponential."
+  },
+  {
+   "id": "IV.9.17",
+   "name": "Growth races",
+   "steps": {
+    "a": "linear vs exponential",
+    "b": "exponential eventually wins",
+    "c": "compare with tables",
+    "d": "compare with graphs"
+   },
+   "wrong_turn": "A bigger start doesn't win forever: 1000x beats 1.1^x for a long while, but 1.1^x still overtakes it eventually.",
+   "rule": "Any increasing exponential eventually exceeds any linear function, and any polynomial."
+  },
+  {
+   "id": "IV.9.18",
+   "name": "Modulus graphs",
+   "steps": {
+    "a": "y = |f(x)| reflects the negative part",
+    "b": "y = f(|x|) mirrors the right half",
+    "c": "solve |f(x)| = k with the graph",
+    "d": "combine with other transformations"
+   },
+   "wrong_turn": "Don't mix up the two. y=f(|x|) copies the right half onto the left; it doesn't flip what is below the axis. For f(x)=x−2 at x=−5: f(|x|)=3, but |f(x)|=7.",
+   "rule": "y=|f(x)|: reflect the part below the x-axis up. y=f(|x|): drop the left half and mirror the right half."
+  }
+ ]
+}

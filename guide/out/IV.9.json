@@ -1,0 +1,186 @@
+{
+  "branch": "IV.9",
+  "intro": "This branch builds a toolkit of basic graph shapes and the moves that change them: sliding, flipping and stretching. Knowing these lets a learner sketch and understand a new function quickly instead of plotting point by point.",
+  "skills": {
+    "IV.9.01": {
+      "what": "Getting to know the parent functions: the basic graph shapes, like the straight line and the U-shaped parabola, that others are built from.",
+      "levels": {
+        "a": "Recognizes the straight line, parabola and cubic (S-shaped) graphs.",
+        "b": "Recognizes the square root, V-shaped absolute value and reciprocal (one over x) graphs.",
+        "c": "Recognizes exponential (rapid growth) and logarithm (slow growth) graphs.",
+        "d": "Matches each graph to its equation.",
+        "e": "Recognizes a basic function written in an unfamiliar way.",
+        "f": "Counts how many times two basic graphs cross by picturing them."
+      }
+    },
+    "IV.9.02": {
+      "what": "Sliding a graph up or down by adding or subtracting a number to the whole function.",
+      "levels": {
+        "a": "Sees that adding a number moves every point of the graph up by that amount.",
+        "b": "Tells whether a graph has moved up or down.",
+        "c": "Picks the correct shifted graph.",
+        "d": "Writes the equation of a shifted graph."
+      }
+    },
+    "IV.9.03": {
+      "what": "Sliding a graph left or right by changing the input, which moves it the opposite way to the sign.",
+      "levels": {
+        "a": "Finds the new center of a graph shifted sideways.",
+        "b": "Explains why subtracting inside the bracket moves the graph right.",
+        "c": "Picks the correct shifted graph.",
+        "d": "Writes the equation of a graph shifted sideways.",
+        "e": "Spots a hidden sideways shift in an expanded equation.",
+        "f": "Shifts a graph until it is symmetric about the vertical axis."
+      }
+    },
+    "IV.9.04": {
+      "what": "Flipping a graph in the x-axis (upside down) or the y-axis (left to right).",
+      "levels": {
+        "a": "Flips a point upside down by changing the sign of its height.",
+        "b": "Flips a point left to right by changing the sign of its x.",
+        "c": "Picks the correct flipped graph.",
+        "d": "Identifies which flip an equation shows."
+      }
+    },
+    "IV.9.05": {
+      "what": "Stretching or squashing a graph vertically by multiplying the whole function by a number.",
+      "levels": {
+        "a": "Multiplies each point's height by the stretch number.",
+        "b": "Tells a stretch (number above 1) from a squash (number between 0 and 1).",
+        "c": "Tracks how key points like zeros and turning points move.",
+        "d": "Writes the equation of a stretched graph.",
+        "e": "Chooses a stretch so the graph reaches a target value.",
+        "f": "Finds the points that a vertical stretch leaves in place."
+      }
+    },
+    "IV.9.06": {
+      "what": "Stretching or squashing a graph sideways by multiplying the input by a number.",
+      "levels": {
+        "a": "Divides each point's x by the number, bringing points closer to the axis.",
+        "b": "Sees that multiplying the input by 2 squashes the graph to half width.",
+        "c": "Tracks how zeros and turning points move sideways.",
+        "d": "Writes the equation of a sideways-stretched graph."
+      }
+    },
+    "IV.9.07": {
+      "what": "Combining several moves, like a shift, a flip and a stretch, and doing them in the right order.",
+      "levels": {
+        "a": "Applies a stretch and a shift to a point, in the correct order.",
+        "b": "Tracks key points through several moves.",
+        "c": "Picks the graph of a fully transformed function.",
+        "d": "Describes a set of moves in words."
+      }
+    },
+    "IV.9.08": {
+      "what": "Recognizing even functions (mirror-symmetric left to right) and odd functions (unchanged by a half-turn about the center).",
+      "levels": {
+        "a": "Uses the fact that an even function gives the same output for x and minus x.",
+        "b": "Uses the fact that an odd function gives opposite outputs for x and minus x.",
+        "c": "Tests a formula to see whether it is even or odd.",
+        "d": "Recognizes functions that are neither.",
+        "e": "Finds a value that makes a function even or odd.",
+        "f": "Separates off the odd part of a function to find an unknown output."
+      }
+    },
+    "IV.9.09": {
+      "what": "Using symmetry to find more points on a graph and complete a sketch.",
+      "levels": {
+        "a": "Finds a mirror point for a graph symmetric about the vertical axis.",
+        "b": "Finds the matching point for a graph symmetric through the center point.",
+        "c": "Finds other mirror lines, such as through the tip of a V.",
+        "d": "Uses symmetry to complete half a graph.",
+        "e": "Finds a mirror point through a center other than the origin.",
+        "f": "Sees that two mirror lines force the graph to repeat."
+      }
+    },
+    "IV.9.10": {
+      "what": "Describing end behavior: what a graph does far to the left and far to the right.",
+      "levels": {
+        "a": "Reads arrow notation describing where a graph heads.",
+        "b": "Describes the ends of a polynomial from its highest power.",
+        "c": "Reads the end behavior from a graph.",
+        "d": "Works out the end behavior from an equation in brackets."
+      }
+    },
+    "IV.9.11": {
+      "what": "Understanding continuity informally: whether a graph can be drawn without lifting the pencil.",
+      "levels": {
+        "a": "Tells whether a graph can be drawn in one stroke.",
+        "b": "Measures the size of a jump between two pieces.",
+        "c": "Finds a hole, a single missing point.",
+        "d": "Finds where a graph breaks at a hole or at an asymptote (a line the graph approaches)."
+      }
+    },
+    "IV.9.12": {
+      "what": "Understanding asymptotes informally: lines a graph gets closer and closer to without reaching.",
+      "levels": {
+        "a": "Finds a vertical asymptote, where the graph shoots up or down.",
+        "b": "Finds a horizontal asymptote, the height the graph levels off at.",
+        "c": "Reads both kinds from a graph.",
+        "d": "Explains an asymptote in context, such as the lowest average cost per item."
+      }
+    },
+    "IV.9.13": {
+      "what": "Using graphs to see whether a function can be undone (is one-to-one) and to picture its inverse.",
+      "levels": {
+        "a": "Uses the rule that a flat line may cross a one-to-one graph only once.",
+        "b": "Picks the inverse's graph as the mirror image across the diagonal line.",
+        "c": "Swaps a point's coordinates to get a point on the inverse.",
+        "d": "Swaps the domain and range for the inverse.",
+        "e": "Finds an inverse value by spotting the input that gives it.",
+        "f": "Finds when a function is its own inverse."
+      }
+    },
+    "IV.9.14": {
+      "what": "Restricting the domain: using only part of a graph so the function can be undone.",
+      "levels": {
+        "a": "Explains why part of a graph must be cut away to allow an inverse.",
+        "b": "Chooses half of a parabola that passes the one-crossing test.",
+        "c": "Finds the inverse on that half.",
+        "d": "Checks that a proposed inverse really undoes the function."
+      }
+    },
+    "IV.9.15": {
+      "what": "Composing functions, feeding one output into another, using tables and graphs instead of formulas.",
+      "levels": {
+        "a": "Uses a table to apply one function, then another.",
+        "b": "Does the same by reading two graphs.",
+        "c": "Finds which inputs are allowed for the combined function.",
+        "d": "Uses composition in real situations, such as cost after hours of baking.",
+        "e": "Works backwards through a composition to find the input.",
+        "f": "Applies a function many times by finding the repeating cycle."
+      }
+    },
+    "IV.9.16": {
+      "what": "Choosing a model for data: straight-line, quadratic or exponential, by looking at patterns in a table.",
+      "levels": {
+        "a": "Recognizes equal differences as a straight-line pattern.",
+        "b": "Recognizes equal second differences as a quadratic pattern.",
+        "c": "Recognizes equal ratios, repeated multiplying, as an exponential pattern.",
+        "d": "Chooses a model from a description of a real situation."
+      }
+    },
+    "IV.9.17": {
+      "what": "Comparing growth: seeing that repeated multiplying (exponential) eventually beats any steady or power-based growth.",
+      "levels": {
+        "a": "Compares a straight-line and an exponential function at one point.",
+        "b": "Finds when exponential growth finally overtakes a steady one.",
+        "c": "Compares the two using a table.",
+        "d": "Compares the two using a graph.",
+        "e": "Finds the last crossing, after which the exponential stays ahead for good.",
+        "f": "Compares two enormous powers without calculating them."
+      }
+    },
+    "IV.9.18": {
+      "what": "Graphing functions with absolute value (distance from zero) applied, which folds parts of a graph over.",
+      "levels": {
+        "a": "Flips the parts of a graph below the axis to above it.",
+        "b": "Replaces the left half of a graph with a mirror of the right half.",
+        "c": "Solves an equation using the folded graph.",
+        "d": "Combines folding with shifts and other moves.",
+        "e": "Counts solutions for different values of an unknown using the graph.",
+        "f": "Solves equations with absolute values inside absolute values."
+      }
+    }
+  }
+}

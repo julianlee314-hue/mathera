@@ -1,0 +1,174 @@
+{
+ "unit": "IV.10",
+ "name": "Polynomial functions",
+ "skills": [
+  {
+   "id": "IV.10.01",
+   "name": "Degree & leading coefficient",
+   "steps": {
+    "a": "find the degree",
+    "b": "find the leading coefficient",
+    "c": "from factored form",
+    "d": "max number of zeros"
+   },
+   "wrong_turn": "The leading coefficient belongs to the highest power, not the first term written: in 5 + 3x − 2x⁴ it's −2.",
+   "rule": "The degree is the highest power; the leading coefficient is the number in front of it."
+  },
+  {
+   "id": "IV.10.02",
+   "name": "End behavior of polynomials",
+   "steps": {
+    "a": "even degree",
+    "b": "odd degree",
+    "c": "sign of the leader",
+    "d": "match graphs"
+   },
+   "wrong_turn": "The sign of the leading coefficient alone doesn't decide the ends. −x³ rises on the left; −x⁴ falls on both sides.",
+   "rule": "Even degree: ends point the same way. Odd degree: ends point opposite ways. The leading coefficient's sign picks which."
+  },
+  {
+   "id": "IV.10.03",
+   "name": "Zeros & multiplicity",
+   "steps": {
+    "a": "read zeros from factors",
+    "b": "count multiplicity",
+    "c": "total degree check",
+    "d": "from a graph"
+   },
+   "wrong_turn": "In (x − 2)²(x + 1), the zeros are 2 and −1, not −2 and 1. And 2 counts twice.",
+   "rule": "If (x−a)k is a factor, a is a zero of multiplicity k."
+  },
+  {
+   "id": "IV.10.04",
+   "name": "Behavior at zeros",
+   "steps": {
+    "a": "cross at odd multiplicity",
+    "b": "bounce at even",
+    "c": "flatten at triple",
+    "d": "predict the shape"
+   },
+   "wrong_turn": "Every zero doesn't cross. At a double root, like x = 2 in (x − 2)², the graph touches and turns back.",
+   "rule": "At a zero of odd multiplicity the graph crosses the axis; at even multiplicity it bounces."
+  },
+  {
+   "id": "IV.10.05",
+   "name": "Sketch from factored form",
+   "steps": {
+    "a": "plot zeros",
+    "b": "y-intercept",
+    "c": "end behavior",
+    "d": "join the pieces"
+   },
+   "wrong_turn": "The y-intercept is f(0), found by plugging in 0: for (x + 2)(x − 1)² it's 2·1 = 2, not −2.",
+   "rule": "Plot zeros, the y-intercept and the end behaviour, then connect using multiplicity."
+  },
+  {
+   "id": "IV.10.06",
+   "name": "Turning points",
+   "steps": {
+    "a": "at most n − 1",
+    "b": "find them with technology",
+    "c": "local max and min",
+    "d": "meaning in context"
+   },
+   "wrong_turn": "Degree n allows up to n − 1 turns but doesn't force them: x³ + x has no turning points.",
+   "rule": "A polynomial of degree n has at most n−1 turning points."
+  },
+  {
+   "id": "IV.10.07",
+   "name": "Remainder theorem",
+   "steps": {
+    "a": "f(a) is the remainder",
+    "b": "use synthetic division",
+    "c": "evaluate quickly",
+    "d": "solve for a missing coefficient"
+   },
+   "wrong_turn": "Dividing by x + 2 means a = −2, not 2. The remainder is f(−2).",
+   "rule": "The remainder when f(x) is divided by x−a is f(a)."
+  },
+  {
+   "id": "IV.10.08",
+   "name": "Factor theorem",
+   "steps": {
+    "a": "f(a) = 0 means (x − a) is a factor",
+    "b": "test a factor",
+    "c": "divide it out",
+    "d": "factor the rest"
+   },
+   "wrong_turn": "A zero at x = 3 gives the factor (x − 3), not (x + 3).",
+   "rule": "(x−a) is a factor of f(x) exactly when f(a)=0."
+  },
+  {
+   "id": "IV.10.09",
+   "name": "Rational root theorem",
+   "steps": {
+    "a": "list p/q candidates",
+    "b": "test them",
+    "c": "find a first root",
+    "d": "reduce the degree"
+   },
+   "wrong_turn": "The theorem only lists candidates. Most of them usually fail; and a polynomial may have no rational roots at all.",
+   "rule": "A rational root (pq) (lowest terms) of an integer polynomial has p∣a0 and q∣an."
+  },
+  {
+   "id": "IV.10.10",
+   "name": "Find all zeros",
+   "steps": {
+    "a": "rational roots first",
+    "b": "depressed quadratic",
+    "c": "irrational and complex roots",
+    "d": "write fully factored"
+   },
+   "wrong_turn": "After dividing out a root, use the quotient for the next search, not the original. Otherwise you keep finding the same root.",
+   "rule": "Find rational roots first, divide them out, then solve the remaining quadratic for irrational or complex roots."
+  },
+  {
+   "id": "IV.10.11",
+   "name": "Write a polynomial from zeros",
+   "steps": {
+    "a": "factors from zeros",
+    "b": "include multiplicity",
+    "c": "use conjugate pairs",
+    "d": "scale to fit a point"
+   },
+   "wrong_turn": "Zero at −2 gives the factor (x + 2), not (x − 2). And don't forget a to fit the given point.",
+   "rule": "Zeros ri with multiplicities ki give f(x)=a∏(x−ri)ki; one extra point fixes a."
+  },
+  {
+   "id": "IV.10.12",
+   "name": "Polynomial inequalities",
+   "steps": {
+    "a": "find zeros",
+    "b": "sign chart",
+    "c": "read the graph",
+    "d": "interval answer"
+   },
+   "wrong_turn": "Don't divide both sides by x: x³ > 4x is not x² > 4, because x might be negative or zero.",
+   "rule": "Find the zeros, make a sign chart, and read off the intervals where the inequality holds."
+  },
+  {
+   "id": "IV.10.13",
+   "name": "Polynomial models",
+   "steps": {
+    "a": "box volume problem",
+    "b": "fit a cubic",
+    "c": "find a max with technology",
+    "d": "realistic domain"
+   },
+   "wrong_turn": "A model's domain comes from the story: V(x) = x(12 − 2x)² is meaningless for x = 7, even though the formula works.",
+   "rule": "Build the polynomial from the situation, find its realistic domain, and find the maximum with technology."
+  },
+  {
+   "id": "IV.10.14",
+   "name": "Roots & coefficients",
+   "steps": {
+    "a": "sum and product of quadratic roots",
+    "b": "build a quadratic from root facts",
+    "c": "relationships for cubic roots",
+    "d": "equations with transformed roots"
+   },
+   "wrong_turn": "The sum of the roots of ax2+bx+c=0 is −(ba), not (ba). For x2−5x+6=0, the roots 2 and 3 sum to 5, not −5.",
+   "rule": "α+β=−(ba),αβ=(ca)"
+  }
+ ]
+}

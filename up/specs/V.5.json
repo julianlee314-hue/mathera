@@ -1,0 +1,150 @@
+{
+ "unit": "V.5",
+ "name": "Similarity",
+ "skills": [
+  {
+   "id": "V.5.01",
+   "name": "Proportions in figures",
+   "steps": {
+    "a": "set up a proportion",
+    "b": "cross multiply",
+    "c": "extended ratios",
+    "d": "golden ratio"
+   },
+   "wrong_turn": "Keep the same order on both sides: small/big = small/big. Flipping just one ratio, like 4/6 = 15/10, gives a wrong answer.",
+   "rule": "(ab)=(cd) means ad=bc."
+  },
+  {
+   "id": "V.5.02",
+   "name": "Similar polygons",
+   "steps": {
+    "a": "equal angles",
+    "b": "proportional sides",
+    "c": "similarity statements",
+    "d": "test two polygons"
+   },
+   "wrong_turn": "Not all rectangles are similar. A 2 × 3 and a 3 × 4 rectangle have equal angles, but 3/2 ≠ 4/3.",
+   "rule": "Similar polygons have all matching angles equal and all matching sides in the same ratio."
+  },
+  {
+   "id": "V.5.03",
+   "name": "Scale factor",
+   "steps": {
+    "a": "find it",
+    "b": "find a missing side",
+    "c": "enlargements vs reductions",
+    "d": "maps and models"
+   },
+   "wrong_turn": "Scale factor is new over original. Shrinking 10 cm to 4 cm is k = 0.4, not 2.5.",
+   "rule": "k=(new lengthoriginal length); k>1 enlarges, k<1 reduces."
+  },
+  {
+   "id": "V.5.04",
+   "name": "AA similarity",
+   "steps": {
+    "a": "the postulate",
+    "b": "find the angles",
+    "c": "nested triangles",
+    "d": "proof"
+   },
+   "wrong_turn": "Match the equal angles when you name the triangles. If ∠A = ∠Q and ∠B = ∠P, write △ABC ∼ △QPR, not △PQR.",
+   "rule": "If two angles of one triangle equal two angles of another, the triangles are similar."
+  },
+  {
+   "id": "V.5.05",
+   "name": "SSS similarity",
+   "steps": {
+    "a": "three ratios equal",
+    "b": "test",
+    "c": "find the scale factor",
+    "d": "proof"
+   },
+   "wrong_turn": "Sort the sides by size before comparing. 4, 6, 8 and 12, 9, 6 are similar, but 4/12 ≠ 6/9 in the order written.",
+   "rule": "If (ap)=(bq)=(cr), the triangles are similar."
+  },
+  {
+   "id": "V.5.06",
+   "name": "SAS similarity",
+   "steps": {
+    "a": "two ratios and the included angle",
+    "b": "test",
+    "c": "solve for x",
+    "d": "proof"
+   },
+   "wrong_turn": "The angle must be between the two sides. Two proportional sides and a non-included angle do not prove similarity.",
+   "rule": "If two sides are proportional and the angles between them are equal, the triangles are similar."
+  },
+  {
+   "id": "V.5.07",
+   "name": "Triangle proportionality",
+   "steps": {
+    "a": "parallel line splits sides proportionally",
+    "b": "its converse",
+    "c": "three parallel lines",
+    "d": "solve for x"
+   },
+   "wrong_turn": "Don't mix pieces with wholes: AD/DB = AE/EC, but DE/BC equals AD/AB, not AD/DB.",
+   "rule": "If DE∥BC with D on AB and E on AC, then (ADDB)=(AEEC)."
+  },
+  {
+   "id": "V.5.08",
+   "name": "Angle bisector theorem",
+   "steps": {
+    "a": "the ratio of the split",
+    "b": "solve for a segment",
+    "c": "prove it",
+    "d": "with coordinates"
+   },
+   "wrong_turn": "The angle bisector does not cut the opposite side in half; that's the median. It splits it in the ratio of the other two sides.",
+   "rule": "The bisector of ∠A meets BC at D with (BDDC)=(ABAC)."
+  },
+  {
+   "id": "V.5.09",
+   "name": "Similar right triangles",
+   "steps": {
+    "a": "altitude to the hypotenuse",
+    "b": "three similar triangles",
+    "c": "geometric mean",
+    "d": "prove Pythagoras with similarity"
+   },
+   "wrong_turn": "The altitude is the geometric mean of the two hypotenuse pieces, not their average. Pieces 4 and 9 give 6, not 6.5.",
+   "rule": "The altitude to the hypotenuse gives h2=pq, a2=pc and b2=qc."
+  },
+  {
+   "id": "V.5.10",
+   "name": "Perimeter & area ratios",
+   "steps": {
+    "a": "perimeter ratio = k",
+    "b": "area ratio = k²",
+    "c": "find k from areas",
+    "d": "word problems"
+   },
+   "wrong_turn": "Doubling the sides doesn't double the area. It multiplies the area by 4.",
+   "rule": "With scale factor k, perimeters multiply by k and areas by k2."
+  },
+  {
+   "id": "V.5.11",
+   "name": "Volume ratios",
+   "steps": {
+    "a": "volume ratio = k³",
+    "b": "surface area = k²",
+    "c": "find k from volumes",
+    "d": "why giants can't exist"
+   },
+   "wrong_turn": "Doubling a solid's size doesn't double its volume. It multiplies volume by 8 and surface area by 4.",
+   "rule": "With scale factor k, surface areas multiply by k2 and volumes by k3."
+  },
+  {
+   "id": "V.5.12",
+   "name": "Indirect measurement",
+   "steps": {
+    "a": "shadows",
+    "b": "mirrors",
+    "c": "across a river",
+    "d": "check the answer is sensible"
+   },
+   "wrong_turn": "Keep matching things in matching places: height/shadow = height/shadow. Writing 1.8/40 = h/2.4 gives a tower 0.1 m tall.",
+   "rule": "Build similar triangles you can measure, then scale up."
+  }
+ ]
+}

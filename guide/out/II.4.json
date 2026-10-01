@@ -1,0 +1,120 @@
+{
+  "branch": "II.4",
+  "intro": "This branch looks at how whole numbers are built from other numbers: factors (numbers that divide in exactly) and multiples (the numbers in a times table). These ideas are the tools for simplifying and adding fractions later on.",
+  "skills": {
+    "II.4.01": {
+      "what": "Finding factor pairs: two whole numbers that multiply to make a given number, like 6 and 7 for 42.",
+      "levels": {
+        "a": "Finds a factor pair of a small number, such as 2 and 4 for 8.",
+        "b": "Reads a factor pair from the rows and columns of an array.",
+        "c": "Finds all the factor pairs of numbers up to 50, spotting any that are missing.",
+        "d": "The same for numbers up to 100."
+      }
+    },
+    "II.4.02": {
+      "what": "Understanding multiples: the numbers you land on when counting in steps of a given number, like 3, 6, 9, 12.",
+      "levels": {
+        "a": "Continues a list of multiples by counting in steps.",
+        "b": "Decides whether a number is a multiple of another.",
+        "c": "Predicts which squares on a hundred chart will be shaded for a given times table.",
+        "d": "Sees that if 5 times 7 is 35, then 35 is a multiple of 5 and 5 is a factor of 35."
+      }
+    },
+    "II.4.03": {
+      "what": "Sorting numbers into primes, which have exactly two factors (1 and themselves), and composites, which have more.",
+      "levels": {
+        "a": "Uses a list of factors to decide whether a number is prime or composite.",
+        "b": "Recognizes the prime numbers up to 20.",
+        "c": "Recognizes the prime numbers up to 100.",
+        "d": "Explains why 1 is neither prime nor composite: it has only one factor."
+      }
+    },
+    "II.4.04": {
+      "what": "Finding all the primes up to 100 with an ancient method: crossing out the multiples of each prime on a number chart.",
+      "levels": {
+        "a": "Crosses out the multiples of 2, keeping 2 itself.",
+        "b": "Then crosses out the multiples of 3 and of 5.",
+        "c": "Then crosses out the multiples of 7.",
+        "d": "Understands that the numbers left over are exactly the primes."
+      }
+    },
+    "II.4.05": {
+      "what": "Breaking a number down into the primes that multiply to make it, like 12 = 2 times 2 times 3.",
+      "levels": {
+        "a": "Reads the prime factors from a factor tree, a diagram that splits a number into branches.",
+        "b": "Divides by primes, smallest first, until reaching 1.",
+        "c": "Writes a repeated prime with a small raised number (a power), so 3 times 3 times 3 is 3 cubed.",
+        "d": "Knows each number has only one prime breakdown, and spots one that isn't finished.",
+        "e": "Finds the smallest number to multiply by to get a square number, using the prime breakdown.",
+        "f": "Counts how many factors a number has, straight from its prime breakdown."
+      }
+    },
+    "II.4.06": {
+      "what": "Finding the factors two numbers share, and the largest of these, called the greatest common factor (GCF).",
+      "levels": {
+        "a": "Lists all the factors of each number.",
+        "b": "Picks out the factors the two lists have in common.",
+        "c": "Finds the greatest common factor of two numbers.",
+        "d": "Finds the greatest common factor using the primes the two numbers share."
+      }
+    },
+    "II.4.07": {
+      "what": "Putting the greatest common factor to work in fractions, packing problems and calculations.",
+      "levels": {
+        "a": "Simplifies a fraction by dividing top and bottom by their greatest common factor.",
+        "b": "Splits two kinds of items into identical packs with none left over.",
+        "c": "Rewrites a sum by pulling out the common factor, as in 12 + 15 = 3 times (4 + 5).",
+        "d": "Solves word problems, like cutting two ribbons into the longest equal pieces."
+      }
+    },
+    "II.4.08": {
+      "what": "Finding the multiples two numbers share, and the smallest of these, called the least common multiple (LCM).",
+      "levels": {
+        "a": "Continues the list of multiples for each number.",
+        "b": "Picks out the multiples the two lists have in common.",
+        "c": "Finds the least common multiple of two numbers.",
+        "d": "Finds the least common multiple using prime breakdowns."
+      }
+    },
+    "II.4.09": {
+      "what": "Putting the least common multiple to work in fractions and in problems about things lining up.",
+      "levels": {
+        "a": "Finds the smallest shared bottom number for two fractions.",
+        "b": "Works out when two repeating events next happen together, like two flashing lights.",
+        "c": "Solves word problems, like the smallest class that splits evenly into teams of 7 or 9.",
+        "d": "Uses the fact that the GCF times the LCM equals the two numbers multiplied together.",
+        "e": "Finds the least common multiple of three numbers, as in three lights flashing together.",
+        "f": "Counts numbers in a range that are multiples of one number or another, without counting twice."
+      }
+    },
+    "II.4.10": {
+      "what": "Understanding square numbers, made by multiplying a number by itself, and why they are called squares.",
+      "levels": {
+        "a": "Sees a square number as dots arranged in a square.",
+        "b": "Knows the square numbers up to 12 times 12.",
+        "c": "Explains why square numbers have an odd number of factors: one factor pairs with itself.",
+        "d": "Spots patterns, like the gaps between squares going up by odd numbers."
+      }
+    },
+    "II.4.11": {
+      "what": "Knowing whether a sum or product will be even or odd without working it out, and why.",
+      "levels": {
+        "a": "Predicts whether a sum is even or odd.",
+        "b": "Predicts whether a product is even or odd.",
+        "c": "Decides if a long sum or product is even or odd, for example by counting the odd numbers.",
+        "d": "Solves puzzles, like whether six odd numbers can add up to 35."
+      }
+    },
+    "II.4.12": {
+      "what": "Solving puzzles and games that use factors and multiples.",
+      "levels": {
+        "a": "Solves mystery-number riddles from clues about factors.",
+        "b": "Adds up a number's factors to test for perfect numbers, like 6 = 1 + 2 + 3.",
+        "c": "Plays a factor game, working out which factors a partner scores.",
+        "d": "Explains a winning strategy, like why picking a large prime is a good first move.",
+        "e": "Finds a mystery number from three or more clues, including how many factors it has.",
+        "f": "Finds two numbers from their sum and product, by checking factor pairs."
+      }
+    }
+  }
+}

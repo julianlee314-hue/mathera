@@ -1,0 +1,105 @@
+{
+  "branch": "VII.17",
+  "intro": "Many real situations involve several quantities that change together and affect each other, like foxes and rabbits. This branch solves such linked equations using matrices and eigenvalues, and pictures how they behave over time.",
+  "skills": {
+    "VII.17.01": {
+      "what": "A system of differential equations describes several quantities that change together, each affecting the others.",
+      "levels": {
+        "a": "Writes two linked equations for two changing quantities.",
+        "b": "Chooses the quantities to track (the state variables).",
+        "c": "Includes the starting values.",
+        "d": "Builds systems from real contexts such as linked tanks."
+      }
+    },
+    "VII.17.02": {
+      "what": "Any higher-order equation can be rewritten as a system of first-order ones by giving each rate of change its own name.",
+      "levels": {
+        "a": "Introduces new variables for the derivatives (rates of change).",
+        "b": "Converts a higher-order equation into a system.",
+        "c": "Writes the system in matrix form.",
+        "d": "Explains why this makes solving and computing easier."
+      }
+    },
+    "VII.17.03": {
+      "what": "Writing a linear system compactly as a vector of unknowns whose rate of change equals a matrix times itself.",
+      "levels": {
+        "a": "Writes the system in matrix form.",
+        "b": "Checks that a proposed solution works.",
+        "c": "Combines solutions to make new ones.",
+        "d": "Builds a fundamental matrix that holds a full set of solutions."
+      }
+    },
+    "VII.17.04": {
+      "what": "When the matrix has distinct real eigenvalues, each eigenvector gives a simple solution that grows or shrinks along a straight line.",
+      "levels": {
+        "a": "Builds one solution from each eigenvalue and eigenvector.",
+        "b": "Writes the general solution.",
+        "c": "Finds the solution that fits given starting values.",
+        "d": "Identifies solutions that travel along straight lines."
+      }
+    },
+    "VII.17.05": {
+      "what": "A phase portrait is a picture of how every possible solution moves, like a map of currents.",
+      "levels": {
+        "a": "Draws paths traced out by solutions (trajectories).",
+        "b": "Recognizes nodes, where all paths flow in or out.",
+        "c": "Recognizes saddles, where paths come in one way and leave another.",
+        "d": "Sketches a portrait from the eigenvectors."
+      }
+    },
+    "VII.17.06": {
+      "what": "Complex eigenvalues produce solutions that circle or spiral around a center point.",
+      "levels": {
+        "a": "Builds real solutions from the complex ones.",
+        "b": "Recognizes spirals moving inward or outward.",
+        "c": "Recognizes centers, where paths loop around forever.",
+        "d": "Works out whether the rotation is clockwise or counterclockwise."
+      }
+    },
+    "VII.17.07": {
+      "what": "Handling the tricky case where an eigenvalue repeats but there are not enough eigenvectors.",
+      "levels": {
+        "a": "Recognizes when only one eigenvector exists.",
+        "b": "Finds a generalized eigenvector to fill the gap.",
+        "c": "Writes the general solution.",
+        "d": "Sketches the resulting lopsided node."
+      }
+    },
+    "VII.17.08": {
+      "what": "A single chart, based on two numbers from the matrix, that classifies how every linear system behaves.",
+      "levels": {
+        "a": "Places a system on the chart using the diagonal sum and determinant.",
+        "b": "Classifies an equilibrium, a resting point, as node, saddle, spiral or center.",
+        "c": "Decides whether nearby paths settle in or run away.",
+        "d": "Handles borderline cases on the dividing lines."
+      }
+    },
+    "VII.17.09": {
+      "what": "Solving systems that also have an outside push or input.",
+      "levels": {
+        "a": "Recognizes systems with an added outside term.",
+        "b": "Solves them by educated guessing.",
+        "c": "Solves them with the general variation of parameters formula.",
+        "d": "Finds the steady state the system settles into."
+      }
+    },
+    "VII.17.10": {
+      "what": "Nonlinear systems cannot usually be solved exactly, but they can be understood near their resting points by zooming in.",
+      "levels": {
+        "a": "Finds the equilibrium (resting) points.",
+        "b": "Computes the Jacobian, the matrix of partial derivatives.",
+        "c": "Replaces the system near each resting point with a simpler linear one.",
+        "d": "Classifies the behavior near each resting point."
+      }
+    },
+    "VII.17.11": {
+      "what": "Using systems to model real situations in ecology, physics and public health.",
+      "levels": {
+        "a": "Models predators and prey, like foxes and rabbits.",
+        "b": "Models two species competing for the same food.",
+        "c": "Models two springs connected together.",
+        "d": "Models how a disease spreads through a population."
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "branch": "IV.14",
+  "intro": "This branch teaches clever ways to count possibilities without listing them all, and uses that counting to work out chances (probabilities). These ideas lie behind games, lotteries, insurance and medical test results.",
+  "skills": {
+    "IV.14.01": {
+      "what": "Counting possibilities by multiplying choices, and using factorials: 5 factorial means 5 times 4 times 3 times 2 times 1.",
+      "levels": {
+        "a": "Multiplies the number of choices at each stage, such as for a lock code.",
+        "b": "Works out a factorial, like 8 factorial.",
+        "c": "Counts the ways to arrange a set of different objects in a row.",
+        "d": "Simplifies a factorial divided by another by cancelling.",
+        "e": "Solves an equation involving factorials for the unknown number.",
+        "f": "Finds how many zeros end a huge factorial, without calculating it."
+      }
+    },
+    "IV.14.02": {
+      "what": "Counting permutations: the number of ways to arrange items when order matters, like gold, silver and bronze.",
+      "levels": {
+        "a": "Counts ways to fill first, second and third places from a group.",
+        "b": "Uses the permutation formula.",
+        "c": "Counts arrangements of letters in a word with repeated letters.",
+        "d": "Counts seatings around a round table, where turning the table changes nothing.",
+        "e": "Adds a restriction, such as a number not starting with zero.",
+        "f": "Counts arrangements where no two matching letters sit side by side."
+      }
+    },
+    "IV.14.03": {
+      "what": "Counting combinations: the number of ways to choose items when order does not matter, like pizza toppings.",
+      "levels": {
+        "a": "Counts ways to choose a group of items from a larger set.",
+        "b": "Uses the combination formula.",
+        "c": "Decides whether order matters, so whether to arrange or just choose.",
+        "d": "Links combinations to the entries of Pascal's triangle.",
+        "e": "Works backwards from a number of combinations to find the group size.",
+        "f": "Counts something cleverly using combinations, such as a polygon's diagonals."
+      }
+    },
+    "IV.14.04": {
+      "what": "Counting when there are rules, such as a person who must be included or two who refuse to serve together.",
+      "levels": {
+        "a": "Counts groups that must include or leave out a certain person.",
+        "b": "Counts \"at least one\" by subtracting the groups with none from the total.",
+        "c": "Counts orders where two people must stand together.",
+        "d": "Counts committees with rules about how many of each kind."
+      }
+    },
+    "IV.14.05": {
+      "what": "Finding probability by counting: favorable outcomes divided by all equally likely outcomes.",
+      "levels": {
+        "a": "Finds the chance of an outcome when all outcomes are equally likely.",
+        "b": "Finds chances with cards and dice.",
+        "c": "Uses combinations to count outcomes, such as drawing two marbles at once.",
+        "d": "Works out lottery chances.",
+        "e": "Works backwards from a probability to find how many items there are.",
+        "f": "Counts outcomes cleverly, such as pairs of numbers with an even sum."
+      }
+    },
+    "IV.14.06": {
+      "what": "Using the addition rule to find the chance that one thing or another happens, without counting the overlap twice.",
+      "levels": {
+        "a": "Finds the chance of one event or another by counting outcomes.",
+        "b": "Adds chances when the two events cannot both happen.",
+        "c": "Subtracts the overlap when both can happen at once.",
+        "d": "Uses Venn diagrams (overlapping circles) to find chances."
+      }
+    },
+    "IV.14.07": {
+      "what": "Using the complement, the chance something does not happen, especially to find the chance of \"at least one\".",
+      "levels": {
+        "a": "Finds the chance something does not happen by subtracting from 1.",
+        "b": "Finds the chance of at least one by subtracting the chance of none.",
+        "c": "Works out chances over repeated tries, such as several seeds sprouting.",
+        "d": "Solves the birthday problem: the chance two people share a day.",
+        "e": "Works backwards to find the single-try chance.",
+        "f": "Uses the complement cleverly, such as for no two heads in a row."
+      }
+    },
+    "IV.14.08": {
+      "what": "Working with independent events: events where one happening does not change the chance of the other.",
+      "levels": {
+        "a": "Multiplies chances to find the chance both independent events happen.",
+        "b": "Tests whether two events are independent.",
+        "c": "Finds chances when an item is put back before the next draw.",
+        "d": "Tells independent events from events that cannot happen together.",
+        "e": "Finds a missing chance from other information.",
+        "f": "Finds who is more likely to win a turn-taking game that could go on forever."
+      }
+    },
+    "IV.14.09": {
+      "what": "Finding conditional probability: the chance of one thing given that another thing is already known to have happened.",
+      "levels": {
+        "a": "Explains in words what \"the chance of A given B\" means.",
+        "b": "Reads a conditional chance from a two-way table.",
+        "c": "Uses the formula: chance of both, divided by chance of the given event.",
+        "d": "Finds chances when items are not put back."
+      }
+    },
+    "IV.14.10": {
+      "what": "Using tree diagrams, branching pictures that track each possible outcome step by step with its chance.",
+      "levels": {
+        "a": "Multiplies along the branches to find the chance of one path.",
+        "b": "Adds the paths that lead to the same result.",
+        "c": "Uses branches whose chances depend on what happened first.",
+        "d": "Reads a tree backwards to find the chance of the first event given the second."
+      }
+    },
+    "IV.14.11": {
+      "what": "Using Bayes' theorem to update a chance after new evidence, such as what a positive medical test really means.",
+      "levels": {
+        "a": "Uses the formula to reverse a conditional chance.",
+        "b": "Works out the chance someone is ill given a positive test.",
+        "c": "Sees the trap: with a rare disease, most positive tests can be false alarms.",
+        "d": "Uses a tree or a table of counts to do the same calculation."
+      }
+    },
+    "IV.14.12": {
+      "what": "Finding expected value: the average result per try if something were repeated many times.",
+      "levels": {
+        "a": "Works out a weighted average of outcomes using their chances.",
+        "b": "Works out the average gain in a game to see if it is fair.",
+        "c": "Applies expected value to insurance and lotteries.",
+        "d": "Chooses between options by comparing expected values.",
+        "e": "Finds missing chances from a given expected value.",
+        "f": "Uses shortcuts, such as adding the expected values of many small parts."
+      }
+    }
+  }
+}

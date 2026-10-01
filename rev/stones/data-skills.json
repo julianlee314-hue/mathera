@@ -1,0 +1,112 @@
+[
+ {
+  "id": "IV.15.01",
+  "name": "Standard deviation",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "deviations from the mean",
+   "b": "variance",
+   "c": "standard deviation",
+   "d": "population vs sample"
+  }
+ },
+ {
+  "id": "IV.15.02",
+  "name": "Summary statistics",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "from a frequency table",
+   "b": "estimates from grouped data",
+   "c": "from Σx and Σx²",
+   "d": "adding to or scaling the data"
+  }
+ },
+ {
+  "id": "IV.15.03",
+  "name": "z-scores",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "standardize a value",
+   "b": "compare across groups",
+   "c": "unusual values",
+   "d": "back to raw scores"
+  }
+ },
+ {
+  "id": "IV.15.04",
+  "name": "Random variables",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "a discrete distribution table",
+   "b": "probabilities sum to 1",
+   "c": "the mean E(X)",
+   "d": "the variance of X"
+  }
+ },
+ {
+  "id": "IV.15.05",
+  "name": "The binomial setting",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "the four conditions",
+   "b": "n and p",
+   "c": "spot a binomial situation",
+   "d": "when it fails"
+  }
+ },
+ {
+  "id": "IV.15.06",
+  "name": "Binomial probabilities",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "P(X = k) formula",
+   "b": "cumulative probabilities",
+   "c": "at least and at most",
+   "d": "with technology"
+  }
+ },
+ {
+  "id": "IV.15.07",
+  "name": "Binomial mean & spread",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "np",
+   "b": "√(np(1 − p))",
+   "c": "interpret them",
+   "d": "the shape of the distribution"
+  }
+ },
+ {
+  "id": "IV.15.08",
+  "name": "The normal distribution",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "the bell curve",
+   "b": "the 68–95–99.7 rule",
+   "c": "mean and standard deviation",
+   "d": "is it roughly normal?"
+  }
+ },
+ {
+  "id": "IV.15.09",
+  "name": "Normal probabilities",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "with z-scores",
+   "b": "between two values",
+   "c": "inverse normal: find a value",
+   "d": "with technology"
+  }
+ },
+ {
+  "id": "IV.15.10",
+  "name": "Scatter plots & correlation",
+  "unit": "IV.15 Data & distributions",
+  "steps": {
+   "a": "direction, form and strength",
+   "b": "the correlation coefficient r",
+   "c": "correlation vs causation",
+   "d": "outliers and influence"
+  }
+ }
+]

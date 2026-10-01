@@ -1,0 +1,149 @@
+{
+  "branch": "III.5",
+  "intro": "This branch starts algebra: using letters to stand for numbers and writing expressions (math phrases like 3n + 5) to describe patterns and situations. Learners practice tidying expressions and see why they work, which prepares them for solving equations next.",
+  "skills": {
+    "III.5.01": {
+      "what": "A variable is a letter, like n, that stands for a number we don't know yet or that can change.",
+      "levels": {
+        "a": "Works out which number a letter stands for in a simple statement like n + 8 = 17.",
+        "b": "Puts a given number in place of the letter and works out the result.",
+        "c": "Writes a phrase like \"a number plus 10\" using a letter.",
+        "d": "Uses letters in formulas, like the perimeter of a square is 4 times its side."
+      }
+    },
+    "III.5.02": {
+      "what": "Turning word phrases into math expressions, such as \"10 times a number\" into 10n.",
+      "levels": {
+        "a": "Writes sums and differences, like \"a number minus 17.\"",
+        "b": "Writes products and divisions, like \"10 times a number.\"",
+        "c": "Handles tricky wording where the order flips, like \"17 subtracted from a number.\"",
+        "d": "Writes phrases with two steps, like \"a number plus 10, then divided by 8.\""
+      }
+    },
+    "III.5.03": {
+      "what": "Evaluating an expression: putting in numbers for the letters and working out the value.",
+      "levels": {
+        "a": "Works out an expression with one letter.",
+        "b": "Works out an expression with two letters, including negative values.",
+        "c": "Works out expressions with squares, taking care with negative numbers.",
+        "d": "Uses real formulas, like the area of a triangle, with given measurements.",
+        "e": "Finds an expression's value without knowing the letters, by spotting it as a multiple of a known one.",
+        "f": "Finds x squared plus y squared from just the sum (or difference) and the product of x and y."
+      }
+    },
+    "III.5.04": {
+      "what": "Naming the parts of an expression: terms (the pieces added together), coefficients, constants, and factors.",
+      "levels": {
+        "a": "Counts the terms, the separate pieces joined by plus or minus.",
+        "b": "Finds a coefficient, the number multiplying a letter.",
+        "c": "Finds the constant, the plain number with no letter.",
+        "d": "Breaks one term into the things multiplied together to make it."
+      }
+    },
+    "III.5.05": {
+      "what": "Like terms have exactly the same letters, such as 6a and 8a, and can be added together into one.",
+      "levels": {
+        "a": "Picks out terms that are alike.",
+        "b": "Adds like terms to simplify an expression.",
+        "c": "Combines like terms when some are being subtracted.",
+        "d": "Combines terms with several letters, noticing that xy and yx are the same."
+      }
+    },
+    "III.5.06": {
+      "what": "The distributive property: a number outside brackets multiplies everything inside, so 3(x + 2) becomes 3x + 6.",
+      "levels": {
+        "a": "Multiplies out brackets with a positive number in front.",
+        "b": "Multiplies out brackets with a negative number in front.",
+        "c": "Multiplies out brackets with a subtraction inside, keeping signs right.",
+        "d": "Multiplies out brackets with a decimal or fraction in front."
+      }
+    },
+    "III.5.07": {
+      "what": "Factoring out the greatest common factor: pulling the biggest shared number or letter outside brackets, the reverse of multiplying out.",
+      "levels": {
+        "a": "Pulls the largest shared number out of an expression like 21p + 15.",
+        "b": "Pulls out shared letters as well as numbers.",
+        "c": "Pulls out a negative number, adjusting the signs inside.",
+        "d": "Checks a factored answer by multiplying it back out."
+      }
+    },
+    "III.5.08": {
+      "what": "Equivalent expressions look different but always give the same value, whatever number the letter is.",
+      "levels": {
+        "a": "Tests two expressions by putting the same number into both.",
+        "b": "Simplifies an expression to find which one it equals.",
+        "c": "Picks out the pair of expressions that are truly equal.",
+        "d": "Explains why agreeing for one number is not enough to be equivalent.",
+        "e": "Finds the missing number that makes two expressions equal for every value of x.",
+        "f": "Finds two hidden numbers by matching the x parts and the plain numbers on both sides."
+      }
+    },
+    "III.5.09": {
+      "what": "Simplifying expressions by multiplying out brackets and then combining like terms.",
+      "levels": {
+        "a": "Multiplies out one bracket, then combines like terms.",
+        "b": "Simplifies expressions with two brackets.",
+        "c": "Simplifies expressions with decimals.",
+        "d": "Finds the first line where a worked simplification goes wrong."
+      }
+    },
+    "III.5.10": {
+      "what": "Writing expressions for the perimeter and area of shapes whose sides are given with letters.",
+      "levels": {
+        "a": "Writes and simplifies the perimeter of a rectangle.",
+        "b": "Writes the area of a rectangle without brackets.",
+        "c": "Writes the perimeter of an L-shape, working out any missing sides.",
+        "d": "Writes the perimeter of shapes joined together, leaving out the shared edge."
+      }
+    },
+    "III.5.11": {
+      "what": "Writing and reading expressions that describe real situations, like the cost of tickets.",
+      "levels": {
+        "a": "Writes an expression for a total cost, such as tickets plus a fee.",
+        "b": "Writes an expression for ages, including ages in the future.",
+        "c": "Explains what each number in a real formula stands for.",
+        "d": "Reads meaning from a rewritten form, like 1.04p meaning price plus 4% tax."
+      }
+    },
+    "III.5.12": {
+      "what": "Working with letters raised to powers, like x squared, and not mixing them up with doubling.",
+      "levels": {
+        "a": "Tells apart x squared (x times x) from 2x (x plus x).",
+        "b": "Works out expressions with powers, including negative values.",
+        "c": "Combines like terms that have the same power.",
+        "d": "Multiplies terms with powers, multiplying the numbers and adding the exponents."
+      }
+    },
+    "III.5.13": {
+      "what": "Writing a rule with a letter that gives any term in a number or shape pattern.",
+      "levels": {
+        "a": "Writes a rule for a pattern given in a table.",
+        "b": "Writes a rule for a growing shape pattern, like matchstick shapes.",
+        "c": "Writes the rule for the nth term (any position) of a sequence, including ones that go down.",
+        "d": "Checks whether someone's rule really fits the pattern.",
+        "e": "Works out which position in a pattern a given number appears at, including patterns that go down.",
+        "f": "Uses a pattern's rule to find the longest toothpick row that can be built from a set number."
+      }
+    },
+    "III.5.14": {
+      "what": "Using algebra tiles, small shapes standing for x squared, x, and 1, to see how expressions work.",
+      "levels": {
+        "a": "Writes the expression that a set of tiles shows.",
+        "b": "Combines tiles, removing pairs of positive and negative that cancel.",
+        "c": "Fills a rectangle with tiles to see how multiplying out brackets works.",
+        "d": "Arranges tiles into a rectangle to find the two sides, which is factoring."
+      }
+    },
+    "III.5.15": {
+      "what": "Using algebra to explain \"think of a number\" tricks that always give the same answer.",
+      "levels": {
+        "a": "Follows a number trick step by step with a starting number.",
+        "b": "Follows the trick with a letter instead of a number.",
+        "c": "Finishes a trick so everyone ends up back at their starting number.",
+        "d": "Picks the algebra reason a trick always works, rather than trusting a few tested numbers.",
+        "e": "Undoes a four-step number trick in reverse to find the starting number.",
+        "f": "Uses algebra to count two-digit numbers that, minus their digits reversed, give a set answer."
+      }
+    }
+  }
+}

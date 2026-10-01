@@ -1,0 +1,120 @@
+{
+  "branch": "II.1",
+  "intro": "This branch grows whole numbers up to the millions and teaches the written methods for adding and subtracting them. Knowing what each digit is worth makes rounding, estimating and column arithmetic make sense rather than feel like magic.",
+  "skills": {
+    "II.1.01": {
+      "what": "Understanding numbers in the thousands, where each digit's position tells you whether it counts thousands, hundreds, tens or ones.",
+      "levels": {
+        "a": "Sees that ten hundreds make one thousand.",
+        "b": "Reads four-digit numbers shown on a place value chart.",
+        "c": "Writes a four-digit number from its parts, such as 9 thousands, 8 hundreds and 6 ones.",
+        "d": "Breaks a number into the value of each digit, as in 9,806 = 9,000 + 800 + 6."
+      }
+    },
+    "II.1.02": {
+      "what": "Reading, writing and understanding numbers all the way up to a million.",
+      "levels": {
+        "a": "Tells what a digit is worth in the ten thousands place, such as the 8 in 83,256.",
+        "b": "Does the same in the hundred thousands place.",
+        "c": "Uses the comma to read big numbers, seeing 832,563 as 832 thousand and 563.",
+        "d": "Matches a large number to how it is written in words."
+      }
+    },
+    "II.1.03": {
+      "what": "Seeing that each place is worth ten times the place to its right, and what that means for multiplying or dividing by 10.",
+      "levels": {
+        "a": "Explains that a digit in one place is worth ten times the same digit one place to the right.",
+        "b": "Multiplies by 10 by moving each digit one place to the left.",
+        "c": "Divides by 10 by moving each digit one place to the right.",
+        "d": "Understands zeros that hold an empty place in the middle of a number."
+      }
+    },
+    "II.1.04": {
+      "what": "Deciding which of two or more large numbers is bigger, and putting them in order.",
+      "levels": {
+        "a": "Compares four-digit numbers by looking at digits from the left.",
+        "b": "Compares six-digit numbers the same way.",
+        "c": "Puts a list of numbers in order from greatest to least.",
+        "d": "Chooses the right sign: greater than, less than, or equals."
+      }
+    },
+    "II.1.05": {
+      "what": "Rounding a number to the nearest ten or hundred to get a simpler number that is close to it.",
+      "levels": {
+        "a": "Rounds a number to the nearest ten.",
+        "b": "Rounds a number to the nearest hundred.",
+        "c": "Uses the rule that a number exactly halfway, like 795, rounds up.",
+        "d": "Rounds by seeing which end is closer on a number line."
+      }
+    },
+    "II.1.06": {
+      "what": "Rounding big numbers to the nearest thousand, ten thousand or any place, and knowing when a rounded number is good enough.",
+      "levels": {
+        "a": "Rounds a number to the nearest thousand.",
+        "b": "Rounds a number to the nearest ten thousand.",
+        "c": "Rounds to whatever place is asked, from tens to hundred thousands.",
+        "d": "Decides when a rounded number is good enough and when an exact one is needed.",
+        "e": "Works backwards: finds the smallest and largest whole numbers that round to a given number.",
+        "f": "Arranges five digit cards into the largest number that rounds to a given thousand."
+      }
+    },
+    "II.1.07": {
+      "what": "Estimating the answer to an addition or subtraction by rounding first, to get a quick sense of the answer.",
+      "levels": {
+        "a": "Rounds each number, then adds to estimate a sum.",
+        "b": "Rounds each number, then subtracts to estimate a difference.",
+        "c": "Estimates by keeping only the first digit of each number and zeroing the rest.",
+        "d": "Uses an estimate to judge whether someone's answer is reasonable."
+      }
+    },
+    "II.1.08": {
+      "what": "Adding large numbers by writing them in columns, one on top of the other, when no carrying is needed.",
+      "levels": {
+        "a": "Adds two three-digit numbers in columns.",
+        "b": "Picks the layout where ones sit under ones, tens under tens, and so on.",
+        "c": "Adds four-digit numbers in columns.",
+        "d": "Adds numbers with five or more digits."
+      }
+    },
+    "II.1.09": {
+      "what": "Column addition when a column adds to 10 or more, so a digit is carried into the next column.",
+      "levels": {
+        "a": "Carries from the ones column into the tens.",
+        "b": "Carries from the tens column into the hundreds.",
+        "c": "Carries in two different columns in one sum.",
+        "d": "Adds three numbers at once in columns, with carrying.",
+        "e": "Finds missing digits in a column addition, using what must have been carried.",
+        "f": "Solves a puzzle: counts the numbers that, added to themselves with digits swapped, give a total."
+      }
+    },
+    "II.1.10": {
+      "what": "Subtracting large numbers in columns when each top digit is big enough, so no borrowing is needed.",
+      "levels": {
+        "a": "Subtracts one three-digit number from another in columns.",
+        "b": "Picks the layout where the places are lined up correctly.",
+        "c": "Subtracts four-digit numbers in columns.",
+        "d": "Checks a subtraction by adding the answer back on."
+      }
+    },
+    "II.1.11": {
+      "what": "Column subtraction when a top digit is too small, so the learner borrows from the next column (called regrouping).",
+      "levels": {
+        "a": "Borrows a ten to subtract in the ones column.",
+        "b": "Borrows a hundred to subtract in the tens column.",
+        "c": "Borrows across zeros, as in 300 minus 14.",
+        "d": "Checks a subtraction with regrouping by adding back.",
+        "e": "Finds missing digits in a column subtraction, using what must have been borrowed.",
+        "f": "Solves a puzzle: counts three-digit numbers that, minus their digits reversed, give a set answer."
+      }
+    },
+    "II.1.12": {
+      "what": "Using addition and subtraction to solve everyday word problems with large numbers.",
+      "levels": {
+        "a": "Solves a word problem that takes one addition or subtraction.",
+        "b": "Solves a problem that takes two steps, such as adding then subtracting.",
+        "c": "Chooses which calculation matches a word problem.",
+        "d": "Picks the best estimate to check an answer to a word problem."
+      }
+    }
+  }
+}

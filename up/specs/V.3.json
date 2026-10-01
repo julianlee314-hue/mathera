@@ -1,0 +1,174 @@
+{
+ "unit": "V.3",
+ "name": "Triangles",
+ "skills": [
+  {
+   "id": "V.3.01",
+   "name": "Classify triangles",
+   "steps": {
+    "a": "by sides",
+    "b": "by angles",
+    "c": "both at once",
+    "d": "on the coordinate plane"
+   },
+   "wrong_turn": "Isosceles means at least two equal sides, so every equilateral triangle is isosceles too.",
+   "rule": "By sides: equilateral, isosceles, scalene. By angles: acute, right, obtuse, equiangular."
+  },
+  {
+   "id": "V.3.02",
+   "name": "Triangle sum proof",
+   "steps": {
+    "a": "draw the parallel line",
+    "b": "use alternate interior angles",
+    "c": "write the proof",
+    "d": "corollaries"
+   },
+   "wrong_turn": "Draw the parallel through a vertex, to the opposite side. The alternate interior angles must sit at that vertex for the proof to work.",
+   "rule": "Triangle sum theorem: m∠A+m∠B+m∠C=180°. Proof: draw the parallel through one vertex."
+  },
+  {
+   "id": "V.3.03",
+   "name": "Exterior angle theorem",
+   "steps": {
+    "a": "remote interior angles",
+    "b": "prove it",
+    "c": "solve for x",
+    "d": "exterior angle inequality"
+   },
+   "wrong_turn": "Use the two remote angles, not the one next door. The exterior angle and its neighbour add to 180°.",
+   "rule": "An exterior angle equals the sum of the two remote interior angles."
+  },
+  {
+   "id": "V.3.04",
+   "name": "Congruent figures",
+   "steps": {
+    "a": "corresponding parts",
+    "b": "congruence statements",
+    "c": "order of letters matters",
+    "d": "third angles theorem"
+   },
+   "wrong_turn": "Letter order is the match-up. If △ABC ≅ △DEF, then AB matches DE, not EF, however the picture is turned.",
+   "rule": "Congruent polygons have all corresponding sides and all corresponding angles congruent."
+  },
+  {
+   "id": "V.3.05",
+   "name": "SSS",
+   "steps": {
+    "a": "the postulate",
+    "b": "mark the diagram",
+    "c": "decide if it applies",
+    "d": "proof"
+   },
+   "wrong_turn": "The matching sides must pair up exactly. Sides 3, 4, 5 and 3, 4, 6 share two lengths, but that isn't SSS.",
+   "rule": "SSS: if three sides of one triangle are congruent to three sides of another, the triangles are congruent."
+  },
+  {
+   "id": "V.3.06",
+   "name": "SAS",
+   "steps": {
+    "a": "included angle",
+    "b": "mark the diagram",
+    "c": "SSA does not work",
+    "d": "proof"
+   },
+   "wrong_turn": "The angle must lie between the two sides. Two sides and a non-included angle (SSA) can give two different triangles.",
+   "rule": "SAS: two sides and the included angle congruent give congruent triangles."
+  },
+  {
+   "id": "V.3.07",
+   "name": "ASA",
+   "steps": {
+    "a": "included side",
+    "b": "mark the diagram",
+    "c": "decide if it applies",
+    "d": "proof"
+   },
+   "wrong_turn": "The side must connect the two angles. Two angles and a side not between them is AAS, a different case.",
+   "rule": "ASA: two angles and the included side congruent give congruent triangles."
+  },
+  {
+   "id": "V.3.08",
+   "name": "AAS",
+   "steps": {
+    "a": "non-included side",
+    "b": "prove AAS from ASA",
+    "c": "decide if it applies",
+    "d": "proof"
+   },
+   "wrong_turn": "Angles alone never prove congruence: AAA gives the same shape, possibly a different size. At least one pair of sides must match.",
+   "rule": "AAS: two angles and a non-included side congruent give congruent triangles."
+  },
+  {
+   "id": "V.3.09",
+   "name": "HL",
+   "steps": {
+    "a": "right triangles only",
+    "b": "hypotenuse and leg",
+    "c": "decide if it applies",
+    "d": "proof"
+   },
+   "wrong_turn": "HL is only for right triangles. In other triangles, two sides and a non-included angle (SSA) don't prove congruence.",
+   "rule": "HL: right triangles with congruent hypotenuses and one pair of congruent legs are congruent."
+  },
+  {
+   "id": "V.3.10",
+   "name": "CPCTC proofs",
+   "steps": {
+    "a": "prove triangles congruent first",
+    "b": "then conclude parts",
+    "c": "overlapping triangles",
+    "d": "two-step proofs"
+   },
+   "wrong_turn": "Prove the triangles congruent first. CPCTC can't supply the sides you need for SAS.",
+   "rule": "CPCTC: corresponding parts of congruent triangles are congruent."
+  },
+  {
+   "id": "V.3.11",
+   "name": "Isosceles triangles",
+   "steps": {
+    "a": "base angles theorem",
+    "b": "its converse",
+    "c": "equilateral means equiangular",
+    "d": "solve for x"
+   },
+   "wrong_turn": "Base angles are opposite the equal sides. If AB = AC, then ∠B ≅ ∠C, not ∠A ≅ ∠B.",
+   "rule": "Base angles theorem: if two sides are congruent, the angles opposite them are congruent, and conversely."
+  },
+  {
+   "id": "V.3.12",
+   "name": "Triangle inequality",
+   "steps": {
+    "a": "sum of two sides beats the third",
+    "b": "can these form a triangle",
+    "c": "range of the third side",
+    "d": "biggest angle opposite longest side"
+   },
+   "wrong_turn": "Test the two shortest sides against the longest. 3, 4, 8 fails because 3 + 4 < 8, even though 4 + 8 > 3.",
+   "rule": "Each side is less than the sum of the other two: a+b>c."
+  },
+  {
+   "id": "V.3.13",
+   "name": "Midsegment theorem",
+   "steps": {
+    "a": "parallel to the third side",
+    "b": "half as long",
+    "c": "solve for x",
+    "d": "coordinate proof"
+   },
+   "wrong_turn": "The midsegment is half the side it's parallel to, not half a side it touches. If MN ∥ BC, then MN = ½BC.",
+   "rule": "A midsegment is parallel to the third side and half as long."
+  },
+  {
+   "id": "V.3.14",
+   "name": "Points of concurrency",
+   "steps": {
+    "a": "circumcenter from perpendicular bisectors",
+    "b": "incenter from angle bisectors",
+    "c": "centroid from medians (2:1)",
+    "d": "orthocenter from altitudes"
+   },
+   "wrong_turn": "The centroid is 2/3 of the way from a vertex to the opposite midpoint, not halfway. On a median of 9, it is 6 from the vertex.",
+   "rule": "Perpendicular bisectors meet at the circumcenter; angle bisectors at the incenter; medians at the centroid; altitudes at the orthocenter."
+  }
+ ]
+}

@@ -1,0 +1,87 @@
+{
+  "branch": "VII.7",
+  "intro": "An eigenvector is a special direction that a matrix only stretches or shrinks, never turns, and the eigenvalue is the stretch amount. These ideas reveal a matrix's long-run behavior, from population models to web search rankings.",
+  "skills": {
+    "VII.7.01": {
+      "what": "An eigenvector is a direction a matrix only stretches, without turning it. The eigenvalue is how much it stretches.",
+      "levels": {
+        "a": "Learns the defining equation: the matrix times the vector equals a number times the vector.",
+        "b": "Pictures eigenvectors as directions that only get stretched or shrunk.",
+        "c": "Checks whether a given vector is an eigenvector.",
+        "d": "Spots eigenvector directions in a 2D picture of a transformation."
+      }
+    },
+    "VII.7.02": {
+      "what": "The characteristic equation is a polynomial equation whose solutions are exactly the eigenvalues.",
+      "levels": {
+        "a": "Sets up the equation using a determinant.",
+        "b": "Expands the determinant into a polynomial.",
+        "c": "Knows an n-by-n matrix gives a polynomial of degree n.",
+        "d": "Relates the eigenvalues to the diagonal sum and the determinant."
+      }
+    },
+    "VII.7.03": {
+      "what": "Finding the eigenvalues of a matrix by solving its characteristic equation.",
+      "levels": {
+        "a": "Finds eigenvalues of 2-by-2 matrices.",
+        "b": "Reads eigenvalues straight off the diagonal of a triangular matrix.",
+        "c": "Finds eigenvalues of 3-by-3 matrices.",
+        "d": "Counts how many times an eigenvalue repeats (its multiplicity)."
+      }
+    },
+    "VII.7.04": {
+      "what": "The eigenspace for an eigenvalue is the set of all its eigenvectors, plus zero.",
+      "levels": {
+        "a": "Finds it as the null space of a related matrix.",
+        "b": "Finds a basis for the eigenspace.",
+        "c": "Finds its dimension (the geometric multiplicity).",
+        "d": "Compares that with how often the eigenvalue repeats as a root."
+      }
+    },
+    "VII.7.05": {
+      "what": "Diagonalizing a matrix rewrites it using its eigenvectors so it acts as simple stretches along each direction.",
+      "levels": {
+        "a": "Recognizes a matrix written as a change of basis around a diagonal matrix.",
+        "b": "Decides when diagonalizing is possible.",
+        "c": "Builds the eigenvector matrix and the diagonal eigenvalue matrix.",
+        "d": "Checks the result by multiplying out."
+      }
+    },
+    "VII.7.06": {
+      "what": "Diagonalizing makes it easy to raise a matrix to a high power, useful for predicting where a process ends up.",
+      "levels": {
+        "a": "Uses diagonalization to write a power of a matrix simply.",
+        "b": "Computes a high power, such as the 50th.",
+        "c": "Predicts long-run behavior from the eigenvalues.",
+        "d": "Finds a formula for the Fibonacci numbers using matrices."
+      }
+    },
+    "VII.7.07": {
+      "what": "Some matrices have eigenvalues that are complex numbers. These signal rotation mixed with stretching.",
+      "levels": {
+        "a": "Recognizes when complex eigenvalues appear.",
+        "b": "Knows they come in matching conjugate pairs.",
+        "c": "Interprets them as a rotation combined with a scaling.",
+        "d": "Pictures the resulting spiral motion."
+      }
+    },
+    "VII.7.08": {
+      "what": "Markov chains model things that move between states with fixed chances, like customers switching brands each month.",
+      "levels": {
+        "a": "Recognizes matrices of probabilities whose columns add to 1.",
+        "b": "Tracks the chance of being in each state over time.",
+        "c": "Finds the steady state as an eigenvector.",
+        "d": "Predicts the long-run share in each state."
+      }
+    },
+    "VII.7.09": {
+      "what": "A discrete dynamical system updates a state step by step using a matrix, like a population counted each year.",
+      "levels": {
+        "a": "Computes the next state from the current one with a matrix.",
+        "b": "Splits the starting state into eigenvector parts to see the future.",
+        "c": "Classifies whether states are pulled in or pushed away over time.",
+        "d": "Models predators and prey, such as owls and mice."
+      }
+    }
+  }
+}

@@ -1,0 +1,218 @@
+[
+ {
+  "id": "VI.11.01",
+  "not": "A big sample is not automatically a good one. Asking 5,000 people who walk out of a gym how often they exercise gives a biased answer; 500 people chosen at random give a better one.",
+  "apples": {
+   "stone": "To learn about everyone, ask a fair handful chosen by chance.",
+   "text": "You can't taste the whole pot of soup, so you stir it and taste one spoonful. Stirring is what makes the spoonful fair. If you only skim the top, you might taste just the oil. Picking people by chance is the stirring.",
+   "example": "To find the favorite lunch at a school of 600, pull 50 names from a hat instead of asking only your friends."
+  },
+  "class": {
+   "stone": "The population is everyone you want to learn about; a sample is the part you actually measure. In a simple random sample, every group of \\(n\\) is equally likely to be chosen.",
+   "text": "Stratified sampling splits the population into groups (strata) and samples each group in proportion. Systematic sampling takes every \\(k\\)th item from a list after a random start. Bias comes from the method, not the size: undercoverage, voluntary response, nonresponse and leading questions all push results the same way every time. Choose the method that gives every member a known chance and fits the list you have.",
+   "example": "A school has 360 girls and 240 boys. A stratified sample of 50 takes \\(\\frac{360}{600} \\times 50 = 30\\) girls and \\(\\frac{240}{600} \\times 50 = 20\\) boys. A systematic sample of 60 from a list of 1,200 takes every 20th name, starting at a random place from 1 to 20."
+  },
+  "proof": {
+   "stone": "Random selection makes errors cancel on average instead of pushing one way.",
+   "text": "In a simple random sample each member has the same chance \\(\\frac{n}{N}\\) of being chosen, so the sample mean is an unbiased estimate: its average over all possible samples equals the population mean. The remaining error is random, and it shrinks as \\(n\\) grows. Bias is different: a flawed method gives the same wrong answer on average, and a bigger sample only makes you more confident in it.",
+   "example": "Population values 2, 4, 6, 8, mean 5. The six samples of size 2 have means 3, 4, 5, 5, 6, 7. Their average is \\(\\frac{30}{6} = 5\\), exactly the population mean."
+  },
+  "professor": {
+   "stone": "The precision of a random sample depends on its size, not on the size of the population.",
+   "text": "The standard error of a sample proportion is about \\(\\sqrt{\\frac{p(1-p)}{n}}\\), with a correction factor \\(\\sqrt{\\frac{N-n}{N-1}}\\) that is almost 1 when the population is much larger than the sample. In 1936 the Literary Digest poll collected over two million replies from lists of car owners, telephone users and its own readers, and predicted that Landon would beat Roosevelt. Roosevelt won in a landslide: size could not fix a biased frame.",
+   "example": "A random sample of 1,000 has a standard error of about 1.6 percentage points at \\(p = 0.5\\), whether it is drawn from a city of one million or a country of three hundred million."
+  }
+ },
+ {
+  "id": "VI.11.02",
+  "not": "Don't read cause from an observational study. People who drink coffee may live longer, but coffee drinkers can differ in income or health; only a randomized experiment can separate the coffee from those other factors.",
+  "apples": {
+   "stone": "To learn what something does, you have to do it to some people and not to others, chosen by chance.",
+   "text": "If you just watch people, the ones who choose something may be different in other ways. So flip a coin to decide who gets the new thing. Then the two groups start out alike, and any difference at the end comes from the thing itself.",
+   "example": "To test a new plant food, flip a coin for each of 20 plants. Heads get the food, tails get plain water, and you compare how tall they grow."
+  },
+  "class": {
+   "stone": "In an observational study you record what happens without assigning anything. In an experiment you assign treatments, usually comparing with a control group.",
+   "text": "Random assignment balances other factors, known and unknown, across groups on average. A placebo and blinding stop expectations from changing the results; in a double-blind trial neither subjects nor those measuring know who got what. A well-run randomized experiment can show cause and effect. An observational study shows association, since a confounding variable may explain it. Results generalize only to the kind of people who were in the study.",
+   "example": "100 volunteers with headaches are split at random into two groups of 50. One group gets the new tablet, the other an identical-looking placebo, and neither the patients nor the nurses know which. If 36 of 50 improve on the tablet and 22 of 50 on the placebo, the 72% versus 44% gap can be credited to the tablet if chance alone is an unlikely explanation."
+  },
+  "proof": {
+   "stone": "Randomization makes the groups differ only by chance, so a big difference must come from the treatment or from luck.",
+   "text": "A confounder is a factor linked to both the treatment and the outcome. When people choose their own treatment, a confounder can create a difference with no causal effect. When a coin decides, the treatment is independent of every other factor, so on average each factor is the same in both groups. Any leftover imbalance is random, and a significance test measures how likely that luck is to produce the observed gap.",
+   "example": "Among 1,000 people, 400 are smokers. Split at random into two groups of 500, each group expects 200 smokers, and a split as lopsided as 230 versus 170 is rare. Let people choose, and the smokers may crowd into one group."
+  },
+  "professor": {
+   "stone": "Randomization does more than balance groups: it supplies the probability model that the test uses.",
+   "text": "R. A. Fisher made this point in The Design of Experiments (1935) with the lady tasting tea. If the treatment has no effect, the outcomes are fixed and only the random labels move, so every relabeling is equally likely and the p-value can be counted exactly. This is the permutation test, and it needs no assumption of normality.",
+   "example": "A lady claims she can tell whether milk or tea went in first. She is given 8 cups, 4 of each, in random order. The number of ways to pick 4 cups is \\(\\binom{8}{4} = 70\\), so guessing all correct by luck has probability \\(\\frac{1}{70} \\approx 0.014\\)."
+  }
+ },
+ {
+  "id": "VI.11.03",
+  "not": "The standard error is not the standard deviation of the data. Heights with \\(\\sigma = 10\\) cm, sampled 25 at a time, give sample means with spread \\(\\frac{10}{\\sqrt{25}} = 2\\) cm, not 10 cm.",
+  "apples": {
+   "stone": "Every handful tells a slightly different story, but big handfuls agree more.",
+   "text": "Grab 10 sweets from a big jar and count the red ones. Grab again and you get a different count. Do it many times and the counts cluster around the true share of red. Grab 100 at a time and they cluster much more tightly.",
+   "example": "A jar is 40% red. Handfuls of 10 might give 2, 5, 4 or 6 red. Handfuls of 100 usually give between 30 and 50 red."
+  },
+  "class": {
+   "stone": "A statistic such as \\(\\bar{x}\\) or \\(\\hat{p}\\) varies from sample to sample. Its sampling distribution is the distribution of its values over all possible samples of size \\(n\\).",
+   "text": "For random samples, \\(\\bar{x}\\) has mean \\(\\mu\\) and standard deviation \\(\\frac{\\sigma}{\\sqrt{n}}\\); \\(\\hat{p}\\) has mean \\(p\\) and standard deviation \\(\\sqrt{\\frac{p(1-p)}{n}}\\). This standard deviation is the standard error. You can simulate it: draw many samples, compute the statistic each time, and plot the results. Bigger samples give less spread, but only as \\(\\sqrt{n}\\).",
+   "example": "With \\(p = 0.4\\) and \\(n = 100\\): \\(SE = \\sqrt{\\frac{0.4 \\times 0.6}{100}} = \\sqrt{0.0024} \\approx 0.049\\). With \\(n = 400\\), \\(SE \\approx 0.024\\): four times the data, half the spread."
+  },
+  "proof": {
+   "stone": "Variances of independent values add, so the mean of \\(n\\) values has variance \\(\\frac{\\sigma^{2}}{n}\\).",
+   "text": "Let \\(X_{1}, \\ldots, X_{n}\\) be independent with mean \\(\\mu\\) and variance \\(\\sigma^{2}\\). Then \\(E(\\bar{X}) = \\frac{1}{n} \\cdot n\\mu = \\mu\\). Since variances of independent variables add and \\(\\mathrm{Var}(aX) = a^{2}\\mathrm{Var}(X)\\), \\(\\mathrm{Var}(\\bar{X}) = \\frac{1}{n^{2}} \\cdot n\\sigma^{2} = \\frac{\\sigma^{2}}{n}\\). Take the square root: \\(SE = \\frac{\\sigma}{\\sqrt{n}}\\). For \\(\\hat{p}\\), each \\(X_{i}\\) is 0 or 1 with variance \\(p(1-p)\\).",
+   "example": "One fair die has \\(\\sigma^{2} = \\frac{35}{12}\\), so \\(\\sigma \\approx 1.71\\). The mean of 4 rolls has \\(SE = \\frac{1.71}{\\sqrt{4}} \\approx 0.85\\)."
+  },
+  "professor": {
+   "stone": "You can estimate a sampling distribution from one sample by resampling it.",
+   "text": "Bradley Efron's bootstrap (1979) treats the sample as a stand-in for the population: draw many samples of size \\(n\\) from it with replacement and recompute the statistic each time. The spread of those values estimates the standard error even for statistics like the median, where no simple formula exists. It turns the thought experiment of repeated sampling into a computation.",
+   "example": "From the sample 3, 5, 9, one bootstrap resample might be 5, 5, 9, with mean \\(\\frac{19}{3} \\approx 6.33\\). There are \\(3^{3} = 27\\) equally likely ordered resamples, and their means have standard deviation \\(\\sqrt{\\frac{56}{27}} \\approx 1.44\\)."
+  }
+ },
+ {
+  "id": "VI.11.04",
+  "not": "The central limit theorem does not make the data normal. Rolls of a die stay flat, 1 to 6 equally often, however many you roll; it is the mean of many rolls whose distribution becomes bell-shaped.",
+  "apples": {
+   "stone": "Average enough random things and you get a bell shape.",
+   "text": "One die roll can be anything from 1 to 6, each equally likely. Roll 30 dice and take the average, and it is almost always near 3.5. Do that again and again, and the averages pile up in a bell shape, even though a single die is flat.",
+   "example": "The average of 30 dice is usually between 3 and 4. An average of 6 would need all 30 dice to land on 6."
+  },
+  "class": {
+   "stone": "\\[\\bar{X} \\approx N\\left(\\mu, \\frac{\\sigma^{2}}{n}\\right) \\text{ for large } n\\]",
+   "text": "If \\(X_{1}, \\ldots, X_{n}\\) are independent with the same distribution, mean \\(\\mu\\) and finite variance \\(\\sigma^{2}\\), then \\(\\bar{X}\\) is approximately normal with mean \\(\\mu\\) and standard error \\(\\frac{\\sigma}{\\sqrt{n}}\\), whatever the shape of the population. So \\(Z = \\frac{\\bar{X} - \\mu}{\\sigma / \\sqrt{n}}\\) is approximately standard normal. A common rule of thumb is \\(n \\ge 30\\); more is needed for strongly skewed populations, and if the population is normal, \\(\\bar{X}\\) is exactly normal for any \\(n\\).",
+   "example": "Waiting times have \\(\\mu = 50\\) s and \\(\\sigma = 12\\) s. For \\(n = 36\\), \\(SE = \\frac{12}{6} = 2\\), so \\(P(\\bar{X} > 53) \\approx P(Z > 1.5) \\approx 0.067\\)."
+  },
+  "proof": {
+   "stone": "Standardize the sum; its moment generating function tends to \\(e^{t^{2}/2}\\), the normal one.",
+   "text": "Let \\(Y_{i} = \\frac{X_{i} - \\mu}{\\sigma}\\), with mean 0 and variance 1, and suppose it has a moment generating function \\(M(t) = 1 + \\frac{t^{2}}{2} + \\ldots\\). The standardized mean is \\(Z_{n} = \\frac{1}{\\sqrt{n}}\\sum Y_{i}\\), and by independence its generating function is \\(M\\left(\\frac{t}{\\sqrt{n}}\\right)^{n} = \\left(1 + \\frac{t^{2}}{2n} + \\ldots\\right)^{n}\\), which tends to \\(e^{t^{2}/2}\\). That is the generating function of \\(N(0, 1)\\), and matching generating functions give matching distributions.",
+   "example": "With \\(t = 1\\) and \\(n = 100\\): \\(\\left(1 + \\frac{1}{200}\\right)^{100} \\approx 1.647\\), close to \\(e^{0.5} \\approx 1.649\\)."
+  },
+  "professor": {
+   "stone": "Without a finite variance the theorem can fail completely.",
+   "text": "Abraham de Moivre found the normal curve as an approximation to the binomial in 1733, and Laplace extended the idea to sums of other random variables. The finite-variance condition matters: for the Cauchy distribution the mean of \\(n\\) values has exactly the same distribution as a single value, so averaging gains nothing. The normal is special because it is stable: the mean of normals is again normal.",
+   "example": "The average of 1,000 standard Cauchy values is itself standard Cauchy, and exceeds 12.7 in size about 5% of the time, just like one value."
+  }
+ },
+ {
+  "id": "VI.11.05",
+  "not": "A 95% interval does not mean there is a 95% chance that this interval contains \\(p\\). The parameter is fixed; 95% describes the method, which captures \\(p\\) in about 95% of samples.",
+  "apples": {
+   "stone": "A good guess comes with a plus-or-minus.",
+   "text": "Ask 500 people and 42 out of every 100 say yes. The true share for everyone is probably not exactly 42, but it is probably close. So you say 42, give or take 4. The more people you ask, the smaller the give or take.",
+   "example": "A poll says 42% plus or minus 4%: the true figure is most likely somewhere from 38% to 46%."
+  },
+  "class": {
+   "stone": "\\[\\hat{p} \\pm z^{*}\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}\\]",
+   "text": "The interval is an estimate plus or minus a margin of error, with \\(z^{*} = 1.96\\) for 95% confidence and 2.576 for 99%. It needs a random sample and roughly 10 or more successes and failures. 95% confidence means that if we repeated the sampling many times, about 95% of the intervals built this way would contain the true \\(p\\). To get margin \\(E\\), take \\(n \\ge \\left(\\frac{z^{*}}{E}\\right)^{2}p(1-p)\\), using \\(p = 0.5\\) if you have no estimate.",
+   "example": "\\(\\hat{p} = 0.42\\), \\(n = 500\\): \\(SE = \\sqrt{\\frac{0.42 \\times 0.58}{500}} \\approx 0.0221\\), margin \\(1.96 \\times 0.0221 \\approx 0.043\\), interval 0.377 to 0.463. For a margin of 0.03: \\(n \\ge \\left(\\frac{1.96}{0.03}\\right)^{2} \\times 0.25 \\approx 1067.1\\), so \\(n = 1068\\)."
+  },
+  "proof": {
+   "stone": "\\(\\hat{p}\\) is within 1.96 standard errors of \\(p\\) 95% of the time, and that statement can be turned around.",
+   "text": "By the normal approximation, \\(\\hat{p}\\) is approximately \\(N\\left(p, \\frac{p(1-p)}{n}\\right)\\), so \\(P(|\\hat{p} - p| \\le 1.96 \\, SE) \\approx 0.95\\). The event \\(|\\hat{p} - p| \\le 1.96 \\, SE\\) is the same as \\(p\\) lying in \\(\\hat{p} \\pm 1.96 \\, SE\\). So the random interval covers the fixed \\(p\\) with probability about 0.95. Replacing the unknown \\(p\\) in \\(SE\\) by \\(\\hat{p}\\) changes little when \\(n\\) is large.",
+   "example": "If \\(p = 0.4\\) and \\(n = 500\\), then \\(SE \\approx 0.0219\\). A sample with \\(\\hat{p} = 0.44\\) is 1.83 standard errors away and its interval covers 0.4; a sample with \\(\\hat{p} = 0.45\\) is 2.28 away and its interval misses."
+  },
+  "professor": {
+   "stone": "The textbook interval can have much less coverage than it claims.",
+   "text": "Jerzy Neyman set out the theory of confidence intervals in 1937, defining them by their long-run coverage. The simple interval above is often called the Wald interval, and its true coverage can fall well below 95% when \\(n\\) is small or \\(p\\) is near 0 or 1. The Wilson score interval, found by inverting the test instead of plugging in \\(\\hat{p}\\), behaves much better.",
+   "example": "With 0 successes in 20 trials, \\(\\hat{p} = 0\\) and the Wald interval is 0 to 0, which claims certainty. The Wilson 95% interval is about 0 to 0.161."
+  }
+ },
+ {
+  "id": "VI.11.06",
+  "not": "Don't use \\(z^{*} = 1.96\\) when \\(\\sigma\\) is estimated from a small sample. With \\(n = 25\\) you need \\(t^{*} = 2.064\\), or the interval is too narrow.",
+  "apples": {
+   "stone": "Estimate the average, then say how far off you might be.",
+   "text": "Weigh 25 apples and average them. The true average for the whole orchard is probably close to yours. If the apples vary a lot, you could be further off. Weigh more apples and you can be surer.",
+   "example": "25 apples average 72 grams. You might say the orchard's average is 72 grams, give or take about 4 grams."
+  },
+  "class": {
+   "stone": "\\[\\bar{x} \\pm t^{*}\\frac{s}{\\sqrt{n}}, \\quad \\text{df} = n - 1\\]",
+   "text": "If \\(\\sigma\\) is known, use \\(\\bar{x} \\pm z^{*}\\frac{\\sigma}{\\sqrt{n}}\\). Usually it is not, and replacing \\(\\sigma\\) with \\(s\\) adds uncertainty, so we use the \\(t\\) distribution with \\(n - 1\\) degrees of freedom, which has heavier tails than the normal. It assumes a random sample from a roughly normal population, or a large \\(n\\). The width shrinks like \\(\\frac{1}{\\sqrt{n}}\\): to halve it, take four times as many observations.",
+   "example": "\\(n = 25\\), \\(\\bar{x} = 72\\), \\(s = 10\\): \\(SE = \\frac{10}{5} = 2\\), \\(t^{*}_{24} = 2.064\\), margin \\(\\approx 4.13\\), interval 67.87 to 76.13. We are 95% confident the mean is in this range. With \\(\\sigma = 10\\) known, the margin would be \\(1.96 \\times 2 = 3.92\\)."
+  },
+  "proof": {
+   "stone": "\\(\\frac{\\bar{X} - \\mu}{S / \\sqrt{n}}\\) has a \\(t_{n-1}\\) distribution, which does not depend on \\(\\mu\\) or \\(\\sigma\\).",
+   "text": "For a normal population, \\(\\bar{X}\\) and \\(S\\) are independent, \\(\\frac{\\bar{X} - \\mu}{\\sigma / \\sqrt{n}} \\sim N(0, 1)\\), and \\(\\frac{(n-1)S^{2}}{\\sigma^{2}}\\) has a chi-squared distribution with \\(n - 1\\) degrees of freedom. The ratio of the first to the square root of the second divided by \\(n - 1\\) is the definition of \\(t_{n-1}\\), and \\(\\sigma\\) cancels. So \\(P(-t^{*} \\le T \\le t^{*}) = 0.95\\), and rearranging for \\(\\mu\\) gives the interval.",
+   "example": "\\(t^{*}\\) for 95%: 12.706 with 1 df, 2.064 with 24 df, 1.984 with 100 df, approaching \\(z^{*} = 1.960\\)."
+  },
+  "professor": {
+   "stone": "The \\(t\\) distribution was published by a brewer under a pen name.",
+   "text": "William Sealy Gosset worked for the Guinness brewery and published the distribution in 1908 as Student, so it is called Student's \\(t\\). He needed it for small batches, where \\(s\\) is a noisy estimate of \\(\\sigma\\). As the degrees of freedom grow, \\(t\\) tends to the standard normal; with 1 degree of freedom it is the Cauchy distribution, which has no mean.",
+   "example": "With \\(n = 2\\), the 95% interval is \\(\\bar{x} \\pm 12.706 \\frac{s}{\\sqrt{2}}\\), more than six times as wide as the \\(z\\) interval would be."
+  }
+ },
+ {
+  "id": "VI.11.07",
+  "not": "A p-value is not the probability that \\(H_{0}\\) is true. \\(p = 0.03\\) means data this extreme would happen 3% of the time if \\(H_{0}\\) were true, not a 3% chance that \\(H_{0}\\) is true.",
+  "apples": {
+   "stone": "Assume nothing special is going on, then ask how surprising the result is.",
+   "text": "Your friend's coin lands heads 9 times in 10. If the coin were fair, that would be very rare. Rare enough that you start to doubt the coin. But a rare result can still happen with a fair coin, so you never know for certain.",
+   "example": "A fair coin gives 9 or more heads in 10 flips only about 1 time in 100."
+  },
+  "class": {
+   "stone": "The p-value is the probability, assuming \\(H_{0}\\) is true, of a result at least as extreme as the one observed.",
+   "text": "The null hypothesis \\(H_{0}\\) states no effect, such as \\(p = 0.5\\); the alternative \\(H_{1}\\) is what you look for evidence of. Fix a significance level \\(\\alpha\\), often 0.05, before collecting data. If the p-value is at most \\(\\alpha\\), reject \\(H_{0}\\); otherwise there is not enough evidence, which is not proof that \\(H_{0}\\) is true. A one-tailed test looks in one direction (\\(p > 0.5\\)); a two-tailed test looks both ways (\\(p \\ne 0.5\\)) and counts both tails.",
+   "example": "60 heads in 100 flips, \\(H_{0}: p = 0.5\\). \\(P(X \\ge 60) \\approx 0.028\\). One-tailed: \\(0.028 \\le 0.05\\), reject. Two-tailed: \\(p \\approx 0.057 > 0.05\\), do not reject."
+  },
+  "proof": {
+   "stone": "If \\(H_{0}\\) is true, a test at level \\(\\alpha\\) rejects it only a fraction \\(\\alpha\\) of the time.",
+   "text": "Rejecting when the p-value is at most \\(\\alpha\\) is the same as rejecting when the statistic lands in a region of probability at most \\(\\alpha\\) under \\(H_{0}\\). So \\(\\alpha\\) is exactly the risk of rejecting a true null. That is why a small p-value is evidence: either \\(H_{0}\\) is false, or something rare happened. The test cannot say which, and it never gives a probability for \\(H_{0}\\) itself.",
+   "example": "Flip a fair coin 10 times and reject when you see 9 or more heads: \\(P(X \\ge 9) = \\frac{11}{1024} \\approx 0.011\\). So about 1% of honest coins would be wrongly accused."
+  },
+  "professor": {
+   "stone": "When \\(H_{0}\\) is true and the statistic is continuous, the p-value is uniformly distributed from 0 to 1.",
+   "text": "So a p-value below 0.05 turns up in 1 in 20 tests of true nulls; run 20 tests and one false alarm is expected. R. A. Fisher treated the p-value as a graded measure of evidence and suggested 0.05 as a convenient threshold; Neyman and Pearson later framed testing as a decision rule with fixed error rates. Modern practice mixes the two.",
+   "example": "Test 20 true null hypotheses at \\(\\alpha = 0.05\\). The chance that at least one is rejected is \\(1 - 0.95^{20} \\approx 0.64\\)."
+  }
+ },
+ {
+  "id": "VI.11.08",
+  "not": "Don't use \\(P(X = x)\\) as the p-value. For \\(X \\sim B(20, 0.3)\\) and \\(x = 9\\), \\(P(X = 9) \\approx 0.065\\) but the p-value is \\(P(X \\ge 9) \\approx 0.113\\).",
+  "apples": {
+   "stone": "Count the results as surprising as yours or more.",
+   "text": "A seed packet says 3 in 10 seeds give red flowers. You plant 20 and get 9 red. Is the packet wrong? Work out how often 9 or more red would happen if the packet were right. If that is fairly common, you have no case.",
+   "example": "9 or more red out of 20 happens about 11 times in 100 if the packet is right: not surprising enough to complain."
+  },
+  "class": {
+   "stone": "Under \\(H_{0}: p = p_{0}\\), \\(X \\sim B(n, p_{0})\\). The critical region is the set of values whose tail probability is at most \\(\\alpha\\).",
+   "text": "State \\(H_{0}\\) and \\(H_{1}\\) about \\(p\\), then find the critical region: the most extreme values of \\(X\\) whose total probability under \\(H_{0}\\) is at most \\(\\alpha\\). Because \\(X\\) is discrete, the actual significance level is usually below \\(\\alpha\\). Alternatively, find the p-value \\(P(X \\ge x)\\) or \\(P(X \\le x)\\) and compare with \\(\\alpha\\); for a two-tailed test, compare each tail with \\(\\frac{\\alpha}{2}\\). Conclude in context, without claiming \\(H_{0}\\) is proved.",
+   "example": "\\(H_{0}: p = 0.3\\), \\(H_{1}: p > 0.3\\), \\(n = 20\\), \\(\\alpha = 0.05\\). \\(P(X \\ge 10) \\approx 0.0480\\) and \\(P(X \\ge 9) \\approx 0.1133\\), so the critical region is \\(X \\ge 10\\), actual level 4.80%. Observing 9 is outside it: insufficient evidence that more than 30% of seeds give red flowers."
+  },
+  "proof": {
+   "stone": "The critical region is built from the tail inward until adding one more value would push past \\(\\alpha\\).",
+   "text": "Under \\(H_{0}\\), \\(P(X \\ge c)\\) decreases as \\(c\\) increases. The smallest \\(c\\) with \\(P(X \\ge c) \\le \\alpha\\) gives the largest region whose false-rejection chance stays within \\(\\alpha\\). Then \\(x\\) is in the region exactly when \\(P(X \\ge x) \\le \\alpha\\), so the critical-region method and the p-value method always agree.",
+   "example": "For \\(B(20, 0.3)\\): \\(P(X \\ge 11) \\approx 0.017\\), \\(P(X \\ge 10) \\approx 0.048\\), \\(P(X \\ge 9) \\approx 0.113\\). The boundary falls between 9 and 10."
+  },
+  "professor": {
+   "stone": "One of the earliest significance tests was a binomial test on birth records.",
+   "text": "In 1710 John Arbuthnot noted that in London christening records, male births outnumbered female births in each of 82 consecutive years. If each year were a fair coin, that would have probability \\(\\left(\\frac{1}{2}\\right)^{82}\\). This is the sign test: a binomial test with \\(p = 0.5\\) applied to the signs of differences, and it needs no assumption about the shape of the data.",
+   "example": "\\(\\left(\\frac{1}{2}\\right)^{82} \\approx 2.1 \\times 10^{-25}\\)."
+  }
+ },
+ {
+  "id": "VI.11.09",
+  "not": "Don't divide by \\(\\sigma\\) alone. With \\(\\sigma = 15\\), \\(n = 36\\) and \\(\\bar{x} - \\mu_{0} = 5\\), the statistic is \\(\\frac{5}{15 / 6} = 2\\), not \\(\\frac{5}{15} \\approx 0.33\\).",
+  "apples": {
+   "stone": "Measure how far the average is from the claim, in steps of its usual wobble.",
+   "text": "A machine should fill bags with 500 grams. You weigh 36 bags and they average 505. Is the machine off, or is that just normal wobble? The average of 36 bags wobbles much less than one bag. If 505 is far outside that wobble, the machine is probably off.",
+   "example": "Single bags vary by about 15 grams, but the average of 36 bags varies by only about 2.5 grams. Being 5 grams off is two of those steps."
+  },
+  "class": {
+   "stone": "\\[z = \\frac{\\bar{x} - \\mu_{0}}{\\sigma / \\sqrt{n}}\\]",
+   "text": "Test \\(H_{0}: \\mu = \\mu_{0}\\) with known \\(\\sigma\\) and either a normal population or a large sample. Under \\(H_{0}\\), \\(z\\) is standard normal; compare it with a critical value (1.645 one-tailed, 1.96 two-tailed at 5%) or find its p-value. A Type I error rejects a true \\(H_{0}\\), with probability \\(\\alpha\\). A Type II error fails to reject a false \\(H_{0}\\), with probability \\(\\beta\\); the power is \\(1 - \\beta\\).",
+   "example": "\\(\\mu_{0} = 500\\), \\(\\sigma = 15\\), \\(n = 36\\), \\(\\bar{x} = 505\\): \\(z = \\frac{5}{2.5} = 2\\). Two-tailed p-value \\(= 2P(Z \\ge 2) \\approx 0.0455 \\le 0.05\\): reject \\(H_{0}\\); there is evidence the mean fill is not 500 g."
+  },
+  "proof": {
+   "stone": "Under \\(H_{0}\\), \\(\\bar{X} \\sim N\\left(\\mu_{0}, \\frac{\\sigma^{2}}{n}\\right)\\), so standardizing gives \\(N(0, 1)\\).",
+   "text": "Subtract the mean and divide by the standard error: \\(Z = \\frac{\\bar{X} - \\mu_{0}}{\\sigma / \\sqrt{n}} \\sim N(0, 1)\\) when \\(H_{0}\\) holds. Rejecting when \\(|Z| \\ge 1.96\\) then has probability exactly 0.05 under \\(H_{0}\\), which is the Type I error rate. If the true mean is \\(\\mu_{1}\\), \\(Z\\) is shifted by \\(\\frac{\\mu_{1} - \\mu_{0}}{\\sigma / \\sqrt{n}}\\), and the chance of landing in the rejection region is the power.",
+   "example": "One-tailed test of \\(\\mu = 500\\) against \\(\\mu > 500\\), \\(SE = 2.5\\): reject when \\(\\bar{x} > 500 + 1.645 \\times 2.5 \\approx 504.11\\). If really \\(\\mu = 505\\), power \\(= P\\left(Z > \\frac{504.11 - 505}{2.5}\\right) \\approx 0.64\\), so \\(\\beta \\approx 0.36\\)."
+  },
+  "professor": {
+   "stone": "For fixed \\(n\\), you cannot shrink both error rates at once; only more data lowers both.",
+   "text": "Lowering \\(\\alpha\\) moves the cutoff outward, which raises \\(\\beta\\). The Neyman–Pearson lemma (1933) shows that, for a simple null against a simple alternative, rejecting when the likelihood ratio is large gives the greatest power for a given \\(\\alpha\\). For a normal mean with known \\(\\sigma\\), that test is exactly the one-tailed \\(z\\)-test, which is therefore most powerful against every \\(\\mu_{1} > \\mu_{0}\\).",
+   "example": "In the bag example with \\(\\mu_{1} = 505\\), \\(\\alpha = 0.05\\) gives power about 0.64 with \\(n = 36\\). With \\(n = 144\\), \\(SE = 1.25\\) and the power rises to about 0.99."
+  }
+ }
+]

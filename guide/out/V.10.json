@@ -1,0 +1,120 @@
+{
+  "branch": "V.10",
+  "intro": "This branch works with identities (trig equations that are true for every angle) and uses them to simplify, to prove other identities, and to solve trig equations. Proofs here mostly mean putting the lines of a short argument in order or picking the reason for a step.",
+  "skills": {
+    "V.10.01": {
+      "what": "Cosecant, secant and cotangent are 1 divided by sine, cosine and tangent, and tangent is sine divided by cosine. These rules let any trig expression be rewritten.",
+      "levels": {
+        "a": "Flips a fraction to get one ratio from its partner, such as cosine from secant.",
+        "b": "Finds tangent or cotangent by dividing sine and cosine.",
+        "c": "Rewrites an expression using only sine and cosine.",
+        "d": "Rewrites and cancels to simplify an expression, often down to a single number."
+      }
+    },
+    "V.10.02": {
+      "what": "The Pythagorean identities, such as sine squared plus cosine squared equals 1, come from Pythagoras on the unit circle.",
+      "levels": {
+        "a": "Finds cosine from sine (or the other way) using sine squared plus cosine squared equals 1, choosing the sign by quarter.",
+        "b": "Uses the version linking tangent and secant to find one from the other.",
+        "c": "Uses the version linking cotangent and cosecant.",
+        "d": "Spots whether a rearranged version of an identity is true or false."
+      }
+    },
+    "V.10.03": {
+      "what": "Making a trig expression shorter using algebra and the basic identities.",
+      "levels": {
+        "a": "Factors out a shared trig function.",
+        "b": "Combines fractions over a common bottom, then simplifies.",
+        "c": "Replaces part of an expression using a Pythagorean identity, then cancels.",
+        "d": "Simplifies a longer expression down to a single trig function or a number."
+      }
+    },
+    "V.10.04": {
+      "what": "Proving that a trig equation is true for every angle. The learner works on one side only, rewriting it step by step until it matches the other side.",
+      "levels": {
+        "a": "Knows the rules of the game: only one side may be changed.",
+        "b": "Picks the correct first step of rewriting everything in sine and cosine.",
+        "c": "Uses the trick of multiplying by a matching bracket (a conjugate) and simplifies the result.",
+        "d": "Puts the lines of a short proof in the right order.",
+        "e": "Orders the lines of a longer proof that uses several identities.",
+        "f": "Uses identities to find an exact value, such as sine times cosine from their sum."
+      }
+    },
+    "V.10.05": {
+      "what": "Formulas for the sine, cosine and tangent of two angles added or subtracted. They are not as simple as adding the separate values.",
+      "levels": {
+        "a": "Picks the correct formula for the cosine of a sum or difference.",
+        "b": "Picks the correct formula for the sine of a sum or difference.",
+        "c": "Picks the reason for a step in building the tangent formula from the other two.",
+        "d": "Finds exact values for angles like 15 or 75 degrees by splitting them into familiar angles.",
+        "e": "Spots a formula written out in full and runs it backwards to a single value.",
+        "f": "Finds the size of a sum of two angles from their tangents alone."
+      }
+    },
+    "V.10.06": {
+      "what": "Formulas for the sine, cosine and tangent of double an angle.",
+      "levels": {
+        "a": "Uses the double-angle formula for sine, finding the missing ratio first.",
+        "b": "Chooses the most convenient of the three forms for the cosine of double an angle.",
+        "c": "Uses the double-angle formula for tangent.",
+        "d": "Finds a double-angle value from just one ratio and the quarter."
+      }
+    },
+    "V.10.07": {
+      "what": "Formulas for the trig values of half an angle, built from the double-angle formulas.",
+      "levels": {
+        "a": "Shows where a half-angle formula comes from by substituting into a double-angle one.",
+        "b": "Decides whether a half-angle value is positive or negative from its quarter.",
+        "c": "Finds exact values, such as for 22.5 or 67.5 degrees.",
+        "d": "Rewrites a squared sine or cosine without the square, using double the angle."
+      }
+    },
+    "V.10.08": {
+      "what": "Any mix of a sine and a cosine wave of the same angle is really one wave, shifted sideways and stretched. Writing it that way makes it easy to study.",
+      "levels": {
+        "a": "Finds the height and shift that turn a cosine-plus-sine into one cosine wave.",
+        "b": "Writes the same kind of mix as a single shifted sine wave.",
+        "c": "Uses the single-wave form to find the largest and smallest values.",
+        "d": "Uses the single-wave form to solve an equation."
+      }
+    },
+    "V.10.09": {
+      "what": "Solving simple trig equations, such as finding the angles whose sine is one half.",
+      "levels": {
+        "a": "Rearranges the equation to get the trig function by itself.",
+        "b": "Finds the reference angle (the sharp angle to the x-axis) that fits.",
+        "c": "Works out which quarters of the circle the solutions lie in.",
+        "d": "Finds the second solution in a full turn from the first."
+      }
+    },
+    "V.10.10": {
+      "what": "Finding all solutions to a trig equation, either within a stretch of angles or as a general rule covering every turn.",
+      "levels": {
+        "a": "Lists every solution within one full turn.",
+        "b": "Finds solutions in other stretches by adding whole turns.",
+        "c": "Solves inequalities, finding the stretches of angles where a trig value is above or below a number.",
+        "d": "Counts how many solutions there are in a longer stretch."
+      }
+    },
+    "V.10.11": {
+      "what": "Solving harder trig equations by factoring or by swapping in an identity first.",
+      "levels": {
+        "a": "Treats an equation as a quadratic in sine or cosine to find their possible values.",
+        "b": "Factors out a common function instead of dividing, so no solutions are lost.",
+        "c": "Swaps in an identity so the equation uses just one function.",
+        "d": "Rejects impossible values, such as a cosine bigger than 1.",
+        "e": "Finds a hidden common factor in equations that mix functions.",
+        "f": "Squares both sides to solve, then checks for false solutions that squaring creates."
+      }
+    },
+    "V.10.12": {
+      "what": "Solving equations with a multiple of the angle, like the sine of 2x, which have more solutions than usual.",
+      "levels": {
+        "a": "Solves equations with double the angle within a stretch.",
+        "b": "Widens the range first, listing solutions across several turns.",
+        "c": "Divides back to get the final angles after solving for the multiple.",
+        "d": "Checks the number of solutions, using a graph."
+      }
+    }
+  }
+}

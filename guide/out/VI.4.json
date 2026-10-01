@@ -1,0 +1,141 @@
+{
+  "branch": "VI.4",
+  "intro": "This branch introduces the integral, which adds up many tiny pieces to find a total, such as distance from speed or area under a curve. It ends with the key link showing integrals undo derivatives.",
+  "skills": {
+    "VI.4.01": {
+      "what": "Finding a total by measuring area under a graph. For example, the area under a speed graph gives the distance traveled.",
+      "levels": {
+        "a": "Finds distance traveled from the area under a velocity graph.",
+        "b": "Explains that rate times time appears as an area on a graph.",
+        "c": "Treats area below the axis as negative, like driving backwards.",
+        "d": "Works out the units of area under a curve, such as meters."
+      }
+    },
+    "VI.4.02": {
+      "what": "Estimating area under a curve by filling it with rectangles, using the left or right edge to set each height.",
+      "levels": {
+        "a": "Divides the area into rectangles and adds up their areas.",
+        "b": "Uses the curve's height at each left edge for the rectangles.",
+        "c": "Uses the curve's height at each right edge instead.",
+        "d": "Decides whether the estimate is too high or too low."
+      }
+    },
+    "VI.4.03": {
+      "what": "Better area estimates using the middle of each strip, or using slanted-top strips (trapezoids).",
+      "levels": {
+        "a": "Estimates area using rectangles set at each strip's midpoint.",
+        "b": "Estimates area using trapezoids instead of rectangles.",
+        "c": "Makes these estimates from a table of values.",
+        "d": "Handles strips of unequal widths."
+      }
+    },
+    "VI.4.04": {
+      "what": "Getting the exact area by using more and more thinner rectangles, and taking the limit as their number grows without end.",
+      "levels": {
+        "a": "Writes a rectangle sum using sigma (summation) notation.",
+        "b": "Writes the width of each strip and where each one sits.",
+        "c": "Takes the limit as the number of strips grows endlessly.",
+        "d": "Converts such a limit of sums into integral notation."
+      }
+    },
+    "VI.4.05": {
+      "what": "How an integral is written and read: the start and end points, the function, and the \"dx\" marking thin strips.",
+      "levels": {
+        "a": "Identifies the start and end points and the function in an integral.",
+        "b": "Explains \"dx\" as the tiny width of each strip.",
+        "c": "Reads an integral aloud correctly.",
+        "d": "Interprets an integral as area, with below-axis parts counting as negative."
+      }
+    },
+    "VI.4.06": {
+      "what": "Rules for working with integrals, such as splitting them into pieces or flipping the start and end.",
+      "levels": {
+        "a": "Knows that swapping start and end points flips the sign.",
+        "b": "Splits an integral over a stretch into two neighboring stretches.",
+        "c": "Pulls out constants and splits up sums.",
+        "d": "Compares integrals: a bigger function gives a bigger integral."
+      }
+    },
+    "VI.4.07": {
+      "what": "Finding integrals exactly using familiar shapes like triangles and semicircles, without any calculus rules.",
+      "levels": {
+        "a": "Finds integrals from areas of triangles and rectangles.",
+        "b": "Uses semicircle areas for circular graphs.",
+        "c": "Handles V-shaped absolute value graphs.",
+        "d": "Uses symmetry, where equal areas above and below cancel out."
+      }
+    },
+    "VI.4.08": {
+      "what": "An antiderivative undoes a derivative: given the rate, it recovers the original function.",
+      "levels": {
+        "a": "Finds a function whose derivative is the given one.",
+        "b": "Adds \"plus C\", since any constant could have been there.",
+        "c": "Sees the answers as a family of curves stacked vertically.",
+        "d": "Checks an antiderivative by differentiating it."
+      }
+    },
+    "VI.4.09": {
+      "what": "The basic rules for finding antiderivatives, starting with running the power rule backwards.",
+      "levels": {
+        "a": "Uses the power rule in reverse: raise the power by one and divide.",
+        "b": "Handles sums and number multipliers.",
+        "c": "Knows one over x comes from the natural log.",
+        "d": "Rewrites roots and fractions as powers before finding antiderivatives."
+      }
+    },
+    "VI.4.10": {
+      "what": "Antiderivatives of trigonometry and exponential functions, found by reversing their derivative rules.",
+      "levels": {
+        "a": "Finds antiderivatives of sine and cosine.",
+        "b": "Finds antiderivatives of secant squared and secant times tangent.",
+        "c": "Finds antiderivatives of e to the x and other exponentials.",
+        "d": "Recognizes forms whose antiderivatives are inverse trig functions."
+      }
+    },
+    "VI.4.11": {
+      "what": "Recovering a specific function from its rate of change plus one known value, like finding position from speed and a starting point.",
+      "levels": {
+        "a": "Finds the general antiderivative with its \"plus C\".",
+        "b": "Uses one known point to pin down the value of C.",
+        "c": "Finds position from velocity and a starting position.",
+        "d": "Works back twice, from acceleration to velocity to position."
+      }
+    },
+    "VI.4.12": {
+      "what": "The first part of the Fundamental Theorem of Calculus: the rate at which area builds up equals the height of the curve.",
+      "levels": {
+        "a": "Differentiates an integral whose end point is x.",
+        "b": "Combines this with the chain rule when the end point is a formula.",
+        "c": "Handles integrals where the start point is variable.",
+        "d": "Handles integrals where both start and end are variable."
+      }
+    },
+    "VI.4.13": {
+      "what": "The second part of the Fundamental Theorem: to find an exact area, take any antiderivative and subtract its values at the two ends.",
+      "levels": {
+        "a": "Writes the result as the antiderivative at the end minus at the start.",
+        "b": "Evaluates definite integrals using this method.",
+        "c": "Explains why this shortcut gives the area.",
+        "d": "Applies it to functions defined in pieces."
+      }
+    },
+    "VI.4.14": {
+      "what": "A running total function that tracks how much area has piled up from a starting point to x.",
+      "levels": {
+        "a": "Defines a running total as an integral with a variable end point.",
+        "b": "Finds values of the running total from a graph.",
+        "c": "Finds where the running total increases.",
+        "d": "Finds its peaks, valleys and bends from the original graph."
+      }
+    },
+    "VI.4.15": {
+      "what": "The average height of a curve over a stretch, like the average temperature across a whole day.",
+      "levels": {
+        "a": "States the formula: the integral divided by the stretch's length.",
+        "b": "Computes the average value of a function.",
+        "c": "Finds where the function actually hits its average value.",
+        "d": "Interprets the average value in a real-world setting."
+      }
+    }
+  }
+}

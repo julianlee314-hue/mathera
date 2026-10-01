@@ -1,0 +1,195 @@
+{
+  "branch": "VI.3",
+  "intro": "This branch puts derivatives to work: estimating values, describing motion, finding the highest and lowest points of a graph, and solving real \"best possible\" problems.",
+  "skills": {
+    "VI.3.01": {
+      "what": "Writing the equation of the line that just touches a curve at a point, and of the line at right angles to it.",
+      "levels": {
+        "a": "Finds the slope of the touching line from the derivative at the point.",
+        "b": "Writes the line's equation using the point and the slope.",
+        "c": "Writes the equation of the perpendicular line (the normal line).",
+        "d": "Finds the points where the touching line is flat."
+      }
+    },
+    "VI.3.02": {
+      "what": "Using the touching line as a quick estimate for a curve near a known point, like estimating the square root of 4.1.",
+      "levels": {
+        "a": "Explains why the tangent line stays close to the curve nearby.",
+        "b": "Uses the tangent line to approximate a hard-to-compute value.",
+        "c": "Decides whether the estimate is too high or too low from the curve's bend.",
+        "d": "Uses differentials (tiny changes) to estimate small errors."
+      }
+    },
+    "VI.3.03": {
+      "what": "Using derivatives to describe moving objects: position, speed and acceleration.",
+      "levels": {
+        "a": "Finds velocity by differentiating position.",
+        "b": "Finds acceleration by differentiating velocity.",
+        "c": "Decides whether an object is speeding up or slowing down.",
+        "d": "Finds the total distance traveled, including trips back and forth."
+      }
+    },
+    "VI.3.04": {
+      "what": "Reading a derivative as a real-world rate, such as dollars per item or people per year.",
+      "levels": {
+        "a": "Explains the meaning of a derivative at a point, including its units.",
+        "b": "Interprets marginal cost, the cost of making one more item.",
+        "c": "Interprets rates of population growth.",
+        "d": "Estimates a rate from real data in a table."
+      }
+    },
+    "VI.3.05": {
+      "what": "Setting up problems where two quantities change together over time, like the radius and area of a spreading puddle.",
+      "levels": {
+        "a": "Draws a diagram and labels the changing quantities.",
+        "b": "Finds an equation linking the quantities.",
+        "c": "Differentiates that equation with respect to time.",
+        "d": "Plugs in the given numbers only at the end, after differentiating."
+      }
+    },
+    "VI.3.06": {
+      "what": "Classic linked-rates problems, such as a sliding ladder or a filling cone-shaped tank.",
+      "levels": {
+        "a": "Solves the sliding ladder problem.",
+        "b": "Solves for how fast water rises in a filling cone.",
+        "c": "Solves for how fast a shadow grows as someone walks.",
+        "d": "Solves problems where an angle is changing, using trigonometry."
+      }
+    },
+    "VI.3.07": {
+      "what": "Critical points are where a graph is flat or has a sharp point. They are the candidates for peaks and valleys.",
+      "levels": {
+        "a": "Finds points where the derivative equals zero.",
+        "b": "Finds points where the derivative does not exist.",
+        "c": "Finds all critical points of a function.",
+        "d": "Explains why not every critical point is a peak or a valley."
+      }
+    },
+    "VI.3.08": {
+      "what": "Using the sign of the derivative to tell where a graph is rising and where it is falling.",
+      "levels": {
+        "a": "Links a positive derivative to rising and a negative one to falling.",
+        "b": "Makes a sign chart showing where the derivative is positive or negative.",
+        "c": "Writes the stretches of x where the function rises or falls.",
+        "d": "Reads rising and falling parts from a graph of the derivative."
+      }
+    },
+    "VI.3.09": {
+      "what": "Deciding whether a critical point is a peak or valley by checking if the graph switches between rising and falling there.",
+      "levels": {
+        "a": "Checks whether the derivative changes sign at a point.",
+        "b": "Identifies a local peak where rising switches to falling.",
+        "c": "Identifies a local valley where falling switches to rising.",
+        "d": "Justifies the conclusion in clear sentences."
+      }
+    },
+    "VI.3.10": {
+      "what": "Concavity describes the way a graph bends: cupped upward like a bowl or downward like a dome.",
+      "levels": {
+        "a": "Links the sign of the second derivative to the bend.",
+        "b": "Recognizes cupped-up and cupped-down shapes.",
+        "c": "Finds the stretches of x where the graph bends each way.",
+        "d": "Explains cupped-up as the slope steadily increasing."
+      }
+    },
+    "VI.3.11": {
+      "what": "Inflection points are where a graph switches its bend, from bowl-shaped to dome-shaped or back.",
+      "levels": {
+        "a": "Identifies points where the bend changes direction.",
+        "b": "Explains why a zero second derivative alone does not guarantee a switch.",
+        "c": "Finds all inflection points of a function.",
+        "d": "Finds inflection points from a graph of the derivative."
+      }
+    },
+    "VI.3.12": {
+      "what": "A quicker test for peaks and valleys: at a flat point, a bowl shape means a valley and a dome shape means a peak.",
+      "levels": {
+        "a": "Identifies a valley where the slope is zero and the graph bends up.",
+        "b": "Identifies a peak where the slope is zero and the graph bends down.",
+        "c": "Recognizes when the test gives no answer and another test is needed.",
+        "d": "Justifies conclusions from the test in words."
+      }
+    },
+    "VI.3.13": {
+      "what": "Finding the very highest and lowest values a function reaches over a whole stretch, not just local peaks.",
+      "levels": {
+        "a": "States that an unbroken function on a closed stretch has a highest and lowest value.",
+        "b": "Lists the candidates: critical points and the two endpoints.",
+        "c": "Compares the candidates' values to pick the highest and lowest.",
+        "d": "Handles open stretches, where a highest or lowest value may not exist."
+      }
+    },
+    "VI.3.14": {
+      "what": "The mean value theorem: on any smooth trip, at some moment your instant speed equals your average speed.",
+      "levels": {
+        "a": "Uses Rolle's theorem: if you end where you started, somewhere the slope is zero.",
+        "b": "States the mean value theorem in plain words.",
+        "c": "Finds the exact point where the instant rate equals the average rate.",
+        "d": "Uses it to prove a driver must have broken a speed limit."
+      }
+    },
+    "VI.3.15": {
+      "what": "Drawing an accurate graph of a function by gathering all the clues calculus gives about its shape.",
+      "levels": {
+        "a": "Finds the allowed inputs and where the graph crosses the axes.",
+        "b": "Finds the lines the graph approaches (asymptotes).",
+        "c": "Makes charts of rising, falling and bending from the derivatives.",
+        "d": "Combines everything into a complete, labeled sketch."
+      }
+    },
+    "VI.3.16": {
+      "what": "Reading a function, its derivative and its second derivative side by side to see how their shapes connect.",
+      "levels": {
+        "a": "Matches three graphs to the function and its two derivatives.",
+        "b": "Describes features of the function from its derivative's graph.",
+        "c": "Describes features of the function from its second derivative's graph.",
+        "d": "Justifies each claim with precise language."
+      }
+    },
+    "VI.3.17": {
+      "what": "Turning a word problem about the biggest or smallest possible value into a single formula to work with.",
+      "levels": {
+        "a": "Identifies the quantity to make as large or small as possible.",
+        "b": "Writes the limiting condition, like a fixed amount of fencing, as an equation.",
+        "c": "Combines them into a formula in just one variable.",
+        "d": "States the sensible range of values the variable can take."
+      }
+    },
+    "VI.3.18": {
+      "what": "Solving \"best possible\" problems, like the largest area a fence can enclose, using derivatives.",
+      "levels": {
+        "a": "Finds the critical points of the formula.",
+        "b": "Tests them to confirm which gives the best value.",
+        "c": "Answers the question actually asked, with units.",
+        "d": "Solves classic fence, open-box and soup-can problems from start to finish."
+      }
+    },
+    "VI.3.19": {
+      "what": "L'Hôpital's rule: when a limit gives zero over zero, you can often compare the rates of top and bottom instead.",
+      "levels": {
+        "a": "Recognizes the forms where the rule applies: zero over zero and infinity over infinity.",
+        "b": "Applies the rule by differentiating top and bottom separately.",
+        "c": "Applies it repeatedly when the first try still gives zero over zero.",
+        "d": "Rewrites other tricky forms, like zero times infinity, so the rule applies."
+      }
+    },
+    "VI.3.20": {
+      "what": "Newton's method: a way to hunt down solutions to hard equations by following tangent lines toward where a graph crosses zero.",
+      "levels": {
+        "a": "Explains how following a tangent line gives a better guess.",
+        "b": "Writes the formula that turns one guess into the next.",
+        "c": "Runs a few steps by hand or calculator to close in on a solution.",
+        "d": "Recognizes situations where the method fails or wanders off."
+      }
+    },
+    "VI.3.21": {
+      "what": "Solving an equation by rewriting it as x equals something, then feeding each answer back in until it settles.",
+      "levels": {
+        "a": "Rearranges an equation into the form x equals a formula in x.",
+        "b": "Repeats the formula, plugging each answer back in.",
+        "c": "Draws cobweb and staircase diagrams to show the process.",
+        "d": "Decides when the process settles down and when it runs away."
+      }
+    }
+  }
+}

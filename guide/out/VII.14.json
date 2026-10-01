@@ -1,0 +1,168 @@
+{
+  "branch": "VII.14",
+  "intro": "Vector calculus studies quantities that have a direction at every point, like wind, water flow or gravity. It culminates in theorems linking what happens inside a region to what happens on its edge, key tools in physics and engineering.",
+  "skills": {
+    "VII.14.01": {
+      "what": "A vector field attaches an arrow to every point, like a weather map showing wind speed and direction everywhere.",
+      "levels": {
+        "a": "Pictures a field as an arrow at every point.",
+        "b": "Sketches a field from its formula.",
+        "c": "Draws flow lines that follow the arrows.",
+        "d": "Describes wind, water currents and gravity as vector fields."
+      }
+    },
+    "VII.14.02": {
+      "what": "A gradient field comes from a single height-like function, with every arrow pointing uphill on it.",
+      "levels": {
+        "a": "Recognizes fields that are the gradient of some function.",
+        "b": "Understands potential functions, the height functions behind such fields.",
+        "c": "Finds a potential function for a given field.",
+        "d": "Describes gravity as the gradient of a potential."
+      }
+    },
+    "VII.14.03": {
+      "what": "A scalar line integral adds up a quantity along a curve, like the total mass of a bent wire.",
+      "levels": {
+        "a": "Understands adding up a quantity along a curve.",
+        "b": "Describes the curve with a parameter, like time along a path.",
+        "c": "Uses the small piece of arc length correctly.",
+        "d": "Finds the mass of a wire with uneven density."
+      }
+    },
+    "VII.14.04": {
+      "what": "A vector line integral adds up how much a field pushes along a path, such as the work done by wind on a moving boat.",
+      "levels": {
+        "a": "Understands the integral of the field along the direction of travel.",
+        "b": "Interprets it as work done along a path.",
+        "c": "Evaluates vector line integrals.",
+        "d": "Sees that reversing the path's direction flips the sign."
+      }
+    },
+    "VII.14.05": {
+      "what": "For gradient fields, a line integral depends only on the start and end points, like height gained on a hike regardless of the route.",
+      "levels": {
+        "a": "Computes the integral as potential at the end minus potential at the start.",
+        "b": "Applies this shortcut to examples.",
+        "c": "Shows any closed loop gives zero.",
+        "d": "Compares it with the fundamental theorem of ordinary calculus."
+      }
+    },
+    "VII.14.06": {
+      "what": "Tests that check whether a field is conservative, meaning it comes from a potential function.",
+      "levels": {
+        "a": "Uses a mixed-partials test for flat 2D fields.",
+        "b": "Uses the curl test for 3D fields.",
+        "c": "Knows the tests need a region without holes.",
+        "d": "Studies the swirling vortex field where the test misleads."
+      }
+    },
+    "VII.14.07": {
+      "what": "Path independence means the result of a line integral does not depend on the route taken between two points.",
+      "levels": {
+        "a": "Lists statements that all mean the same thing as path independence.",
+        "b": "Picks an easy path to compute the integral.",
+        "c": "Connects this to conservation of energy.",
+        "d": "Checks whether a claim of path independence is correct."
+      }
+    },
+    "VII.14.08": {
+      "what": "Green's theorem links the swirl of a field around a closed loop to the total swirl inside it.",
+      "levels": {
+        "a": "States Green's theorem in its circulation form.",
+        "b": "Goes around the boundary in the correct direction.",
+        "c": "Evaluates both sides and checks they agree.",
+        "d": "Finds an area using only a trip around its edge."
+      }
+    },
+    "VII.14.09": {
+      "what": "The flux form of Green's theorem measures net flow out across a loop by adding up sources inside.",
+      "levels": {
+        "a": "States the flux form of the theorem.",
+        "b": "Computes the outward flow across a boundary.",
+        "c": "Evaluates both sides.",
+        "d": "Applies it to regions with holes."
+      }
+    },
+    "VII.14.10": {
+      "what": "Curl measures how much a field makes things spin, like a tiny paddle wheel placed in flowing water.",
+      "levels": {
+        "a": "Learns the formula for curl.",
+        "b": "Pictures curl with a spinning paddle wheel.",
+        "c": "Computes the curl of a field.",
+        "d": "Recognizes fields with zero curl (no spin)."
+      }
+    },
+    "VII.14.11": {
+      "what": "Divergence measures how much a field spreads out from a point, like water from a sprinkler or draining into a sink.",
+      "levels": {
+        "a": "Learns the formula for divergence.",
+        "b": "Pictures sources (spreading out) and sinks (drawing in).",
+        "c": "Computes the divergence of a field.",
+        "d": "Recognizes fields with zero divergence, like water that cannot be squeezed."
+      }
+    },
+    "VII.14.12": {
+      "what": "Describing a curved surface using two parameters, like latitude and longitude on a globe.",
+      "levels": {
+        "a": "Describes a surface with two parameters.",
+        "b": "Writes descriptions of spheres, cylinders and cones.",
+        "c": "Writes graphs of functions as parametric surfaces.",
+        "d": "Finds tangent planes to parametric surfaces."
+      }
+    },
+    "VII.14.13": {
+      "what": "Finding the area of a curved surface, like the amount of fabric needed to cover a dome.",
+      "levels": {
+        "a": "Uses the cross product of two tangent arrows for a tiny area piece.",
+        "b": "Sets up the surface area integral.",
+        "c": "Evaluates it.",
+        "d": "Uses the shortcut formula for surfaces that are graphs."
+      }
+    },
+    "VII.14.14": {
+      "what": "A surface integral adds up a quantity over a curved surface, like the total mass of a thin shell.",
+      "levels": {
+        "a": "Understands adding a quantity over a curved surface.",
+        "b": "Sets up the integral.",
+        "c": "Evaluates it.",
+        "d": "Finds the mass of a thin shell."
+      }
+    },
+    "VII.14.15": {
+      "what": "Flux measures how much of a flow passes through a surface, like water through a fishing net.",
+      "levels": {
+        "a": "Understands flux as flow across the surface in the normal direction.",
+        "b": "Sets up flux integrals.",
+        "c": "Evaluates them.",
+        "d": "Computes flow through a net-like surface."
+      }
+    },
+    "VII.14.16": {
+      "what": "Orientation means choosing which side of a surface counts as outside, which fixes the sign of flux.",
+      "levels": {
+        "a": "Chooses a normal direction for a surface.",
+        "b": "Uses outward normals for closed surfaces.",
+        "c": "Matches the boundary's direction to the surface's side.",
+        "d": "Studies the Möbius strip, a surface with only one side."
+      }
+    },
+    "VII.14.17": {
+      "what": "Stokes' theorem links the swirl of a field over a surface to the circulation around its edge.",
+      "levels": {
+        "a": "States Stokes' theorem.",
+        "b": "Matches the surface and edge directions correctly.",
+        "c": "Evaluates whichever side is easier.",
+        "d": "Shows any surface with the same edge gives the same answer."
+      }
+    },
+    "VII.14.18": {
+      "what": "The divergence theorem links flow out through a closed surface to the total spreading-out inside it.",
+      "levels": {
+        "a": "States the divergence theorem.",
+        "b": "Evaluates whichever side is easier.",
+        "c": "Computes flux out of closed surfaces such as boxes and spheres.",
+        "d": "Connects it to Gauss's law for electric fields."
+      }
+    }
+  }
+}

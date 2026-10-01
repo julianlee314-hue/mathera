@@ -1,0 +1,69 @@
+{
+  "branch": "VII.15",
+  "intro": "A differential equation connects a quantity to how fast it changes, like a cooling cup of coffee losing heat faster when it is hotter. This branch solves the simplest kind, which involve only the first rate of change.",
+  "skills": {
+    "VII.15.01": {
+      "what": "Sorting differential equations by type, since each type has its own solving method.",
+      "levels": {
+        "a": "Finds the order: the highest derivative (rate of change) involved.",
+        "b": "Tells linear equations from nonlinear ones.",
+        "c": "Recognizes autonomous equations, where time does not appear directly.",
+        "d": "Tells equations with one input variable from those with several."
+      }
+    },
+    "VII.15.02": {
+      "what": "Solving linear first-order equations using an integrating factor, a clever multiplier that makes the equation easy to integrate.",
+      "levels": {
+        "a": "Rewrites the equation in standard form.",
+        "b": "Finds the integrating factor.",
+        "c": "Solves the equation.",
+        "d": "Finds the one solution that matches a given starting value."
+      }
+    },
+    "VII.15.03": {
+      "what": "Exact equations come from a hidden function whose level curves are the solutions.",
+      "levels": {
+        "a": "Tests whether an equation is exact.",
+        "b": "Finds the hidden function.",
+        "c": "Solves the equation.",
+        "d": "Multiplies by a factor to make a non-exact equation exact."
+      }
+    },
+    "VII.15.04": {
+      "what": "Using a clever change of variable to turn a hard equation into one already known how to solve.",
+      "levels": {
+        "a": "Solves homogeneous equations, where the slope depends only on y divided by x.",
+        "b": "Solves Bernoulli equations with a standard substitution.",
+        "c": "Uses the substitution y equals v times x.",
+        "d": "Chooses the right substitution for a given equation."
+      }
+    },
+    "VII.15.05": {
+      "what": "A theorem that says when an equation is guaranteed to have exactly one solution through a starting point.",
+      "levels": {
+        "a": "States the existence and uniqueness theorem.",
+        "b": "Checks whether its conditions hold.",
+        "c": "Studies an example with more than one solution.",
+        "d": "Finds how far a solution is guaranteed to last."
+      }
+    },
+    "VII.15.06": {
+      "what": "Applying first-order equations to electrical circuits and to tanks where liquids mix.",
+      "levels": {
+        "a": "Solves circuits with a resistor and a capacitor.",
+        "b": "Solves circuits with a resistor and an inductor (coil).",
+        "c": "Tracks salt concentration in a tank with liquid flowing in and out.",
+        "d": "Interprets what happens in the long run."
+      }
+    },
+    "VII.15.07": {
+      "what": "Numerical methods approximate a solution step by step when no formula can be found, as computers do.",
+      "levels": {
+        "a": "Uses Euler's method: repeated small steps along the current slope.",
+        "b": "Uses an improved version that averages two slopes.",
+        "c": "Uses the Runge–Kutta method, a more accurate standard.",
+        "d": "Compares how accurate the methods are."
+      }
+    }
+  }
+}

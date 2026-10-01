@@ -1,0 +1,158 @@
+{
+  "branch": "V.1",
+  "intro": "This branch teaches how mathematicians reason: making careful statements, testing them, and building a proof (a step-by-step argument that leaves no room for doubt). These habits underpin all the geometry that follows.",
+  "skills": {
+    "V.1.01": {
+      "what": "Learning the basic words of geometry and what makes a good definition. A few words, like point and line, are left undefined; everything else is built from them.",
+      "levels": {
+        "a": "Names which basic idea (point, line or plane) an everyday object models, like a pencil tip.",
+        "b": "Names segments and rays from points on a line, such as the ray pointing the opposite way.",
+        "c": "Picks the precise definition, spotting missing details such as 'greater than 1' for prime numbers.",
+        "d": "Checks whether a definition still holds when turned around, and spots ones that fail."
+      }
+    },
+    "V.1.02": {
+      "what": "Working with 'if … then …' statements, such as 'If it rains, then the ground gets wet.' These are the building blocks of every proof.",
+      "levels": {
+        "a": "Picks out the 'if' part (hypothesis) and the 'then' part (conclusion) of a statement.",
+        "b": "Rewrites statements like 'The game is canceled if it rains' in if–then form.",
+        "c": "Decides whether an if–then statement is true, including ones whose 'if' part is false.",
+        "d": "Turns everyday claims, like 'Every student who scores 90 or more gets an A,' into if–then form."
+      }
+    },
+    "V.1.03": {
+      "what": "Flipping and negating an if–then statement to make three related versions, and seeing which ones mean the same thing as the original.",
+      "levels": {
+        "a": "Picks the converse: the statement with the 'if' and 'then' parts swapped.",
+        "b": "Picks the inverse: the statement with 'not' added to both parts.",
+        "c": "Picks the contrapositive: swapped and with 'not' added to both parts.",
+        "d": "Picks which version always agrees with the original, knowing a statement and its contrapositive always match."
+      }
+    },
+    "V.1.04": {
+      "what": "Working with 'if and only if' statements, which say two things always go together: each one guarantees the other.",
+      "levels": {
+        "a": "Decides whether an 'if and only if' claim is true by checking it works both ways.",
+        "b": "Finds the second if–then statement hidden inside an 'if and only if' claim.",
+        "c": "Tests each direction of a claim and says which direction, if any, fails.",
+        "d": "Picks a true 'if and only if' statement that could be a definition, or rewrites a definition that way."
+      }
+    },
+    "V.1.05": {
+      "what": "Using truth tables: charts that list every true/false combination to show exactly when a combined statement is true.",
+      "levels": {
+        "a": "Works out 'not', 'and' and 'or' for real statements and fills in table entries.",
+        "b": "Decides when an if–then statement is true, including the surprising rows where the 'if' part is false.",
+        "c": "Builds a full truth table column by column and counts the rows where it comes out true.",
+        "d": "Uses a table to check whether two statements mean exactly the same thing.",
+        "e": "Finds the true-or-false value of each letter so that three linked statements all hold at once.",
+        "f": "Solves knights-and-knaves puzzles, where some islanders always tell the truth and others always lie."
+      }
+    },
+    "V.1.06": {
+      "what": "Telling apart two kinds of reasoning: spotting a pattern and guessing a rule (inductive), versus reasoning from known facts to a certain conclusion (deductive).",
+      "levels": {
+        "a": "Spots a pattern in a list of numbers and predicts the next one.",
+        "b": "Finds where a pattern that looked reliable breaks, such as a formula that stops giving prime numbers.",
+        "c": "Reaches a certain answer from a known fact, such as a triangle's angles adding to 180 degrees.",
+        "d": "Classifies an argument as pattern-spotting (inductive) or step-by-step reasoning (deductive)."
+      }
+    },
+    "V.1.07": {
+      "what": "Using a counterexample: a single case that shows a general claim is false.",
+      "levels": {
+        "a": "Decides whether a given number really breaks a claim.",
+        "b": "Finds a number that breaks a false claim.",
+        "c": "Picks the change that turns a false claim into a true one.",
+        "d": "Tells which claims a single example can prove ('there is…') and which it never can ('all…')."
+      }
+    },
+    "V.1.08": {
+      "what": "Two basic rules for drawing valid conclusions from if–then statements, and spotting arguments that only look valid.",
+      "levels": {
+        "a": "Draws the conclusion from a rule plus a fact: late book, so there is a fine.",
+        "b": "Links two if–then statements into one new statement.",
+        "c": "Chains three or more if–then statements, or puts them in order so each leads to the next.",
+        "d": "Decides whether an argument is valid, spotting tempting but faulty reasoning.",
+        "e": "Runs the chain backwards: when the final result is false, works out what else must be false.",
+        "f": "Untangles a jumbled list of rules about made-up creatures, rewording some so they link into one chain."
+      }
+    },
+    "V.1.09": {
+      "what": "The basic rules that let us work with equal quantities, such as 'anything equals itself' and 'you may add the same amount to both sides.'",
+      "levels": {
+        "a": "Names which basic rule a statement shows: equals itself, works both ways, or chains along.",
+        "b": "Names the rule behind a step such as adding the same number to both sides.",
+        "c": "Recognizes substitution: swapping in a value known to be equal.",
+        "d": "Uses the same rules for congruence (lengths or angles that match exactly) and spots correctly written statements."
+      }
+    },
+    "V.1.10": {
+      "what": "Giving a reason for every step of solving an equation. It connects ordinary algebra to the idea of proof.",
+      "levels": {
+        "a": "Names the rule that justifies one step of solving an equation.",
+        "b": "Fills in a missing reason in a table of steps and reasons.",
+        "c": "Finds the one wrong step in a proof, including steps that multiply out brackets.",
+        "d": "Supplies a missing step of a proof from the reason written beside it."
+      }
+    },
+    "V.1.11": {
+      "what": "Writing a two-column proof: a table with statements on the left and the reason for each on the right, leading from what is given to what must be shown.",
+      "levels": {
+        "a": "Picks out what is given and what must be proved from a stated theorem.",
+        "b": "Plans a proof by working backwards: which line must come just before the last one?",
+        "c": "Fills in a missing reason in a partly written proof about angles.",
+        "d": "Puts the steps of a complete proof in the right order."
+      }
+    },
+    "V.1.12": {
+      "what": "Other ways to write a proof: as a flowchart of boxes and arrows, or as an ordinary paragraph.",
+      "levels": {
+        "a": "Fills in a missing box in a flow proof, a diagram of statements joined by arrows.",
+        "b": "Works out which earlier statements feed into a step when a table proof becomes a flow proof.",
+        "c": "Fills a gap in a paragraph proof or puts its sentences in order.",
+        "d": "Spots a sentence with no valid reason, and tells the proof formats apart."
+      }
+    },
+    "V.1.13": {
+      "what": "Proving something by showing that its opposite leads to an impossibility. This is called indirect proof or proof by contradiction.",
+      "levels": {
+        "a": "Starts an indirect proof by assuming the opposite, such as 'x is not 8.'",
+        "b": "Follows that assumption to an impossibility, like a triangle with more than 180 degrees.",
+        "c": "Concludes from the impossibility that the original claim must be true.",
+        "d": "Puts in order the steps proving the square root of 2 is not a fraction, or finds a faulty step."
+      }
+    },
+    "V.1.14": {
+      "what": "Proof by induction proves a claim for every whole number, like a row of dominoes: show the first falls, and that each one knocks over the next.",
+      "levels": {
+        "a": "Names the starting case and what the 'each one leads to the next' step assumes.",
+        "b": "Puts the steps of an induction proof of a sum formula in order, or names the term added.",
+        "c": "Fills in the key rewriting step when proving a number always divides an expression.",
+        "d": "Finds where an 'always bigger' claim starts to hold, which is the starting case for the proof.",
+        "e": "Finds the faulty step in a fake induction proof, such as a starting case that is wrong.",
+        "f": "Works out exactly which numbers an unusual domino chain reaches, such as only doubling from 1."
+      }
+    },
+    "V.1.15": {
+      "what": "Working with sets (collections of things) and Venn diagrams, the overlapping circles that show what groups share.",
+      "levels": {
+        "a": "Reads set notation and decides whether a number belongs to a set.",
+        "b": "Lists what is in either set, in both sets, or outside a set.",
+        "c": "Uses counts in overlapping circles to answer questions like 'how many do neither?'",
+        "d": "Lists the members of a set described by a rule, such as 'whole numbers from 2 to 8.'"
+      }
+    },
+    "V.1.16": {
+      "what": "Understanding claims that begin 'for all' or 'there exists', and how to tell when they are true or how to disprove them.",
+      "levels": {
+        "a": "Tells whether a sentence is about every case or about at least one case.",
+        "b": "Decides whether such a statement is true for a given list of numbers.",
+        "c": "Writes the opposite of such a statement correctly, swapping 'all' and 'some'.",
+        "d": "Finds the one member of a list that breaks a 'for all' claim.",
+        "e": "Writes the opposite of statements with two such phrases, like 'some x is smaller than every y.'",
+        "f": "Sees how swapping the order of 'for all' and 'there exists' changes whether a statement is true."
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+ "unit": "IV.2",
+ "name": "Functions",
+ "skills": [
+  {
+   "id": "IV.2.01",
+   "name": "Function notation",
+   "steps": {
+    "a": "read f(x) aloud and in meaning",
+    "b": "f(3) vs f(x) = 3",
+    "c": "notation in context",
+    "d": "write a function from words"
+   },
+   "wrong_turn": "f(x) is not f times x. f(2) means \"the output at 2\", not 2f.",
+   "rule": "f(x) is read \"f of x\": the output of f when the input is x."
+  },
+  {
+   "id": "IV.2.02",
+   "name": "Evaluate functions",
+   "steps": {
+    "a": "plug in numbers",
+    "b": "plug in negatives and fractions",
+    "c": "plug in expressions like f(a + 1)",
+    "d": "evaluate from a graph or table"
+   },
+   "wrong_turn": "f(−2) for x² is (−2)² = 4, not −2² = −4. Put negatives in parentheses.",
+   "rule": "To evaluate f(a), replace every x with (a) and simplify."
+  },
+  {
+   "id": "IV.2.03",
+   "name": "Domain & range",
+   "steps": {
+    "a": "from a list of pairs",
+    "b": "from a graph",
+    "c": "from an equation (no ÷ 0, no √ negative)",
+    "d": "in interval notation"
+   },
+   "wrong_turn": "The range isn't everything on the y-axis. f(x) = x² never outputs negatives, so its range is y ≥ 0.",
+   "rule": "Domain: all allowed inputs. Range: all outputs that actually occur."
+  },
+  {
+   "id": "IV.2.04",
+   "name": "Reading function graphs",
+   "steps": {
+    "a": "find f(a) on a graph",
+    "b": "solve f(x) = k on a graph",
+    "c": "where f(x) > g(x)",
+    "d": "read intersections"
+   },
+   "wrong_turn": "To solve f(x) = 3 on a graph, look for height 3 and read the x-values. Don't go to x = 3.",
+   "rule": "f(a) is the height of the graph above x=a."
+  },
+  {
+   "id": "IV.2.05",
+   "name": "Functions in context",
+   "steps": {
+    "a": "name input and output",
+    "b": "interpret f(a) = b in words",
+    "c": "reasonable domain",
+    "d": "units of input and output"
+   },
+   "wrong_turn": "C(10) = 25 doesn't mean 10 dollars buy 25 rides. Input first: 10 rides cost 25 dollars.",
+   "rule": "f(a)=b means: when the input is a (in its units), the output is b (in its units)."
+  },
+  {
+   "id": "IV.2.06",
+   "name": "Average rate of change",
+   "steps": {
+    "a": "formula over an interval",
+    "b": "from a table",
+    "c": "from a graph",
+    "d": "interpret in context"
+   },
+   "wrong_turn": "Divide by the change in input, not the change in output: from (1, 1) to (4, 16) it's 15/3, not 3/15.",
+   "rule": "average rate of change=(f(b)−f(a)b−a)"
+  },
+  {
+   "id": "IV.2.07",
+   "name": "Increasing & decreasing",
+   "steps": {
+    "a": "spot intervals on a graph",
+    "b": "write them as intervals",
+    "c": "constant intervals",
+    "d": "connect to sign of rate of change"
+   },
+   "wrong_turn": "Intervals of increase are x-values, not y-values. For x², write (0, ∞), not \"from y = 0 up\".",
+   "rule": "f is increasing on an interval if bigger inputs give bigger outputs there."
+  },
+  {
+   "id": "IV.2.08",
+   "name": "Intercepts & zeros",
+   "steps": {
+    "a": "y-intercept is f(0)",
+    "b": "zeros where f(x) = 0",
+    "c": "find them from a graph",
+    "d": "find them algebraically"
+   },
+   "wrong_turn": "A zero is an x-value where the output is 0, not the output at x = 0. That's the y-intercept.",
+   "rule": "The y-intercept is f(0). The zeros are the x with f(x)=0, the x-intercepts."
+  },
+  {
+   "id": "IV.2.09",
+   "name": "Maxima & minima",
+   "steps": {
+    "a": "relative max and min",
+    "b": "absolute max and min",
+    "c": "read them from a graph",
+    "d": "interpret in context"
+   },
+   "wrong_turn": "The maximum is the height, not the location. For −(x − 2)² + 5, the max is 5, reached at x = 2.",
+   "rule": "A relative max is higher than everything nearby; the absolute max is highest of all."
+  },
+  {
+   "id": "IV.2.10",
+   "name": "Piecewise functions",
+   "steps": {
+    "a": "evaluate the right piece",
+    "b": "graph each piece",
+    "c": "open vs closed endpoints",
+    "d": "write one from a graph"
+   },
+   "wrong_turn": "Use only the piece whose condition fits. For f(2) above, 2 is in x ≥ 2, so use 5 − x.",
+   "rule": "A piecewise function uses different formulas on different parts of the domain."
+  },
+  {
+   "id": "IV.2.11",
+   "name": "Step functions",
+   "steps": {
+    "a": "floor and ceiling",
+    "b": "graph steps",
+    "c": "postage and parking models",
+    "d": "evaluate at the jumps"
+   },
+   "wrong_turn": "Floor of a negative goes down, away from zero: ⌊−1.5⌋ = −2, not −1.",
+   "rule": "⌊x⌋ rounds down to an integer; ⌈x⌉ rounds up."
+  },
+  {
+   "id": "IV.2.12",
+   "name": "Absolute value function",
+   "steps": {
+    "a": "the V graph",
+    "b": "vertex and slopes",
+    "c": "as a piecewise function",
+    "d": "solve with the graph"
+   },
+   "wrong_turn": "y = |x − 3| moves the V right to x = 3, not left. The vertex is where the inside is 0.",
+   "rule": "|x|=x for x≥0 and |x|=−x for x<0: a V with vertex at the origin."
+  },
+  {
+   "id": "IV.2.13",
+   "name": "Combining functions",
+   "steps": {
+    "a": "(f + g)(x)",
+    "b": "(f − g)(x)",
+    "c": "(fg)(x) and (f/g)(x)",
+    "d": "domain of the combination"
+   },
+   "wrong_turn": "(f/g)(x) needs g(x) ≠ 0 even if the fraction later cancels: x²/x is not defined at 0.",
+   "rule": "(f+g)(x)=f(x)+g(x), and likewise for −, × and ÷."
+  },
+  {
+   "id": "IV.2.14",
+   "name": "Composition",
+   "steps": {
+    "a": "f(g(a)) with numbers",
+    "b": "f(g(x)) as an expression",
+    "c": "order matters",
+    "d": "decompose h into f(g(x))"
+   },
+   "wrong_turn": "f(g(x)) is not f(x)·g(x). Put g's whole output inside f.",
+   "rule": "(f∘g)(x)=f(g(x)): apply g first, then f."
+  },
+  {
+   "id": "IV.2.15",
+   "name": "Inverse functions",
+   "steps": {
+    "a": "undo a function in words",
+    "b": "swap x and y and solve",
+    "c": "reflect over y = x",
+    "d": "verify f(f⁻¹(x)) = x"
+   },
+   "wrong_turn": "f⁻¹(x) is not 1/f(x). For f(x) = 2x, the inverse is x/2, not 1/(2x).",
+   "rule": "f−1 undoes f: f−1(f(x))=x and f(f−1(x))=x."
+  }
+ ]
+}

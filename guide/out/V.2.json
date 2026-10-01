@@ -1,0 +1,64 @@
+{
+  "branch": "V.2",
+  "intro": "This branch uses the new proof skills on the simplest shapes: segments, angles and lines. The learner proves facts about angles that were only measured or noticed in earlier eras.",
+  "skills": {
+    "V.2.01": {
+      "what": "Working with line segments and their midpoints (the point exactly halfway), using basic rules about how lengths add up.",
+      "levels": {
+        "a": "Finds a whole length from its two parts when a point sits between the ends.",
+        "b": "Uses a midpoint to find a whole length from half of it.",
+        "c": "Solves for x when a midpoint splits a segment into two equal expressions, giving reasons for each step.",
+        "d": "Finds the midpoint of a segment from its endpoints' coordinates on a grid."
+      }
+    },
+    "V.2.02": {
+      "what": "Working with angles and angle bisectors (lines that split an angle into two equal halves).",
+      "levels": {
+        "a": "Finds a whole angle from its two parts.",
+        "b": "Uses a bisector to find a whole angle from half, or puts the steps of a short proof in order.",
+        "c": "Solves for x when a bisector splits an angle into two equal expressions.",
+        "d": "Uses the fact that angles along a straight line add to 180 degrees.",
+        "e": "Finds an angle when a bisector and one extra ray split a larger angle.",
+        "f": "Finds the angle between two bisectors in a fan of four rays."
+      }
+    },
+    "V.2.03": {
+      "what": "Proving facts about pairs of angles, such as why the opposite angles made by two crossing lines are always equal.",
+      "levels": {
+        "a": "Finds the angles made where two lines cross, using that opposite angles are equal.",
+        "b": "Uses that two angles adding to 180 degrees with the same angle are equal, then solves for x.",
+        "c": "Uses the same idea with angles that add to 90 degrees.",
+        "d": "Puts the steps of a short proof about angle pairs in order."
+      }
+    },
+    "V.2.04": {
+      "what": "Proving angle facts when a line crosses two parallel lines (lines that never meet), such as which angles are equal.",
+      "levels": {
+        "a": "Spots which angles match in position when a line crosses two parallel lines.",
+        "b": "Finds x using equal 'Z-shaped' angles, or finds the mistaken step in a proof of that fact.",
+        "c": "Finds x using angles on the same side that add to 180 degrees, or finds a proof's mistake.",
+        "d": "Solves for x using any of these angle pairs.",
+        "e": "Adds a helpful parallel line through an outside point to find an angle.",
+        "f": "Finds the angle at a corner of a zigzag path between two parallel lines."
+      }
+    },
+    "V.2.05": {
+      "what": "Working the other way: using angle measurements to prove that two lines must be parallel.",
+      "levels": {
+        "a": "Finds the value that makes two lines parallel, or decides whether they are.",
+        "b": "Picks which angle fact alone would prove two lines parallel.",
+        "c": "Puts the steps of a short proof that two lines are parallel in order.",
+        "d": "Uses the fact that two lines parallel to the same line are parallel to each other."
+      }
+    },
+    "V.2.06": {
+      "what": "Proving facts about perpendicular lines, which meet at a right angle (a square corner).",
+      "levels": {
+        "a": "Uses right angles at perpendicular lines to find a nearby angle.",
+        "b": "Uses that a line perpendicular to one of two parallel lines is perpendicular to both.",
+        "c": "Finds the shortest distance from a point to a straight line on a grid.",
+        "d": "Finds the mistaken step, or the missing reason, in a proof about perpendicular lines."
+      }
+    }
+  }
+}

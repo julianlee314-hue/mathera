@@ -1,0 +1,166 @@
+{
+  "branch": "IV.6",
+  "intro": "A polynomial is an expression built from powers of x added together, like 3x squared plus 2x minus 5. This branch covers multiplying polynomials out and, in reverse, factoring them (breaking them into pieces that multiply together), a key skill for solving equations later.",
+  "skills": {
+    "IV.6.01": {
+      "what": "Learning the words used to describe polynomials, such as term, coefficient (the number in front) and degree (the highest power).",
+      "levels": {
+        "a": "Picks out the terms, the numbers in front of each, and the plain number on its own.",
+        "b": "Finds the degree, the highest power of x.",
+        "c": "Writes a polynomial in standard order, highest power first.",
+        "d": "Names a polynomial by its degree and number of terms, such as \"quadratic trinomial\"."
+      }
+    },
+    "IV.6.02": {
+      "what": "Adding and subtracting polynomials by combining matching terms, like x squared with x squared.",
+      "levels": {
+        "a": "Adds two polynomials by combining matching terms.",
+        "b": "Subtracts, remembering the minus sign changes every term in the second bracket.",
+        "c": "Lines up matching terms in columns to add or subtract.",
+        "d": "Writes the perimeter of a shape whose sides are expressions."
+      }
+    },
+    "IV.6.03": {
+      "what": "Multiplying a single term, like 5x cubed, across a bracket of several terms.",
+      "levels": {
+        "a": "Multiplies a number across a bracket.",
+        "b": "Multiplies a term with letters and powers across a bracket, adding the powers.",
+        "c": "Handles a negative term in front, changing every sign inside.",
+        "d": "Writes the area of a rectangle whose sides are expressions.",
+        "e": "Finds the missing term that was multiplied across a bracket.",
+        "f": "Uses a known equation to evaluate a bigger expression without finding x."
+      }
+    },
+    "IV.6.04": {
+      "what": "Multiplying two brackets with two terms each, like (x + 2) times (x + 8).",
+      "levels": {
+        "a": "Uses a box diagram to multiply two brackets.",
+        "b": "Multiplies every term in one bracket by every term in the other.",
+        "c": "Does the same when there are numbers in front of the x.",
+        "d": "Does the same with negative signs."
+      }
+    },
+    "IV.6.05": {
+      "what": "Recognizing special products, patterns like (a + b) squared, that can be multiplied out quickly.",
+      "levels": {
+        "a": "Squares a sum, like (x + 8) squared, using the pattern.",
+        "b": "Squares a difference, like (x minus 8) squared.",
+        "c": "Multiplies a sum by a difference, like (x minus 8)(x + 8), where the middle terms cancel.",
+        "d": "Uses the patterns for mental math, such as working out 93 squared.",
+        "e": "Treats a group of terms as a single block to use a pattern.",
+        "f": "Chains patterns together, such as going from x plus one over x to its fourth powers."
+      }
+    },
+    "IV.6.06": {
+      "what": "Multiplying longer polynomials, where each bracket may have three or more terms.",
+      "levels": {
+        "a": "Multiplies a two-term bracket by a three-term bracket.",
+        "b": "Organizes the multiplying in a box diagram.",
+        "c": "Multiplies three brackets together.",
+        "d": "Checks a claimed answer by trying a number for x on both sides.",
+        "e": "Finds one chosen term of the answer without multiplying everything out.",
+        "f": "Finds hidden numbers in the brackets from terms of the answer."
+      }
+    },
+    "IV.6.07": {
+      "what": "Factoring out the greatest common factor: the biggest piece every term shares.",
+      "levels": {
+        "a": "Finds the largest factor shared by several terms.",
+        "b": "Takes it out in front of a bracket.",
+        "c": "Takes out a negative factor so the bracket starts with a positive term.",
+        "d": "Takes out a shared bracket, like (x + 6), as the common factor."
+      }
+    },
+    "IV.6.08": {
+      "what": "Factoring by grouping: splitting four terms into pairs, factoring each pair, then pulling out the bracket they share.",
+      "levels": {
+        "a": "Splits four terms into two sensible pairs.",
+        "b": "Factors each pair separately.",
+        "c": "Pulls out the bracket the two pairs share.",
+        "d": "Regroups the terms differently when the first grouping gets stuck.",
+        "e": "Groups three terms against one instead of two pairs.",
+        "f": "Uses grouping to crack an equation and find all its solutions."
+      }
+    },
+    "IV.6.09": {
+      "what": "Factoring expressions like x squared minus x minus 42 into two brackets, by finding two numbers that multiply and add correctly.",
+      "levels": {
+        "a": "Finds two numbers with a given product and a given sum.",
+        "b": "Works out whether those numbers are positive or negative.",
+        "c": "Writes the two brackets.",
+        "d": "Checks the factoring by multiplying the brackets back out."
+      }
+    },
+    "IV.6.10": {
+      "what": "Factoring squared expressions that have a number other than 1 in front of the x squared.",
+      "levels": {
+        "a": "Multiplies the first and last numbers, then finds two numbers with that product and the right sum.",
+        "b": "Splits the middle term into two parts using those numbers.",
+        "c": "Factors the four terms by grouping.",
+        "d": "Uses guess and check as another route, testing the middle term."
+      }
+    },
+    "IV.6.11": {
+      "what": "Factoring a difference of two squares, such as x squared minus 49, into (x minus 7)(x + 7).",
+      "levels": {
+        "a": "Recognizes when an expression is one square minus another.",
+        "b": "Factors it into a minus bracket and a plus bracket.",
+        "c": "Does the same with numbers in front, like 64x squared minus 49.",
+        "d": "Keeps factoring when a piece is again a difference of squares.",
+        "e": "Factors when one of the squares is a whole bracket.",
+        "f": "Uses the pattern to count whole-number solutions of a puzzle."
+      }
+    },
+    "IV.6.12": {
+      "what": "Factoring perfect square trinomials, three-term expressions that are really one bracket squared.",
+      "levels": {
+        "a": "Recognizes the pattern of a perfect square.",
+        "b": "Factors it into a bracket squared.",
+        "c": "Does the same with numbers in front of the x.",
+        "d": "Chooses the last number to make an expression a perfect square."
+      }
+    },
+    "IV.6.13": {
+      "what": "Factoring a sum or difference of two cubes, such as x cubed plus 216, using a set pattern.",
+      "levels": {
+        "a": "Recognizes numbers and terms that are perfect cubes.",
+        "b": "Factors a sum of two cubes using the pattern.",
+        "c": "Factors a difference of two cubes.",
+        "d": "Uses a memory trick for getting the signs right."
+      }
+    },
+    "IV.6.14": {
+      "what": "Factoring completely: using every tool in turn until no piece can be broken down further.",
+      "levels": {
+        "a": "Takes out the common factor first.",
+        "b": "Chooses which pattern fits what is left.",
+        "c": "Keeps going until every piece is fully factored.",
+        "d": "Recognizes expressions that cannot be factored with whole numbers.",
+        "e": "Works through three rounds of factoring.",
+        "f": "Adds and subtracts a clever term to turn an expression into a difference of squares."
+      }
+    },
+    "IV.6.15": {
+      "what": "Dividing one polynomial by another, much like long division with numbers.",
+      "levels": {
+        "a": "Divides each term by a single term.",
+        "b": "Uses long division to divide by a bracket like x + 5.",
+        "c": "Uses synthetic division, a quick shorthand for dividing by x plus or minus a number.",
+        "d": "Writes the answer as quotient and remainder.",
+        "e": "Divides by harder brackets, or finds a missing number to make it divide evenly.",
+        "f": "Finds missing numbers so one polynomial divides another exactly, without full division."
+      }
+    },
+    "IV.6.16": {
+      "what": "Working with identities: equations that are true for every value of x, and using them as tools.",
+      "levels": {
+        "a": "Checks whether an equation is true for every x by expanding both sides.",
+        "b": "Checks a famous identity with real numbers.",
+        "c": "Uses that identity to generate whole-number right-triangle sides, like 5, 12, 13.",
+        "d": "Uses identities for mental math, such as 82 squared minus 68 squared.",
+        "e": "Rewrites a polynomial in powers of a bracket like x + 3.",
+        "f": "Uses an identity to do a big calculation with almost no arithmetic."
+      }
+    }
+  }
+}

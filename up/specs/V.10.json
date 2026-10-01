@@ -1,0 +1,150 @@
+{
+ "unit": "V.10",
+ "name": "Identities & equations",
+ "skills": [
+  {
+   "id": "V.10.01",
+   "name": "Reciprocal & quotient identities",
+   "steps": {
+    "a": "csc, sec, cot as reciprocals",
+    "b": "tan = sin/cos",
+    "c": "rewrite in sin and cos",
+    "d": "simplify"
+   },
+   "wrong_turn": "tan θ is sin θ/cos θ, not cos θ/sin θ; that's cot θ. And sec θ = 1/cos θ, not 1/sin θ.",
+   "rule": "tanθ=(sinθcosθ), cotθ=(cosθsinθ), cscθ=(1sinθ), secθ=(1cosθ)."
+  },
+  {
+   "id": "V.10.02",
+   "name": "Pythagorean identities",
+   "steps": {
+    "a": "sin² + cos² = 1",
+    "b": "1 + tan² = sec²",
+    "c": "1 + cot² = csc²",
+    "d": "derive the last two"
+   },
+   "wrong_turn": "It is 1 + tan²θ = sec²θ, not 1 − tan²θ. And sin²θ means (sin θ)², not sin(θ²).",
+   "rule": "sin2θ+cos2θ=1, 1+tan2θ=sec2θ, 1+cot2θ=csc2θ."
+  },
+  {
+   "id": "V.10.03",
+   "name": "Simplify trig expressions",
+   "steps": {
+    "a": "factor",
+    "b": "common denominators",
+    "c": "substitute identities",
+    "d": "reach one function"
+   },
+   "wrong_turn": "Don't cancel across a sum. (sin x + cos x)/cos x is tan x + 1, not sin x.",
+   "rule": "Rewrite in sin and cos, factor, combine fractions, use identities, cancel."
+  },
+  {
+   "id": "V.10.04",
+   "name": "Prove identities",
+   "steps": {
+    "a": "work one side only",
+    "b": "convert to sin and cos",
+    "c": "multiply by a conjugate",
+    "d": "write it cleanly"
+   },
+   "wrong_turn": "Don't work both sides toward the middle with non-reversible steps like squaring. Transform one side until it matches the other.",
+   "rule": "Work on one side only, until it matches the other."
+  },
+  {
+   "id": "V.10.05",
+   "name": "Sum & difference formulas",
+   "steps": {
+    "a": "cos(A ± B)",
+    "b": "sin(A ± B)",
+    "c": "tan(A ± B)",
+    "d": "exact values like sin 15°"
+   },
+   "wrong_turn": "sin(A + B) is not sin A + sin B. sin(30° + 60°) = 1, but sin 30° + sin 60° ≈ 1.37.",
+   "rule": "sin(A+B)=sinAcosB+cosAsinB and cos(A+B)=cosAcosB−sinAsinB."
+  },
+  {
+   "id": "V.10.06",
+   "name": "Double-angle formulas",
+   "steps": {
+    "a": "sin 2A",
+    "b": "three forms of cos 2A",
+    "c": "tan 2A",
+    "d": "evaluate from one ratio"
+   },
+   "wrong_turn": "sin 2A is not 2 sin A. sin 60° ≈ 0.87, but 2 sin 30° = 1.",
+   "rule": "sin2A=2sinAcosA; cos2A=cos2A−sin2A=2cos2A−1=1−2sin2A."
+  },
+  {
+   "id": "V.10.07",
+   "name": "Half-angle formulas",
+   "steps": {
+    "a": "derive from cos 2A",
+    "b": "choose the sign",
+    "c": "exact values",
+    "d": "power reduction"
+   },
+   "wrong_turn": "Don't keep both signs. Choose from the quadrant of A/2: for A = 300°, A/2 = 150°, so cos(A/2) is negative.",
+   "rule": "sin(A2)=±(1−cosA2) and cos(A2)=±(1+cosA2)."
+  },
+  {
+   "id": "V.10.08",
+   "name": "Harmonic form",
+   "steps": {
+    "a": "R and α from a and b",
+    "b": "a cos θ + b sin θ = R cos(θ − α)",
+    "c": "maximum and minimum values",
+    "d": "solve equations with it"
+   },
+   "wrong_turn": "sin A cos B is not sin(AB) or ½ sin(A + B). Both terms are needed: ½[sin(A + B) + sin(A − B)].",
+   "rule": "sinAcosB=(12)[sin(A+B)+sin(A−B)]"
+  },
+  {
+   "id": "V.10.09",
+   "name": "Basic trig equations",
+   "steps": {
+    "a": "isolate the function",
+    "b": "reference angle",
+    "c": "all quadrants that fit",
+    "d": "check"
+   },
+   "wrong_turn": "The calculator gives one answer. sin x = 0.5 has x = 150° as well as 30°.",
+   "rule": "Isolate the function, find the reference angle, then take every quadrant where the sign fits."
+  },
+  {
+   "id": "V.10.10",
+   "name": "Intervals & general solutions",
+   "steps": {
+    "a": "solutions in [0, 2π)",
+    "b": "add 2πk or πk",
+    "c": "trig inequalities on an interval",
+    "d": "count solutions"
+   },
+   "wrong_turn": "Add the period to every solution, not just one. sin x = 1/2 gives π/6 + 2πk and 5π/6 + 2πk.",
+   "rule": "Solve over one period, then add 2πk (or πk for tangent) to get every solution."
+  },
+  {
+   "id": "V.10.11",
+   "name": "Equations by factoring & identities",
+   "steps": {
+    "a": "quadratic in sin or cos",
+    "b": "factor",
+    "c": "swap with an identity",
+    "d": "reject impossible values"
+   },
+   "wrong_turn": "Never divide both sides by sin x or cos x: you lose the solutions where it is zero. Factor instead.",
+   "rule": "Get zero on one side, factor, and set each factor to zero; use identities to reach a single function."
+  },
+  {
+   "id": "V.10.12",
+   "name": "Multiple-angle equations",
+   "steps": {
+    "a": "sin 2x = k",
+    "b": "widen the interval first",
+    "c": "divide back",
+    "d": "check the count"
+   },
+   "wrong_turn": "Don't solve over one turn and stop. sin 2x = k on [0, 2π) usually has four solutions, not two.",
+   "rule": "For sin2x=k on [0,2π), solve for u=2x on [0,4π), then halve."
+  }
+ ]
+}

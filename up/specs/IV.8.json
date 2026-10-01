@@ -1,0 +1,198 @@
+{
+ "unit": "IV.8",
+ "name": "Complex numbers",
+ "skills": [
+  {
+   "id": "IV.8.01",
+   "name": "The number i",
+   "steps": {
+    "a": "i² = −1",
+    "b": "why it was invented",
+    "c": "powers of i cycle",
+    "d": "simplify iⁿ"
+   },
+   "wrong_turn": "i² is −1, not 1, and i itself is not −1. Only its square is.",
+   "rule": "i2=−1, and powers of i cycle: i,−1,−i,1."
+  },
+  {
+   "id": "IV.8.02",
+   "name": "Square roots of negatives",
+   "steps": {
+    "a": "√−a = i√a",
+    "b": "simplify",
+    "c": "avoid √a·√b trap",
+    "d": "multiply correctly"
+   },
+   "wrong_turn": "√−4 · √−9 is not √36 = 6. Change to i first: 2i · 3i = −6.",
+   "rule": "For a>0, −a=ia."
+  },
+  {
+   "id": "IV.8.03",
+   "name": "Standard form a + bi",
+   "steps": {
+    "a": "real and imaginary parts",
+    "b": "equality of complex numbers",
+    "c": "write in standard form",
+    "d": "classify real, pure imaginary"
+   },
+   "wrong_turn": "The imaginary part of 3 − 5i is −5, not −5i. The part is a real number; i just labels it.",
+   "rule": "A complex number is a+bi with real part a and imaginary part b, both real."
+  },
+  {
+   "id": "IV.8.04",
+   "name": "Add & subtract complex",
+   "steps": {
+    "a": "combine real parts",
+    "b": "combine imaginary parts",
+    "c": "distribute minus",
+    "d": "as vectors"
+   },
+   "wrong_turn": "Subtract both parts: (3 + 2i) − (1 − 5i) is 2 + 7i, not 2 − 3i.",
+   "rule": "(a+bi)±(c+di)=(a±c)+(b±d)i"
+  },
+  {
+   "id": "IV.8.05",
+   "name": "Multiply complex",
+   "steps": {
+    "a": "by a real",
+    "b": "by i",
+    "c": "FOIL and i² = −1",
+    "d": "squares of complex numbers"
+   },
+   "wrong_turn": "(2 + 3i)(1 − 4i) is not 2 − 12i. Every term multiplies every term, and −12i² becomes +12.",
+   "rule": "(a+bi)(c+di)=(ac−bd)+(ad+bc)i"
+  },
+  {
+   "id": "IV.8.06",
+   "name": "Conjugates",
+   "steps": {
+    "a": "write the conjugate",
+    "b": "z·z̅ is real",
+    "c": "reflection in the plane",
+    "d": "conjugate pairs of roots"
+   },
+   "wrong_turn": "The conjugate of 3 + 2i is 3 − 2i, not −3 − 2i. Only the imaginary part changes sign.",
+   "rule": "The conjugate of z=a+bi is z¯=a−bi, and zz¯=a2+b2."
+  },
+  {
+   "id": "IV.8.07",
+   "name": "Divide complex",
+   "steps": {
+    "a": "multiply by the conjugate",
+    "b": "simplify the denominator",
+    "c": "standard form answer",
+    "d": "reciprocals"
+   },
+   "wrong_turn": "Don't divide parts separately: (3 + 4i)/(1 − 2i) is not 3 − 2i. Multiply by the conjugate.",
+   "rule": "(zw)=(zw¯ww¯)=(zw¯|w|2)"
+  },
+  {
+   "id": "IV.8.08",
+   "name": "Complex plane",
+   "steps": {
+    "a": "real and imaginary axes",
+    "b": "plot a + bi",
+    "c": "read a point",
+    "d": "addition as moving"
+   },
+   "wrong_turn": "3i is plotted at (0, 3), on the vertical axis, not at (3, 0) on the real axis.",
+   "rule": "a+bi is plotted at the point (a,b): real axis across, imaginary axis up."
+  },
+  {
+   "id": "IV.8.09",
+   "name": "Modulus",
+   "steps": {
+    "a": "modulus = √(a² + b²)",
+    "b": "distance from 0",
+    "c": "distance between two numbers",
+    "d": "midpoint"
+   },
+   "wrong_turn": "|3 + 4i| is √(9 + 16) = 5, not 3 + 4 = 7. Don't include i: it's √(a² + b²).",
+   "rule": "|a+bi|=a2+b2: the distance from 0."
+  },
+  {
+   "id": "IV.8.10",
+   "name": "Complex roots of quadratics",
+   "steps": {
+    "a": "negative discriminant",
+    "b": "solve with the formula",
+    "c": "conjugate pair answers",
+    "d": "check by substituting"
+   },
+   "wrong_turn": "A negative discriminant doesn't mean \"no solution\" in complex numbers: x² + 4 = 0 has x = ±2i.",
+   "rule": "If b2−4ac<0, the roots are (−b±i4ac−b22a), a conjugate pair."
+  },
+  {
+   "id": "IV.8.11",
+   "name": "Fundamental theorem of algebra",
+   "steps": {
+    "a": "degree n has n roots",
+    "b": "count with multiplicity",
+    "c": "conjugate root theorem",
+    "d": "build a polynomial from roots"
+   },
+   "wrong_turn": "Degree n means at most n distinct roots. x² − 2x + 1 = (x − 1)² has one root, 1, counted twice.",
+   "rule": "A polynomial of degree n≥1 has exactly n complex roots, counted with multiplicity."
+  },
+  {
+   "id": "IV.8.12",
+   "name": "Polar form",
+   "steps": {
+    "a": "argument (angle)",
+    "b": "r(cos θ + i sin θ)",
+    "c": "convert rectangular to polar",
+    "d": "convert back"
+   },
+   "wrong_turn": "Check the quadrant: for −1 − i, arctan(1) gives 45°, but the angle is 225°.",
+   "rule": "a+bi=r(cosθ+isinθ),r=a2+b2"
+  },
+  {
+   "id": "IV.8.13",
+   "name": "Multiply & divide in polar",
+   "steps": {
+    "a": "multiply moduli",
+    "b": "add arguments",
+    "c": "division rule",
+    "d": "rotation meaning"
+   },
+   "wrong_turn": "When multiplying in polar form, add the angles; don't multiply them. 30° times 60° isn't 1800°.",
+   "rule": "Multiply moduli and add arguments: r1eiα⋅r2eiβ=r1r2ei(α+β)."
+  },
+  {
+   "id": "IV.8.14",
+   "name": "De Moivre's theorem",
+   "steps": {
+    "a": "powers in polar form",
+    "b": "compute zⁿ",
+    "c": "back to rectangular",
+    "d": "use De Moivre to find cos 2θ, sin 2θ, cos 3θ or sin 3θ"
+   },
+   "wrong_turn": "(1 + i)² is not 1 + i² = 0. Use polar form or FOIL: it's 2i.",
+   "rule": "(r(cosθ+isinθ))n=rn(cosnθ+isinnθ)"
+  },
+  {
+   "id": "IV.8.15",
+   "name": "Roots of complex numbers",
+   "steps": {
+    "a": "n roots exist",
+    "b": "formula with 2πk/n",
+    "c": "roots of unity",
+    "d": "roots as a regular polygon"
+   },
+   "wrong_turn": "A nonzero number has n different nth roots, not one. Cube roots of 8 include −1 ± √3 i, not just 2.",
+   "rule": "zn=reiθ has n roots rnei(θ+2πk)/n for k=0,1,…,n−1."
+  },
+  {
+   "id": "IV.8.16",
+   "name": "Complex loci",
+   "steps": {
+    "a": "|z − a| = r is a circle",
+    "b": "|z − a| = |z − b| is a bisector",
+    "c": "arg(z − a) = θ is a half-line",
+    "d": "shade regions"
+   },
+   "wrong_turn": "Flip the sign to read the center. |z+2i|=3 is |z−(−2i)|=3: a circle centered at −2i, not 2i.",
+   "rule": "|z−a|=r|z−a|=|z−b|arg(z−a)=θ"
+  }
+ ]
+}

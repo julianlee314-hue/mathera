@@ -1,0 +1,225 @@
+{
+  "branch": "III.8",
+  "intro": "This branch covers the hands-on side of geometry: angles, area, volume and circles, plus the Pythagorean theorem, a famous rule for right triangles. It is about measuring and working things out, from carpeting a room to filling a can; proving why the rules are true comes later, in Era V.",
+  "skills": {
+    "III.8.01": {
+      "what": "Using the ways angles fit together, like two angles on a straight line always adding up to 180 degrees.",
+      "levels": {
+        "a": "Checks whether two angles are complementary, meaning they add up to 90 degrees.",
+        "b": "Finds angles that are supplementary, meaning they add up to 180 degrees.",
+        "c": "Finds all four angles where two straight lines cross, since opposite angles are equal.",
+        "d": "Writes and solves an equation to find a missing angle."
+      }
+    },
+    "III.8.02": {
+      "what": "Finding the angles formed when one line crosses two parallel lines (lines that never meet).",
+      "levels": {
+        "a": "Finds the matching angle in the same position at the other crossing.",
+        "b": "Finds angle pairs on opposite sides of the crossing line, which are equal.",
+        "c": "Finds angle pairs on the same side between the parallel lines, which add to 180 degrees.",
+        "d": "Finds all eight angles from just one."
+      }
+    },
+    "III.8.03": {
+      "what": "Using the fact that the three angles inside any triangle always add up to 180 degrees.",
+      "levels": {
+        "a": "Checks whether three angles could belong to a triangle.",
+        "b": "Finds a missing angle in a triangle.",
+        "c": "Uses an angle outside the triangle, which equals the two far inside angles added together.",
+        "d": "Finds a missing angle in two steps, such as working out a second angle first.",
+        "e": "Finds a triangle's angles when they are given as a ratio, such as 9 to 7 to 4.",
+        "f": "Finds the angle where two corner-splitting lines (angle bisectors) meet inside a triangle."
+      }
+    },
+    "III.8.04": {
+      "what": "Finding the area (the space inside) of a parallelogram, a slanted rectangle.",
+      "levels": {
+        "a": "Cuts a triangle off one end and slides it over to make a rectangle.",
+        "b": "Finds the area by multiplying the base by the height.",
+        "c": "Picks the true straight-up height and ignores the slanted side.",
+        "d": "Works backwards from the area to find a missing height or base."
+      }
+    },
+    "III.8.05": {
+      "what": "Finding the area of a triangle, which is half of a matching parallelogram.",
+      "levels": {
+        "a": "Sees that a triangle is half of a parallelogram.",
+        "b": "Finds the area as half of base times height.",
+        "c": "Finds the area of a wide-angled triangle whose height falls outside it.",
+        "d": "Works backwards from the area to find a missing base or height."
+      }
+    },
+    "III.8.06": {
+      "what": "Finding the area of a trapezoid, a four-sided shape with one pair of parallel sides.",
+      "levels": {
+        "a": "Splits a trapezoid into a rectangle and triangles and adds their areas.",
+        "b": "Averages the two parallel sides, then multiplies by the height.",
+        "c": "Uses the trapezoid formula, ignoring measurements it does not need.",
+        "d": "Works backwards from the area to find a missing side."
+      }
+    },
+    "III.8.07": {
+      "what": "Finding the area of irregular shapes by breaking them into simpler pieces.",
+      "levels": {
+        "a": "Splits a shape into two rectangles and finds each area.",
+        "b": "Finds the total area of a shape made of several parts.",
+        "c": "Subtracts a cut-out hole from a larger area.",
+        "d": "Finds the area of a shape drawn on a coordinate grid.",
+        "e": "Finds both the area and the perimeter after a notch or corner is cut from a rectangle.",
+        "f": "Finds the area of a tilted square drawn inside a square, by cutting off four corner triangles."
+      }
+    },
+    "III.8.08": {
+      "what": "Naming the parts of a circle and meeting pi, the special number (about 3.14) that links a circle's width to its distance around.",
+      "levels": {
+        "a": "Names the center, radius (center to edge), and diameter (all the way across).",
+        "b": "Uses the fact that the diameter is twice the radius.",
+        "c": "Names a chord (a straight line across) and an arc (a curved piece of the edge).",
+        "d": "Divides the distance around a circle by its size to see pi appear."
+      }
+    },
+    "III.8.09": {
+      "what": "Finding the circumference, the distance around a circle.",
+      "levels": {
+        "a": "Estimates the distance around from the width, using pi.",
+        "b": "Finds the exact distance around from the radius, leaving the answer in terms of pi.",
+        "c": "Works backwards from the distance around to find the width.",
+        "d": "Turns an exact answer in terms of pi into a decimal using 3.14."
+      }
+    },
+    "III.8.10": {
+      "what": "Finding the area inside a circle: pi times the radius times the radius.",
+      "levels": {
+        "a": "Finds the exact area from the radius.",
+        "b": "Finds the area from the diameter, halving it first.",
+        "c": "Finds the area of half and quarter circles.",
+        "d": "Works backwards from the area to find the size of the circle.",
+        "e": "Finds the area of a ring between two circles with the same center.",
+        "f": "Finds the area of a circle drawn around a square, using the square's diagonal."
+      }
+    },
+    "III.8.11": {
+      "what": "Finding surface area: the total area of all the flat faces of a 3D shape, like wrapping paper for a box.",
+      "levels": {
+        "a": "Picks a net (the flat pattern that folds into a shape) that makes a cube.",
+        "b": "Finds the area of each different face of a box.",
+        "c": "Adds up all the faces to find a box's total surface area.",
+        "d": "Finds the surface area of a pyramid from its flat pattern."
+      }
+    },
+    "III.8.12": {
+      "what": "Finding volume, the space inside a 3D shape, for boxes and other prisms (shapes with the same cross-section all the way through).",
+      "levels": {
+        "a": "Counts the small cubes that fill a box.",
+        "b": "Multiplies the area of the base by the height.",
+        "c": "Finds the volume when edge lengths are fractions.",
+        "d": "Works backwards from the volume to find a missing length.",
+        "e": "Counts how many whole cubes really fit in a box, since leftover gaps can't hold one.",
+        "f": "Finds a box's volume from just the areas of its three different faces."
+      }
+    },
+    "III.8.13": {
+      "what": "Finding the volume of a cylinder, like a can: the circle's area times the height.",
+      "levels": {
+        "a": "Multiplies a given base area by the height.",
+        "b": "Finds the circle's area first, then multiplies by the height.",
+        "c": "Starts from the width instead of the radius and gives an exact answer.",
+        "d": "Solves real problems, like how much a can holds."
+      }
+    },
+    "III.8.14": {
+      "what": "Finding the volume of cones and spheres (balls), and how they compare with cylinders.",
+      "levels": {
+        "a": "Sees that three cones of water fill a cylinder of the same size.",
+        "b": "Finds a cone's volume as one third of the matching cylinder.",
+        "c": "Finds the volume of a sphere using its formula.",
+        "d": "Compares a cone, sphere, and cylinder of the same width and height."
+      }
+    },
+    "III.8.15": {
+      "what": "The Pythagorean theorem: in a right triangle, the two short sides squared add up to the longest side squared.",
+      "levels": {
+        "a": "Names the hypotenuse, the longest side opposite the square corner.",
+        "b": "Finds the longest side from the two shorter ones.",
+        "c": "Finds a shorter side from the other two.",
+        "d": "Solves real problems, like how high a leaning ladder reaches.",
+        "e": "Finds the right triangles hidden inside a shape, like a diamond, to work out a side or an area.",
+        "f": "Works out how far the top of a ladder slides down when its foot slides out."
+      }
+    },
+    "III.8.16": {
+      "what": "Using the Pythagorean rule in reverse to test whether a triangle has a square corner.",
+      "levels": {
+        "a": "Tests whether three side lengths make a right triangle.",
+        "b": "Recognizes Pythagorean triples, whole-number sets like 3, 4, 5 that make right triangles.",
+        "c": "Decides if a triangle's widest angle is smaller than, equal to, or larger than a square corner.",
+        "d": "Tests for a right angle when sides are decimals or the triangle is drawn on a grid."
+      }
+    },
+    "III.8.17": {
+      "what": "Using the Pythagorean theorem to find the straight-line distance between two points on a grid.",
+      "levels": {
+        "a": "Counts squares to find the across and up legs of a right triangle.",
+        "b": "Works out those leg lengths from the points' coordinates.",
+        "c": "Finds the straight distance between two points.",
+        "d": "Finds the perimeter of a shape drawn on a grid."
+      }
+    },
+    "III.8.18": {
+      "what": "Using the Pythagorean theorem to find slanted lengths in 3D shapes like boxes and cones.",
+      "levels": {
+        "a": "Finds the diagonal across one face of a box.",
+        "b": "Finds the diagonal from one corner of a box to the far opposite corner.",
+        "c": "Finds the slanted side length of a cone.",
+        "d": "Solves real problems, like the longest stick that fits in a box."
+      }
+    },
+    "III.8.19": {
+      "what": "A translation slides a shape without turning or flipping it.",
+      "levels": {
+        "a": "Slides a shape on a grid and says where a corner lands.",
+        "b": "Uses a coordinate rule, like add 4 to each number, to slide a point.",
+        "c": "Knows a slide changes position only, not size, shape, or direction.",
+        "d": "Decides whether one shape is a slide of another."
+      }
+    },
+    "III.8.20": {
+      "what": "A reflection flips a shape over a line, like a mirror image.",
+      "levels": {
+        "a": "Flips a shape over the horizontal axis.",
+        "b": "Flips a shape over the vertical axis.",
+        "c": "Flips a shape over the diagonal line where x and y are equal.",
+        "d": "Finds the mirror line between a shape and its reflection."
+      }
+    },
+    "III.8.21": {
+      "what": "A rotation turns a shape around a fixed point, like the hands of a clock.",
+      "levels": {
+        "a": "Turns a shape a quarter turn about the center of the grid.",
+        "b": "Turns a shape a half turn.",
+        "c": "Turns a shape three quarters of a turn, paying attention to direction.",
+        "d": "Picks the coordinate rule that describes a turn."
+      }
+    },
+    "III.8.22": {
+      "what": "A dilation enlarges or shrinks a shape by a scale factor, keeping its shape the same.",
+      "levels": {
+        "a": "Finds new lengths when a shape is enlarged.",
+        "b": "Finds new lengths when a shape is shrunk.",
+        "c": "Finds the scale factor from a point and its new position.",
+        "d": "Knows angles stay the same while area grows by the scale factor times itself.",
+        "e": "Works back from the change in area to the scale factor, remembering area grows by its square.",
+        "f": "Finds the fixed center point of a dilation from two points and where they end up."
+      }
+    },
+    "III.8.23": {
+      "what": "Congruent shapes are exact copies; similar shapes are the same shape but possibly a different size.",
+      "levels": {
+        "a": "Knows slides, flips, and turns keep size the same, and only a dilation changes it.",
+        "b": "Decides whether two rectangles are similar by checking their proportions.",
+        "c": "Follows a sequence of moves to find where a point ends up.",
+        "d": "Decides whether two triangles are similar by checking two of their angles."
+      }
+    }
+  }
+}

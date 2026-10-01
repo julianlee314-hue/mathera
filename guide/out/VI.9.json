@@ -1,0 +1,105 @@
+{
+  "branch": "VI.9",
+  "intro": "This branch asks whether adding up infinitely many numbers can give a finite total. It builds a set of tests for deciding when an endless sum settles down.",
+  "skills": {
+    "VI.9.01": {
+      "what": "A sequence is an endless list of numbers. The question is whether the list settles toward one value.",
+      "levels": {
+        "a": "Decides whether a sequence settles (converges) or not (diverges).",
+        "b": "Uses limits of functions to find where a sequence heads.",
+        "c": "Uses the squeeze idea to trap a sequence.",
+        "d": "Uses the fact that a list always rising but capped must settle."
+      }
+    },
+    "VI.9.02": {
+      "what": "A series is the sum of an endless list. It has a total only if the running totals (partial sums) settle down.",
+      "levels": {
+        "a": "Computes running totals of a series.",
+        "b": "Explains that a series has a total when its running totals settle.",
+        "c": "Sums telescoping series, where most terms cancel out.",
+        "d": "Writes a series using sigma (summation) notation."
+      }
+    },
+    "VI.9.03": {
+      "what": "A first check: if the terms don't shrink to zero, the endless sum cannot have a finite total.",
+      "levels": {
+        "a": "Explains that terms must shrink to zero for a total to exist.",
+        "b": "Applies the test to show a series has no total.",
+        "c": "Explains that shrinking terms alone do not guarantee a total.",
+        "d": "Uses one plus a half plus a third and so on, which grows forever."
+      }
+    },
+    "VI.9.04": {
+      "what": "Comparing an endless sum to the area under a curve to decide whether it has a finite total.",
+      "levels": {
+        "a": "Checks the conditions needed to use the test.",
+        "b": "Applies the test to a series.",
+        "c": "Estimates how much is left over after adding many terms.",
+        "d": "Links the test to integrals that run out to infinity."
+      }
+    },
+    "VI.9.05": {
+      "what": "A family of benchmark sums, one over n to a power, whose behavior depends only on that power.",
+      "levels": {
+        "a": "Recognizes series of the form one over n to a power.",
+        "b": "Knows they have a total when the power is bigger than one.",
+        "c": "Knows the power-one case (the harmonic series) grows forever.",
+        "d": "Uses these as benchmarks to judge other series."
+      }
+    },
+    "VI.9.06": {
+      "what": "Deciding about a series by comparing it term by term with one whose behavior is already known.",
+      "levels": {
+        "a": "Picks a known series to compare with.",
+        "b": "Concludes no total when the series is bigger than one that grows forever.",
+        "c": "Concludes a total exists when it is smaller than one that settles.",
+        "d": "Writes the full comparison argument clearly."
+      }
+    },
+    "VI.9.07": {
+      "what": "A more flexible comparison: if two series' terms are roughly in proportion in the long run, they behave the same way.",
+      "levels": {
+        "a": "Divides the terms of one series by the other's.",
+        "b": "Checks that the ratio settles to a positive, finite number.",
+        "c": "Chooses a good partner series to compare with.",
+        "d": "States the conclusion correctly."
+      }
+    },
+    "VI.9.08": {
+      "what": "A test for series whose signs flip back and forth, plus and minus.",
+      "levels": {
+        "a": "Recognizes a series with alternating signs.",
+        "b": "Checks that the terms shrink steadily to zero.",
+        "c": "Concludes the series has a total.",
+        "d": "Bounds the error when stopping after some terms."
+      }
+    },
+    "VI.9.09": {
+      "what": "The ratio test compares each term to the one before. If terms shrink by a steady factor below one, the sum is finite.",
+      "levels": {
+        "a": "Finds the long-run ratio of each term to the one before.",
+        "b": "Concludes a total exists when the ratio is less than one.",
+        "c": "Knows the test gives no answer when the ratio is exactly one.",
+        "d": "Applies it to series with factorials (products like 5 times 4 times 3 times 2 times 1)."
+      }
+    },
+    "VI.9.10": {
+      "what": "The root test, a cousin of the ratio test, which looks at the nth root of the nth term.",
+      "levels": {
+        "a": "Takes the nth root of each term.",
+        "b": "Applies the test to a series.",
+        "c": "Recognizes when it is easier than the ratio test.",
+        "d": "Compares the root and ratio tests."
+      }
+    },
+    "VI.9.11": {
+      "what": "Some alternating sums settle only because positives and negatives cancel. These behave very differently from sums that settle anyway.",
+      "levels": {
+        "a": "Identifies series that settle even with all signs made positive.",
+        "b": "Identifies series that settle only thanks to the alternating signs.",
+        "c": "Classifies a series into one of these types.",
+        "d": "Explores how reordering the second kind can change its total."
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "branch": "III.4",
+  "intro": "This branch covers exponents, a short way to write repeated multiplication, and roots, which undo them. These tools let us handle very large and very small numbers, and they lead to the discovery of numbers that cannot be written as fractions.",
+  "skills": {
+    "III.4.01": {
+      "what": "An exponent (a small raised number) says how many times to multiply a number by itself, so 3 to the 5th means 3 × 3 × 3 × 3 × 3.",
+      "levels": {
+        "a": "Writes out what a number with an exponent means as repeated multiplication.",
+        "b": "Names the base (the number multiplied) and the exponent (how many times).",
+        "c": "Works out the value of a number with an exponent, including negative bases.",
+        "d": "Finds the missing base when a number is written as a power.",
+        "e": "Adds several copies of the same power and writes the result as one power.",
+        "f": "Finds the last digit of a huge power, using the repeating cycle of last digits."
+      }
+    },
+    "III.4.02": {
+      "what": "Using powers of ten, like 10 × 10 × 10 = 1000, to understand place value and multiply quickly.",
+      "levels": {
+        "a": "Works out powers of ten, like 10 to the 2nd is 100.",
+        "b": "Says which power of ten a digit is worth in a large number.",
+        "c": "Multiplies a number by a power of ten by shifting the decimal point.",
+        "d": "Gets a first look at negative powers of ten, which make small decimals like 0.001."
+      }
+    },
+    "III.4.03": {
+      "what": "Knowing when to work out exponents in a longer calculation: after brackets, before multiplying and adding.",
+      "levels": {
+        "a": "Works out the exponent first, then adds or subtracts.",
+        "b": "Works out the brackets first, then applies the exponent.",
+        "c": "Tells apart minus 3 squared (the answer is negative) from minus 3 in brackets, squared (positive).",
+        "d": "Works through calculations that mix exponents with all four operations."
+      }
+    },
+    "III.4.04": {
+      "what": "A shortcut for multiplying powers of the same number: add the exponents.",
+      "levels": {
+        "a": "Multiplies powers of the same letter by adding the exponents.",
+        "b": "Uses the rule with numbers and checks the value.",
+        "c": "Multiplies expressions with numbers and several letters.",
+        "d": "Multiplies three or more powers, including a letter on its own.",
+        "e": "Rewrites powers of 4, 8, 16 or 32 as powers of 2, then multiplies by adding exponents.",
+        "f": "Counts the digits of a huge product by pairing 2s with 5s to make tens."
+      }
+    },
+    "III.4.05": {
+      "what": "A shortcut for dividing powers of the same number: subtract the exponents.",
+      "levels": {
+        "a": "Divides powers of the same number by subtracting the exponents.",
+        "b": "Knows that any number to the power zero equals 1.",
+        "c": "Divides expressions with numbers and several letters.",
+        "d": "Combines multiplying and dividing powers in one expression."
+      }
+    },
+    "III.4.06": {
+      "what": "Rules for raising a power to another power, and for raising products and fractions to a power.",
+      "levels": {
+        "a": "Raises a power to a power by multiplying the exponents.",
+        "b": "Raises a product, like 2 times n, to a power by raising each part.",
+        "c": "Raises a fraction to a power by raising top and bottom.",
+        "d": "Uses all the exponent rules together to simplify one expression.",
+        "e": "Decides which of two powers is larger by rewriting them with the same exponent.",
+        "f": "Orders three huge powers by rewriting them all as powers of the same number."
+      }
+    },
+    "III.4.07": {
+      "what": "A negative exponent means one divided by the power, so 2 to the minus 1 is one half.",
+      "levels": {
+        "a": "Matches a negative exponent with the fraction it means.",
+        "b": "Rewrites expressions with negative exponents as fractions.",
+        "c": "Simplifies divisions that leave a negative exponent, writing the answer with a positive one.",
+        "d": "Uses the exponent rules with negative exponents."
+      }
+    },
+    "III.4.08": {
+      "what": "Scientific notation writes very large or very small numbers as a small number times a power of ten.",
+      "levels": {
+        "a": "Recognizes which numbers are written in scientific notation.",
+        "b": "Writes a very large number, like 8 billion, in scientific notation.",
+        "c": "Writes a very small decimal in scientific notation.",
+        "d": "Turns scientific notation back into an ordinary number."
+      }
+    },
+    "III.4.09": {
+      "what": "Doing arithmetic with numbers written in scientific notation.",
+      "levels": {
+        "a": "Multiplies two numbers in scientific notation.",
+        "b": "Divides two numbers in scientific notation.",
+        "c": "Adds and subtracts numbers in scientific notation with different powers of ten.",
+        "d": "Solves real problems with huge numbers, like how far light travels."
+      }
+    },
+    "III.4.10": {
+      "what": "Comparing very large and very small numbers written with powers of ten.",
+      "levels": {
+        "a": "Picks the bigger of two numbers in scientific notation.",
+        "b": "Works out how many times bigger one power of ten is than another.",
+        "c": "Puts several tiny or huge numbers in order.",
+        "d": "Finds the nearest power of ten to a number, its rough size or order of magnitude."
+      }
+    },
+    "III.4.11": {
+      "what": "A square root undoes squaring: the square root of 81 is 9, because 9 × 9 = 81.",
+      "levels": {
+        "a": "Finds the side of a square from the number of small squares inside it.",
+        "b": "Uses the square root sign to work out square roots.",
+        "c": "Sees that taking the square root undoes squaring.",
+        "d": "Solves x squared equals a number, finding both the positive and negative answers.",
+        "e": "Counts the whole numbers that lie between two square roots.",
+        "f": "Finds the square root of a big product without a calculator, by spotting squares hidden inside it."
+      }
+    },
+    "III.4.12": {
+      "what": "A cube root undoes cubing: the cube root of 27 is 3, because 3 × 3 × 3 = 27.",
+      "levels": {
+        "a": "Recognizes perfect cubes, numbers like 8 and 27.",
+        "b": "Finds the edge of a cube from its volume.",
+        "c": "Finds cube roots of negative numbers.",
+        "d": "Solves x cubed equals a number."
+      }
+    },
+    "III.4.13": {
+      "what": "Estimating square roots that are not whole numbers, like the square root of 23.",
+      "levels": {
+        "a": "Says which two whole numbers a square root lies between.",
+        "b": "Estimates a square root to one decimal place.",
+        "c": "Marks a square root at about the right place on a number line.",
+        "d": "Squares nearby decimals to decide which is the better estimate."
+      }
+    },
+    "III.4.14": {
+      "what": "Irrational numbers, like pi and the square root of 2, cannot be written as fractions; their decimals go on forever without repeating.",
+      "levels": {
+        "a": "Picks the number that cannot be written as a fraction.",
+        "b": "Knows true facts about famous irrational numbers like pi.",
+        "c": "Tells apart decimals that repeat (fractions) from those that never repeat.",
+        "d": "Decides whether a number like 3 times pi is rational or irrational."
+      }
+    },
+    "III.4.15": {
+      "what": "Sorting numbers into families: counting numbers, integers (whole numbers and their negatives), fractions, and irrational numbers.",
+      "levels": {
+        "a": "Names the smallest family a number belongs to.",
+        "b": "Counts which numbers in a list are irrational.",
+        "c": "Places a number in the right spot on a diagram of nested families.",
+        "d": "Lists every family a number belongs to."
+      }
+    },
+    "III.4.16": {
+      "what": "Comparing irrational numbers, like square roots, with each other and with ordinary decimals.",
+      "levels": {
+        "a": "Compares a square root with a decimal by estimating.",
+        "b": "Matches square roots and decimals to points on a number line.",
+        "c": "Puts a mixed list of square roots and decimals in order.",
+        "d": "Decides which whole number a square root is closer to."
+      }
+    },
+    "III.4.17": {
+      "what": "Exponential growth is when an amount keeps multiplying, such as doubling every day, instead of adding the same amount.",
+      "levels": {
+        "a": "Works out how big an amount gets after doubling several times.",
+        "b": "Works out powers of 2.",
+        "c": "Continues a table where each value is multiplied by the same number.",
+        "d": "Solves real growth problems, like bacteria tripling every hour.",
+        "e": "Runs growth forwards or backwards: when an amount passes a target, or how many there were at first.",
+        "f": "Thinks backwards from full: if a patch triples daily, finds the day it covered one ninth of a pond."
+      }
+    }
+  }
+}

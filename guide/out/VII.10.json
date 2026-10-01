@@ -1,0 +1,60 @@
+{
+  "branch": "VII.10",
+  "intro": "Many real quantities depend on more than one input, like temperature depending on both location and time. This branch learns to picture and handle functions of two or three variables.",
+  "skills": {
+    "VII.10.01": {
+      "what": "A function of several variables takes two or more inputs and gives one output. The domain is the set of inputs that make sense.",
+      "levels": {
+        "a": "Reads and evaluates functions written with two inputs, x and y.",
+        "b": "Finds which input pairs are allowed (the domain).",
+        "c": "Sketches the domain as a region in the flat plane.",
+        "d": "Handles functions of three inputs."
+      }
+    },
+    "VII.10.02": {
+      "what": "A function of two inputs can be drawn as a surface, like a landscape where the height depends on where you stand.",
+      "levels": {
+        "a": "Pictures the graph as a landscape over a flat map.",
+        "b": "Slices the surface to see cross-section curves (traces).",
+        "c": "Recognizes common surfaces such as bowls, saddles and cones.",
+        "d": "Matches surface pictures to their formulas."
+      }
+    },
+    "VII.10.03": {
+      "what": "Level curves join all points at the same height, exactly like the contour lines on a hiking map.",
+      "levels": {
+        "a": "Reads a contour map of a function.",
+        "b": "Draws level curves for a given function.",
+        "c": "Reads steepness from how close the contour lines are.",
+        "d": "Interprets weather maps and topographic maps this way."
+      }
+    },
+    "VII.10.04": {
+      "what": "For functions of three inputs, points with the same output form surfaces, like shells of equal temperature around a heater.",
+      "levels": {
+        "a": "Understands a level surface as all points giving one output.",
+        "b": "Recognizes spheres and ellipsoids (stretched spheres) as level surfaces.",
+        "c": "Recognizes other curved surfaces from their equations.",
+        "d": "Matches level surfaces to their equations."
+      }
+    },
+    "VII.10.05": {
+      "what": "A limit asks what value a function approaches near a point. With two inputs, you can approach from infinitely many directions.",
+      "levels": {
+        "a": "Sees that a point can be approached along many different paths.",
+        "b": "Shows a limit does not exist by finding two paths that disagree.",
+        "c": "Switches to distance-and-angle coordinates to find a limit.",
+        "d": "Traps a function between two simpler ones to find its limit."
+      }
+    },
+    "VII.10.06": {
+      "what": "A function is continuous where it has no sudden jumps or holes, so small moves in the inputs give small changes in the output.",
+      "levels": {
+        "a": "Understands the definition of continuity with two inputs.",
+        "b": "Knows sums, products and compositions of continuous functions stay continuous.",
+        "c": "Finds where a given function is continuous.",
+        "d": "Fills in a single missing point to remove a break."
+      }
+    }
+  }
+}

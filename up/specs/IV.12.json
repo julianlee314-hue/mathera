@@ -1,0 +1,210 @@
+{
+ "unit": "IV.12",
+ "name": "Exponential & logarithmic",
+ "skills": [
+  {
+   "id": "IV.12.01",
+   "name": "Exponential growth",
+   "steps": {
+    "a": "repeated multiplying",
+    "b": "y = a·bˣ with b > 1",
+    "c": "initial value and factor",
+    "d": "from a table"
+   },
+   "wrong_turn": "Exponential growth isn't \"a lot of growth\". y = 100·2^t means multiply by 2 each hour, not add 2 or 100.",
+   "rule": "y=a⋅bx with a>0, b>1: start at a, multiply by b each step."
+  },
+  {
+   "id": "IV.12.02",
+   "name": "Exponential decay",
+   "steps": {
+    "a": "0 < b < 1",
+    "b": "decay factor vs rate",
+    "c": "from a table",
+    "d": "contexts"
+   },
+   "wrong_turn": "A 20% decay rate means b = 0.8, not 0.2. You keep 80% each step.",
+   "rule": "y=a⋅bx with 0<b<1 is exponential decay."
+  },
+  {
+   "id": "IV.12.03",
+   "name": "Graph exponentials",
+   "steps": {
+    "a": "key points",
+    "b": "horizontal asymptote",
+    "c": "domain and range",
+    "d": "growth vs decay shape"
+   },
+   "wrong_turn": "y = 2^x never touches the x-axis. There's no x with 2^x = 0, even for very negative x.",
+   "rule": "y=bx passes (0,1) and (1,b), has asymptote y=0, domain ℝ, range (0,∞)."
+  },
+  {
+   "id": "IV.12.04",
+   "name": "Transform exponentials",
+   "steps": {
+    "a": "shifts",
+    "b": "reflections",
+    "c": "stretches",
+    "d": "new asymptote"
+   },
+   "wrong_turn": "y = 2^x + 3 has asymptote y = 3, not y = 0. Vertical shifts move the asymptote.",
+   "rule": "y=a⋅bx−h+k has horizontal asymptote y=k."
+  },
+  {
+   "id": "IV.12.05",
+   "name": "Percent growth models",
+   "steps": {
+    "a": "b = 1 + r",
+    "b": "b = 1 − r",
+    "c": "write the model",
+    "d": "convert period rates"
+   },
+   "wrong_turn": "Percent changes don't add: +10% then −10% is 0.99, a 1% loss, not no change.",
+   "rule": "Growth by rate r: b=1+r. Decay by rate r: b=1−r."
+  },
+  {
+   "id": "IV.12.06",
+   "name": "Compound interest",
+   "steps": {
+    "a": "A = P(1 + r/n)^(nt)",
+    "b": "compounding periods",
+    "c": "compare offers",
+    "d": "solve for time with logs"
+   },
+   "wrong_turn": "Use r/n per period and nt periods: 6% monthly compounding is 1.005 per month for 120 months, not 1.06^120.",
+   "rule": "A=P(1+(rn))nt"
+  },
+  {
+   "id": "IV.12.07",
+   "name": "The number e",
+   "steps": {
+    "a": "limit of compounding",
+    "b": "A = Pe^(rt)",
+    "c": "graph eˣ",
+    "d": "continuous growth contexts"
+   },
+   "wrong_turn": "e is a fixed number, about 2.718, not a variable. In A = Pe^(rt), only P, r and t change.",
+   "rule": "e=limn→∞(1+(1n))n≈2.71828"
+  },
+  {
+   "id": "IV.12.08",
+   "name": "What a logarithm is",
+   "steps": {
+    "a": "log as \"which exponent\"",
+    "b": "log_b(x) = y means bʸ = x",
+    "c": "common and natural logs",
+    "d": "log of 1, of b, and inverses"
+   },
+   "wrong_turn": "log(x + y) is not log x + log y. The adding rule belongs to products: log(xy).",
+   "rule": "logbx=y means by=x."
+  },
+  {
+   "id": "IV.12.09",
+   "name": "Convert exponential and log",
+   "steps": {
+    "a": "exponential to log",
+    "b": "log to exponential",
+    "c": "with e and ln",
+    "d": "solve simple ones"
+   },
+   "wrong_turn": "log₂ 8 = 3 means 2³ = 8, not 3² = 8 or 8³ = 2. The base is the thing being raised.",
+   "rule": "by=x⟺logbx=y; in particular ey=x⟺lnx=y."
+  },
+  {
+   "id": "IV.12.10",
+   "name": "Evaluate logs",
+   "steps": {
+    "a": "by hand for exact powers",
+    "b": "fractional and negative results",
+    "c": "estimate between integers",
+    "d": "calculator"
+   },
+   "wrong_turn": "log₂(1/8) is −3, not 1/3. A fraction input gives a negative log; it doesn't flip the answer.",
+   "rule": "Write the input as a power of the base: logb(bk)=k."
+  },
+  {
+   "id": "IV.12.11",
+   "name": "Log properties",
+   "steps": {
+    "a": "product rule",
+    "b": "quotient rule",
+    "c": "power rule",
+    "d": "expand and condense"
+   },
+   "wrong_turn": "log(x + y) isn't log x + log y, and log(x)/log(y) isn't log(x/y). The rules are for products and quotients inside.",
+   "rule": "log(xy)=logx+logy, log(xy)=logx−logy, logxp=plogx."
+  },
+  {
+   "id": "IV.12.12",
+   "name": "Change of base",
+   "steps": {
+    "a": "the formula",
+    "b": "evaluate any base",
+    "c": "why it works",
+    "d": "compare logs"
+   },
+   "wrong_turn": "log₂ 10 is ln 10 / ln 2, not ln 2 / ln 10 and not ln(10/2).",
+   "rule": "logbx=(lnxlnb)=(logxlogb)"
+  },
+  {
+   "id": "IV.12.13",
+   "name": "Graph logs",
+   "steps": {
+    "a": "inverse of exponential",
+    "b": "vertical asymptote",
+    "c": "transformations",
+    "d": "domain"
+   },
+   "wrong_turn": "log x is not defined for x ≤ 0. log(x − 3) needs x > 3, and its graph never reaches x = 3.",
+   "rule": "y=logbx passes (1,0) and (b,1), has asymptote x=0, domain (0,∞), range ℝ."
+  },
+  {
+   "id": "IV.12.14",
+   "name": "Solve exponential equations",
+   "steps": {
+    "a": "same base when possible",
+    "b": "take logs of both sides",
+    "c": "isolate first",
+    "d": "exact vs decimal answers"
+   },
+   "wrong_turn": "Isolate before taking logs: 3·2^x = 48 is not x·ln 6 = ln 48. Divide by 3 first.",
+   "rule": "Isolate the power, then use a common base or take logs of both sides."
+  },
+  {
+   "id": "IV.12.15",
+   "name": "Solve log equations",
+   "steps": {
+    "a": "convert to exponential",
+    "b": "condense then solve",
+    "c": "log = log",
+    "d": "check domain"
+   },
+   "wrong_turn": "A negative answer isn't always wrong, but the input of every log must be positive. Check each original log.",
+   "rule": "Condense to a single log, convert to exponential form, solve, and check the domain."
+  },
+  {
+   "id": "IV.12.16",
+   "name": "Half-life & doubling time",
+   "steps": {
+    "a": "half-life models",
+    "b": "doubling models",
+    "c": "solve for time",
+    "d": "carbon dating"
+   },
+   "wrong_turn": "After 2 half-lives, a quarter remains, not none. Halving twice isn't subtracting two halves.",
+   "rule": "A=A0((12))t/h for half-life h; A=A0⋅2t/d for doubling time d."
+  },
+  {
+   "id": "IV.12.17",
+   "name": "Log scales & regression",
+   "steps": {
+    "a": "decibels and pH",
+    "b": "Richter scale",
+    "c": "exponential regression",
+    "d": "linearize with logs"
+   },
+   "wrong_turn": "Magnitude 7 isn't 7/6 of magnitude 6. It's 10 times the ground motion, and about 32 times the energy.",
+   "rule": "A log scale records logx, so equal steps mean equal ratios."
+  }
+ ]
+}

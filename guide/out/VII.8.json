@@ -1,0 +1,114 @@
+{
+  "branch": "VII.8",
+  "intro": "Orthogonal means at right angles. This branch uses right angles to find closest points and best approximations, which underlies fitting a line to messy data.",
+  "skills": {
+    "VII.8.01": {
+      "what": "An inner product is a way of multiplying vectors to measure length and angle. The dot product is the standard one.",
+      "levels": {
+        "a": "Uses the dot product on lists of any length.",
+        "b": "Finds lengths and distances from it.",
+        "c": "Works with other inner products, such as ones for functions.",
+        "d": "Uses the rules every inner product must follow."
+      }
+    },
+    "VII.8.02": {
+      "what": "Two vectors are orthogonal when they meet at a right angle, which happens exactly when their dot product is zero.",
+      "levels": {
+        "a": "Tests for a right angle by checking the dot product is zero.",
+        "b": "Uses the Pythagorean theorem for perpendicular vectors in any dimension.",
+        "c": "Tests whether every pair in a set is perpendicular.",
+        "d": "Finds a vector perpendicular to given ones."
+      }
+    },
+    "VII.8.03": {
+      "what": "The orthogonal complement of a subspace is every vector at right angles to all of it, like the vertical line beneath a flat floor.",
+      "levels": {
+        "a": "Understands the definition.",
+        "b": "Finds a basis for it.",
+        "c": "Shows the row space and null space are perpendicular to each other.",
+        "d": "Uses the fact that the two dimensions add up to the whole."
+      }
+    },
+    "VII.8.04": {
+      "what": "An orthogonal basis is a set of building-block vectors that are all at right angles to each other, which makes calculations much easier.",
+      "levels": {
+        "a": "Shows perpendicular nonzero vectors are automatically independent.",
+        "b": "Finds coordinates quickly using dot products.",
+        "c": "Checks whether a set is an orthogonal basis.",
+        "d": "Explains why such bases save so much work."
+      }
+    },
+    "VII.8.05": {
+      "what": "An orthonormal basis has perpendicular vectors that are also each of length 1, the tidiest possible basis.",
+      "levels": {
+        "a": "Scales perpendicular vectors to length 1.",
+        "b": "Checks a matrix's columns are orthonormal by one multiplication.",
+        "c": "Finds coordinates instantly using dot products.",
+        "d": "Shows these coordinates keep lengths unchanged."
+      }
+    },
+    "VII.8.06": {
+      "what": "Projecting onto a subspace finds the nearest point in it, like dropping a straight shadow onto a floor.",
+      "levels": {
+        "a": "Uses the projection formula with a perpendicular basis.",
+        "b": "Computes a projection.",
+        "c": "Splits a vector into a part in the subspace and a perpendicular part.",
+        "d": "Builds a matrix that performs the projection."
+      }
+    },
+    "VII.8.07": {
+      "what": "The best approximation theorem says the projection is the closest point in the subspace to a given vector.",
+      "levels": {
+        "a": "States the closest-point theorem.",
+        "b": "Finds the distance from a vector to a subspace.",
+        "c": "Computes the closest point in examples.",
+        "d": "Explains why the projection beats every other point."
+      }
+    },
+    "VII.8.08": {
+      "what": "Gram–Schmidt is a step-by-step recipe for turning any basis into one where every vector is at right angles to the rest.",
+      "levels": {
+        "a": "Learns the key move: subtract the shadow on earlier vectors.",
+        "b": "Runs the process on two vectors.",
+        "c": "Runs it on three vectors.",
+        "d": "Scales the results to length 1 at the end."
+      }
+    },
+    "VII.8.09": {
+      "what": "QR factorization splits a matrix into a part with perpendicular columns and a triangular part, a standard tool in computing.",
+      "levels": {
+        "a": "Builds the perpendicular-column part using Gram–Schmidt.",
+        "b": "Finds the triangular part by a single multiplication.",
+        "c": "Checks the factors multiply back to the original.",
+        "d": "Describes how computers use it."
+      }
+    },
+    "VII.8.10": {
+      "what": "Least squares finds the best approximate solution when a system has no exact one, keeping the total error as small as possible.",
+      "levels": {
+        "a": "Recognizes systems with no exact solution.",
+        "b": "Sets up the normal equations, a solvable related system.",
+        "c": "Solves them for the best approximate answer.",
+        "d": "Measures how large the leftover error is."
+      }
+    },
+    "VII.8.11": {
+      "what": "Fitting the best straight line or curve through scattered data points, the method behind a trend line on a chart.",
+      "levels": {
+        "a": "Sets up the design matrix from the data.",
+        "b": "Finds the best-fit straight line.",
+        "c": "Fits curves, such as a parabola, to data.",
+        "d": "Connects this to regression in statistics."
+      }
+    },
+    "VII.8.12": {
+      "what": "An orthogonal matrix moves things without distorting them, keeping every length and angle the same, like a rotation or mirror.",
+      "levels": {
+        "a": "Recognizes matrices whose columns are perpendicular and of length 1.",
+        "b": "Finds the inverse simply by transposing.",
+        "c": "Shows these matrices keep lengths and angles unchanged.",
+        "d": "Identifies them as rotations and reflections."
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "branch": "V.7",
+  "intro": "This branch extends trigonometry to triangles without a right angle. Two new rules, the law of sines and the law of cosines, let the learner solve any triangle, which is used in navigation and land surveying.",
+  "skills": {
+    "V.7.01": {
+      "what": "The law of sines: in any triangle, each side divided by the sine of its opposite angle gives the same number.",
+      "levels": {
+        "a": "Completes the law of sines and pairs each side with its opposite angle.",
+        "b": "Finds a missing side using the law of sines.",
+        "c": "Finds a missing angle using the law of sines.",
+        "d": "Shows where the law comes from by drawing a height line: finds the height or orders the steps."
+      }
+    },
+    "V.7.02": {
+      "what": "The 'ambiguous case': when two sides and an angle not between them are known, there may be no triangle, one, or two.",
+      "levels": {
+        "a": "Recognizes the tricky setup (two sides and an angle not between them) and what to compare.",
+        "b": "Decides whether zero, one or two triangles fit the given facts.",
+        "c": "Finds both possible angles when two triangles fit.",
+        "d": "Pictures a side that can swing to two places and finds a length or angle in each triangle.",
+        "e": "Finds the exact range of side lengths that gives exactly two triangles.",
+        "f": "Finds the sum or product of the two possible lengths at once, without solving each triangle."
+      }
+    },
+    "V.7.03": {
+      "what": "The law of cosines finds sides and angles in any triangle; it is the Pythagorean theorem with a correction for the angle.",
+      "levels": {
+        "a": "Puts numbers into the law of cosines, or names a reason in its coordinate proof.",
+        "b": "Finds the third side from two sides and the angle between them.",
+        "c": "Finds an angle from all three sides.",
+        "d": "Shows that with a right angle the law becomes the Pythagorean theorem.",
+        "e": "Finds a side next to the known angle, which means solving a squared equation.",
+        "f": "Uses the law twice in a parallelogram to find the exact length of the second diagonal."
+      }
+    },
+    "V.7.04": {
+      "what": "Deciding which law to use based on what information is given.",
+      "levels": {
+        "a": "Chooses the law of cosines when given three sides, or two sides and the angle between.",
+        "b": "Chooses the law of sines when given two angles and a side, and uses it.",
+        "c": "Checks which of two possible angles from the law of sines really gives a triangle.",
+        "d": "Puts the steps of a full solution plan in order, or picks the best first step."
+      }
+    },
+    "V.7.05": {
+      "what": "Finding every missing side and angle of any triangle, step by step.",
+      "levels": {
+        "a": "Finds the first missing part with the right law.",
+        "b": "Finds the third angle from the other two.",
+        "c": "Finds the last missing side.",
+        "d": "Checks whether three side lengths can make a triangle at all."
+      }
+    },
+    "V.7.06": {
+      "what": "Finding a triangle's area from two sides and the angle between them, without knowing its height.",
+      "levels": {
+        "a": "Finds a triangle's area from two sides and the angle between them.",
+        "b": "Puts the steps of the proof of this area rule in order.",
+        "c": "Works backwards from the area to find a missing side or angle.",
+        "d": "Finds a parallelogram's area the same way, or a side from its area.",
+        "e": "Compares the areas of two triangles that share a corner angle.",
+        "f": "Finds the area of a large triangle built by stretching each side of a smaller one."
+      }
+    },
+    "V.7.07": {
+      "what": "Heron's formula finds a triangle's area from its three side lengths alone.",
+      "levels": {
+        "a": "Finds the semi-perimeter, which is half the distance around the triangle.",
+        "b": "Picks the correct form of Heron's formula.",
+        "c": "Finds a triangle's area from its three sides using Heron's formula.",
+        "d": "Uses the area from both methods to find the exact sine of an angle."
+      }
+    },
+    "V.7.08": {
+      "what": "Using bearings (compass directions given as angles) and triangle laws to solve navigation problems.",
+      "levels": {
+        "a": "Converts between a compass bearing (measured clockwise from north) and an ordinary angle.",
+        "b": "Pictures a two-leg route and finds the angle inside the triangle at the turn.",
+        "c": "Finds the straight-line distance back to the start after a two-leg trip.",
+        "d": "Finds the bearing of the end point from the start, or the heading home."
+      }
+    },
+    "V.7.09": {
+      "what": "Using triangle laws to measure land and distances that cannot be walked or reached directly.",
+      "levels": {
+        "a": "Finds the distance to a tree across a river from two points on this bank.",
+        "b": "Finds a height or distance using angles looking up from two spots.",
+        "c": "Finds the area of a triangular plot from two sides and the angle between them.",
+        "d": "Picks the reasonable answer for a surveying problem, ruling out impossible ones."
+      }
+    }
+  }
+}

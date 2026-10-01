@@ -1,0 +1,114 @@
+{
+ "unit": "V.15",
+ "name": "Constructions",
+ "skills": [
+  {
+   "id": "V.15.01",
+   "name": "Copy a segment & an angle",
+   "steps": {
+    "a": "compass as a length carrier",
+    "b": "copy a segment",
+    "c": "copy an angle",
+    "d": "justify with SSS"
+   },
+   "wrong_turn": "Keep the compass width the same for matching arcs. Changing it between the original and the copy spoils the angle.",
+   "rule": "Copy a segment by carrying its length with the compass; copy an angle by copying a triangle inside it."
+  },
+  {
+   "id": "V.15.02",
+   "name": "Bisect a segment",
+   "steps": {
+    "a": "two arcs",
+    "b": "draw the bisector",
+    "c": "it is also perpendicular",
+    "d": "justify"
+   },
+   "wrong_turn": "If the compass is open less than half the segment, the arcs don't meet. Open it wider than halfway.",
+   "rule": "Equal arcs from A and B meet at two points; the line through them is the perpendicular bisector of AB."
+  },
+  {
+   "id": "V.15.03",
+   "name": "Bisect an angle",
+   "steps": {
+    "a": "arc on both sides",
+    "b": "two more arcs",
+    "c": "draw the ray",
+    "d": "justify"
+   },
+   "wrong_turn": "The bisector goes through the crossing of the second pair of arcs, not through where the first arc meets a side.",
+   "rule": "An arc from the vertex cuts both sides; equal arcs from those points cross; the ray to the crossing bisects the angle."
+  },
+  {
+   "id": "V.15.04",
+   "name": "Perpendicular through a point",
+   "steps": {
+    "a": "point on the line",
+    "b": "point off the line",
+    "c": "construct",
+    "d": "justify"
+   },
+   "wrong_turn": "Perpendicular doesn't mean vertical. It means meeting the given line at 90°, whichever way the line runs.",
+   "rule": "Mark two points of the line equally far from P, then build the perpendicular bisector between them."
+  },
+  {
+   "id": "V.15.05",
+   "name": "Parallel through a point",
+   "steps": {
+    "a": "copy a corresponding angle",
+    "b": "construct",
+    "c": "alternative with two perpendiculars",
+    "d": "justify"
+   },
+   "wrong_turn": "Copy the angle in the corresponding position, on the same side of the transversal. On the wrong side, the new line isn't parallel.",
+   "rule": "Through P, copy the angle a transversal makes with ℓ as a corresponding angle; the new line is parallel to ℓ."
+  },
+  {
+   "id": "V.15.06",
+   "name": "Triangle & hexagon in a circle",
+   "steps": {
+    "a": "step the radius around",
+    "b": "regular hexagon",
+    "c": "equilateral triangle",
+    "d": "justify"
+   },
+   "wrong_turn": "Don't change the compass after drawing the circle. The steps close up exactly only when each step equals the radius.",
+   "rule": "Stepping the radius around a circle gives a regular hexagon; alternate vertices give an equilateral triangle."
+  },
+  {
+   "id": "V.15.07",
+   "name": "Square in a circle",
+   "steps": {
+    "a": "draw a diameter",
+    "b": "perpendicular diameter",
+    "c": "join the ends",
+    "d": "justify"
+   },
+   "wrong_turn": "Joining the ends of two diameters makes a square only if they are perpendicular. Otherwise you get a rectangle.",
+   "rule": "Two perpendicular diameters meet the circle at the vertices of an inscribed square."
+  },
+  {
+   "id": "V.15.08",
+   "name": "Tangent from a point",
+   "steps": {
+    "a": "midpoint to the center",
+    "b": "circle on that segment",
+    "c": "draw tangents",
+    "d": "justify with the semicircle angle"
+   },
+   "wrong_turn": "The tangent doesn't touch where line OP crosses the circle. It touches where the radius meets it at a right angle.",
+   "rule": "The tangents from P touch the circle where the circle on diameter OP crosses it."
+  },
+  {
+   "id": "V.15.09",
+   "name": "Inscribed & circumscribed circles",
+   "steps": {
+    "a": "circumcenter construction",
+    "b": "circumcircle",
+    "c": "incenter construction",
+    "d": "incircle"
+   },
+   "wrong_turn": "The incenter comes from angle bisectors, not perpendicular bisectors. Perpendicular bisectors give the circumcenter, which can lie outside the triangle.",
+   "rule": "Perpendicular bisectors of the sides meet at the circumcenter; angle bisectors meet at the incenter."
+  }
+ ]
+}

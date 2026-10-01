@@ -1,0 +1,196 @@
+{
+  "branch": "II.9",
+  "intro": "This branch applies arithmetic to the physical world: measuring length, weight, volume and time, and working with shapes and angles. It covers perimeter, area and volume, and how to describe and sort shapes.",
+  "skills": {
+    "II.9.01": {
+      "what": "Measuring length in metric units (millimeters, centimeters, meters, kilometers) and converting between them.",
+      "levels": {
+        "a": "Converts between millimeters, centimeters and meters.",
+        "b": "Converts kilometers to meters.",
+        "c": "Converts meters with decimals into centimeters, as in 8.8 m is 880 cm.",
+        "d": "Chooses the best unit for measuring something."
+      }
+    },
+    "II.9.02": {
+      "what": "Measuring length in US units (inches, feet, yards, miles) and converting between them.",
+      "levels": {
+        "a": "Converts between inches, feet and yards.",
+        "b": "Converts miles to feet.",
+        "c": "Converts to a mix of units, as in 81 inches is 6 feet 9 inches.",
+        "d": "Chooses the best unit for measuring something."
+      }
+    },
+    "II.9.03": {
+      "what": "Measuring how heavy things are, in grams and kilograms or ounces and pounds.",
+      "levels": {
+        "a": "Converts kilograms to grams.",
+        "b": "Converts pounds to ounces.",
+        "c": "Converts decimal amounts, as in 8.6 kg is 8,600 g.",
+        "d": "Estimates the weight of everyday objects, like a cat."
+      }
+    },
+    "II.9.04": {
+      "what": "Measuring how much a container holds, in milliliters and liters or cups, pints, quarts and gallons.",
+      "levels": {
+        "a": "Converts liters to milliliters.",
+        "b": "Converts between cups, pints, quarts and gallons.",
+        "c": "Converts decimal amounts, as in 8.8 liters is 8,800 milliliters.",
+        "d": "Estimates how much everyday containers hold, like a glass of milk."
+      }
+    },
+    "II.9.05": {
+      "what": "Working with time: how long things last, converting between units, and reading timetables.",
+      "levels": {
+        "a": "Works out how long something lasts from its start and end times.",
+        "b": "Converts between hours and minutes.",
+        "c": "Converts between other units of time, such as days and hours.",
+        "d": "Reads a bus timetable to answer questions."
+      }
+    },
+    "II.9.06": {
+      "what": "Finding the perimeter of a shape: the total distance around its edge.",
+      "levels": {
+        "a": "Counts unit lengths around a shape on a grid.",
+        "b": "Adds up the lengths of all the sides.",
+        "c": "Uses a shortcut for rectangles: twice the length plus twice the width.",
+        "d": "Finds a missing side when the perimeter is known.",
+        "e": "Works backwards from a rectangle's perimeter and a clue about its sides to find its area.",
+        "f": "Finds the perimeter of one strip after a square is cut into equal strips."
+      }
+    },
+    "II.9.07": {
+      "what": "Finding area, the amount of flat space a shape covers, by counting squares.",
+      "levels": {
+        "a": "Counts whole squares to find the area of a shape on a grid.",
+        "b": "Counts half squares too, pairing them up to make wholes.",
+        "c": "Compares the areas of two shapes.",
+        "d": "Sees that shapes that look different can have the same area."
+      }
+    },
+    "II.9.08": {
+      "what": "Finding the area of rectangles by multiplying length by width, and using this for other shapes.",
+      "levels": {
+        "a": "Multiplies length by width to find a rectangle's area.",
+        "b": "Finds a missing side when the area is known.",
+        "c": "Finds the area of an L-shape or similar by splitting it into rectangles.",
+        "d": "Solves word problems, like the area of a garden.",
+        "e": "Works backwards from the area and one side to find the missing side, then the perimeter.",
+        "f": "Finds the area of a path running around a garden, by taking the garden from the whole."
+      }
+    },
+    "II.9.09": {
+      "what": "Understanding that perimeter (distance around) and area (space inside) are different, and knowing which one a job needs.",
+      "levels": {
+        "a": "Sees that rectangles with the same perimeter can have different areas.",
+        "b": "Sees that rectangles with the same area can have different perimeters.",
+        "c": "Decides whether a real task needs perimeter or area.",
+        "d": "Finds the biggest pen that can be enclosed with a given length of fence.",
+        "e": "Finds a rectangle's sides when both its area and perimeter are given.",
+        "f": "Counts every whole-number rectangle with a given perimeter whose area is above a target."
+      }
+    },
+    "II.9.10": {
+      "what": "Finding volume, the amount of space a solid takes up, by counting unit cubes.",
+      "levels": {
+        "a": "Counts the unit cubes in a solid.",
+        "b": "Counts the cubes in one layer, then multiplies by the number of layers.",
+        "c": "Compares which of two boxes is made of more cubes.",
+        "d": "Picks out a box built from an exact number of cubes."
+      }
+    },
+    "II.9.11": {
+      "what": "Finding the volume of a box by multiplying length, width and height.",
+      "levels": {
+        "a": "Multiplies length times width times height.",
+        "b": "Uses the area of the base times the height, including finding a missing height.",
+        "c": "Finds the volume of a solid made of two boxes by adding them.",
+        "d": "Solves word problems, like the volume of a fish tank.",
+        "e": "Works out how many small cubes fit exactly inside a box.",
+        "f": "Solves the painted-cube puzzle: how many small cubes have paint on exactly one or two faces."
+      }
+    },
+    "II.9.12": {
+      "what": "Learning the basic words of geometry: points, lines, segments and rays, and how lines can meet.",
+      "levels": {
+        "a": "Tells apart a point, a line (endless both ways) and a segment (with two ends).",
+        "b": "Recognizes a ray: a line with one end that goes on forever the other way.",
+        "c": "Recognizes parallel lines, which never meet.",
+        "d": "Recognizes perpendicular lines, which meet at a square corner."
+      }
+    },
+    "II.9.13": {
+      "what": "Understanding angles as an amount of turn, measured in degrees, and naming the different kinds.",
+      "levels": {
+        "a": "Knows a full turn is 360 degrees.",
+        "b": "Sorts angles as right (a square corner), acute (smaller) or obtuse (bigger).",
+        "c": "Knows a straight angle is a half turn, and two make a full turn.",
+        "d": "Names an angle using three letters, with the corner in the middle."
+      }
+    },
+    "II.9.14": {
+      "what": "Using a protractor, a half-circle measuring tool, to measure and draw angles.",
+      "levels": {
+        "a": "Chooses which of the protractor's two scales to read.",
+        "b": "Measures an angle with a protractor.",
+        "c": "Draws an angle of a given size with a protractor.",
+        "d": "Estimates the size of an angle before measuring."
+      }
+    },
+    "II.9.15": {
+      "what": "Adding angles together and finding missing angles.",
+      "levels": {
+        "a": "Adds two angles side by side to find the whole angle.",
+        "b": "Finds a missing part of a known angle, such as a right angle.",
+        "c": "Uses the fact that angles all the way around a point add to 360 degrees.",
+        "d": "Solves word problems, like how far a door has swung open.",
+        "e": "Splits a straight or right angle into two parts when one is several times the other.",
+        "f": "Finds the angle between a clock's hands at a given time, allowing for the hour hand's drift."
+      }
+    },
+    "II.9.16": {
+      "what": "Sorting triangles by their sides and by their angles.",
+      "levels": {
+        "a": "Names triangles by their sides: all equal, two equal, or none equal.",
+        "b": "Names triangles by their angles: all acute, one right angle, or one obtuse angle.",
+        "c": "Names a triangle by both its sides and its angles.",
+        "d": "Decides whether a given kind of triangle can exist."
+      }
+    },
+    "II.9.17": {
+      "what": "Sorting four-sided shapes (quadrilaterals) and seeing how their families fit together.",
+      "levels": {
+        "a": "Names squares, rectangles and rhombuses (four equal sides).",
+        "b": "Names parallelograms (two pairs of parallel sides) and trapezoids (exactly one pair).",
+        "c": "Places shapes in a family tree, seeing a square as a special rectangle.",
+        "d": "Judges statements like every square is a rhombus as true or false."
+      }
+    },
+    "II.9.18": {
+      "what": "Finding lines of symmetry: fold lines where one half of a shape matches the other exactly.",
+      "levels": {
+        "a": "Picks which line is a line of symmetry.",
+        "b": "Counts how many lines of symmetry a shape has.",
+        "c": "Completes a shape on a grid so it has a given line of symmetry.",
+        "d": "Recognizes shapes that have no line of symmetry."
+      }
+    },
+    "II.9.19": {
+      "what": "Locating points on a grid using two numbers (coordinates): how far across, then how far up.",
+      "levels": {
+        "a": "Knows the two axes and the starting corner, and reads points on an axis.",
+        "b": "Finds the point with given coordinates.",
+        "c": "Reads the coordinates of a point.",
+        "d": "Spots a pattern in a set of points and predicts the next one."
+      }
+    },
+    "II.9.20": {
+      "what": "Solving word problems that bring together measurement, perimeter, area and volume.",
+      "levels": {
+        "a": "Solves problems that need converting units, like meters and centimeters.",
+        "b": "Solves problems about perimeter and area, like fencing a garden.",
+        "c": "Solves problems about volume, like how many liters fill a tank.",
+        "d": "Solves problems with several steps, like the cost of fencing with a gate."
+      }
+    }
+  }
+}

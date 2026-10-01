@@ -1,0 +1,87 @@
+{
+  "branch": "VI.12",
+  "intro": "This branch applies math to physical motion and forces: falling objects, things sliding on slopes, pulleys and balancing beams.",
+  "skills": {
+    "VI.12.01": {
+      "what": "Reading motion from graphs, where the steepness and the area under the line each tell part of the story.",
+      "levels": {
+        "a": "Finds velocity from the steepness (gradient) of a position–time graph.",
+        "b": "Finds acceleration from the steepness of a velocity–time graph.",
+        "c": "Finds displacement from the area under a velocity–time graph.",
+        "d": "Distinguishes total distance traveled from change in position."
+      }
+    },
+    "VI.12.02": {
+      "what": "A set of five equations (often called \"suvat\") for objects speeding up or slowing down at a steady rate.",
+      "levels": {
+        "a": "Knows the constant-acceleration equations and what each letter means.",
+        "b": "Chooses the right equation from the information given.",
+        "c": "Solves for the unknown quantity.",
+        "d": "Handles journeys with two stages, like speeding up then braking."
+      }
+    },
+    "VI.12.03": {
+      "what": "Modeling objects thrown straight up or dropped, with gravity pulling them down.",
+      "levels": {
+        "a": "Uses gravity as a steady downward acceleration.",
+        "b": "Models an object thrown up that falls back down.",
+        "c": "Finds the maximum height reached.",
+        "d": "Finds the total time spent in the air."
+      }
+    },
+    "VI.12.04": {
+      "what": "Newton's laws describe how forces change motion. A bigger push gives a bigger acceleration.",
+      "levels": {
+        "a": "Identifies weight, the surface's push back (normal reaction) and string tension.",
+        "b": "Combines forces into one overall (resultant) force.",
+        "c": "Uses force equals mass times acceleration.",
+        "d": "Applies the third law: every push has an equal push back."
+      }
+    },
+    "VI.12.05": {
+      "what": "Splitting a slanted force into sideways and up-down parts, which makes problems much easier.",
+      "levels": {
+        "a": "Splits a force into two parts using sine and cosine.",
+        "b": "Uses balanced forces (equilibrium) to find unknowns.",
+        "c": "Handles objects resting or moving on a slope.",
+        "d": "Finds an unknown force from the other forces present."
+      }
+    },
+    "VI.12.06": {
+      "what": "Objects linked by strings or rods, like two weights over a pulley, that move together.",
+      "levels": {
+        "a": "Finds the tension (pulling force) in a connecting string.",
+        "b": "Handles strings running over pulleys.",
+        "c": "Solves for the shared acceleration of the linked objects.",
+        "d": "Models lifts and vehicles towing trailers."
+      }
+    },
+    "VI.12.07": {
+      "what": "Friction is the grip between surfaces that resists sliding. It has a maximum strength that depends on how hard the surfaces press together.",
+      "levels": {
+        "a": "Uses the rule that friction is at most a constant times the normal reaction.",
+        "b": "Identifies limiting friction, when an object is just about to slip.",
+        "c": "Includes friction for objects on a slope.",
+        "d": "Decides whether an object will slide or stay put."
+      }
+    },
+    "VI.12.08": {
+      "what": "Modeling the curved path of a thrown or kicked object by treating sideways and up-down motion separately.",
+      "levels": {
+        "a": "Splits the motion into horizontal and vertical parts.",
+        "b": "Finds how long the object stays in the air.",
+        "c": "Finds how far it travels and how high it goes.",
+        "d": "Chooses the launch speed or angle to hit a target."
+      }
+    },
+    "VI.12.09": {
+      "what": "A moment is the turning effect of a force, like pushing a door far from its hinge versus close to it.",
+      "levels": {
+        "a": "Finds a moment as force times the perpendicular distance to the pivot.",
+        "b": "Balances turning effects on a level rod.",
+        "c": "Handles a rod just on the point of tipping over.",
+        "d": "Finds the force needed from a support."
+      }
+    }
+  }
+}

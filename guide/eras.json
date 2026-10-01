@@ -1,0 +1,37 @@
+{
+ "I": {
+  "color": "#2e7d4f",
+  "school": "About ages 4–8 · kindergarten to grade 2",
+  "intro": "Era I is where numbers begin. Learners count real things, compare which group has more, learn what the digits in a number mean, and add and take away within 100. Alongside the numbers come early patterns and logic, flat and solid shapes, telling time, money, and simple measuring."
+ },
+ "II": {
+  "color": "#1f6f8b",
+  "school": "About ages 8–11 · grades 3 to 5",
+  "intro": "Era II builds the four operations into strong tools. Learners work with numbers into the millions, master multiplication and division, meet factors and multiples, and learn to handle fractions and decimals with confidence. The era closes with first expressions (using letters for numbers), measurement, area and volume, and reading data."
+ },
+ "III": {
+  "color": "#5b4a9e",
+  "school": "About ages 11–14 · grades 6 to 8",
+  "intro": "Era III is about how quantities relate to each other. Negative numbers, ratios, rates and percentages come first, then powers and roots, then algebra: writing expressions and solving equations. It ends with first graphs of straight lines, basic non-proof geometry of angles, circles and solids, and basic statistics and chance."
+ },
+ "IV": {
+  "color": "#b5482a",
+  "school": "About ages 14–17 · high-school algebra through precalculus",
+  "intro": "Era IV is algebra in full. Learners solve every common kind of equation, study functions and their graphs (lines, parabolas, polynomials, exponentials and logarithms), meet complex numbers, and work with sequences, counting, probability and data. About half of its skills also have the two optional challenge levels, Brave and Legend."
+ },
+ "V": {
+  "color": "#8a6d1d",
+  "school": "About ages 14–17 · high-school geometry and trigonometry",
+  "intro": "Era V is the era of reasons. This is where proof begins: learners learn how a mathematical argument works, then use short proofs throughout geometry: lines, triangles, polygons, similar shapes and circles. Trigonometry (the math of angles and waves) follows, then coordinate geometry, conic sections, transformations, solids and classic ruler-and-compass constructions."
+ },
+ "VI": {
+  "color": "#a0356b",
+  "school": "About ages 16–19 · final years of high school and first-year college · coming in Mathera 2.0",
+  "intro": "Era VI is the mathematics of change. It covers calculus from limits to derivatives and integrals, then differential equations, curves described in new ways, and infinite series. It closes with statistical inference (drawing conclusions from data) and a short unit on mechanics, the math of forces and motion."
+ },
+ "VII": {
+  "color": "#2f4f7f",
+  "school": "About ages 18–20 · second-year college mathematics · coming in Mathera 2.0",
+  "intro": "Era VII takes math into many dimensions. Linear algebra studies vectors and matrices, the language behind computer graphics, data science and engineering. Multivariable calculus extends calculus to surfaces and 3-D space. Differential equations model how real systems change over time."
+ }
+}

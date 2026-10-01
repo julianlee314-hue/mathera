@@ -1,0 +1,78 @@
+{
+  "branch": "VII.19",
+  "intro": "A Fourier series builds any repeating pattern out of simple sine and cosine waves, the way a musical chord is built from pure notes. It is the math behind sound, signals and heat flow.",
+  "skills": {
+    "VII.19.01": {
+      "what": "Periodic functions repeat over and over. Sine and cosine waves of different frequencies are orthogonal, meaning they do not overlap in a precise sense.",
+      "levels": {
+        "a": "Works with functions that repeat over a fixed length.",
+        "b": "Shows sines and cosines of different frequencies are orthogonal.",
+        "c": "Computes integrals of products of sines and cosines.",
+        "d": "Explains how this lets each wave be picked out from a mix."
+      }
+    },
+    "VII.19.02": {
+      "what": "Fourier coefficients are the amounts of each wave needed to build a given pattern, like a recipe for a sound.",
+      "levels": {
+        "a": "Finds the average level, the constant term.",
+        "b": "Finds the amount of each cosine wave.",
+        "c": "Finds the amount of each sine wave.",
+        "d": "Writes out the full Fourier series."
+      }
+    },
+    "VII.19.03": {
+      "what": "Building a square wave, which jumps between two levels, from smooth sine waves.",
+      "levels": {
+        "a": "Computes the coefficients for a square wave.",
+        "b": "Sees that only the odd-numbered waves appear.",
+        "c": "Graphs partial sums getting closer to the square shape.",
+        "d": "Listens to how adding waves changes the sound."
+      }
+    },
+    "VII.19.04": {
+      "what": "Building sawtooth and triangle waves from sine and cosine waves, and comparing them.",
+      "levels": {
+        "a": "Computes the coefficients for a sawtooth wave.",
+        "b": "Computes the coefficients for a triangle wave.",
+        "c": "Compares how fast the amounts of higher waves shrink.",
+        "d": "Compares how the two waves sound."
+      }
+    },
+    "VII.19.05": {
+      "what": "A pattern given on half an interval can be extended to use only cosines or only sines, whichever suits the problem.",
+      "levels": {
+        "a": "Builds a cosine-only series by mirroring the pattern.",
+        "b": "Builds a sine-only series by flipping the pattern.",
+        "c": "Finds half-range series for a pattern given on part of an interval.",
+        "d": "Chooses which series suits a given problem."
+      }
+    },
+    "VII.19.06": {
+      "what": "How well a Fourier series matches the original pattern, including a persistent overshoot at sudden jumps.",
+      "levels": {
+        "a": "Knows at a jump the series lands halfway between the two levels.",
+        "b": "Observes the Gibbs overshoot near jumps that never fully goes away.",
+        "c": "Links smoother patterns to faster-shrinking coefficients.",
+        "d": "Uses Parseval's identity to add up the energy in all the waves."
+      }
+    },
+    "VII.19.07": {
+      "what": "Writing Fourier series with complex exponentials, a compact form that combines sines and cosines.",
+      "levels": {
+        "a": "Uses complex exponential waves as building blocks.",
+        "b": "Computes the complex coefficients.",
+        "c": "Converts between the complex and sine-cosine forms.",
+        "d": "Draws a spectrum showing how much of each frequency is present."
+      }
+    },
+    "VII.19.08": {
+      "what": "The heat equation describes how temperature spreads along a rod. Fourier series solve it by splitting the starting temperature into waves.",
+      "levels": {
+        "a": "Understands the heat equation and what it describes.",
+        "b": "Splits the problem into a time part and a position part.",
+        "c": "Matches the starting temperature with a sine series.",
+        "d": "Explains how heat smooths out sharp differences over time."
+      }
+    }
+  }
+}

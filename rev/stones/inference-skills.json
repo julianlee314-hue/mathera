@@ -1,0 +1,101 @@
+[
+ {
+  "id": "VI.11.01",
+  "name": "Sampling methods",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "population vs sample",
+   "b": "random, stratified and systematic",
+   "c": "sources of bias",
+   "d": "choose a method"
+  }
+ },
+ {
+  "id": "VI.11.02",
+  "name": "Studies & experiments",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "observational studies",
+   "b": "experiments and control groups",
+   "c": "randomization and blinding",
+   "d": "what you can conclude"
+  }
+ },
+ {
+  "id": "VI.11.03",
+  "name": "Sampling distributions",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "statistics vary from sample to sample",
+   "b": "simulate a sampling distribution",
+   "c": "standard error",
+   "d": "bigger samples, less spread"
+  }
+ },
+ {
+  "id": "VI.11.04",
+  "name": "Central limit theorem",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "sample means are nearly normal",
+   "b": "mean and standard error",
+   "c": "probabilities about a sample mean",
+   "d": "when n is large enough"
+  }
+ },
+ {
+  "id": "VI.11.05",
+  "name": "Confidence intervals for a proportion",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "estimate ± margin of error",
+   "b": "compute one",
+   "c": "what 95% confidence means",
+   "d": "choose a sample size"
+  }
+ },
+ {
+  "id": "VI.11.06",
+  "name": "Confidence intervals for a mean",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "the formula with σ",
+   "b": "the t idea",
+   "c": "compute and interpret",
+   "d": "width vs sample size"
+  }
+ },
+ {
+  "id": "VI.11.07",
+  "name": "Hypothesis testing ideas",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "null and alternative",
+   "b": "significance level",
+   "c": "what a p-value means",
+   "d": "one- vs two-tailed"
+  }
+ },
+ {
+  "id": "VI.11.08",
+  "name": "Tests with the binomial",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "set up a test for a proportion",
+   "b": "critical region",
+   "c": "p-value",
+   "d": "conclude in context"
+  }
+ },
+ {
+  "id": "VI.11.09",
+  "name": "Tests for a mean",
+  "unit": "VI.11 Statistical inference",
+  "steps": {
+   "a": "set up a z-test",
+   "b": "the test statistic",
+   "c": "conclude",
+   "d": "Type I and Type II errors"
+  }
+ }
+]

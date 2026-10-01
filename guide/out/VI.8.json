@@ -1,0 +1,114 @@
+{
+  "branch": "VI.8",
+  "intro": "This branch describes curves in two new ways: by tracking a moving point over time (parametric), or by angle and distance from a center (polar). Calculus then finds slopes, lengths and areas for them.",
+  "skills": {
+    "VI.8.01": {
+      "what": "A parametric curve gives x and y each as a formula in time, like tracing the path of a moving bug.",
+      "levels": {
+        "a": "Reads a curve given as separate formulas for x and y in terms of time.",
+        "b": "Plots the curve from a table of time values.",
+        "c": "Marks the direction the point moves along the curve.",
+        "d": "Writes parametric formulas for circles and ellipses."
+      }
+    },
+    "VI.8.02": {
+      "what": "Removing the time variable to get an ordinary equation linking x and y directly.",
+      "levels": {
+        "a": "Solves one formula for time and substitutes into the other.",
+        "b": "Uses a trig identity to remove time from sine and cosine formulas.",
+        "c": "Notices when only part of the ordinary graph is actually traced.",
+        "d": "Compares the parametric graph with the ordinary one."
+      }
+    },
+    "VI.8.03": {
+      "what": "Finding the slope of a parametric curve by dividing how fast y changes by how fast x changes.",
+      "levels": {
+        "a": "Uses the formula: rate of y over rate of x.",
+        "b": "Writes tangent lines to parametric curves.",
+        "c": "Finds points where the curve has a flat tangent.",
+        "d": "Finds points where the curve has a vertical tangent."
+      }
+    },
+    "VI.8.04": {
+      "what": "Finding how the slope of a parametric curve changes, which tells which way it bends.",
+      "levels": {
+        "a": "States the formula for the second derivative.",
+        "b": "Computes it for a given curve.",
+        "c": "Uses it to decide which way the curve bends.",
+        "d": "Avoids the common mistake of just differentiating the slope in time."
+      }
+    },
+    "VI.8.05": {
+      "what": "Finding the length of a parametric curve, like the distance a moving point travels.",
+      "levels": {
+        "a": "States the arc length formula for parametric curves.",
+        "b": "Sets up the length integral.",
+        "c": "Evaluates it.",
+        "d": "Finds the total distance traveled by a moving point."
+      }
+    },
+    "VI.8.06": {
+      "what": "Describing motion in two dimensions, like a thrown ball, using arrows (vectors) for position, velocity and acceleration.",
+      "levels": {
+        "a": "Writes position as an arrow from the origin (a position vector).",
+        "b": "Finds velocity and speed.",
+        "c": "Finds acceleration.",
+        "d": "Models the curved paths of thrown objects."
+      }
+    },
+    "VI.8.07": {
+      "what": "Polar coordinates locate a point by its distance from the center and its angle, like giving directions by compass bearing and distance.",
+      "levels": {
+        "a": "Plots points given as a distance and an angle.",
+        "b": "Converts polar points to ordinary x and y coordinates.",
+        "c": "Converts ordinary coordinates to polar.",
+        "d": "Recognizes that one point has many different polar names."
+      }
+    },
+    "VI.8.08": {
+      "what": "Sketching curves described in polar form, which produces shapes like flowers, hearts and spirals.",
+      "levels": {
+        "a": "Graphs polar circles and lines.",
+        "b": "Graphs rose curves with petals.",
+        "c": "Graphs heart-shaped cardioids and looped limaçons.",
+        "d": "Graphs spirals."
+      }
+    },
+    "VI.8.09": {
+      "what": "Finding the slope of a polar curve at a point.",
+      "levels": {
+        "a": "Rewrites a polar curve as a parametric curve.",
+        "b": "Uses the slope formula for polar curves.",
+        "c": "Finds tangent lines where the curve passes through the center.",
+        "d": "Finds flat and vertical tangent points."
+      }
+    },
+    "VI.8.10": {
+      "what": "Finding the area inside a polar curve by adding up thin pizza-slice wedges.",
+      "levels": {
+        "a": "Uses the wedge formula: half the integral of r squared.",
+        "b": "Finds the area of one petal of a rose.",
+        "c": "Finds the correct angles where the curve passes through the center.",
+        "d": "Uses symmetry to simplify the calculation."
+      }
+    },
+    "VI.8.11": {
+      "what": "Finding the area between two polar curves.",
+      "levels": {
+        "a": "Finds where the two curves meet.",
+        "b": "Subtracts the inner curve's area from the outer one's.",
+        "c": "Sets up the area integral.",
+        "d": "Evaluates it."
+      }
+    },
+    "VI.8.12": {
+      "what": "Finding the length of a polar curve.",
+      "levels": {
+        "a": "States the polar arc length formula.",
+        "b": "Sets up the length integral.",
+        "c": "Evaluates it exactly.",
+        "d": "Estimates it with technology when no exact answer is possible."
+      }
+    }
+  }
+}

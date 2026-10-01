@@ -1,0 +1,120 @@
+{
+  "branch": "V.13",
+  "intro": "This branch studies transformations: sliding, flipping, turning and resizing shapes. It gives a precise way to say when two shapes are the same or similar, links geometry to matrices (grids of numbers), and includes a few short proofs where the learner picks the reason for a step.",
+  "skills": {
+    "V.13.01": {
+      "what": "A rigid motion moves a shape without stretching or bending it, so every length and angle stays the same.",
+      "levels": {
+        "a": "Matches each point of the original shape with its point in the moved copy (the image).",
+        "b": "Decides whether a rule is an isometry, a move that keeps every distance the same.",
+        "c": "Uses the fact that lengths, angles and perimeters stay the same after a rigid motion.",
+        "d": "Applies a move written as a rule, such as T of (x, y) equals (x + 4, y + 4)."
+      }
+    },
+    "V.13.02": {
+      "what": "A translation slides every point the same distance in the same direction, described by a vector (a pair of numbers for across and up).",
+      "levels": {
+        "a": "Reads a vector as so many units across and so many up or down.",
+        "b": "Slides points of a shape by a given vector.",
+        "c": "Finds the vector from one point and its image, then uses it on another point.",
+        "d": "Combines two slides into one, or finds the missing second slide."
+      }
+    },
+    "V.13.03": {
+      "what": "A reflection flips a shape over a mirror line. The mirror line cuts each point-to-image segment in half at a right angle.",
+      "levels": {
+        "a": "Uses the fact that a point and its image are equally far from the mirror.",
+        "b": "Reflects a point over a horizontal or vertical line.",
+        "c": "Finds the mirror line from a point and its image.",
+        "d": "Picks the coordinate rule for a reflection, such as over the line y equals negative x."
+      }
+    },
+    "V.13.04": {
+      "what": "A rotation turns a shape by an angle around a fixed point, called the center.",
+      "levels": {
+        "a": "Matches a counterclockwise turn with the same result clockwise.",
+        "b": "Picks the coordinate rule for quarter and half turns about the origin.",
+        "c": "Rotates a point around a center other than the origin.",
+        "d": "Picks the missing reason in an argument that finds the center of a rotation.",
+        "e": "Finds the single turn that a slide followed by a turn adds up to.",
+        "f": "Finds the center of the single turn made by two turns about different points."
+      }
+    },
+    "V.13.05": {
+      "what": "Doing one transformation after another (a composition). The order often changes the result.",
+      "levels": {
+        "a": "Applies two moves in the stated order and sees that order matters.",
+        "b": "Shows that two reflections add up to a slide or a turn.",
+        "c": "Names the single move that has the same effect as two moves.",
+        "d": "Undoes a sequence of moves to find where a point started.",
+        "e": "Works backwards to find the second mirror line from the resulting slide.",
+        "f": "Finds the overall effect of a long chain of reflections without doing each one."
+      }
+    },
+    "V.13.06": {
+      "what": "A glide reflection flips a shape over a line and then slides it along that line, like a trail of footprints.",
+      "levels": {
+        "a": "Picks the correct description of a glide reflection.",
+        "b": "Applies a glide reflection to a point.",
+        "c": "Names the move that takes one footprint in a trail to another.",
+        "d": "Names which single move maps one shape onto another in a picture."
+      }
+    },
+    "V.13.07": {
+      "what": "A shape has symmetry if some flip or turn lands it exactly on itself.",
+      "levels": {
+        "a": "Counts the mirror lines (lines of symmetry) of a shape.",
+        "b": "Counts how many times a shape fits onto itself in one full turn (its order of rotational symmetry).",
+        "c": "Decides whether a shape has point symmetry, fitting onto itself after a half turn.",
+        "d": "Works out the symmetries of regular polygons from their number of sides."
+      }
+    },
+    "V.13.08": {
+      "what": "A dilation enlarges or shrinks a shape from a center point by a scale factor.",
+      "levels": {
+        "a": "Multiplies the distance from the center by the scale factor.",
+        "b": "Dilates points about the origin by multiplying their coordinates.",
+        "c": "Uses negative scale factors, which flip the image to the other side of the center.",
+        "d": "Finds the image of a line, which stays parallel to the original.",
+        "e": "Finds the center and scale factor from a segment and its image.",
+        "f": "Combines two dilations about different centers into one."
+      }
+    },
+    "V.13.09": {
+      "what": "Two shapes are congruent (identical in size and shape) if a sequence of rigid motions moves one exactly onto the other.",
+      "levels": {
+        "a": "Picks the correct definition of congruence.",
+        "b": "Picks a sequence of moves that maps one triangle onto another.",
+        "c": "Recognizes which congruence shortcut a proof using moves is justifying, such as side-angle-side.",
+        "d": "Finds the exact slide that completes a sequence mapping one triangle onto another."
+      }
+    },
+    "V.13.10": {
+      "what": "Two shapes are similar (same shape, possibly different size) if a dilation plus rigid motions maps one onto the other.",
+      "levels": {
+        "a": "Works out lengths after a dilation and a rigid motion.",
+        "b": "Picks a sequence of moves that maps one triangle onto a similar one.",
+        "c": "Picks the reason in the angle-angle similarity proof: dilations keep angles the same.",
+        "d": "Finds the scale factor between two similar triangles on a grid."
+      }
+    },
+    "V.13.11": {
+      "what": "A matrix (a grid of numbers) can describe a transformation. Multiplying a point by the matrix moves it.",
+      "levels": {
+        "a": "Multiplies a matrix by a point to find its image.",
+        "b": "Picks the matrix that gives a given reflection or rotation.",
+        "c": "Uses a matrix that enlarges or shrinks points.",
+        "d": "Combines two moves by multiplying their matrices, in the right order."
+      }
+    },
+    "V.13.12": {
+      "what": "A tessellation covers a flat surface with repeating tiles, with no gaps or overlaps.",
+      "levels": {
+        "a": "Decides whether one kind of regular polygon can tile on its own.",
+        "b": "Finds the missing shape in a pattern mixing regular polygons.",
+        "c": "Checks whether the angles meeting at a corner add up to exactly 360 degrees.",
+        "d": "Explains why an Escher-style tile, made by moving a cut-out piece, keeps its area and still tiles."
+      }
+    }
+  }
+}

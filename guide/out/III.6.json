@@ -1,0 +1,120 @@
+{
+  "branch": "III.6",
+  "intro": "This branch teaches how to solve equations (statements that two things are equal, with an unknown number to find) and inequalities (statements that one thing is bigger or smaller). It is the core skill of algebra, used to answer real questions like how many tickets you can afford.",
+  "skills": {
+    "III.6.01": {
+      "what": "An equation is like a balanced scale: both sides are equal, and a solution is a number that keeps it balanced.",
+      "levels": {
+        "a": "Uses a balance picture to see that both sides must change the same way.",
+        "b": "Explains what it means for a number to be a solution.",
+        "c": "Tests whether a given number makes an equation true.",
+        "d": "Decides whether a number statement like 8 + 8 = 12 + 3 is true or false."
+      }
+    },
+    "III.6.02": {
+      "what": "Solving equations that need just one step of adding or subtracting, such as x + 21 = 44.",
+      "levels": {
+        "a": "Solves one-step equations with whole numbers.",
+        "b": "Solves one-step equations that include negative numbers.",
+        "c": "The same with fractions.",
+        "d": "The same with decimals."
+      }
+    },
+    "III.6.03": {
+      "what": "Solving equations that need just one step of multiplying or dividing, such as 10x = 130.",
+      "levels": {
+        "a": "Solves one-step equations with whole numbers.",
+        "b": "Solves one-step equations with negative numbers.",
+        "c": "Solves equations with a fraction in front of x by multiplying by the flipped fraction.",
+        "d": "The same with decimals."
+      }
+    },
+    "III.6.04": {
+      "what": "Solving equations that need two steps, such as 8x + 12 = 92: undo the adding, then the multiplying.",
+      "levels": {
+        "a": "Solves two-step equations with whole numbers.",
+        "b": "Solves two-step equations with negative numbers.",
+        "c": "Solves two-step equations that involve a fraction.",
+        "d": "Checks a proposed answer by putting it back into the equation."
+      }
+    },
+    "III.6.05": {
+      "what": "Solving equations that need several steps, like multiplying out brackets or combining terms first.",
+      "levels": {
+        "a": "Multiplies out brackets first, then solves.",
+        "b": "Combines like terms first, then solves.",
+        "c": "Solves equations with fractions of x.",
+        "d": "Checks a proposed answer by putting it back into the equation."
+      }
+    },
+    "III.6.06": {
+      "what": "Solving equations where the unknown appears on both sides, and spotting ones with no answer or endless answers.",
+      "levels": {
+        "a": "Gathers the x terms on one side and solves.",
+        "b": "Multiplies out brackets on both sides, then solves.",
+        "c": "Recognizes an equation that has no solution at all.",
+        "d": "Recognizes an equation that is true for every number.",
+        "e": "Given one solution of an equation, finds the missing number in the equation itself.",
+        "f": "Counts the whole numbers k that give an equation a positive whole-number solution."
+      }
+    },
+    "III.6.07": {
+      "what": "Turning a word problem into an equation, solving it, and making sense of the answer.",
+      "levels": {
+        "a": "Decides exactly what the letter should stand for.",
+        "b": "Writes the equation that matches the story.",
+        "c": "Writes and solves the equation.",
+        "d": "Uses the solution to answer the actual question asked.",
+        "e": "Solves problems about numbers in a row, like three even numbers in a row adding to 132.",
+        "f": "Writes and solves equations for classic puzzles, like chickens and cows from heads and legs."
+      }
+    },
+    "III.6.08": {
+      "what": "An inequality says one side is less than or greater than the other, so it has many solutions, not just one.",
+      "levels": {
+        "a": "Reads the less-than and less-than-or-equal signs and tests a number.",
+        "b": "Understands that an inequality has endlessly many solutions.",
+        "c": "Picks the number line picture that shows an inequality.",
+        "d": "Writes an inequality from words, like \"your age must be below 11.\""
+      }
+    },
+    "III.6.09": {
+      "what": "Solving inequalities in one step, and learning the one new rule: multiplying or dividing by a negative flips the sign.",
+      "levels": {
+        "a": "Solves by adding or subtracting.",
+        "b": "Solves by multiplying or dividing by a positive number.",
+        "c": "Flips the inequality sign when dividing by a negative number.",
+        "d": "Solves and then shows the answer on a number line."
+      }
+    },
+    "III.6.10": {
+      "what": "Solving inequalities that need two steps, such as 8x + 2 < 58.",
+      "levels": {
+        "a": "Solves two-step inequalities.",
+        "b": "Flips the sign when a step divides by a negative number.",
+        "c": "Solves and shows the answer on a number line.",
+        "d": "Solves real problems, like the most tickets a budget allows.",
+        "e": "Solves an inequality that needs a sign flip, then finds the smallest or largest whole number that fits.",
+        "f": "Counts the whole numbers that fit a double inequality, with the number trapped between two limits."
+      }
+    },
+    "III.6.11": {
+      "what": "Rearranging a formula to make a different letter the subject, such as finding time from distance and speed.",
+      "levels": {
+        "a": "Rearranges the distance formula to find the time.",
+        "b": "Rearranges the rectangle area formula to find the width.",
+        "c": "Rearranges the perimeter formula, which needs two steps.",
+        "d": "Rearranges the Fahrenheit formula to find Celsius."
+      }
+    },
+    "III.6.12": {
+      "what": "Choosing a good method for solving an equation and checking the answer.",
+      "levels": {
+        "a": "Solves a \"think of a number\" puzzle by undoing each step in reverse.",
+        "b": "Picks a correct next step that keeps both sides balanced.",
+        "c": "Checks an answer by working out both sides of the original equation.",
+        "d": "Picks the quickest first step for solving an equation."
+      }
+    }
+  }
+}

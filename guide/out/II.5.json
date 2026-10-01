@@ -1,0 +1,149 @@
+{
+  "branch": "II.5",
+  "intro": "This branch introduces fractions: numbers that describe equal parts of a whole, like one half or three quarters. It focuses on what fractions mean, how to picture them and how to compare them, before any calculating.",
+  "skills": {
+    "II.5.01": {
+      "what": "Understanding that fractions start with cutting a whole into equal parts, and naming those parts.",
+      "levels": {
+        "a": "Names equal parts as halves, thirds or fourths.",
+        "b": "Names equal parts as sixths or eighths.",
+        "c": "Tells whether a shape is cut into equal parts or not.",
+        "d": "Names what fraction of a whole a shaded part is."
+      }
+    },
+    "II.5.02": {
+      "what": "Understanding unit fractions: one single part of a whole, like one half, one third or one tenth.",
+      "levels": {
+        "a": "Recognizes one half, one third and one fourth in a picture.",
+        "b": "Recognizes unit fractions with more parts, like one sixth.",
+        "c": "Sees that cutting a whole into more parts makes each part smaller.",
+        "d": "Compares unit fractions, knowing one third is bigger than one eleventh."
+      }
+    },
+    "II.5.03": {
+      "what": "Using a fraction to describe several equal parts of one whole, like three quarters of a shape.",
+      "levels": {
+        "a": "Names the fraction of a shape that is shaded.",
+        "b": "Knows the bottom number (denominator) counts the equal parts and the top (numerator) counts the ones chosen.",
+        "c": "Writes a fraction from words, like two thirds.",
+        "d": "Picks the picture that shows a given fraction."
+      }
+    },
+    "II.5.04": {
+      "what": "Finding a fraction of a group of things, like two thirds of 18 cookies.",
+      "levels": {
+        "a": "Finds one part of a group, such as one half of 10.",
+        "b": "Finds several parts of a group, such as two thirds of 18.",
+        "c": "Says what fraction of a group of dots is a certain color.",
+        "d": "Solves word problems about a fraction of a group.",
+        "e": "Works backwards: knows a fraction of the total, finds the whole amount.",
+        "f": "Works back through two giveaways, each a fraction of what's left, to find the start."
+      }
+    },
+    "II.5.05": {
+      "what": "Placing fractions on a number line, seeing each fraction as a point with its own place among the numbers.",
+      "levels": {
+        "a": "Names the size of each equal step between 0 and 1.",
+        "b": "Names a unit fraction marked on the line.",
+        "c": "Finds where other fractions sit, like three quarters.",
+        "d": "Places fractions greater than 1 on a longer number line."
+      }
+    },
+    "II.5.06": {
+      "what": "Seeing that whole numbers can be written as fractions, like two halves making one.",
+      "levels": {
+        "a": "Knows how many equal parts make one whole, as in three thirds make 1.",
+        "b": "Writes a whole number as a fraction over 1, as in 3 is three over one.",
+        "c": "Writes a whole number as a fraction with any bottom number, as in 5 is ten halves.",
+        "d": "Spots which fractions on a number line land on whole numbers."
+      }
+    },
+    "II.5.07": {
+      "what": "Using pictures to see that different fractions can be the same amount, like one half and five tenths.",
+      "levels": {
+        "a": "Uses fraction strips of the same length to find equal fractions.",
+        "b": "Uses two number lines to find fractions at the same spot.",
+        "c": "Cuts a shaded square into smaller parts and counts to find an equal fraction.",
+        "d": "Picks out which fractions are equal to one half and which are not."
+      }
+    },
+    "II.5.08": {
+      "what": "Finding equal fractions with a rule: multiplying or dividing the top and bottom by the same number.",
+      "levels": {
+        "a": "Multiplies top and bottom by the same number to make an equal fraction.",
+        "b": "Divides top and bottom by the same number to make an equal fraction.",
+        "c": "Writes a fraction in simplest form, with the smallest possible numbers.",
+        "d": "Tests whether two fractions are equal.",
+        "e": "Finds an equal fraction from a second clue, such as how much bigger the bottom is than the top.",
+        "f": "Finds what number to add to the top and bottom of a fraction to make it equal another."
+      }
+    },
+    "II.5.09": {
+      "what": "Comparing fractions with the same bottom number, where the parts are the same size.",
+      "levels": {
+        "a": "Sees that more parts of the same size is more.",
+        "b": "Uses the greater than, less than and equals signs to compare.",
+        "c": "Compares by seeing which fraction is further along a number line.",
+        "d": "Answers story problems, like who used more ribbon."
+      }
+    },
+    "II.5.10": {
+      "what": "Comparing fractions with the same top number, where the counts match but the part sizes differ.",
+      "levels": {
+        "a": "Sees that one big part beats one small part.",
+        "b": "Uses the comparison signs, such as two tenths is less than two eighths.",
+        "c": "Explains why one fifth is more than one seventh.",
+        "d": "Answers story problems, like who ate more pizza."
+      }
+    },
+    "II.5.11": {
+      "what": "Comparing any two fractions, even when their tops and bottoms are both different.",
+      "levels": {
+        "a": "Decides whether a fraction is less than, equal to or more than one half.",
+        "b": "Rewrites both fractions with the same bottom number, then compares.",
+        "c": "Uses a quick cross-multiplying check to compare.",
+        "d": "Puts a list of fractions in order from least to greatest.",
+        "e": "Finds the smallest whole number top that makes a fraction bigger than another.",
+        "f": "Counts how many fractions with a given bottom number fit between two fractions."
+      }
+    },
+    "II.5.12": {
+      "what": "Understanding mixed numbers: a whole number plus a fraction, like one and three quarters.",
+      "levels": {
+        "a": "Reads a mixed number aloud correctly.",
+        "b": "Names a mixed number marked on a number line.",
+        "c": "Picks the picture that shows a given mixed number.",
+        "d": "Puts a whole number and a fraction together as a mixed number."
+      }
+    },
+    "II.5.13": {
+      "what": "Understanding improper fractions, where the top is bigger than the bottom, like 13 thirds, and switching them to mixed numbers.",
+      "levels": {
+        "a": "Recognizes which fractions are greater than 1.",
+        "b": "Turns an improper fraction into a mixed number.",
+        "c": "Turns a mixed number into an improper fraction.",
+        "d": "Compares an improper fraction with a mixed number.",
+        "e": "Finds a missing bottom or top number so an improper fraction matches a mixed number.",
+        "f": "Counts every fraction in simplest form, greater than 1, whose top and bottom add to a set total."
+      }
+    },
+    "II.5.14": {
+      "what": "Seeing a fraction as a division: three quarters is the same as 3 divided by 4.",
+      "levels": {
+        "a": "Writes a fraction as a division, and a division as a fraction.",
+        "b": "Works out each person's share when pizzas are shared equally.",
+        "c": "Gives a division answer as a mixed number, as in 9 divided by 2 is four and a half.",
+        "d": "Solves sharing word problems with mixed-number answers."
+      }
+    },
+    "II.5.15": {
+      "what": "Building a feel for how big a fraction is without exact calculation.",
+      "levels": {
+        "a": "Understands that two thirds of a big cake is more than two thirds of a small one.",
+        "b": "Tells whether a fraction is close to 0, one half or 1.",
+        "c": "Estimates a sum of fractions by rounding each to a nearby easy value.",
+        "d": "Says which of two fractions is greater and explains why."
+      }
+    }
+  }
+}

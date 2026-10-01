@@ -1,0 +1,146 @@
+{
+  "branch": "IV.11",
+  "intro": "Rational functions are fractions with polynomials on top and bottom. This branch covers calculating with such algebraic fractions, solving equations that contain them, and graphing them, including the lines their graphs approach but never touch.",
+  "skills": {
+    "IV.11.01": {
+      "what": "Simplifying algebraic fractions (rational expressions) by factoring and cancelling, just like reducing 6/8 to 3/4.",
+      "levels": {
+        "a": "Factors the top and bottom completely.",
+        "b": "Cancels factors shared by the top and bottom.",
+        "c": "Lists the x-values that are not allowed because they make the bottom zero.",
+        "d": "Recognizes that a minus b over b minus a equals minus 1."
+      }
+    },
+    "IV.11.02": {
+      "what": "Multiplying and dividing algebraic fractions.",
+      "levels": {
+        "a": "Factors every part before multiplying.",
+        "b": "Multiplies and cancels shared factors.",
+        "c": "Divides by flipping the second fraction and multiplying.",
+        "d": "Lists all x-values that must be excluded, including from the flipped fraction.",
+        "e": "Works backwards to find a missing fraction in a product.",
+        "f": "Multiplies a long chain of fractions in which almost everything cancels."
+      }
+    },
+    "IV.11.03": {
+      "what": "Adding and subtracting algebraic fractions by giving them a common bottom.",
+      "levels": {
+        "a": "Adds fractions that already share a bottom.",
+        "b": "Finds the lowest common bottom.",
+        "c": "Rewrites each fraction over the common bottom and combines.",
+        "d": "Simplifies the result fully.",
+        "e": "Works backwards: splits one fraction into two simpler ones.",
+        "f": "Adds a long patterned list of fractions in which the middle terms cancel."
+      }
+    },
+    "IV.11.04": {
+      "what": "Simplifying complex fractions: fractions that contain smaller fractions inside them.",
+      "levels": {
+        "a": "Combines the top and the bottom each into one fraction.",
+        "b": "Multiplies top and bottom by a common bottom to clear the small fractions.",
+        "c": "Simplifies the result fully.",
+        "d": "Lists all excluded values, including those from the inner fractions.",
+        "e": "Simplifies a fraction nested three levels deep.",
+        "f": "Solves an equation built from a fraction that repeats inside itself."
+      }
+    },
+    "IV.11.05": {
+      "what": "Solving equations that contain algebraic fractions.",
+      "levels": {
+        "a": "Finds the common bottom to multiply through by.",
+        "b": "Clears the fractions and solves.",
+        "c": "Uses cross-multiplying when one fraction equals another.",
+        "d": "Checks answers, rejecting any that make a bottom zero."
+      }
+    },
+    "IV.11.06": {
+      "what": "Spotting extraneous solutions: false answers that appear during solving but do not work in the original equation.",
+      "levels": {
+        "a": "Explains how squaring both sides can create a false answer.",
+        "b": "Spots a false answer that makes a fraction's bottom zero.",
+        "c": "Spots false answers in square-root equations.",
+        "d": "States the final set of true solutions, or that there are none.",
+        "e": "Rearranges first, then solves and checks.",
+        "f": "Squares twice to solve an equation with two roots, then checks."
+      }
+    },
+    "IV.11.07": {
+      "what": "Finding vertical asymptotes: upright lines where a graph shoots up or down because the bottom of the fraction is zero.",
+      "levels": {
+        "a": "Finds x-values that make the bottom zero.",
+        "b": "Cancels shared factors first, since those give holes rather than asymptotes.",
+        "c": "Describes whether the graph shoots up or down near the asymptote.",
+        "d": "Writes the equations of the asymptotes."
+      }
+    },
+    "IV.11.08": {
+      "what": "Finding horizontal asymptotes: the height a graph levels off at far to the left and right.",
+      "levels": {
+        "a": "Compares the highest powers on top and bottom.",
+        "b": "Divides the leading numbers when the highest powers match.",
+        "c": "Recognizes when the graph levels off at zero.",
+        "d": "Checks whether a graph crosses its horizontal asymptote."
+      }
+    },
+    "IV.11.09": {
+      "what": "Finding holes: single missing points in a graph, caused by a factor that cancels from top and bottom.",
+      "levels": {
+        "a": "Finds where a hole happens from a cancelled factor.",
+        "b": "Finds both coordinates of the hole.",
+        "c": "Picks the graph showing the hole.",
+        "d": "Tells a hole from an asymptote."
+      }
+    },
+    "IV.11.10": {
+      "what": "Sketching the graph of a rational function by putting together its key features.",
+      "levels": {
+        "a": "Finds where the graph crosses each axis.",
+        "b": "Finds the asymptotes and any holes.",
+        "c": "Tests whether the graph is above or below the axis in each region.",
+        "d": "Picks or draws the correct sketch.",
+        "e": "Builds a function to match given asymptotes and a crossing point.",
+        "f": "Solves an inequality with a fraction, using the graph's features."
+      }
+    },
+    "IV.11.11": {
+      "what": "Finding slant asymptotes: sloping lines a graph approaches when the top's power is one more than the bottom's.",
+      "levels": {
+        "a": "Recognizes when a slanted asymptote exists.",
+        "b": "Finds it by dividing the top by the bottom.",
+        "c": "Reads it from a graph.",
+        "d": "Tells whether the graph sits above or below it at the ends.",
+        "e": "Finds where the graph crosses its slanted asymptote.",
+        "f": "Finds values of an unknown in top and bottom that move the asymptote through a point."
+      }
+    },
+    "IV.11.12": {
+      "what": "Inverse variation: when one quantity goes up, the other goes down so their product stays the same, like speed and travel time.",
+      "levels": {
+        "a": "Recognizes the equation for inverse variation.",
+        "b": "Finds the fixed constant from one pair of values.",
+        "c": "Handles quantities that depend on two others at once.",
+        "d": "Solves word problems, such as brightness fading with distance."
+      }
+    },
+    "IV.11.13": {
+      "what": "Working with square root and cube root functions and their graphs.",
+      "levels": {
+        "a": "Knows the basic shapes of the square root and cube root graphs.",
+        "b": "Shifts, flips and stretches these graphs.",
+        "c": "Finds the allowed inputs and possible outputs.",
+        "d": "Uses a square root to undo half of a parabola."
+      }
+    },
+    "IV.11.14": {
+      "what": "Solving work problems, such as how long two people take to finish a job together.",
+      "levels": {
+        "a": "Treats a rate as the fraction of the job done per hour.",
+        "b": "Adds two workers' rates to get their combined rate.",
+        "c": "Sets up the equation for working together.",
+        "d": "Solves it and answers in context.",
+        "e": "Handles one worker starting alone before the other joins.",
+        "f": "Solves when one worker's time is a set amount longer than the other's."
+      }
+    }
+  }
+}

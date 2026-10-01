@@ -1,0 +1,149 @@
+{
+  "branch": "III.2",
+  "intro": "This branch is about ratios (comparing two amounts, like 2 cups of flour for every 3 eggs) and rates (like miles per hour or price per item). They are the math behind recipes, maps, shopping deals, and speed.",
+  "skills": {
+    "III.2.01": {
+      "what": "Using a ratio to compare two amounts, such as the number of girls to boys in a group.",
+      "levels": {
+        "a": "Writes a ratio by counting two kinds of objects in a picture.",
+        "b": "Writes a part-to-part ratio, like girls to boys, in simplest form.",
+        "c": "Writes one part as a fraction of the whole group.",
+        "d": "Recognizes the three ways to write a ratio: 9 to 7, 9 : 7, and as a fraction."
+      }
+    },
+    "III.2.02": {
+      "what": "Finding ratios that describe the same relationship, like 2 : 3 and 4 : 6.",
+      "levels": {
+        "a": "Makes an equal ratio by multiplying both parts by the same number.",
+        "b": "Fills a gap in a table of equal ratios.",
+        "c": "Uses a bar split into parts (a tape diagram) to share a total in a ratio.",
+        "d": "Uses two matched number lines side by side to find a missing value."
+      }
+    },
+    "III.2.03": {
+      "what": "Using a ratio table, a table of matching amounts, to scale a relationship up or down.",
+      "levels": {
+        "a": "Completes the next entry in a ratio table.",
+        "b": "Finds two missing values anywhere in a ratio table.",
+        "c": "Scales down to one unit, then up to any amount.",
+        "d": "Decides whether two tables show the same ratio."
+      }
+    },
+    "III.2.04": {
+      "what": "Finding a unit rate, the amount for just one of something, like the price of one item.",
+      "levels": {
+        "a": "Works out how many per one, such as pencils per pack.",
+        "b": "Works out the price of a single item.",
+        "c": "Works out speed as distance per hour.",
+        "d": "Compares two deals by finding the price per item in each."
+      }
+    },
+    "III.2.05": {
+      "what": "Finding a unit rate when the amounts are fractions, like walking a third of a mile in two thirds of an hour.",
+      "levels": {
+        "a": "Finds a speed per hour when both distance and time are fractions.",
+        "b": "Finds how much of a job gets done per hour from fractional amounts.",
+        "c": "Uses fractional rates in everyday settings, like a tap filling a jug.",
+        "d": "Compares two fractional rates to see which is faster."
+      }
+    },
+    "III.2.06": {
+      "what": "Showing a ratio as points on a graph and seeing that they form a straight line through zero.",
+      "levels": {
+        "a": "Spots which plotted point does not fit a given ratio.",
+        "b": "Picks the straight line through zero that shows a ratio.",
+        "c": "Reads missing values off a ratio's line.",
+        "d": "Compares two lines on one graph, such as which walker is faster."
+      }
+    },
+    "III.2.07": {
+      "what": "A proportion is a statement that two ratios are equal, used to find a missing amount.",
+      "levels": {
+        "a": "Picks a ratio that is equal to a given one.",
+        "b": "Finds a missing number by scaling one ratio up to match the other.",
+        "c": "Finds a missing number using cross multiplication when scaling is awkward.",
+        "d": "Sets up and solves a proportion from a word problem, like scaling a recipe.",
+        "e": "Solves proportions where the unknown sits inside a sum, like x plus 5, over 4, equals 7 over 4.",
+        "f": "Finds the number to add to both parts of a ratio to turn it into a new ratio."
+      }
+    },
+    "III.2.08": {
+      "what": "Deciding whether two quantities are proportional, meaning one is always the same multiple of the other.",
+      "levels": {
+        "a": "Checks a table to see if the ratio stays the same in every row.",
+        "b": "Checks whether a graph is a straight line through zero.",
+        "c": "Checks whether an equation has the form y equals a number times x.",
+        "d": "Picks out the situation that is not proportional from a list."
+      }
+    },
+    "III.2.09": {
+      "what": "The constant of proportionality is the fixed multiplier linking two proportional amounts, like the price per kilogram.",
+      "levels": {
+        "a": "Finds the multiplier from a table.",
+        "b": "Finds the multiplier from a graph.",
+        "c": "Writes the equation, y equals the multiplier times x, from one pair of values.",
+        "d": "Explains what the multiplier means in a real setting, such as cost per kilogram."
+      }
+    },
+    "III.2.10": {
+      "what": "Using scale drawings and maps, where every length is shrunk or enlarged by the same amount.",
+      "levels": {
+        "a": "Finds the scale factor, how many times bigger one drawing is than the other.",
+        "b": "Uses a drawing's scale to find a real-life length.",
+        "c": "Redraws a length at a new scale.",
+        "d": "Uses a map scale like 1 : 10,000 to convert between map and real distances."
+      }
+    },
+    "III.2.11": {
+      "what": "Converting between units, such as centimeters and meters, by multiplying by the right conversion number.",
+      "levels": {
+        "a": "Converts between two units in one step, like centimeters to meters.",
+        "b": "Converts in several steps, like kilometers to centimeters.",
+        "c": "Converts rates, such as kilometers per hour to meters per second.",
+        "d": "Converts area units, keeping careful track of squared units."
+      }
+    },
+    "III.2.12": {
+      "what": "Dividing an amount between people or ingredients in a given ratio.",
+      "levels": {
+        "a": "Shares an amount of money in a given ratio.",
+        "b": "Works out the total when only the difference between shares is known.",
+        "c": "Works out how much to add to change one ratio into another.",
+        "d": "Finds how much of each ingredient is in a mixture.",
+        "e": "Works out the shares when only the gap between two shares is known.",
+        "f": "Works out starting amounts when a gift from one person to another changes their ratio."
+      }
+    },
+    "III.2.13": {
+      "what": "Using the link between speed, distance, and time to solve travel problems.",
+      "levels": {
+        "a": "Finds the distance traveled from the speed and the time.",
+        "b": "Finds the time a trip takes from the distance and the speed.",
+        "c": "Finds the average speed over a trip with two different speeds.",
+        "d": "Works out when two travelers heading toward each other will meet.",
+        "e": "Finds the true average speed for a round trip, which is not just halfway between the two speeds.",
+        "f": "Solves classic puzzles: when one traveler catches another, or how far a bird flies between two trains."
+      }
+    },
+    "III.2.14": {
+      "what": "Comparing two ratios to see which is bigger, such as which drink mix is stronger.",
+      "levels": {
+        "a": "Decides which of two mixes has more juice for its water.",
+        "b": "Rewrites both ratios with a shared amount so they are easy to compare.",
+        "c": "Compares ratios by writing them as fractions.",
+        "d": "Picks the reasoning that correctly shows which mix is stronger."
+      }
+    },
+    "III.2.15": {
+      "what": "Solving puzzle-like ratio problems from everyday life.",
+      "levels": {
+        "a": "Scales a recipe for a different number of people.",
+        "b": "Finds how much of each color is in a paint mixture.",
+        "c": "Works out that more workers take less time, and how much less.",
+        "d": "Explains why an adding shortcut gives the wrong answer in a ratio problem.",
+        "e": "Links two ratios that share a middle item, such as red to blue and blue to green.",
+        "f": "Combines two groups' averages, working out the class average or what share each group is."
+      }
+    }
+  }
+}

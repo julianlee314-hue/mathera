@@ -1,0 +1,198 @@
+{
+ "unit": "IV.6",
+ "name": "Polynomials",
+ "skills": [
+  {
+   "id": "IV.6.01",
+   "name": "Polynomial vocabulary",
+   "steps": {
+    "a": "terms and coefficients",
+    "b": "degree",
+    "c": "standard form",
+    "d": "name by degree and terms"
+   },
+   "wrong_turn": "The degree of 3x²y⁴ is 6 (add the exponents), and the degree of 5 is 0, not 1.",
+   "rule": "A polynomial is a sum of terms axn with whole-number exponents; its degree is the highest exponent."
+  },
+  {
+   "id": "IV.6.02",
+   "name": "Add & subtract polynomials",
+   "steps": {
+    "a": "combine like terms",
+    "b": "distribute the minus",
+    "c": "vertical layout",
+    "d": "perimeter problems"
+   },
+   "wrong_turn": "Subtract every term: −(x² − 4x + 1) is −x² + 4x − 1, not −x² − 4x + 1.",
+   "rule": "To add polynomials, combine like terms; to subtract, change every sign of the second one first."
+  },
+  {
+   "id": "IV.6.03",
+   "name": "Monomial × polynomial",
+   "steps": {
+    "a": "distribute",
+    "b": "exponent rules on each term",
+    "c": "negative monomials",
+    "d": "area models"
+   },
+   "wrong_turn": "Multiply every term: 2x(x + 5) = 2x² + 10x, not 2x² + 5.",
+   "rule": "a(b+c)=ab+ac: multiply the monomial by every term."
+  },
+  {
+   "id": "IV.6.04",
+   "name": "Multiply binomials",
+   "steps": {
+    "a": "area box",
+    "b": "FOIL",
+    "c": "with coefficients",
+    "d": "with negatives"
+   },
+   "wrong_turn": "(x + 3)(x + 5) is not x² + 15. The outer and inner products, 5x and 3x, are part of the answer.",
+   "rule": "(a+b)(c+d)=ac+ad+bc+bd (First, Outer, Inner, Last)."
+  },
+  {
+   "id": "IV.6.05",
+   "name": "Special products",
+   "steps": {
+    "a": "(a + b)²",
+    "b": "(a − b)²",
+    "c": "(a + b)(a − b)",
+    "d": "mental math uses"
+   },
+   "wrong_turn": "(x + 3)² is not x² + 9. The middle term 6x is always there.",
+   "rule": "(a±b)2=a2±2ab+b2 and (a+b)(a−b)=a2−b2."
+  },
+  {
+   "id": "IV.6.06",
+   "name": "Multiply polynomials",
+   "steps": {
+    "a": "binomial × trinomial",
+    "b": "organize with a box",
+    "c": "three binomials",
+    "d": "check by substituting a number"
+   },
+   "wrong_turn": "Don't stop after the first term: x²(x + 2) is part, but −3x(x + 2) and 1(x + 2) are needed too.",
+   "rule": "Multiply each term of the first polynomial by each term of the second, then combine like terms."
+  },
+  {
+   "id": "IV.6.07",
+   "name": "GCF factoring",
+   "steps": {
+    "a": "find the GCF",
+    "b": "factor it out",
+    "c": "negative GCF",
+    "d": "binomial GCF"
+   },
+   "wrong_turn": "When a term is the GCF itself, 1 remains: 3x² + 3x = 3x(x + 1), not 3x(x).",
+   "rule": "Factor out the greatest common factor: ab+ac=a(b+c)."
+  },
+  {
+   "id": "IV.6.08",
+   "name": "Factor by grouping",
+   "steps": {
+    "a": "group in pairs",
+    "b": "factor each pair",
+    "c": "pull out the common binomial",
+    "d": "regroup when stuck"
+   },
+   "wrong_turn": "The binomials must match exactly: x²(x + 3) − 2(x − 3) has no common factor. Watch the sign when a pair starts with a negative.",
+   "rule": "Group terms in pairs, factor each pair, then factor out the common binomial."
+  },
+  {
+   "id": "IV.6.09",
+   "name": "Factor x² + bx + c",
+   "steps": {
+    "a": "find two numbers",
+    "b": "signs of the pair",
+    "c": "write the factors",
+    "d": "check by multiplying"
+   },
+   "wrong_turn": "Check the signs by multiplying: (x + 4)(x − 3) = x² + x − 12, not x² − x − 12.",
+   "rule": "x2+bx+c=(x+p)(x+q) where pq=c and p+q=b."
+  },
+  {
+   "id": "IV.6.10",
+   "name": "Factor ax² + bx + c",
+   "steps": {
+    "a": "ac method",
+    "b": "split the middle term",
+    "c": "group",
+    "d": "guess and check alternative"
+   },
+   "wrong_turn": "With a ≠ 1, you can't just find two numbers that multiply to c: 6x² + 7x − 3 is not (x + 9)(x − 2) or similar.",
+   "rule": "For ax2+bx+c, find m,n with mn=ac and m+n=b; split bx into mx+nx, then group."
+  },
+  {
+   "id": "IV.6.11",
+   "name": "Difference of squares",
+   "steps": {
+    "a": "recognize a² − b²",
+    "b": "factor",
+    "c": "with coefficients",
+    "d": "repeated (x⁴ − 16)"
+   },
+   "wrong_turn": "a² + b² does not factor over the reals: x² + 9 is not (x + 3)(x + 3) or (x + 3)(x − 3).",
+   "rule": "a2−b2=(a+b)(a−b)"
+  },
+  {
+   "id": "IV.6.12",
+   "name": "Perfect square trinomials",
+   "steps": {
+    "a": "recognize the pattern",
+    "b": "factor",
+    "c": "with coefficients",
+    "d": "build one by choosing c"
+   },
+   "wrong_turn": "x² + 6x + 9 is (x + 3)², but x² + 9 isn't a perfect square: the middle term 6x is required.",
+   "rule": "a2+2ab+b2=(a+b)2 and a2−2ab+b2=(a−b)2."
+  },
+  {
+   "id": "IV.6.13",
+   "name": "Sum & difference of cubes",
+   "steps": {
+    "a": "recognize cubes",
+    "b": "sum formula",
+    "c": "difference formula",
+    "d": "SOAP sign pattern"
+   },
+   "wrong_turn": "x³ − 8 is not (x − 2)³. That expands to x³ − 6x² + 12x − 8.",
+   "rule": "a3+b3=(a+b)(a2−ab+b2), a3−b3=(a−b)(a2+ab+b2)."
+  },
+  {
+   "id": "IV.6.14",
+   "name": "Factor completely",
+   "steps": {
+    "a": "GCF first",
+    "b": "choose the pattern",
+    "c": "keep factoring",
+    "d": "prime polynomials"
+   },
+   "wrong_turn": "Check whether a factor factors again: 2x³ − 18x = 2x(x² − 9) isn't finished. It's 2x(x + 3)(x − 3).",
+   "rule": "GCF first, then a pattern, then keep factoring until every factor is prime."
+  },
+  {
+   "id": "IV.6.15",
+   "name": "Polynomial division",
+   "steps": {
+    "a": "divide by a monomial",
+    "b": "long division",
+    "c": "synthetic division",
+    "d": "write quotient + remainder"
+   },
+   "wrong_turn": "Include a 0 for every missing power: dividing x³ − 5 needs coefficients 1, 0, 0, −5, not 1, −5.",
+   "rule": "f(x)=d(x)q(x)+r(x),degr<degd"
+  },
+  {
+   "id": "IV.6.16",
+   "name": "Polynomial identities",
+   "steps": {
+    "a": "check an identity by expanding both sides",
+    "b": "(x² + y²)² = (x² − y²)² + (2xy)²",
+    "c": "generate Pythagorean triples",
+    "d": "use identities for mental math"
+   },
+   "wrong_turn": "(a+b)2 is not a2+b2. (3+4)2=49, but 32+42=25.",
+   "rule": "(x2+y2)2=(x2−y2)2+(2xy)2"
+  }
+ ]
+}

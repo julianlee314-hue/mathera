@@ -1,0 +1,198 @@
+{
+ "unit": "V.1",
+ "name": "Logic & proof",
+ "skills": [
+  {
+   "id": "V.1.01",
+   "name": "Undefined terms & definitions",
+   "steps": {
+    "a": "point, line and plane",
+    "b": "segment, ray and angle",
+    "c": "what makes a definition precise",
+    "d": "reversible definitions and flawed ones"
+   },
+   "wrong_turn": "A definition must work both ways. \"A square has four right angles\" is true, but rectangles have them too, so it isn't a definition of a square.",
+   "rule": "A precise definition names the category, states what sets the object apart, and is reversible."
+  },
+  {
+   "id": "V.1.02",
+   "name": "Conditional statements",
+   "steps": {
+    "a": "hypothesis and conclusion",
+    "b": "if–then form",
+    "c": "truth value",
+    "d": "rewrite everyday claims"
+   },
+   "wrong_turn": "A false hypothesis doesn't make a conditional false. \"If n > 5, then n > 3\" is true, even though n = 1 fails the hypothesis.",
+   "rule": "\"If p, then q\" (p→q): p is the hypothesis, q the conclusion."
+  },
+  {
+   "id": "V.1.03",
+   "name": "Related conditionals",
+   "steps": {
+    "a": "converse",
+    "b": "inverse",
+    "c": "contrapositive",
+    "d": "which ones are equivalent"
+   },
+   "wrong_turn": "A true statement's converse isn't automatically true. \"If it's a square, it's a rectangle\" is true; \"If it's a rectangle, it's a square\" is not.",
+   "rule": "Converse q→p, inverse ¬p→¬q, contrapositive ¬q→¬p."
+  },
+  {
+   "id": "V.1.04",
+   "name": "Biconditionals",
+   "steps": {
+    "a": "if and only if",
+    "b": "split into two conditionals",
+    "c": "test both directions",
+    "d": "definitions as biconditionals"
+   },
+   "wrong_turn": "\"If\" is not \"if and only if\". \"If x = 3, then x² = 9\" is true, but x² = 9 doesn't force x = 3.",
+   "rule": "\"p if and only if q\" (p↔q) means p→q and q→p."
+  },
+  {
+   "id": "V.1.05",
+   "name": "Truth tables",
+   "steps": {
+    "a": "not, and, or",
+    "b": "the conditional's table",
+    "c": "build a table",
+    "d": "prove equivalence by table"
+   },
+   "wrong_turn": "In logic, \"or\" includes both. p ∨ q is true when p and q are both true, unlike \"soup or salad\" on a menu.",
+   "rule": "A truth table lists every combination of truth values and the value of the compound statement in each."
+  },
+  {
+   "id": "V.1.06",
+   "name": "Inductive vs deductive",
+   "steps": {
+    "a": "patterns and conjectures",
+    "b": "why patterns can fail",
+    "c": "deduction from facts",
+    "d": "classify an argument"
+   },
+   "wrong_turn": "Examples can't prove \"always\". Seeing 1, 2, 4, 8, 16 doesn't mean the next number is 32.",
+   "rule": "Inductive reasoning finds a pattern and makes a conjecture; deductive reasoning proves from accepted facts."
+  },
+  {
+   "id": "V.1.07",
+   "name": "Counterexamples",
+   "steps": {
+    "a": "what one counterexample does",
+    "b": "find one",
+    "c": "fix a false claim",
+    "d": "examples never prove \"all\""
+   },
+   "wrong_turn": "An agreeing example proves nothing. A counterexample must make the hypothesis true and the conclusion false.",
+   "rule": "A counterexample satisfies the hypothesis but not the conclusion."
+  },
+  {
+   "id": "V.1.08",
+   "name": "Detachment & syllogism",
+   "steps": {
+    "a": "law of detachment",
+    "b": "law of syllogism",
+    "c": "chain statements",
+    "d": "spot invalid reasoning"
+   },
+   "wrong_turn": "Don't run a conditional backwards. \"If it's a cat, it's a mammal\" and \"Rex is a mammal\" don't prove Rex is a cat.",
+   "rule": "Detachment: from p→q and p, conclude q. Syllogism: from p→q and q→r, conclude p→r."
+  },
+  {
+   "id": "V.1.09",
+   "name": "Properties of equality",
+   "steps": {
+    "a": "reflexive, symmetric, transitive",
+    "b": "addition and multiplication properties",
+    "c": "substitution",
+    "d": "congruence versions"
+   },
+   "wrong_turn": "Don't mix up = and ≅. Lengths are equal, AB = CD; the segments themselves are congruent.",
+   "rule": "Reflexive: a=a. Symmetric: if a=b, then b=a. Transitive: if a=b and b=c, then a=c."
+  },
+  {
+   "id": "V.1.10",
+   "name": "Algebraic proofs",
+   "steps": {
+    "a": "justify each step of solving",
+    "b": "statement and reason pairs",
+    "c": "distributive property",
+    "d": "write a full one"
+   },
+   "wrong_turn": "Every line needs a reason, the first one too: \"Given\". Jumping from 2x + 6 = 14 to x = 4 hides two properties.",
+   "rule": "An algebraic proof justifies each step of solving an equation with a property."
+  },
+  {
+   "id": "V.1.11",
+   "name": "Two-column proofs",
+   "steps": {
+    "a": "given and prove",
+    "b": "plan backwards",
+    "c": "fill reasons",
+    "d": "write one from scratch"
+   },
+   "wrong_turn": "A reason must be a definition, postulate, property or proved theorem, never \"it looks that way in the diagram\".",
+   "rule": "Statements on the left, reasons on the right, from the given to what you must prove."
+  },
+  {
+   "id": "V.1.12",
+   "name": "Paragraph & flow proofs",
+   "steps": {
+    "a": "read a flow proof",
+    "b": "convert two-column to flow",
+    "c": "write a paragraph proof",
+    "d": "choose the clearest format"
+   },
+   "wrong_turn": "A paragraph proof still needs every reason. \"Clearly the angles are equal\" is not a reason; name the theorem.",
+   "rule": "A flow proof links statements with arrows; a paragraph proof tells the same steps in sentences."
+  },
+  {
+   "id": "V.1.13",
+   "name": "Indirect proof",
+   "steps": {
+    "a": "assume the opposite",
+    "b": "reach a contradiction",
+    "c": "conclude",
+    "d": "prove √2 is irrational"
+   },
+   "wrong_turn": "Assume the exact opposite. The opposite of \"x > 5\" is \"x ≤ 5\", not \"x < 5\".",
+   "rule": "Assume the conclusion is false, reason to a contradiction, and conclude it is true."
+  },
+  {
+   "id": "V.1.14",
+   "name": "Proof by induction",
+   "steps": {
+    "a": "base case and inductive step",
+    "b": "sum formulas",
+    "c": "divisibility",
+    "d": "inequalities"
+   },
+   "wrong_turn": "The inductive step alone proves nothing. If n2+n were odd, (n+1)2+(n+1)=n2+n+2(n+1) would be odd too, yet n2+n is always even: there is no base case.",
+   "rule": "To prove P(n) for all n≥1: prove P(1), then prove that P(k) implies P(k+1)."
+  },
+  {
+   "id": "V.1.15",
+   "name": "Sets & Venn diagrams",
+   "steps": {
+    "a": "set notation and membership",
+    "b": "union, intersection and complement",
+    "c": "Venn diagrams with counts",
+    "d": "set-builder notation"
+   },
+   "wrong_turn": "Don't just add the two circles: |A∪B|=|A|+|B|−|A∩B|. With 20 in French, 15 in Spanish and 5 in both, 30 take a language, not 35.",
+   "rule": "|A∪B|=|A|+|B|−|A∩B|"
+  },
+  {
+   "id": "V.1.16",
+   "name": "Quantifiers",
+   "steps": {
+    "a": "\"for all\" and \"there exists\"",
+    "b": "true or false over a set",
+    "c": "negate a quantified statement",
+    "d": "counterexamples for \"for all\""
+   },
+   "wrong_turn": "The negation of \"all swans are white\" is \"some swan is not white\", not \"no swan is white\". The negation of ∀x,x>0 is ∃x,x≤0, not ∀x,x≤0.",
+   "rule": "¬∀xP(x) means ∃x¬P(x)"
+  }
+ ]
+}

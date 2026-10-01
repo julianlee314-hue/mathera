@@ -1,0 +1,93 @@
+{
+  "branch": "V.11",
+  "intro": "This branch uses a coordinate grid to measure lengths, find midpoints and slopes, and prove facts about shapes using algebra. Several skills include short proofs, where the learner puts the steps in order or picks the reason for a step.",
+  "skills": {
+    "V.11.01": {
+      "what": "Finding the straight-line distance between two points on a grid. The distance formula is Pythagoras in disguise.",
+      "levels": {
+        "a": "Puts the steps of a proof in order, showing the distance comes from a right triangle.",
+        "b": "Finds the distance between two points with the formula.",
+        "c": "Works backwards from a known distance to find a missing coordinate, often getting two answers.",
+        "d": "Gives exact answers as simplified square roots rather than decimals."
+      }
+    },
+    "V.11.02": {
+      "what": "Finding the point exactly halfway between two points by averaging their coordinates.",
+      "levels": {
+        "a": "Picks the midpoint by averaging the x values and the y values.",
+        "b": "Calculates the midpoint of a segment.",
+        "c": "Finds a missing endpoint when the midpoint and the other end are known.",
+        "d": "Finds the center and radius of a circle from the two ends of a diameter."
+      }
+    },
+    "V.11.03": {
+      "what": "Finding a point that splits a segment in a given ratio, such as one third of the way along.",
+      "levels": {
+        "a": "Splits a length in a ratio such as 5 to 7.",
+        "b": "Finds the point a given fraction of the way from one end to the other.",
+        "c": "Finds the point that splits a segment in a given ratio.",
+        "d": "Checks a ratio by counting grid steps on a graph."
+      }
+    },
+    "V.11.04": {
+      "what": "Using slope (steepness) to test lines: parallel lines have equal slopes, and perpendicular slopes multiply to negative 1.",
+      "levels": {
+        "a": "Uses slopes to decide which sides of a four-sided shape are parallel.",
+        "b": "Finds slopes to show two sides meet at a right angle.",
+        "c": "Finds a missing corner of a parallelogram or square.",
+        "d": "Tests every pair of sides to find which angle of a triangle, if any, is a right angle."
+      }
+    },
+    "V.11.05": {
+      "what": "Writing equations for special lines in a triangle and finding where they cross.",
+      "levels": {
+        "a": "Writes the equation of a perpendicular bisector (the line cutting a segment in half at a right angle).",
+        "b": "Writes the equation of an altitude (a line from a corner meeting the opposite side at a right angle).",
+        "c": "Writes the equation of a median (a line from a corner to the middle of the opposite side).",
+        "d": "Finds the point where all three altitudes meet by solving two equations together.",
+        "e": "Finds a point that is the same distance from two or three given points.",
+        "f": "Spots a shortcut, such as a hidden right angle, that gives a meeting point without long working."
+      }
+    },
+    "V.11.06": {
+      "what": "Finding the perimeter and area of shapes drawn on a grid from their corner points.",
+      "levels": {
+        "a": "Adds up side lengths for the perimeter, keeping exact square roots.",
+        "b": "Finds an area by boxing the shape and subtracting the corner triangles.",
+        "c": "Uses the shoelace formula, a shortcut that gives area from the corner coordinates.",
+        "d": "Spots a mistake from listing the corners out of order, and finds the true area.",
+        "e": "Works backwards from the area to find a missing coordinate.",
+        "f": "Counts the whole-number grid points inside a shape using area and a clever formula."
+      }
+    },
+    "V.11.07": {
+      "what": "Finding the shortest distance from a point to a line, which is measured along a perpendicular.",
+      "levels": {
+        "a": "Writes the equation of the perpendicular line from the point.",
+        "b": "Finds where the perpendicular meets the line, then measures the distance.",
+        "c": "Uses a formula for the distance directly.",
+        "d": "Finds the distance between two parallel lines.",
+        "e": "Works backwards from a known distance to find a missing coordinate.",
+        "f": "Uses the gap between parallel lines to find the size of a square or circle that fits between them."
+      }
+    },
+    "V.11.08": {
+      "what": "Using lengths and slopes to decide exactly what kind of triangle or four-sided shape a set of points makes.",
+      "levels": {
+        "a": "Classifies a triangle by its side lengths and whether it has a right angle.",
+        "b": "Tests whether a shape is a parallelogram, for example by checking that its diagonals share a midpoint.",
+        "c": "Tests a parallelogram to see if it is a rectangle, a rhombus, a square or none of these.",
+        "d": "Puts the steps of a proof that a shape is a square in the right order."
+      }
+    },
+    "V.11.09": {
+      "what": "Proving facts about every triangle of a kind by placing it on a grid with letters for its coordinates and using algebra.",
+      "levels": {
+        "a": "Chooses a smart placement with letters, not numbers, so the proof covers every case.",
+        "b": "Shows that the segment joining two midpoints is parallel to the third side and half as long.",
+        "c": "Picks which fact about an isosceles triangle holds for every possible size.",
+        "d": "Finds the point where the medians meet, two thirds of the way along each."
+      }
+    }
+  }
+}

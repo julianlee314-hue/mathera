@@ -1,0 +1,114 @@
+{
+ "unit": "IV.3",
+ "name": "Linear functions",
+ "skills": [
+  {
+   "id": "IV.3.01",
+   "name": "Point-slope form",
+   "steps": {
+    "a": "meaning of y − y₁ = m(x − x₁)",
+    "b": "write from a point and slope",
+    "c": "write from two points",
+    "d": "graph from it"
+   },
+   "wrong_turn": "The signs in the parentheses flip: through (2, −1) it's y + 1 = m(x − 2), not y − 1 = m(x + 2).",
+   "rule": "y−y1=m(x−x1) is the line with slope m through (x1,y1)."
+  },
+  {
+   "id": "IV.3.02",
+   "name": "Standard form",
+   "steps": {
+    "a": "Ax + By = C",
+    "b": "intercepts from standard form",
+    "c": "graph by intercepts",
+    "d": "budget and combination contexts"
+   },
+   "wrong_turn": "The x-intercept of 2x + 3y = 12 is 6, not 2. Set y = 0 and solve; don't read off a coefficient.",
+   "rule": "Ax+By=C, usually with integers A, B, C and A≥0."
+  },
+  {
+   "id": "IV.3.03",
+   "name": "Converting forms",
+   "steps": {
+    "a": "standard to slope-intercept",
+    "b": "point-slope to slope-intercept",
+    "c": "slope-intercept to standard",
+    "d": "pick the best form for a job"
+   },
+   "wrong_turn": "Converting to standard form, clear fractions from every term: (1/2)x − y = −4 times 2 is x − 2y = −8.",
+   "rule": "One line, three forms: y=mx+b, y−y1=m(x−x1), Ax+By=C."
+  },
+  {
+   "id": "IV.3.04",
+   "name": "Horizontal & vertical lines",
+   "steps": {
+    "a": "y = k",
+    "b": "x = h",
+    "c": "slope 0 vs undefined",
+    "d": "which one is a function"
+   },
+   "wrong_turn": "y = 3 is horizontal, not vertical. It's every point with height 3, running left to right.",
+   "rule": "y=k is horizontal with slope 0. x=h is vertical with undefined slope."
+  },
+  {
+   "id": "IV.3.05",
+   "name": "Parallel lines",
+   "steps": {
+    "a": "equal slopes",
+    "b": "test two equations",
+    "c": "write a parallel line through a point",
+    "d": "check sides are parallel on a grid (compare slopes)"
+   },
+   "wrong_turn": "Same slope isn't enough if the intercepts match too: y = 2x + 1 and 4x − 2y = −2 are the same line.",
+   "rule": "Distinct non-vertical lines are parallel exactly when their slopes are equal."
+  },
+  {
+   "id": "IV.3.06",
+   "name": "Perpendicular lines",
+   "steps": {
+    "a": "negative reciprocal slopes",
+    "b": "test two equations",
+    "c": "write a perpendicular line through a point",
+    "d": "perpendicular bisector"
+   },
+   "wrong_turn": "The perpendicular slope to 2/3 is −3/2, not −2/3 or 3/2. Flip and change the sign.",
+   "rule": "Non-vertical lines are perpendicular exactly when m1m2=−1."
+  },
+  {
+   "id": "IV.3.07",
+   "name": "Intercepts of lines",
+   "steps": {
+    "a": "x-intercept by y = 0",
+    "b": "y-intercept by x = 0",
+    "c": "meaning in context",
+    "d": "graph from intercepts"
+   },
+   "wrong_turn": "The x-intercept is a point on the x-axis, (15, 0), with y = 0. Don't set x = 0 to find it.",
+   "rule": "For the x-intercept set y=0; for the y-intercept set x=0."
+  },
+  {
+   "id": "IV.3.08",
+   "name": "Two-variable inequalities",
+   "steps": {
+    "a": "solid vs dashed boundary",
+    "b": "test point to shade",
+    "c": "check if a point is a solution",
+    "d": "write one from a graph"
+   },
+   "wrong_turn": "Don't shade by the direction of the sign alone. y > −x + 2 shades above, but −y > x − 2 shades below. Use a test point.",
+   "rule": "Graph the boundary line, then shade the side where a test point works."
+  },
+  {
+   "id": "IV.3.09",
+   "name": "Linear regression & residuals",
+   "steps": {
+    "a": "line of best fit with technology",
+    "b": "correlation coefficient r",
+    "c": "compute residuals",
+    "d": "read a residual plot"
+   },
+   "wrong_turn": "A high r doesn't prove one thing causes the other, and r near 0 doesn't mean no relationship, only no straight-line one.",
+   "rule": "The best-fit line makes the residuals, actual minus predicted, as small as possible overall."
+  }
+ ]
+}

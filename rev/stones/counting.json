@@ -1,0 +1,295 @@
+[
+ {
+  "id": "IV.14.01",
+  "not": "A factorial ratio cancels, it doesn't divide the numbers. \\(\\frac{6!}{3!} = 6 \\times 5 \\times 4 = 120\\), not \\(2! = 2\\).",
+  "apples": {
+   "stone": "To line things up, multiply your choices for each spot.",
+   "text": "Put 3 books on a shelf. Any of the 3 can go first. Then 2 are left for the next spot, and 1 for the last. That makes 3 × 2 × 1 = 6 ways.",
+   "example": "3 shirts and 4 pairs of pants make 3 × 4 = 12 outfits."
+  },
+  "class": {
+   "stone": "\\[ n! = n \\times (n-1) \\times \\ldots \\times 2 \\times 1, \\quad 0! = 1 \\]",
+   "text": "Multiplication principle: if one choice has \\(m\\) options and, for each of them, a second choice has \\(k\\) options, there are \\(m \\times k\\) ways to make both. So \\(n\\) different objects can be arranged in a row in \\(n!\\) ways. To simplify a ratio of factorials, write the larger one down to the smaller and cancel.",
+   "example": "5 people in a line: \\(5! = 120\\). And \\(\\frac{8!}{6!} = 8 \\times 7 = 56\\)."
+  },
+  "proof": {
+   "stone": "Fill the spots one at a time, and each spot has one fewer choice.",
+   "text": "The first spot can hold any of the \\(n\\) objects. Whichever is placed, \\(n-1\\) remain for the second spot, then \\(n-2\\), down to 1. The multiplication principle gives \\(n(n-1)\\ldots 1 = n!\\). Since \\(n! = n \\times (n-1)!\\), putting \\(n = 1\\) forces \\(0! = 1\\): there is exactly one way to arrange nothing.",
+   "example": "\\(4! = 4 \\times 3! = 4 \\times 6 = 24\\), and ABCD really has 24 orders: 6 start with A, 6 with B, 6 with C, 6 with D."
+  },
+  "professor": {
+   "stone": "Factorials outgrow every exponential.",
+   "text": "Stirling's formula says \\(n! \\approx \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^{n}\\), with relative error shrinking to 0. The gamma function extends the factorial beyond whole numbers: \\(\\Gamma(n+1) = n!\\), and \\(\\Gamma\\left(\\frac{1}{2}\\right) = \\sqrt{\\pi}\\).",
+   "example": "A deck has \\(52! \\approx 8.07 \\times 10^{67}\\) orders, so a well-shuffled deck is almost surely in an order never seen before. Stirling gives about 3,598,700 for \\(10! = 3{,}628{,}800\\), under 1% off."
+  }
+ },
+ {
+  "id": "IV.14.02",
+  "not": "Repeated letters don't make new words. BOOK has 4!/2! = 12 arrangements, not 4! = 24: swapping the two O's changes nothing.",
+  "apples": {
+   "stone": "When order matters, count the choices for each spot, one fewer each time.",
+   "text": "Ten runners race for gold, silver and bronze. Any of 10 can win gold, then 9 are left for silver, then 8 for bronze. That makes 10 × 9 × 8 = 720 ways to hand out the medals.",
+   "example": "Pick a captain and a vice-captain from 5 friends: 5 × 4 = 20 ways."
+  },
+  "class": {
+   "stone": "\\[ {}^{n}P_{r} = \\frac{n!}{(n-r)!} \\]",
+   "text": "\\({}^{n}P_{r}\\) counts ordered arrangements of \\(r\\) objects chosen from \\(n\\) different ones. If the \\(n\\) objects include identical copies, \\(a\\) of one kind and \\(b\\) of another, the full arrangements number \\(\\frac{n!}{a!\\,b!}\\). Around a circle, where only relative position counts, \\(n\\) objects sit in \\((n-1)!\\) ways.",
+   "example": "\\({}^{8}P_{3} = 8 \\times 7 \\times 6 = 336\\). MISSISSIPPI: \\(\\frac{11!}{4!\\,4!\\,2!} = 34{,}650\\)."
+  },
+  "proof": {
+   "stone": "Count the slots, then divide out orders that look the same.",
+   "text": "Filling \\(r\\) slots gives \\(n(n-1)\\ldots(n-r+1)\\) ways; multiplying top and bottom by \\((n-r)!\\) turns this into \\(\\frac{n!}{(n-r)!}\\). With repeats, label the copies: each visible word then appears \\(a!\\) times, once per order of its labeled copies, so divide by \\(a!\\). Around a table, each seating shows up as \\(n\\) different rows, one per rotation, so \\(\\frac{n!}{n} = (n-1)!\\).",
+   "example": "4 people round a table: \\(4! = 24\\) lines, each circle counted 4 times, so \\(\\frac{24}{4} = 6 = 3!\\)."
+  },
+  "professor": {
+   "stone": "The permutations of n objects form a group with n! members.",
+   "text": "Rearrangements can be composed and undone, so they form the symmetric group \\(S_{n}\\). Every permutation is a product of swaps, and whether it takes an even or odd number of swaps is fixed; this parity gives the sign in the determinant. The fraction of permutations that move every object tends to \\(\\frac{1}{e}\\).",
+   "example": "Of the 24 orders of 4 letters, 9 move every letter: \\(\\frac{9}{24} = 0.375\\), already close to \\(\\frac{1}{e} \\approx 0.368\\)."
+  }
+ },
+ {
+  "id": "IV.14.03",
+  "not": "If order doesn't matter, don't use \\({}^{n}P_{r}\\). A 3-person committee from 10 people is \\(\\binom{10}{3} = 120\\), not \\({}^{10}P_{3} = 720\\).",
+  "apples": {
+   "stone": "When order doesn't matter, count the ordered ways and divide out the repeats.",
+   "text": "Pick 2 fruits from an apple, a banana and a cherry. You can get apple and banana, apple and cherry, or banana and cherry. Picking the banana first and then the apple gives the same bowl, so there are just 3 ways.",
+   "example": "4 friends, 2 tickets: there are 6 different pairs who can go."
+  },
+  "class": {
+   "stone": "\\[ \\binom{n}{r} = \\frac{n!}{r!\\,(n-r)!} \\]",
+   "text": "\\(\\binom{n}{r}\\), also written \\({}^{n}C_{r}\\), counts the groups of \\(r\\) chosen from \\(n\\) different objects. To decide, ask: does swapping two chosen items give a different result? If yes, use permutations; if no, combinations. Choosing \\(r\\) to keep is choosing \\(n-r\\) to leave, so \\(\\binom{n}{r} = \\binom{n}{n-r}\\), and \\(\\binom{n}{r}\\) is entry \\(r\\) of row \\(n\\) of Pascal's triangle.",
+   "example": "\\(\\binom{7}{3} = \\frac{7 \\times 6 \\times 5}{3 \\times 2 \\times 1} = 35\\). Poker hands: \\(\\binom{52}{5} = 2{,}598{,}960\\)."
+  },
+  "proof": {
+   "stone": "Each group of r shows up r! times among the ordered lists.",
+   "text": "\\({}^{n}P_{r}\\) counts ordered selections. Each unordered group of \\(r\\) can be put in order in \\(r!\\) ways, so \\({}^{n}P_{r} = r! \\binom{n}{r}\\), and dividing gives the formula. For Pascal's rule, fix one item: groups containing it number \\(\\binom{n-1}{r-1}\\), groups without it \\(\\binom{n-1}{r}\\), so \\(\\binom{n}{r} = \\binom{n-1}{r-1} + \\binom{n-1}{r}\\).",
+   "example": "\\({}^{5}P_{3} = 60\\) and \\(3! = 6\\), so \\(\\binom{5}{3} = \\frac{60}{6} = 10 = \\binom{4}{2} + \\binom{4}{3} = 6 + 4\\)."
+  },
+  "professor": {
+   "stone": "The same numbers count groups, expand powers and count paths.",
+   "text": "By the binomial theorem, \\(\\binom{n}{r}\\) is the coefficient of \\(x^{r}\\) in \\((1+x)^{n}\\); setting \\(x = 1\\) gives \\(\\sum_{r} \\binom{n}{r} = 2^{n}\\), the number of all subsets. A grid path of \\(a\\) steps right and \\(b\\) steps up is fixed by choosing which steps go right, so there are \\(\\binom{a+b}{a}\\) of them.",
+   "example": "From one corner of a 3-by-3 grid to the opposite corner, moving only right or up: \\(\\binom{6}{3} = 20\\) paths."
+  }
+ },
+ {
+  "id": "IV.14.04",
+  "not": "Don't count “at least one” by fixing one and choosing the rest freely. From 4 boys and 5 girls, 3-person committees with at least one girl number \\(84 - 4 = 80\\), not \\(5 \\times \\binom{8}{2} = 140\\), which counts some committees twice or more.",
+  "apples": {
+   "stone": "Handle the rule first, then count the rest.",
+   "text": "If Sam must be on the team, put Sam on and pick the others. If two friends must stand together, tape them into one. If the rule is awkward, count what you don't want and take it away.",
+   "example": "Amy, Ben and Cal line up with Amy and Ben side by side: the pair and Cal make 2 orders, and the pair can swap, so 4 lines."
+  },
+  "class": {
+   "stone": "\\[ \\text{at least one} = \\text{total} - \\text{none} \\]",
+   "text": "If \\(k\\) named items must be included, place them and choose \\(\\binom{n-k}{r-k}\\); if they must be excluded, choose \\(\\binom{n-k}{r}\\). To keep objects together, glue them into one block, arrange the blocks, then multiply by the orders inside the block. For committees with rules, split into cases that don't overlap and add.",
+   "example": "6 people in a row with A and B together: \\(5! \\times 2! = 240\\). Committees of 3 from 4 boys and 5 girls with at least one girl: \\(\\binom{9}{3} - \\binom{4}{3} = 84 - 4 = 80\\)."
+  },
+  "proof": {
+   "stone": "Every allowed arrangement must be counted exactly once.",
+   "text": "Gluing is a one-to-one match: each row with A and B adjacent comes from exactly one row of \\(n-1\\) blocks and one order inside the block. For “at least one”, the total splits into two disjoint groups, none and at least one, so subtract. Cases work only if they don't overlap and together cover every allowed choice.",
+   "example": "6 people in a row with A and B apart: \\(720 - 240 = 480\\). By cases, at least one girl is \\(\\binom{5}{1}\\binom{4}{2} + \\binom{5}{2}\\binom{4}{1} + \\binom{5}{3} = 30 + 40 + 10 = 80\\)."
+  },
+  "professor": {
+   "stone": "Counting the complement is the first step of inclusion–exclusion.",
+   "text": "With several forbidden conditions, subtract each, add back each pair counted twice, subtract each triple, and so on: \\(|A \\cup B| = |A| + |B| - |A \\cap B|\\) and its longer versions. The same method counts the orders of \\(n\\) letters in which no letter stays in its place.",
+   "example": "Of the numbers 1 to 100, those divisible by 2 or 3 number 50 + 33 − 16 = 67, so 33 are divisible by neither."
+  }
+ },
+ {
+  "id": "IV.14.05",
+  "not": "Outcomes must be equally likely. Two dice have 11 possible sums, but \\(P(\\text{sum } 7) = \\frac{6}{36} = \\frac{1}{6}\\), not \\(\\frac{1}{11}\\).",
+  "apples": {
+   "stone": "Chance is the number of good ways divided by all the ways, when every way is equally likely.",
+   "text": "A bag has 3 red marbles and 7 blue ones. Reach in without looking: each marble is as likely as any other. 3 of the 10 are red, so the chance of red is 3 out of 10.",
+   "example": "A die lands on an even number 3 ways out of 6: half the time."
+  },
+  "class": {
+   "stone": "\\[ P(A) = \\frac{\\text{outcomes in } A}{\\text{all outcomes}} \\]",
+   "text": "This works only when the sample space is finite and every outcome is equally likely. For cards, list both dice or count hands with combinations, using the same kind of count on top and bottom. A lottery ticket that picks 6 numbers from 49 is one of \\(\\binom{49}{6}\\) equally likely draws.",
+   "example": "Two cards dealt, both aces: \\(\\frac{\\binom{4}{2}}{\\binom{52}{2}} = \\frac{6}{1326} = \\frac{1}{221}\\). The lottery: \\(\\binom{49}{6} = 13{,}983{,}816\\), so one ticket wins about 1 time in 14 million."
+  },
+  "proof": {
+   "stone": "With N equally likely outcomes, each has chance 1/N, and disjoint chances add.",
+   "text": "The \\(N\\) outcomes have equal probabilities that sum to 1, so each is \\(\\frac{1}{N}\\). An event made of \\(k\\) outcomes is a union of \\(k\\) disjoint ones, so its probability is \\(\\frac{k}{N}\\). Dealing a random hand makes every group of cards equally likely, so count groups top and bottom; counting ordered deals top and bottom gives the same answer.",
+   "example": "Two aces in order: \\(\\frac{4 \\times 3}{52 \\times 51} = \\frac{12}{2652} = \\frac{1}{221}\\), matching the unordered count."
+  },
+  "professor": {
+   "stone": "This classical definition fails when outcomes can't be listed as equally likely.",
+   "text": "Laplace built probability on counting equally likely cases. With infinitely many outcomes, “equally likely” can mean different things, and Bertrand's paradox shows it. Modern probability instead starts from Kolmogorov's axioms, where probability is a measure.",
+   "example": "Pick a “random” chord of a circle. The chance it is longer than a side of the inscribed equilateral triangle comes out \\(\\frac{1}{3}\\), \\(\\frac{1}{2}\\) or \\(\\frac{1}{4}\\), depending on how the chord is chosen."
+  }
+ },
+ {
+  "id": "IV.14.06",
+  "not": "Don't just add when events overlap. \\(P(\\text{heart or king}) = \\frac{13}{52} + \\frac{4}{52} - \\frac{1}{52} = \\frac{16}{52}\\), not \\(\\frac{17}{52}\\).",
+  "apples": {
+   "stone": "For one or the other, add the chances, but don't count the overlap twice.",
+   "text": "In a class, 10 kids play soccer and 8 play piano. 3 do both. If you add 10 and 8, those 3 are counted twice, so only 15 kids do at least one.",
+   "example": "10 + 8 − 3 = 15 kids play soccer or piano."
+  },
+  "class": {
+   "stone": "\\[ P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\]",
+   "text": "\\(A \\cup B\\) means “A or B or both”. If \\(A\\) and \\(B\\) are mutually exclusive, they can't both happen, so \\(P(A \\cap B) = 0\\) and the chances simply add. In a Venn diagram, the overlap sits inside both circles, which is why it gets subtracted once.",
+   "example": "One card: \\(P(\\text{heart or king}) = \\frac{13 + 4 - 1}{52} = \\frac{16}{52} = \\frac{4}{13}\\). A die showing 1 or 6: \\(\\frac{1}{6} + \\frac{1}{6} = \\frac{1}{3}\\).",
+   "env": "Rule"
+  },
+  "proof": {
+   "stone": "Split \\(A \\cup B\\) into three pieces that don't overlap.",
+   "text": "The pieces are A only, B only, and both. Then \\(P(A)\\) = A only + both, and \\(P(B)\\) = B only + both. Adding \\(P(A) + P(B)\\) counts “both” twice, so subtracting \\(P(A \\cap B)\\) leaves each piece counted once, which is \\(P(A \\cup B)\\).",
+   "example": "13 hearts and 4 kings make 17 cards listed, but the king of hearts is on both lists: 16 different cards."
+  },
+  "professor": {
+   "stone": "The pattern continues as inclusion–exclusion, with alternating signs.",
+   "text": "For three events, add the singles, subtract the pairs, add back the triple. Stopping early gives bounds (the Bonferroni inequalities); the simplest is the union bound \\(P(A \\cup B) \\le P(A) + P(B)\\).",
+   "example": "Roll a die: A = even, B = 1 or 2, C = 3 or 6. Then \\(\\frac{3 + 2 + 2 - 1 - 1 - 0 + 0}{6} = \\frac{5}{6}\\), and indeed only 5 is missed."
+  }
+ },
+ {
+  "id": "IV.14.07",
+  "not": "Don't multiply the single chance by the number of tries. At least one six in 4 rolls is \\(1 - \\left(\\frac{5}{6}\\right)^{4} \\approx 0.518\\), not \\(4 \\times \\frac{1}{6} = \\frac{2}{3}\\).",
+  "apples": {
+   "stone": "For at least once, find the chance of never and take it from 1.",
+   "text": "Flip 3 coins. Counting all the ways to get at least one head is slow. The only way to get none is tails, tails, tails: 1 of 8 ways. So at least one head happens 7 times in 8.",
+   "example": "2 coins: no heads is 1 way in 4, so at least one head is 3 in 4."
+  },
+  "class": {
+   "stone": "\\[ P(\\text{at least one}) = 1 - P(\\text{none}) \\]",
+   "text": "For any event, \\(P(\\text{not } A) = 1 - P(A)\\). In \\(n\\) independent trials each succeeding with chance \\(p\\), \\(P(\\text{none}) = (1-p)^{n}\\), so \\(P(\\text{at least one}) = 1 - (1-p)^{n}\\). The birthday problem asks for a shared birthday: it is easier to find that all birthdays differ.",
+   "example": "At least one six in 4 rolls: \\(1 - \\frac{625}{1296} \\approx 0.518\\). With 23 people, \\(P(\\text{all differ}) \\approx 0.493\\), so a shared birthday has chance about \\(0.507\\)."
+  },
+  "proof": {
+   "stone": "An event and its complement split the sample space.",
+   "text": "\\(A\\) and not \\(A\\) never happen together and between them cover everything, so \\(P(A) + P(\\text{not } A) = 1\\). The opposite of “at least one” is “none”, which means every trial fails; with independence, multiply the failures. For birthdays, each new person must avoid all the earlier birthdays.",
+   "example": "3 people: \\(P(\\text{all differ}) = \\frac{364}{365} \\times \\frac{363}{365} \\approx 0.9918\\), so a shared birthday has chance about \\(0.0082\\)."
+  },
+  "professor": {
+   "stone": "Among \\(N\\) equally likely values, a repeat shows up after about \\(\\sqrt{N}\\) picks.",
+   "text": "With \\(k\\) picks, \\(P(\\text{no repeat}) \\approx e^{-k(k-1)/(2N)}\\), which falls to \\(\\frac{1}{2}\\) near \\(k \\approx 1.18\\sqrt{N}\\). In cryptography this is the birthday attack: a 64-bit hash is expected to show a collision after only about \\(2^{32}\\) tries.",
+   "example": "For birthdays, \\(1.18\\sqrt{365} \\approx 22.5\\). At \\(k = 23\\) the estimate gives \\(1 - e^{-253/365} \\approx 0.500\\); the exact value is \\(0.507\\)."
+  }
+ },
+ {
+  "id": "IV.14.08",
+  "not": "Independent is not the same as mutually exclusive. If \\(A\\) and \\(B\\) can't both happen, with \\(P(A) = 0.5\\) and \\(P(B) = 0.4\\), then \\(P(A \\cap B) = 0\\), not \\(0.2\\): they are dependent.",
+  "apples": {
+   "stone": "If one thing can't change the other, multiply their chances.",
+   "text": "Flip a coin and roll a die. The coin doesn't care what the die does. Heads comes up half the time, and in that half, a 6 comes up 1 time in 6. So both happen 1 time in 12.",
+   "example": "Pull a sock from a drawer, put it back, and pull again: the second pull doesn't know about the first."
+  },
+  "class": {
+   "stone": "\\[ P(A \\cap B) = P(A)\\,P(B) \\]",
+   "text": "Events \\(A\\) and \\(B\\) are independent exactly when this holds; if \\(P(B) > 0\\), it says \\(P(A \\mid B) = P(A)\\). To test, compute both sides. Drawing with replacement keeps draws independent; without replacement it doesn't. Mutually exclusive events with positive chances are never independent.",
+   "example": "One die, A = even, B = 4 or less. \\(P(A \\cap B) = \\frac{2}{6} = \\frac{1}{3}\\) and \\(P(A)P(B) = \\frac{1}{2} \\times \\frac{2}{3} = \\frac{1}{3}\\): independent.",
+   "env": "Definition"
+  },
+  "proof": {
+   "stone": "Independence means knowing B doesn't change the chance of A.",
+   "text": "If \\(P(A \\mid B) = P(A)\\), the multiplication rule \\(P(A \\cap B) = P(B)\\,P(A \\mid B)\\) becomes \\(P(A)P(B)\\). With replacement, the pairs of draws are equally likely, and the pairs with first in \\(A\\) and second in \\(B\\) number \\(|A| \\times |B|\\), so the product rule holds. If \\(A\\) and \\(B\\) are mutually exclusive, the left side is 0 but the right side isn't.",
+   "example": "Two aces with replacement: \\(\\frac{4 \\times 4}{52 \\times 52} = \\frac{1}{169} = \\frac{1}{13} \\times \\frac{1}{13}\\)."
+  },
+  "professor": {
+   "stone": "Three events can be independent in pairs but not together.",
+   "text": "Mutual independence needs the product rule for every pair and for all three at once. Independence is what makes variances add and what drives the law of large numbers.",
+   "example": "Two fair coins: A = first is heads, B = second is heads, C = they match. Each pair meets at HH with chance \\(\\frac{1}{4} = \\frac{1}{2} \\times \\frac{1}{2}\\), but \\(P(A \\cap B \\cap C) = \\frac{1}{4}\\), not \\(\\frac{1}{8}\\)."
+  }
+ },
+ {
+  "id": "IV.14.09",
+  "not": "Don't flip the condition. If 12 of 30 athletes are seniors and there are 40 seniors, \\(P(\\text{senior} \\mid \\text{athlete}) = \\frac{12}{30} = 0.4\\), but \\(P(\\text{athlete} \\mid \\text{senior}) = \\frac{12}{40} = 0.3\\).",
+  "apples": {
+   "stone": "Once you know something happened, count only the cases where it did.",
+   "text": "A class has 20 kids. 8 wear glasses, and 3 of those have red hair. If you know a kid wears glasses, the chance of red hair is 3 out of 8, not 3 out of 20.",
+   "example": "A bag has 2 red balls and 1 blue. Take out a red and keep it. Now it's 1 red and 1 blue: an even chance."
+  },
+  "class": {
+   "stone": "\\[ P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}, \\quad P(B) > 0 \\]",
+   "text": "\\(P(A \\mid B)\\) is the chance of \\(A\\) given that \\(B\\) happened. In a two-way table, it is the cell for \\(A\\) and \\(B\\) divided by the total for \\(B\\). Without replacement, the second draw is conditioned on the first, since one card is gone.",
+   "example": "Two cards without replacement: \\(P(\\text{2nd ace} \\mid \\text{1st ace}) = \\frac{3}{51}\\), so \\(P(\\text{both aces}) = \\frac{4}{52} \\times \\frac{3}{51} = \\frac{1}{221}\\).",
+   "env": "Definition"
+  },
+  "proof": {
+   "stone": "Conditioning on B makes B the whole sample space.",
+   "text": "With equally likely outcomes, knowing \\(B\\) leaves only the outcomes in \\(B\\), still equally likely. The ones in \\(A\\) are those in \\(A \\cap B\\), so \\(P(A \\mid B) = \\frac{|A \\cap B|}{|B|}\\); dividing top and bottom by the total gives the formula. Rearranged, it is the multiplication rule \\(P(A \\cap B) = P(B)\\,P(A \\mid B)\\).",
+   "example": "A die shows an even number. The chance it is 4 or more: \\(\\{4, 6\\}\\) out of \\(\\{2, 4, 6\\}\\), so \\(\\frac{2}{3} = \\frac{2/6}{3/6}\\)."
+  },
+  "professor": {
+   "stone": "Conditioning can reverse a trend: Simpson's paradox.",
+   "text": "A treatment can do better in every group and worse overall, when the groups are mixed in different sizes. Another classic is the Monty Hall problem: after the host opens an empty door, switching wins with chance \\(\\frac{2}{3}\\).",
+   "example": "Drug X cures 9 of 10 mild and 30 of 90 severe cases; drug Y cures 80 of 90 mild and 3 of 10 severe. X wins in each group (0.9 vs 0.89, 0.33 vs 0.30) but loses overall, 39 to 83."
+  }
+ },
+ {
+  "id": "IV.14.10",
+  "not": "Multiply along a branch, add across paths. Two reds from 3 red and 2 blue without replacement is \\(\\frac{3}{5} \\times \\frac{2}{4} = \\frac{3}{10}\\), not \\(\\frac{3}{5} + \\frac{2}{4}\\).",
+  "apples": {
+   "stone": "Follow each path, multiply along it, then add the paths you want.",
+   "text": "A tree is like a road that splits at each choice. Each split shows the chances of each way. To find the chance of one whole trip, multiply the chances along its road. If several trips count, add them.",
+   "example": "Flip a coin twice. Exactly one head is heads-tails or tails-heads: a quarter plus a quarter, which is a half."
+  },
+  "class": {
+   "stone": "\\[ P(A \\cap B) = P(A)\\,P(B \\mid A) \\]",
+   "text": "Each branch carries the chance of that step given the path so far, and branches from one point sum to 1. A path's probability is the product along it; an event's probability is the sum of its paths. To reverse a tree, divide the path you want by the total of the paths that end the same way.",
+   "example": "3 red, 2 blue, draw 2 without replacement. Same color: \\(\\frac{3}{5} \\times \\frac{2}{4} + \\frac{2}{5} \\times \\frac{1}{4} = \\frac{8}{20} = \\frac{2}{5}\\). Reversed: \\(P(\\text{1st red} \\mid \\text{2nd red}) = \\frac{6/20}{12/20} = \\frac{1}{2}\\)."
+  },
+  "proof": {
+   "stone": "Each path is an intersection, and different paths never overlap.",
+   "text": "By the multiplication rule, a path's chance is \\(P(A)P(B \\mid A)\\), and longer paths repeat the step. Paths from the root are mutually exclusive and cover every outcome, so the addition rule gives an event's chance as a sum of paths, and all the paths together sum to 1.",
+   "example": "RR, RB, BR, BB: \\(\\frac{6}{20} + \\frac{6}{20} + \\frac{6}{20} + \\frac{2}{20} = 1\\)."
+  },
+  "professor": {
+   "stone": "A tree is the law of total probability drawn out.",
+   "text": "Summing paths is \\(P(B) = \\sum_{i} P(A_{i})\\,P(B \\mid A_{i})\\) over the first-level branches \\(A_{i}\\). Reversing a tree is Bayes' theorem. Trees over many steps are the pictures behind Markov chains.",
+   "example": "Without replacement, the second ball is red with chance \\(\\frac{12}{20} = \\frac{3}{5}\\), exactly the first ball's chance: by symmetry, every position in the draw is alike."
+  }
+ },
+ {
+  "id": "IV.14.11",
+  "not": "Don't confuse P(sick given positive) with P(positive given sick). A test that is 99% right both ways, for a disease 1 in 1000 people have, gives positives that are right only about 9% of the time.",
+  "apples": {
+   "stone": "Even after a good test says yes, a rare thing stays fairly rare.",
+   "text": "Picture 1000 people. 1 has the illness, and the test finds it. The test also wrongly says yes for 1 in 100 healthy people: about 10 of them. So about 11 people test positive, and only 1 is sick.",
+   "example": "Out of about 11 positive tests, only 1 person is really sick."
+  },
+  "class": {
+   "stone": "\\[ P(A \\mid B) = \\frac{P(B \\mid A)\\,P(A)}{P(B)} \\]",
+   "text": "Bayes' theorem turns \\(P(B \\mid A)\\) into \\(P(A \\mid B)\\). The bottom comes from the tree: \\(P(B) = P(B \\mid A)P(A) + P(B \\mid \\text{not } A)P(\\text{not } A)\\). The base rate \\(P(A)\\) matters: if \\(A\\) is rare, false positives can outnumber true ones. A table of 10,000 imagined people makes it concrete.",
+   "example": "1% have the disease, the test catches 90% of cases, and flags 5% of healthy people. Of 10,000: 90 true and 495 false positives, so \\(P(\\text{sick} \\mid +) = \\frac{90}{585} = \\frac{2}{13} \\approx 0.15\\).",
+   "env": "Theorem"
+  },
+  "proof": {
+   "stone": "Write \\(P(A \\cap B)\\) two ways and divide.",
+   "text": "The multiplication rule gives \\(P(A \\cap B) = P(A \\mid B)P(B)\\) and also \\(P(A \\cap B) = P(B \\mid A)P(A)\\). Set them equal and divide by \\(P(B)\\). Expanding \\(P(B)\\) over the two branches, \\(A\\) and not \\(A\\), gives the form used in test problems.",
+   "example": "In the table, \\(0.9 \\times 0.01 \\times 10{,}000 = 90\\) people are sick and positive, and \\(P(+) = \\frac{585}{10{,}000}\\), so \\(\\frac{90/10{,}000}{585/10{,}000} = \\frac{90}{585}\\)."
+  },
+  "professor": {
+   "stone": "Bayes' theorem is a rule for updating belief with evidence.",
+   "text": "Thomas Bayes's essay was published in 1763, after his death, by Richard Price; Laplace later developed the idea in general form. In odds form it is clean: posterior odds = prior odds × likelihood ratio.",
+   "example": "Prior odds 1 to 99, likelihood ratio \\(\\frac{0.9}{0.05} = 18\\), so posterior odds 18 to 99, which is 2 to 11: probability \\(\\frac{2}{13}\\), as before."
+  }
+ },
+ {
+  "id": "IV.14.12",
+  "not": "Expected value is a weighted average, not a plain average of the outcomes. A game paying 10 dollars with chance 0.1 and nothing otherwise is worth 1 dollar, not (10 + 0)/2 = 5 dollars.",
+  "apples": {
+   "stone": "The expected value is the average you'd get per game if you played many, many times.",
+   "text": "Roll a die. The numbers 1 to 6 average 3.5. You can never roll 3.5, but over many rolls your average gets close to it.",
+   "example": "Pay 1 dollar to roll a die, and win 5 dollars on a 6. In 6 games you pay 6 and win about 5: you lose about 1 dollar every 6 games."
+  },
+  "class": {
+   "stone": "\\[ E(X) = \\sum x_{i}\\,p_{i} \\]",
+   "text": "Multiply each outcome by its probability and add. A game is fair when the expected net gain is 0. Insurance premiums and lottery tickets cost more than their expected payout, which is how insurers and lotteries earn money; the buyer pays for protection or for a small chance at a big prize. When risk doesn't matter, choose the option with the larger expected value.",
+   "example": "A raffle sells 1000 tickets at 2 dollars for one prize of 500 dollars. Expected net gain per ticket: \\(498 \\times 0.001 + (-2) \\times 0.999 = -1.50\\) dollars.",
+   "env": "Definition"
+  },
+  "proof": {
+   "stone": "In \\(N\\) plays, outcome \\(x_{i}\\) comes up about \\(N p_{i}\\) times.",
+   "text": "Over \\(N\\) plays the total is about \\(\\sum x_{i}\\,N p_{i}\\), so the average per play is about \\(\\sum x_{i}\\,p_{i}\\); the law of large numbers makes this precise. Expected value is linear: \\(E(X + Y) = E(X) + E(Y)\\) and \\(E(aX + b) = aE(X) + b\\).",
+   "example": "A die: \\(\\frac{1 + 2 + 3 + 4 + 5 + 6}{6} = \\frac{21}{6} = 3.5\\), so 600 rolls total about 2100."
+  },
+  "professor": {
+   "stone": "Expected value can be infinite even when every payout is finite.",
+   "text": "In the St. Petersburg game, a coin is flipped until the first head, and a head on flip \\(k\\) pays \\(2^{k}\\). Each term of the sum is 1, so the expectation diverges, yet no one would pay much to play. Daniel Bernoulli proposed in 1738 that people value money by its utility, such as its logarithm, rather than its amount.",
+   "example": "\\(E = \\frac{1}{2} \\times 2 + \\frac{1}{4} \\times 4 + \\frac{1}{8} \\times 8 + \\ldots = 1 + 1 + 1 + \\ldots = \\infty\\)."
+  }
+ }
+]

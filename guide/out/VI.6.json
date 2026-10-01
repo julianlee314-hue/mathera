@@ -1,0 +1,141 @@
+{
+  "branch": "VI.6",
+  "intro": "This branch uses integrals to measure real things: distances, areas, volumes of solid shapes, work done by forces, and totals in probability and economics.",
+  "skills": {
+    "VI.6.01": {
+      "what": "The difference between how far you end up from the start (displacement) and how far you actually traveled (distance).",
+      "levels": {
+        "a": "Finds displacement by integrating velocity.",
+        "b": "Finds total distance by integrating speed.",
+        "c": "Finds where velocity changes sign, meaning the object turns around.",
+        "d": "Finds final position from a starting position and velocity."
+      }
+    },
+    "VI.6.02": {
+      "what": "Integrating a rate of change gives the total change, like water flow giving the total amount added to a tank.",
+      "levels": {
+        "a": "Finds the total change by integrating a rate.",
+        "b": "Finds the amount at a later time from a starting amount.",
+        "c": "Handles an inflow and an outflow at the same time.",
+        "d": "Estimates net change from a table of rates."
+      }
+    },
+    "VI.6.03": {
+      "what": "Finding the area of the region between two curves by subtracting the lower curve from the upper one.",
+      "levels": {
+        "a": "Integrates the top curve minus the bottom curve.",
+        "b": "Finds where the curves cross to get the endpoints.",
+        "c": "Splits the area where the top and bottom curves switch places.",
+        "d": "Sets up and evaluates the full area integral."
+      }
+    },
+    "VI.6.04": {
+      "what": "Finding area between curves by slicing sideways instead, which is sometimes much easier.",
+      "levels": {
+        "a": "Integrates the right curve minus the left curve.",
+        "b": "Rewrites each curve with x in terms of y.",
+        "c": "Recognizes when slicing sideways is simpler.",
+        "d": "Sets up and evaluates the full area integral."
+      }
+    },
+    "VI.6.05": {
+      "what": "Finding the volume of a solid by slicing it like a loaf of bread, where each slice has a known shape.",
+      "levels": {
+        "a": "Finds volume when each slice is a square.",
+        "b": "Finds volume when each slice is a semicircle.",
+        "c": "Finds volume when each slice is a triangle.",
+        "d": "Sets up the volume integral for any given slice shape."
+      }
+    },
+    "VI.6.06": {
+      "what": "Finding the volume of a solid made by spinning a region around a line, by stacking thin coin-shaped disks.",
+      "levels": {
+        "a": "Writes the radius of each disk as a function.",
+        "b": "Uses pi times radius squared for each thin slice.",
+        "c": "Finds volumes when spinning around the horizontal axis.",
+        "d": "Finds volumes when spinning around the vertical axis."
+      }
+    },
+    "VI.6.07": {
+      "what": "Like the disk method, but for spun solids with a hole in the middle, using ring-shaped slices called washers.",
+      "levels": {
+        "a": "Identifies the outer and inner radius of each ring.",
+        "b": "Sets up the volume integral.",
+        "c": "Handles spinning around lines other than the axes.",
+        "d": "Evaluates the integral to find the volume."
+      }
+    },
+    "VI.6.08": {
+      "what": "Finding volumes of spun solids by adding up thin nested tubes, like the layers of an onion.",
+      "levels": {
+        "a": "Identifies the radius and height of each tube.",
+        "b": "Uses the tube's unrolled area, two pi times radius times height.",
+        "c": "Recognizes when tubes are easier than disks.",
+        "d": "Handles spinning around lines other than the axes."
+      }
+    },
+    "VI.6.09": {
+      "what": "Finding the length of a curved path by adding up tiny straight pieces.",
+      "levels": {
+        "a": "Builds the length formula from Pythagoras' theorem on tiny pieces.",
+        "b": "Sets up the length integral for a curve.",
+        "c": "Evaluates it exactly or estimates it.",
+        "d": "Uses the sideways version with x in terms of y."
+      }
+    },
+    "VI.6.10": {
+      "what": "Finding the outer surface area of a shape made by spinning a curve around a line.",
+      "levels": {
+        "a": "States the surface area formula.",
+        "b": "Sets up the surface area integral.",
+        "c": "Evaluates it.",
+        "d": "Explores Gabriel's horn, which has finite volume but endless surface area."
+      }
+    },
+    "VI.6.11": {
+      "what": "Work is force times distance. Integrals handle cases where the force changes, like stretching a spring.",
+      "levels": {
+        "a": "Finds work as force times distance for a constant force.",
+        "b": "Finds work to stretch a spring, where force grows with stretch.",
+        "c": "Finds work to pump liquid out of a tank.",
+        "d": "Finds work to lift a hanging cable or chain."
+      }
+    },
+    "VI.6.12": {
+      "what": "Finding the total push of water on a wall, where the pressure grows deeper down.",
+      "levels": {
+        "a": "Explains that water pressure increases with depth.",
+        "b": "Splits the wall into thin horizontal strips.",
+        "c": "Sets up the force integral.",
+        "d": "Finds the force on dams and underwater windows."
+      }
+    },
+    "VI.6.13": {
+      "what": "Finding the balance point of a flat shape or object, where it would sit level on a pin.",
+      "levels": {
+        "a": "Computes moments, which measure turning effect about a line.",
+        "b": "Finds the balance point (centroid) of a region.",
+        "c": "Uses symmetry to find balance points quickly.",
+        "d": "Uses Pappus's theorem to find volumes from balance points."
+      }
+    },
+    "VI.6.14": {
+      "what": "Using curves to describe probability, where the area under the curve over a range gives the chance of landing in it.",
+      "levels": {
+        "a": "Finds a probability as the area under the curve.",
+        "b": "Checks that the total area under the curve is one.",
+        "c": "Finds the average outcome using an integral.",
+        "d": "Works with the exponential distribution, used for waiting times."
+      }
+    },
+    "VI.6.15": {
+      "what": "Using integrals in economics, such as totaling costs and measuring how much buyers and sellers gain from a sale.",
+      "levels": {
+        "a": "Finds a total cost or revenue from its rate per item.",
+        "b": "Finds consumer surplus, the benefit to buyers.",
+        "c": "Finds producer surplus, the benefit to sellers.",
+        "d": "Finds the present value of a stream of future payments."
+      }
+    }
+  }
+}

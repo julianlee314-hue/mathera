@@ -1,0 +1,242 @@
+[
+ {
+  "id": "IV.15.01",
+  "not": "Don't forget to square. For 2, 4, 6 the deviations from the mean 4 are −2, 0, 2, which add to 0. Square them first: the variance is \\(\\frac{4 + 0 + 4}{3} = \\frac{8}{3}\\), not 0.",
+  "apples": {
+   "stone": "Standard deviation is the typical distance from the average.",
+   "text": "Find the average of a list. See how far each number is from it. The standard deviation is a kind of average of those distances. Small means the numbers huddle together; big means they spread out.",
+   "example": "Two classes both average 6 on a quiz. In one, everyone scored 5, 6 or 7. In the other, scores ran from 1 to 10. The second has the bigger standard deviation."
+  },
+  "class": {
+   "stone": "\\[\\sigma = \\sqrt{\\frac{\\sum (x - \\mu)^{2}}{n}}, \\quad s = \\sqrt{\\frac{\\sum (x - \\bar{x})^{2}}{n - 1}}\\]",
+   "text": "Each deviation \\(x - \\bar{x}\\) says how far a value sits from the mean. The variance is the mean of the squared deviations, and the standard deviation is its square root, back in the data's units. Use \\(\\sigma\\) (divide by \\(n\\)) for a whole population and \\(s\\) (divide by \\(n - 1\\)) for a sample used to estimate it.",
+   "example": "Data 2, 4, 4, 4, 5, 5, 7, 9 has mean 5. Squared deviations 9, 1, 1, 1, 0, 0, 4, 16 sum to 32. As a population, \\(\\sigma^{2} = 4\\) and \\(\\sigma = 2\\). As a sample, \\(s^{2} = \\frac{32}{7} \\approx 4.571\\) and \\(s \\approx 2.138\\)."
+  },
+  "proof": {
+   "stone": "Raw deviations always cancel, so we square them before averaging.",
+   "text": "\\(\\sum (x - \\bar{x}) = \\sum x - n\\bar{x} = 0\\) for every data set, so the plain average deviation says nothing. Squaring makes every term count. The sample mean also minimizes \\(\\sum (x - c)^{2}\\) over all \\(c\\), so squared deviations from \\(\\bar{x}\\) run smaller than those from the true \\(\\mu\\). Dividing by \\(n - 1\\) instead of \\(n\\) corrects that shortfall on average.",
+   "example": "For 1, 3, 8 the mean is 4. Around 4: \\(9 + 1 + 16 = 26\\). Around 5: \\(16 + 4 + 9 = 29\\). Around 3: \\(4 + 0 + 25 = 29\\). The mean gives the smallest total."
+  },
+  "professor": {
+   "stone": "Dividing by \\(n - 1\\) makes \\(s^{2}\\) unbiased for \\(\\sigma^{2}\\), yet \\(s\\) is still biased for \\(\\sigma\\).",
+   "text": "The \\(n - 1\\) is Bessel's correction: one degree of freedom is spent estimating the mean. Since the square root is concave, Jensen's inequality gives \\(E(s) \\le \\sigma\\), so no simple divisor fixes both at once. The name standard deviation is due to Karl Pearson.",
+   "example": "Sample 2 values from \\(\\{0, 2\\}\\) with replacement: \\(s^{2}\\) is 0, 2, 2, 0 with equal chance, mean 1 \\(= \\sigma^{2}\\). But \\(s\\) averages \\(\\frac{\\sqrt{2}}{2} \\approx 0.707\\), below \\(\\sigma = 1\\)."
+  }
+ },
+ {
+  "id": "IV.15.02",
+  "not": "Adding a constant moves the center, not the spread. Add 10 to every score and the mean rises by 10, but the standard deviation stays the same, not 10 more.",
+  "apples": {
+   "stone": "A table of counts is a shortcut for a long list.",
+   "text": "If five kids have 2 pets each, you don't write 2 five times. You write 2 once and note it happened five times. Every average and spread can be worked out from the shortcut.",
+   "example": "Three families have 1 car, five have 2, two have 3. That is 3 + 10 + 6 = 19 cars for 10 families: 1.9 cars each on average."
+  },
+  "class": {
+   "stone": "\\[\\bar{x} = \\frac{\\sum f x}{\\sum f}, \\quad \\sigma^{2} = \\frac{\\sum x^{2}}{n} - \\bar{x}^{2}\\]",
+   "text": "With a frequency table, weight each value by its count \\(f\\). For grouped data, use each class midpoint as \\(x\\): the results are estimates, since the exact values are lost. From totals \\(\\sum x\\) and \\(\\sum x^{2}\\), the mean and variance follow directly. Adding \\(a\\) shifts the mean by \\(a\\) and leaves spread alone; multiplying by \\(b\\) multiplies the mean and the standard deviation by \\(b\\) (by \\(|b|\\) for the standard deviation if \\(b\\) is negative).",
+   "example": "\\(n = 5\\), \\(\\sum x = 30\\), \\(\\sum x^{2} = 200\\): \\(\\bar{x} = 6\\), \\(\\sigma^{2} = 40 - 36 = 4\\), \\(\\sigma = 2\\). Now use \\(y = 3x + 10\\): \\(\\bar{y} = 28\\), \\(\\sigma_{y} = 6\\)."
+  },
+  "proof": {
+   "stone": "Expand the square: \\(\\sum (x - \\bar{x})^{2} = \\sum x^{2} - n\\bar{x}^{2}\\).",
+   "text": "\\(\\sum (x - \\bar{x})^{2} = \\sum x^{2} - 2\\bar{x}\\sum x + n\\bar{x}^{2}\\). Since \\(\\sum x = n\\bar{x}\\), the middle term is \\(-2n\\bar{x}^{2}\\), leaving \\(\\sum x^{2} - n\\bar{x}^{2}\\). Divide by \\(n\\). For \\(y = a + bx\\), every deviation becomes \\(b(x - \\bar{x})\\): the \\(a\\) cancels and squares pick up \\(b^{2}\\).",
+   "example": "Data 4, 6, 8: \\(\\sum x^{2} = 116\\), \\(n\\bar{x}^{2} = 3 \\times 36 = 108\\), difference 8. Directly: \\(4 + 0 + 4 = 8\\)."
+  },
+  "professor": {
+   "stone": "The shortcut formula is exact on paper but can fail badly on a computer.",
+   "text": "When the mean is huge next to the spread, \\(\\sum x^{2}\\) and \\(n\\bar{x}^{2}\\) are nearly equal, and subtracting them loses most of the significant digits. Stable software instead updates the mean and the sum of squared deviations one value at a time (Welford's method). The same algebra, \\(E(X^{2}) - E(X)^{2}\\), gives the variance of any random variable.",
+   "example": "For 1000000001, 1000000002, 1000000003 the variance is \\(\\frac{2}{3}\\), but \\(\\sum x^{2}\\) is about \\(3 \\times 10^{18}\\): the answer lives in digits far past what double precision (about 16) keeps."
+  }
+ },
+ {
+  "id": "IV.15.03",
+  "not": "Subtract first, then divide. For \\(x = 80\\), \\(\\mu = 70\\), \\(\\sigma = 5\\): \\(z = \\frac{80 - 70}{5} = 2\\), not \\(80 - \\frac{70}{5} = 66\\).",
+  "apples": {
+   "stone": "A z-score says how many steps from average you are.",
+   "text": "Each step is one standard deviation. A score of 2 means two steps above average. A score of −1 means one step below. It lets you compare things measured in different ways.",
+   "example": "The class average is 70, and a typical spread is 5 points. You got 80. That is 10 above, or two steps: z is 2."
+  },
+  "class": {
+   "stone": "\\[z = \\frac{x - \\mu}{\\sigma}, \\quad x = \\mu + z\\sigma\\]",
+   "text": "A z-score counts standard deviations from the mean: positive above, negative below. Standardized values have no units, so they compare across groups with different means and spreads. Values with \\(|z| > 2\\) are often called unusual. To go back, solve for \\(x\\).",
+   "example": "Math: 80 with \\(\\mu = 70\\), \\(\\sigma = 5\\) gives \\(z = 2\\). English: 85 with \\(\\mu = 80\\), \\(\\sigma = 10\\) gives \\(z = 0.5\\). The math score is more impressive. A math score with \\(z = -1.5\\) is \\(70 - 7.5 = 62.5\\)."
+  },
+  "proof": {
+   "stone": "Shifting sets the mean to 0; scaling sets the standard deviation to 1.",
+   "text": "Subtracting \\(\\mu\\) from every value moves the mean to 0 and leaves the spread alone. Dividing every value by \\(\\sigma\\) divides the standard deviation by \\(\\sigma\\), making it 1. So any data set, after standardizing, has mean 0 and standard deviation 1, and its z-scores are directly comparable.",
+   "example": "Data 2, 4, 6 (\\(\\mu = 4\\), \\(\\sigma = \\sqrt{\\frac{8}{3}} \\approx 1.633\\)) becomes \\(z \\approx -1.225, 0, 1.225\\): mean 0, standard deviation 1."
+  },
+  "professor": {
+   "stone": "Chebyshev: in any data set, at most \\(\\frac{1}{k^{2}}\\) of values have \\(|z| \\ge k\\).",
+   "text": "This holds for every distribution, not just bell-shaped ones, because values far out add at least \\(k^{2}\\sigma^{2}\\) each to the sum of squared deviations. It explains why \\(|z| > 2\\) is rare in general and very rare for normal data. The bound is sharp: some distributions reach it exactly.",
+   "example": "At most \\(\\frac{1}{4} = 25\\) percent of any data lies 2 or more standard deviations out. For normal data the true figure is about 4.6%."
+  }
+ },
+ {
+  "id": "IV.15.04",
+  "not": "E(X) is not the most likely value. For a die, \\(E(X) = 3.5\\), a value that never comes up.",
+  "apples": {
+   "stone": "A random number has a list of possible values and their chances.",
+   "text": "Toss two coins and count the heads. You can get 0, 1 or 2. Each has a chance, and the chances add up to the whole. The average over many tries is the expected value.",
+   "example": "Two coins: 0 heads a quarter of the time, 1 head half the time, 2 heads a quarter of the time. On average you get 1 head."
+  },
+  "class": {
+   "stone": "\\[E(X) = \\sum x\\,P(X = x), \\quad \\mathrm{Var}(X) = \\sum (x - \\mu)^{2} P(X = x)\\]",
+   "text": "A discrete random variable \\(X\\) is given by a table of values and probabilities. Every probability lies between 0 and 1, and they sum to 1. The mean \\(\\mu = E(X)\\) weights each value by its probability. The variance weights each squared deviation the same way, and equals \\(E(X^{2}) - \\mu^{2}\\).",
+   "example": "Heads in two tosses: values 0, 1, 2 with probabilities 0.25, 0.5, 0.25. \\(E(X) = 0 + 0.5 + 0.5 = 1\\). \\(E(X^{2}) = 0 + 0.5 + 1 = 1.5\\), so \\(\\mathrm{Var}(X) = 1.5 - 1 = 0.5\\)."
+  },
+  "proof": {
+   "stone": "E(X) is the data mean with probabilities in place of frequencies.",
+   "text": "In \\(N\\) trials, value \\(x\\) appears about \\(N\\,P(X = x)\\) times. The average of all results is \\(\\frac{1}{N}\\sum x \\cdot N\\,P(X = x) = \\sum x\\,P(X = x)\\). The same reasoning turns the data variance into \\(\\sum (x - \\mu)^{2} P(X = x)\\), and expanding the square gives \\(E(X^{2}) - \\mu^{2}\\).",
+   "example": "A die: \\(E(X) = \\frac{21}{6} = 3.5\\), \\(E(X^{2}) = \\frac{91}{6}\\), so \\(\\mathrm{Var}(X) = \\frac{91}{6} - \\frac{49}{4} = \\frac{35}{12} \\approx 2.917\\)."
+  },
+  "professor": {
+   "stone": "Expectation is linear, even when the variables are dependent.",
+   "text": "A random variable is really a function on the sample space, and \\(E(X + Y) = E(X) + E(Y)\\) always holds. Variances add only when the variables are uncorrelated. Linearity makes hard counts easy: write the count as a sum of 0–1 indicators.",
+   "example": "Shuffle \\(n\\) letters into \\(n\\) envelopes. Each letter lands right with chance \\(\\frac{1}{n}\\), so the expected number of matches is \\(n \\times \\frac{1}{n} = 1\\), for every \\(n\\)."
+  }
+ },
+ {
+  "id": "IV.15.05",
+  "not": "Drawing without replacement is not binomial. Draw 5 cards and count hearts: after a heart, the chance of the next heart drops from \\(\\frac{13}{52}\\) to \\(\\frac{12}{51}\\), so \\(p\\) is not fixed.",
+  "apples": {
+   "stone": "Binomial means doing the same yes-or-no try a set number of times.",
+   "text": "Flip a coin 10 times and count heads. Each flip is heads or not. Every flip has the same chance. One flip doesn't change the next. That is a binomial situation.",
+   "example": "Shoot 20 free throws, each going in 70% of the time, and count the baskets. That is binomial: 20 tries, the same 70% each time."
+  },
+  "class": {
+   "stone": "\\[X \\sim B(n, p)\\]",
+   "text": "\\(X\\) is binomial when four conditions hold: each trial is a success or failure; the trials are independent; the number of trials \\(n\\) is fixed in advance; the success probability \\(p\\) is the same on every trial. \\(X\\) counts the successes, so it takes values 0 to \\(n\\). If one condition fails, the model fails.",
+   "example": "Roll a die 12 times and count sixes: \\(n = 12\\), \\(p = \\frac{1}{6}\\), binomial. Roll until the first six: \\(n\\) is not fixed, not binomial."
+  },
+  "proof": {
+   "stone": "Independence and a fixed \\(p\\) make every path with \\(k\\) successes equally likely.",
+   "text": "A trial sequence is a string of S and F. Independence lets the chance of a string be the product of its trial chances. A fixed \\(p\\) makes that product \\(p^{k}(1 - p)^{n - k}\\) for any string with \\(k\\) successes. Only then can we count strings instead of tracking each one, which is what the binomial formula does.",
+   "example": "With \\(p = 0.7\\), both SSF and FSS have chance \\(0.7 \\times 0.7 \\times 0.3 = 0.147\\). Without independence or a fixed \\(p\\), they could differ."
+  },
+  "professor": {
+   "stone": "Jacob Bernoulli studied these repeated trials in Ars Conjectandi, published in 1713.",
+   "text": "That book proved the first law of large numbers: the fraction of successes settles near \\(p\\). Sampling without replacement follows the hypergeometric distribution instead, but it is close to binomial when the sample is a small part of the population, commonly under 10%.",
+   "example": "Choose 10 people from a town of 10000, 40% in favor. Hypergeometric and \\(B(10, 0.4)\\) agree closely, so the binomial is used."
+  }
+ },
+ {
+  "id": "IV.15.06",
+  "not": "'At least 1' is not \\(P(X = 1)\\). For 4 dice, \\(P(\\text{at least one six}) = 1 - (\\frac{5}{6})^{4} \\approx 0.518\\), not \\(P(X = 1) \\approx 0.386\\).",
+  "apples": {
+   "stone": "Count the ways, then multiply by the chance of one way.",
+   "text": "Two heads in five flips can happen in many orders, like HHTTT or THTHT. There are 10 such orders. Each has the same small chance. Add them all up.",
+   "example": "Five fair flips have 32 equally likely results. Ten of them have exactly two heads, so the chance is 10 out of 32."
+  },
+  "class": {
+   "stone": "\\[P(X = k) = \\binom{n}{k} p^{k} (1 - p)^{n - k}\\]",
+   "text": "This gives the chance of exactly \\(k\\) successes. For a cumulative probability \\(P(X \\le k)\\), add the terms from 0 to \\(k\\). 'At least' is usually quickest by the complement: \\(P(X \\ge k) = 1 - P(X \\le k - 1)\\). Calculators give these as binomial pdf and binomial cdf.",
+   "example": "\\(B(10, 0.2)\\): \\(P(X = 0) \\approx 0.1074\\), \\(P(X = 1) \\approx 0.2684\\), \\(P(X = 2) \\approx 0.3020\\). So \\(P(X \\le 2) \\approx 0.6778\\) and \\(P(X \\ge 2) = 1 - 0.1074 - 0.2684 \\approx 0.6242\\)."
+  },
+  "proof": {
+   "stone": "\\(\\binom{n}{k}\\) orders, each with chance \\(p^{k}(1 - p)^{n - k}\\).",
+   "text": "An outcome with exactly \\(k\\) successes is fixed by which \\(k\\) of the \\(n\\) trials succeed: \\(\\binom{n}{k}\\) choices. By independence each such outcome has chance \\(p^{k}(1 - p)^{n - k}\\). The outcomes are disjoint, so their chances add.",
+   "example": "\\(B(5, 0.5)\\): \\(\\binom{5}{2} = 10\\) orders, each \\(0.5^{5} = \\frac{1}{32}\\), so \\(P(X = 2) = \\frac{10}{32} = 0.3125\\)."
+  },
+  "professor": {
+   "stone": "All the binomial probabilities together are the binomial theorem.",
+   "text": "\\(\\sum_{k=0}^{n} \\binom{n}{k} p^{k} q^{n - k} = (p + q)^{n} = 1\\) when \\(q = 1 - p\\). So the table sums to 1 for free. When \\(n\\) is large and \\(p\\) small with \\(np\\) fixed, the terms approach the Poisson probabilities \\(e^{-\\lambda}\\frac{\\lambda^{k}}{k!}\\) with \\(\\lambda = np\\).",
+   "example": "\\(B(1000, 0.002)\\) has \\(P(X = 0) = 0.998^{1000} \\approx 0.1351\\), and Poisson with \\(\\lambda = 2\\) gives \\(e^{-2} \\approx 0.1353\\)."
+  }
+ },
+ {
+  "id": "IV.15.07",
+  "not": "The standard deviation is \\(\\sqrt{np(1 - p)}\\), not \\(np(1 - p)\\). For \\(n = 100\\), \\(p = 0.5\\): \\(\\sigma = \\sqrt{25} = 5\\), not 25.",
+  "apples": {
+   "stone": "Expect the number of tries times the chance.",
+   "text": "Flip a coin 100 times. You expect about 50 heads, since half of 100 is 50. You won't get exactly 50 every time. Usually you land within about 5 of it.",
+   "example": "A player makes 70% of free throws. In 20 shots, expect 14 baskets."
+  },
+  "class": {
+   "stone": "\\[\\mu = np, \\quad \\sigma = \\sqrt{np(1 - p)}\\]",
+   "text": "For \\(X \\sim B(n, p)\\), the mean is the long-run average count of successes, and \\(\\sigma\\) is the typical distance from it. The distribution is symmetric when \\(p = 0.5\\), skewed right for small \\(p\\), and skewed left for large \\(p\\). It looks roughly normal when \\(np \\ge 10\\) and \\(n(1 - p) \\ge 10\\).",
+   "example": "\\(B(10, 0.2)\\): \\(\\mu = 2\\), \\(\\sigma = \\sqrt{1.6} \\approx 1.265\\), skewed right. \\(B(100, 0.5)\\): \\(\\mu = 50\\), \\(\\sigma = 5\\), close to a bell."
+  },
+  "proof": {
+   "stone": "A binomial is a sum of \\(n\\) independent 0–1 variables.",
+   "text": "Let each trial \\(Y_{i}\\) be 1 for success and 0 for failure. Then \\(E(Y_{i}) = p\\) and \\(E(Y_{i}^{2}) = p\\), so \\(\\mathrm{Var}(Y_{i}) = p - p^{2} = p(1 - p)\\). Since \\(X = Y_{1} + \\ldots + Y_{n}\\), means add to \\(np\\), and because the trials are independent, variances add to \\(np(1 - p)\\).",
+   "example": "\\(B(3, 0.5)\\): values 0, 1, 2, 3 with chances \\(\\frac{1}{8}, \\frac{3}{8}, \\frac{3}{8}, \\frac{1}{8}\\). Mean \\(\\frac{12}{8} = 1.5 = 3 \\times 0.5\\). Variance \\(\\frac{24}{8} - 2.25 = 0.75 = 3 \\times 0.25\\)."
+  },
+  "professor": {
+   "stone": "Abraham de Moivre found that binomial shapes approach the bell curve.",
+   "text": "He showed it for fair coins, and Laplace extended it to any \\(p\\): the de Moivre–Laplace theorem, the first central limit theorem. The spread \\(\\sqrt{np(1 - p)}\\) grows like \\(\\sqrt{n}\\), so the proportion \\(\\frac{X}{n}\\) has spread \\(\\sqrt{\\frac{p(1 - p)}{n}}\\), which shrinks.",
+   "example": "100 flips: \\(\\sigma = 5\\) heads, or 0.05 as a proportion. 10000 flips: \\(\\sigma = 50\\) heads, yet only 0.005 as a proportion."
+  }
+ },
+ {
+  "id": "IV.15.08",
+  "not": "The 68–95–99.7 rule counts both sides. About 95% of values lie within 2 standard deviations of the mean, so about 2.5% lie above \\(\\mu + 2\\sigma\\), not 5%.",
+  "apples": {
+   "stone": "Many measurements pile up in a bell shape around the average.",
+   "text": "Measure the heights of many adults. Most are near the middle. Fewer are very tall or very short. Draw it and you get a smooth hill that is the same on both sides.",
+   "example": "If heights average 170 cm with a typical spread of 10 cm, about 2 in 3 people are between 160 and 180 cm."
+  },
+  "class": {
+   "stone": "\\[X \\sim N(\\mu, \\sigma^{2})\\]",
+   "text": "A normal distribution is a symmetric bell curve centered at the mean \\(\\mu\\), with spread set by \\(\\sigma\\); the inflection points sit at \\(\\mu \\pm \\sigma\\). About 68%, 95% and 99.7% of values lie within 1, 2 and 3 standard deviations of the mean. To judge whether data are roughly normal, check a histogram for a single symmetric peak, or a normal probability plot for a straight line.",
+   "example": "Heights \\(N(170, 10^{2})\\): about 68% between 160 and 180, 95% between 150 and 190, 99.7% between 140 and 200. About 16% are over 180."
+  },
+  "proof": {
+   "stone": "Every normal curve is the standard one, shifted and stretched.",
+   "text": "If \\(X \\sim N(\\mu, \\sigma^{2})\\), then \\(Z = \\frac{X - \\mu}{\\sigma} \\sim N(0, 1)\\). The event 'within \\(k\\) standard deviations' becomes \\(|Z| \\le k\\), whose chance doesn't depend on \\(\\mu\\) or \\(\\sigma\\). Computing those three areas once gives the rule for all normals.",
+   "example": "Exact areas: \\(P(|Z| \\le 1) \\approx 0.6827\\), \\(P(|Z| \\le 2) \\approx 0.9545\\), \\(P(|Z| \\le 3) \\approx 0.9973\\)."
+  },
+  "professor": {
+   "stone": "The bell has an exact formula built from \\(e\\) and \\(\\pi\\).",
+   "text": "\\[f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{(x - \\mu)^{2}}{2\\sigma^{2}}}\\] The \\(\\sqrt{2\\pi}\\) comes from \\(\\int e^{-x^{2}}\\,dx = \\sqrt{\\pi}\\) over the whole line. The central limit theorem explains its reach: sums of many small independent effects are approximately normal whatever their own shape.",
+   "example": "Sum 12 random numbers from 0 to 1 and subtract 6: mean 0, variance \\(12 \\times \\frac{1}{12} = 1\\), and a shape already close to \\(N(0, 1)\\)."
+  }
+ },
+ {
+  "id": "IV.15.09",
+  "not": "Table values are areas to the left. For \\(z = 1\\), \\(P(Z \\le 1) \\approx 0.8413\\), so \\(P(Z \\ge 1) \\approx 0.1587\\), not 0.8413.",
+  "apples": {
+   "stone": "Turn the value into steps from average, then read off the share.",
+   "text": "IQ scores average 100 with steps of 15. A score of 115 is one step above. About 84 out of 100 people score below that. A table or calculator gives the exact share.",
+   "example": "Scoring above 130 is two steps up. Only about 2 people in 100 do that."
+  },
+  "class": {
+   "stone": "\\[P(a \\le X \\le b) = P\\left(\\frac{a - \\mu}{\\sigma} \\le Z \\le \\frac{b - \\mu}{\\sigma}\\right)\\]",
+   "text": "Standardize, then use the standard normal table or a calculator's normal cdf. For 'between', subtract two left areas. For the inverse problem, find the \\(z\\) with the given left area and convert back with \\(x = \\mu + z\\sigma\\). For a continuous variable, \\(\\le\\) and \\(<\\) give the same answer.",
+   "example": "\\(N(100, 15^{2})\\): \\(P(85 \\le X \\le 130) = \\Phi(2) - \\Phi(-1) \\approx 0.9772 - 0.1587 = 0.8186\\). Top 10%: \\(z \\approx 1.2816\\), so \\(x \\approx 100 + 19.2 = 119.2\\)."
+  },
+  "proof": {
+   "stone": "\\(X \\le b\\) exactly when \\(Z \\le \\frac{b - \\mu}{\\sigma}\\).",
+   "text": "Standardizing is increasing, so it keeps the order of values and turns events about \\(X\\) into the same events about \\(Z\\). Then \\(P(a \\le X \\le b) = \\Phi(z_{b}) - \\Phi(z_{a})\\), where \\(\\Phi\\) is the left area under the standard curve. Symmetry gives \\(\\Phi(-z) = 1 - \\Phi(z)\\), so only positive \\(z\\) needs tabulating.",
+   "example": "\\(\\Phi(-1) = 1 - \\Phi(1) \\approx 1 - 0.8413 = 0.1587\\). And \\(P(X \\ge 118) = 1 - \\Phi(1.2) \\approx 0.1151\\)."
+  },
+  "professor": {
+   "stone": "\\(\\Phi\\) has no formula in elementary functions.",
+   "text": "The antiderivative of \\(e^{-x^{2}}\\) is not elementary, a fact provable with Liouville's theory of integration. So tables and calculators rely on series or numerical approximations. Tail areas shrink faster than any power: \\(1 - \\Phi(z)\\) is roughly \\(\\frac{1}{z\\sqrt{2\\pi}} e^{-\\frac{z^{2}}{2}}\\) for large \\(z\\).",
+   "example": "\\(1 - \\Phi(1.5) \\approx 0.0668\\), but \\(1 - \\Phi(6)\\) is about 1 in a billion."
+  }
+ },
+ {
+  "id": "IV.15.10",
+  "not": "Correlation is not causation. Ice cream sales and drownings rise together, but hot weather drives both; banning ice cream won't prevent drownings.",
+  "apples": {
+   "stone": "Dots going up together means the two things tend to rise together.",
+   "text": "Plot each person as a dot: height across, shoe size up. The dots drift upward in a band. A tight band means a strong link, a loose cloud a weak one. But going together doesn't mean one causes the other.",
+   "example": "Taller kids usually have bigger feet. Big feet don't make you tall; both come from growing."
+  },
+  "class": {
+   "stone": "\\[r = \\frac{1}{n - 1}\\sum \\left(\\frac{x - \\bar{x}}{s_{x}}\\right)\\left(\\frac{y - \\bar{y}}{s_{y}}\\right)\\]",
+   "text": "Describe a scatter plot by direction (positive or negative), form (linear or curved) and strength. The correlation \\(r\\) measures linear strength only, runs from \\(-1\\) to 1, and has no units. A strong \\(r\\) does not show causation: a lurking variable can drive both. One outlier can change \\(r\\) a lot.",
+   "example": "Points \\((1, 2), (2, 4), (3, 5), (4, 4), (5, 5)\\): \\(r \\approx 0.775\\), fairly strong positive. Add \\((10, 0)\\) and \\(r \\approx -0.553\\): one point flips the sign."
+  },
+  "proof": {
+   "stone": "\\(r\\) averages products of z-scores, so points in agreeing corners push it up.",
+   "text": "A point above both means, or below both, has z-scores of the same sign and a positive product; a point in the other two corners gives a negative one. Their average is \\(r\\). By the Cauchy–Schwarz inequality, \\(|\\sum z_{x} z_{y}| \\le \\sqrt{\\sum z_{x}^{2}}\\sqrt{\\sum z_{y}^{2}} = n - 1\\), so \\(|r| \\le 1\\), with equality exactly when the points lie on a line.",
+   "example": "For the five points above, \\(\\bar{x} = 3\\), \\(\\bar{y} = 4\\): \\(\\sum (x - \\bar{x})(y - \\bar{y}) = 6\\), \\(\\sum (x - \\bar{x})^{2} = 10\\), \\(\\sum (y - \\bar{y})^{2} = 6\\), so \\(r = \\frac{6}{\\sqrt{60}} \\approx 0.775\\)."
+  },
+  "professor": {
+   "stone": "\\(r\\) is the cosine of the angle between two centered data vectors.",
+   "text": "Subtract the means and treat the \\(x\\) and \\(y\\) columns as vectors in \\(\\mathbb{R}^{n}\\): \\(r\\) is their dot product over their lengths. Anscombe's quartet shows why you must plot first: four data sets with the same means, variances and \\(r \\approx 0.816\\) look nothing alike. And \\(r = 0\\) means no linear link, not no link.",
+   "example": "Points \\((-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4)\\) lie exactly on \\(y = x^{2}\\), yet \\(r = 0\\)."
+  }
+ }
+]

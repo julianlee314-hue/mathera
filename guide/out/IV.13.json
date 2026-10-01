@@ -1,0 +1,146 @@
+{
+  "branch": "IV.13",
+  "intro": "A sequence is a list of numbers following a pattern, and a series is what you get by adding them up. This branch covers the main patterns, quick ways to add long lists, and real uses such as savings plans and loans.",
+  "skills": {
+    "IV.13.01": {
+      "what": "Using the notation for sequences, where a with a small n means the nth number in the list.",
+      "levels": {
+        "a": "Picks out a numbered term from a list.",
+        "b": "Uses a formula to find a given term.",
+        "c": "Tells a sequence that ends from one that goes on forever.",
+        "d": "Writes a formula for the nth term from the first few terms.",
+        "e": "Works backwards to find which term has a given value.",
+        "f": "Finds a term far down a list with a clever insight instead of listing."
+      }
+    },
+    "IV.13.02": {
+      "what": "Working with arithmetic sequences, which go up or down by the same amount each step, like 3, 7, 11, 15.",
+      "levels": {
+        "a": "Finds the fixed step, called the common difference.",
+        "b": "Writes a formula for any term, where the step acts like a slope.",
+        "c": "Finds a term far down the list.",
+        "d": "Finds which term has a given value."
+      }
+    },
+    "IV.13.03": {
+      "what": "Working with geometric sequences, where each term is multiplied by the same number, like 2, 6, 18, 54.",
+      "levels": {
+        "a": "Finds the fixed multiplier, called the common ratio.",
+        "b": "Writes a formula for any term.",
+        "c": "Finds a term far down the list, including with a negative multiplier.",
+        "d": "Finds which term has a given value, using logarithms if needed."
+      }
+    },
+    "IV.13.04": {
+      "what": "Comparing recursive rules (each term from the one before) with explicit formulas (any term directly from its position).",
+      "levels": {
+        "a": "Explains a step-by-step rule in words.",
+        "b": "Generates the next few terms from the rule.",
+        "c": "Turns a step-by-step rule into a direct formula.",
+        "d": "Decides which kind of rule suits a given pattern.",
+        "e": "Works backwards through the rule to find the first term.",
+        "f": "Finds a far term by spotting that the sequence repeats in a cycle."
+      }
+    },
+    "IV.13.05": {
+      "what": "Adding up an arithmetic sequence quickly, using the trick of pairing first with last.",
+      "levels": {
+        "a": "Adds 1 up to a large number by pairing terms from each end.",
+        "b": "Uses the sum formula for any arithmetic list.",
+        "c": "Finds how many terms or what first term gives a certain total.",
+        "d": "Solves stacking and seating problems, like seats in a theater.",
+        "e": "Finds a term and the step from a formula for the running total.",
+        "f": "Finds one total from two others that are linked."
+      }
+    },
+    "IV.13.06": {
+      "what": "Adding up a geometric sequence with a set number of terms, using a formula.",
+      "levels": {
+        "a": "Identifies the first term, multiplier and number of terms for the formula.",
+        "b": "Adds up the terms by multiplying the sum and subtracting, so the middle terms cancel.",
+        "c": "Applies the formula, including with a negative multiplier.",
+        "d": "Finds how many terms give a certain total."
+      }
+    },
+    "IV.13.07": {
+      "what": "Using sigma notation, the Greek letter sigma used as shorthand for \"add up all of these\".",
+      "levels": {
+        "a": "Reads the shorthand: how many terms, and what the first one is.",
+        "b": "Writes out and adds the terms.",
+        "c": "Writes a long sum using the shorthand.",
+        "d": "Uses rules for sums to evaluate quickly.",
+        "e": "Handles sums that start at a later term.",
+        "f": "Adds a sum in which nearly every term cancels with its neighbor."
+      }
+    },
+    "IV.13.08": {
+      "what": "Adding up an infinite geometric series, which can have a finite total when the terms shrink fast enough.",
+      "levels": {
+        "a": "Tells whether an endless sum settles to a total, by checking the multiplier.",
+        "b": "Uses the formula to find the total.",
+        "c": "Writes a repeating decimal, like 0.777 and so on, as a fraction.",
+        "d": "Handles sums starting later, and problems like a bouncing ball.",
+        "e": "Finds when a sum with an unknown settles, or works backwards from the total.",
+        "f": "Finds the first term and multiplier from two different totals."
+      }
+    },
+    "IV.13.09": {
+      "what": "Seeing informally whether an endless sum settles to a total (converges) or keeps growing (diverges).",
+      "levels": {
+        "a": "Works out running totals of the first few terms.",
+        "b": "Decides whether an endless sum settles or grows without limit.",
+        "c": "Sees the surprise that one plus a half plus a third and so on grows forever.",
+        "d": "Uses a table and graph of running totals to see where they head."
+      }
+    },
+    "IV.13.10": {
+      "what": "Exploring famous sequences, such as the Fibonacci numbers (each the sum of the two before) and triangular numbers.",
+      "levels": {
+        "a": "Continues the Fibonacci sequence.",
+        "b": "Finds the golden ratio that the Fibonacci ratios approach.",
+        "c": "Finds triangular and square numbers.",
+        "d": "Spots the pattern and continues a sequence."
+      }
+    },
+    "IV.13.11": {
+      "what": "Using ready-made shortcut formulas to add up whole numbers, their squares or their cubes, without adding every term.",
+      "levels": {
+        "a": "Adds up 1, 2, 3 and so on to a given number with a shortcut formula.",
+        "b": "Adds up square numbers (a number times itself) with their own formula.",
+        "c": "Adds up cubes (a number times itself three times) with their formula.",
+        "d": "Splits a mixed sum into whole numbers, squares and plain numbers, then combines the formulas."
+      }
+    },
+    "IV.13.12": {
+      "what": "Exploring Pascal's triangle, a triangle of numbers where each is the sum of the two above it.",
+      "levels": {
+        "a": "Builds the next row of the triangle.",
+        "b": "Spots patterns in the rows, such as how many entries each has.",
+        "c": "Links the entries to counting choices, such as choosing 4 of 6 questions.",
+        "d": "Knows each row adds up to a power of 2.",
+        "e": "Uses the hockey-stick pattern to add a diagonal quickly.",
+        "f": "Finds hidden patterns, such as how many odd numbers a row has."
+      }
+    },
+    "IV.13.13": {
+      "what": "Using the binomial theorem to multiply out a bracket raised to a power, like (x minus 2) to the 5th, without doing it step by step.",
+      "levels": {
+        "a": "Uses Pascal's triangle to find the numbers in an expansion.",
+        "b": "Multiplies out a bracket raised to a power.",
+        "c": "Finds one particular term without writing them all.",
+        "d": "Handles brackets with negatives and numbers in front.",
+        "e": "Finds the term with no x in it.",
+        "f": "Uses shortcuts, like finding the total of all the numbers at once."
+      }
+    },
+    "IV.13.14": {
+      "what": "Using series to handle money over time, such as regular savings, loan payments and pensions.",
+      "levels": {
+        "a": "Works out a savings balance after regular yearly deposits.",
+        "b": "Tracks a loan as interest is added and payments are made.",
+        "c": "Uses the formula for regular deposits over many years.",
+        "d": "Compares a one-time investment with a regular savings plan."
+      }
+    }
+  }
+}

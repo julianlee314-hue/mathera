@@ -1,0 +1,150 @@
+{
+ "unit": "IV.14",
+ "name": "Counting & probability",
+ "skills": [
+  {
+   "id": "IV.14.01",
+   "name": "Factorials & counting",
+   "steps": {
+    "a": "the multiplication principle",
+    "b": "n!",
+    "c": "arrange every object",
+    "d": "simplify factorial expressions"
+   },
+   "wrong_turn": "A factorial ratio cancels, it doesn't divide the numbers. (6!3!)=6×5×4=120, not 2!=2.",
+   "rule": "n!=n×(n−1)×…×2×1,0!=1"
+  },
+  {
+   "id": "IV.14.02",
+   "name": "Permutations",
+   "steps": {
+    "a": "arrange r of n",
+    "b": "the ⁿPᵣ formula",
+    "c": "with repeated letters",
+    "d": "circular arrangements"
+   },
+   "wrong_turn": "Repeated letters don't make new words. BOOK has 4!/2! = 12 arrangements, not 4! = 24: swapping the two O's changes nothing.",
+   "rule": "nPr=(n!(n−r)!)"
+  },
+  {
+   "id": "IV.14.03",
+   "name": "Combinations",
+   "steps": {
+    "a": "choose r of n",
+    "b": "the ⁿCᵣ formula",
+    "c": "does order matter?",
+    "d": "link to Pascal's triangle"
+   },
+   "wrong_turn": "If order doesn't matter, don't use nPr. A 3-person committee from 10 people is ((103))=120, not 10P3=720.",
+   "rule": "((nr))=(n!r!(n−r)!)"
+  },
+  {
+   "id": "IV.14.04",
+   "name": "Counting with conditions",
+   "steps": {
+    "a": "must include or exclude",
+    "b": "\"at least\" by the complement",
+    "c": "objects kept together",
+    "d": "committees with rules"
+   },
+   "wrong_turn": "Don't count “at least one” by fixing one and choosing the rest freely. From 4 boys and 5 girls, 3-person committees with at least one girl number 84−4=80, not 5×((82))=140, which counts some committees twice or more.",
+   "rule": "at least one=total−none"
+  },
+  {
+   "id": "IV.14.05",
+   "name": "Probability by counting",
+   "steps": {
+    "a": "equally likely outcomes",
+    "b": "cards and dice",
+    "c": "using combinations",
+    "d": "lottery odds"
+   },
+   "wrong_turn": "Outcomes must be equally likely. Two dice have 11 possible sums, but P(sum 7)=(636)=(16), not (111).",
+   "rule": "P(A)=(outcomes in Aall outcomes)"
+  },
+  {
+   "id": "IV.14.06",
+   "name": "Addition rule",
+   "steps": {
+    "a": "\"or\" events",
+    "b": "mutually exclusive events",
+    "c": "subtract the overlap",
+    "d": "Venn diagrams"
+   },
+   "wrong_turn": "Don't just add when events overlap. P(heart or king)=(1352)+(452)−(152)=(1652), not (1752).",
+   "rule": "P(A∪B)=P(A)+P(B)−P(A∩B)"
+  },
+  {
+   "id": "IV.14.07",
+   "name": "Complements & \"at least one\"",
+   "steps": {
+    "a": "P(not A)",
+    "b": "at least one, by the complement",
+    "c": "repeated trials",
+    "d": "the birthday problem"
+   },
+   "wrong_turn": "Don't multiply the single chance by the number of tries. At least one six in 4 rolls is 1−((56))4≈0.518, not 4×(16)=(23).",
+   "rule": "P(at least one)=1−P(none)"
+  },
+  {
+   "id": "IV.14.08",
+   "name": "Independent events",
+   "steps": {
+    "a": "the multiplication rule",
+    "b": "test for independence",
+    "c": "with replacement",
+    "d": "independent vs mutually exclusive"
+   },
+   "wrong_turn": "Independent is not the same as mutually exclusive. If A and B can't both happen, with P(A)=0.5 and P(B)=0.4, then P(A∩B)=0, not 0.2: they are dependent.",
+   "rule": "P(A∩B)=P(A)P(B)"
+  },
+  {
+   "id": "IV.14.09",
+   "name": "Conditional probability",
+   "steps": {
+    "a": "what P(A | B) means",
+    "b": "from a two-way table",
+    "c": "the formula",
+    "d": "without replacement"
+   },
+   "wrong_turn": "Don't flip the condition. If 12 of 30 athletes are seniors and there are 40 seniors, P(senior∣athlete)=(1230)=0.4, but P(athlete∣senior)=(1240)=0.3.",
+   "rule": "P(A∣B)=(P(A∩B)P(B)),P(B)>0"
+  },
+  {
+   "id": "IV.14.10",
+   "name": "Tree diagrams",
+   "steps": {
+    "a": "multiply along branches",
+    "b": "add the paths",
+    "c": "conditional branches",
+    "d": "reverse a tree"
+   },
+   "wrong_turn": "Multiply along a branch, add across paths. Two reds from 3 red and 2 blue without replacement is (35)×(24)=(310), not (35)+(24).",
+   "rule": "P(A∩B)=P(A)P(B∣A)"
+  },
+  {
+   "id": "IV.14.11",
+   "name": "Bayes' theorem",
+   "steps": {
+    "a": "the formula",
+    "b": "medical test problems",
+    "c": "the base-rate trap",
+    "d": "with a tree or a table"
+   },
+   "wrong_turn": "Don't confuse P(sick given positive) with P(positive given sick). A test that is 99% right both ways, for a disease 1 in 1000 people have, gives positives that are right only about 9% of the time.",
+   "rule": "P(A∣B)=(P(B∣A)P(A)P(B))"
+  },
+  {
+   "id": "IV.14.12",
+   "name": "Expected value",
+   "steps": {
+    "a": "a weighted average of outcomes",
+    "b": "fair games",
+    "c": "insurance and lotteries",
+    "d": "decide by expected value"
+   },
+   "wrong_turn": "Expected value is a weighted average, not a plain average of the outcomes. A game paying 10 dollars with chance 0.1 and nothing otherwise is worth 1 dollar, not (10 + 0)/2 = 5 dollars.",
+   "rule": "E(X)=∑xipi"
+  }
+ ]
+}

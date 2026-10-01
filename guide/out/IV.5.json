@@ -1,0 +1,77 @@
+{
+  "branch": "IV.5",
+  "intro": "This branch works with roots (like square roots) and powers, including fractional powers. Learners simplify them, calculate with them, and solve equations that contain them.",
+  "skills": {
+    "IV.5.01": {
+      "what": "Simplifying a root, like the square root of 192, by pulling whole squares out from under the root sign.",
+      "levels": {
+        "a": "Pulls perfect-square factors out of a square root, like the square root of 192 becoming 8 root 3.",
+        "b": "Does the same when letters appear under the root.",
+        "c": "Simplifies cube roots by pulling out perfect cubes.",
+        "d": "Simplifies fourth roots and higher.",
+        "e": "Factors numbers first to simplify a root of a product without multiplying it out.",
+        "f": "Simplifies a root that has another root nested inside it."
+      }
+    },
+    "IV.5.02": {
+      "what": "Adding and subtracting roots, which works only when the roots match, like adding apples to apples.",
+      "levels": {
+        "a": "Adds and subtracts matching roots, like 8 root 2 plus 6 root 2.",
+        "b": "Simplifies roots first so they match, then combines them.",
+        "c": "Does the same with letters under the roots.",
+        "d": "Recognizes roots that cannot be combined, even after simplifying."
+      }
+    },
+    "IV.5.03": {
+      "what": "Multiplying expressions that contain roots.",
+      "levels": {
+        "a": "Multiplies two square roots by multiplying the numbers inside.",
+        "b": "Multiplies a root across a bracket.",
+        "c": "Multiplies two brackets containing roots, term by term.",
+        "d": "Multiplies matching pairs like 8 minus 3 root 6 and 8 plus 3 root 6, where the roots vanish."
+      }
+    },
+    "IV.5.04": {
+      "what": "Rewriting a fraction so there is no root in the bottom, called rationalizing the denominator.",
+      "levels": {
+        "a": "Removes a single square root from the bottom of a fraction.",
+        "b": "Removes a cube root from the bottom.",
+        "c": "Removes a root from a bottom like 5 minus 2 root 2 by using its matching pair.",
+        "d": "Simplifies the result fully.",
+        "e": "Handles bottoms with two roots multiplied by numbers, or two fractions at once.",
+        "f": "Handles bottoms with cube roots or three terms."
+      }
+    },
+    "IV.5.05": {
+      "what": "Understanding fractional powers, such as a number to the power one half, which means its square root.",
+      "levels": {
+        "a": "Evaluates a power of one half or one third as a square or cube root.",
+        "b": "Evaluates powers like four thirds: take the root, then raise to the power.",
+        "c": "Converts between fractional powers and root signs, both ways.",
+        "d": "Simplifies using the usual power rules, like adding powers when multiplying.",
+        "e": "Solves equations where the unknown is raised to a fractional power.",
+        "f": "Finds one power from another given power, or decides which of several powers is largest."
+      }
+    },
+    "IV.5.06": {
+      "what": "Solving equations with the unknown under a square root sign.",
+      "levels": {
+        "a": "Gets the root alone on one side.",
+        "b": "Squares both sides to remove the root.",
+        "c": "Solves the resulting equation.",
+        "d": "Checks answers, rejecting false ones that squaring can introduce.",
+        "e": "Solves equations with two roots, squaring more than once.",
+        "f": "Solves an equation that is really a squared equation in the square root of x."
+      }
+    },
+    "IV.5.07": {
+      "what": "Solving equations where the unknown is in the power, by writing both sides as powers of the same number.",
+      "levels": {
+        "a": "Rewrites numbers like 32 as a power of 2.",
+        "b": "Sets the powers equal once the bases match.",
+        "c": "Solves harder ones, including fractions and negative powers.",
+        "d": "Checks whether a value really solves the equation."
+      }
+    }
+  }
+}

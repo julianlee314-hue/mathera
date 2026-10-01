@@ -1,0 +1,114 @@
+{
+ "unit": "V.11",
+ "name": "Coordinate geometry",
+ "skills": [
+  {
+   "id": "V.11.01",
+   "name": "Distance formula",
+   "steps": {
+    "a": "derive from Pythagoras",
+    "b": "apply",
+    "c": "find a missing coordinate",
+    "d": "exact radical answers"
+   },
+   "wrong_turn": "Square, add, then take the root. √(3² + 4²) = 5, not 3 + 4 = 7.",
+   "rule": "d=(x2−x1)2+(y2−y1)2"
+  },
+  {
+   "id": "V.11.02",
+   "name": "Midpoint formula",
+   "steps": {
+    "a": "average the coordinates",
+    "b": "apply",
+    "c": "find an endpoint",
+    "d": "center of a circle from a diameter"
+   },
+   "wrong_turn": "The midpoint adds, it doesn't subtract: for (2, 6) and (8, 10) it is (5, 8), not (3, 2).",
+   "rule": "M=((x1+x22),(y1+y22))"
+  },
+  {
+   "id": "V.11.03",
+   "name": "Partition a segment",
+   "steps": {
+    "a": "ratio a : b",
+    "b": "fraction of the way",
+    "c": "formula",
+    "d": "check on a graph"
+   },
+   "wrong_turn": "Ratio 1 : 3 means 1/4 of the way, not 1/3. The parts are 1 and 3 out of 4.",
+   "rule": "To split AB in the ratio a:b, go t=(aa+b) of the way: P=A+t(B−A)."
+  },
+  {
+   "id": "V.11.04",
+   "name": "Slope criteria",
+   "steps": {
+    "a": "prove parallel sides",
+    "b": "prove perpendicular sides",
+    "c": "find a missing vertex",
+    "d": "right angle tests"
+   },
+   "wrong_turn": "Perpendicular slopes are negative reciprocals, not just negatives: perpendicular to 2/3 is −3/2, not −2/3.",
+   "rule": "Parallel: m1=m2. Perpendicular: m1m2=−1."
+  },
+  {
+   "id": "V.11.05",
+   "name": "Special lines",
+   "steps": {
+    "a": "perpendicular bisector equation",
+    "b": "altitude equation",
+    "c": "median equation",
+    "d": "find where they meet"
+   },
+   "wrong_turn": "A median goes to the midpoint of the opposite side; an altitude meets it at a right angle. They coincide only in special triangles.",
+   "rule": "Perpendicular bisector: midpoint, perpendicular. Altitude: vertex, perpendicular to the opposite side. Median: vertex to opposite midpoint."
+  },
+  {
+   "id": "V.11.06",
+   "name": "Perimeter & area on the plane",
+   "steps": {
+    "a": "perimeter with distances",
+    "b": "area by enclosing box",
+    "c": "shoelace formula",
+    "d": "compare methods"
+   },
+   "wrong_turn": "The shoelace formula needs the vertices in order around the shape. Jump across the polygon and the area comes out wrong.",
+   "rule": "Perimeter: add the side lengths. Area: box and subtract, or use the shoelace formula."
+  },
+  {
+   "id": "V.11.07",
+   "name": "Point-to-line distance",
+   "steps": {
+    "a": "drop a perpendicular",
+    "b": "find the foot",
+    "c": "the formula",
+    "d": "distance between parallel lines"
+   },
+   "wrong_turn": "Write the line as ax + by + c = 0 first: y = 2x + 3 becomes 2x − y + 3 = 0, so b = −1, not 1.",
+   "rule": "The distance from (x0,y0) to ax+by+c=0 is d=(|ax0+by0+c|a2+b2)."
+  },
+  {
+   "id": "V.11.08",
+   "name": "Classify by coordinates",
+   "steps": {
+    "a": "triangle types",
+    "b": "parallelogram test",
+    "c": "rectangle, rhombus, square tests",
+    "d": "write the argument"
+   },
+   "wrong_turn": "Four equal sides don't make a square: a rhombus has them too. You still need a right angle.",
+   "rule": "Distance tests equal sides, slope tests parallel and perpendicular, midpoints test bisecting diagonals."
+  },
+  {
+   "id": "V.11.09",
+   "name": "Coordinate proofs of triangles",
+   "steps": {
+    "a": "place with variables",
+    "b": "midsegment proof",
+    "c": "isosceles proof",
+    "d": "centroid proof"
+   },
+   "wrong_turn": "Specific numbers like (0, 0), (4, 0), (2, 3) prove the claim for one triangle only. A general proof needs letters.",
+   "rule": "Put a vertex at the origin and a side on the x-axis, and use letters for the other coordinates."
+  }
+ ]
+}

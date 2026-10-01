@@ -1,0 +1,149 @@
+{
+  "branch": "II.2",
+  "intro": "This branch builds multiplication from equal groups, through the times tables, to multiplying large numbers on paper. Multiplication is a fast way to add equal groups, and it underpins division, fractions and area.",
+  "skills": {
+    "II.2.01": {
+      "what": "Seeing multiplication as a number of equal groups, such as 3 groups of 2.",
+      "levels": {
+        "a": "Counts groups of 2 and finds how many there are in all.",
+        "b": "Finds the total for groups of 5 and groups of 10.",
+        "c": "Writes equal groups as a repeated addition, like 8 + 8.",
+        "d": "Rewrites a repeated addition as a multiplication, like 2 times 8."
+      }
+    },
+    "II.2.02": {
+      "what": "Using arrays (objects set out in neat rows and columns) to picture multiplication.",
+      "levels": {
+        "a": "Counts the rows and columns in an array.",
+        "b": "Writes the multiplication that an array shows.",
+        "c": "Sees that turning an array on its side gives the same total, so 8 times 3 equals 3 times 8.",
+        "d": "Plans an array to show a given multiplication fact."
+      }
+    },
+    "II.2.03": {
+      "what": "Learning the easiest times tables first: multiplying by 0, 1, 2, 5 and 10.",
+      "levels": {
+        "a": "Knows that times 0 gives 0 and times 1 leaves a number unchanged.",
+        "b": "Knows the 2 times table.",
+        "c": "Knows the 5 times table.",
+        "d": "Knows the 10 times table."
+      }
+    },
+    "II.2.04": {
+      "what": "Learning the 3, 4 and 6 times tables.",
+      "levels": {
+        "a": "Knows the 3 times table.",
+        "b": "Finds 4 times a number by doubling it, then doubling again.",
+        "c": "Knows the 6 times table.",
+        "d": "Answers a mix of 3, 4 and 6 times table facts."
+      }
+    },
+    "II.2.05": {
+      "what": "Learning the harder 7, 8 and 9 times tables.",
+      "levels": {
+        "a": "Uses patterns in the 9 times table to find facts.",
+        "b": "Knows the 8 times table.",
+        "c": "Knows the 7 times table.",
+        "d": "Answers a mix of 7, 8 and 9 times table facts."
+      }
+    },
+    "II.2.06": {
+      "what": "Bringing all the times tables up to 10 times 10 together until they are quick and reliable.",
+      "levels": {
+        "a": "Knows the square facts, where a number is multiplied by itself, like 7 times 7.",
+        "b": "Works out a new fact from one already known, such as doubling 4 times 8 to get 8 times 8.",
+        "c": "Answers a mix of facts from across all the tables.",
+        "d": "Recalls any fact from memory, including finding a missing number."
+      }
+    },
+    "II.2.07": {
+      "what": "Picturing multiplication as the area of a rectangle, which later explains how to multiply bigger numbers.",
+      "levels": {
+        "a": "Counts the unit squares that cover a rectangle.",
+        "b": "Finds the area by multiplying length by width.",
+        "c": "Splits a rectangle into two parts and adds their areas.",
+        "d": "Splits a multiplication the same way, as in 3 times 18 = 3 times 10 plus 3 times 8."
+      }
+    },
+    "II.2.08": {
+      "what": "Learning the rules multiplication always follows, which make calculations easier.",
+      "levels": {
+        "a": "Knows the order doesn't matter: 4 times 7 equals 7 times 4.",
+        "b": "Knows grouping doesn't matter when multiplying three numbers.",
+        "c": "Splits a number to multiply in parts, as in 3 times 18 = 3 times 10 plus 3 times 8.",
+        "d": "Uses these rules to make a calculation easy, like 2 times 16 times 5.",
+        "e": "Regroups a product like 25 times 83 times 4 to make it easy (25 times 4 is 100).",
+        "f": "Spots a shared number in two products and combines them, as in 7 times 37 plus 3 times 37."
+      }
+    },
+    "II.2.09": {
+      "what": "Multiplying by 10, 100, 1,000 and numbers like 40 or 300 using known facts and zeros.",
+      "levels": {
+        "a": "Multiplies a number by 10.",
+        "b": "Multiplies a one-digit number by a multiple of ten, like 3 times 80.",
+        "c": "Multiplies two multiples of ten, like 30 times 80.",
+        "d": "Multiplies by 100 and by 1,000."
+      }
+    },
+    "II.2.10": {
+      "what": "Multiplying a two-digit number by a one-digit number, such as 28 times 8.",
+      "levels": {
+        "a": "Uses a split rectangle (area model) to multiply tens and ones separately.",
+        "b": "Writes the tens and ones products separately, then adds them.",
+        "c": "Uses the standard written method with carrying.",
+        "d": "Estimates first by rounding, then finds the exact answer."
+      }
+    },
+    "II.2.11": {
+      "what": "Multiplying a three- or four-digit number by a one-digit number.",
+      "levels": {
+        "a": "Multiplies each place separately, then adds the parts.",
+        "b": "Handles the carrying from one column to the next.",
+        "c": "Uses the standard written method from start to finish.",
+        "d": "Estimates to pick out the correct answer."
+      }
+    },
+    "II.2.12": {
+      "what": "Multiplying two two-digit numbers, such as 28 times 86.",
+      "levels": {
+        "a": "Uses a rectangle split into four parts to find the product.",
+        "b": "Writes the four partial products, then adds them.",
+        "c": "Finishes the standard written method with two rows.",
+        "d": "Estimates by rounding both numbers, then finds the exact answer.",
+        "e": "Finds a missing digit in a two-digit multiplication.",
+        "f": "Arranges four digit cards into two numbers that make the largest possible product."
+      }
+    },
+    "II.2.13": {
+      "what": "Multiplying bigger numbers, such as a three-digit number by a two-digit number.",
+      "levels": {
+        "a": "Multiplies a three-digit number by a two-digit number.",
+        "b": "Does the same when zeros appear in the numbers.",
+        "c": "Works through the written method row by row with confidence.",
+        "d": "Picks out which answer is reasonable by estimating."
+      }
+    },
+    "II.2.14": {
+      "what": "Using multiplication to solve everyday word problems.",
+      "levels": {
+        "a": "Solves problems about equal groups, like vases holding the same number of flowers.",
+        "b": "Solves problems about rows and columns, like tiles on a wall.",
+        "c": "Solves problems saying one thing is some number of times as much as another.",
+        "d": "Solves problems that take more than one step.",
+        "e": "Works backwards: undoes a chain of steps to find the number someone started with.",
+        "f": "Solves classic puzzles like 'chickens and cows: 26 heads, 78 legs; how many chickens?'"
+      }
+    },
+    "II.2.15": {
+      "what": "Spotting and explaining patterns in multiplication.",
+      "levels": {
+        "a": "Recognizes which numbers belong to a given times table.",
+        "b": "Tells whether a product will be even or odd without multiplying.",
+        "c": "Makes a product easier by halving one number and doubling the other.",
+        "d": "Explains why a pattern happens, such as why doubling one number doubles the answer.",
+        "e": "Finds the last digit of a big product using only the last digits.",
+        "f": "Finds the last digit of a number multiplied by itself many times, using a repeating cycle."
+      }
+    }
+  }
+}

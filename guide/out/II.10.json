@@ -1,0 +1,93 @@
+{
+  "branch": "II.10",
+  "intro": "This branch is about data: collecting information, showing it in charts and tables, and reading what it says. It also teaches how to summarize data with a typical value and how to spot a graph that misleads.",
+  "skills": {
+    "II.10.01": {
+      "what": "Using line plots, where each value is marked with an X above a number line.",
+      "levels": {
+        "a": "Reads a line plot to answer simple questions.",
+        "b": "Makes a line plot from a list of values.",
+        "c": "Reads line plots whose values are fractions.",
+        "d": "Answers questions that need calculating, like the total of all the values."
+      }
+    },
+    "II.10.02": {
+      "what": "Reading and making bar graphs whose scale counts in steps like 2, 5 or 10.",
+      "levels": {
+        "a": "Reads a bar whose top falls between numbered lines on the scale.",
+        "b": "Picks the bar graph that matches a table.",
+        "c": "Compares bars to find how many more.",
+        "d": "Chooses a scale big enough for the data."
+      }
+    },
+    "II.10.03": {
+      "what": "Reading and making pictographs, where each picture stands for a set number of things, shown in a key.",
+      "levels": {
+        "a": "Reads a pictograph where each picture stands for 2.",
+        "b": "Reads half pictures, which stand for half the key's amount.",
+        "c": "Builds a row of pictures to show a given number.",
+        "d": "Compares and combines rows to answer questions."
+      }
+    },
+    "II.10.04": {
+      "what": "Reading and making frequency tables, which count how often each answer appears.",
+      "levels": {
+        "a": "Reads a table to find the most or least common answer.",
+        "b": "Counts a list of answers to fill in a table.",
+        "c": "Uses totals to find missing entries.",
+        "d": "Compares entries in a table to find how many more.",
+        "e": "Fills in a two-way table, such as girls and boys who walk or not, to find a missing count.",
+        "f": "Solves problems about overlapping groups, like kids who like apples, bananas, both or neither."
+      }
+    },
+    "II.10.05": {
+      "what": "Understanding the mean (the average) as what each would get if everything were shared out equally.",
+      "levels": {
+        "a": "Evens out towers of cubes so they are all the same height.",
+        "b": "Finds the mean by adding the values and dividing by how many there are.",
+        "c": "Works out how the mean changes when a value is added.",
+        "d": "Solves word problems about sharing totals fairly.",
+        "e": "Works backwards: knows the mean and all but one score, finds the missing score.",
+        "f": "Works out which number was removed, from the mean before and after."
+      }
+    },
+    "II.10.06": {
+      "what": "Describing a set of data with one typical value: the most common value (mode), the middle value (median) or the mean.",
+      "levels": {
+        "a": "Finds the mode, the value that appears most often.",
+        "b": "Finds the median by putting values in order and taking the middle one.",
+        "c": "Compares the mean and median of the same data.",
+        "d": "Decides which typical value best describes data with an unusual value in it.",
+        "e": "Finds the missing value that makes the mean and the median of a list equal.",
+        "f": "Builds five numbers to fit a given mean, median and mode, making the biggest as small or large as possible."
+      }
+    },
+    "II.10.07": {
+      "what": "Reading and making line graphs, which show how something changes over time.",
+      "levels": {
+        "a": "Reads a value at a given time from a line graph.",
+        "b": "Checks plotted points and spots one placed wrongly.",
+        "c": "Describes the overall trend: rising, falling or staying level.",
+        "d": "Compares two lines on the same graph."
+      }
+    },
+    "II.10.08": {
+      "what": "Running a simple survey: asking a question, recording answers, displaying them and drawing a conclusion.",
+      "levels": {
+        "a": "Chooses a clear survey question with sensible answer choices.",
+        "b": "Counts tally marks, which are grouped in fives.",
+        "c": "Chooses the best kind of chart for the data.",
+        "d": "Picks the conclusion that the data actually support."
+      }
+    },
+    "II.10.09": {
+      "what": "Reading graphs with a critical eye, noticing when a graph is misleading or can't answer a question.",
+      "levels": {
+        "a": "Checks where the scale starts before reading a bar.",
+        "b": "Explains how a scale that doesn't start at zero makes small differences look big.",
+        "c": "Recognizes questions a graph cannot answer.",
+        "d": "Picks the fairer, clearer version of a survey question."
+      }
+    }
+  }
+}

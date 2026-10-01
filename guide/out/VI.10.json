@@ -1,0 +1,150 @@
+{
+  "branch": "VI.10",
+  "intro": "This branch shows how functions like sine or e to the x can be written as endless polynomials. That is how calculators actually compute them.",
+  "skills": {
+    "VI.10.01": {
+      "what": "A power series is a polynomial that never ends, with powers of x going on forever.",
+      "levels": {
+        "a": "Reads a power series written in sigma notation.",
+        "b": "Describes it as a polynomial that never ends.",
+        "c": "Adds up the first few terms to estimate a value.",
+        "d": "Identifies the center and the coefficients (the multiplying numbers)."
+      }
+    },
+    "VI.10.02": {
+      "what": "A power series only works for x values within a certain distance of its center, called the radius of convergence.",
+      "levels": {
+        "a": "Applies the ratio test to a power series.",
+        "b": "Finds the radius of convergence.",
+        "c": "Handles series that work nowhere except the center, or everywhere.",
+        "d": "Handles series centered away from zero."
+      }
+    },
+    "VI.10.03": {
+      "what": "Finding exactly which x values a power series works for, including checking the two edges.",
+      "levels": {
+        "a": "Tests each edge point separately.",
+        "b": "Decides whether each edge is included or not.",
+        "c": "Writes the full range of x values that work.",
+        "d": "Checks how the edges can change after differentiating the series."
+      }
+    },
+    "VI.10.04": {
+      "what": "A Taylor polynomial is a simple polynomial built to imitate a complicated function near one point.",
+      "levels": {
+        "a": "Matches the function's value and derivatives at a point.",
+        "b": "Builds a Taylor polynomial of a given degree.",
+        "c": "Centers the polynomial at any chosen point.",
+        "d": "Graphs the polynomial against the function to see the fit."
+      }
+    },
+    "VI.10.05": {
+      "what": "Writing e to the x as an endless polynomial, one of the most useful series in math.",
+      "levels": {
+        "a": "Derives the series for e to the x.",
+        "b": "Uses it to approximate the number e.",
+        "c": "Substitutes to get new series, like e to the minus x squared.",
+        "d": "Shows the series works for every value of x."
+      }
+    },
+    "VI.10.06": {
+      "what": "Writing sine and cosine as endless polynomials.",
+      "levels": {
+        "a": "Derives the series for sine and cosine.",
+        "b": "Notices sine uses only odd powers and cosine only even powers.",
+        "c": "Uses the series to approximate a value.",
+        "d": "Uses small-angle shortcuts, like sine of x being nearly x."
+      }
+    },
+    "VI.10.07": {
+      "what": "Series for one over one minus x, built from repeated multiplication, and for related functions like the logarithm.",
+      "levels": {
+        "a": "Writes the repeated-ratio (geometric) series as a power series.",
+        "b": "Integrates it to get the series for the logarithm.",
+        "c": "Substitutes to get the series for arctangent.",
+        "d": "Shows these series work only for x between minus one and one."
+      }
+    },
+    "VI.10.08": {
+      "what": "Making new series quickly from known ones instead of starting from scratch.",
+      "levels": {
+        "a": "Substitutes an expression for x in a known series.",
+        "b": "Multiplies a series by a power of x.",
+        "c": "Adds two series together.",
+        "d": "Finds a particular coefficient quickly using these tricks."
+      }
+    },
+    "VI.10.09": {
+      "what": "Differentiating and integrating series one term at a time, like ordinary polynomials.",
+      "levels": {
+        "a": "Differentiates or integrates a series term by term.",
+        "b": "Knows the radius of convergence stays the same.",
+        "c": "Finds the total of a series by differentiating a known one.",
+        "d": "Integrates a series to build a new one."
+      }
+    },
+    "VI.10.10": {
+      "what": "Multiplying and dividing series to find the first few terms of a new series.",
+      "levels": {
+        "a": "Finds the first few terms of a product of two series.",
+        "b": "Divides the sine series by the cosine series to get tangent.",
+        "c": "Keeps track of which powers are needed.",
+        "d": "Checks results against known series."
+      }
+    },
+    "VI.10.11": {
+      "what": "A guarantee on how far off a Taylor polynomial's estimate can be.",
+      "levels": {
+        "a": "States the error bound formula.",
+        "b": "Finds the largest size of the next derivative on the range.",
+        "c": "Uses the formula to bound the error.",
+        "d": "Chooses how many terms are needed for a desired accuracy."
+      }
+    },
+    "VI.10.12": {
+      "what": "For alternating series, the error from stopping early is no bigger than the first term left out.",
+      "levels": {
+        "a": "Uses the next term as a bound on the error.",
+        "b": "Applies this to an estimate.",
+        "c": "Decides whether the estimate is too high or too low.",
+        "d": "Compares this with the general error bound."
+      }
+    },
+    "VI.10.13": {
+      "what": "Expanding one plus x raised to any power, even a fraction or negative number, as an endless series.",
+      "levels": {
+        "a": "Writes the series for one plus x to any power.",
+        "b": "Computes the coefficients.",
+        "c": "Approximates square roots of numbers close to one.",
+        "d": "Shows the series works only for x between minus one and one."
+      }
+    },
+    "VI.10.14": {
+      "what": "Euler's formula links exponentials to sine and cosine using imaginary numbers. It leads to a famous equation joining five key numbers.",
+      "levels": {
+        "a": "Derives e to the i theta by substituting into the exponential series.",
+        "b": "Shows it equals cosine theta plus i times sine theta.",
+        "c": "Derives e to the i pi plus one equals zero.",
+        "d": "Links the formula to the polar form of imaginary numbers."
+      }
+    },
+    "VI.10.15": {
+      "what": "Using series to handle integrals that have no ordinary formula, such as the one behind the bell curve.",
+      "levels": {
+        "a": "Recognizes integrals with no standard formula answer.",
+        "b": "Integrates the function's series term by term.",
+        "c": "Approximates the integral's value from a few terms.",
+        "d": "Bounds the error of the approximation."
+      }
+    },
+    "VI.10.16": {
+      "what": "Finding tricky limits by replacing functions with their series and seeing which terms matter.",
+      "levels": {
+        "a": "Replaces each function in the limit with its series.",
+        "b": "Cancels the leading terms that cause trouble.",
+        "c": "Finds the limit from what remains.",
+        "d": "Compares this method with L'Hôpital's rule."
+      }
+    }
+  }
+}

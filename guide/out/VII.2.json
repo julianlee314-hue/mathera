@@ -1,0 +1,87 @@
+{
+  "branch": "VII.2",
+  "intro": "A linear system is a set of equations that must all be true at once. This branch teaches a reliable, step-by-step method for solving any such system, however many unknowns it has.",
+  "skills": {
+    "VII.2.01": {
+      "what": "Writing a set of equations as a matrix, a rectangular table of numbers, so only the numbers that matter are kept.",
+      "levels": {
+        "a": "Writes the numbers in front of the unknowns as a table (the coefficient matrix).",
+        "b": "Adds the right-hand-side numbers as an extra column (the augmented matrix).",
+        "c": "Writes the whole system in the short form: matrix times unknowns equals answers.",
+        "d": "Writes the system as a combination of column vectors that must hit a target."
+      }
+    },
+    "VII.2.02": {
+      "what": "Row operations are three safe moves on the rows of a matrix that simplify a system without changing its solutions.",
+      "levels": {
+        "a": "Swaps two rows.",
+        "b": "Multiplies a row by a nonzero number.",
+        "c": "Adds a multiple of one row to another row.",
+        "d": "Explains why these moves never gain or lose any solutions."
+      }
+    },
+    "VII.2.03": {
+      "what": "Row echelon form is a staircase shape the matrix is tidied into, which makes the system easy to solve from the bottom up.",
+      "levels": {
+        "a": "Recognizes the staircase shape, with zeros below each step.",
+        "b": "Uses row operations to clear out numbers below each step, working downward.",
+        "c": "Identifies the pivots, the first nonzero number on each step.",
+        "d": "Solves from the bottom row up, substituting as it goes."
+      }
+    },
+    "VII.2.04": {
+      "what": "Reduced row echelon form is the tidiest possible version of the matrix, where the answers can be read off directly.",
+      "levels": {
+        "a": "Scales rows so each pivot becomes a 1.",
+        "b": "Clears the numbers above each pivot to zero as well.",
+        "c": "Runs the full process from start to finish (Gauss–Jordan elimination).",
+        "d": "Understands that every matrix tidies to exactly one such final form."
+      }
+    },
+    "VII.2.05": {
+      "what": "Unknowns that land on a pivot are fixed by the others; the rest (free variables) can be anything, which is how systems get infinitely many answers.",
+      "levels": {
+        "a": "Picks out the unknowns tied to pivots (the basic variables).",
+        "b": "Picks out the free variables, which can take any value.",
+        "c": "Decides whether a system has no solution, one, or infinitely many.",
+        "d": "Predicts the possible outcomes just from the matrix's shape."
+      }
+    },
+    "VII.2.06": {
+      "what": "When there are infinitely many solutions, they can be described neatly by letting the free variables vary, like tracing all points along a line.",
+      "levels": {
+        "a": "Writes each basic variable in terms of the free ones.",
+        "b": "Writes the full solution as a fixed vector plus multiples of other vectors.",
+        "c": "Pictures the solution set as a point, line or plane.",
+        "d": "Checks that a proposed solution really satisfies every equation."
+      }
+    },
+    "VII.2.07": {
+      "what": "A system is consistent if it has at least one solution. Some systems contradict themselves and have none.",
+      "levels": {
+        "a": "Spots a row that says 0 equals a nonzero number, meaning no solution.",
+        "b": "Decides whether a given system has any solution at all.",
+        "c": "Finds which right-hand-side values make a system solvable.",
+        "d": "Separates two questions: is there a solution, and is it the only one."
+      }
+    },
+    "VII.2.08": {
+      "what": "A homogeneous system has every equation equal to zero. It always has the all-zeros solution, and sometimes many more.",
+      "levels": {
+        "a": "Recognizes and sets up a system where every right-hand side is zero.",
+        "b": "Notes that setting every unknown to zero always works.",
+        "c": "Decides when other, nonzero solutions exist too.",
+        "d": "Describes all the solutions as everything reachable from a few vectors."
+      }
+    },
+    "VII.2.09": {
+      "what": "Linear systems model real problems with many interlocking quantities, from traffic on streets to chemistry to electronics.",
+      "levels": {
+        "a": "Sets up and solves traffic or pipe networks where flow in equals flow out.",
+        "b": "Balances chemical equations so atoms on both sides match.",
+        "c": "Finds currents in simple electrical circuits.",
+        "d": "Finds a smooth curve that passes exactly through given points."
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+[
+ {
+  "id": "IV.14.01",
+  "name": "Factorials & counting",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "the multiplication principle",
+   "b": "n!",
+   "c": "arrange every object",
+   "d": "simplify factorial expressions"
+  }
+ },
+ {
+  "id": "IV.14.02",
+  "name": "Permutations",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "arrange r of n",
+   "b": "the ⁿPᵣ formula",
+   "c": "with repeated letters",
+   "d": "circular arrangements"
+  }
+ },
+ {
+  "id": "IV.14.03",
+  "name": "Combinations",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "choose r of n",
+   "b": "the ⁿCᵣ formula",
+   "c": "does order matter?",
+   "d": "link to Pascal's triangle"
+  }
+ },
+ {
+  "id": "IV.14.04",
+  "name": "Counting with conditions",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "must include or exclude",
+   "b": "\"at least\" by the complement",
+   "c": "objects kept together",
+   "d": "committees with rules"
+  }
+ },
+ {
+  "id": "IV.14.05",
+  "name": "Probability by counting",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "equally likely outcomes",
+   "b": "cards and dice",
+   "c": "using combinations",
+   "d": "lottery odds"
+  }
+ },
+ {
+  "id": "IV.14.06",
+  "name": "Addition rule",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "\"or\" events",
+   "b": "mutually exclusive events",
+   "c": "subtract the overlap",
+   "d": "Venn diagrams"
+  }
+ },
+ {
+  "id": "IV.14.07",
+  "name": "Complements & \"at least one\"",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "P(not A)",
+   "b": "at least one, by the complement",
+   "c": "repeated trials",
+   "d": "the birthday problem"
+  }
+ },
+ {
+  "id": "IV.14.08",
+  "name": "Independent events",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "the multiplication rule",
+   "b": "test for independence",
+   "c": "with replacement",
+   "d": "independent vs mutually exclusive"
+  }
+ },
+ {
+  "id": "IV.14.09",
+  "name": "Conditional probability",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "what P(A | B) means",
+   "b": "from a two-way table",
+   "c": "the formula",
+   "d": "without replacement"
+  }
+ },
+ {
+  "id": "IV.14.10",
+  "name": "Tree diagrams",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "multiply along branches",
+   "b": "add the paths",
+   "c": "conditional branches",
+   "d": "reverse a tree"
+  }
+ },
+ {
+  "id": "IV.14.11",
+  "name": "Bayes' theorem",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "the formula",
+   "b": "medical test problems",
+   "c": "the base-rate trap",
+   "d": "with a tree or a table"
+  }
+ },
+ {
+  "id": "IV.14.12",
+  "name": "Expected value",
+  "unit": "IV.14 Counting & probability",
+  "steps": {
+   "a": "a weighted average of outcomes",
+   "b": "fair games",
+   "c": "insurance and lotteries",
+   "d": "decide by expected value"
+  }
+ }
+]

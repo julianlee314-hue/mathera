@@ -1,0 +1,174 @@
+{
+ "unit": "IV.11",
+ "name": "Rational & radical functions",
+ "skills": [
+  {
+   "id": "IV.11.01",
+   "name": "Simplify rational expressions",
+   "steps": {
+    "a": "factor top and bottom",
+    "b": "cancel common factors",
+    "c": "state excluded values",
+    "d": "(a − b)/(b − a) = −1"
+   },
+   "wrong_turn": "Cancel factors, not terms: (x + 6)/6 is not x + 1, and (x² + 4)/(x + 2) doesn't simplify.",
+   "rule": "Factor top and bottom, cancel common factors, and state excluded values."
+  },
+  {
+   "id": "IV.11.02",
+   "name": "Multiply & divide rational expressions",
+   "steps": {
+    "a": "factor all",
+    "b": "multiply and cancel",
+    "c": "flip to divide",
+    "d": "excluded values"
+   },
+   "wrong_turn": "To divide, flip the second fraction, not the first: (a/b) ÷ (c/d) = (a/b)·(d/c).",
+   "rule": "(ab)⋅(cd)=(acbd), and (ab)÷(cd)=(ab)⋅(dc)."
+  },
+  {
+   "id": "IV.11.03",
+   "name": "Add & subtract rational expressions",
+   "steps": {
+    "a": "like denominators",
+    "b": "find the LCD",
+    "c": "rewrite and combine",
+    "d": "simplify the result"
+   },
+   "wrong_turn": "Don't add denominators: 1/x + 1/y is (x + y)/(xy), not 2/(x + y).",
+   "rule": "(ab)+(cd)=(ad+bcbd); use the least common denominator in practice."
+  },
+  {
+   "id": "IV.11.04",
+   "name": "Complex fractions",
+   "steps": {
+    "a": "combine top and bottom",
+    "b": "multiply by the LCD method",
+    "c": "simplify",
+    "d": "excluded values"
+   },
+   "wrong_turn": "Excluded values include the inner denominators: x/(x − 1) above is undefined at 1, but the original is also undefined at 0 and −1.",
+   "rule": "Multiply the top and bottom of the big fraction by the LCD of all the little fractions."
+  },
+  {
+   "id": "IV.11.05",
+   "name": "Rational equations",
+   "steps": {
+    "a": "multiply by the LCD",
+    "b": "solve the result",
+    "c": "proportions shortcut",
+    "d": "check"
+   },
+   "wrong_turn": "Multiply every term by the LCD, including whole numbers: 1/x + 2 = 5/x becomes 1 + 2x = 5, not 1 + 2 = 5.",
+   "rule": "Multiply both sides by the LCD, solve, and check each answer in the original."
+  },
+  {
+   "id": "IV.11.06",
+   "name": "Extraneous solutions",
+   "steps": {
+    "a": "why they appear",
+    "b": "spot them in rational equations",
+    "c": "in radical equations",
+    "d": "state the final set"
+   },
+   "wrong_turn": "Extraneous solutions aren't errors in arithmetic. Even perfect algebra can produce them, so always check.",
+   "rule": "An extraneous solution solves the transformed equation but not the original."
+  },
+  {
+   "id": "IV.11.07",
+   "name": "Vertical asymptotes",
+   "steps": {
+    "a": "zeros of the denominator",
+    "b": "after cancelling",
+    "c": "behavior near them",
+    "d": "write the equations"
+   },
+   "wrong_turn": "A zero of the denominator isn't always an asymptote: in (x − 2)/(x² − 4) it cancels at x = 2, giving a hole.",
+   "rule": "f=(pq) in lowest terms has a vertical asymptote at each zero of q."
+  },
+  {
+   "id": "IV.11.08",
+   "name": "Horizontal asymptotes",
+   "steps": {
+    "a": "compare degrees",
+    "b": "ratio of leaders",
+    "c": "y = 0 case",
+    "d": "can a graph cross it"
+   },
+   "wrong_turn": "A horizontal asymptote doesn't forbid crossing: (2x² + x)/(x² + 1) equals 2 at x = 2.",
+   "rule": "Compare degrees: top smaller gives y=0; equal gives y=(anbn); top bigger gives no horizontal asymptote."
+  },
+  {
+   "id": "IV.11.09",
+   "name": "Holes",
+   "steps": {
+    "a": "cancelled factors",
+    "b": "find the hole's coordinates",
+    "c": "show on a graph",
+    "d": "hole vs asymptote"
+   },
+   "wrong_turn": "The hole's y-value comes from the simplified form: (x² − 1)/(x − 1) has a hole at (1, 2), not (1, 0).",
+   "rule": "A factor that cancels from top and bottom leaves a hole, not an asymptote."
+  },
+  {
+   "id": "IV.11.10",
+   "name": "Graph rational functions",
+   "steps": {
+    "a": "intercepts",
+    "b": "asymptotes and holes",
+    "c": "sign chart",
+    "d": "sketch"
+   },
+   "wrong_turn": "Plot both sides of each vertical asymptote. A branch between asymptotes can cross the horizontal asymptote.",
+   "rule": "Find intercepts, asymptotes and holes, make a sign chart, then sketch each piece."
+  },
+  {
+   "id": "IV.11.11",
+   "name": "Slant asymptotes",
+   "steps": {
+    "a": "degree one higher",
+    "b": "divide to find it",
+    "c": "graph with it",
+    "d": "end behavior"
+   },
+   "wrong_turn": "The slant asymptote is the quotient only: for (x² + 1)/(x − 1) it's y = x + 1, not y = x + 1 + 2.",
+   "rule": "If degp=degq+1, divide: (pq)=mx+b+(rq), and y=mx+b is the slant asymptote."
+  },
+  {
+   "id": "IV.11.12",
+   "name": "Inverse variation",
+   "steps": {
+    "a": "y = k/x",
+    "b": "find k",
+    "c": "joint and combined variation",
+    "d": "word problems"
+   },
+   "wrong_turn": "Inverse variation isn't \"y = −x\". As x doubles, y halves: y = k/x, not a line with negative slope.",
+   "rule": "y varies inversely with x when y=(kx), that is xy=k."
+  },
+  {
+   "id": "IV.11.13",
+   "name": "Root functions",
+   "steps": {
+    "a": "graph √x and ∛x",
+    "b": "transform them",
+    "c": "domain and range",
+    "d": "inverse of a quadratic piece"
+   },
+   "wrong_turn": "√(x − 2) starts at x = 2, not x = −2. Set the inside to 0.",
+   "rule": "y=x has domain and range [0,∞); y=x3 has domain and range all reals."
+  },
+  {
+   "id": "IV.11.14",
+   "name": "Work & rate problems",
+   "steps": {
+    "a": "rate as 1/time",
+    "b": "add rates",
+    "c": "set up the equation",
+    "d": "solve and interpret"
+   },
+   "wrong_turn": "Don't add the times: 3 hours and 6 hours together is not 9 hours, or 4.5. Add rates: 1/3 + 1/6.",
+   "rule": "Rates add: if the jobs take a and b hours alone, together (1a)+(1b)=(1t)."
+  }
+ ]
+}

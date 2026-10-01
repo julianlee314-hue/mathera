@@ -1,0 +1,120 @@
+{
+  "branch": "V.5",
+  "intro": "This branch is about similar shapes: same shape, different size, like a photo and its enlargement. Similarity lets us measure things we cannot reach, such as the height of a tree.",
+  "skills": {
+    "V.5.01": {
+      "what": "Using proportions (two equal fractions) to find unknown lengths in shapes.",
+      "levels": {
+        "a": "Picks the proportion that matches sides of two similar triangles to find x.",
+        "b": "Solves a proportion by cross multiplying.",
+        "c": "Splits a total in a given ratio, such as triangle angles in the ratio 7 to 4 to 1.",
+        "d": "Uses the golden ratio, about 1.618, to find the long side of a golden rectangle."
+      }
+    },
+    "V.5.02": {
+      "what": "Understanding similar polygons: shapes with the same angles whose sides are all scaled by the same amount.",
+      "levels": {
+        "a": "Uses matching angles of similar shapes to find a missing angle.",
+        "b": "Uses side ratios of similar shapes to find a missing length.",
+        "c": "Picks the correct similarity statement, matching corners in the right order.",
+        "d": "Decides whether all shapes of one kind, such as all parallelograms, must be similar."
+      }
+    },
+    "V.5.03": {
+      "what": "The scale factor is the number every length is multiplied by to go from one similar shape to the other.",
+      "levels": {
+        "a": "Finds the scale factor from one similar triangle to the other.",
+        "b": "Uses a scale factor to find a missing side.",
+        "c": "Tells from the scale factor whether a copy is an enlargement or a reduction.",
+        "d": "Uses map scales, like 1 to 25,000, to find real distances."
+      }
+    },
+    "V.5.04": {
+      "what": "The angle-angle rule: if two angles of one triangle match two of another, the triangles are similar.",
+      "levels": {
+        "a": "Decides whether two triangles are similar by checking two pairs of angles.",
+        "b": "Uses similar triangles to find a missing angle.",
+        "c": "Finds a length when a line parallel to the base cuts off a smaller triangle.",
+        "d": "Puts the steps of a short proof that two triangles are similar in order.",
+        "e": "Spots a hidden pair of similar triangles that share an angle, then finds a length.",
+        "f": "Finds where two wires between poles cross, using two hidden pairs of similar triangles."
+      }
+    },
+    "V.5.05": {
+      "what": "The side-side-side similarity rule: if all three pairs of sides are in the same ratio, the triangles are similar.",
+      "levels": {
+        "a": "Picks which three side ratios to compare to test for similarity.",
+        "b": "Decides whether two triangles are similar by comparing all three side ratios.",
+        "c": "Finds the scale factor or a missing side of similar triangles.",
+        "d": "Puts the steps of a short proof in order, or names a missing reason."
+      }
+    },
+    "V.5.06": {
+      "what": "The side-angle-side similarity rule: two sides in the same ratio with an equal angle between them mean similar triangles.",
+      "levels": {
+        "a": "Picks the missing fact (a ratio or the angle between the sides) needed for this rule.",
+        "b": "Decides whether the marked parts prove two triangles similar.",
+        "c": "Solves for x in a triangle with a smaller similar triangle inside it.",
+        "d": "Completes a short proof: names a missing reason or finds the one mistaken step."
+      }
+    },
+    "V.5.07": {
+      "what": "A line drawn parallel to one side of a triangle cuts the other two sides into pieces with equal ratios.",
+      "levels": {
+        "a": "Puts in order the proof that a parallel line splits two sides in equal ratios.",
+        "b": "Decides from the side lengths whether a segment is parallel to a side.",
+        "c": "Uses three parallel lines crossing two lines to find a length.",
+        "d": "Solves for x when a line parallel to one side cuts a triangle."
+      }
+    },
+    "V.5.08": {
+      "what": "The angle bisector theorem: a line splitting a triangle's angle in half divides the opposite side in the same ratio as the two nearby sides.",
+      "levels": {
+        "a": "Decides whether an angle bisector hits the middle of the opposite side, which usually it does not.",
+        "b": "Finds a missing piece of the opposite side using the ratio of the two nearby sides.",
+        "c": "Names a missing reason in the proof of the theorem.",
+        "d": "Finds where an angle bisector meets the opposite side, on a coordinate grid."
+      }
+    },
+    "V.5.09": {
+      "what": "Drawing the height from the right angle of a right triangle creates three similar triangles, which leads to a proof of the Pythagorean theorem.",
+      "levels": {
+        "a": "Finds matching angles when the height is drawn from the right angle to the longest side.",
+        "b": "Picks the correct statement naming the three similar triangles.",
+        "c": "Finds an exact length using the geometric mean (the square root of a product).",
+        "d": "Proves the Pythagorean theorem this way: puts steps in order or finds the one mistaken step.",
+        "e": "Combines these length facts with the Pythagorean theorem to find an exact length.",
+        "f": "Finds the longest side when only the height and the difference of the two pieces are given."
+      }
+    },
+    "V.5.10": {
+      "what": "When shapes are scaled, perimeters scale by the scale factor but areas scale by the factor multiplied by itself.",
+      "levels": {
+        "a": "Uses the scale factor to find the perimeter of a similar shape.",
+        "b": "Uses the squared scale factor to find the area of a similar shape.",
+        "c": "Works back from two areas to the scale factor or a matching side.",
+        "d": "Solves everyday problems, such as how much more pizza is in a bigger pizza.",
+        "e": "Finds areas when a line parallel to the base cuts a triangle into a small triangle and a strip.",
+        "f": "Finds a hidden triangle's area inside a trapezoid from the areas of two others."
+      }
+    },
+    "V.5.11": {
+      "what": "When solids are scaled, volumes grow by the scale factor cubed, so doubling every length makes eight times the volume.",
+      "levels": {
+        "a": "Uses the scale factor cubed to find the volume of a similar solid.",
+        "b": "Uses the scale factor squared to find surface area.",
+        "c": "Works back from two volumes to the scale factor, a length or the surface-area ratio.",
+        "d": "Explains why a giant would be too heavy for its bones: weight grows faster than strength."
+      }
+    },
+    "V.5.12": {
+      "what": "Using similar triangles to measure things that are too tall or far away to measure directly.",
+      "levels": {
+        "a": "Finds the height of a tall object by comparing its shadow with a person's shadow.",
+        "b": "Finds a height using a mirror on the ground and similar triangles.",
+        "c": "Finds the width of a river using similar triangles marked out on one bank.",
+        "d": "Picks the sensible answer and rules out ones that cannot be right."
+      }
+    }
+  }
+}

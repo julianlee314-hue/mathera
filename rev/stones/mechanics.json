@@ -1,0 +1,220 @@
+[
+ {
+  "id": "VI.12.01",
+  "not": "A falling line on a velocity–time graph means slowing down, not moving backward. Velocity from 10 m/s to 4 m/s in 3 s is still forward motion, with acceleration −2 m/s².",
+  "apples": {
+   "stone": "How steep the journey graph is tells you how fast you go.",
+   "text": "Draw where you are against time. A steep line means fast, a flat line means standing still. Draw your speed against time instead, and the space under the line is how far you went.",
+   "example": "Walk 3 meters each second for 4 seconds. The speed graph is a flat line at 3, and the box under it is 3 × 4 = 12 meters."
+  },
+  "class": {
+   "stone": "\\[ v = \\text{gradient of } s\\text{–}t, \\quad a = \\text{gradient of } v\\text{–}t, \\quad s = \\text{area under } v\\text{–}t \\]",
+   "text": "On a displacement–time graph the gradient is velocity. On a velocity–time graph the gradient is acceleration and the area between the line and the time axis is displacement. Area below the axis counts as negative displacement. Distance adds all areas as positive, so distance and displacement differ once the object turns back.",
+   "example": "A car goes from rest to 12 m/s in 4 s, holds 12 m/s for 8 s, then stops in 6 s. Accelerations: \\(\\frac{12}{4} = 3\\) m/s² and \\(-\\frac{12}{6} = -2\\) m/s². Displacement: \\(\\frac{1}{2}(4)(12) + 8(12) + \\frac{1}{2}(6)(12) = 24 + 96 + 36 = 156\\) m."
+  },
+  "proof": {
+   "stone": "Slice time into thin strips: each strip is velocity × a short time, so the strips add up to the area.",
+   "text": "Gradient is rise over run. On an \\(s\\)–\\(t\\) graph that is \\(\\frac{\\Delta s}{\\Delta t}\\), the average velocity, which becomes the velocity as \\(\\Delta t \\to 0\\). The same argument on a \\(v\\)–\\(t\\) graph gives acceleration. Over a short time \\(\\Delta t\\) the displacement is about \\(v \\, \\Delta t\\), a thin strip of area. Adding the strips gives the area, and the error vanishes as the strips get thinner, so \\(s = \\int v \\, dt\\). A strip with \\(v\\) negative adds negative displacement.",
+   "example": "Velocity 6 m/s for 2 s, then −3 m/s for 4 s. Displacement: \\(12 - 12 = 0\\) m, back at the start. Distance: \\(12 + 12 = 24\\) m."
+  },
+  "professor": {
+   "stone": "Gradient and area undo each other: that is the fundamental theorem of calculus.",
+   "text": "Reading velocity as gradient and displacement as area is differentiation and integration, and the fact that one reverses the other is the fundamental theorem of calculus. Long before calculus, scholars at Merton College, Oxford stated the mean speed theorem for uniform acceleration, and Nicole Oresme gave it a geometric proof by comparing areas, much like reading a velocity–time graph.",
+   "example": "Mean speed theorem: from rest to 12 m/s in 4 s, the triangle has area \\(\\frac{1}{2}(4)(12) = 24\\) m, the same as the rectangle for the mean speed 6 m/s over 4 s: \\(6 \\times 4 = 24\\) m."
+  }
+ },
+ {
+  "id": "VI.12.02",
+  "not": "Don't drop the half in \\(s = ut + \\frac{1}{2}at^{2}\\). From rest with \\(a = 2\\) m/s² for 5 s, \\(s = 25\\) m, not 50 m.",
+  "apples": {
+   "stone": "When speed grows by the same amount every second, five simple rules link speed, time and distance.",
+   "text": "A sled on a smooth hill speeds up by the same amount each second. Know three facts, like its start speed, the push and the time, and you can work out the other two. Pick the rule that leaves out the fact you don't need.",
+   "example": "A bike rolls from rest and gains 2 meters per second every second. After 5 seconds it goes 10 meters per second and has covered 25 meters."
+  },
+  "class": {
+   "stone": "\\[ v = u + at, \\quad s = ut + \\frac{1}{2}at^{2}, \\quad s = vt - \\frac{1}{2}at^{2}, \\quad v^{2} = u^{2} + 2as, \\quad s = \\frac{1}{2}(u + v)t \\]",
+   "text": "These hold only when acceleration is constant. Each equation leaves out one of \\(s, u, v, a, t\\): choose the one missing the quantity you neither know nor want. Fix a positive direction and give every vector its sign. In a two-stage journey, the final \\(v\\) of stage one is the \\(u\\) of stage two.",
+   "example": "\\(u = 5\\) m/s, \\(a = 2\\) m/s², \\(s = 24\\) m. Then \\(v^{2} = 25 + 2(2)(24) = 121\\), so \\(v = 11\\) m/s, and \\(t = \\frac{11 - 5}{2} = 3\\) s."
+  },
+  "proof": {
+   "stone": "Constant acceleration makes the velocity–time graph a straight line, and everything follows from its slope and area.",
+   "text": "A straight line of gradient \\(a\\) through \\((0, u)\\) gives \\(v = u + at\\). The area under it is a trapezium: \\(s = \\frac{1}{2}(u + v)t\\). Substitute \\(v = u + at\\) to get \\(s = ut + \\frac{1}{2}at^{2}\\), or \\(u = v - at\\) to get \\(s = vt - \\frac{1}{2}at^{2}\\). Substitute \\(t = \\frac{v - u}{a}\\) into the trapezium to get \\(s = \\frac{v^{2} - u^{2}}{2a}\\), which is \\(v^{2} = u^{2} + 2as\\).",
+   "example": "\\(u = 5\\), \\(a = 2\\), \\(t = 3\\): \\(v = 11\\). Trapezium: \\(\\frac{1}{2}(5 + 11)(3) = 24\\). Formula: \\(5(3) + \\frac{1}{2}(2)(9) = 15 + 9 = 24\\). Both give 24 m."
+  },
+  "professor": {
+   "stone": "From rest, the distances covered in successive equal times go 1 : 3 : 5 : 7.",
+   "text": "Galileo found this odd-number pattern with balls rolling down inclines, and it follows from \\(s = \\frac{1}{2}at^{2}\\): the squares 1, 4, 9, 16 differ by odd numbers. The equation \\(v^{2} = u^{2} + 2as\\) is the work–energy principle in disguise: multiply by \\(\\frac{1}{2}m\\) to get \\(\\frac{1}{2}mv^{2} - \\frac{1}{2}mu^{2} = mas\\), the change in kinetic energy equals force times distance.",
+   "example": "From rest with \\(a = 2\\) m/s², \\(s = t^{2}\\): 1, 4, 9, 16 m after 1, 2, 3, 4 s. In each second it covers 1, 3, 5, 7 m."
+  }
+ },
+ {
+  "id": "VI.12.03",
+  "not": "At the top, velocity is 0 but acceleration is not. It is still 9.8 m/s² downward, which is why the ball comes back.",
+  "apples": {
+   "stone": "Anything thrown up slows down, stops for an instant, and falls back.",
+   "text": "Throw a ball straight up. Earth pulls it down the whole time, so it loses the same amount of speed every second. At the top it stops for a blink, then gains speed on the way down.",
+   "example": "Toss a ball up and catch it at the same height. It takes as long to go up as to come down."
+  },
+  "class": {
+   "stone": "\\[ a = -g = -9.8 \\text{ m/s}^{2} \\quad (\\text{up positive}) \\]",
+   "text": "Take up as positive, so \\(a = -9.8\\) m/s² for the whole flight, going up or down, ignoring air resistance. Maximum height is where \\(v = 0\\), giving \\(h = \\frac{u^{2}}{2g}\\). The ball returns to launch level when \\(s = 0\\), at \\(t = \\frac{2u}{g}\\). If it lands lower, solve \\(s = ut - \\frac{1}{2}gt^{2}\\) with negative \\(s\\) and keep the positive root.",
+   "example": "Thrown up at 14.7 m/s. Top: \\(0 = 14.7 - 9.8t\\), \\(t = 1.5\\) s, height \\(\\frac{14.7^{2}}{2(9.8)} = 11.025\\) m. Back at launch level: \\(t = \\frac{2(14.7)}{9.8} = 3\\) s."
+  },
+  "proof": {
+   "stone": "The height is a quadratic in time, and a parabola is symmetric about its peak.",
+   "text": "With up positive, \\(s = ut - \\frac{1}{2}gt^{2}\\). Setting \\(s = 0\\) gives \\(t(u - \\frac{1}{2}gt) = 0\\), so \\(t = 0\\) or \\(t = \\frac{2u}{g}\\). The top is at \\(t = \\frac{u}{g}\\), exactly halfway, where \\(v = u - gt = 0\\). Putting \\(v = 0\\) in \\(v^{2} = u^{2} - 2gs\\) gives \\(s = \\frac{u^{2}}{2g}\\). Symmetry means the ball passes each height at the same speed going up and coming down.",
+   "example": "\\(u = 14.7\\): at \\(t = 1\\), \\(s = 14.7 - 4.9 = 9.8\\) m. At \\(t = 2\\), \\(s = 29.4 - 19.6 = 9.8\\) m. Same height, 0.5 s either side of the top at 1.5 s."
+  },
+  "professor": {
+   "stone": "Without air, a hammer and a feather fall together.",
+   "text": "Galileo argued that all bodies fall with the same acceleration when air resistance is removed. Astronaut David Scott showed it on the Moon during Apollo 15 in 1971, dropping a hammer and a feather that landed together. The value of \\(g\\) is not a constant of nature: on Earth it is about 9.78 m/s² at the equator and 9.83 m/s² at the poles, and on the Moon about 1.62 m/s².",
+   "example": "The same 14.7 m/s throw on the Moon, with \\(g \\approx 1.62\\) m/s², rises \\(\\frac{14.7^{2}}{2(1.62)} \\approx 66.7\\) m, about six times higher."
+  }
+ },
+ {
+  "id": "VI.12.04",
+  "not": "Weight and normal reaction on a book resting on a table are not a third-law pair: both act on the book. The partner of the book's weight is the book pulling Earth up.",
+  "apples": {
+   "stone": "A push or pull that isn't balanced makes things speed up, slow down or turn.",
+   "text": "A heavy cart needs a bigger push than a light one to speed up the same amount. If two friends pull a rope equally hard from both ends, nothing moves. When you push a wall, the wall pushes you back just as hard.",
+   "example": "Push an empty shopping cart and a full one with the same push. The empty one speeds up much faster."
+  },
+  "class": {
+   "stone": "\\[ F = ma \\]",
+   "text": "Here \\(F\\) is the resultant force, the vector sum of all forces on the body, in newtons, and \\(a\\) is its acceleration. Common forces are weight \\(W = mg\\) acting down, normal reaction \\(R\\) perpendicular to a surface, and tension \\(T\\) along a string. If the resultant is zero the body stays at rest or moves at constant velocity. By the third law, if A pushes B, then B pushes A with an equal and opposite force.",
+   "example": "A 4 kg box on a smooth floor is pulled by a horizontal 30 N force against a 10 N resistance. Resultant: \\(30 - 10 = 20\\) N, so \\(a = \\frac{20}{4} = 5\\) m/s². Vertically, \\(R = 4(9.8) = 39.2\\) N.",
+   "env": "Law"
+  },
+  "proof": {
+   "stone": "Force is what changes momentum, and momentum is shared, never created.",
+   "text": "Newton's second law says force equals the rate of change of momentum \\(mv\\). For constant mass, that is \\(m\\frac{dv}{dt} = ma\\). The first law is the case \\(F = 0\\): no change in velocity. For two bodies pushing only on each other, total momentum stays constant, so the momentum one gains the other loses at the same rate: the forces are equal and opposite, which is the third law.",
+   "example": "Skaters of 2 kg and 3 kg push apart from rest. If the 2 kg skater moves at 3 m/s, the 3 kg one moves at 2 m/s the other way: \\(2(3) - 3(2) = 0\\), total momentum still zero."
+  },
+  "professor": {
+   "stone": "When you jump, Earth accelerates toward you too, by about \\(10^{-22}\\) m/s².",
+   "text": "Newton published the three laws in the Principia in 1687. They hold in inertial frames, ones that are not themselves accelerating; in an accelerating frame you must add fictitious forces. At speeds near light they give way to special relativity, where momentum is not simply \\(mv\\).",
+   "example": "A 60 kg person pulls Earth with 588 N. Earth's mass is about \\(5.97 \\times 10^{24}\\) kg, so its acceleration is \\(\\frac{588}{5.97 \\times 10^{24}} \\approx 9.8 \\times 10^{-23}\\) m/s²."
+  }
+ },
+ {
+  "id": "VI.12.05",
+  "not": "Don't swap sine and cosine on a slope. For a 10 kg block on a 30° slope, the weight component down the slope is \\(98\\sin 30^{\\circ} = 49\\) N, not \\(98\\cos 30^{\\circ} \\approx 84.9\\) N.",
+  "apples": {
+   "stone": "A slanted push is really a sideways push and an upward push working together.",
+   "text": "Pull a sled with a rope that slopes up. Part of your pull drags the sled forward and part lifts it a little. On a hill, part of the sled's weight pulls it down the hill and part presses it into the snow.",
+   "example": "The steeper the hill, the more a sled wants to slide, and the less it presses into the ground."
+  },
+  "class": {
+   "stone": "\\[ F_{x} = F\\cos\\theta, \\quad F_{y} = F\\sin\\theta \\]",
+   "text": "Here \\(\\theta\\) is measured from the \\(x\\)-direction. A body is in equilibrium when the forces in each of two perpendicular directions sum to zero. On a plane inclined at \\(\\alpha\\), resolve along and perpendicular to the slope: weight gives \\(mg\\sin\\alpha\\) down the slope and \\(mg\\cos\\alpha\\) into it. Two resolving equations find up to two unknown forces.",
+   "example": "A 5 kg block rests on a smooth 30° slope, held by a force \\(P\\) up the slope. Along: \\(P = 5(9.8)\\sin 30^{\\circ} = 24.5\\) N. Perpendicular: \\(R = 49\\cos 30^{\\circ} \\approx 42.4\\) N."
+  },
+  "proof": {
+   "stone": "A force is the hypotenuse of a right triangle whose legs are its components.",
+   "text": "Draw the force as an arrow of length \\(F\\) at angle \\(\\theta\\) to the \\(x\\)-axis. Drop a perpendicular to the axis: the adjacent side is \\(F\\cos\\theta\\) and the opposite side is \\(F\\sin\\theta\\), and together they add to the original vector. On a slope of angle \\(\\alpha\\), the weight is vertical and the normal is perpendicular to the slope. Rotating both the horizontal and vertical by the same turn shows the angle between the weight and the normal is also \\(\\alpha\\), so the parts are \\(mg\\sin\\alpha\\) along and \\(mg\\cos\\alpha\\) across.",
+   "example": "A 20 N force at 30°: components \\(20\\cos 30^{\\circ} \\approx 17.32\\) N and \\(20\\sin 30^{\\circ} = 10\\) N. Check: \\(17.32^{2} + 10^{2} \\approx 400 = 20^{2}\\)."
+  },
+  "professor": {
+   "stone": "Simon Stevin found the law of the slope with a loop of beads that cannot move.",
+   "text": "In 1586 Stevin draped a closed chain of equal beads over a triangular prism. It cannot rotate forever, so it is in equilibrium. Cut away the symmetric hanging part and the two lengths on the slopes still balance, so the pull down each slope is proportional to the slope's height, not its length. That is the rule \\(mg\\sin\\alpha\\), since \\(\\sin\\alpha\\) is height over length. Resolving is the vector idea that any force splits along any two independent directions.",
+   "example": "Slopes of lengths 5 and 3 share height 3. Pull down each side, per unit mass per meter of chain: \\(5 \\times \\frac{3}{5} = 3\\) and \\(3 \\times \\frac{3}{3} = 3\\). Equal, so the chain balances."
+  }
+ },
+ {
+  "id": "VI.12.06",
+  "not": "The tension is not the hanging weight. A 3 kg mass hanging over a pulley, tied to a 2 kg block on a smooth table, accelerates, so \\(T = 11.76\\) N, not \\(3(9.8) = 29.4\\) N.",
+  "apples": {
+   "stone": "Things tied together with a tight string move together.",
+   "text": "Hang a bag over a table edge on a string tied to a toy car. The bag falls and drags the car along. The string pulls the car forward and holds the bag back, with the same pull at both ends.",
+   "example": "A car towing a trailer: the tow bar pulls the trailer forward and pulls the car back by the same amount."
+  },
+  "class": {
+   "stone": "Write \\(F = ma\\) for each particle separately, using the same \\(a\\) and the same \\(T\\).",
+   "text": "A light, inextensible string gives both particles the same speed and acceleration. Over a smooth pulley, the tension is the same on both sides. Solve the equations together for \\(a\\) and \\(T\\). For a lift or a tow, treat the whole system to find \\(a\\), then one part to find the internal force.",
+   "example": "Masses 5 kg and 3 kg hang over a smooth pulley. \\(5g - T = 5a\\) and \\(T - 3g = 3a\\). Adding: \\(2g = 8a\\), \\(a = 2.45\\) m/s². Then \\(T = 3(9.8 + 2.45) = 36.75\\) N."
+  },
+  "proof": {
+   "stone": "A massless string cannot carry a resultant force, so it passes the same pull from end to end.",
+   "text": "For any piece of a light string, \\(F = ma\\) with \\(m = 0\\) forces the resultant on it to be zero, so the tension is the same at both ends. A smooth pulley only turns the string without holding it back. With both masses sharing \\(a\\), adding the two equations cancels \\(T\\), just as treating them as one body cancels internal forces: \\((m_{1} + m_{2})a = (m_{1} - m_{2})g\\).",
+   "example": "A 1200 kg car tows a 400 kg trailer with driving force 2400 N, no resistance. Whole system: \\(a = \\frac{2400}{1600} = 1.5\\) m/s². Trailer alone: tow bar tension \\(400(1.5) = 600\\) N."
+  },
+  "professor": {
+   "stone": "Two nearly equal masses on a pulley slow gravity down enough to time it by hand.",
+   "text": "George Atwood described this machine in 1784 to test the laws of motion. With \\(a = \\frac{m_{1} - m_{2}}{m_{1} + m_{2}}g\\), close masses give a small, steady acceleration that is easy to measure. The same equations govern a lift: a person of mass \\(m\\) accelerating up at \\(a\\) feels \\(R = m(g + a)\\).",
+   "example": "Masses 101 g and 99 g: \\(a = \\frac{2}{200}(9.8) = 0.098\\) m/s², one hundredth of \\(g\\)."
+  }
+ },
+ {
+  "id": "VI.12.07",
+  "not": "Friction is not always \\(\\mu R\\). A 10 kg box with \\(\\mu = 0.5\\) pushed with 20 N does not move, and friction is 20 N, not \\(0.5(98) = 49\\) N.",
+  "apples": {
+   "stone": "Friction pushes back only as hard as it needs to, up to a limit.",
+   "text": "Push a heavy box gently and it stays put: the floor pushes back just as hard. Push harder and the floor pushes back harder, until it can't any more and the box slides. Rough floors and heavy boxes give a bigger limit.",
+   "example": "A book on a tilted board stays put until the board is steep enough, then it slides."
+  },
+  "class": {
+   "stone": "\\[ F \\le \\mu R \\]",
+   "text": "Friction \\(F\\) acts along the surface, against the motion or the tendency to move. It takes any value up to \\(\\mu R\\), where \\(R\\) is the normal reaction and \\(\\mu\\) the coefficient of friction. Friction is limiting, \\(F = \\mu R\\), when the body is on the point of sliding or is sliding. On a slope of angle \\(\\alpha\\), \\(R = mg\\cos\\alpha\\) if no other force acts across the slope.",
+   "example": "A 4 kg block on a 30° slope with \\(\\mu = 0.4\\). Down the slope: \\(4(9.8)\\sin 30^{\\circ} = 19.6\\) N. \\(R = 39.2\\cos 30^{\\circ} \\approx 33.95\\) N, so max friction \\(\\approx 13.58\\) N. It slides, with \\(a \\approx \\frac{19.6 - 13.58}{4} \\approx 1.51\\) m/s².",
+   "env": "Law"
+  },
+  "proof": {
+   "stone": "On the point of sliding, \\(\\tan\\alpha = \\mu\\), whatever the mass.",
+   "text": "A block rests on a slope of angle \\(\\alpha\\) with only weight, normal reaction and friction. Along the slope \\(F = mg\\sin\\alpha\\); across it \\(R = mg\\cos\\alpha\\). It will slide when the needed friction exceeds the maximum: \\(mg\\sin\\alpha > \\mu mg\\cos\\alpha\\), that is \\(\\tan\\alpha > \\mu\\). The mass cancels, so heavy and light blocks start sliding at the same angle.",
+   "example": "With \\(\\mu = 0.4\\), sliding starts at \\(\\alpha\\) with \\(\\tan\\alpha = 0.4\\), about 21.8°. So at 30° the block slides, and at 20° it stays."
+  },
+  "professor": {
+   "stone": "Friction does not depend on how much surface touches.",
+   "text": "Amontons published in 1699 that friction is proportional to the load and independent of the apparent contact area, and Coulomb extended the work in 1785; Leonardo da Vinci had noted similar rules much earlier. The coefficient \\(\\mu\\) is an empirical number, not a fundamental constant: it comes from tiny contact points whose true area grows with the load.",
+   "example": "A 2 kg brick with \\(\\mu = 0.6\\) has maximum friction \\(0.6(2)(9.8) = 11.76\\) N whether it lies flat or stands on its end."
+  }
+ },
+ {
+  "id": "VI.12.08",
+  "not": "Don't put the full launch speed into the vertical equations. At 20 m/s and 30° above horizontal, the vertical start speed is \\(20\\sin 30^{\\circ} = 10\\) m/s, not 20 m/s.",
+  "apples": {
+   "stone": "A thrown ball moves sideways at a steady speed while it rises and falls like a dropped one.",
+   "text": "Kick a ball. Sideways, nothing pushes it, so it keeps the same sideways speed. Up and down, it acts just like a ball thrown straight up. Put the two together and you get a curved path.",
+   "example": "Roll a ball off a table and drop another from the same height at the same moment. They hit the floor together."
+  },
+  "class": {
+   "stone": "\\[ x = (u\\cos\\theta)t, \\quad y = (u\\sin\\theta)t - \\frac{1}{2}gt^{2} \\]",
+   "text": "Split the launch velocity into \\(u\\cos\\theta\\) horizontal and \\(u\\sin\\theta\\) vertical, ignoring air resistance. Horizontally the velocity is constant; vertically \\(a = -g\\). On level ground, the time of flight is \\(\\frac{2u\\sin\\theta}{g}\\), the range is \\(\\frac{u^{2}\\sin 2\\theta}{g}\\), and the maximum height is \\(\\frac{u^{2}\\sin^{2}\\theta}{2g}\\).",
+   "example": "\\(u = 20\\) m/s at 30°: components \\(17.32\\) and \\(10\\) m/s. Time \\(\\frac{2(10)}{9.8} \\approx 2.04\\) s, range \\(17.32 \\times 2.04 \\approx 35.3\\) m, maximum height \\(\\frac{10^{2}}{2(9.8)} \\approx 5.10\\) m."
+  },
+  "proof": {
+   "stone": "Gravity acts only vertically, so the two directions are separate problems joined by time.",
+   "text": "No horizontal force means constant horizontal velocity. Vertically, \\(y = 0\\) again at \\(t = \\frac{2u\\sin\\theta}{g}\\). Multiply by \\(u\\cos\\theta\\): range \\(= \\frac{2u^{2}\\sin\\theta\\cos\\theta}{g} = \\frac{u^{2}\\sin 2\\theta}{g}\\), largest at \\(\\theta = 45^{\\circ}\\). Eliminating \\(t = \\frac{x}{u\\cos\\theta}\\) gives \\(y = x\\tan\\theta - \\frac{gx^{2}}{2u^{2}\\cos^{2}\\theta}\\), a parabola.",
+   "example": "At 20 m/s, angles 30° and 60° give the same range, because \\(\\sin 60^{\\circ} = \\sin 120^{\\circ}\\): both are \\(\\frac{400 \\sin 60^{\\circ}}{9.8} \\approx 35.3\\) m."
+  },
+  "professor": {
+   "stone": "Every reachable target on level ground can be hit at two angles that add to 90°.",
+   "text": "Galileo showed in Two New Sciences in 1638 that a projectile follows a parabola, by combining uniform horizontal motion with uniformly accelerated fall. With air resistance the path is no longer a parabola, it comes down more steeply than it goes up, and the best angle for range drops below 45°.",
+   "example": "To land 30 m away at 20 m/s: \\(\\sin 2\\theta = \\frac{30(9.8)}{400} = 0.735\\), so \\(\\theta \\approx 23.7^{\\circ}\\) or \\(66.3^{\\circ}\\). A flat fast shot or a high lob."
+  }
+ },
+ {
+  "id": "VI.12.09",
+  "not": "Use the perpendicular distance. A 10 N force acting at 30° to a rod, 2 m from the pivot, has moment \\(10 \\times 2\\sin 30^{\\circ} = 10\\) N m, not 20 N m.",
+  "apples": {
+   "stone": "A small push far from the pivot can balance a big push close to it.",
+   "text": "On a seesaw, a light child far out can balance a heavy adult sitting near the middle. What matters is how hard each pushes down times how far they sit from the middle. That is why a door is easiest to open at the handle.",
+   "example": "A 20 kg child sitting 2 meters out balances a 40 kg adult sitting 1 meter out."
+  },
+  "class": {
+   "stone": "\\[ \\text{moment} = F \\times d \\]",
+   "text": "Here \\(d\\) is the perpendicular distance from the pivot to the line of action of the force, and the unit is N m. A rigid body is in equilibrium when the resultant force is zero and the total clockwise moment equals the total anticlockwise moment about any point. The weight of a uniform rod acts at its middle. When a rod is on the point of tipping about one support, the reaction at the other support is zero.",
+   "example": "A uniform 4 m rod of mass 10 kg rests on supports at its ends A and B. A 20 kg load sits 1 m from A. Moments about A: \\(4R_{B} = 98(2) + 196(1) = 392\\), so \\(R_{B} = 98\\) N. Resolving: \\(R_{A} = 294 - 98 = 196\\) N."
+  },
+  "proof": {
+   "stone": "If the forces balance, the total moment is the same about every point, so any point will do.",
+   "text": "Take moments about a point P, then about a point Q a distance \\(c\\) to the right. Each moment changes by that force's perpendicular component times \\(c\\), so the total changes by \\(c\\) times the resultant force. If the resultant is zero, the totals are equal: moments about any point give the same answer. So choose the point that removes an unknown force, such as a support about to lose contact.",
+   "example": "A uniform 6 m plank of 20 kg rests on supports 2 m and 4 m from its left end. A 30 kg child walks right past the right support. At tipping the left reaction is 0; about the right support \\(30gx = 20g(1)\\), so \\(x = \\frac{2}{3}\\) m past it."
+  },
+  "professor": {
+   "stone": "A moment is a cross product: \\(\u000bec{M} = \u000bec{r} \times \u000bec{F}\\).",
+   "text": "Archimedes proved the law of the lever, that weights balance at distances inversely proportional to their sizes, and the saying 'Give me a place to stand and I will move the Earth' is attributed to him. In vector form, the moment \\(\\vec{r} \\times \\vec{F}\\) has size \\(rF\\sin\\theta\\), which is exactly force times perpendicular distance, and it points along the axis of turning.",
+   "example": "A 10 N force at 30° to a 2 m rod: \\(|\\vec{r} \\times \\vec{F}| = 2(10)\\sin 30^{\\circ} = 10\\) N m, matching the perpendicular distance \\(2\\sin 30^{\\circ} = 1\\) m."
+  }
+ }
+]

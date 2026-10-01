@@ -1,0 +1,66 @@
+{
+ "unit": "IV.1",
+ "name": "Equations & inequalities",
+ "skills": [
+  {
+   "id": "IV.1.01",
+   "name": "Fractions & decimals in equations",
+   "steps": {
+    "a": "clear fractions with the LCD",
+    "b": "clear decimals by powers of 10",
+    "c": "solve the cleaned equation",
+    "d": "check with the original"
+   },
+   "wrong_turn": "Multiply every term: x/3 + 1/2 = 5/6 times 6 is 2x + 3 = 5, not 2x + 1/2 = 5.",
+   "rule": "Multiply every term by the LCD, or by a power of 10, to clear fractions and decimals."
+  },
+  {
+   "id": "IV.1.02",
+   "name": "Literal equations",
+   "steps": {
+    "a": "solve a formula for one letter",
+    "b": "treat other letters as numbers",
+    "c": "rearrange science formulas",
+    "d": "state restrictions (no dividing by 0)"
+   },
+   "wrong_turn": "Divide the whole side: P = 2l + 2w gives w = (P − 2l)/2, not P − 2l/2.",
+   "rule": "To solve for one letter, treat every other letter as a number."
+  },
+  {
+   "id": "IV.1.03",
+   "name": "Absolute value equations",
+   "steps": {
+    "a": "meaning as distance",
+    "b": "split into two cases",
+    "c": "isolate the absolute value first",
+    "d": "reject impossible cases"
+   },
+   "wrong_turn": "Isolate first: 2|x| + 3 = 11 means |x| = 4, so x = ±4. Don't split 2x + 3 = ±11.",
+   "rule": "|A|=c with c≥0 means A=c or A=−c."
+  },
+  {
+   "id": "IV.1.04",
+   "name": "Compound inequalities",
+   "steps": {
+    "a": "\"and\" as overlap",
+    "b": "\"or\" as union",
+    "c": "solve three-part inequalities",
+    "d": "graph and write intervals"
+   },
+   "wrong_turn": "\"x < 1 or x > 4\" can't be squeezed into 4 < x < 1. That form means \"and\", and here it is empty.",
+   "rule": "\"And\" is the overlap, ∩. \"Or\" is the union, ∪."
+  },
+  {
+   "id": "IV.1.05",
+   "name": "Absolute value inequalities",
+   "steps": {
+    "a": "less-than becomes \"and\"",
+    "b": "greater-than becomes \"or\"",
+    "c": "solve and graph",
+    "d": "tolerance word problems"
+   },
+   "wrong_turn": "|x| > 3 is not −3 > x > 3, which no number satisfies. Write x < −3 or x > 3.",
+   "rule": "|A|<c means −c<A<c. |A|>c means A<−c or A>c."
+  }
+ ]
+}

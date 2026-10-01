@@ -1,0 +1,114 @@
+{
+ "unit": "V.4",
+ "name": "Polygons",
+ "skills": [
+  {
+   "id": "V.4.01",
+   "name": "Interior angle sums",
+   "steps": {
+    "a": "split into triangles",
+    "b": "(n − 2)·180°",
+    "c": "one angle of a regular polygon",
+    "d": "find n from an angle"
+   },
+   "wrong_turn": "Use n − 2 triangles, not n. A pentagon's angles sum to 3 × 180° = 540°, not 900°.",
+   "rule": "The interior angles of an n-gon sum to (n−2)⋅180°."
+  },
+  {
+   "id": "V.4.02",
+   "name": "Exterior angle sum",
+   "steps": {
+    "a": "always 360°",
+    "b": "walking-around explanation",
+    "c": "one exterior angle",
+    "d": "find n"
+   },
+   "wrong_turn": "Don't mix up the two sums. The exterior angles always total 360°; it's the interior sum, (n − 2)·180°, that grows with n.",
+   "rule": "The exterior angles of a convex polygon, one at each vertex, sum to 360°."
+  },
+  {
+   "id": "V.4.03",
+   "name": "Parallelogram properties",
+   "steps": {
+    "a": "opposite sides",
+    "b": "opposite angles",
+    "c": "diagonals bisect",
+    "d": "prove a property"
+   },
+   "wrong_turn": "A parallelogram's diagonals bisect each other but are usually not equal. Only in a rectangle are they the same length.",
+   "rule": "A parallelogram has opposite sides and opposite angles congruent, consecutive angles supplementary, and diagonals that bisect each other."
+  },
+  {
+   "id": "V.4.04",
+   "name": "Proving parallelograms",
+   "steps": {
+    "a": "both pairs of sides",
+    "b": "one pair parallel and congruent",
+    "c": "diagonals bisect",
+    "d": "on the coordinate plane"
+   },
+   "wrong_turn": "One pair of parallel sides isn't enough: that could be a trapezoid. You need both pairs, or one pair parallel and congruent.",
+   "rule": "Show both pairs of opposite sides congruent, or one pair congruent and parallel, or diagonals that bisect each other."
+  },
+  {
+   "id": "V.4.05",
+   "name": "Rectangles, rhombi, squares",
+   "steps": {
+    "a": "rectangle diagonals congruent",
+    "b": "rhombus diagonals perpendicular",
+    "c": "square has both",
+    "d": "solve for x"
+   },
+   "wrong_turn": "A rectangle's diagonals are equal but not perpendicular. Only when all sides are equal too, in a square, do they cross at right angles.",
+   "rule": "Rectangle: diagonals congruent. Rhombus: diagonals perpendicular and bisecting the angles. Square: all of these."
+  },
+  {
+   "id": "V.4.06",
+   "name": "Trapezoids & kites",
+   "steps": {
+    "a": "isosceles trapezoid properties",
+    "b": "trapezoid midsegment",
+    "c": "kite diagonals",
+    "d": "solve for x"
+   },
+   "wrong_turn": "The trapezoid midsegment averages the two bases; it doesn't halve one. Bases 10 and 16 give 13, not 8.",
+   "rule": "Trapezoid midsegment =(b1+b22). A kite's diagonals are perpendicular."
+  },
+  {
+   "id": "V.4.07",
+   "name": "Quadrilateral family tree",
+   "steps": {
+    "a": "the hierarchy",
+    "b": "always, sometimes, never",
+    "c": "minimum conditions",
+    "d": "classify from facts"
+   },
+   "wrong_turn": "\"Sometimes\" isn't \"never\". A rectangle is sometimes a rhombus: exactly when it's a square.",
+   "rule": "Each shape inherits every property of the shapes above it in the family tree."
+  },
+  {
+   "id": "V.4.08",
+   "name": "Regular polygon area",
+   "steps": {
+    "a": "apothem",
+    "b": "A = ½·apothem·perimeter",
+    "c": "find the apothem with trig",
+    "d": "approach the circle"
+   },
+   "wrong_turn": "The apothem goes to the middle of a side, not to a corner. Using the radius instead of the apothem overstates the area.",
+   "rule": "A=(12)aP, where a is the apothem and P the perimeter."
+  },
+  {
+   "id": "V.4.09",
+   "name": "Coordinate proofs",
+   "steps": {
+    "a": "place figures smartly",
+    "b": "slope for parallel and perpendicular",
+    "c": "distance for congruent sides",
+    "d": "midpoint for bisecting"
+   },
+   "wrong_turn": "Use letters, not specific numbers. Checking the rectangle (0, 0), (4, 0), (4, 3), (0, 3) proves nothing about every rectangle.",
+   "rule": "Place the figure to keep coordinates simple, then use the slope, distance and midpoint formulas."
+  }
+ ]
+}

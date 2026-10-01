@@ -1,0 +1,120 @@
+{
+  "branch": "I.3",
+  "intro": "Place value is the idea that a digit's worth depends on where it sits: the 4 in 40 means four tens, not four. This branch shows how tens and hundreds are built from ones, which makes bigger numbers and later arithmetic make sense.",
+  "skills": {
+    "I.3.01": {
+      "what": "Understanding that ten single things can be grouped together and thought of as one ten.",
+      "levels": {
+        "a": "Works out how many more sticks are needed to make a bundle of 10.",
+        "b": "Works out how many more counters fill a box of ten spaces (a ten-frame).",
+        "c": "Recognizes a group of 10 as \"one ten.\"",
+        "d": "Knows how many ones make a given number of tens, such as 2 tens being 20 ones."
+      }
+    },
+    "I.3.02": {
+      "what": "Seeing that each teen number is one ten plus some extra ones, like 16 being ten and six.",
+      "levels": {
+        "a": "Says how many tens and ones make 11 to 15, using blocks (a rod is ten, a small cube is one).",
+        "b": "The same for 16 to 19.",
+        "c": "Picks the blocks that show a given teen number.",
+        "d": "Reads the teen number shown by a set of blocks."
+      }
+    },
+    "I.3.03": {
+      "what": "Breaking numbers up to 50 into tens and ones.",
+      "levels": {
+        "a": "Knows the names for groups of tens: ten, twenty, thirty and so on.",
+        "b": "Finds a total by counting the tens first, then counting on the ones.",
+        "c": "Says how many tens and ones are needed to build a number.",
+        "d": "Reads the number shown by a set of tens and ones blocks."
+      }
+    },
+    "I.3.04": {
+      "what": "Understanding two-digit numbers up to 99: the left digit counts tens and the right digit counts ones.",
+      "levels": {
+        "a": "Says whether a digit stands for tens or ones.",
+        "b": "Gives what a digit is worth, such as the 8 in 28 being worth 8.",
+        "c": "Builds a number from tens and ones, such as 3 tens and 1 one making 31.",
+        "d": "Tells apart numbers with swapped digits, like 28 and 82."
+      }
+    },
+    "I.3.05": {
+      "what": "Swapping between ones and tens: ten ones can become a ten, and a ten can be broken back into ones.",
+      "levels": {
+        "a": "Bundles 10 loose ones into a ten and says the new count of tens and ones.",
+        "b": "Breaks a ten into 10 ones and says the new count.",
+        "c": "Recognizes a number shown two ways, like 27 as 1 ten and 17 ones.",
+        "d": "Works out a missing number of tens in such an unusual arrangement.",
+        "e": "Spots the one arrangement of tens and ones that does not make the given number.",
+        "f": "Finds every different way to show a number with tens and ones blocks."
+      }
+    },
+    "I.3.06": {
+      "what": "Understanding that ten tens make a hundred, and building numbers in the hundreds.",
+      "levels": {
+        "a": "Works out how many more tens are needed to make 100.",
+        "b": "Counts in hundreds up to 900.",
+        "c": "Says how many hundreds, tens and ones make a three-digit number.",
+        "d": "Reads the three-digit number shown by a set of blocks."
+      }
+    },
+    "I.3.07": {
+      "what": "Knowing what each digit in a three-digit number stands for: hundreds, tens or ones.",
+      "levels": {
+        "a": "Finds the hundreds digit, which is the one on the left.",
+        "b": "Finds the tens digit (middle) and the ones digit (right).",
+        "c": "Says what a digit is worth, such as the 8 in 819 being worth 800.",
+        "d": "Understands a zero digit means none of that place, as in 208.",
+        "e": "Builds a number from hundreds, tens and ones given in a mixed-up order.",
+        "f": "Arranges three digit cards to make the biggest number, sometimes one that must be even."
+      }
+    },
+    "I.3.08": {
+      "what": "Writing a number as the sum of what each digit is worth, like 47 as 40 + 7 (expanded form).",
+      "levels": {
+        "a": "Writes a two-digit number as tens plus ones, like 28 = 20 + 8.",
+        "b": "Writes a three-digit number as hundreds plus tens plus ones.",
+        "c": "Turns a split-up number back into an ordinary one, like 200 + 80 + 8 = 288.",
+        "d": "Handles numbers with a zero in them, like 280 or 305."
+      }
+    },
+    "I.3.09": {
+      "what": "Reading and writing numbers as words, such as thirty-two or two hundred eighty-five.",
+      "levels": {
+        "a": "Matches number words to numbers up to 100.",
+        "b": "Writes numbers up to 20 as words.",
+        "c": "Writes numbers up to 100 as words.",
+        "d": "Reads and writes numbers up to 1,000 as words."
+      }
+    },
+    "I.3.10": {
+      "what": "Finding the number that is 10 more or 10 less, and later 100 more or less, than a given number.",
+      "levels": {
+        "a": "Finds 10 more or less by moving down or up a row on a chart of 1 to 100.",
+        "b": "Finds 10 more or less mentally by changing the tens digit.",
+        "c": "Finds 100 more or less by changing the hundreds digit.",
+        "d": "Finds 10 more or less when it crosses a hundred, like 108 down to 98."
+      }
+    },
+    "I.3.11": {
+      "what": "Getting to know the hundred chart, a grid of the numbers 1 to 100 arranged in rows of ten.",
+      "levels": {
+        "a": "Finds a given number's spot on the chart.",
+        "b": "Knows that numbers go up by 1 along a row and by 10 down a column.",
+        "c": "Fills in missing numbers on the chart.",
+        "d": "Spots patterns, such as which numbers share a row."
+      }
+    },
+    "I.3.12": {
+      "what": "Comparing numbers by looking at the biggest place first, such as the hundreds or tens.",
+      "levels": {
+        "a": "Compares two-digit numbers by their tens.",
+        "b": "Knows a three-digit number is bigger than any two-digit number.",
+        "c": "Compares numbers with the same first digit by looking at the next digit.",
+        "d": "Puts a list of numbers in order from least to greatest.",
+        "e": "Chooses the missing digit that makes a comparison true, such as 'blank 8 is more than 59'.",
+        "f": "Works out how many different digits could fill the gap and keep a comparison true."
+      }
+    }
+  }
+}

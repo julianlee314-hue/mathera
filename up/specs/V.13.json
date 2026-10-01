@@ -1,0 +1,150 @@
+{
+ "unit": "V.13",
+ "name": "Transformations",
+ "skills": [
+  {
+   "id": "V.13.01",
+   "name": "Rigid motions defined",
+   "steps": {
+    "a": "preimage and image",
+    "b": "isometry",
+    "c": "what is preserved",
+    "d": "function notation for moves"
+   },
+   "wrong_turn": "A dilation is not a rigid motion: it keeps the shape but changes the size. Rigid means every distance stays exactly the same.",
+   "rule": "A rigid motion, or isometry, is a transformation that preserves distance."
+  },
+  {
+   "id": "V.13.02",
+   "name": "Translation vectors",
+   "steps": {
+    "a": "vector notation",
+    "b": "apply",
+    "c": "find the vector",
+    "d": "compose two translations"
+   },
+   "wrong_turn": "Subtract preimage from image: A(5, 1) to A′(2, 4) is ⟨−3, 3⟩, not ⟨3, −3⟩.",
+   "rule": "Translation by ⟨a,b⟩: (x,y)↦(x+a,y+b)."
+  },
+  {
+   "id": "V.13.03",
+   "name": "Reflections precisely",
+   "steps": {
+    "a": "perpendicular bisector definition",
+    "b": "over any line",
+    "c": "find the line",
+    "d": "reflections in coordinates"
+   },
+   "wrong_turn": "Over the y-axis, (x, y) goes to (−x, y), not (x, −y). The coordinate along the mirror stays the same.",
+   "rule": "Reflection in a line ℓ sends P to P′ so that ℓ is the perpendicular bisector of PP′."
+  },
+  {
+   "id": "V.13.04",
+   "name": "Rotations about any point",
+   "steps": {
+    "a": "center and angle",
+    "b": "around the origin rules",
+    "c": "around other points",
+    "d": "find the center"
+   },
+   "wrong_turn": "The origin rules only work about the origin. About another center, shift the center to the origin first, then shift back.",
+   "rule": "About the origin, counterclockwise: 90° sends (x,y)↦(−y,x); 180°, (−x,−y); 270°, (y,−x)."
+  },
+  {
+   "id": "V.13.05",
+   "name": "Compositions",
+   "steps": {
+    "a": "order matters",
+    "b": "two reflections = translation or rotation",
+    "c": "describe a composition",
+    "d": "undo one"
+   },
+   "wrong_turn": "g ∘ f means do f first, then g. Reading left to right gets the order backwards.",
+   "rule": "Two reflections in parallel lines make a translation; in crossing lines, a rotation."
+  },
+  {
+   "id": "V.13.06",
+   "name": "Glide reflections",
+   "steps": {
+    "a": "definition",
+    "b": "apply",
+    "c": "footprints example",
+    "d": "identify from a picture"
+   },
+   "wrong_turn": "A glide reflection is not a rotation, even if the image looks turned. It is flipped: a left footprint becomes a right one.",
+   "rule": "A glide reflection is a reflection in a line followed by a translation along that line."
+  },
+  {
+   "id": "V.13.07",
+   "name": "Symmetry",
+   "steps": {
+    "a": "line symmetry",
+    "b": "rotational symmetry and order",
+    "c": "point symmetry",
+    "d": "symmetry of regular polygons"
+   },
+   "wrong_turn": "A rectangle has 2 lines of symmetry, not 4. Its diagonals are not mirror lines.",
+   "rule": "A symmetry of a figure is a rigid motion that maps the figure onto itself."
+  },
+  {
+   "id": "V.13.08",
+   "name": "Dilations about any center",
+   "steps": {
+    "a": "center and factor",
+    "b": "apply in coordinates",
+    "c": "negative scale factors",
+    "d": "lines map to parallel lines"
+   },
+   "wrong_turn": "Factor 3 about (1, 2) doesn't mean multiply the coordinates by 3. Measure from the center: P′ = C + 3(P − C).",
+   "rule": "A dilation with center C and factor k sends P to P′=C+k(P−C)."
+  },
+  {
+   "id": "V.13.09",
+   "name": "Congruence by rigid motions",
+   "steps": {
+    "a": "the definition",
+    "b": "find a sequence",
+    "c": "justify SAS, ASA, SSS",
+    "d": "prove congruence this way"
+   },
+   "wrong_turn": "Congruent shapes may be mirror images. A triangle and its reflection are congruent; a sequence may use a reflection.",
+   "rule": "Two figures are congruent when a sequence of rigid motions maps one onto the other."
+  },
+  {
+   "id": "V.13.10",
+   "name": "Similarity by transformations",
+   "steps": {
+    "a": "rigid motion plus dilation",
+    "b": "find a sequence",
+    "c": "justify AA",
+    "d": "prove similarity this way"
+   },
+   "wrong_turn": "Similar isn't congruent: angles are equal, but sides are multiplied by one scale factor, not equal.",
+   "rule": "Two figures are similar when a dilation followed by rigid motions maps one onto the other."
+  },
+  {
+   "id": "V.13.11",
+   "name": "Transformation matrices",
+   "steps": {
+    "a": "points as vectors",
+    "b": "reflection and rotation matrices",
+    "c": "dilation matrices",
+    "d": "compose by multiplying"
+   },
+   "wrong_turn": "Matrix products work right to left: BA means do A first. And AB usually differs from BA.",
+   "rule": "A 2×2 matrix M moves the point 𝐯 to M𝐯; doing A then B is BA."
+  },
+  {
+   "id": "V.13.12",
+   "name": "Tessellations",
+   "steps": {
+    "a": "regular tessellations",
+    "b": "semi-regular ones",
+    "c": "angle sum test at a vertex",
+    "d": "Escher-style tiles"
+   },
+   "wrong_turn": "Regular pentagons don't tile: three corners make 324°, four make 432°. Not every regular polygon fits around a point.",
+   "rule": "Polygons fit around a vertex exactly when their angles there add to 360°."
+  }
+ ]
+}

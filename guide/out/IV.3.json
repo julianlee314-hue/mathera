@@ -1,0 +1,97 @@
+{
+  "branch": "IV.3",
+  "intro": "Linear functions have straight-line graphs and describe steady change, like a fixed hourly wage. This branch covers the different ways to write a line's equation, how lines relate to each other, and how to fit a line to real data.",
+  "skills": {
+    "IV.3.01": {
+      "what": "Writing a line's equation from one point on it and its slope (steepness), called point-slope form.",
+      "levels": {
+        "a": "Reads the slope and the point straight from an equation in this form.",
+        "b": "Writes the equation from a given point and slope.",
+        "c": "Finds the slope from two points, then writes the equation.",
+        "d": "Matches an equation in this form to its graph.",
+        "e": "Works backwards to find a missing slope from a point the line passes through.",
+        "f": "Finds the single point that a whole family of changing lines all pass through."
+      }
+    },
+    "IV.3.02": {
+      "what": "Writing a line as a number of x plus a number of y equals a total, called standard form, handy for budgets.",
+      "levels": {
+        "a": "Tidies an equation into standard form with whole numbers.",
+        "b": "Finds where the line crosses each axis.",
+        "c": "Picks the right graph using the two crossing points.",
+        "d": "Solves budget problems, like mixing adult and child tickets for a fixed total.",
+        "e": "Works backwards from the two crossing points to the equation.",
+        "f": "Counts every whole-number solution, like all ways to hit a total exactly."
+      }
+    },
+    "IV.3.03": {
+      "what": "Switching a line's equation between its different forms, each of which shows different information.",
+      "levels": {
+        "a": "Rearranges standard form into the form showing slope and starting value.",
+        "b": "Rearranges point-slope form into slope and starting value form.",
+        "c": "Rearranges slope and starting value form into standard form with whole numbers.",
+        "d": "Chooses which form suits a given job best."
+      }
+    },
+    "IV.3.04": {
+      "what": "Working with perfectly flat (horizontal) and straight-up (vertical) lines, which have special equations.",
+      "levels": {
+        "a": "Writes the equation of a flat line through a point.",
+        "b": "Writes the equation of a vertical line through a point.",
+        "c": "Knows a flat line has slope zero and a vertical line has no slope at all.",
+        "d": "Explains why a vertical line is not a function but a flat line is."
+      }
+    },
+    "IV.3.05": {
+      "what": "Parallel lines never meet because they have exactly the same slope.",
+      "levels": {
+        "a": "Gives the slope of any line parallel to a given one.",
+        "b": "Tests whether two equations give parallel lines.",
+        "c": "Writes the equation of a parallel line through a given point.",
+        "d": "Compares slopes to check whether two sides of a shape on a grid are parallel.",
+        "e": "Finds the missing number that makes two lines parallel.",
+        "f": "Finds when two lines are parallel but not the very same line."
+      }
+    },
+    "IV.3.06": {
+      "what": "Perpendicular lines meet at a right angle; their slopes are flipped and have opposite signs, like 3 and minus one third.",
+      "levels": {
+        "a": "Gives the slope of a line at right angles to a given one.",
+        "b": "Tells whether two lines are parallel, perpendicular or neither.",
+        "c": "Writes a perpendicular line through a given point.",
+        "d": "Finds the line that cuts a segment in half at a right angle.",
+        "e": "Finds the missing number that makes two lines perpendicular.",
+        "f": "Finds the point on a line closest to a given point, or reflects a point in a line."
+      }
+    },
+    "IV.3.07": {
+      "what": "Finding where a line crosses the x-axis and y-axis, and what those points mean.",
+      "levels": {
+        "a": "Finds where a line crosses the horizontal axis by setting y to zero.",
+        "b": "Finds where a line crosses the vertical axis by setting x to zero.",
+        "c": "Explains the crossing points in context, such as a full tank at time zero.",
+        "d": "Uses the two crossing points to pick the graph.",
+        "e": "Finds the area of the triangle a line makes with the two axes.",
+        "f": "Finds every line through a given point that makes a triangle of a given area."
+      }
+    },
+    "IV.3.08": {
+      "what": "Graphing inequalities in x and y, where the answer is a whole shaded region on one side of a line.",
+      "levels": {
+        "a": "Decides whether the boundary line is solid (included) or dashed (not included).",
+        "b": "Tests a point to decide which side to shade.",
+        "c": "Checks whether a given point is a solution.",
+        "d": "Writes the inequality that a shaded graph shows."
+      }
+    },
+    "IV.3.09": {
+      "what": "Fitting a best straight line to real data and measuring how well it fits, using leftover errors called residuals.",
+      "levels": {
+        "a": "Uses a calculator to find the line of best fit for data.",
+        "b": "Matches a scatter plot to a number (r) that measures how strongly the points line up.",
+        "c": "Computes a residual: actual value minus the value the line predicts.",
+        "d": "Reads a plot of residuals to judge whether a straight line suits the data."
+      }
+    }
+  }
+}

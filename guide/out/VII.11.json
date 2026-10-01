@@ -1,0 +1,114 @@
+{
+  "branch": "VII.11",
+  "intro": "A partial derivative measures how fast a quantity changes when just one input changes. This branch extends the idea of a derivative (rate of change) to functions of several inputs, including the gradient, which points straight uphill.",
+  "skills": {
+    "VII.11.01": {
+      "what": "A partial derivative measures how the output changes when one input moves and the others stay fixed, like walking due east on a hillside.",
+      "levels": {
+        "a": "Holds all other inputs fixed and varies just one.",
+        "b": "Interprets it as the slope in one direction.",
+        "c": "Reads and writes the notation for partial derivatives.",
+        "d": "Uses the limit definition to compute one from scratch."
+      }
+    },
+    "VII.11.02": {
+      "what": "Computing partial derivatives using the usual derivative rules, treating the other variables as fixed numbers.",
+      "levels": {
+        "a": "Finds the partial derivative with respect to x.",
+        "b": "Finds the partial derivative with respect to y.",
+        "c": "Finds partial derivatives of functions with three inputs.",
+        "d": "Estimates partial derivatives from a contour map."
+      }
+    },
+    "VII.11.03": {
+      "what": "Taking partial derivatives again to measure how rates of change themselves change.",
+      "levels": {
+        "a": "Finds second partial derivatives.",
+        "b": "Finds mixed partials, taken first in one variable then another.",
+        "c": "Uses the fact that the order of mixed partials usually does not matter.",
+        "d": "Checks whether a function satisfies the Laplace equation from physics."
+      }
+    },
+    "VII.11.04": {
+      "what": "A tangent plane is the flat surface that just touches a curved surface at one point, like a sheet of paper resting on a ball.",
+      "levels": {
+        "a": "Learns the formula for a tangent plane.",
+        "b": "Finds the tangent plane at a given point.",
+        "c": "Finds tangent planes to level surfaces.",
+        "d": "Finds the line sticking straight out of the surface (the normal line)."
+      }
+    },
+    "VII.11.05": {
+      "what": "Using the tangent plane to estimate values of a function near a known point.",
+      "levels": {
+        "a": "Uses the tangent plane as an estimate of the surface.",
+        "b": "Approximates a function value near a known point.",
+        "c": "Estimates small changes in output from small changes in inputs.",
+        "d": "Estimates how measurement errors grow in a calculation."
+      }
+    },
+    "VII.11.06": {
+      "what": "A function is differentiable at a point if it is smooth enough there to have a good tangent plane.",
+      "levels": {
+        "a": "Sees that having partial derivatives is not quite enough.",
+        "b": "Uses the rule that continuous partial derivatives guarantee it.",
+        "c": "Studies a counterexample where partials exist but smoothness fails.",
+        "d": "Connects differentiability to the tangent plane being a good estimate."
+      }
+    },
+    "VII.11.07": {
+      "what": "The chain rule tracks how changes pass through a chain of dependencies, such as temperature depending on position, which depends on time.",
+      "levels": {
+        "a": "Draws tree diagrams showing what depends on what.",
+        "b": "Applies the chain rule when everything depends on one variable.",
+        "c": "Applies it when everything depends on two variables.",
+        "d": "Solves related-rates problems in three dimensions."
+      }
+    },
+    "VII.11.08": {
+      "what": "Finding slopes of curves or surfaces defined by an equation, without solving for one variable first.",
+      "levels": {
+        "a": "Uses the formula for curves given by an equation in x and y.",
+        "b": "Extends it to surfaces given by an equation in x, y and z.",
+        "c": "Applies it to specific examples.",
+        "d": "Compares it with the single-variable method learned earlier."
+      }
+    },
+    "VII.11.09": {
+      "what": "The gradient collects all the partial derivatives into one arrow that points in the steepest uphill direction.",
+      "levels": {
+        "a": "Understands the gradient as the vector of partial derivatives.",
+        "b": "Computes gradients.",
+        "c": "Shows the gradient points straight uphill.",
+        "d": "Shows its length equals the steepest slope."
+      }
+    },
+    "VII.11.10": {
+      "what": "A directional derivative measures the rate of change in any chosen direction, like the slope felt walking northeast on a hill.",
+      "levels": {
+        "a": "Describes a direction with an arrow of length 1.",
+        "b": "Computes the rate as the gradient dotted with that direction.",
+        "c": "Finds the directions of fastest increase and decrease.",
+        "d": "Interprets directional slopes on a contour map."
+      }
+    },
+    "VII.11.11": {
+      "what": "The gradient always points at right angles to level curves and level surfaces, straight across the contour lines.",
+      "levels": {
+        "a": "Shows the gradient is perpendicular to level curves.",
+        "b": "Shows it is perpendicular to level surfaces.",
+        "c": "Finds tangent planes using the gradient.",
+        "d": "Traces the path of steepest climb up a hill."
+      }
+    },
+    "VII.11.12": {
+      "what": "A space curve is a path through 3D, like the flight of a drone, described by position over time.",
+      "levels": {
+        "a": "Describes a path by position over time and finds its velocity.",
+        "b": "Finds the length of a curved path.",
+        "c": "Finds the direction of travel and the direction of turning.",
+        "d": "Measures how sharply a path bends (its curvature)."
+      }
+    }
+  }
+}

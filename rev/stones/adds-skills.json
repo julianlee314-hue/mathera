@@ -1,0 +1,134 @@
+[
+ {
+  "id": "IV.6.16",
+  "name": "Polynomial identities",
+  "unit": "IV.6 Polynomials",
+  "steps": {
+   "a": "prove an identity by expanding",
+   "b": "(x² + y²)² = (x² − y²)² + (2xy)²",
+   "c": "generate Pythagorean triples",
+   "d": "use identities for mental math"
+  }
+ },
+ {
+  "id": "IV.8.16",
+  "name": "Complex loci",
+  "unit": "IV.8 Complex numbers",
+  "steps": {
+   "a": "|z − a| = r is a circle",
+   "b": "|z − a| = |z − b| is a bisector",
+   "c": "arg(z − a) = θ is a half-line",
+   "d": "shade regions"
+  }
+ },
+ {
+  "id": "IV.9.18",
+  "name": "Modulus graphs",
+  "unit": "IV.9 Function toolkit",
+  "steps": {
+   "a": "y = |f(x)| reflects the negative part",
+   "b": "y = f(|x|) mirrors the right half",
+   "c": "solve |f(x)| = k with the graph",
+   "d": "combine with other transformations"
+  }
+ },
+ {
+  "id": "IV.10.14",
+  "name": "Roots & coefficients",
+  "unit": "IV.10 Polynomial functions",
+  "steps": {
+   "a": "sum and product of quadratic roots",
+   "b": "build a quadratic from root facts",
+   "c": "relationships for cubic roots",
+   "d": "equations with transformed roots"
+  }
+ },
+ {
+  "id": "V.1.14",
+  "name": "Proof by induction",
+  "unit": "V.1 Logic & proof",
+  "steps": {
+   "a": "base case and inductive step",
+   "b": "sum formulas",
+   "c": "divisibility",
+   "d": "inequalities"
+  }
+ },
+ {
+  "id": "V.1.15",
+  "name": "Sets & Venn diagrams",
+  "unit": "V.1 Logic & proof",
+  "steps": {
+   "a": "set notation and membership",
+   "b": "union, intersection and complement",
+   "c": "Venn diagrams with counts",
+   "d": "set-builder notation"
+  }
+ },
+ {
+  "id": "V.1.16",
+  "name": "Quantifiers",
+  "unit": "V.1 Logic & proof",
+  "steps": {
+   "a": "\"for all\" and \"there exists\"",
+   "b": "true or false over a set",
+   "c": "negate a quantified statement",
+   "d": "counterexamples for \"for all\""
+  }
+ },
+ {
+  "id": "VI.2.18",
+  "name": "Hyperbolic functions",
+  "unit": "VI.2 Derivatives",
+  "steps": {
+   "a": "sinh and cosh from eˣ",
+   "b": "their graphs",
+   "c": "cosh² − sinh² = 1",
+   "d": "derivatives"
+  }
+ },
+ {
+  "id": "VI.3.21",
+  "name": "Fixed-point iteration",
+  "unit": "VI.3 Applications of derivatives",
+  "steps": {
+   "a": "rearrange f(x) = 0 as x = g(x)",
+   "b": "iterate",
+   "c": "cobweb and staircase diagrams",
+   "d": "when it converges"
+  }
+ },
+ {
+  "id": "VI.5.16",
+  "name": "Inverse hyperbolic functions",
+  "unit": "VI.5 Integration techniques",
+  "steps": {
+   "a": "arsinh, arcosh, artanh as logs",
+   "b": "their derivatives",
+   "c": "integrals that give them",
+   "d": "compare with inverse trig forms"
+  }
+ },
+ {
+  "id": "VII.16.12",
+  "name": "Series solutions",
+  "unit": "VII.16 Second-order linear",
+  "steps": {
+   "a": "assume y = Σ aₙxⁿ",
+   "b": "substitute and shift indices",
+   "c": "a recurrence for the coefficients",
+   "d": "solve y″ + y = 0 by series"
+  }
+ },
+ {
+  "id": "VII.16.13",
+  "name": "Cauchy–Euler equations",
+  "unit": "VII.16 Second-order linear",
+  "steps": {
+   "a": "recognize x²y″ + axy′ + by = 0",
+   "b": "try y = xʳ",
+   "c": "the three root cases",
+   "d": "solve an initial value problem"
+  }
+ }
+]

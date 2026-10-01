@@ -1,0 +1,82 @@
+{
+  "branch": "V.14",
+  "intro": "This branch explores three-dimensional solids: what their slices look like, how to find their surface areas and volumes, and why the formulas work. A few skills include short arguments where the learner puts steps in order or picks what they prove.",
+  "skills": {
+    "V.14.01": {
+      "what": "A cross-section is the flat shape you see when you slice straight through a solid, like cutting a loaf of bread.",
+      "levels": {
+        "a": "Names the shape of a slice through a box or other prism.",
+        "b": "Names the shape of a slice through a pyramid.",
+        "c": "Finds the area of a slice through a cylinder or cone, such as a cut through a cone's tip.",
+        "d": "Names the slice through a cube cut at an unusual angle, such as a triangle or hexagon."
+      }
+    },
+    "V.14.02": {
+      "what": "Spinning a flat shape around a line sweeps out a solid, like a potter's wheel shaping clay.",
+      "levels": {
+        "a": "Finds the radius and height of the cylinder made by spinning a rectangle.",
+        "b": "Finds the radius and height of the cone made by spinning a right triangle.",
+        "c": "Finds the radius of the sphere made by spinning a half circle.",
+        "d": "Finds the volume of the solid made, taking care which side becomes the radius."
+      }
+    },
+    "V.14.03": {
+      "what": "Cavalieri's principle: if two solids have equal-area slices at every height and the same height, they have equal volume, like a straight or slanted stack of coins.",
+      "levels": {
+        "a": "Uses equal slices to find the volume of a slanted solid from an upright one.",
+        "b": "Finds the volume or upright height of a slanted box.",
+        "c": "Finds the volume of a slanted cylinder, working out its upright height first.",
+        "d": "Puts in order the steps that find a sphere's volume by comparing it with a cylinder minus a cone."
+      }
+    },
+    "V.14.04": {
+      "what": "Finding the total outside area of pyramids and cones by adding the area of the base and the slanted sides.",
+      "levels": {
+        "a": "Finds the slant height, measured along the sloping side, using Pythagoras.",
+        "b": "Finds the area of the sloping sides only (the lateral area).",
+        "c": "Adds the base to find the total surface area.",
+        "d": "Works from a flat net (the shape unfolded) to find the size of a cone."
+      }
+    },
+    "V.14.05": {
+      "what": "Finding the outside area of a sphere, which is exactly 4 times the area of a circle with the same radius.",
+      "levels": {
+        "a": "Finds a sphere's surface area from its radius.",
+        "b": "Finds the area of a solid half-sphere, including its flat face.",
+        "c": "Works backwards from the area to find the radius.",
+        "d": "Explores Archimedes' discovery: a sphere fills two thirds of the cylinder that just fits around it."
+      }
+    },
+    "V.14.06": {
+      "what": "A pyramid or cone holds exactly one third of the prism or cylinder with the same base and height.",
+      "levels": {
+        "a": "Picks what a short argument proves: by splitting a cube into 6 pyramids, a pyramid is one third of its prism.",
+        "b": "Finds the volume of a pyramid or cone.",
+        "c": "Works backwards from the volume to find a missing height or radius.",
+        "d": "Finds the volume of a frustum, a cone or pyramid with its top sliced off.",
+        "e": "Finds how full a cone-shaped glass is, knowing volume grows with the cube of the height.",
+        "f": "Finds the volume of a pyramid hidden inside a cube by cutting away the corners."
+      }
+    },
+    "V.14.07": {
+      "what": "Finding the volume and surface area of objects built from several simple solids.",
+      "levels": {
+        "a": "Adds the volumes of the parts.",
+        "b": "Subtracts the volume of a hole that has been cut out.",
+        "c": "Finds the outside area of a combined solid, leaving out the hidden faces.",
+        "d": "Applies this to real objects, such as a capsule-shaped pill.",
+        "e": "Works out how many smaller solids can be cast from a melted-down larger one.",
+        "f": "Counts every face, including inside tunnels, to find the surface area of a complicated solid."
+      }
+    },
+    "V.14.08": {
+      "what": "Using volume and area in real design problems, such as density and making packages efficient.",
+      "levels": {
+        "a": "Finds density, how heavy something is for its size, as mass divided by volume.",
+        "b": "Finds population density, people per square kilometer.",
+        "c": "Picks the box shape that holds a set amount using the least material.",
+        "d": "Works out how many items fit in a package, rounding down for partial items."
+      }
+    }
+  }
+}

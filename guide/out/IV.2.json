@@ -1,0 +1,155 @@
+{
+  "branch": "IV.2",
+  "intro": "A function is a rule that turns each input into exactly one output, like a machine. This branch teaches how to write, read, graph and combine functions, which is the language most of higher math is written in.",
+  "skills": {
+    "IV.2.01": {
+      "what": "Using the shorthand f(x), read \"f of x\", to mean the output of rule f when the input is x.",
+      "levels": {
+        "a": "Explains in words what a statement like f(7) = 8 means.",
+        "b": "Tells apart finding an output, f(3), from finding the input that gives 3.",
+        "c": "Writes real situations, like the cost of 10 rides, in this shorthand.",
+        "d": "Writes a function rule from a description in words.",
+        "e": "Works backwards from a rule written in a disguised form to find the plain rule.",
+        "f": "Untangles two linked equations about the same function to find one of its outputs."
+      }
+    },
+    "IV.2.02": {
+      "what": "Evaluating a function: putting a given input into the rule and working out the output.",
+      "levels": {
+        "a": "Puts whole numbers into a rule and works out the result.",
+        "b": "Puts in negative numbers and fractions.",
+        "c": "Puts in a whole expression, like a + 1, and simplifies what comes out.",
+        "d": "Reads outputs off a graph or a table instead of a formula.",
+        "e": "Uses one known output to find a missing number in the rule, then evaluates.",
+        "f": "Builds outputs up one step at a time from a rule that refers to the previous output."
+      }
+    },
+    "IV.2.03": {
+      "what": "Finding a function's domain (all inputs allowed) and range (all outputs it can produce).",
+      "levels": {
+        "a": "Lists the inputs and outputs from a set of number pairs.",
+        "b": "Reads the domain and range off a graph.",
+        "c": "Finds inputs to exclude from a formula, such as those causing division by zero or square roots of negatives.",
+        "d": "Writes the domain and range as ranges in bracket form.",
+        "e": "Finds the domain when two restrictions apply at once.",
+        "f": "Finds the range of a trickier rule, where a clever idea is needed."
+      }
+    },
+    "IV.2.04": {
+      "what": "Reading information from the graph of a function, such as outputs, solutions and where two graphs meet.",
+      "levels": {
+        "a": "Reads an output from a graph at a given input.",
+        "b": "Finds every input on a graph that gives a chosen output.",
+        "c": "Uses two graphs to find where one lies above the other.",
+        "d": "Reads the points where two graphs cross.",
+        "e": "Solves equations where the input has been doubled or shifted, still using the graph.",
+        "f": "Applies a graphed function twice in a row and finds every input that lands on a given value."
+      }
+    },
+    "IV.2.05": {
+      "what": "Understanding what a function means in a real situation, such as cost depending on number of rides.",
+      "levels": {
+        "a": "Names what the input and the output stand for.",
+        "b": "Explains a statement like C(10) = 50 in plain words.",
+        "c": "Decides which inputs make sense in the situation, such as no negative time.",
+        "d": "Gives the units of inputs, outputs and rates, such as dollars per ride."
+      }
+    },
+    "IV.2.06": {
+      "what": "Finding the average rate of change: how much the output changes for each one-unit change in input, over a stretch.",
+      "levels": {
+        "a": "Computes change in output divided by change in input using a formula.",
+        "b": "Finds the average rate of change from a table of values.",
+        "c": "Finds it from a graph.",
+        "d": "Explains what the rate means in context, such as liters drained per minute."
+      }
+    },
+    "IV.2.07": {
+      "what": "Identifying where a graph goes up (increasing), goes down (decreasing), or stays flat as you read left to right.",
+      "levels": {
+        "a": "Spots whether a graph rises or falls over a given stretch.",
+        "b": "Writes the rising and falling stretches as ranges of x.",
+        "c": "Finds stretches where the graph stays flat.",
+        "d": "Links rising to a positive rate of change and falling to a negative one."
+      }
+    },
+    "IV.2.08": {
+      "what": "Finding where a graph crosses the axes: the y-intercept, and the zeros (inputs that give an output of zero).",
+      "levels": {
+        "a": "Finds where the graph crosses the vertical axis by putting in zero.",
+        "b": "Finds the zeros of a simple straight-line rule.",
+        "c": "Reads the zeros and the crossing point off a graph.",
+        "d": "Finds the zeros of a curved rule using algebra."
+      }
+    },
+    "IV.2.09": {
+      "what": "Finding the highest and lowest points of a graph, either nearby peaks and valleys or the overall top and bottom.",
+      "levels": {
+        "a": "Tells whether a point is a local peak, a local valley, or neither.",
+        "b": "Finds the overall highest and lowest values of a whole graph.",
+        "c": "Reads a minimum or maximum value and where it happens from a graph.",
+        "d": "Explains what a maximum means in context, such as the best price for profit."
+      }
+    },
+    "IV.2.10": {
+      "what": "Working with piecewise functions, which use different rules for different ranges of input, like tax brackets.",
+      "levels": {
+        "a": "Chooses the right rule for a given input and evaluates it.",
+        "b": "Matches each piece to its part of the graph.",
+        "c": "Reads filled and open dots to tell which piece owns a boundary point.",
+        "d": "Writes each piece's rule from a graph."
+      }
+    },
+    "IV.2.11": {
+      "what": "Working with step functions, whose graphs look like stairs, such as parking fees charged per started hour.",
+      "levels": {
+        "a": "Rounds numbers down or up to a whole number using the floor and ceiling rules.",
+        "b": "Matches a step rule to its staircase graph.",
+        "c": "Solves postage and parking problems charged per started unit.",
+        "d": "Works out the value exactly at a jump and just after it.",
+        "e": "Works backwards from a step output to find all the inputs that give it.",
+        "f": "Solves puzzle equations that mix a number with its rounded-down value."
+      }
+    },
+    "IV.2.12": {
+      "what": "Working with the absolute value function, whose graph is a V shape.",
+      "levels": {
+        "a": "Matches V-shaped graphs to their equations.",
+        "b": "Finds the tip of the V and the steepness of each side.",
+        "c": "Rewrites the V as two straight-line pieces.",
+        "d": "Solves equations by seeing where the V meets a flat line."
+      }
+    },
+    "IV.2.13": {
+      "what": "Combining two functions by adding, subtracting, multiplying or dividing their outputs.",
+      "levels": {
+        "a": "Adds two functions' outputs at a given input.",
+        "b": "Subtracts one function from another and simplifies.",
+        "c": "Multiplies or divides two functions and simplifies.",
+        "d": "Finds which inputs are allowed after combining, avoiding division by zero.",
+        "e": "Works backwards from a sum and a difference to recover the original functions.",
+        "f": "Splits a function into a mirror-symmetric part and a flip-symmetric part."
+      }
+    },
+    "IV.2.14": {
+      "what": "Composition: feeding the output of one function straight into another, like two machines in a row.",
+      "levels": {
+        "a": "Applies one function, then the other, to a number.",
+        "b": "Writes the combined rule as a single expression.",
+        "c": "Shows that doing the two functions in the other order usually gives a different result.",
+        "d": "Breaks a complicated rule into an inside function and an outside function.",
+        "e": "Finds a missing number so that both orders give the same result.",
+        "f": "Applies a function hundreds of times by spotting that the results repeat in a cycle."
+      }
+    },
+    "IV.2.15": {
+      "what": "Finding the inverse of a function: the rule that undoes it, taking each output back to its input.",
+      "levels": {
+        "a": "Describes in words the steps that undo a function, in reverse order.",
+        "b": "Finds the inverse rule by swapping x and y and solving.",
+        "c": "Sees the inverse's graph as a mirror image across the diagonal line y = x.",
+        "d": "Checks whether two functions undo each other."
+      }
+    }
+  }
+}

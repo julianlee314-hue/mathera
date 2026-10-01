@@ -1,0 +1,138 @@
+{
+ "unit": "V.12",
+ "name": "Conic sections",
+ "skills": [
+  {
+   "id": "V.12.01",
+   "name": "Slicing a cone",
+   "steps": {
+    "a": "circle",
+    "b": "ellipse",
+    "c": "parabola",
+    "d": "hyperbola and degenerate cases"
+   },
+   "wrong_turn": "A parabola isn't one branch of a hyperbola. Hyperbola arms straighten toward asymptote lines; a parabola's never do.",
+   "rule": "A plane cuts a double cone in a circle, an ellipse, a parabola or a hyperbola."
+  },
+  {
+   "id": "V.12.02",
+   "name": "Parabola as focus & directrix",
+   "steps": {
+    "a": "the definition",
+    "b": "derive the equation",
+    "c": "find focus and directrix",
+    "d": "the value of p"
+   },
+   "wrong_turn": "p is the distance from vertex to focus, not from focus to directrix. In x² = 12y, p = 3, and the directrix is 6 from the focus.",
+   "rule": "A parabola is the set of points equally far from a focus and a directrix."
+  },
+  {
+   "id": "V.12.03",
+   "name": "Parabola equations",
+   "steps": {
+    "a": "vertical opening",
+    "b": "horizontal opening",
+    "c": "write from features",
+    "d": "graph"
+   },
+   "wrong_turn": "The squared variable doesn't tell the direction of opening. (y − 1)² = 4(x + 2) opens right, not up.",
+   "rule": "(x−h)2=4p(y−k) opens up or down; (y−k)2=4p(x−h) opens right or left."
+  },
+  {
+   "id": "V.12.04",
+   "name": "Ellipse definition",
+   "steps": {
+    "a": "sum of distances to foci",
+    "b": "string-and-pins drawing",
+    "c": "major and minor axes",
+    "d": "eccentricity"
+   },
+   "wrong_turn": "The foci are inside the ellipse on its long axis, not on the curve. The constant sum is 2a, the major axis, not the distance between the foci.",
+   "rule": "An ellipse is the set of points whose distances to two foci add up to a constant 2a."
+  },
+  {
+   "id": "V.12.05",
+   "name": "Ellipse equations & graphs",
+   "steps": {
+    "a": "standard form",
+    "b": "horizontal vs vertical",
+    "c": "graph from equation",
+    "d": "write from graph"
+   },
+   "wrong_turn": "The larger denominator sets the long direction, not which term comes first. x²/4 + y²/9 = 1 is tall, since 9 is under y.",
+   "rule": "((x−h)2a2)+((y−k)2b2)=1"
+  },
+  {
+   "id": "V.12.06",
+   "name": "Ellipse foci",
+   "steps": {
+    "a": "c² = a² − b²",
+    "b": "find the foci",
+    "c": "whispering galleries",
+    "d": "planet orbits"
+   },
+   "wrong_turn": "For an ellipse c² = a² − b², not a² + b². The foci are inside the curve, so c is less than a.",
+   "rule": "c2=a2−b2, and the foci lie c from the center along the major axis."
+  },
+  {
+   "id": "V.12.07",
+   "name": "Hyperbola definition",
+   "steps": {
+    "a": "difference of distances",
+    "b": "transverse and conjugate axes",
+    "c": "c² = a² + b²",
+    "d": "find the foci"
+   },
+   "wrong_turn": "For a hyperbola c² = a² + b², not a² − b². The foci lie beyond the vertices, so c is bigger than a.",
+   "rule": "A hyperbola is the set of points whose distances to two foci differ by a constant 2a."
+  },
+  {
+   "id": "V.12.08",
+   "name": "Hyperbola graphs",
+   "steps": {
+    "a": "standard form",
+    "b": "the central box",
+    "c": "asymptotes",
+    "d": "graph and write"
+   },
+   "wrong_turn": "The asymptotes are y = ±(b/a)x only when x² comes first. For y²/a² − x²/b² = 1 they are y = ±(a/b)x.",
+   "rule": "(x2a2)−(y2b2)=1 has asymptotes y=±(ba)x."
+  },
+  {
+   "id": "V.12.09",
+   "name": "Classify conics",
+   "steps": {
+    "a": "complete the square",
+    "b": "signs of x² and y² terms",
+    "c": "discriminant B² − 4AC",
+    "d": "name and graph"
+   },
+   "wrong_turn": "x² + y² = −4 fits the ellipse pattern but has no points at all. Complete the square before naming the curve.",
+   "rule": "For Ax2+Bxy+Cy2+Dx+Ey+F=0: B2−4AC<0 ellipse, =0 parabola, >0 hyperbola."
+  },
+  {
+   "id": "V.12.10",
+   "name": "Conics in the world",
+   "steps": {
+    "a": "satellite dishes",
+    "b": "headlights",
+    "c": "orbits",
+    "d": "LORAN navigation"
+   },
+   "wrong_turn": "A dish's receiver sits at the focus, p from the vertex, not at the rim or level with the dish's depth.",
+   "rule": "Parabolas focus parallel rays, ellipses aim one focus at the other, hyperbolas locate by time differences."
+  },
+  {
+   "id": "V.12.11",
+   "name": "Systems with conics",
+   "steps": {
+    "a": "line and conic",
+    "b": "two conics",
+    "c": "substitution or elimination",
+    "d": "count intersections"
+   },
+   "wrong_turn": "Substituting and squaring can create extra answers. Check every solution in both original equations.",
+   "rule": "A line meets a conic at most twice, and two conics meet at most four times."
+  }
+ ]
+}

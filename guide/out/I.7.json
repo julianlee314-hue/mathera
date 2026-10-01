@@ -1,0 +1,158 @@
+{
+  "branch": "I.7",
+  "intro": "This branch connects math to everyday life: comparing lengths, weights and amounts, telling time, reading a calendar, counting money, and reading simple charts. It shows learners that numbers are useful for describing the world.",
+  "skills": {
+    "I.7.01": {
+      "what": "Comparing how long things are, to say which is longer or shorter.",
+      "levels": {
+        "a": "Says which of two things is longer or shorter when their ends line up.",
+        "b": "Compares lengths whose ends don't line up, by counting grid spaces.",
+        "c": "Puts three things in order from shortest to longest.",
+        "d": "Compares two things by checking each against a third, like a piece of string."
+      }
+    },
+    "I.7.02": {
+      "what": "Measuring length by laying small objects, like paper clips, end to end and counting them.",
+      "levels": {
+        "a": "Knows the objects must touch with no gaps or overlaps.",
+        "b": "Measures something by counting paper clips laid end to end.",
+        "c": "Counts longer rows of units carefully, counting on from 10.",
+        "d": "Understands that bigger units give a smaller count for the same length."
+      }
+    },
+    "I.7.03": {
+      "what": "Using a ruler to measure length in centimeters or inches.",
+      "levels": {
+        "a": "Reads a length from a ruler when the object starts at zero.",
+        "b": "Finds the length when the object doesn't start at zero.",
+        "c": "Gives a length to the nearest whole centimeter.",
+        "d": "Works out where to stop to draw a line of a given length."
+      }
+    },
+    "I.7.04": {
+      "what": "Solving everyday problems about length, and making sensible guesses of how long things are.",
+      "levels": {
+        "a": "Adds two lengths together, like a ribbon made longer.",
+        "b": "Works out how much longer one thing is than another.",
+        "c": "Picks a sensible estimate for a real object, like a fork being about 18 cm.",
+        "d": "Measures to check a guess and says how far off it was.",
+        "e": "Works backwards: knows the whole ribbon and one piece, finds the other piece.",
+        "f": "Works out every length two sticks can measure, end to end or by their difference."
+      }
+    },
+    "I.7.05": {
+      "what": "Comparing how heavy things are, using a balance scale or small cubes as weights.",
+      "levels": {
+        "a": "Says which of two familiar things is heavier or lighter.",
+        "b": "Reads a balance scale: the heavier side goes down.",
+        "c": "Compares weights measured in cubes.",
+        "d": "Puts three things in order from heaviest to lightest."
+      }
+    },
+    "I.7.06": {
+      "what": "Comparing how much different containers hold (their capacity), using cups of water.",
+      "levels": {
+        "a": "Says which of two containers holds more.",
+        "b": "Counts how many cups it took to fill a container.",
+        "c": "Compares two containers by how many cups each holds.",
+        "d": "Puts three containers in order from holding least to most."
+      }
+    },
+    "I.7.07": {
+      "what": "Telling time to the hour on a clock with hands and on a digital clock.",
+      "levels": {
+        "a": "Knows the short hand is the hour hand.",
+        "b": "Reads o'clock times from a clock with hands.",
+        "c": "Matches a digital time like 10:00 to a clock with hands.",
+        "d": "Picks the clock that shows a given o'clock time."
+      }
+    },
+    "I.7.08": {
+      "what": "Telling time to the half hour, such as half past 2 or 2:30.",
+      "levels": {
+        "a": "Reads half past times when the long hand points to 6.",
+        "b": "Works out where the long hand should point from where the short hand is.",
+        "c": "Matches half past times to digital times, like 2:30.",
+        "d": "Picks the clock that shows a given half past time."
+      }
+    },
+    "I.7.09": {
+      "what": "Telling time to five minutes, and knowing morning (a.m.) from afternoon or evening (p.m.).",
+      "levels": {
+        "a": "Counts by fives around the clock to find the minutes past the hour.",
+        "b": "Reads any time to five minutes, like 2:45.",
+        "c": "Reads quarter past and quarter to times.",
+        "d": "Decides whether a time is a.m. (midnight to noon) or p.m.",
+        "e": "Works out how many minutes pass between a start time and an end time.",
+        "f": "Finds the real time from a clock that runs a few minutes fast or slow."
+      }
+    },
+    "I.7.10": {
+      "what": "Knowing the days of the week and months of the year, and reading a calendar.",
+      "levels": {
+        "a": "Knows the order of the days and counts days ahead.",
+        "b": "Knows the months and facts like how many days are in February.",
+        "c": "Finds information on a calendar page.",
+        "d": "Works out dates a few days before or after a given date.",
+        "e": "Counts on or back several days, as in '5 days ago it was Sunday; what day is today?'",
+        "f": "Uses the fact that days repeat every 7 to find the weekday of a later date."
+      }
+    },
+    "I.7.11": {
+      "what": "Recognizing US coins and counting up their value in cents.",
+      "levels": {
+        "a": "Names the penny, nickel, dime and quarter.",
+        "b": "Knows each coin's value, noticing that size doesn't match value.",
+        "c": "Counts the total of several coins of the same kind.",
+        "d": "Counts a mix of coins, starting with the biggest."
+      }
+    },
+    "I.7.12": {
+      "what": "Choosing coins to pay an amount and working out the change.",
+      "levels": {
+        "a": "Picks coins that add up to a given amount.",
+        "b": "Checks whether two different sets of coins make the same amount.",
+        "c": "Works out change from 10 cents by counting up.",
+        "d": "Works out change from a dollar, which is 100 cents.",
+        "e": "Finds the fewest coins that make an amount.",
+        "f": "Counts every different way to make an amount using 1, 5 and 10 cent coins."
+      }
+    },
+    "I.7.13": {
+      "what": "Recording and reading counts with tally marks, where every fifth mark crosses a group of four.",
+      "levels": {
+        "a": "Counts a small set of tally marks.",
+        "b": "Reads and makes tallies grouped in fives.",
+        "c": "Turns a set of votes into a tally chart.",
+        "d": "Answers questions using a tally chart, such as the total number of votes."
+      }
+    },
+    "I.7.14": {
+      "what": "Reading and making picture graphs, where each small picture stands for one vote or item.",
+      "levels": {
+        "a": "Reads how many chose something by counting pictures in a row.",
+        "b": "Picks the picture graph that matches a tally chart.",
+        "c": "Compares rows to find the most or fewest chosen.",
+        "d": "Works out how many more or fewer one row has than another."
+      }
+    },
+    "I.7.15": {
+      "what": "Reading and making bar graphs, where the height of each bar shows how many.",
+      "levels": {
+        "a": "Reads the value of a bar from the scale beside it.",
+        "b": "Picks the bar graph that matches a tally chart.",
+        "c": "Compares bars to find how many more one has than another.",
+        "d": "Adds bars together to find a total."
+      }
+    },
+    "I.7.16": {
+      "what": "Asking a question, collecting answers, and showing them on a chart to learn something.",
+      "levels": {
+        "a": "Chooses a good survey question, one that gets different answers from different people.",
+        "b": "Sorts a list of answers into a tally chart.",
+        "c": "Picks which graph answers a given question.",
+        "d": "Chooses a true statement about what a graph shows."
+      }
+    }
+  }
+}

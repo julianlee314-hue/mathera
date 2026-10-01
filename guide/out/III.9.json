@@ -1,0 +1,196 @@
+{
+  "branch": "III.9",
+  "intro": "This branch covers statistics (collecting, summarizing, and picturing data) and probability (how likely something is to happen). These skills help people read surveys, charts, and news claims with a sensible, questioning eye.",
+  "skills": {
+    "III.9.01": {
+      "what": "A statistical question is one whose answer varies, so you need to collect data to answer it.",
+      "levels": {
+        "a": "Tells a statistical question apart from one with a single answer.",
+        "b": "Expects many different answers to a statistical question.",
+        "c": "Picks the best-worded statistical question on a topic.",
+        "d": "Decides what data to collect to answer a question."
+      }
+    },
+    "III.9.02": {
+      "what": "The mean (average) is what each value would be if everything were shared out equally.",
+      "levels": {
+        "a": "Evens out stacks of cubes to see the mean as a fair share.",
+        "b": "Finds the mean by adding the values and dividing by how many there are.",
+        "c": "Works out the score needed next to reach a target average.",
+        "d": "Sees how one unusual value, an outlier, pulls the mean up or down.",
+        "e": "Works backwards: knows the mean and all but one value, finds the missing value.",
+        "f": "Works out which number was removed, from the mean before and after."
+      }
+    },
+    "III.9.03": {
+      "what": "The median is the middle value when data are in order; the mode is the most common value.",
+      "levels": {
+        "a": "Orders a list and finds the middle value.",
+        "b": "Finds the median of an even-sized list by averaging the two middle values.",
+        "c": "Finds the mode, and knows a list may have none.",
+        "d": "Decides whether the mean or the median better describes a typical value.",
+        "e": "Finds the missing value that makes the mean and the median of a list equal.",
+        "f": "Finds the largest number a list could contain, given its mean, median and mode."
+      }
+    },
+    "III.9.04": {
+      "what": "The range is the gap between the largest and smallest values, a simple measure of spread.",
+      "levels": {
+        "a": "Finds the range, including data with negative numbers.",
+        "b": "Finds the range from a dot plot.",
+        "c": "Sees how one extreme value can stretch the range.",
+        "d": "Compares the ranges of two sets of data."
+      }
+    },
+    "III.9.05": {
+      "what": "Quartiles split ordered data into four equal parts; the interquartile range (IQR) is the spread of the middle half.",
+      "levels": {
+        "a": "Splits ordered data into a lower half and an upper half.",
+        "b": "Finds the lower and upper quartiles, the middles of each half.",
+        "c": "Finds the interquartile range by subtracting the lower quartile from the upper.",
+        "d": "Uses a standard rule based on the IQR to decide which values are outliers."
+      }
+    },
+    "III.9.06": {
+      "what": "A box plot is a chart that shows the spread of data using five key numbers.",
+      "levels": {
+        "a": "Finds the five key numbers: smallest, lower quartile, median, upper quartile, largest.",
+        "b": "Picks the box plot that matches five given numbers.",
+        "c": "Reads values like the median from a box plot.",
+        "d": "Compares two box plots to decide which statements are true."
+      }
+    },
+    "III.9.07": {
+      "what": "A dot plot shows each data value as a dot above a number line.",
+      "levels": {
+        "a": "Picks the dot plot that matches a list of data.",
+        "b": "Reads the median and range from a dot plot.",
+        "c": "Describes the shape: where the peak is and which value stands apart.",
+        "d": "Answers questions from a dot plot, like how many had 4 or more."
+      }
+    },
+    "III.9.08": {
+      "what": "A histogram is a bar chart of data grouped into ranges, like ages 10 to 19, 20 to 29.",
+      "levels": {
+        "a": "Chooses sensible equal-width groups that cover all the data.",
+        "b": "Counts how many values fall in each group to set each bar's height.",
+        "c": "Reads how many values are in a group from the chart.",
+        "d": "Describes the shape as balanced or lopsided to one side."
+      }
+    },
+    "III.9.09": {
+      "what": "Mean absolute deviation measures how spread out data are: the average distance of the values from the mean.",
+      "levels": {
+        "a": "Finds how far each value is from the mean.",
+        "b": "Averages those distances to find the mean absolute deviation.",
+        "c": "Explains what a larger or smaller mean absolute deviation says about consistency.",
+        "d": "Compares the spread of two sets of data."
+      }
+    },
+    "III.9.10": {
+      "what": "Sampling means surveying a smaller group to learn about a whole population.",
+      "levels": {
+        "a": "Tells the sample (who is surveyed) from the population (everyone of interest).",
+        "b": "Picks a method that gives a fair, random sample.",
+        "c": "Spots a biased sample, one that leans toward certain answers.",
+        "d": "Knows larger random samples give more trustworthy estimates."
+      }
+    },
+    "III.9.11": {
+      "what": "Using results from a sample to make estimates about the whole population.",
+      "levels": {
+        "a": "Finds the fraction of a sample with some feature.",
+        "b": "Scales a sample result up to estimate a whole population.",
+        "c": "Combines several samples for a better estimate.",
+        "d": "Recognizes that samples vary, and draws a conclusion that allows for this."
+      }
+    },
+    "III.9.12": {
+      "what": "Comparing two groups using their typical values and how spread out they are.",
+      "levels": {
+        "a": "Compares the medians of two groups.",
+        "b": "Compares the spread of two groups using box plots.",
+        "c": "Measures the gap between two means in units of their typical spread.",
+        "d": "Writes a fair conclusion about which group scored higher."
+      }
+    },
+    "III.9.13": {
+      "what": "Probability measures how likely something is, from 0 (impossible) to 1 (certain).",
+      "levels": {
+        "a": "Knows a probability must lie between 0 and 1.",
+        "b": "Describes an event as impossible, unlikely, likely, or certain.",
+        "c": "Finds a probability as the number of ways it can happen over the total number of outcomes.",
+        "d": "Finds the chance something does not happen by subtracting from 1.",
+        "e": "Works backwards from a probability to find how many marbles of the other color are in a bag.",
+        "f": "Works out how many marbles to add to a bag to change the chance of red to a target."
+      }
+    },
+    "III.9.14": {
+      "what": "Experimental probability is estimated from what actually happens when you repeat something many times.",
+      "levels": {
+        "a": "Records the results of repeated trials in a tally.",
+        "b": "Finds the fraction of trials with a given result.",
+        "c": "Compares actual results with what theory predicts.",
+        "d": "Knows that more trials usually give results closer to the true chance."
+      }
+    },
+    "III.9.15": {
+      "what": "A sample space is the full list of possible outcomes, such as every result of tossing two coins.",
+      "levels": {
+        "a": "Picks the complete list of outcomes.",
+        "b": "Uses a table to list all outcomes of two events together.",
+        "c": "Uses a tree diagram, a branching picture, to count outcomes.",
+        "d": "Multiplies the number of choices at each stage to count all possibilities.",
+        "e": "Counts codes where no digit can be used twice, multiplying one fewer choice each time.",
+        "f": "Counts every three-digit number whose digits add up to a set total."
+      }
+    },
+    "III.9.16": {
+      "what": "Finding the probability of two things happening, such as rolling a 6 and drawing a vowel card.",
+      "levels": {
+        "a": "Multiplies probabilities for two events that don't affect each other.",
+        "b": "Finds a probability by counting in a table of all outcomes.",
+        "c": "Tells apart the chance of \"this and that\" from \"this or that.\"",
+        "d": "Solves word problems, like picking two marbles with replacement.",
+        "e": "Finds the chance of picking two marbles in a row without putting the first one back.",
+        "f": "Finds a chance with two dice, like getting a total that is a multiple of 4, by careful counting."
+      }
+    },
+    "III.9.17": {
+      "what": "A simulation uses coins, dice, or random numbers to act out a situation and estimate a probability.",
+      "levels": {
+        "a": "Picks a random device that matches a given chance.",
+        "b": "Plans how random digits will stand for outcomes in each trial.",
+        "c": "Runs a simulation from a list of random digits and counts results.",
+        "d": "Estimates a probability from the simulation results."
+      }
+    },
+    "III.9.18": {
+      "what": "A scatter plot shows pairs of data as dots, to see whether two things are related.",
+      "levels": {
+        "a": "Finds the dot that shows a given pair of values.",
+        "b": "Describes whether the two go up together, go opposite ways, or show no link.",
+        "c": "Spots clusters and dots that stand apart from the rest.",
+        "d": "Decides whether the pattern follows a straight line or a curve."
+      }
+    },
+    "III.9.19": {
+      "what": "A trend line is a straight line drawn through a scatter plot to show the overall pattern and make predictions.",
+      "levels": {
+        "a": "Picks the line that best fits the dots, by eye.",
+        "b": "Writes the equation of a trend line.",
+        "c": "Uses a trend line's equation to make a prediction.",
+        "d": "Explains what the slope and starting value of a trend line mean."
+      }
+    },
+    "III.9.20": {
+      "what": "A two-way table counts people or things sorted two ways at once, such as grade and whether they play an instrument.",
+      "levels": {
+        "a": "Reads counts and totals from a two-way table.",
+        "b": "Fills in missing counts so rows and columns add up.",
+        "c": "Turns counts into percents within one row or column.",
+        "d": "Decides whether the two ways of sorting are linked."
+      }
+    }
+  }
+}

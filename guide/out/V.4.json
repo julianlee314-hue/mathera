@@ -1,0 +1,93 @@
+{
+  "branch": "V.4",
+  "intro": "This branch moves from triangles to polygons (flat shapes with straight sides), especially four-sided ones. The learner proves their properties and sorts them into a family tree.",
+  "skills": {
+    "V.4.01": {
+      "what": "Finding the total of the inside angles of any polygon by splitting it into triangles.",
+      "levels": {
+        "a": "Counts the triangles formed by drawing lines from one corner of a polygon.",
+        "b": "Finds the total of the inside angles of a polygon with any number of sides.",
+        "c": "Finds each inside angle of a regular polygon (one with all sides and angles equal).",
+        "d": "Works backwards from one inside angle to find how many sides a regular polygon has.",
+        "e": "Finds the gap angle where two different regular polygons share a side.",
+        "f": "Solves puzzles where the angles grow by the same amount each time, finding the largest angle or the number of sides."
+      }
+    },
+    "V.4.02": {
+      "what": "Understanding why the outside angles of any polygon always add up to 360 degrees, one full turn.",
+      "levels": {
+        "a": "Puts the steps of a short proof that outside angles add to 360 degrees in order, or finds a wrong reason.",
+        "b": "Orders the steps of the 'walk around the shape and make one full turn' explanation.",
+        "c": "Finds each outside angle of a regular polygon.",
+        "d": "Works backwards from one outside angle to find the number of sides."
+      }
+    },
+    "V.4.03": {
+      "what": "Proving the properties of a parallelogram, a four-sided shape whose opposite sides are parallel.",
+      "levels": {
+        "a": "Uses equal opposite sides of a parallelogram to find a length or solve for x.",
+        "b": "Uses equal opposite angles to find an angle or solve for x.",
+        "c": "Uses the fact that the diagonals cut each other in half.",
+        "d": "Puts the steps of a short proof of a parallelogram property in order.",
+        "e": "Uses an angle bisector that creates an isosceles triangle inside a parallelogram.",
+        "f": "Finds a parallelogram's area from two triangles drawn to a point inside it."
+      }
+    },
+    "V.4.04": {
+      "what": "Working the other way: using given facts to prove that a four-sided shape must be a parallelogram.",
+      "levels": {
+        "a": "Finds the value that makes both pairs of opposite sides equal, or decides if given sides prove it.",
+        "b": "Puts in order a short proof that one pair of sides both parallel and equal is enough.",
+        "c": "Completes a proof that diagonals cutting each other in half make a parallelogram: orders steps or finds a wrong reason.",
+        "d": "Finds the missing fourth corner of a parallelogram on a grid."
+      }
+    },
+    "V.4.05": {
+      "what": "The extra properties of special parallelograms: rectangles, rhombuses (all sides equal) and squares.",
+      "levels": {
+        "a": "Proves that a rectangle's diagonals are equal: orders the steps or finds a wrong reason.",
+        "b": "Proves that a rhombus's diagonals cross at right angles: orders the steps or finds a wrong reason.",
+        "c": "Decides which shapes are sure to have equal or perpendicular diagonals.",
+        "d": "Solves for x using angle and diagonal facts of rectangles, rhombuses and squares."
+      }
+    },
+    "V.4.06": {
+      "what": "The properties of trapezoids (one pair of parallel sides) and kites (two pairs of equal neighboring sides).",
+      "levels": {
+        "a": "Uses the equal base angles of an isosceles trapezoid to find angles or pick true facts.",
+        "b": "Uses the midsegment of a trapezoid, which equals the average of the two parallel sides.",
+        "c": "Puts in order a short proof about the equal angles of a kite.",
+        "d": "Solves for x in kites, using their equal angles and diagonals that cross at right angles."
+      }
+    },
+    "V.4.07": {
+      "what": "Seeing how four-sided shapes are related, like a family tree: every square is a rectangle, but not every rectangle is a square.",
+      "levels": {
+        "a": "Decides true or false for statements like 'every square is a parallelogram'.",
+        "b": "Fills in 'always', 'sometimes' or 'never' for facts about shapes.",
+        "c": "Picks the single extra fact that turns a parallelogram into a rectangle or rhombus.",
+        "d": "Gives the most specific name for a shape from a list of its facts."
+      }
+    },
+    "V.4.08": {
+      "what": "Finding the area of a regular polygon using its apothem, the distance from the center straight to the middle of a side.",
+      "levels": {
+        "a": "Picks out the apothem and the radius in a drawing of a regular polygon.",
+        "b": "Uses area equals half the apothem times the perimeter, forwards or backwards.",
+        "c": "Uses trigonometry (side-and-angle ratios) to find the apothem.",
+        "d": "Finds the area of a polygon with many sides, seeing it come close to a circle's area.",
+        "e": "Finds the exact area of a regular hexagon, using square roots.",
+        "f": "Finds shaded areas, such as a star or triangle inside a regular hexagon."
+      }
+    },
+    "V.4.09": {
+      "what": "Proving facts about shapes by placing them on a grid and using coordinates to measure slopes, lengths and midpoints.",
+      "levels": {
+        "a": "Chooses smart coordinates for a shape, such as the fourth corner of a square.",
+        "b": "Finds slopes from letter coordinates to show sides are parallel.",
+        "c": "Fills in a missing length in a proof that all four sides are equal.",
+        "d": "Puts in order the steps of a coordinate proof that one segment cuts another in half."
+      }
+    }
+  }
+}

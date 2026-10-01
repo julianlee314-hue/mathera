@@ -1,0 +1,149 @@
+{
+  "branch": "V.9",
+  "intro": "This branch turns trigonometry into functions that work for any angle, not just those inside a triangle. Their wave-shaped graphs describe repeating patterns such as tides, Ferris wheels and daylight, and a few skills include short proofs where the learner picks the reason for a step.",
+  "skills": {
+    "V.9.01": {
+      "what": "Drawing an angle on a grid as a turn that starts from the positive x-axis (standard position). This lets angles be any size, even negative or more than a full turn.",
+      "levels": {
+        "a": "Picks the picture that shows an angle correctly drawn from the positive x-axis.",
+        "b": "Knows positive angles turn counterclockwise and negative ones clockwise, and says where the turn ends.",
+        "c": "Reads angles of more than a full turn from a picture, such as two turns and a bit.",
+        "d": "Names which quarter of the grid (quadrant) an angle ends in, in degrees or radians."
+      }
+    },
+    "V.9.02": {
+      "what": "Coterminal angles end in the same place, like 30 degrees and 390 degrees, because they differ by whole turns.",
+      "levels": {
+        "a": "Finds a matching angle by adding or subtracting 360 degrees.",
+        "b": "Does the same in radians (another unit for angles), adding or subtracting 2 times pi.",
+        "c": "Finds the smallest positive angle that ends in the same place, sometimes adding several turns.",
+        "d": "Picks the general rule that lists every angle ending in the same place."
+      }
+    },
+    "V.9.03": {
+      "what": "Using a circle of radius 1 (the unit circle) to define sine and cosine for any angle. Cosine is a point's left-right position on it and sine is its up-down position.",
+      "levels": {
+        "a": "Reads cosine as the left-right position and sine as the up-down position of a point.",
+        "b": "Finds tangent by dividing the up-down position by the left-right one.",
+        "c": "Picks the reason for a step in a short proof that this agrees with right-triangle trigonometry.",
+        "d": "Finds the missing coordinate of a point on the circle exactly, using its quadrant."
+      }
+    },
+    "V.9.04": {
+      "what": "Learning the exact sine, cosine and tangent values for the most common angles all the way around the circle.",
+      "levels": {
+        "a": "Gives exact values for 30, 45 and 60 degrees.",
+        "b": "Gives the values where the circle crosses the axes, including when tangent is undefined.",
+        "c": "Finds exact values for common angles anywhere around the circle.",
+        "d": "Recalls the common values by heart, judging true-or-false statements in degrees and radians.",
+        "e": "Works out an expression that combines several special angles at once.",
+        "f": "Adds up a long list of values quickly by pairing terms that combine to make 1."
+      }
+    },
+    "V.9.05": {
+      "what": "A reference angle is the sharp angle between an angle's ending side and the x-axis. It lets any angle be worked out from a familiar small one.",
+      "levels": {
+        "a": "Finds the reference angle for an angle in any quarter of the grid.",
+        "b": "Finds reference angles in radians.",
+        "c": "Uses a reference angle and the quarter to find an exact trig value.",
+        "d": "Handles negative angles and angles of more than a full turn."
+      }
+    },
+    "V.9.06": {
+      "what": "Knowing whether sine, cosine and tangent are positive or negative in each quarter of the grid.",
+      "levels": {
+        "a": "Says whether a given ratio of an angle is positive or negative.",
+        "b": "Uses the memory trick \"All Students Take Calculus\" to recall the signs.",
+        "c": "Works out which quarter an angle is in from the signs of two ratios.",
+        "d": "Finds the other ratios exactly from just one of them and the quarter."
+      }
+    },
+    "V.9.07": {
+      "what": "Finding trig values for any angle from a point on its ending side, even if the point is not on the unit circle.",
+      "levels": {
+        "a": "Finds a ratio from a point's coordinates and its distance from the center.",
+        "b": "Works out that distance first using Pythagoras, then finds a ratio.",
+        "c": "Gives exact answers with square roots rather than decimals.",
+        "d": "Handles points on an axis, where a ratio may be zero or undefined (dividing by zero)."
+      }
+    },
+    "V.9.08": {
+      "what": "Drawing the graphs of sine and cosine, which are smooth repeating waves.",
+      "levels": {
+        "a": "Uses a point moving around the unit circle to tell whether the graph rises or falls.",
+        "b": "Reads key points from the graph: highs, lows and zero crossings.",
+        "c": "Answers questions about one or more full cycles (periods), such as how many peaks.",
+        "d": "Explains that the sine wave is the cosine wave shifted sideways."
+      }
+    },
+    "V.9.09": {
+      "what": "Changing a wave's height (amplitude) and how long it takes to repeat (period).",
+      "levels": {
+        "a": "Reads the amplitude from the number in front, knowing a minus sign only flips the wave.",
+        "b": "Finds the period from the number multiplying x inside.",
+        "c": "Reads the amplitude and period from a graph.",
+        "d": "Writes the equation of a wave from its graph.",
+        "e": "Counts how many times a wave reaches a given height in a stretch, including never.",
+        "f": "Finds how often a sum of two different waves repeats."
+      }
+    },
+    "V.9.10": {
+      "what": "Sliding a wave sideways (phase shift) or up and down (moving the middle line it rises and falls around).",
+      "levels": {
+        "a": "Reads which way and how far a wave is shifted sideways.",
+        "b": "Finds the middle line and the highest and lowest values.",
+        "c": "Handles a wave with all changes combined, tidying the inside to read the shift correctly.",
+        "d": "Writes the full equation of a wave from its graph.",
+        "e": "Rewrites a flipped wave as an unflipped one shifted sideways.",
+        "f": "Finds every sideways shift that turns one wave exactly into another."
+      }
+    },
+    "V.9.11": {
+      "what": "Using sine and cosine waves to model real repeating patterns.",
+      "levels": {
+        "a": "Models the rise and fall of ocean tides from high and low tide times.",
+        "b": "Models the height of a seat on a Ferris wheel over time.",
+        "c": "Models hours of daylight through the year.",
+        "d": "Fits a wave equation to a table of data."
+      }
+    },
+    "V.9.12": {
+      "what": "Drawing the graph of tangent, which repeats but shoots off to infinity at regular gaps.",
+      "levels": {
+        "a": "Lists the asymptotes, the vertical lines the graph approaches but never touches.",
+        "b": "Finds the period, knowing tangent repeats every pi rather than every 2 pi.",
+        "c": "Finds key values on the graph, including where it is undefined.",
+        "d": "Finds the period and asymptotes of a stretched or flipped tangent graph."
+      }
+    },
+    "V.9.13": {
+      "what": "Cosecant, secant and cotangent are 1 divided by sine, cosine and tangent. Their graphs come from the graphs of those three.",
+      "levels": {
+        "a": "Finds exact cosecant values as 1 divided by sine.",
+        "b": "Finds exact secant values as 1 divided by cosine.",
+        "c": "Finds exact cotangent values, even where tangent itself is undefined.",
+        "d": "Picks the reason for a step in a proof about which values secant can take."
+      }
+    },
+    "V.9.14": {
+      "what": "Inverse trig functions answer 'which angle has this sine?' To give one answer, each one only returns angles from a set range.",
+      "levels": {
+        "a": "Explains why the angles must be limited to get a single answer.",
+        "b": "Knows the range of angles each inverse function can give.",
+        "c": "Finds exact values, such as the angle whose sine is one half.",
+        "d": "Picks the correct graph of an inverse function."
+      }
+    },
+    "V.9.15": {
+      "what": "Combining a trig function with its inverse, and seeing when they cancel out and when they do not.",
+      "levels": {
+        "a": "Simplifies cases where the inverse goes first, which simply cancel.",
+        "b": "Completes a short proof for the trap where the angle falls outside the allowed range.",
+        "c": "Draws a right triangle to find the exact value of a mixed combination.",
+        "d": "Rewrites such combinations as algebra expressions in x, with no trig left.",
+        "e": "Works out pairs that mix two different functions, such as sine inside an inverse cosine.",
+        "f": "Finds every x that makes two different inverse functions equal."
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "branch": "II.6",
+  "intro": "This branch teaches calculating with fractions: adding, subtracting, multiplying and simple dividing. The key idea is that fractions can only be added or subtracted when the parts are the same size.",
+  "skills": {
+    "II.6.01": {
+      "what": "Adding fractions that have the same bottom number (denominator), so the parts are the same size.",
+      "levels": {
+        "a": "Adds fractions using a picture of a fraction bar.",
+        "b": "Adds them with numbers alone, adding the tops and keeping the bottom.",
+        "c": "Adds fractions whose total is more than 1, writing it as a mixed number.",
+        "d": "Solves story problems, like how much pizza two people ate."
+      }
+    },
+    "II.6.02": {
+      "what": "Subtracting fractions that have the same bottom number.",
+      "levels": {
+        "a": "Subtracts fractions by crossing out parts in a picture.",
+        "b": "Subtracts them with numbers alone.",
+        "c": "Subtracts a fraction from one whole.",
+        "d": "Solves story problems, like how much cake is left."
+      }
+    },
+    "II.6.03": {
+      "what": "Splitting a fraction into smaller fractions that add up to it, as a tool for adding.",
+      "levels": {
+        "a": "Writes three quarters as one quarter plus one quarter plus one quarter.",
+        "b": "Finds several different ways to split the same fraction.",
+        "c": "Splits an improper fraction into wholes plus a fraction.",
+        "d": "Splits one fraction to make a whole first, which makes adding easier.",
+        "e": "Finds the missing fraction with 1 on top that completes a sum, like one third plus one over what.",
+        "f": "Splits a fraction with 1 on top into two different such fractions, finding the largest bottom possible."
+      }
+    },
+    "II.6.04": {
+      "what": "Adding and subtracting mixed numbers (a whole number plus a fraction) with the same bottom number.",
+      "levels": {
+        "a": "Adds the wholes and the fraction parts separately.",
+        "b": "Swaps one whole for its fraction pieces, so five and a fifth becomes four and six fifths.",
+        "c": "Subtracts mixed numbers when a whole must be broken up first.",
+        "d": "Solves story problems, like total distance walked over two days."
+      }
+    },
+    "II.6.05": {
+      "what": "Rewriting two fractions so they have the same bottom number (a common denominator), which is needed before adding them.",
+      "levels": {
+        "a": "Finds the smallest common bottom number using least common multiples.",
+        "b": "Uses the two bottom numbers multiplied together as a common bottom number.",
+        "c": "Rewrites a fraction with a new, larger bottom number.",
+        "d": "Chooses the smallest common bottom number from several options."
+      }
+    },
+    "II.6.06": {
+      "what": "Adding fractions with different bottom numbers by first making the parts the same size.",
+      "levels": {
+        "a": "Adds using fraction strips cut into matching pieces.",
+        "b": "Rewrites both fractions with a common bottom number, then adds.",
+        "c": "Gives the answer in simplest form.",
+        "d": "Adds three fractions with different bottom numbers.",
+        "e": "Finds the missing top number in a sum of fractions with different bottoms.",
+        "f": "Adds a long chain of fractions using a trick where almost every piece cancels out."
+      }
+    },
+    "II.6.07": {
+      "what": "Subtracting fractions with different bottom numbers.",
+      "levels": {
+        "a": "Subtracts using fraction strips cut into matching pieces.",
+        "b": "Rewrites both fractions with a common bottom number, then subtracts.",
+        "c": "Gives the answer in simplest form.",
+        "d": "Solves story problems, like how much pizza is left."
+      }
+    },
+    "II.6.08": {
+      "what": "Adding and subtracting mixed numbers whose fraction parts have different bottom numbers.",
+      "levels": {
+        "a": "Adds two such mixed numbers.",
+        "b": "Subtracts two such mixed numbers.",
+        "c": "Handles fraction parts that add to more than a whole, or need a whole broken up.",
+        "d": "Estimates the answer first by rounding to whole numbers."
+      }
+    },
+    "II.6.09": {
+      "what": "Multiplying a fraction by a whole number, like 3 lots of two fifths.",
+      "levels": {
+        "a": "Writes it as a repeated addition of the fraction.",
+        "b": "Multiplies the top by the whole number, keeping the bottom.",
+        "c": "Shows it as equal jumps along a number line.",
+        "d": "Solves word problems, like the total length of several equal pieces of string."
+      }
+    },
+    "II.6.10": {
+      "what": "Multiplying one fraction by another, which finds a fraction of a fraction.",
+      "levels": {
+        "a": "Uses an overlapping-rectangle picture to find the answer.",
+        "b": "Multiplies the tops together and the bottoms together.",
+        "c": "Simplifies before multiplying to keep the numbers small.",
+        "d": "Multiplies mixed numbers.",
+        "e": "Finds the missing top number that makes a fraction product come out right.",
+        "f": "Multiplies a long chain of fractions where each top cancels the bottom next to it."
+      }
+    },
+    "II.6.11": {
+      "what": "Understanding multiplication as resizing: multiplying by a fraction less than 1 makes a number smaller, and more than 1 makes it bigger.",
+      "levels": {
+        "a": "Predicts that multiplying by a fraction less than 1 shrinks a number.",
+        "b": "Predicts that multiplying by a fraction more than 1 grows a number.",
+        "c": "Compares two such products without working them out.",
+        "d": "Judges and explains statements about whether a product grows or shrinks."
+      }
+    },
+    "II.6.12": {
+      "what": "Dividing a unit fraction (one part, like one half) by a whole number, like sharing half a liter among 5 cups.",
+      "levels": {
+        "a": "Splits a shaded part of a bar into equal pieces and names each piece.",
+        "b": "Divides with numbers alone, as in one third divided by 5 is one fifteenth.",
+        "c": "Solves sharing story problems.",
+        "d": "Checks an answer by multiplying back."
+      }
+    },
+    "II.6.13": {
+      "what": "Dividing a whole number by a unit fraction, which asks how many of those parts fit into it.",
+      "levels": {
+        "a": "Counts the fraction pieces in whole bars to find the answer.",
+        "b": "Works out how many sevenths fit into 3, and similar.",
+        "c": "Solves story problems, like how many children can have a fifth of a pizza each.",
+        "d": "Checks an answer by multiplying back."
+      }
+    },
+    "II.6.14": {
+      "what": "Solving word problems that involve calculating with fractions.",
+      "levels": {
+        "a": "Chooses which operation a fraction problem needs.",
+        "b": "Solves problems that take more than one step.",
+        "c": "Solves problems that involve mixed numbers, like scaling up a recipe.",
+        "d": "Judges whether an answer is reasonable by estimating.",
+        "e": "Works backwards: from how much a fraction change took, finds the whole amount.",
+        "f": "Solves a puzzle: from a bottle's full and part-full weights, finds the empty bottle's weight."
+      }
+    }
+  }
+}

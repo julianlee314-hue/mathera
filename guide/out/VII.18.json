@@ -1,0 +1,87 @@
+{
+  "branch": "VII.18",
+  "intro": "The Laplace transform turns a differential equation into an algebra problem, solves it there, and translates the answer back. It is especially handy for systems that are switched on and off or struck suddenly.",
+  "skills": {
+    "VII.18.01": {
+      "what": "The Laplace transform converts a function of time into a new function using an integral, turning calculus problems into algebra problems.",
+      "levels": {
+        "a": "Understands the definition as an integral running to infinity.",
+        "b": "Finds the transforms of a constant and of an exponential.",
+        "c": "Checks when the transform exists.",
+        "d": "Explains the big idea: calculus becomes algebra."
+      }
+    },
+    "VII.18.02": {
+      "what": "A table of common transforms that saves recomputing them each time.",
+      "levels": {
+        "a": "Uses table entries for powers of t.",
+        "b": "Uses table entries for sine and cosine.",
+        "c": "Reads the table to transform a given function.",
+        "d": "Derives one table entry from the definition."
+      }
+    },
+    "VII.18.03": {
+      "what": "Rules that let complicated transforms be built from simple ones.",
+      "levels": {
+        "a": "Uses linearity: sums and multiples transform piece by piece.",
+        "b": "Uses the shift rule for functions multiplied by an exponential.",
+        "c": "Transforms derivatives, which is what makes solving equations possible.",
+        "d": "Transforms functions multiplied by t."
+      }
+    },
+    "VII.18.04": {
+      "what": "Inverse transforms translate an answer back from the algebra side to an ordinary function of time.",
+      "levels": {
+        "a": "Reads the table backwards.",
+        "b": "Splits sums and pulls out constants.",
+        "c": "Completes the square to match a table entry.",
+        "d": "Undoes shifts to recover the original function."
+      }
+    },
+    "VII.18.05": {
+      "what": "Breaking a complicated fraction into simple pieces (partial fractions) so each piece can be transformed back.",
+      "levels": {
+        "a": "Splits fractions with different simple factors below.",
+        "b": "Handles repeated factors.",
+        "c": "Handles squared factors that do not break down further.",
+        "d": "Transforms each simple piece back."
+      }
+    },
+    "VII.18.06": {
+      "what": "Solving differential equations with given starting values using the Laplace transform from start to finish.",
+      "levels": {
+        "a": "Transforms every term of the equation.",
+        "b": "Solves the resulting algebra for the unknown transform.",
+        "c": "Transforms back to find the solution.",
+        "d": "Checks the solution matches the starting values."
+      }
+    },
+    "VII.18.07": {
+      "what": "Step functions model something switched on at a certain moment, like a motor turned on at 5 seconds.",
+      "levels": {
+        "a": "Uses the unit step, which jumps from 0 to 1 at a set time.",
+        "b": "Writes pushes that switch on and off.",
+        "c": "Uses the delay rule for shifted functions.",
+        "d": "Solves an equation with a switch in it."
+      }
+    },
+    "VII.18.08": {
+      "what": "An impulse is a sudden, instant kick, like a hammer strike, modeled by the Dirac delta.",
+      "levels": {
+        "a": "Understands the Dirac delta as an idealized instant kick.",
+        "b": "Finds its transform.",
+        "c": "Solves problems where a system is struck suddenly.",
+        "d": "Finds a system's impulse response, its reaction to one kick."
+      }
+    },
+    "VII.18.09": {
+      "what": "Convolution is a special way of blending two functions, and the transform turns it into ordinary multiplication.",
+      "levels": {
+        "a": "Understands the definition of convolution as an integral.",
+        "b": "Uses the convolution theorem: blending becomes multiplying.",
+        "c": "Transforms back products of two known transforms.",
+        "d": "Uses transfer functions to describe how a system responds to any input."
+      }
+    }
+  }
+}

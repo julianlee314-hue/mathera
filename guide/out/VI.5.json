@@ -1,0 +1,150 @@
+{
+  "branch": "VI.5",
+  "intro": "This branch is a toolkit of methods for finding integrals that the basic rules can't handle. Much of the work is recognizing which tool fits a problem.",
+  "skills": {
+    "VI.5.01": {
+      "what": "Substitution: spotting a function nested inside another and renaming it, so the integral becomes a simple one. It reverses the chain rule.",
+      "levels": {
+        "a": "Spots the inside function to rename.",
+        "b": "Finds how the small change in the new variable relates to dx.",
+        "c": "Rewrites the integral in the new variable and integrates.",
+        "d": "Switches back to the original variable at the end."
+      }
+    },
+    "VI.5.02": {
+      "what": "Using substitution on integrals with start and end points, keeping the endpoints consistent.",
+      "levels": {
+        "a": "Changes the start and end points to match the new variable.",
+        "b": "Alternatively, switches back to x and uses the original endpoints.",
+        "c": "Evaluates the integral to get a number.",
+        "d": "Uses symmetry shortcuts for balanced (odd and even) functions."
+      }
+    },
+    "VI.5.03": {
+      "what": "Recognizing integrals that produce a logarithm or an inverse trigonometry function as the answer.",
+      "levels": {
+        "a": "Recognizes a derivative over its function, which gives a log.",
+        "b": "Recognizes one over one plus x squared, which gives arctangent.",
+        "c": "Recognizes the pattern that gives arcsine.",
+        "d": "Handles stretched or scaled versions of these patterns."
+      }
+    },
+    "VI.5.04": {
+      "what": "When a fraction has a top as big as its bottom, dividing first splits it into easier pieces.",
+      "levels": {
+        "a": "Recognizes a fraction whose top has as high a power as its bottom.",
+        "b": "Uses polynomial long division to split it.",
+        "c": "Integrates each resulting piece.",
+        "d": "Splits a fraction into separate simpler fractions."
+      }
+    },
+    "VI.5.05": {
+      "what": "Rewriting a quadratic in the bottom of a fraction by completing the square, so a known pattern appears.",
+      "levels": {
+        "a": "Recognizes integrals with a quadratic on the bottom.",
+        "b": "Completes the square to rewrite the quadratic.",
+        "c": "Substitutes to simplify the shifted expression.",
+        "d": "Integrates to an arctangent answer."
+      }
+    },
+    "VI.5.06": {
+      "what": "Integration by parts: a method for integrals of two things multiplied together. It reverses the product rule.",
+      "levels": {
+        "a": "Derives the formula from the product rule.",
+        "b": "Chooses which part to differentiate using a priority list (LIATE).",
+        "c": "Applies the method to find the integral.",
+        "d": "Applies it to integrals with start and end points."
+      }
+    },
+    "VI.5.07": {
+      "what": "Using integration by parts several times in a row, including a neat trick when the integral loops back to itself.",
+      "levels": {
+        "a": "Organizes repeated steps with a table (the tabular method).",
+        "b": "Handles a power of x times an exponential.",
+        "c": "Handles an exponential times sine, which loops back on itself.",
+        "d": "Solves for the integral algebraically when it reappears."
+      }
+    },
+    "VI.5.08": {
+      "what": "Integrating powers and products of trigonometry functions using identities to rewrite them.",
+      "levels": {
+        "a": "Handles an odd power of sine or cosine.",
+        "b": "Handles even powers using the half-angle identities.",
+        "c": "Handles powers of tangent and secant.",
+        "d": "Handles products of sines and cosines of different angles."
+      }
+    },
+    "VI.5.09": {
+      "what": "Replacing x with a trigonometry expression to simplify square roots, guided by a right triangle.",
+      "levels": {
+        "a": "Uses a sine substitution for roots of a number minus x squared.",
+        "b": "Uses a tangent substitution for roots of a number plus x squared.",
+        "c": "Uses a secant substitution for roots of x squared minus a number.",
+        "d": "Draws a triangle to switch the answer back to x."
+      }
+    },
+    "VI.5.10": {
+      "what": "Partial fractions: breaking one complicated fraction into a sum of simple ones that are easy to integrate.",
+      "levels": {
+        "a": "Factors the bottom of the fraction into simple pieces.",
+        "b": "Sets up the simple fractions with unknown numbers on top.",
+        "c": "Solves for the unknown numbers.",
+        "d": "Integrates each piece, getting logarithms."
+      }
+    },
+    "VI.5.11": {
+      "what": "Harder partial fractions, where the bottom has repeated pieces or pieces that can't be factored further.",
+      "levels": {
+        "a": "Sets up fractions for a repeated factor on the bottom.",
+        "b": "Sets up fractions for a quadratic piece that won't factor.",
+        "c": "Solves the resulting system of equations for the unknowns.",
+        "d": "Integrates all the pieces."
+      }
+    },
+    "VI.5.12": {
+      "what": "Integrals that run out to infinity. Surprisingly, an endless region can still have a finite area.",
+      "levels": {
+        "a": "Rewrites an integral to infinity as a limit.",
+        "b": "Evaluates the limit.",
+        "c": "Decides whether the area is finite (converges) or endless (diverges).",
+        "d": "Uses the known rule for one over x to a power."
+      }
+    },
+    "VI.5.13": {
+      "what": "Integrals where the function shoots off to infinity at some point in the range.",
+      "levels": {
+        "a": "Finds the point where the function blows up.",
+        "b": "Splits the integral there and takes a limit on each side.",
+        "c": "Evaluates the pieces.",
+        "d": "Decides finite or endless by comparing with a known integral."
+      }
+    },
+    "VI.5.14": {
+      "what": "Estimating integrals with numbers when no exact formula can be found, and judging how accurate the estimate is.",
+      "levels": {
+        "a": "Estimates the error of the trapezoid method.",
+        "b": "Uses Simpson's rule, which fits curves instead of straight lines.",
+        "c": "Compares the accuracy of different methods.",
+        "d": "Recognizes integrals that have no formula and must be estimated."
+      }
+    },
+    "VI.5.15": {
+      "what": "Looking at an unfamiliar integral and deciding which method to try first.",
+      "levels": {
+        "a": "Simplifies or rewrites the integral before choosing a method.",
+        "b": "Checks whether substitution will work.",
+        "c": "Decides between integration by parts and partial fractions.",
+        "d": "Uses integral tables and technology sensibly."
+      }
+    },
+    "VI.5.16": {
+      "what": "The functions that undo the hyperbolic functions. They can be written using logarithms and appear as answers to some integrals.",
+      "levels": {
+        "a": "Writes inverse hyperbolic functions as logarithms.",
+        "b": "Finds their derivatives.",
+        "c": "Recognizes integrals that give them as answers.",
+        "d": "Compares them with the similar inverse trig patterns."
+      }
+    }
+  }
+}

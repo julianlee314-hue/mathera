@@ -1,0 +1,87 @@
+{
+  "branch": "VII.6",
+  "intro": "The determinant is a single number computed from a square matrix. It tells how much the matrix stretches areas or volumes, and whether the matrix can be undone.",
+  "skills": {
+    "VII.6.01": {
+      "what": "The determinant of a 2-by-2 matrix is a quick cross-multiplication that measures how the matrix scales area.",
+      "levels": {
+        "a": "Learns the formula: top-left times bottom-right minus the other diagonal.",
+        "b": "Computes 2-by-2 determinants.",
+        "c": "Knows a zero determinant means the matrix has no inverse.",
+        "d": "Reads it as the signed area of the parallelogram from the columns."
+      }
+    },
+    "VII.6.02": {
+      "what": "Cofactor expansion computes a larger determinant by breaking it into smaller ones.",
+      "levels": {
+        "a": "Finds minors, the smaller determinants left after crossing out a row and column.",
+        "b": "Uses the checkerboard pattern of plus and minus signs.",
+        "c": "Expands a determinant along a chosen row.",
+        "d": "Picks the row or column with the most zeros to save work."
+      }
+    },
+    "VII.6.03": {
+      "what": "Computing a determinant efficiently by row-reducing the matrix while tracking how each step changes it.",
+      "levels": {
+        "a": "Learns how each row operation changes the determinant.",
+        "b": "Reduces the matrix to triangular form.",
+        "c": "Multiplies the diagonal entries of a triangular matrix.",
+        "d": "Keeps track of all changes to get the original determinant."
+      }
+    },
+    "VII.6.04": {
+      "what": "Useful rules that make determinants quicker to find without full calculation.",
+      "levels": {
+        "a": "Finds a triangular matrix's determinant from its diagonal.",
+        "b": "Uses the fact that transposing does not change the determinant.",
+        "c": "Knows two equal rows or a zero row gives determinant zero.",
+        "d": "Works out what happens when the whole matrix is multiplied by a number."
+      }
+    },
+    "VII.6.05": {
+      "what": "A matrix has an inverse exactly when its determinant is not zero, a single-number test.",
+      "levels": {
+        "a": "Uses a nonzero determinant to confirm an inverse exists.",
+        "b": "Finds the values that make a matrix lose its inverse.",
+        "c": "Adds this test to the invertible matrix theorem's list.",
+        "d": "Finds the determinant of an inverse from the original's."
+      }
+    },
+    "VII.6.06": {
+      "what": "The determinant measures how a matrix scales area in 2D or volume in 3D, and whether it flips things over.",
+      "levels": {
+        "a": "Finds a parallelogram's area from its side vectors.",
+        "b": "Finds the volume of a slanted box from its edge vectors.",
+        "c": "Uses the determinant as the area or volume scaling factor of a map.",
+        "d": "Reads a negative sign as a mirror-image flip."
+      }
+    },
+    "VII.6.07": {
+      "what": "The determinant of a product equals the product of the determinants, which makes many calculations quick.",
+      "levels": {
+        "a": "States the product rule.",
+        "b": "Uses it to find determinants of products.",
+        "c": "Finds determinants of powers of a matrix.",
+        "d": "Explains with an example why sums do not work the same way."
+      }
+    },
+    "VII.6.08": {
+      "what": "Cramer's rule solves a system of equations using only determinants.",
+      "levels": {
+        "a": "Learns the formula: each unknown is a ratio of two determinants.",
+        "b": "Solves a system of two equations with it.",
+        "c": "Solves a system of three equations with it.",
+        "d": "Explains why it is too slow for large systems."
+      }
+    },
+    "VII.6.09": {
+      "what": "A formula that gives a matrix's inverse directly from determinants of its pieces.",
+      "levels": {
+        "a": "Builds the matrix of cofactors.",
+        "b": "Transposes it to get the adjugate.",
+        "c": "Divides the adjugate by the determinant to get the inverse.",
+        "d": "Checks the result by multiplying back to the identity."
+      }
+    }
+  }
+}

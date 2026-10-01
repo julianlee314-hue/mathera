@@ -1,0 +1,158 @@
+{
+  "branch": "I.1",
+  "intro": "Counting is where all math begins. This branch builds counting from 1 to 120, recognizing small amounts at a glance, and counting in steps of 2, 5 and 10.",
+  "skills": {
+    "I.1.01": {
+      "what": "Counting a group of things by pointing to each one once and saying one number for each.",
+      "levels": {
+        "a": "Counts up to 3 things, touching each one.",
+        "b": "Counts up to 5 things.",
+        "c": "Counts up to 10 things in a line.",
+        "d": "Counts up to 10 things scattered around, without skipping or counting any twice."
+      }
+    },
+    "I.1.02": {
+      "what": "Knowing the counting words (one, two, three…) and saying them in the right order.",
+      "levels": {
+        "a": "Says the number words from one to three in order.",
+        "b": "Says the number words up to five and knows which comes next.",
+        "c": "Says the number words up to ten and knows which comes next.",
+        "d": "Starts counting from any number, such as seven, and carries on."
+      }
+    },
+    "I.1.03": {
+      "what": "Counting past ten up to twenty, and noticing that the teen numbers are ten plus a few more.",
+      "levels": {
+        "a": "Fills in missing numbers when counting from 10 to 15.",
+        "b": "Fills in missing numbers when counting from 15 to 20.",
+        "c": "Sees that a teen number like 12 is ten and 2 more.",
+        "d": "Counts up to 20 objects, using a full row of ten as a head start."
+      }
+    },
+    "I.1.04": {
+      "what": "Counting up to fifty, including the tricky moment when one group of ten ends and the next begins.",
+      "levels": {
+        "a": "Knows the names of the tens: ten, twenty, thirty, forty, fifty.",
+        "b": "Fills in missing numbers when counting within one group of ten, like 14 to 17.",
+        "c": "Counts across into the next ten, such as 19 to 20 or 29 to 30.",
+        "d": "Fills in missing numbers anywhere from 1 to 50."
+      }
+    },
+    "I.1.05": {
+      "what": "Counting from fifty all the way up to one hundred twenty, including going past one hundred.",
+      "levels": {
+        "a": "Fills in missing numbers when counting from 50 to 100.",
+        "b": "Knows that 100 comes after 99.",
+        "c": "Reads and counts numbers from 100 to 120, such as one hundred sixteen.",
+        "d": "Continues counting from any number up to 120."
+      }
+    },
+    "I.1.06": {
+      "what": "Recognizing written numbers (numerals) from 0 to 20 and matching them to their names and amounts.",
+      "levels": {
+        "a": "Reads the numbers 0 to 10 and matches each to its word.",
+        "b": "Reads the numbers 11 to 20, such as finding 12 for twelve.",
+        "c": "Picks out a number that is written the right way round, not flipped.",
+        "d": "Matches a written number to a picture showing that many."
+      }
+    },
+    "I.1.07": {
+      "what": "Understanding that the last number said when counting tells how many there are altogether.",
+      "levels": {
+        "a": "Knows the last number counted tells how many in all.",
+        "b": "Answers how many from someone else's count, without counting again.",
+        "c": "Counts out an exact amount, such as finding the box with exactly 4.",
+        "d": "Knows the total stays the same whichever end you start counting from."
+      }
+    },
+    "I.1.08": {
+      "what": "Understanding zero as the number for nothing at all.",
+      "levels": {
+        "a": "Knows zero means none, such as an empty plate.",
+        "b": "Picks out the picture that shows zero things.",
+        "c": "Writes 0 when there is nothing to count.",
+        "d": "Knows that 0 comes after 1 when counting backward."
+      }
+    },
+    "I.1.09": {
+      "what": "Seeing how many are in a small group, up to five, at a quick glance without counting one by one.",
+      "levels": {
+        "a": "Says how many at a glance for 1 to 3 dots.",
+        "b": "Says how many at a glance for 4 or 5 dots.",
+        "c": "Recognizes the dot patterns on dice.",
+        "d": "Recognizes how many fingers are held up without counting."
+      }
+    },
+    "I.1.10": {
+      "what": "Seeing amounts up to ten at a glance, often by spotting a group of five and some more.",
+      "levels": {
+        "a": "Says how many counters are in a row of five boxes (a five-frame).",
+        "b": "Says how many counters are in two rows of five boxes (a ten-frame).",
+        "c": "Sees two groups, like 5 and 1, and knows the total quickly.",
+        "d": "Says how many dots at a glance, however they are arranged."
+      }
+    },
+    "I.1.11": {
+      "what": "Adding a few more by starting from a number and counting up from there, instead of counting everything.",
+      "levels": {
+        "a": "Starts at a number and counts on 1 more, staying within 10.",
+        "b": "Starts at a number and counts on 2 more, staying within 10.",
+        "c": "Starts from a given number and counts on the extra dots shown.",
+        "d": "Chooses to start from the bigger number, which makes counting on quicker.",
+        "e": "Works backwards: finds how many were counted on, or which number it started from.",
+        "f": "Follows a pattern of jumps by 2 and decides which number it will land on."
+      }
+    },
+    "I.1.12": {
+      "what": "Counting backward, one number at a time, which later helps with taking away.",
+      "levels": {
+        "a": "Counts back from 5, such as jumping back along a number line.",
+        "b": "Counts back from 10.",
+        "c": "Counts back from 20.",
+        "d": "Counts back past 10 into single digits, such as 14 down to 9."
+      }
+    },
+    "I.1.13": {
+      "what": "Knowing what number is just one more or one less than a given number.",
+      "levels": {
+        "a": "Finds one more than a number up to 10.",
+        "b": "Finds one less than a number up to 10.",
+        "c": "Finds one more or one less for numbers up to 20.",
+        "d": "The same with numbers up to 100.",
+        "e": "Follows a chain of steps, like 2 more then 1 less, to find where it ends.",
+        "f": "Solves a puzzle: two neighbouring numbers add up to a total; finds one of them."
+      }
+    },
+    "I.1.14": {
+      "what": "Counting in jumps of ten: 10, 20, 30, and so on.",
+      "levels": {
+        "a": "Counts by tens from 10 to 50.",
+        "b": "Counts by tens up to 100.",
+        "c": "Counts by tens from any number, such as 8, 18, 28, 38.",
+        "d": "Counts bars of ten cubes by tens to find the total.",
+        "e": "Works backwards, counting down by tens to fill in missing numbers.",
+        "f": "Works out how many numbers are said when counting by tens, such as from 8 to 88."
+      }
+    },
+    "I.1.15": {
+      "what": "Counting in jumps of five: 5, 10, 15, 20, and so on.",
+      "levels": {
+        "a": "Counts by fives from 5 to 25.",
+        "b": "Counts by fives up to 50.",
+        "c": "Counts by fives up to 100.",
+        "d": "Counts hands of five fingers, or 5-cent coins, by fives."
+      }
+    },
+    "I.1.16": {
+      "what": "Counting in jumps of two: 2, 4, 6, 8, and so on.",
+      "levels": {
+        "a": "Counts by twos up to 10.",
+        "b": "Counts by twos up to 20.",
+        "c": "Counts objects in pairs to find how many.",
+        "d": "Counts by twos starting from any even number, such as 30.",
+        "e": "Spots the one wrong number in a count by twos.",
+        "f": "Counts how many even numbers lie between two numbers, such as 13 and 27."
+      }
+    }
+  }
+}

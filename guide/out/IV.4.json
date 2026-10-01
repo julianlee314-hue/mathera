@@ -1,0 +1,157 @@
+{
+  "branch": "IV.4",
+  "intro": "A system is two or more equations that must be true at the same time, like two facts about the same ticket sale. This branch teaches several ways to find the numbers that satisfy every equation at once, and how to use them to solve real problems.",
+  "skills": {
+    "IV.4.01": {
+      "what": "Understanding that a solution of a system is a pair of numbers that makes every equation true at once.",
+      "levels": {
+        "a": "Checks whether a pair of numbers works in both equations.",
+        "b": "Explains that the solution is where the two lines cross on a graph.",
+        "c": "Picks the pair that fits both facts in a word problem, such as ticket counts and total cost.",
+        "d": "Estimates the solution by looking at where two graphed lines cross."
+      }
+    },
+    "IV.4.02": {
+      "what": "Solving a system by drawing both lines and reading off where they cross.",
+      "levels": {
+        "a": "Picks the graph that shows both lines correctly.",
+        "b": "Reads the crossing point from the graph.",
+        "c": "Checks the crossing point in both equations to be sure it is exact.",
+        "d": "Sees that graphs only give estimates, and finds the exact answer with algebra."
+      }
+    },
+    "IV.4.03": {
+      "what": "Solving a system by substitution: getting one letter alone, then putting that expression into the other equation.",
+      "levels": {
+        "a": "Rearranges one equation to get a letter by itself.",
+        "b": "Replaces that letter in the other equation, leaving just one unknown.",
+        "c": "Solves for one letter, then puts it back to find the other.",
+        "d": "Checks a proposed answer in both equations.",
+        "e": "Clears fractions first, then substitutes.",
+        "f": "Solves equations with x and y in the bottom of fractions by renaming one over x and one over y."
+      }
+    },
+    "IV.4.04": {
+      "what": "Solving a system by elimination: adding or subtracting the equations so that one letter cancels out.",
+      "levels": {
+        "a": "Lines up the equations so matching letters sit in the same column.",
+        "b": "Adds or subtracts the equations to cancel one letter.",
+        "c": "Solves for one letter, then puts it back to find the other.",
+        "d": "Checks the answer in both original equations.",
+        "e": "Tidies messy equations into line before eliminating.",
+        "f": "Adds and subtracts whole equations to reveal a much simpler pair."
+      }
+    },
+    "IV.4.05": {
+      "what": "Elimination when the letters do not cancel right away, so one or both equations are first multiplied by a number.",
+      "levels": {
+        "a": "Multiplies one equation so a letter will cancel.",
+        "b": "Multiplies both equations by different numbers so a letter will cancel.",
+        "c": "Cancels a letter and solves the system.",
+        "d": "Multiplies every term, including signs, correctly, avoiding common slips."
+      }
+    },
+    "IV.4.06": {
+      "what": "Choosing the quickest method, graphing, substitution or elimination, for a given system.",
+      "levels": {
+        "a": "Recognizes when a rough graph is good enough.",
+        "b": "Recognizes when substitution is easiest, because a letter is already nearly alone.",
+        "c": "Recognizes when elimination is easiest, because a letter cancels straight away.",
+        "d": "Gives a reason for the chosen method.",
+        "e": "Finds a combination of the unknowns directly, without solving for each one.",
+        "f": "Factors a squared equation so the system turns into a simple straight-line one."
+      }
+    },
+    "IV.4.07": {
+      "what": "Recognizing systems with no solution (parallel lines) or infinitely many solutions (the same line twice).",
+      "levels": {
+        "a": "Sees that parallel lines never cross, so there is no solution.",
+        "b": "Sees that two equations for the same line share every point.",
+        "c": "Spots these cases while solving, when the letters all cancel out.",
+        "d": "Spots these cases by comparing slopes and starting values.",
+        "e": "Finds the missing numbers that make a system have no solution.",
+        "f": "Finds when a system with an unknown throughout has no solution."
+      }
+    },
+    "IV.4.08": {
+      "what": "Turning a word problem into two equations and solving them.",
+      "levels": {
+        "a": "Chooses two letters to stand for the two unknown amounts.",
+        "b": "Writes two equations from the facts given.",
+        "c": "Solves the system.",
+        "d": "Answers the actual question asked, in words and units."
+      }
+    },
+    "IV.4.09": {
+      "what": "Solving mixture problems, such as combining a weak and a strong salt solution to get a chosen strength.",
+      "levels": {
+        "a": "Writes an equation for the total amount of liquid.",
+        "b": "Writes an equation for the amount of pure ingredient.",
+        "c": "Solves the two equations together.",
+        "d": "Checks whether an answer makes sense, for example that the mix lies between the two strengths."
+      }
+    },
+    "IV.4.10": {
+      "what": "Solving speed and distance problems with two unknowns, such as a boat's speed and a river's current.",
+      "levels": {
+        "a": "Adds the current's speed going downstream and subtracts it going upstream.",
+        "b": "Finds a plane's own speed and the wind speed from its speeds with and against the wind.",
+        "c": "Sets up equations using distance equals speed times time.",
+        "d": "Solves the system and explains the answer in context."
+      }
+    },
+    "IV.4.11": {
+      "what": "Graphing several inequalities together and finding the region where all of them are true.",
+      "levels": {
+        "a": "Graphs one inequality as a shaded side of a line.",
+        "b": "Finds the region where the shaded areas overlap.",
+        "c": "Tests whether a point lies in every region.",
+        "d": "Writes the inequalities from a graph.",
+        "e": "Finds the values of an unknown that put a point inside the overlap.",
+        "f": "Counts every whole-number grid point inside the overlap."
+      }
+    },
+    "IV.4.12": {
+      "what": "Linear programming: finding the best choice, like greatest profit, when there are several limits to respect.",
+      "levels": {
+        "a": "Writes the limits, such as at least 34 items, as inequalities.",
+        "b": "Identifies which points lie in the allowed region.",
+        "c": "Finds the corner points of the allowed region.",
+        "d": "Tests the corners to find the greatest or smallest value.",
+        "e": "Finds the smallest cost when the region stretches out forever.",
+        "f": "Works out which goals would make a chosen corner the best one."
+      }
+    },
+    "IV.4.13": {
+      "what": "Solving three equations with three unknowns, x, y and z, all at once.",
+      "levels": {
+        "a": "Combines equations to remove one letter, leaving two equations in two unknowns.",
+        "b": "Solves that smaller pair.",
+        "c": "Puts known values back in to find the third unknown.",
+        "d": "Checks a solution in all three equations.",
+        "e": "Solves systems where each equation is missing one of the letters.",
+        "f": "Adds all three equations to find the total x + y + z in one step."
+      }
+    },
+    "IV.4.14": {
+      "what": "Solving a system of a straight line and a parabola (the U-shaped graph of a squared equation).",
+      "levels": {
+        "a": "Picks the graph showing both the line and the parabola.",
+        "b": "Substitutes the line into the parabola to get one squared equation.",
+        "c": "Decides whether the line crosses the curve 0, 1 or 2 times.",
+        "d": "Solves for the crossing points and checks them.",
+        "e": "Finds the value that makes the line just touch the curve.",
+        "f": "Finds the midpoint of the two crossing points without finding the points themselves."
+      }
+    },
+    "IV.4.15": {
+      "what": "Using a matrix (a grid of numbers) to record a system and solve it by tidying rows step by step.",
+      "levels": {
+        "a": "Writes a system's numbers in a grid called an augmented matrix.",
+        "b": "Changes a row by adding a multiple of another row.",
+        "c": "Uses row changes to get zeros below the diagonal, a staircase shape.",
+        "d": "Reads the solution from the finished staircase grid."
+      }
+    }
+  }
+}

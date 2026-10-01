@@ -1,0 +1,120 @@
+{
+  "branch": "I.2",
+  "intro": "Once learners can count, they learn to compare: which group has more, which number is bigger, and how to put numbers in order. This is the start of seeing numbers as having sizes and places.",
+  "skills": {
+    "I.2.01": {
+      "what": "Telling which of two groups has more or fewer by pairing the items up one to one.",
+      "levels": {
+        "a": "Pairs up two small rows and spots which one has some left over.",
+        "b": "Pairs up two rows to decide which has more.",
+        "c": "Pairs up two rows to decide which has fewer.",
+        "d": "Says how many more one row has, by counting the leftovers."
+      }
+    },
+    "I.2.02": {
+      "what": "Recognizing when two groups have the same number of things, even if they look different.",
+      "levels": {
+        "a": "Checks whether two rows have the same number by giving each item a partner.",
+        "b": "Works out how many to add to make two groups the same.",
+        "c": "Finds groups with the same number even when arranged differently.",
+        "d": "Counts to check, instead of assuming a longer row has more."
+      }
+    },
+    "I.2.03": {
+      "what": "Using a number line from 0 to 10, where numbers sit in order along a line like steps.",
+      "levels": {
+        "a": "Works out which number belongs at a marked spot on the line.",
+        "b": "Finds where a given number sits on the line.",
+        "c": "Makes jumps of 1 forward or back along the line.",
+        "d": "Fills in several missing numbers on the line."
+      }
+    },
+    "I.2.04": {
+      "what": "Deciding which of two numbers up to 10 is bigger or smaller.",
+      "levels": {
+        "a": "Picks the bigger number, with pictures to help.",
+        "b": "Picks the smaller number, with pictures to help.",
+        "c": "Uses the number line: the number further right is bigger.",
+        "d": "Compares two numbers with no pictures or line to help."
+      }
+    },
+    "I.2.05": {
+      "what": "Using a number line from 0 to 20, including the teen numbers.",
+      "levels": {
+        "a": "Places teen numbers, like 12, on the line.",
+        "b": "Counts how many numbers lie between two numbers.",
+        "c": "Finds the number a few steps before or after a given number.",
+        "d": "Makes jumps forward and back along the line and says where they land.",
+        "e": "Finds the number exactly halfway between two numbers on the line.",
+        "f": "Works out how many equal jumps of 2 it takes to get from one number to another."
+      }
+    },
+    "I.2.06": {
+      "what": "Putting a set of numbers in order from smallest to biggest, or biggest to smallest.",
+      "levels": {
+        "a": "Orders three numbers up to 10.",
+        "b": "Orders three numbers up to 20.",
+        "c": "Picks out the greatest and the least in a small list.",
+        "d": "Orders numbers up to 100, in either direction."
+      }
+    },
+    "I.2.07": {
+      "what": "Using position words like first, second and third to say where something is in a line.",
+      "levels": {
+        "a": "Uses first, second and third to name places in a line.",
+        "b": "Uses position words all the way up to tenth.",
+        "c": "Works out how many are in front of or behind someone in a line.",
+        "d": "Understands last and next-to-last.",
+        "e": "Works out how many people are in front of someone, given their place in line.",
+        "f": "Solves a puzzle: someone is seventh from the front and seventh from the back; how many in line?"
+      }
+    },
+    "I.2.08": {
+      "what": "Comparing numbers up to 20 by thinking about tens and ones, or using a number line.",
+      "levels": {
+        "a": "Compares teen numbers by looking at the ones, since both have one ten.",
+        "b": "Uses a number line to decide which number is smaller or bigger.",
+        "c": "Decides whether statements like \"7 is more than 15\" are true or false.",
+        "d": "Solves short stories asking who has more or fewer."
+      }
+    },
+    "I.2.09": {
+      "what": "Comparing numbers up to 100 by looking at the tens first, then the ones.",
+      "levels": {
+        "a": "Compares two-digit numbers by their tens, such as 78 and 87.",
+        "b": "Compares numbers with the same tens by looking at the ones.",
+        "c": "Decides which ten a number is closer to, such as 88 being nearer 90.",
+        "d": "Solves short stories comparing numbers up to 100."
+      }
+    },
+    "I.2.10": {
+      "what": "Using the signs = (the same as), > (greater than) and < (less than) to compare numbers.",
+      "levels": {
+        "a": "Learns that = means \"the same as.\"",
+        "b": "Chooses > or < between two small numbers; the open side faces the bigger one.",
+        "c": "Writes comparisons with these signs for numbers up to 20.",
+        "d": "The same with numbers up to 100."
+      }
+    },
+    "I.2.11": {
+      "what": "Making a sensible guess of how many there are without counting, then checking.",
+      "levels": {
+        "a": "Glances at a group and says whether it is more or less than 10.",
+        "b": "Picks a sensible estimate, like about 5 or about 20.",
+        "c": "Counts to check someone's guess and sees how close it was.",
+        "d": "Uses a group of 10 as a guide to improve a poor guess."
+      }
+    },
+    "I.2.12": {
+      "what": "Working out the difference between two amounts: how many more one has, or how many fewer.",
+      "levels": {
+        "a": "Lines up two cube trains up to 10 and counts the extra cubes.",
+        "b": "The same with up to 20 cubes.",
+        "c": "Counts the jumps between two numbers on a number line.",
+        "d": "Solves short stories like \"Mia has 11, Zoe has 3; how many fewer?\"",
+        "e": "Works backwards: knows one child has 2 more and how many they have, finds the other's amount.",
+        "f": "Solves a puzzle: after one child gives 5 to even things up, finds how big the gap was."
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "branch": "III.3",
+  "intro": "This branch is all about percent, which simply means \"out of 100.\" Percents appear in sales, taxes, tips, interest, and the news, so this branch focuses on real money and real data.",
+  "skills": {
+    "III.3.01": {
+      "what": "Understanding that a percent is a number out of 100, so 15% means 15 out of every 100.",
+      "levels": {
+        "a": "Reads a percent from a grid of 100 squares.",
+        "b": "Writes a percent as a fraction.",
+        "c": "Writes a percent as a decimal.",
+        "d": "Uses familiar percents like 25%, 50%, and 75% to find part of a group."
+      }
+    },
+    "III.3.02": {
+      "what": "Switching between fractions, decimals, and percents, which are three ways to write the same amount.",
+      "levels": {
+        "a": "Turns a fraction into a percent, like three quarters into 75%.",
+        "b": "Turns a percent into a decimal, including percents like 62.5%.",
+        "c": "Turns a decimal into a percent, including ones over 100%.",
+        "d": "Handles fractions like one third, whose decimals repeat forever."
+      }
+    },
+    "III.3.03": {
+      "what": "Finding a percent of a number, such as 15% of 480.",
+      "levels": {
+        "a": "Finds 10% and 50% of a number.",
+        "b": "Finds 25% and 75% of a number.",
+        "c": "Finds any percent of a number.",
+        "d": "Builds harder percents in the head from easy ones, like 60% from 10%."
+      }
+    },
+    "III.3.04": {
+      "what": "Working backwards to find the whole amount when only a percent of it is known.",
+      "levels": {
+        "a": "Finds the whole when told what a simple percent of it is.",
+        "b": "Uses a table to step from a known percent down to 10%, then up to 100%.",
+        "c": "Picks the equation that matches a find-the-whole problem.",
+        "d": "Solves word problems, like finding class size from how many walk to school.",
+        "e": "Works backwards through two percent spends in a row to find the starting amount.",
+        "f": "Finds a tank's full size from how much it takes to go from one percent full to another."
+      }
+    },
+    "III.3.05": {
+      "what": "Working out what percent one number is of another.",
+      "levels": {
+        "a": "Finds what percent one number is of another, like 32 of 160.",
+        "b": "Uses a table to rescale a part out of a whole to a part out of 100.",
+        "c": "Picks the right calculation to find a percent.",
+        "d": "Solves word problems, like the percent of games a team won."
+      }
+    },
+    "III.3.06": {
+      "what": "Understanding percents bigger than 100% and smaller than 1%.",
+      "levels": {
+        "a": "Works with percents over 100%, like 120 being 120% of 100.",
+        "b": "Finds tiny percents, like 0.2%, of a number.",
+        "c": "Knows that more than 100% of a number is bigger than the number itself.",
+        "d": "Uses large percents in real settings, like a town growing to 200% of its size."
+      }
+    },
+    "III.3.07": {
+      "what": "Working with amounts that go up by a percent, like a price rise.",
+      "levels": {
+        "a": "Finds the new amount after a percent increase.",
+        "b": "Increases an amount in one multiplication, like times 1.09 for a 9% rise.",
+        "c": "Finds the percent increase between an old and a new amount.",
+        "d": "Solves real problems, like the percent increase in rent."
+      }
+    },
+    "III.3.08": {
+      "what": "Working with amounts that go down by a percent, like a price drop.",
+      "levels": {
+        "a": "Finds the new amount after a percent decrease.",
+        "b": "Decreases an amount in one multiplication, like times 0.87 for a 13% drop.",
+        "c": "Finds the percent decrease between an old and a new amount.",
+        "d": "Solves real problems, like the percent drop in a phone's price."
+      }
+    },
+    "III.3.09": {
+      "what": "Working out discounts and sale prices when shopping.",
+      "levels": {
+        "a": "Finds how much money a percent discount takes off.",
+        "b": "Finds the sale price after a discount.",
+        "c": "Works out the total effect of one discount taken after another.",
+        "d": "Compares a percent-off deal with a dollars-off deal.",
+        "e": "Handles one discount taken after another, finding the single discount that matches.",
+        "f": "Works out an original price from a clue linking the sale price to half the price."
+      }
+    },
+    "III.3.10": {
+      "what": "Adding sales tax and tips to a bill.",
+      "levels": {
+        "a": "Adds sales tax to a price to find the total.",
+        "b": "Works out a tip as a percent of a meal's cost.",
+        "c": "Finds the full cost of an item including tax.",
+        "d": "Estimates a tip in the head by rounding."
+      }
+    },
+    "III.3.11": {
+      "what": "Understanding how shops set prices by adding a markup, and how profit is measured as a percent.",
+      "levels": {
+        "a": "Finds the markup, the amount a shop adds to what it paid.",
+        "b": "Finds the selling price after a markup.",
+        "c": "Finds profit as a percent of what the item cost.",
+        "d": "Solves several-step problems, like a markup followed by a sale."
+      }
+    },
+    "III.3.12": {
+      "what": "Simple interest is money earned (or owed) each year as a fixed percent of the starting amount.",
+      "levels": {
+        "a": "Finds the interest from the amount, the yearly rate, and the number of years.",
+        "b": "Works backwards to find the yearly interest rate.",
+        "c": "Works backwards to find how many years it took.",
+        "d": "Finds the total amount at the end, including periods shorter than a year.",
+        "e": "Works backwards to find the years, the rate or the starting amount from the interest.",
+        "f": "Works out how money was split between two accounts earning different rates."
+      }
+    },
+    "III.3.13": {
+      "what": "Percent error measures how far off a guess or measurement is, compared with the true value.",
+      "levels": {
+        "a": "Finds the error, the gap between a guess and the true amount.",
+        "b": "Writes that error as a percent of the true value.",
+        "c": "Finds the percent error of a real measurement.",
+        "d": "Uses percent error to decide which of two measurements is more accurate."
+      }
+    },
+    "III.3.14": {
+      "what": "Avoiding common mistakes with percent changes that trip people up.",
+      "levels": {
+        "a": "Tells a rise in percentage points apart from a percent increase.",
+        "b": "Sees why going down 10% and then up 10% does not return to the start.",
+        "c": "Finds the overall change after two percent changes in a row.",
+        "d": "Explains why a claim about percent changes in the news is misleading.",
+        "e": "Finds the overall change after a percent rise and a percent fall, which don't simply cancel.",
+        "f": "Works out the percent rise needed to undo a fall, which is much bigger than the fall."
+      }
+    },
+    "III.3.15": {
+      "what": "Reading and using percents in charts and survey results.",
+      "levels": {
+        "a": "Turns survey counts from a bar chart into a percent.",
+        "b": "Finds the missing slice of a pie chart, knowing the whole is 100%.",
+        "c": "Uses a pie chart's percent to find how many people chose an option.",
+        "d": "Compares groups of different sizes fairly by using percents."
+      }
+    },
+    "III.3.16": {
+      "what": "Estimating percents quickly in the head to get a sensible rough answer.",
+      "levels": {
+        "a": "Rounds the number first to estimate 10% of it.",
+        "b": "Uses a nearby easy percent, like 25%, to estimate.",
+        "c": "Picks the reasonable answer from a list by estimating.",
+        "d": "Rounds both the percent and the number to estimate in the head."
+      }
+    },
+    "III.3.17": {
+      "what": "Solving percent problems that take several steps.",
+      "levels": {
+        "a": "Applies two percent changes, one after the other.",
+        "b": "Works backwards to find the original price before a percent rise.",
+        "c": "Applies a discount and then sales tax to find a final price.",
+        "d": "Picks the single calculation that gives a final price and explains why.",
+        "e": "Undoes a shop's markup and then the sales tax, in reverse order, to find the shop's cost.",
+        "f": "Works out how much to add to a mix to change its percent, using the part that stays fixed."
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "branch": "VII.12",
+  "intro": "Optimization means finding the best possible value: the highest profit, the least material, the shortest distance. This branch finds peaks, valleys and saddle points of functions with several inputs, with and without restrictions.",
+  "skills": {
+    "VII.12.01": {
+      "what": "Critical points are the spots where a surface is flat in every direction, where peaks, valleys and saddles can occur.",
+      "levels": {
+        "a": "Knows critical points are where the gradient is zero.",
+        "b": "Solves the resulting set of equations to find them.",
+        "c": "Includes points where the partial derivatives do not exist.",
+        "d": "Lists all candidate points for a maximum or minimum."
+      }
+    },
+    "VII.12.02": {
+      "what": "The second derivative test uses second partial derivatives to decide if a flat spot is a peak, a valley or a saddle.",
+      "levels": {
+        "a": "Computes the test number from the second partial derivatives.",
+        "b": "Identifies maximums and minimums with it.",
+        "c": "Identifies saddle points with it.",
+        "d": "Recognizes when the test gives no answer."
+      }
+    },
+    "VII.12.03": {
+      "what": "A saddle point is flat but is neither a peak nor a valley, like the middle of a horse saddle or a mountain pass.",
+      "levels": {
+        "a": "Recognizes the saddle shape.",
+        "b": "Sees the surface rises one way and falls another way.",
+        "c": "Finds saddle points of a function.",
+        "d": "Spots saddles on a contour map."
+      }
+    },
+    "VII.12.04": {
+      "what": "Finding the absolute highest and lowest values of a function over a fenced-in region, checking the inside and the edges.",
+      "levels": {
+        "a": "Finds critical points inside the region.",
+        "b": "Checks each piece of the boundary.",
+        "c": "Checks the corners.",
+        "d": "Compares all candidates to pick the overall largest and smallest."
+      }
+    },
+    "VII.12.05": {
+      "what": "Lagrange multipliers find the best value when the inputs must obey a rule, like the largest area for a fixed length of fence.",
+      "levels": {
+        "a": "Learns the key condition: the two gradients point along the same line.",
+        "b": "Sets up the system of equations.",
+        "c": "Solves the system to find the best points.",
+        "d": "Explains the picture: the best point is where a level curve touches the constraint."
+      }
+    },
+    "VII.12.06": {
+      "what": "Optimizing when the inputs must obey two rules at once.",
+      "levels": {
+        "a": "Uses two multipliers, one for each rule.",
+        "b": "Sets up the larger system of equations.",
+        "c": "Solves it.",
+        "d": "Pictures the allowed points as the curve where two surfaces meet."
+      }
+    },
+    "VII.12.07": {
+      "what": "Applying these methods to real problems in design, business and geometry.",
+      "levels": {
+        "a": "Designs boxes that use the least material for a given volume.",
+        "b": "Balances cost and production to find the best plan.",
+        "c": "Finds the closest point on a surface to a given point.",
+        "d": "Checks that an answer makes sense in context."
+      }
+    },
+    "VII.12.08": {
+      "what": "Gradient descent finds a low point by repeatedly taking small steps downhill, like walking down a foggy hill.",
+      "levels": {
+        "a": "Takes one step in the steepest downhill direction.",
+        "b": "Chooses a sensible step size.",
+        "c": "Runs several steps by hand.",
+        "d": "Explains how machine learning uses this method."
+      }
+    }
+  }
+}

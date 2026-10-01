@@ -1,0 +1,175 @@
+{
+  "branch": "IV.7",
+  "intro": "Quadratics are equations with an x squared in them; their graphs are U-shaped curves called parabolas. This branch covers graphing them, solving them in several ways, and using them for real problems like the path of a thrown ball.",
+  "skills": {
+    "IV.7.01": {
+      "what": "Identifying the key features of a parabola: its tip (vertex), its mirror line, which way it opens, and where it crosses the axes.",
+      "levels": {
+        "a": "Finds the vertex, the lowest or highest point of the U.",
+        "b": "Finds the vertical mirror line through the vertex.",
+        "c": "Tells whether the U opens upward or downward.",
+        "d": "Finds where the parabola crosses the x-axis and the y-axis."
+      }
+    },
+    "IV.7.02": {
+      "what": "Graphing a quadratic written in vertex form, which shows the tip of the U directly.",
+      "levels": {
+        "a": "Reads the vertex straight from the equation.",
+        "b": "Explains how the number in front makes the U narrower, wider or upside down.",
+        "c": "Uses the mirror line to find matching points on each side.",
+        "d": "Picks the correct sketch of the parabola.",
+        "e": "Finds the vertex when there is a number multiplying x inside the bracket.",
+        "f": "Finds the lowest vertex among a whole family of changing parabolas."
+      }
+    },
+    "IV.7.03": {
+      "what": "Graphing a quadratic written in standard form, x squared terms first, then x, then a plain number.",
+      "levels": {
+        "a": "Uses a short formula to find the x-position of the vertex.",
+        "b": "Finds the full vertex point.",
+        "c": "Reads where the curve crosses the y-axis from the plain number.",
+        "d": "Picks the correct sketch."
+      }
+    },
+    "IV.7.04": {
+      "what": "Graphing a quadratic written in factored form, as brackets multiplied together, which shows the x-axis crossings directly.",
+      "levels": {
+        "a": "Reads where the curve crosses the x-axis from the brackets.",
+        "b": "Finds the vertex halfway between those crossings.",
+        "c": "Tells from the number in front whether the U opens up or down.",
+        "d": "Picks the correct sketch."
+      }
+    },
+    "IV.7.05": {
+      "what": "Switching a quadratic between vertex, standard and factored forms.",
+      "levels": {
+        "a": "Multiplies out vertex form into standard form.",
+        "b": "Multiplies out factored form into standard form.",
+        "c": "Factors standard form into brackets.",
+        "d": "Knows which form shows the vertex, the crossings or the y-intercept best."
+      }
+    },
+    "IV.7.06": {
+      "what": "Solving quadratics by getting the squared part alone and taking the square root of both sides.",
+      "levels": {
+        "a": "Gets x squared alone on one side.",
+        "b": "Takes the square root, remembering both the positive and negative answers.",
+        "c": "Solves when a whole bracket is squared.",
+        "d": "Recognizes when there is no real solution, since no square is negative."
+      }
+    },
+    "IV.7.07": {
+      "what": "Solving a squared equation (a quadratic) by splitting it into two simpler pieces that multiply to zero.",
+      "levels": {
+        "a": "Rearranges the equation so one side is zero.",
+        "b": "Factors the quadratic into two brackets.",
+        "c": "Solves by setting each bracket to zero, since a product is zero only if a piece is.",
+        "d": "Checks each answer in the original equation.",
+        "e": "Expands and tidies a messier equation before factoring.",
+        "f": "Spots a quadratic in disguise, such as an equation in x to the fourth power, and finds all solutions."
+      }
+    },
+    "IV.7.08": {
+      "what": "Completing the square: adding the right number to make a perfect squared bracket, which lets any quadratic be solved.",
+      "levels": {
+        "a": "Finds the number that completes the square: half the x number, squared.",
+        "b": "Adds that number to both sides to keep the equation balanced.",
+        "c": "Does the same when there is a number in front of the x squared.",
+        "d": "Solves a quadratic fully by completing the square.",
+        "e": "Handles odd middle numbers, where fractions appear.",
+        "f": "Completes two squares at once, in x and in y, to find a smallest value."
+      }
+    },
+    "IV.7.09": {
+      "what": "Using completing the square to rewrite a quadratic in vertex form and find its tip.",
+      "levels": {
+        "a": "Groups the x terms and takes out any number in front.",
+        "b": "Completes the square inside the bracket.",
+        "c": "Adjusts the plain number so the expression stays the same.",
+        "d": "Reads off the vertex.",
+        "e": "Finds a vertex that has fractions in it.",
+        "f": "Pairs up four brackets cleverly to find the smallest value of a product."
+      }
+    },
+    "IV.7.10": {
+      "what": "Using the quadratic formula, a recipe that solves any quadratic from its three numbers a, b and c.",
+      "levels": {
+        "a": "Identifies the three numbers a, b and c in the equation.",
+        "b": "Puts them into the formula carefully, starting with the part under the root.",
+        "c": "Solves and simplifies the square root in the answer.",
+        "d": "Rearranges the equation into the usual form first, then uses the formula.",
+        "e": "Works backwards from the answers to find the original equation.",
+        "f": "Uses the formula when the equation itself contains square roots."
+      }
+    },
+    "IV.7.11": {
+      "what": "Using the discriminant, the part under the root in the formula, to tell how many solutions a quadratic has without solving.",
+      "levels": {
+        "a": "Calculates b squared minus 4 times a times c.",
+        "b": "Uses its sign to say whether there are two, one or no real solutions.",
+        "c": "Tells whether the solutions are whole or fraction numbers, or messy roots.",
+        "d": "Links the discriminant to how many times the graph crosses the x-axis.",
+        "e": "Finds the missing number that gives exactly one solution.",
+        "f": "Finds when an equation with an unknown throughout has a repeated solution."
+      }
+    },
+    "IV.7.12": {
+      "what": "Choosing the quickest way to solve a given quadratic: square roots, factoring or the formula.",
+      "levels": {
+        "a": "Uses square roots when there is no plain x term.",
+        "b": "Checks whether an expression factors neatly.",
+        "c": "Uses the formula, which always works, when nothing else is quick.",
+        "d": "Gives a reason for the chosen method."
+      }
+    },
+    "IV.7.13": {
+      "what": "Using quadratics to model something thrown or launched, whose height rises then falls.",
+      "levels": {
+        "a": "Uses the height formula to find the height at a given time.",
+        "b": "Finds the highest point the object reaches.",
+        "c": "Finds when the object lands, at height zero.",
+        "d": "Finds the two times when it passes a given height, going up and coming down."
+      }
+    },
+    "IV.7.14": {
+      "what": "Using the vertex of a parabola to find the biggest area or best value in real problems.",
+      "levels": {
+        "a": "Writes an area as a quadratic expression.",
+        "b": "Finds the vertex to locate the best value.",
+        "c": "Finds the largest area or revenue possible, such as for a fenced pen.",
+        "d": "Explains what the vertex means in the situation."
+      }
+    },
+    "IV.7.15": {
+      "what": "Solving quadratic inequalities, finding the range of x where a squared expression is above or below zero.",
+      "levels": {
+        "a": "Finds where the expression equals zero.",
+        "b": "Tests the sign in each region between those points.",
+        "c": "Reads the answer from the graph of the parabola.",
+        "d": "Writes the answer as ranges in bracket form.",
+        "e": "Rearranges the inequality first so one side is zero.",
+        "f": "Finds when an expression is negative for at least one x."
+      }
+    },
+    "IV.7.16": {
+      "what": "Writing the equation of a parabola from information about it, such as its tip or crossing points.",
+      "levels": {
+        "a": "Writes the equation from the vertex and one other point.",
+        "b": "Writes it from the two x-axis crossings and another point.",
+        "c": "Writes it from any three points by solving a system.",
+        "d": "Matches an equation to a graph as a check.",
+        "e": "Writes it from the mirror line and two points.",
+        "f": "Finds every parabola that just touches the x-axis and passes through two points."
+      }
+    },
+    "IV.7.17": {
+      "what": "Fitting a quadratic to data, and recognizing quadratic patterns in tables of numbers.",
+      "levels": {
+        "a": "Tells whether a table grows steadily or follows a curved pattern.",
+        "b": "Finds the differences of the differences, which stay constant for a quadratic.",
+        "c": "Uses a calculator to fit a quadratic to data.",
+        "d": "Judges whether a prediction far beyond the data is sensible."
+      }
+    }
+  }
+}

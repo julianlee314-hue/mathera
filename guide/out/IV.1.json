@@ -1,0 +1,57 @@
+{
+  "branch": "IV.1",
+  "intro": "This branch sharpens equation solving for trickier cases: fractions, formulas full of letters, distances (absolute value), and inequalities that describe a whole range of answers. These are the everyday tools of all later algebra.",
+  "skills": {
+    "IV.1.01": {
+      "what": "Solving equations that contain fractions or decimals by first multiplying through to get rid of them.",
+      "levels": {
+        "a": "Multiplies every term by a common bottom number so the fractions disappear.",
+        "b": "Multiplies by 10, 100 or 1000 so the decimals become whole numbers.",
+        "c": "Solves the equation once it has been cleaned up.",
+        "d": "Checks the answer by putting it back into the original equation.",
+        "e": "Finds the extra letters that make an equation true for every x, or for no x at all.",
+        "f": "Solves an equation with a long chain of fractions that collapses neatly once the hidden pattern is seen."
+      }
+    },
+    "IV.1.02": {
+      "what": "Rearranging a formula, such as area equals length times width, to get a different letter on its own.",
+      "levels": {
+        "a": "Rearranges a simple formula to get one letter by itself.",
+        "b": "Treats the other letters just like ordinary numbers while rearranging.",
+        "c": "Rearranges real science formulas, such as turning Fahrenheit into Celsius.",
+        "d": "Notes which values are not allowed, because dividing by zero is impossible.",
+        "e": "Solves for a letter that appears in two places, gathering it together first.",
+        "f": "Finds the ratio of two letters, like x divided by y, without knowing either letter."
+      }
+    },
+    "IV.1.03": {
+      "what": "Solving equations with absolute value (the distance of a number from zero, ignoring its sign).",
+      "levels": {
+        "a": "Reads an absolute value as a distance on the number line.",
+        "b": "Splits the equation into two cases, one positive and one negative, and solves both.",
+        "c": "Gets the absolute value part alone on one side before splitting.",
+        "d": "Recognizes when there is no solution, since a distance can never be negative.",
+        "e": "Solves equations with an absolute value on both sides.",
+        "f": "Finds every solution when distances are added together or absolute values sit inside each other."
+      }
+    },
+    "IV.1.04": {
+      "what": "Solving pairs of inequalities joined by \"and\" or \"or\", where the answer is a range of numbers rather than one number.",
+      "levels": {
+        "a": "Treats \"and\" as keeping only the numbers that satisfy both conditions.",
+        "b": "Treats \"or\" as keeping every number that satisfies at least one condition.",
+        "c": "Solves inequalities squeezed between two limits, like 12 is at most 3x + 6, which is at most 24.",
+        "d": "Shows the answer on a number line and writes it as a range in brackets."
+      }
+    },
+    "IV.1.05": {
+      "what": "Solving inequalities with absolute value, such as \"x is within 8 of the number minus 7\", which describe ranges of distance.",
+      "levels": {
+        "a": "Turns \"distance less than\" into one range sitting between two limits.",
+        "b": "Turns \"distance greater than\" into two separate ranges going outward.",
+        "c": "Solves these inequalities and picks the matching number-line picture.",
+        "d": "Solves tolerance problems, such as how far a bolt may be from its target length."
+      }
+    }
+  }
+}

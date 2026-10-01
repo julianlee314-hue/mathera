@@ -1,0 +1,114 @@
+{
+  "branch": "VI.7",
+  "intro": "This branch introduces differential equations, which describe how something changes and ask what it will look like over time. They model growth, cooling, populations and mixing.",
+  "skills": {
+    "VI.7.01": {
+      "what": "A differential equation links a quantity to its own rate of change. For example, a population grows faster the bigger it already is.",
+      "levels": {
+        "a": "Recognizes an equation that includes a derivative.",
+        "b": "Identifies the order, the highest derivative that appears.",
+        "c": "Explains that the solution is a whole function, not a single number.",
+        "d": "Translates a differential equation into an everyday sentence."
+      }
+    },
+    "VI.7.02": {
+      "what": "Checking whether a suggested function really solves a differential equation by plugging it in.",
+      "levels": {
+        "a": "Differentiates the suggested function.",
+        "b": "Substitutes it and its derivative into the equation.",
+        "c": "Checks that both sides of the equation match.",
+        "d": "Finds a constant that makes a suggested solution work."
+      }
+    },
+    "VI.7.03": {
+      "what": "A slope field is a picture made of tiny line segments showing which way solutions flow at every point, like wind arrows on a weather map.",
+      "levels": {
+        "a": "Draws short slope marks at points using the equation.",
+        "b": "Matches slope field pictures to their equations.",
+        "c": "Sketches a solution curve by following the slopes.",
+        "d": "Uses lines of equal slope to predict long-run behavior."
+      }
+    },
+    "VI.7.04": {
+      "what": "Euler's method: estimating a solution by taking small straight steps in the direction the equation points.",
+      "levels": {
+        "a": "Explains stepping along the tangent line to a new point.",
+        "b": "Runs several steps by hand.",
+        "c": "Sees how smaller steps give a better estimate.",
+        "d": "Decides whether the estimate is too high or too low."
+      }
+    },
+    "VI.7.05": {
+      "what": "Solving equations where all the y terms can be moved to one side and all the x terms to the other.",
+      "levels": {
+        "a": "Moves y terms and x terms to opposite sides.",
+        "b": "Integrates both sides.",
+        "c": "Rearranges to get y on its own.",
+        "d": "Uses a starting value, and watches for solutions lost when dividing."
+      }
+    },
+    "VI.7.06": {
+      "what": "Modeling things that grow or shrink at a rate proportional to their size, like savings earning interest or radioactive decay.",
+      "levels": {
+        "a": "Recognizes the equation where the rate is a constant times the amount.",
+        "b": "Writes its solution as a starting amount times an exponential.",
+        "c": "Finds the growth constant from data, like a half-life.",
+        "d": "Uses the model to make predictions."
+      }
+    },
+    "VI.7.07": {
+      "what": "Newton's law of cooling: a hot drink cools faster when it is much hotter than the room, and slower as it nears room temperature.",
+      "levels": {
+        "a": "Sets up the cooling equation.",
+        "b": "Solves it.",
+        "c": "Finds the cooling constant from measurements.",
+        "d": "Works backwards to find when cooling began, as in detective problems."
+      }
+    },
+    "VI.7.08": {
+      "what": "Logistic growth models a population that grows quickly at first, then levels off as it nears the most its environment can support.",
+      "levels": {
+        "a": "Explains the carrying capacity, the population ceiling.",
+        "b": "Writes the logistic equation.",
+        "c": "Shows growth is fastest at half the carrying capacity.",
+        "d": "Solves it, reads off its features, and adds removal like fishing."
+      }
+    },
+    "VI.7.09": {
+      "what": "A differential equation has a whole family of solutions. One known starting value picks out the specific one.",
+      "levels": {
+        "a": "Describes the family of all solutions.",
+        "b": "Uses a starting value to pick one solution from the family.",
+        "c": "Spots unusual solutions that the general formula misses.",
+        "d": "Graphs several members of the family together."
+      }
+    },
+    "VI.7.10": {
+      "what": "Modeling a tank where salty water flows in and mixed water flows out, to track how much salt is inside.",
+      "levels": {
+        "a": "Writes the change as rate in minus rate out.",
+        "b": "Sets up the equation for the tank.",
+        "c": "Solves it.",
+        "d": "Finds the amount the tank settles toward in the long run."
+      }
+    },
+    "VI.7.11": {
+      "what": "Finding steady states where nothing changes, and whether things drift back to them or run away if nudged.",
+      "levels": {
+        "a": "Finds equilibrium values, where the rate of change is zero.",
+        "b": "Draws a phase line showing which way values move.",
+        "c": "Classifies each equilibrium as stable or unstable.",
+        "d": "Studies how equilibria appear or vanish as a setting changes."
+      }
+    },
+    "VI.7.12": {
+      "what": "Turning a description in words into a differential equation, and checking it makes sense.",
+      "levels": {
+        "a": "Translates \"proportional to\" into a constant times a quantity.",
+        "b": "Writes the full equation from a word description.",
+        "c": "States the assumptions the model makes.",
+        "d": "Checks that the units on both sides match."
+      }
+    }
+  }
+}

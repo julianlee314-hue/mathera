@@ -1,0 +1,169 @@
+{
+  "branch": "V.8",
+  "intro": "This branch studies circles in depth: the lines, angles and arcs (curved pieces) connected to them, and why they always relate in fixed ways. It ends by describing circles with equations on a grid.",
+  "skills": {
+    "V.8.01": {
+      "what": "Learning the names for lines and parts connected to a circle.",
+      "levels": {
+        "a": "Decides true or false about chords, radii and diameters.",
+        "b": "Tells minor arcs, major arcs and semicircles (half circles) apart.",
+        "c": "Describes two circles as sharing a center or as the same size.",
+        "d": "Picks out a radius, chord, diameter or tangent in a diagram."
+      }
+    },
+    "V.8.02": {
+      "what": "Measuring arcs of a circle using central angles, the angles whose corner is at the center.",
+      "levels": {
+        "a": "Uses the fact that an arc and its center angle have the same measure.",
+        "b": "Adds or subtracts neighboring arcs and angles.",
+        "c": "Uses the fact that equal chords cut off equal arcs.",
+        "d": "Solves for x when the angles around the center add to 360 degrees."
+      }
+    },
+    "V.8.03": {
+      "what": "Finding the length of an arc, the curved distance along part of a circle.",
+      "levels": {
+        "a": "Finds an arc's length as a fraction of the whole distance around.",
+        "b": "Finds an arc's exact length in terms of pi from the radius and angle.",
+        "c": "Works backwards from an arc length to the angle or radius.",
+        "d": "Solves everyday problems, like how far a clock hand's tip travels."
+      }
+    },
+    "V.8.04": {
+      "what": "Finding the area of a sector, a pizza-slice shaped piece of a circle.",
+      "levels": {
+        "a": "Finds a sector's area as a fraction of the whole circle, or the reverse.",
+        "b": "Finds a sector's exact area in terms of pi.",
+        "c": "Finds the area between a chord and its arc by subtracting a triangle.",
+        "d": "Solves everyday problems, like the area a sprinkler waters.",
+        "e": "Works backwards from a sector's area to find the radius.",
+        "f": "Finds the exact area of the lens where two quarter circles in a square overlap."
+      }
+    },
+    "V.8.05": {
+      "what": "Radians are a natural way to measure angles by comparing arc length to radius. A full turn is 2 times pi radians.",
+      "levels": {
+        "a": "Explains that one radian is the angle made by an arc as long as the radius.",
+        "b": "Converts between degrees and radians.",
+        "c": "Finds arc length as radius times angle, with the angle in radians.",
+        "d": "Finds a sector's area using the angle in radians."
+      }
+    },
+    "V.8.06": {
+      "what": "An angle with its corner on the circle is always half the arc it cuts off. This is the inscribed angle theorem.",
+      "levels": {
+        "a": "Finds an angle with its corner on the circle as half its arc, or the reverse.",
+        "b": "Identifies which of the three proof cases applies, based on where the center lies.",
+        "c": "Uses the fact that angles cutting off the same arc are equal.",
+        "d": "Solves for x using the half-the-arc rule.",
+        "e": "Adds radii to make an isosceles triangle and finds a hidden angle.",
+        "f": "Finds angles between corners of a regular polygon drawn inside a circle."
+      }
+    },
+    "V.8.07": {
+      "what": "Useful results that follow from the inscribed angle theorem, such as an angle in a half circle always being a right angle.",
+      "levels": {
+        "a": "Uses the fact that an angle standing on a diameter is a right angle.",
+        "b": "Uses the fact that opposite angles of a four-sided shape inside a circle add to 180 degrees.",
+        "c": "Finds unknown angles in such shapes by solving for x.",
+        "d": "Finds the one wrong step in a proof about these facts."
+      }
+    },
+    "V.8.08": {
+      "what": "A tangent line (one that just touches a circle) is always at right angles to the radius at that point.",
+      "levels": {
+        "a": "Uses the right angle between a tangent and the radius to find an angle.",
+        "b": "Uses the Pythagorean theorem to find exact lengths with a tangent.",
+        "c": "Tests whether a line touches the circle by checking for a right angle.",
+        "d": "Completes a short proof: names a missing reason or orders the steps."
+      }
+    },
+    "V.8.09": {
+      "what": "The two tangent lines drawn to a circle from the same outside point are always equal in length.",
+      "levels": {
+        "a": "Uses equal tangent lengths from one point to find a length.",
+        "b": "Finds the perimeter of a triangle whose sides all touch a circle inside it.",
+        "c": "Solves for x using equal tangent lengths.",
+        "d": "Puts the steps of the proof that the two tangents are equal in order.",
+        "e": "Finds the radius of the circle that fits inside a right triangle.",
+        "f": "Finds the perimeter of a triangle cut off by a third tangent, or works backwards from it."
+      }
+    },
+    "V.8.10": {
+      "what": "Facts about chords (lines joining two points on a circle) and how they relate to the center.",
+      "levels": {
+        "a": "Finds the one wrong step in a proof that a line from the center at right angles cuts a chord in half.",
+        "b": "Uses the fact that equal chords are equally far from the center.",
+        "c": "Finds a chord's length from the radius and its distance to the center.",
+        "d": "Orders the steps for finding a circle's center, and explains why they work."
+      }
+    },
+    "V.8.11": {
+      "what": "When two chords cross inside a circle, the angle between them depends on the two arcs they cut off.",
+      "levels": {
+        "a": "Finds the angle where two chords cross inside a circle.",
+        "b": "Uses the rule that this angle is half the sum of the two arcs.",
+        "c": "Works backwards from the angle to find a missing arc.",
+        "d": "Completes the proof of the rule: names a missing reason or orders the steps."
+      }
+    },
+    "V.8.12": {
+      "what": "When lines meet outside a circle, or a tangent meets a chord, the angle depends on the arcs in a similar way.",
+      "levels": {
+        "a": "Finds the angle where two lines cutting the circle meet outside it.",
+        "b": "Uses the half-the-difference rule with a tangent and a cutting line.",
+        "c": "Finds the angle between a tangent and a chord, which is half its arc.",
+        "d": "Solves for x using the half-the-difference rule.",
+        "e": "Uses the full 360 degrees of the circle to find the angle between two tangents.",
+        "f": "Finds angles when the circle is split into arcs in a given ratio."
+      }
+    },
+    "V.8.13": {
+      "what": "When two chords cross, the two pieces of one chord multiply to the same answer as the two pieces of the other.",
+      "levels": {
+        "a": "Finds a missing piece where two chords cross, using equal products of the pieces.",
+        "b": "Picks the correct equation for the pieces.",
+        "c": "Solves for x, including pieces written as expressions.",
+        "d": "Completes the proof using similar triangles: names a missing reason or finds the wrong step."
+      }
+    },
+    "V.8.14": {
+      "what": "Similar length rules for lines that cut through or touch a circle from an outside point.",
+      "levels": {
+        "a": "Finds a missing length for two cutting lines (secants) from an outside point.",
+        "b": "Finds a missing length for a tangent and a secant from the same point.",
+        "c": "Solves for x in these setups.",
+        "d": "Completes the proof of the rule: names a missing reason or finds the wrong step.",
+        "e": "Finds the radius when the cutting line passes through the center.",
+        "f": "Uses the 'power of a point' idea across two circles to find an exact tangent length."
+      }
+    },
+    "V.8.15": {
+      "what": "Describing a circle with an equation on a grid, based on its center and radius.",
+      "levels": {
+        "a": "Reads the center and radius from a circle's equation.",
+        "b": "Builds the equation from the Pythagorean theorem, and tests whether a point is inside or outside.",
+        "c": "Writes the equation of a circle from the ends of a diameter.",
+        "d": "Finds tangent lines to a circle on a grid."
+      }
+    },
+    "V.8.16": {
+      "what": "Recognizing a circle's equation when it has been multiplied out, and tidying it back to find the center and radius.",
+      "levels": {
+        "a": "Recognizes which multiplied-out equation is a circle.",
+        "b": "Completes the square for both x and y to tidy the equation.",
+        "c": "Reads the center and radius from the tidied equation.",
+        "d": "Finds the circle that passes through three given points."
+      }
+    },
+    "V.8.17": {
+      "what": "All circles are the same shape, just scaled. That is why pi, the ratio of distance around to distance across, is the same for every circle.",
+      "levels": {
+        "a": "Finds the scale factor that shrinks or stretches one circle onto another.",
+        "b": "Explains why distance around divided by distance across is the same for every circle.",
+        "c": "Traps pi between the perimeters of shapes drawn inside and around a circle, as Archimedes did.",
+        "d": "Slices a circle into thin wedges and rearranges them into a near-rectangle to find its area."
+      }
+    }
+  }
+}

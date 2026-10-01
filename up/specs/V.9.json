@@ -1,0 +1,186 @@
+{
+ "unit": "V.9",
+ "name": "Trig functions",
+ "skills": [
+  {
+   "id": "V.9.01",
+   "name": "Standard position",
+   "steps": {
+    "a": "initial and terminal sides",
+    "b": "positive and negative rotation",
+    "c": "more than 360°",
+    "d": "quadrant of an angle"
+   },
+   "wrong_turn": "Negative angles go clockwise. −90° points straight down, not left.",
+   "rule": "Standard position: vertex at the origin, initial side on the positive x-axis, counterclockwise positive."
+  },
+  {
+   "id": "V.9.02",
+   "name": "Coterminal angles",
+   "steps": {
+    "a": "add or subtract 360°",
+    "b": "in radians 2π",
+    "c": "find the smallest positive",
+    "d": "general form"
+   },
+   "wrong_turn": "Coterminal means differing by whole turns. 30° and 210° differ by half a turn and point in opposite directions.",
+   "rule": "θ and θ+360°k are coterminal; in radians, θ+2πk."
+  },
+  {
+   "id": "V.9.03",
+   "name": "Unit circle definition",
+   "steps": {
+    "a": "cos as x, sin as y",
+    "b": "tan as y/x",
+    "c": "why it extends right-triangle trig",
+    "d": "points on the circle"
+   },
+   "wrong_turn": "On the unit circle, cosine is the x-coordinate and sine is the y-coordinate, not the other way round.",
+   "rule": "The point at angle θ on the unit circle is (cosθ,sinθ), and tanθ=(yx)."
+  },
+  {
+   "id": "V.9.04",
+   "name": "Special angles",
+   "steps": {
+    "a": "30°, 45°, 60° points",
+    "b": "the axes",
+    "c": "fill the whole circle",
+    "d": "common angles by heart, in degrees and radians"
+   },
+   "wrong_turn": "sin 60° is not 2 × sin 30° = 1. It is √3/2 ≈ 0.87: doubling the angle doesn't double the sine.",
+   "rule": "sin30°=(12), sin45°=(22), sin60°=(32); cosines run the other way."
+  },
+  {
+   "id": "V.9.05",
+   "name": "Reference angles",
+   "steps": {
+    "a": "find in each quadrant",
+    "b": "in radians",
+    "c": "use to evaluate",
+    "d": "negative angles"
+   },
+   "wrong_turn": "Reference angles are measured to the x-axis, never the y-axis. For 120°, it is 60°, not 30°.",
+   "rule": "The reference angle is the acute angle between the terminal side and the x-axis."
+  },
+  {
+   "id": "V.9.06",
+   "name": "Signs by quadrant",
+   "steps": {
+    "a": "which are positive where",
+    "b": "a memory trick",
+    "c": "find a quadrant from signs",
+    "d": "find all ratios from one"
+   },
+   "wrong_turn": "A negative sine doesn't make the angle negative. sin 200° < 0, but 200° is a positive angle in Quadrant III.",
+   "rule": "All are positive in Quadrant I, sine in II, tangent in III, cosine in IV."
+  },
+  {
+   "id": "V.9.07",
+   "name": "Trig of any angle",
+   "steps": {
+    "a": "from a point (x, y)",
+    "b": "r = √(x² + y²)",
+    "c": "exact values",
+    "d": "undefined values"
+   },
+   "wrong_turn": "r is always positive. For (−3, −4), r = 5, not −5, so sin θ = −4/5 and cos θ = −3/5.",
+   "rule": "For (x,y) on the terminal side, with r=x2+y2: sinθ=(yr), cosθ=(xr), tanθ=(yx)."
+  },
+  {
+   "id": "V.9.08",
+   "name": "Graph sine & cosine",
+   "steps": {
+    "a": "from the unit circle",
+    "b": "key points",
+    "c": "one full period",
+    "d": "how they relate"
+   },
+   "wrong_turn": "Sine starts at 0, cosine starts at 1. The graphs have the same shape, shifted by π/2.",
+   "rule": "y=sinx and y=cosx repeat every 2π and stay between −1 and 1."
+  },
+  {
+   "id": "V.9.09",
+   "name": "Amplitude & period",
+   "steps": {
+    "a": "A in A sin(Bx)",
+    "b": "period 2π/B",
+    "c": "graph",
+    "d": "write from a graph"
+   },
+   "wrong_turn": "The period of sin(Bx) is 2π/B, not 2πB. sin 2x repeats twice as often: every π.",
+   "rule": "y=Asin(Bx) has amplitude |A| and period (2πB), for B>0."
+  },
+  {
+   "id": "V.9.10",
+   "name": "Phase & vertical shift",
+   "steps": {
+    "a": "horizontal shift",
+    "b": "midline",
+    "c": "graph a full transformation",
+    "d": "write from a graph"
+   },
+   "wrong_turn": "Factor B out first. In sin(2x − π), the shift is π/2 to the right, not π.",
+   "rule": "y=Asin(B(x−C))+D: shift right by C, midline y=D."
+  },
+  {
+   "id": "V.9.11",
+   "name": "Periodic models",
+   "steps": {
+    "a": "tides",
+    "b": "Ferris wheels",
+    "c": "daylight hours",
+    "d": "fit a model to data"
+   },
+   "wrong_turn": "Amplitude is half the range, not the maximum. A tide from 1 m to 5 m has amplitude 2 m and midline 3 m.",
+   "rule": "Fit y=Asin(B(t−C))+D: D is the middle, |A| half the range, B=(2πperiod)."
+  },
+  {
+   "id": "V.9.12",
+   "name": "Graph tangent",
+   "steps": {
+    "a": "asymptotes",
+    "b": "period π",
+    "c": "key points",
+    "d": "transformations"
+   },
+   "wrong_turn": "tan x has asymptotes where cos x = 0, not where sin x = 0. At x = 0, tan x = 0.",
+   "rule": "y=tanx has period π and vertical asymptotes at x=(π2)+kπ."
+  },
+  {
+   "id": "V.9.13",
+   "name": "Reciprocal function graphs",
+   "steps": {
+    "a": "csc from sin",
+    "b": "sec from cos",
+    "c": "cot from tan",
+    "d": "asymptotes and ranges"
+   },
+   "wrong_turn": "The reciprocal isn't the inverse. csc x = 1/sin x is a number; sin⁻¹ x = arcsin x is an angle.",
+   "rule": "cscx=(1sinx), secx=(1cosx), cotx=(1tanx): asymptotes where the partner is 0."
+  },
+  {
+   "id": "V.9.14",
+   "name": "Inverse trig functions",
+   "steps": {
+    "a": "restricted domains",
+    "b": "ranges of arcsin, arccos, arctan",
+    "c": "evaluate exactly",
+    "d": "graphs"
+   },
+   "wrong_turn": "arccos returns angles from 0 to π, not −π/2 to π/2. arccos(−1/2) = 2π/3, not −π/3.",
+   "rule": "arcsin:[−1,1]→[−(π2),(π2)], arccos:[−1,1]→[0,π], arctan:ℝ→(−(π2),(π2))."
+  },
+  {
+   "id": "V.9.15",
+   "name": "Inverse trig compositions",
+   "steps": {
+    "a": "sin(arcsin x)",
+    "b": "arcsin(sin x) traps",
+    "c": "triangle method",
+    "d": "algebraic expressions"
+   },
+   "wrong_turn": "arcsin(sin x) = x fails outside −π/2 to π/2. arcsin(sin π) = 0, not π.",
+   "rule": "sin(arcsinx)=x for x∈[−1,1], but arcsin(sinx)=x only for x∈[−(π2),(π2)]."
+  }
+ ]
+}

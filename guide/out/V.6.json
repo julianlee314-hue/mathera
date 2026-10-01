@@ -1,0 +1,140 @@
+{
+  "branch": "V.6",
+  "intro": "This branch introduces trigonometry (the math of triangle measurements) for right triangles. Knowing one angle and one side, the learner can work out the rest, which is how builders, pilots and surveyors find heights and distances.",
+  "skills": {
+    "V.6.01": {
+      "what": "Naming the three sides of a right triangle relative to one chosen angle.",
+      "levels": {
+        "a": "Names the hypotenuse, the longest side, across from the right angle.",
+        "b": "Names the side opposite a given angle.",
+        "c": "Names the side adjacent to (next to) a given angle, other than the hypotenuse.",
+        "d": "Sees that the opposite and adjacent sides swap when the other angle is chosen."
+      }
+    },
+    "V.6.02": {
+      "what": "Discovering that right triangles with the same angle always have the same side ratios. These ratios are called sine, cosine and tangent.",
+      "levels": {
+        "a": "Proves that the ratios depend only on the angle, not the triangle's size: orders steps or names a reason.",
+        "b": "Compares measured side ratios to spot which triangle has a different angle.",
+        "c": "Writes sine, cosine or tangent as a fraction of two sides.",
+        "d": "Writes all three ratios exactly for an angle in a right triangle."
+      }
+    },
+    "V.6.03": {
+      "what": "Using sine (the opposite side divided by the hypotenuse) to find a missing side.",
+      "levels": {
+        "a": "Decides whether sine is the right ratio to find a side.",
+        "b": "Picks the correct sine equation for the triangle.",
+        "c": "Finds a side by multiplying when the unknown is on top of the fraction.",
+        "d": "Finds a side by dividing when the unknown is on the bottom, including word problems like ramps."
+      }
+    },
+    "V.6.04": {
+      "what": "Using cosine (the adjacent side divided by the hypotenuse) to find a missing side.",
+      "levels": {
+        "a": "Decides whether cosine is the right ratio to find a side.",
+        "b": "Picks the correct cosine equation for the triangle.",
+        "c": "Finds a side by multiplying when the unknown is on top of the fraction.",
+        "d": "Finds a side by dividing when the unknown is on the bottom, such as a ladder's length."
+      }
+    },
+    "V.6.05": {
+      "what": "Using tangent (the opposite side divided by the adjacent side) to find a missing side.",
+      "levels": {
+        "a": "Decides whether tangent is the right ratio to find a side.",
+        "b": "Picks the correct tangent equation for the triangle.",
+        "c": "Finds a side by multiplying when the unknown is on top of the fraction.",
+        "d": "Finds a side by dividing when the unknown is on the bottom, such as a shadow's length."
+      }
+    },
+    "V.6.06": {
+      "what": "Finding an unknown angle from two known sides by running the trig ratios backwards.",
+      "levels": {
+        "a": "Explains what 'inverse sine' means: the angle whose sine is a given number.",
+        "b": "Uses the inverse keys to find an angle from a ratio.",
+        "c": "Chooses the right ratio from two known sides and finds the angle.",
+        "d": "Finds an angle in a real situation, like a leaning ladder, rounded to the nearest degree."
+      }
+    },
+    "V.6.07": {
+      "what": "Solving a right triangle means finding every missing side and angle.",
+      "levels": {
+        "a": "Finds the missing angle of a right triangle.",
+        "b": "Finds every missing side and angle given two sides.",
+        "c": "Finds every missing side and angle given one side and one angle.",
+        "d": "Checks a solution with the Pythagorean theorem and the angle total.",
+        "e": "Splits a triangle into two right triangles with a height line to find a side.",
+        "f": "Finds exact answers without a calculator using the similar triangles hidden in a right triangle."
+      }
+    },
+    "V.6.08": {
+      "what": "The half-square triangle, with angles 45, 45 and 90 degrees, has sides in a fixed pattern, so no calculator is needed.",
+      "levels": {
+        "a": "Proves the side pattern of this triangle: orders the steps or finds the wrong step.",
+        "b": "Finds the longest side exactly from a shorter side.",
+        "c": "Finds a shorter side exactly from the longest side.",
+        "d": "Finds the diagonal of a square exactly."
+      }
+    },
+    "V.6.09": {
+      "what": "The half-equilateral triangle, with angles 30, 60 and 90 degrees, has sides in a fixed pattern, so no calculator is needed.",
+      "levels": {
+        "a": "Proves the side pattern by halving an equilateral triangle, finding the one wrong step.",
+        "b": "Finds the other two sides exactly from the shortest side.",
+        "c": "Finds the shorter sides exactly from the longest or middle side.",
+        "d": "Finds the exact height of an equilateral triangle.",
+        "e": "Splits a triangle with a height line into a 45-degree and a 60-degree special triangle to find a side exactly.",
+        "f": "Finds an equilateral triangle's side from a point's distances to its three sides."
+      }
+    },
+    "V.6.10": {
+      "what": "Solving real problems with angles of elevation (looking up) and depression (looking down), such as finding a building's height.",
+      "levels": {
+        "a": "Identifies an angle of elevation or depression in a picture.",
+        "b": "Finds a height from the angle looking up and the distance along the ground.",
+        "c": "Finds a distance from the angle looking down, such as from a cliff to a boat.",
+        "d": "Finds a height from two angles measured at two spots along the ground.",
+        "e": "Solves two-angle problems exactly using the special 30 and 60 degree triangles.",
+        "f": "Finds a tower's height from sightings in two different directions, a three-dimensional puzzle."
+      }
+    },
+    "V.6.11": {
+      "what": "The sine of an angle equals the cosine of the other sharp angle in the same right triangle; that is where the 'co' in cosine comes from.",
+      "levels": {
+        "a": "Finds the angle whose cosine equals the sine of a given angle.",
+        "b": "Proves why this works using a right triangle: names a reason or orders the steps.",
+        "c": "Solves for x when a sine and a cosine of two expressions are equal.",
+        "d": "Picks or finds the matching cosine for a given sine, and the reverse."
+      }
+    },
+    "V.6.12": {
+      "what": "For any angle, sine squared plus cosine squared always equals 1. It comes straight from the Pythagorean theorem.",
+      "levels": {
+        "a": "Proves the identity from the Pythagorean theorem: orders the steps or finds the wrong one.",
+        "b": "Finds the exact cosine of an angle from its sine.",
+        "c": "Finds the exact tangent of an angle from its sine.",
+        "d": "Checks whether a given sine and cosine could belong to the same angle.",
+        "e": "Works backwards from the tangent to find the sine and cosine.",
+        "f": "Uses clever algebra on sine and cosine together, competition style."
+      }
+    },
+    "V.6.13": {
+      "what": "Three more ratios, cosecant, secant and cotangent, which are simply sine, cosine and tangent turned upside down.",
+      "levels": {
+        "a": "Recognizes cosecant as the hypotenuse divided by the opposite side.",
+        "b": "Recognizes secant as the hypotenuse divided by the adjacent side.",
+        "c": "Recognizes cotangent as the adjacent side divided by the opposite side.",
+        "d": "Finds all three exactly from a right triangle's sides."
+      }
+    },
+    "V.6.14": {
+      "what": "Using a calculator correctly for trigonometry, avoiding the common traps.",
+      "levels": {
+        "a": "Tells from an answer whether the calculator is set to degrees or radians.",
+        "b": "Uses the inverse keys correctly to find an angle.",
+        "c": "Rounds only at the end of a two-step calculation to avoid creeping errors.",
+        "d": "Gives exact answers with square roots when asked, instead of decimals."
+      }
+    }
+  }
+}

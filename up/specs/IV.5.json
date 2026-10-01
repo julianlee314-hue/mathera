@@ -1,0 +1,90 @@
+{
+ "unit": "IV.5",
+ "name": "Exponents & radicals",
+ "skills": [
+  {
+   "id": "IV.5.01",
+   "name": "Simplify radicals",
+   "steps": {
+    "a": "pull out perfect-square factors",
+    "b": "with variables",
+    "c": "cube roots",
+    "d": "nth roots"
+   },
+   "wrong_turn": "Roots don't split over sums: √(9 + 16) = 5, not 3 + 4 = 7.",
+   "rule": "a2b=ab for a≥0: factor out perfect squares."
+  },
+  {
+   "id": "IV.5.02",
+   "name": "Add & subtract radicals",
+   "steps": {
+    "a": "like radicals",
+    "b": "simplify first then combine",
+    "c": "with variables",
+    "d": "spot unlike radicals"
+   },
+   "wrong_turn": "√2 + √3 is not √5. Only like radicals add, and 1.414 + 1.732 ≠ 2.236.",
+   "rule": "an+bn=(a+b)n: combine only like radicals."
+  },
+  {
+   "id": "IV.5.03",
+   "name": "Multiply radicals",
+   "steps": {
+    "a": "√a·√b = √ab",
+    "b": "distribute",
+    "c": "FOIL with radicals",
+    "d": "conjugate products"
+   },
+   "wrong_turn": "(1 + √2)² is not 1 + 2 = 3. It's 1 + 2√2 + 2 = 3 + 2√2: keep the middle term.",
+   "rule": "ab=ab for a,b≥0, and (a+b)(a−b)=a2−b."
+  },
+  {
+   "id": "IV.5.04",
+   "name": "Rationalize denominators",
+   "steps": {
+    "a": "single square root",
+    "b": "cube root denominators",
+    "c": "binomial with conjugate",
+    "d": "simplify the result"
+   },
+   "wrong_turn": "For 1/(3 + √2), multiplying by √2 doesn't clear the root. Use the conjugate 3 − √2.",
+   "rule": "Multiply top and bottom by what makes the denominator rational: a, a cube-root factor, or the conjugate."
+  },
+  {
+   "id": "IV.5.05",
+   "name": "Rational exponents",
+   "steps": {
+    "a": "a^(1/n) as a root",
+    "b": "a^(m/n)",
+    "c": "convert both ways",
+    "d": "simplify with exponent rules"
+   },
+   "wrong_turn": "8^(2/3) is not 8 × 2/3. The denominator is a root: cube root of 8 is 2, squared is 4.",
+   "rule": "a1/n=an and am/n=(an)m=amn."
+  },
+  {
+   "id": "IV.5.06",
+   "name": "Radical equations",
+   "steps": {
+    "a": "isolate the radical",
+    "b": "raise both sides",
+    "c": "solve",
+    "d": "check for extraneous roots"
+   },
+   "wrong_turn": "Isolate before squaring: √x + 2 = 5 means √x = 3, x = 9. Squaring first gives x + 4 = 25, which is wrong.",
+   "rule": "Isolate the radical, raise both sides to the index, solve, then check for extraneous roots."
+  },
+  {
+   "id": "IV.5.07",
+   "name": "Same-base exponent equations",
+   "steps": {
+    "a": "rewrite with a common base",
+    "b": "set exponents equal",
+    "c": "solve",
+    "d": "check"
+   },
+   "wrong_turn": "Bases must match before exponents are set equal: 2^x = 8^3 doesn't give x = 3. It gives 2^x = 2^9, so x = 9.",
+   "rule": "If bx=by with b>0, b≠1, then x=y."
+  }
+ ]
+}

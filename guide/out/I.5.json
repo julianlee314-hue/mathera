@@ -1,0 +1,149 @@
+{
+  "branch": "I.5",
+  "intro": "This branch trains careful thinking: spotting and continuing patterns, sorting things by what they have in common, and reasoning from clues. These habits of noticing and explaining sit underneath all later math.",
+  "skills": {
+    "I.5.01": {
+      "what": "Copying a repeating pattern of colors or shapes exactly.",
+      "levels": {
+        "a": "Copies a pattern of two colors taking turns, like purple, blue, purple, blue.",
+        "b": "Copies a pattern of two shapes taking turns.",
+        "c": "Copies a pattern where one item comes once and the next twice, like red, blue, blue.",
+        "d": "Copies a pattern of three different items, like red, yellow, blue."
+      }
+    },
+    "I.5.02": {
+      "what": "Working out what comes next in a repeating pattern.",
+      "levels": {
+        "a": "Says what comes next when two items take turns.",
+        "b": "Says what comes next in a pattern like square, square, hexagon.",
+        "c": "Says what comes next in a pattern of three different items.",
+        "d": "Picks out the part of a pattern that keeps repeating.",
+        "e": "Counts how many of one item appear in the first few places of a pattern.",
+        "f": "Works out which item comes far ahead, such as the 17th, without drawing them all."
+      }
+    },
+    "I.5.03": {
+      "what": "Understanding that a pattern follows a rule, and using that rule to check and compare patterns.",
+      "levels": {
+        "a": "Tells a real pattern from a random row, using two kinds of item.",
+        "b": "The same using three kinds of item.",
+        "c": "Finds the one spot where a pattern has a mistake.",
+        "d": "Matches two patterns that follow the same rule with different items."
+      }
+    },
+    "I.5.04": {
+      "what": "Understanding patterns that grow each step, like towers that get one block taller each time.",
+      "levels": {
+        "a": "Says how tall the next tower is when each grows by 1.",
+        "b": "Says how tall the next tower is when each grows by 2.",
+        "c": "Predicts a tower several steps ahead, not just the next one.",
+        "d": "Describes the rule, such as \"add 1 each time.\""
+      }
+    },
+    "I.5.05": {
+      "what": "Finding the rule in a list of numbers that goes up by the same amount each time.",
+      "levels": {
+        "a": "Continues a list that goes up by 1.",
+        "b": "Continues a list that goes up by 2.",
+        "c": "Continues a list that goes up by 5 or by 10.",
+        "d": "Finds a missing number in the middle of the list.",
+        "e": "Finds the rule and fills in two missing numbers, in lists going up or down.",
+        "f": "Spots a hidden rule, like adding 2 then 3 in turn, or adding one more each time."
+      }
+    },
+    "I.5.06": {
+      "what": "Sorting things into groups by one feature, such as color, shape or size.",
+      "levels": {
+        "a": "Puts a new item in the right group when things are sorted by color.",
+        "b": "The same when things are sorted by shape.",
+        "c": "The same when things are sorted by size.",
+        "d": "Looks at sorted groups and says what the sorting rule was."
+      }
+    },
+    "I.5.07": {
+      "what": "Sorting things by two features at once, such as items that are both purple and square.",
+      "levels": {
+        "a": "Finds items that match two features, like purple squares.",
+        "b": "Places a shape in two overlapping circles, such as \"red\" and \"stars.\"",
+        "c": "Spots the one item that doesn't belong with the others, and why.",
+        "d": "Works out a two-part sorting rule from examples."
+      }
+    },
+    "I.5.08": {
+      "what": "Telling odd numbers from even numbers: even numbers split into pairs with none left over.",
+      "levels": {
+        "a": "Groups objects into pairs and counts the pairs.",
+        "b": "Knows that one left over after pairing means the number is odd.",
+        "c": "Lists the even numbers up to 20 by counting in twos.",
+        "d": "Says whether any number is odd or even by looking at its last digit."
+      }
+    },
+    "I.5.09": {
+      "what": "Looking closely to see what is the same and what is different between things.",
+      "levels": {
+        "a": "Spots and counts the differences between two pictures.",
+        "b": "Finds the item that exactly matches in color, shape and size.",
+        "c": "Says which feature is different between two shapes.",
+        "d": "Chooses the sentence that correctly describes what two shapes share."
+      }
+    },
+    "I.5.10": {
+      "what": "Deciding whether a statement is true or false, and saying why.",
+      "levels": {
+        "a": "Checks statements about a picture, like \"there are 3 purple shapes.\"",
+        "b": "Checks statements about numbers, like 8 + 6 = 15.",
+        "c": "Corrects a false statement by finding the right answer.",
+        "d": "Chooses the reason that shows why a statement is false."
+      }
+    },
+    "I.5.11": {
+      "what": "Deciding whether a statement is always true, sometimes true or never true, and backing it up with examples.",
+      "levels": {
+        "a": "Judges statements about shapes, like \"a rectangle has 5 sides.\"",
+        "b": "Judges statements about numbers.",
+        "c": "Finds an example that fits a description.",
+        "d": "Finds one example that breaks a claim (a counterexample)."
+      }
+    },
+    "I.5.12": {
+      "what": "Following \"if this, then that\" rules and working out what must happen.",
+      "levels": {
+        "a": "Follows everyday if–then rules, like \"if the light is red, cars stop.\"",
+        "b": "Uses if–then rules about numbers to answer yes or no.",
+        "c": "Follows a two-way rule, such as \"if less than 13, add 5; if not, take 3.\"",
+        "d": "Tests a rule and finds the example that breaks it."
+      }
+    },
+    "I.5.13": {
+      "what": "Solving small logic puzzles, using a grid to track clues about who has what.",
+      "levels": {
+        "a": "Solves a two-person, two-item puzzle from one clue.",
+        "b": "Solves a three-person, three-item puzzle.",
+        "c": "Combines several clues, needing all of them to reach the answer.",
+        "d": "Chooses which conclusion must be true from the clues."
+      }
+    },
+    "I.5.14": {
+      "what": "Putting people or things in order using clues like \"taller than\" or \"first in line.\"",
+      "levels": {
+        "a": "Uses a taller-or-shorter clue to compare two people.",
+        "b": "Uses first-and-last clues to find who is in the middle.",
+        "c": "Combines two clues to order three people.",
+        "d": "Orders people using number clues, like \"4 more than\" or \"2 fewer than.\"",
+        "e": "Uses a 'not' clue, like 'Ann was not first', to order three runners.",
+        "f": "Orders four runners from several clues, including 'right after'."
+      }
+    },
+    "I.5.15": {
+      "what": "Finding a mystery number from clues, and learning which clues are useful.",
+      "levels": {
+        "a": "Finds the number from bigger-than and smaller-than clues.",
+        "b": "Uses an odd-or-even clue to narrow it down.",
+        "c": "Combines two clues, like \"between 70 and 80\" and \"ends in 8.\"",
+        "d": "Chooses a set of clues that points to just one number.",
+        "e": "Finds the number using three clues together, such as range, odd or even, and digits.",
+        "f": "Solves a riddle about a two-digit number's digits, such as their sum and difference."
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "branch": "VI.11",
+  "intro": "This branch is about drawing trustworthy conclusions from data: how to collect a fair sample, how much results can wobble by chance, and how to test a claim.",
+  "skills": {
+    "VI.11.01": {
+      "what": "How to choose a smaller group (a sample) to learn about a larger one (the population) without skewing the results.",
+      "levels": {
+        "a": "Distinguishes the whole population from the sample taken.",
+        "b": "Describes random, stratified and systematic ways to choose a sample.",
+        "c": "Identifies ways a sample can be biased, or unfair.",
+        "d": "Chooses a suitable sampling method for a situation."
+      }
+    },
+    "VI.11.02": {
+      "what": "The difference between watching what happens and running a controlled experiment, and what each can prove.",
+      "levels": {
+        "a": "Describes observational studies, which watch without interfering.",
+        "b": "Describes experiments with a comparison (control) group.",
+        "c": "Explains random assignment and blinding.",
+        "d": "Decides whether a study can show cause and effect."
+      }
+    },
+    "VI.11.03": {
+      "what": "Different samples give slightly different results. The pattern of those results is called a sampling distribution.",
+      "levels": {
+        "a": "Explains that results vary from sample to sample.",
+        "b": "Simulates many samples to see the spread of results.",
+        "c": "Finds the standard error, the typical size of that wobble.",
+        "d": "Explains why bigger samples wobble less."
+      }
+    },
+    "VI.11.04": {
+      "what": "The central limit theorem: averages of large samples follow a bell-shaped curve, whatever the original data looked like.",
+      "levels": {
+        "a": "Explains that sample averages are roughly bell-shaped.",
+        "b": "Finds the center and spread of the sample averages.",
+        "c": "Finds probabilities about a sample average.",
+        "d": "Judges whether a sample is large enough for this to hold."
+      }
+    },
+    "VI.11.05": {
+      "what": "A confidence interval gives a range likely to contain a true percentage, such as a poll saying 52% plus or minus 3%.",
+      "levels": {
+        "a": "Writes an interval as an estimate plus or minus a margin of error.",
+        "b": "Computes an interval for a percentage.",
+        "c": "Explains correctly what 95% confidence means.",
+        "d": "Chooses a sample size to get a desired margin of error."
+      }
+    },
+    "VI.11.06": {
+      "what": "A range likely to contain a true average, like the average height of all adults in a country.",
+      "levels": {
+        "a": "Builds an interval when the population's spread is known.",
+        "b": "Explains the adjustment (the t idea) when the spread must be estimated.",
+        "c": "Computes and interprets an interval for an average.",
+        "d": "Explains how sample size affects the interval's width."
+      }
+    },
+    "VI.11.07": {
+      "what": "Hypothesis testing asks whether data give strong evidence against a default assumption, or could just be chance.",
+      "levels": {
+        "a": "States the default claim (null) and the alternative claim.",
+        "b": "Explains the significance level, the cutoff for strong evidence.",
+        "c": "Explains what a p-value means, and what it does not mean.",
+        "d": "Decides whether to test in one direction or both."
+      }
+    },
+    "VI.11.08": {
+      "what": "Testing a claim about a proportion, like whether a coin is fair, by counting successes.",
+      "levels": {
+        "a": "Sets up a test about a proportion.",
+        "b": "Finds the critical region, the results that would reject the claim.",
+        "c": "Computes the p-value for the observed count.",
+        "d": "States the conclusion in the context of the problem."
+      }
+    },
+    "VI.11.09": {
+      "what": "Testing a claim about an average, and understanding the two ways a test can get it wrong.",
+      "levels": {
+        "a": "Sets up a test about an average using the bell curve.",
+        "b": "Computes the test statistic, a measure of how unusual the data are.",
+        "c": "Draws a conclusion from the test.",
+        "d": "Explains false alarms (Type I) and missed effects (Type II)."
+      }
+    }
+  }
+}

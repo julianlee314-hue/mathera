@@ -1,0 +1,102 @@
+{
+ "unit": "V.14",
+ "name": "Solids",
+ "skills": [
+  {
+   "id": "V.14.01",
+   "name": "Cross-sections",
+   "steps": {
+    "a": "of prisms",
+    "b": "of pyramids",
+    "c": "of cylinders and cones",
+    "d": "of a cube at odd angles"
+   },
+   "wrong_turn": "A slanted slice of a cylinder is an ellipse, not a circle. And a slice of a cube need not be a square.",
+   "rule": "A cross-section is the flat shape where a plane cuts a solid."
+  },
+  {
+   "id": "V.14.02",
+   "name": "Solids of revolution",
+   "steps": {
+    "a": "rotate a rectangle",
+    "b": "rotate a triangle",
+    "c": "rotate a semicircle",
+    "d": "find the resulting volume"
+   },
+   "wrong_turn": "The radius is the distance from the axis. A 3-by-4 rectangle spun about a side of length 4 has radius 3, height 4.",
+   "rule": "Rotating a flat region about a line sweeps out a solid of revolution."
+  },
+  {
+   "id": "V.14.03",
+   "name": "Cavalieri's principle",
+   "steps": {
+    "a": "equal slices, equal volumes",
+    "b": "oblique prisms",
+    "c": "oblique cylinders",
+    "d": "sphere from a cylinder minus a cone"
+   },
+   "wrong_turn": "For a slanted prism or cylinder, use the perpendicular height, not the length of the slanted side.",
+   "rule": "Solids with equal cross-section areas at every height have equal volumes."
+  },
+  {
+   "id": "V.14.04",
+   "name": "Surface area of pyramids & cones",
+   "steps": {
+    "a": "slant height",
+    "b": "lateral area",
+    "c": "total area",
+    "d": "from a net"
+   },
+   "wrong_turn": "Lateral area uses the slant height, not the height. For r = 3, h = 4 it is π·3·5, not π·3·4.",
+   "rule": "Pyramid: S=B+(12)Pℓ. Cone: S=πr2+πrℓ."
+  },
+  {
+   "id": "V.14.05",
+   "name": "Surface area of spheres",
+   "steps": {
+    "a": "4πr²",
+    "b": "hemispheres",
+    "c": "find r from area",
+    "d": "Archimedes' cylinder link"
+   },
+   "wrong_turn": "A sphere's area is 4πr², not 4πr³ or (4/3)πr³. Area is squared units; volume is cubed.",
+   "rule": "S=4πr2"
+  },
+  {
+   "id": "V.14.06",
+   "name": "Volume of pyramids & cones",
+   "steps": {
+    "a": "one third of the prism",
+    "b": "apply",
+    "c": "find a missing height",
+    "d": "frustums"
+   },
+   "wrong_turn": "A cone is one third of the cylinder with the same base and height, not one half.",
+   "rule": "V=(13)Bh"
+  },
+  {
+   "id": "V.14.07",
+   "name": "Composite solids",
+   "steps": {
+    "a": "add parts",
+    "b": "subtract holes",
+    "c": "surface area of composites",
+    "d": "real objects"
+   },
+   "wrong_turn": "When pieces are joined, don't count hidden faces. A cone on a cylinder hides the cylinder's top and the cone's base.",
+   "rule": "Volume: add the parts, subtract the holes. Surface area: count only the outside."
+  },
+  {
+   "id": "V.14.08",
+   "name": "Density & design",
+   "steps": {
+    "a": "density = mass / volume",
+    "b": "population density",
+    "c": "minimize material",
+    "d": "packaging problems"
+   },
+   "wrong_turn": "Density is mass divided by volume, not volume divided by mass. Water is 1 g per cm³.",
+   "rule": "density=(massvolume)"
+  }
+ ]
+}

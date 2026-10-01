@@ -1,0 +1,78 @@
+{
+  "branch": "VII.9",
+  "intro": "Symmetric matrices, which mirror across their diagonal, have especially clean eigenvectors. This branch builds up to the singular value decomposition, a tool used in image compression and data science.",
+  "skills": {
+    "VII.9.01": {
+      "what": "A symmetric matrix equals its own mirror image across the diagonal. Such matrices have unusually well-behaved eigenvalues and eigenvectors.",
+      "levels": {
+        "a": "Recognizes a matrix that equals its own transpose.",
+        "b": "Learns that its eigenvalues are always real numbers.",
+        "c": "Learns its eigenvectors for different eigenvalues are perpendicular.",
+        "d": "Works through examples to see these facts in action."
+      }
+    },
+    "VII.9.02": {
+      "what": "Orthogonal diagonalization rewrites a symmetric matrix as pure stretches along perpendicular directions.",
+      "levels": {
+        "a": "Recognizes the form using a rotation-like matrix and its transpose.",
+        "b": "Builds that matrix from length-1 eigenvectors.",
+        "c": "Handles repeated eigenvalues by making their eigenvectors perpendicular.",
+        "d": "Checks the result by multiplying out."
+      }
+    },
+    "VII.9.03": {
+      "what": "The spectral theorem guarantees every symmetric matrix can be broken into simple stretches along perpendicular directions.",
+      "levels": {
+        "a": "States the theorem.",
+        "b": "Writes the matrix as a sum of simple pieces, one per eigenvalue.",
+        "c": "Sees each piece as a scaled projection onto one direction.",
+        "d": "Explains why this result is so widely useful."
+      }
+    },
+    "VII.9.04": {
+      "what": "A quadratic form is an expression where every term has two variables multiplied, like x squared plus 3xy. A matrix records it compactly.",
+      "levels": {
+        "a": "Writes a quadratic form using a symmetric matrix.",
+        "b": "Builds the matrix from a given expression.",
+        "c": "Changes variables to remove the mixed xy terms.",
+        "d": "Finds the main axes of the ellipse or other shape it describes."
+      }
+    },
+    "VII.9.05": {
+      "what": "Definiteness says whether a quadratic form is always positive, always negative, or mixed, like a bowl, a dome or a saddle.",
+      "levels": {
+        "a": "Recognizes forms that are always positive (bowl-shaped).",
+        "b": "Recognizes always-negative and mixed forms.",
+        "c": "Decides which by checking the signs of the eigenvalues.",
+        "d": "Links this to finding maximums and minimums of surfaces."
+      }
+    },
+    "VII.9.06": {
+      "what": "Finding the largest and smallest value of a quadratic form when the input must have length 1.",
+      "levels": {
+        "a": "Sets up the problem on a circle or sphere of radius 1.",
+        "b": "Shows the maximum equals the largest eigenvalue.",
+        "c": "Shows the minimum equals the smallest eigenvalue.",
+        "d": "Finds the directions where these extremes occur."
+      }
+    },
+    "VII.9.07": {
+      "what": "Singular values measure how much any matrix, even a non-square one, stretches things in its main directions.",
+      "levels": {
+        "a": "Finds eigenvalues of the matrix's transpose times the matrix.",
+        "b": "Takes square roots of those to get the singular values.",
+        "c": "Interprets them as the stretch amounts in key directions.",
+        "d": "Finds the rank by counting nonzero singular values."
+      }
+    },
+    "VII.9.08": {
+      "what": "The singular value decomposition (SVD) breaks any matrix into a rotation, a stretch and another rotation, used in data compression.",
+      "levels": {
+        "a": "Finds the first rotation from eigenvectors.",
+        "b": "Builds the middle stretch matrix from the singular values.",
+        "c": "Finds the final rotation from the other two.",
+        "d": "Checks that the three pieces multiply back to the original."
+      }
+    }
+  }
+}

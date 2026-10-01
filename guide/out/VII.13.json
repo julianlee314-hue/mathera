@@ -1,0 +1,87 @@
+{
+  "branch": "VII.13",
+  "intro": "A multiple integral adds up a quantity spread over an area or a volume, such as the total rain falling on a field or the mass of an object. This branch extends integration (adding up many tiny pieces) to two and three dimensions.",
+  "skills": {
+    "VII.13.01": {
+      "what": "A double integral adds up values over a rectangle, and can be pictured as the volume under a surface, like soil piled on a garden bed.",
+      "levels": {
+        "a": "Interprets a double integral as the volume under a surface.",
+        "b": "Estimates it by adding up many thin boxes.",
+        "c": "Reads and writes the notation.",
+        "d": "Estimates a double integral from a table of values."
+      }
+    },
+    "VII.13.02": {
+      "what": "Iterated integrals compute a double integral as two ordinary integrals, one inside the other.",
+      "levels": {
+        "a": "Does the inner integral first, then the outer one.",
+        "b": "Uses the fact that the order can be swapped over a rectangle.",
+        "c": "Evaluates iterated integrals.",
+        "d": "Splits products of separate x and y parts into two simple integrals."
+      }
+    },
+    "VII.13.03": {
+      "what": "Integrating over regions with curved edges, not just rectangles.",
+      "levels": {
+        "a": "Handles regions between two curves stacked top and bottom.",
+        "b": "Handles regions between two curves side by side.",
+        "c": "Finds the correct limits from a sketch of the region.",
+        "d": "Evaluates the integral over such regions."
+      }
+    },
+    "VII.13.04": {
+      "what": "Swapping the order of integration can turn an impossible integral into an easy one.",
+      "levels": {
+        "a": "Sketches the region from the given limits.",
+        "b": "Rewrites the limits for the other order.",
+        "c": "Explains why switching order can help.",
+        "d": "Solves integrals that look impossible in their original order."
+      }
+    },
+    "VII.13.05": {
+      "what": "Using distance and angle (polar coordinates) instead of x and y, which suits circles and round regions.",
+      "levels": {
+        "a": "Learns how a small area piece looks in polar coordinates.",
+        "b": "Converts both the region and the function to polar form.",
+        "c": "Evaluates polar double integrals.",
+        "d": "Evaluates the famous bell-curve integral using polar coordinates."
+      }
+    },
+    "VII.13.06": {
+      "what": "Using double integrals to find real quantities such as area, mass, balance points and probabilities.",
+      "levels": {
+        "a": "Finds areas and masses of flat plates.",
+        "b": "Finds the balance point (center of mass).",
+        "c": "Finds how hard an object is to spin (moment of inertia).",
+        "d": "Finds probabilities involving two random quantities."
+      }
+    },
+    "VII.13.07": {
+      "what": "Triple integrals add up a quantity throughout a solid, such as the total mass of an object with uneven density.",
+      "levels": {
+        "a": "Uses triple integrals to find volume and mass.",
+        "b": "Sets up limits for a solid region.",
+        "c": "Knows the six possible orders of integrating and when to switch.",
+        "d": "Evaluates triple integrals."
+      }
+    },
+    "VII.13.08": {
+      "what": "Using coordinate systems that suit round shapes: cylindrical for cans and pipes, spherical for balls and cones.",
+      "levels": {
+        "a": "Uses cylindrical coordinates: a polar angle and distance plus height.",
+        "b": "Uses spherical coordinates: distance from center plus two angles.",
+        "c": "Uses the correct small-volume piece in each system.",
+        "d": "Chooses the best coordinate system for a given problem."
+      }
+    },
+    "VII.13.09": {
+      "what": "Changing variables reshapes an awkward region into a simple one, with a correction factor (the Jacobian) for how areas stretch.",
+      "levels": {
+        "a": "Learns what the Jacobian measures: how much the change stretches area.",
+        "b": "Computes the Jacobian as a determinant.",
+        "c": "Transforms a region into a simpler shape.",
+        "d": "Evaluates an integral after changing variables."
+      }
+    }
+  }
+}

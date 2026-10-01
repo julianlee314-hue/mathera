@@ -1,0 +1,146 @@
+{
+  "branch": "IV.10",
+  "intro": "This branch studies polynomial functions (expressions built from powers of x, like x cubed minus 4x) as graphs. Learners find where the graphs cross zero, what shape they take, and how to find every solution of a polynomial equation.",
+  "skills": {
+    "IV.10.01": {
+      "what": "Finding the degree (highest power of x) and the leading coefficient (the number in front of that power) of a polynomial.",
+      "levels": {
+        "a": "Finds the highest power of x in a polynomial.",
+        "b": "Finds the number in front of that highest power.",
+        "c": "Finds both from a polynomial written as brackets multiplied together.",
+        "d": "Uses the degree to state the most zeros the graph can have.",
+        "e": "Finds both when brackets are raised to powers.",
+        "f": "Finds both when the biggest terms cancel out on subtraction."
+      }
+    },
+    "IV.10.02": {
+      "what": "Predicting which way a polynomial graph heads at its far ends, from its highest power and the sign in front.",
+      "levels": {
+        "a": "Knows that an even highest power sends both ends the same way.",
+        "b": "Knows that an odd highest power sends the ends opposite ways.",
+        "c": "Uses the sign of the leading number to decide up or down.",
+        "d": "Matches graphs with the same end behavior."
+      }
+    },
+    "IV.10.03": {
+      "what": "Finding the zeros of a polynomial and their multiplicity: how many times each zero is repeated.",
+      "levels": {
+        "a": "Reads the zeros from brackets multiplied together.",
+        "b": "Counts how many times a zero repeats from the power on its bracket.",
+        "c": "Checks the total degree by adding up the repeats.",
+        "d": "Matches a graph to a possible equation using its zeros."
+      }
+    },
+    "IV.10.04": {
+      "what": "Predicting how a polynomial graph behaves at each zero: crossing straight through, bouncing back, or flattening as it crosses.",
+      "levels": {
+        "a": "Knows a graph crosses the axis at a zero that appears an odd number of times.",
+        "b": "Knows a graph touches and bounces back at a zero that appears an even number of times.",
+        "c": "Knows a graph flattens as it crosses at a zero that appears three times.",
+        "d": "Predicts the overall shape and picks the matching graph.",
+        "e": "Factors first to find how the graph behaves at each zero.",
+        "f": "Works out the zeros of a new graph built by putting x squared into an old one."
+      }
+    },
+    "IV.10.05": {
+      "what": "Sketching a polynomial graph from its factored form, using zeros, the y-intercept and the ends.",
+      "levels": {
+        "a": "Marks where the graph meets the x-axis.",
+        "b": "Finds where the graph crosses the y-axis.",
+        "c": "Works out which way each end of the graph heads.",
+        "d": "Joins the pieces into a correct sketch."
+      }
+    },
+    "IV.10.06": {
+      "what": "Finding turning points: where a graph changes from going up to going down, or the other way.",
+      "levels": {
+        "a": "States the most turning points possible: one less than the degree.",
+        "b": "Uses a graphing tool to locate turning points.",
+        "c": "Finds the local highest and lowest values.",
+        "d": "Explains a turning point in context, such as the top of a roller-coaster hill.",
+        "e": "Finds turning points without technology by treating x squared as one quantity.",
+        "f": "Finds when a graph has exactly one turning point instead of three."
+      }
+    },
+    "IV.10.07": {
+      "what": "The remainder theorem: the remainder after dividing by x minus a equals the value of the polynomial at a.",
+      "levels": {
+        "a": "Finds a remainder by putting a number into the polynomial.",
+        "b": "Uses synthetic division, a quick shorthand, to divide and find the remainder.",
+        "c": "Uses synthetic division as a quick way to evaluate.",
+        "d": "Finds a missing number from a given remainder."
+      }
+    },
+    "IV.10.08": {
+      "what": "The factor theorem: if a polynomial gives zero at a, then x minus a is one of its factors.",
+      "levels": {
+        "a": "Uses a zero output to name a factor.",
+        "b": "Tests whether a bracket is a factor by evaluating.",
+        "c": "Divides out a known factor to find what is left.",
+        "d": "Factors the rest completely."
+      }
+    },
+    "IV.10.09": {
+      "what": "The rational root theorem: a short list of fractions that are the only possible neat roots of a polynomial.",
+      "levels": {
+        "a": "Lists the candidate fraction roots from the first and last numbers.",
+        "b": "Tests the candidates to find every root that works.",
+        "c": "Finds a first root of a harder cubic.",
+        "d": "Divides out that root to leave a simpler quadratic.",
+        "e": "Clears fractions in the equation first, then finds the roots.",
+        "f": "Finds all whole-number values of an unknown that allow a neat root."
+      }
+    },
+    "IV.10.10": {
+      "what": "Finding every zero of a polynomial, including irrational and complex ones, by combining earlier tools.",
+      "levels": {
+        "a": "Finds the neat roots first.",
+        "b": "Divides one out and solves the quadratic that is left.",
+        "c": "Finds irrational and complex zeros as well.",
+        "d": "Writes the polynomial fully factored.",
+        "e": "Uses a given root's matching partner (its conjugate) to find the rest.",
+        "f": "Solves a symmetric fourth-power equation with a clever substitution."
+      }
+    },
+    "IV.10.11": {
+      "what": "Building a polynomial when its zeros are given, working backwards from answers to equation.",
+      "levels": {
+        "a": "Turns each zero into a bracket and multiplies them.",
+        "b": "Includes repeated zeros the right number of times.",
+        "c": "Adds the matching partner of an irrational or complex zero.",
+        "d": "Scales the polynomial so it passes through a given point.",
+        "e": "Reads zeros and a point from a graph to write its equation.",
+        "f": "Finds a polynomial from three of its values using a clever subtraction."
+      }
+    },
+    "IV.10.12": {
+      "what": "Solving polynomial inequalities: finding where a polynomial is above or below zero.",
+      "levels": {
+        "a": "Finds the zeros, where the sign may change.",
+        "b": "Tests the sign in each region between zeros.",
+        "c": "Reads the answer from a graph.",
+        "d": "Writes the answer as ranges in bracket form."
+      }
+    },
+    "IV.10.13": {
+      "what": "Using polynomials to model real situations, such as the volume of a box folded from a sheet of card.",
+      "levels": {
+        "a": "Works out a box's volume for a given corner cut.",
+        "b": "Uses a calculator to fit a cubic to data.",
+        "c": "Uses a graphing tool to find the cut giving the biggest box.",
+        "d": "Decides which cut sizes are physically possible."
+      }
+    },
+    "IV.10.14": {
+      "what": "Connecting a polynomial's roots to its numbers: for example, the roots of a quadratic add to a known value.",
+      "levels": {
+        "a": "Finds the sum and product of a quadratic's roots without solving.",
+        "b": "Builds a quadratic from the sum and product of its roots.",
+        "c": "Uses the matching rules for the three roots of a cubic.",
+        "d": "Writes a new equation whose roots are changed versions of old ones.",
+        "e": "Finds symmetric expressions, like the sum of the roots cubed, without solving.",
+        "f": "Finds a missing number when one root is a multiple of the other."
+      }
+    }
+  }
+}

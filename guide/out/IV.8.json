@@ -1,0 +1,166 @@
+{
+  "branch": "IV.8",
+  "intro": "Complex numbers add a new number, i, whose square is minus 1, so that every squared equation has solutions. A complex number has an ordinary part and an i part, like 3 + 2i, and can be pictured as a point on a flat map; this branch covers calculating with them and what they mean geometrically.",
+  "skills": {
+    "IV.8.01": {
+      "what": "Meeting the imaginary number i, defined so that i times i equals minus 1.",
+      "levels": {
+        "a": "Uses the rule that i squared is minus 1 to simplify.",
+        "b": "Explains why i was invented: to solve equations like x squared equals minus 1.",
+        "c": "Sees that powers of i repeat in a cycle of four: i, minus 1, minus i, 1.",
+        "d": "Simplifies a large power of i using that cycle.",
+        "e": "Adds a long list of powers of i, using the fact that each group of four cancels.",
+        "f": "Multiplies a long chain of powers of i, or adds them with weights."
+      }
+    },
+    "IV.8.02": {
+      "what": "Taking square roots of negative numbers by writing them with i, such as the root of minus 100 equals 10i.",
+      "levels": {
+        "a": "Writes the square root of a negative number using i.",
+        "b": "Simplifies such roots fully.",
+        "c": "Avoids the trap of combining two negative roots into one before using i.",
+        "d": "Multiplies roots of negatives correctly, converting to i first."
+      }
+    },
+    "IV.8.03": {
+      "what": "Writing complex numbers in the standard way: an ordinary (real) part plus an imaginary part, like 6 + 6i.",
+      "levels": {
+        "a": "Names the real part and the imaginary part of a complex number.",
+        "b": "Uses the fact that two complex numbers are equal only if both parts match.",
+        "c": "Rewrites a complex expression in standard form.",
+        "d": "Classifies numbers as real, purely imaginary, or neither."
+      }
+    },
+    "IV.8.04": {
+      "what": "Adding and subtracting complex numbers by combining the real parts and the imaginary parts separately.",
+      "levels": {
+        "a": "Adds the real parts together.",
+        "b": "Adds both the real and imaginary parts.",
+        "c": "Subtracts, applying the minus sign to both parts.",
+        "d": "Pictures addition as joining arrows on the complex plane.",
+        "e": "Solves a simple equation for an unknown complex number.",
+        "f": "Finds every possible fourth corner of a parallelogram from three corners."
+      }
+    },
+    "IV.8.05": {
+      "what": "Multiplying complex numbers, using i squared equals minus 1 to tidy the answer.",
+      "levels": {
+        "a": "Multiplies a complex number by an ordinary number.",
+        "b": "Multiplies a complex number by i.",
+        "c": "Multiplies two complex numbers like two brackets, then replaces i squared by minus 1.",
+        "d": "Squares a complex number.",
+        "e": "Finds a value that makes a product purely real or purely imaginary.",
+        "f": "Finds the square roots of a complex number by matching the two parts."
+      }
+    },
+    "IV.8.06": {
+      "what": "Using the conjugate of a complex number: the same number with the sign of its i part flipped.",
+      "levels": {
+        "a": "Writes the conjugate of a complex number.",
+        "b": "Multiplies a number by its conjugate, getting an ordinary real number.",
+        "c": "Sees the conjugate as a mirror image across the horizontal axis.",
+        "d": "Knows that non-real solutions of real equations come in conjugate pairs."
+      }
+    },
+    "IV.8.07": {
+      "what": "Dividing complex numbers by multiplying top and bottom by the conjugate, so the bottom becomes an ordinary number.",
+      "levels": {
+        "a": "Multiplies the top of the fraction by the conjugate of the bottom.",
+        "b": "Simplifies the bottom into an ordinary number.",
+        "c": "Gives the final answer in standard form.",
+        "d": "Finds one divided by a complex number."
+      }
+    },
+    "IV.8.08": {
+      "what": "Picturing complex numbers as points on a flat map, with real numbers across and imaginary numbers up.",
+      "levels": {
+        "a": "Knows the horizontal axis holds real numbers and the vertical axis holds imaginary ones.",
+        "b": "Plots a complex number as a point.",
+        "c": "Reads the complex number at a plotted point.",
+        "d": "Sees adding a complex number as a move across and up."
+      }
+    },
+    "IV.8.09": {
+      "what": "Finding the modulus of a complex number: its distance from zero on the complex plane.",
+      "levels": {
+        "a": "Uses the right-triangle rule to find the modulus.",
+        "b": "Sees the modulus as the distance from zero.",
+        "c": "Finds the distance between two complex numbers.",
+        "d": "Finds the point halfway between two complex numbers.",
+        "e": "Finds a missing part from a given distance.",
+        "f": "Finds the nearest and farthest a point on a circle can be from another point."
+      }
+    },
+    "IV.8.10": {
+      "what": "Solving quadratics whose answers are complex numbers, when the graph never crosses the x-axis.",
+      "levels": {
+        "a": "Recognizes a negative value under the root means non-real answers.",
+        "b": "Uses the quadratic formula to find complex answers.",
+        "c": "Sees that the answers come as a conjugate pair.",
+        "d": "Checks a complex answer by putting it back in."
+      }
+    },
+    "IV.8.11": {
+      "what": "The fundamental theorem of algebra: a polynomial with highest power n has exactly n roots, once complex numbers are allowed.",
+      "levels": {
+        "a": "States how many roots a polynomial has from its highest power.",
+        "b": "Counts repeated roots the right number of times.",
+        "c": "Uses the rule that non-real roots come in conjugate pairs.",
+        "d": "Builds a polynomial from its given roots."
+      }
+    },
+    "IV.8.12": {
+      "what": "Writing a complex number in polar form, by its distance from zero and its angle, like giving a direction and a distance.",
+      "levels": {
+        "a": "Finds the angle a complex number makes with the positive real axis.",
+        "b": "Recognizes a number written using its distance and angle.",
+        "c": "Converts a standard complex number into distance-and-angle form.",
+        "d": "Converts distance-and-angle form back to standard form."
+      }
+    },
+    "IV.8.13": {
+      "what": "Multiplying and dividing complex numbers in polar form, where distances multiply and angles add.",
+      "levels": {
+        "a": "Multiplies the distances from zero.",
+        "b": "Adds the angles when multiplying.",
+        "c": "Divides the distances and subtracts the angles when dividing.",
+        "d": "Sees multiplying as rotating and stretching.",
+        "e": "Finds the missing number from a product.",
+        "f": "Adds up many angles to find where a long chain of turns ends up."
+      }
+    },
+    "IV.8.14": {
+      "what": "De Moivre's theorem: raising a complex number to a power multiplies its angle, making big powers easy.",
+      "levels": {
+        "a": "Raises a number in polar form to a power by multiplying the angle.",
+        "b": "Finds the distance and angle of a large power.",
+        "c": "Converts the answer back into standard form.",
+        "d": "Uses the theorem to find the sine or cosine of double or triple an angle.",
+        "e": "Finds the smallest power that makes a complex number purely real or imaginary.",
+        "f": "Works out a huge power of z plus one over z using the angle pattern."
+      }
+    },
+    "IV.8.15": {
+      "what": "Finding all the roots of a complex number, such as its three cube roots, which are evenly spread around a circle.",
+      "levels": {
+        "a": "Knows there are exactly n different nth roots.",
+        "b": "Uses the formula that spaces the roots by equal angles.",
+        "c": "Finds the roots of 1, which lie evenly around a circle.",
+        "d": "Sees the roots as the corners of a regular polygon.",
+        "e": "Finds all the roots from just one of them.",
+        "f": "Finds the product or sum of all the roots at once."
+      }
+    },
+    "IV.8.16": {
+      "what": "Describing shapes on the complex plane, such as circles and lines, using distance and angle conditions on z.",
+      "levels": {
+        "a": "Recognizes a fixed distance from a point as a circle, and finds its center and radius.",
+        "b": "Recognizes equal distances from two points as a straight line between them.",
+        "c": "Recognizes a fixed angle from a point as a half-line.",
+        "d": "Shades regions such as the inside of a circle.",
+        "e": "Takes out a number first to find the true center and radius.",
+        "f": "Finds a circle hidden in a condition where one distance is twice another."
+      }
+    }
+  }
+}

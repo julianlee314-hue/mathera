@@ -1,0 +1,210 @@
+{
+ "unit": "V.8",
+ "name": "Circles",
+ "skills": [
+  {
+   "id": "V.8.01",
+   "name": "Circle vocabulary",
+   "steps": {
+    "a": "chord, secant, tangent",
+    "b": "arcs: minor, major, semicircle",
+    "c": "concentric and congruent circles",
+    "d": "name parts in a diagram"
+   },
+   "wrong_turn": "A chord doesn't have to pass through the center. Only the chord through the center is a diameter.",
+   "rule": "Chord: a segment joining two points of the circle. Secant: a line through two points. Tangent: a line touching at one."
+  },
+  {
+   "id": "V.8.02",
+   "name": "Central angles & arcs",
+   "steps": {
+    "a": "arc measure = central angle",
+    "b": "arc addition",
+    "c": "congruent arcs",
+    "d": "solve for x"
+   },
+   "wrong_turn": "Arc measure isn't arc length. A 60° arc on a coin and on the equator have the same measure but very different lengths.",
+   "rule": "An arc's measure equals its central angle; a major arc measures 360° minus the minor arc."
+  },
+  {
+   "id": "V.8.03",
+   "name": "Arc length",
+   "steps": {
+    "a": "fraction of circumference",
+    "b": "formula in degrees",
+    "c": "find the angle or radius",
+    "d": "word problems"
+   },
+   "wrong_turn": "Use the radius in 2πr, not the diameter. And divide the angle by 360, not 180.",
+   "rule": "Arc length =(θ360°)⋅2πr"
+  },
+  {
+   "id": "V.8.04",
+   "name": "Sector area",
+   "steps": {
+    "a": "fraction of area",
+    "b": "formula",
+    "c": "segment area",
+    "d": "word problems"
+   },
+   "wrong_turn": "A segment isn't a sector. Subtract the triangle from the sector to get the region between the chord and the arc.",
+   "rule": "Sector area =(θ360°)⋅πr2"
+  },
+  {
+   "id": "V.8.05",
+   "name": "Radians",
+   "steps": {
+    "a": "arc length over radius",
+    "b": "convert degrees and radians",
+    "c": "s = rθ",
+    "d": "sector area ½r²θ"
+   },
+   "wrong_turn": "π is not 180. π radians equals 180°, but π on its own is the number 3.14159…",
+   "rule": "An angle in radians is θ=(sr); so s=rθ and sector area =(12)r2θ."
+  },
+  {
+   "id": "V.8.06",
+   "name": "Inscribed angle theorem",
+   "steps": {
+    "a": "half the intercepted arc",
+    "b": "prove it (three cases)",
+    "c": "same arc, equal angles",
+    "d": "solve for x"
+   },
+   "wrong_turn": "The vertex must be on the circle. Inside or outside it, the rule changes.",
+   "rule": "An inscribed angle is half the central angle on the same arc."
+  },
+  {
+   "id": "V.8.07",
+   "name": "Inscribed angle corollaries",
+   "steps": {
+    "a": "angle in a semicircle is 90°",
+    "b": "cyclic quadrilateral opposite angles",
+    "c": "find unknown angles",
+    "d": "proofs"
+   },
+   "wrong_turn": "Opposite angles of a cyclic quadrilateral are supplementary, not equal. And it only works if all four corners are on the circle.",
+   "rule": "An angle inscribed in a semicircle is 90°; opposite angles of a cyclic quadrilateral add to 180°."
+  },
+  {
+   "id": "V.8.08",
+   "name": "Tangent & radius",
+   "steps": {
+    "a": "tangent ⊥ radius",
+    "b": "find lengths with Pythagoras",
+    "c": "test for tangency",
+    "d": "proof"
+   },
+   "wrong_turn": "The right angle is at the point of tangency. The line from the center to the outside point is the hypotenuse, not a leg.",
+   "rule": "A tangent is perpendicular to the radius at the point of tangency."
+  },
+  {
+   "id": "V.8.09",
+   "name": "Two tangents from a point",
+   "steps": {
+    "a": "equal tangent segments",
+    "b": "circumscribed polygons",
+    "c": "solve for x",
+    "d": "proof"
+   },
+   "wrong_turn": "Equal tangent segments come from the same outside point. Tangent pieces from different corners of a polygon are usually different.",
+   "rule": "Two tangent segments from one outside point are equal."
+  },
+  {
+   "id": "V.8.10",
+   "name": "Chord properties",
+   "steps": {
+    "a": "⊥ from center bisects a chord",
+    "b": "equal chords, equal distance",
+    "c": "find chord lengths",
+    "d": "find the center"
+   },
+   "wrong_turn": "Only the perpendicular from the center bisects a chord. A perpendicular from some other point generally doesn't.",
+   "rule": "The perpendicular from the center to a chord bisects it, and equal chords are equally far from the center."
+  },
+  {
+   "id": "V.8.11",
+   "name": "Angles from chords",
+   "steps": {
+    "a": "chords crossing inside",
+    "b": "half the sum of arcs",
+    "c": "solve for an arc",
+    "d": "proof"
+   },
+   "wrong_turn": "Inside the circle, add the arcs and then halve. Don't subtract (that's for outside), and don't forget to halve.",
+   "rule": "Chords crossing inside a circle make an angle equal to half the sum of the two intercepted arcs."
+  },
+  {
+   "id": "V.8.12",
+   "name": "Angles from secants & tangents",
+   "steps": {
+    "a": "outside the circle",
+    "b": "half the difference of arcs",
+    "c": "tangent–chord angle",
+    "d": "solve for x"
+   },
+   "wrong_turn": "Outside the circle, subtract the arcs (far minus near) before halving. Adding them is the rule for chords crossing inside.",
+   "rule": "Vertex outside: angle =(12)(far arc−near arc). Tangent and chord: angle =(12) the arc."
+  },
+  {
+   "id": "V.8.13",
+   "name": "Intersecting chord lengths",
+   "steps": {
+    "a": "product of parts equal",
+    "b": "set up",
+    "c": "solve",
+    "d": "proof by similar triangles"
+   },
+   "wrong_turn": "Multiply the two parts of each chord, not a part by the whole chord. The whole-length rule is for secants from outside.",
+   "rule": "Chords AB and CD crossing at P: PA⋅PB=PC⋅PD."
+  },
+  {
+   "id": "V.8.14",
+   "name": "Secant & tangent lengths",
+   "steps": {
+    "a": "secant–secant",
+    "b": "secant–tangent",
+    "c": "solve",
+    "d": "power of a point idea"
+   },
+   "wrong_turn": "For a secant from outside, multiply the outside part by the whole secant, not by the inside part: 4 × 9, not 4 × 5.",
+   "rule": "Secant–secant: PA⋅PB=PC⋅PD. Secant–tangent: PA⋅PB=PT2."
+  },
+  {
+   "id": "V.8.15",
+   "name": "Equation of a circle",
+   "steps": {
+    "a": "(x − h)² + (y − k)² = r²",
+    "b": "from Pythagoras",
+    "c": "write from center and point",
+    "d": "graph it and find tangent lines"
+   },
+   "wrong_turn": "The signs flip: (x − 2)² + (y + 1)² = 25 has center (2, −1), not (−2, 1). And 25 is r², so r = 5.",
+   "rule": "(x−h)2+(y−k)2=r2 has center (h,k) and radius r."
+  },
+  {
+   "id": "V.8.16",
+   "name": "General form of a circle",
+   "steps": {
+    "a": "recognize it",
+    "b": "complete the square twice",
+    "c": "read center and radius",
+    "d": "circle through three points"
+   },
+   "wrong_turn": "Completing the square adds to both sides. x² − 4x is (x − 2)² − 4; forget the −4 and the radius comes out wrong.",
+   "rule": "For x2+y2+Dx+Ey+F=0, complete the square in x and in y."
+  },
+  {
+   "id": "V.8.17",
+   "name": "All circles are similar",
+   "steps": {
+    "a": "by dilation",
+    "b": "why π is constant",
+    "c": "Archimedes' polygon squeeze",
+    "d": "circumference to area by slicing"
+   },
+   "wrong_turn": "π isn't 22/7 or 3.14. Those are approximations; π's decimals never end or repeat.",
+   "rule": "All circles are similar, so (Cd) is the same for every circle: π."
+  }
+ ]
+}

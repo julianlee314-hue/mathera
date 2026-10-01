@@ -1,0 +1,140 @@
+{
+  "branch": "I.6",
+  "intro": "This branch is about shapes and space: naming flat and solid shapes, noticing their features, fitting shapes together, and describing where things are. It also brings the first taste of fractions through halves and quarters.",
+  "skills": {
+    "I.6.01": {
+      "what": "Naming common flat shapes such as circles, squares, rectangles and triangles.",
+      "levels": {
+        "a": "Recognizes a circle and tells it apart from similar shapes like an oval.",
+        "b": "Tells a square (four equal sides) from a rectangle.",
+        "c": "Recognizes a triangle.",
+        "d": "Names less common shapes: hexagon (6 sides), rhombus (a slanted square) and trapezoid."
+      }
+    },
+    "I.6.02": {
+      "what": "Describing flat shapes by their features: how many sides and corners, and whether the sides are straight or curved.",
+      "levels": {
+        "a": "Counts the sides of a shape.",
+        "b": "Counts the corners, where two sides meet.",
+        "c": "Says whether a shape's sides are straight, curved or both.",
+        "d": "Counts both sides and corners, noticing the numbers match.",
+        "e": "Adds up the corners of several triangles and squares.",
+        "f": "Solves a puzzle: from the number of shapes and total sides, finds how many are squares."
+      }
+    },
+    "I.6.03": {
+      "what": "Recognizing a shape whichever way it is turned or stretched, by focusing on what makes it that shape.",
+      "levels": {
+        "a": "Decides whether a tilted four-sided shape really is a square.",
+        "b": "Recognizes tall, thin or turned triangles as triangles.",
+        "c": "Rejects look-alikes with a gap or a curved side.",
+        "d": "Explains what makes a shape a triangle, whatever its color, size or direction."
+      }
+    },
+    "I.6.04": {
+      "what": "Naming common solid (3D) shapes such as cubes, spheres, cones and cylinders.",
+      "levels": {
+        "a": "Recognizes a cube, shaped like a dice.",
+        "b": "Recognizes a sphere, round all over like a ball.",
+        "c": "Recognizes a cone and a cylinder (a can shape).",
+        "d": "Recognizes a box shape, called a rectangular prism."
+      }
+    },
+    "I.6.05": {
+      "what": "Describing solid shapes: how they move and what flat faces they have.",
+      "levels": {
+        "a": "Says whether a solid can roll, stack or slide.",
+        "b": "Counts the flat faces (surfaces) on a solid, including hidden ones.",
+        "c": "Names the flat shape of a face, like the square face of a cube.",
+        "d": "Matches everyday objects to solid shapes, like an ice cube to a cube."
+      }
+    },
+    "I.6.06": {
+      "what": "Combining smaller shapes to make bigger ones, like two triangles making a square.",
+      "levels": {
+        "a": "Says what shape two triangles make when put together.",
+        "b": "Works out how many small blocks cover a bigger shape.",
+        "c": "Chooses blocks that fill an outline exactly, with no gaps.",
+        "d": "Finds more than one set of blocks that makes the same shape."
+      }
+    },
+    "I.6.07": {
+      "what": "Breaking a shape into smaller shapes, and seeing the smaller shapes hidden inside a picture.",
+      "levels": {
+        "a": "Says what shapes you get when a square is cut along a line.",
+        "b": "Finds which smaller shapes make up a bigger one.",
+        "c": "Counts the small triangles inside a picture.",
+        "d": "Works out which shape the pieces make when pushed back together.",
+        "e": "Counts every rectangle in a picture, big and small, including ones made of smaller pieces.",
+        "f": "Counts every triangle, big and small, in a triangle crossed by lines."
+      }
+    },
+    "I.6.08": {
+      "what": "Building and describing structures made from cubes and other solid blocks.",
+      "levels": {
+        "a": "Counts the blocks in a simple tower.",
+        "b": "Picks the building that matches a model exactly.",
+        "c": "Works out which blocks were used to build a pictured tower.",
+        "d": "Counts all the cubes in a larger building, column by column."
+      }
+    },
+    "I.6.09": {
+      "what": "Using position words like above, below, between, behind and left to describe where things are.",
+      "levels": {
+        "a": "Uses above and below.",
+        "b": "Uses beside and between.",
+        "c": "Uses in front of and behind.",
+        "d": "Uses left and right, as seen from where the learner is looking."
+      }
+    },
+    "I.6.10": {
+      "what": "Following and giving directions to move a character around a grid of squares.",
+      "levels": {
+        "a": "Counts steps forward or back to reach a target.",
+        "b": "Turns left or right from the character's own point of view.",
+        "c": "Finds the shortest route to a target, going around obstacles.",
+        "d": "Chooses the directions, like \"4 right, then 1 up,\" that reach the target.",
+        "e": "Works out the moves that take the robot back to where it started.",
+        "f": "Follows a long list of moves and works out how far right of the start the robot ends."
+      }
+    },
+    "I.6.11": {
+      "what": "Understanding halves: two equal parts of a shape or a group.",
+      "levels": {
+        "a": "Decides whether two parts are equal in size.",
+        "b": "Picks out the shape that is cut into halves.",
+        "c": "Finds half of a small group by sharing it into two equal groups.",
+        "d": "Spots shapes cut into two parts that are not halves because they are unequal."
+      }
+    },
+    "I.6.12": {
+      "what": "Understanding quarters: four equal parts, each one half of a half.",
+      "levels": {
+        "a": "Names the shaded part of a shape as a half or a quarter.",
+        "b": "Picks out the shape cut into four equal parts.",
+        "c": "Finds a quarter of a small group by sharing it into four equal groups.",
+        "d": "Knows a half of a shape is bigger than a quarter of the same shape.",
+        "e": "Works backwards from a quarter to find a half or the whole amount.",
+        "f": "Solves stories with a half of a half, working back to the starting amount."
+      }
+    },
+    "I.6.13": {
+      "what": "Understanding symmetry: a shape is symmetrical if it can be folded so the two halves match exactly.",
+      "levels": {
+        "a": "Decides whether two sides match when folded along a line.",
+        "b": "Picks the fold line (line of symmetry) that splits a shape into matching halves.",
+        "c": "Completes a picture by drawing its mirror-image half.",
+        "d": "Finds symmetry in everyday things like letters and numbers."
+      }
+    },
+    "I.6.14": {
+      "what": "Solving riddles that describe a shape by its features, like \"I have 3 corners.\"",
+      "levels": {
+        "a": "Guesses a shape from one clue about its features.",
+        "b": "Uses two clues together to pin down the shape.",
+        "c": "Chooses which riddle describes a given shape.",
+        "d": "Checks a set of shapes against a riddle and counts how many fit."
+      }
+    }
+  }
+}
