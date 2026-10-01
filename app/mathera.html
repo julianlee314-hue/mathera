@@ -340,6 +340,10 @@ body.land #v-land{gap:0}
     <div class="where" id="welEra"></div>
     <h1>Where should your tree start growing?</h1>
     <p>Pick the first unit that feels new. Units before it start as <b>inferred</b> leaves (dashed), and now and then you'll get one question from them to check. Not sure? Start at the beginning.</p>
+    <div class="tree wel-tree">
+      <svg id="welTreeSvg" viewBox="0 0 360 470" role="img" aria-label="Preview of this era's skill tree"></svg>
+      <div class="cap">your tree · pick a starting unit below</div>
+    </div>
     <div class="ulist" id="ulist"></div>
   </section>
 
@@ -349,7 +353,7 @@ body.land #v-land{gap:0}
     <div class="eras" id="eraTabs" role="group" aria-label="Era"></div>
     <div class="where"><span id="homeCount"></span></div>
     <div class="tree">
-      <svg id="treeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: ten branches, one per unit, one leaf per skill"></svg>
+      <svg id="treeSvg" viewBox="0 0 360 470" role="group" aria-label="Your tree: one branch per unit, one leaf per skill"></svg>
       <div class="cap">tap a branch to see its skills</div>
     </div>
     <div class="legend" id="legend"></div>
@@ -39094,7 +39098,8 @@ const ERAS = {
 // Eras IV and V: only units that already have questions appear; the rest arrive unit by unit
 const UP_UNITS = { IV: [["IV.1", "Equations & inequalities"], ["IV.2", "Functions"], ["IV.3", "Linear functions"], ["IV.4", "Systems"], ["IV.5", "Exponents & radicals"], ["IV.6", "Polynomials"], ["IV.7", "Quadratics"], ["IV.8", "Complex numbers"], ["IV.9", "Function toolkit"], ["IV.10", "Polynomial functions"], ["IV.11", "Rational & radical functions"], ["IV.12", "Exponential & logarithmic"], ["IV.13", "Sequences & series"], ["IV.14", "Counting & probability"], ["IV.15", "Data & distributions"]], V: [["V.1", "Logic & proof"], ["V.2", "Lines & angles"], ["V.3", "Triangles"], ["V.4", "Polygons"], ["V.5", "Similarity"], ["V.6", "Right-triangle trig"], ["V.7", "General triangles"], ["V.8", "Circles"], ["V.9", "Trig functions"], ["V.10", "Identities & equations"], ["V.11", "Coordinate geometry"], ["V.12", "Conic sections"], ["V.13", "Transformations"], ["V.14", "Solids"], ["V.15", "Constructions"]] };
 for (const [k, E, name] of [['IV', G_E4(), 'Solve'], ['V', G_E5(), 'Prove']]) if (E && E.skills.length) { const have = new Set(E.skills.map(s => MM.unitOf(s.id))); ERAS[k] = { E, name, units: UP_UNITS[k].filter(([u]) => have.has(u)), total: UP_UNITS[k].length }; }
-function G_E4() { return typeof E4 !== 'undefined' ? E4 : null; } function G_E5() { return typeof E5 !== 'undefined' ? E5 : null; }
+function G_eng(name) { const g = typeof globalThis !== 'undefined' ? globalThis : (typeof window !== 'undefined' ? window : {}); const E = g[name]; return E && Array.isArray(E.skills) ? E : null; }
+function G_E4() { return G_eng('E4'); } function G_E5() { return G_eng('E5'); }
 const ERA_KEYS = Object.keys(ERAS);
 // Display roster for homepage + era tabs (VI–VII mapped, not practice yet)
 const ALL_ERAS = [
@@ -39210,7 +39215,12 @@ const kindOf = f => ['set', 'interval', 'point', 'exact', 'expr', 'eqn', 'comple
 let P = PS.II;
 let RULES = { ...DEFAULT_RULES };
 let META = { pseudo: null, at: {}, placed: {}, start: {}, era: 'II' };
-function setEra(k) { era = k; META.era = k; UNITS = ERAS[k].units; SKILLS = ERAS[k].E.skills; ORDER = SKILLS.map(s => s.id); P = PS[k]; selUnit = META.start[k] || UNITS[0][0]; }
+function setEra(k) {
+  era = k; META.era = k; UNITS = ERAS[k].units; SKILLS = ERAS[k].E.skills; ORDER = SKILLS.map(s => s.id); P = PS[k];
+  const ids = new Set(UNITS.map(([u]) => u));
+  selUnit = ids.has(META.start[k]) ? META.start[k] : (UNITS[0] && UNITS[0][0]);
+  if (META.start[k] && !ids.has(META.start[k])) delete META.start[k];
+}
 let S = MM.session();
 const R = () => RULES;
 const hero = () => (HEROES.find(x => x[0] === RULES.hero) || HEROES[0])[1];
@@ -39310,7 +39320,7 @@ $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePr
 /* ---- land homepage ---- */
 function renderLand() {
   $('landPanels').innerHTML = ALL_ERAS.map(e => {
-    const soon = !!e.soon;
+    const soon = !!e.soon || eraSoon(e.k);
     return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}">
       <div class="panel-body">
         <div class="panel-num">${e.k}</div>
@@ -39334,7 +39344,7 @@ function enterEra(k) {
 function renderEraTabs(el) {
   $(el).innerHTML = ALL_ERAS.map(e => {
     const k = e.k;
-    if (e.soon) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Coming Soon</small></button>`;
+    if (e.soon || eraSoon(k) || !PS[k]) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Coming Soon</small></button>`;
     const c = MM.counts(PS[k], now());
     return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`;
   }).join('');
@@ -39350,17 +39360,22 @@ function switchEra(k) {
 function renderWelcome() {
   $('welEra').textContent = `${eraLabel(era)} · ${SKILLS.length} skills`; renderEraTabs('welTabs');
   $('ulist').innerHTML = UNITS.map(([u, n], i) => `<button data-u="${u}"><b>${u}</b><span>${esc(n)}</span><small>${i === 0 ? 'The beginning: nothing inferred' : `${ORDER.findIndex(id => MM.unitOf(id) === u)} earlier skills start inferred`} · ${unitSkills(u).length} skills</small></button>`).join('');
+  // Seed-tree preview (same SVG as home): upper eras used to look "empty" until placement
+  if (!selUnit || !UNITS.some(([u]) => u === selUnit)) selUnit = UNITS[0] && UNITS[0][0];
+  renderTree('welTreeSvg');
 }
-$('ulist').addEventListener('click', e => {
-  const b = e.target.closest('button[data-u]'); if (!b) return;
+function placeAt(u) {
   // only leaves with no work yet are re-placed
-  const u = b.dataset.u, cut = ORDER.findIndex(id => MM.unitOf(id) === u);
+  const cut = ORDER.findIndex(id => MM.unitOf(id) === u);
   ORDER.forEach((id, i) => { const s = MM.skillRec(P, id), worked = s.top || s.wilt || 'abcdef'.split('').some(k => (P.steps[id + '.' + k] || {}).n);
     if (worked) return; if (i < cut) s.inf = 1; else delete s.inf; });
   META.start[era] = u; META.placed[era] = true; selUnit = u;
   UNITS.forEach(([x]) => markDirty(x));
   show('home');
-});
+}
+$('ulist').addEventListener('click', e => { const b = e.target.closest('button[data-u]'); if (b) placeAt(b.dataset.u); });
+$('welTreeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) placeAt(b.dataset.u); });
+$('welTreeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); placeAt(b.dataset.u); } });
 
 /* ---- tree ---- */
 const STATE_WORD = { proven: 'Proven', planted: 'Planted', thirsty: 'Thirsty', withered: 'Withered', growing: 'Growing', inferred: 'Inferred', seed: 'Seed' };
@@ -39386,11 +39401,12 @@ function leafSVG(id, st, g, scale) {
   const sc = scale * (st === 'inferred' ? .9 : st === 'withered' ? .85 : g);
   return `<g transform="rotate(${droop}) scale(${sc.toFixed(3)},${(sc * sy).toFixed(3)}) translate(-20,-52)"><path d="${leafPath('skill-' + id)}" fill="${fill}" stroke="${col}" stroke-width="${(1.3 / sc * .5).toFixed(2)}"${dash}/></g>${braveMark(id)}`;
 }
-function renderTree() {
+function renderTree(svgId) {
+  const svg = $(svgId || 'treeSvg'); if (!svg) return;
   const W = 360, CX = 180, t = now();
   let g = `<path d="M${CX} 462 C${CX - 3} 380 ${CX + 3} 300 ${CX} 220 C${CX - 2} 150 ${CX + 2} 90 ${CX} 44" stroke="var(--bark)" stroke-width="10" fill="none" stroke-linecap="round"/>
   <path d="M110 464 H250" stroke="var(--rule)" stroke-width="2"/>`;
-  const NU = UNITS.length, gap = Math.min(46, 340 / (NU - 1));
+  const NU = UNITS.length, gap = NU > 1 ? Math.min(46, 340 / (NU - 1)) : 46;
   UNITS.forEach(([u, name], i) => {
     const side = i % 2 ? 1 : -1, y0 = 430 - i * gap, L = 128;
     const sks = unitSkills(u), n = sks.length;
@@ -39420,7 +39436,7 @@ function renderTree() {
       <path class="bline" d="${path}" stroke="var(--bark)" stroke-width="${side ? 3.5 : 0}" fill="none" stroke-linecap="round"/>${leaves}
       <text x="${lx.toFixed(0)}" y="${ly.toFixed(0)}" text-anchor="${side === 1 ? 'end' : side === -1 ? 'start' : 'start'}" font-family="Spline Sans Mono, monospace" font-size="10" fill="${sel ? 'var(--acc)' : 'var(--muted)'}" ${side ? `transform="translate(${side === 1 ? 12 : -12},-8)"` : ''}>${u.split('.')[1]}</text></g>`;
   });
-  $('treeSvg').innerHTML = g;
+  svg.innerHTML = g;
 }
 $('treeSvg').addEventListener('click', e => { const b = e.target.closest('.br'); if (b) selectUnit(b.dataset.u, true); });
 $('treeSvg').addEventListener('keydown', e => { const b = e.target.closest('.br'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); selectUnit(b.dataset.u, true); } });
@@ -39462,8 +39478,8 @@ function renderHome() {
   let line;
   if (w) line = `${w > 1 ? w + ' leaves' : '1 leaf'} withered. Continue starts an Intervention.`;
   else if (th) line = `${th > 1 ? th + ' leaves are' : '1 leaf is'} thirsty and will come up for watering.`;
-  else { const q = MM.next(P, MM.session(), t); const sk = BY[q.id]; line = `Next up: ${sk.name}, step ${q.step}`;
-    const dues = ORDER.map(id => (P.skills[id] || {}).due).filter(Boolean); if (dues.length) line += ` · next watering in ${fmtDur(Math.min(...dues) - t)}`; }
+  else { const q = MM.next(P, MM.session(), t); const sk = q && BY[q.id]; line = sk ? `Next up: ${sk.name}, step ${q.step}` : 'Pick a branch to begin.';
+    const dues = ORDER.map(id => (P.skills[id] || {}).due).filter(Boolean); if (sk && dues.length) line += ` · next watering in ${fmtDur(Math.min(...dues) - t)}`; }
   $('nextLine').textContent = line;
   $('shelf').innerHTML = shelfHTML();
   $('invCount').textContent = `${eraInv().filter(hasInv).length} of ${eraInv().length}`;
