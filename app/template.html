@@ -392,11 +392,60 @@ body.era-nav #v-branches,body.era-nav #v-uc,body.era-nav #v-skills,body.era-nav 
 .tree-screen .continue{margin-top:.5rem}
 .tree-screen .where{margin:0}
 
+/* top skill search (era-nav only) */
+.top-search{display:none;position:relative;flex:1 1 10rem;min-width:0;max-width:16rem;margin-inline:4px 2px}
+body.era-nav .top-search{display:block}
+body.land .top-search{display:none!important}
+.top-search-field{position:relative;display:block}
+.top-search input{
+  width:100%;border:1px solid var(--rule);background:var(--surface);border-radius:999px;
+  padding:6px 12px 6px 32px;font-size:13px;color:var(--ink);outline:none;
+  box-shadow:none;appearance:none;-webkit-appearance:none
+}
+.top-search input::placeholder{color:var(--faint)}
+.top-search input:focus{border-color:#C8CDD6;box-shadow:0 0 0 3px color-mix(in oklch, var(--acc) 18%, transparent)}
+.top-search .ico{
+  position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;
+  color:var(--faint);pointer-events:none;display:block
+}
+.top-search-drop{
+  display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;
+  background:var(--surface);border:1px solid var(--rule);border-radius:12px;
+  box-shadow:0 10px 28px rgba(21,23,28,.08);max-height:min(60vh,320px);overflow:auto;padding:4px
+}
+.top-search.open .top-search-drop{display:block}
+.top-search-drop button{
+  display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:baseline;
+  width:100%;text-align:left;border:0;background:transparent;border-radius:8px;
+  padding:8px 10px;cursor:pointer;font:inherit;color:var(--ink)
+}
+.top-search-drop button:hover,.top-search-drop button[aria-selected="true"]{background:var(--key)}
+.top-search-drop .sid{font-family:var(--mono);font-size:11px;color:var(--faint);grid-row:1 / span 2;grid-column:1;align-self:center;min-width:3.2em}
+.top-search-drop .snm{font-size:13px;font-weight:500;line-height:1.25;grid-column:2}
+.top-search-drop .smeta{font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:.04em;grid-column:2}
+.top-search-drop button.other .snm{color:oklch(0.48 0.12 250)}
+.top-search-drop button.other .smeta{color:oklch(0.55 0.1 250)}
+.top-search-drop .empty{padding:10px 12px;font-size:13px;color:var(--faint)}
+body.era-nav .top{flex-wrap:nowrap;gap:8px}
+body.era-nav .tabs{flex:none}
+@media(max-width:520px){
+  body.era-nav .top{flex-wrap:wrap}
+  body.era-nav .top-search{flex:1 1 100%;max-width:none;order:3}
+  body.era-nav .tabs{margin-left:auto}
+}
+
 </style>
 
 <div class="app">
   <div class="top">
     <button type="button" class="brand" id="brandBtn" title="Mathera homepage">Mathera<span>v0.5 beta</span></button>
+    <div class="top-search" id="topSearch" role="search">
+      <div class="top-search-field">
+        <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.2 10.2L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="search" id="skillSearch" placeholder="Search skills" autocomplete="off" spellcheck="false" aria-label="Search skills" aria-autocomplete="list" aria-controls="skillSearchDrop" aria-expanded="false">
+      </div>
+      <div class="top-search-drop" id="skillSearchDrop" role="listbox" hidden></div>
+    </div>
     <nav class="tabs" aria-label="Main" id="tabs">
       <button data-v="skills">Skills</button>
       <button data-v="tree">Tree</button>

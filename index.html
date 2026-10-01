@@ -395,11 +395,60 @@ body.era-nav #v-branches,body.era-nav #v-uc,body.era-nav #v-skills,body.era-nav 
 .tree-screen .continue{margin-top:.5rem}
 .tree-screen .where{margin:0}
 
+/* top skill search (era-nav only) */
+.top-search{display:none;position:relative;flex:1 1 10rem;min-width:0;max-width:16rem;margin-inline:4px 2px}
+body.era-nav .top-search{display:block}
+body.land .top-search{display:none!important}
+.top-search-field{position:relative;display:block}
+.top-search input{
+  width:100%;border:1px solid var(--rule);background:var(--surface);border-radius:999px;
+  padding:6px 12px 6px 32px;font-size:13px;color:var(--ink);outline:none;
+  box-shadow:none;appearance:none;-webkit-appearance:none
+}
+.top-search input::placeholder{color:var(--faint)}
+.top-search input:focus{border-color:#C8CDD6;box-shadow:0 0 0 3px color-mix(in oklch, var(--acc) 18%, transparent)}
+.top-search .ico{
+  position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;
+  color:var(--faint);pointer-events:none;display:block
+}
+.top-search-drop{
+  display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);z-index:20;
+  background:var(--surface);border:1px solid var(--rule);border-radius:12px;
+  box-shadow:0 10px 28px rgba(21,23,28,.08);max-height:min(60vh,320px);overflow:auto;padding:4px
+}
+.top-search.open .top-search-drop{display:block}
+.top-search-drop button{
+  display:grid;grid-template-columns:auto 1fr;gap:2px 10px;align-items:baseline;
+  width:100%;text-align:left;border:0;background:transparent;border-radius:8px;
+  padding:8px 10px;cursor:pointer;font:inherit;color:var(--ink)
+}
+.top-search-drop button:hover,.top-search-drop button[aria-selected="true"]{background:var(--key)}
+.top-search-drop .sid{font-family:var(--mono);font-size:11px;color:var(--faint);grid-row:1 / span 2;grid-column:1;align-self:center;min-width:3.2em}
+.top-search-drop .snm{font-size:13px;font-weight:500;line-height:1.25;grid-column:2}
+.top-search-drop .smeta{font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:.04em;grid-column:2}
+.top-search-drop button.other .snm{color:oklch(0.48 0.12 250)}
+.top-search-drop button.other .smeta{color:oklch(0.55 0.1 250)}
+.top-search-drop .empty{padding:10px 12px;font-size:13px;color:var(--faint)}
+body.era-nav .top{flex-wrap:nowrap;gap:8px}
+body.era-nav .tabs{flex:none}
+@media(max-width:520px){
+  body.era-nav .top{flex-wrap:wrap}
+  body.era-nav .top-search{flex:1 1 100%;max-width:none;order:3}
+  body.era-nav .tabs{margin-left:auto}
+}
+
 </style>
 
 <div class="app">
   <div class="top">
     <button type="button" class="brand" id="brandBtn" title="Mathera homepage">Mathera<span>v0.5 beta</span></button>
+    <div class="top-search" id="topSearch" role="search">
+      <div class="top-search-field">
+        <svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M10.2 10.2L14 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <input type="search" id="skillSearch" placeholder="Search skills" autocomplete="off" spellcheck="false" aria-label="Search skills" aria-autocomplete="list" aria-controls="skillSearchDrop" aria-expanded="false">
+      </div>
+      <div class="top-search-drop" id="skillSearchDrop" role="listbox" hidden></div>
+    </div>
     <nav class="tabs" aria-label="Main" id="tabs">
       <button data-v="skills">Skills</button>
       <button data-v="tree">Tree</button>
@@ -39486,6 +39535,7 @@ function show(v) {
   view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
   document.body.classList.toggle('land', v === 'land');
   document.body.classList.toggle('era-nav', ERA_NAV_VIEWS.has(v));
+  if (v === 'land') clearSkillSearch();
   const curTab = tabFor(v);
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === curTab ? 'page' : 'false'));
   if (v === 'land') renderLand();
@@ -39513,6 +39563,117 @@ $('tabs').addEventListener('click', e => {
   show(v);
 });
 $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
+
+/* ---- top skill search (era-nav) ---- */
+const SEARCH_MAX = 12;
+let searchActive = -1;
+function clearSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp) return;
+  inp.value = '';
+  inp.setAttribute('aria-expanded', 'false');
+  if (box) box.classList.remove('open');
+  if (drop) { drop.hidden = true; drop.innerHTML = ''; }
+  searchActive = -1;
+}
+function searchSkills(q) {
+  const raw = String(q || '').trim().toLowerCase();
+  if (!raw) return [];
+  const cur = navEra || era;
+  const hits = [];
+  for (const sk of ALL_SKILLS) {
+    const id = sk.id, name = sk.name || '';
+    const idL = id.toLowerCase(), nameL = name.toLowerCase();
+    if (!nameL.includes(raw) && !idL.includes(raw)) continue;
+    const ek = eraOf(id);
+    // Prefer name prefix / id prefix, then includes
+    let score = 0;
+    if (nameL.startsWith(raw) || idL.startsWith(raw)) score += 40;
+    else if (nameL.split(/\s+/).some(w => w.startsWith(raw))) score += 25;
+    if (idL.includes(raw)) score += 10;
+    if (ek === cur) score += 5;
+    hits.push({ sk, ek, unit: MM.unitOf(id), score, other: ek !== cur });
+  }
+  hits.sort((a, b) => b.score - a.score || a.sk.id.localeCompare(b.sk.id));
+  return hits.slice(0, SEARCH_MAX);
+}
+function renderSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp || !box || !drop) return;
+  const q = inp.value;
+  const hits = searchSkills(q);
+  searchActive = -1;
+  if (!String(q).trim()) {
+    box.classList.remove('open');
+    inp.setAttribute('aria-expanded', 'false');
+    drop.hidden = true; drop.innerHTML = '';
+    return;
+  }
+  box.classList.add('open');
+  inp.setAttribute('aria-expanded', 'true');
+  drop.hidden = false;
+  if (!hits.length) {
+    drop.innerHTML = `<div class="empty">No skills match “${esc(q.trim())}”</div>`;
+    return;
+  }
+  drop.innerHTML = hits.map((h, i) => {
+    const unitName = UNAME[h.unit] || '';
+    const meta = h.other ? `Era ${h.ek} · ${h.unit}${unitName ? ' ' + unitName : ''}` : `${h.unit}${unitName ? ' · ' + unitName : ''}`;
+    return `<button type="button" role="option" data-sk="${esc(h.sk.id)}" data-i="${i}" class="${h.other ? 'other' : ''}" aria-selected="false"><span class="sid">${esc(skillIndexLabel(h.sk.id))}</span><span class="snm">${esc(h.sk.name)}</span><span class="smeta">${esc(meta)}</span></button>`;
+  }).join('');
+}
+function setSearchActive(i) {
+  const drop = $('skillSearchDrop'); if (!drop) return;
+  const btns = [...drop.querySelectorAll('button[data-sk]')];
+  if (!btns.length) { searchActive = -1; return; }
+  searchActive = ((i % btns.length) + btns.length) % btns.length;
+  btns.forEach((b, j) => b.setAttribute('aria-selected', j === searchActive ? 'true' : 'false'));
+  btns[searchActive].scrollIntoView({ block: 'nearest' });
+}
+function goToSkill(id) {
+  if (!id || !BY[id]) return;
+  clearSkillSearch();
+  if (view === 'practice') leavePractice();
+  const u = MM.unitOf(id);
+  const k = eraOf(id);
+  if (eraSoon(k)) { navEra = k; show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  navEra = k;
+  const ready = UNITS.some(([uid]) => uid === u);
+  if (!ready) { toast('This branch is still being planted — check back soon.'); show('branches'); return; }
+  if (!META.placed[k]) placeAt(u);
+  else selUnit = u;
+  startFocus(id);
+}
+(function bindSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp || !box || !drop) return;
+  inp.addEventListener('input', () => renderSkillSearch());
+  inp.addEventListener('focus', () => { if (inp.value.trim()) renderSkillSearch(); });
+  inp.addEventListener('keydown', e => {
+    const dropOpen = box.classList.contains('open');
+    if (e.key === 'Escape') { clearSkillSearch(); inp.blur(); e.preventDefault(); return; }
+    if (!dropOpen) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); setSearchActive(searchActive + 1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setSearchActive(searchActive < 0 ? 0 : searchActive - 1); }
+    else if (e.key === 'Enter') {
+      const btn = drop.querySelector('button[aria-selected="true"]') || drop.querySelector('button[data-sk]');
+      if (btn) { e.preventDefault(); goToSkill(btn.dataset.sk); }
+    }
+  });
+  drop.addEventListener('mousedown', e => {
+    const b = e.target.closest('button[data-sk]'); if (!b) return;
+    e.preventDefault(); goToSkill(b.dataset.sk);
+  });
+  document.addEventListener('click', e => {
+    if (!box.classList.contains('open')) return;
+    if (box.contains(e.target)) return;
+    box.classList.remove('open');
+    inp.setAttribute('aria-expanded', 'false');
+    drop.hidden = true;
+  });
+})();
+
 
 /* ---- land homepage ---- */
 function renderLand() {
@@ -40344,7 +40505,7 @@ async function boot() {
     else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, goToSkill, searchSkills, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
 })();
 
 </script>

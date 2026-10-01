@@ -253,6 +253,7 @@ function show(v) {
   view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
   document.body.classList.toggle('land', v === 'land');
   document.body.classList.toggle('era-nav', ERA_NAV_VIEWS.has(v));
+  if (v === 'land') clearSkillSearch();
   const curTab = tabFor(v);
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === curTab ? 'page' : 'false'));
   if (v === 'land') renderLand();
@@ -280,6 +281,117 @@ $('tabs').addEventListener('click', e => {
   show(v);
 });
 $('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
+
+/* ---- top skill search (era-nav) ---- */
+const SEARCH_MAX = 12;
+let searchActive = -1;
+function clearSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp) return;
+  inp.value = '';
+  inp.setAttribute('aria-expanded', 'false');
+  if (box) box.classList.remove('open');
+  if (drop) { drop.hidden = true; drop.innerHTML = ''; }
+  searchActive = -1;
+}
+function searchSkills(q) {
+  const raw = String(q || '').trim().toLowerCase();
+  if (!raw) return [];
+  const cur = navEra || era;
+  const hits = [];
+  for (const sk of ALL_SKILLS) {
+    const id = sk.id, name = sk.name || '';
+    const idL = id.toLowerCase(), nameL = name.toLowerCase();
+    if (!nameL.includes(raw) && !idL.includes(raw)) continue;
+    const ek = eraOf(id);
+    // Prefer name prefix / id prefix, then includes
+    let score = 0;
+    if (nameL.startsWith(raw) || idL.startsWith(raw)) score += 40;
+    else if (nameL.split(/\s+/).some(w => w.startsWith(raw))) score += 25;
+    if (idL.includes(raw)) score += 10;
+    if (ek === cur) score += 5;
+    hits.push({ sk, ek, unit: MM.unitOf(id), score, other: ek !== cur });
+  }
+  hits.sort((a, b) => b.score - a.score || a.sk.id.localeCompare(b.sk.id));
+  return hits.slice(0, SEARCH_MAX);
+}
+function renderSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp || !box || !drop) return;
+  const q = inp.value;
+  const hits = searchSkills(q);
+  searchActive = -1;
+  if (!String(q).trim()) {
+    box.classList.remove('open');
+    inp.setAttribute('aria-expanded', 'false');
+    drop.hidden = true; drop.innerHTML = '';
+    return;
+  }
+  box.classList.add('open');
+  inp.setAttribute('aria-expanded', 'true');
+  drop.hidden = false;
+  if (!hits.length) {
+    drop.innerHTML = `<div class="empty">No skills match “${esc(q.trim())}”</div>`;
+    return;
+  }
+  drop.innerHTML = hits.map((h, i) => {
+    const unitName = UNAME[h.unit] || '';
+    const meta = h.other ? `Era ${h.ek} · ${h.unit}${unitName ? ' ' + unitName : ''}` : `${h.unit}${unitName ? ' · ' + unitName : ''}`;
+    return `<button type="button" role="option" data-sk="${esc(h.sk.id)}" data-i="${i}" class="${h.other ? 'other' : ''}" aria-selected="false"><span class="sid">${esc(skillIndexLabel(h.sk.id))}</span><span class="snm">${esc(h.sk.name)}</span><span class="smeta">${esc(meta)}</span></button>`;
+  }).join('');
+}
+function setSearchActive(i) {
+  const drop = $('skillSearchDrop'); if (!drop) return;
+  const btns = [...drop.querySelectorAll('button[data-sk]')];
+  if (!btns.length) { searchActive = -1; return; }
+  searchActive = ((i % btns.length) + btns.length) % btns.length;
+  btns.forEach((b, j) => b.setAttribute('aria-selected', j === searchActive ? 'true' : 'false'));
+  btns[searchActive].scrollIntoView({ block: 'nearest' });
+}
+function goToSkill(id) {
+  if (!id || !BY[id]) return;
+  clearSkillSearch();
+  if (view === 'practice') leavePractice();
+  const u = MM.unitOf(id);
+  const k = eraOf(id);
+  if (eraSoon(k)) { navEra = k; show('uc'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  navEra = k;
+  const ready = UNITS.some(([uid]) => uid === u);
+  if (!ready) { toast('This branch is still being planted — check back soon.'); show('branches'); return; }
+  if (!META.placed[k]) placeAt(u);
+  else selUnit = u;
+  startFocus(id);
+}
+(function bindSkillSearch() {
+  const inp = $('skillSearch'), box = $('topSearch'), drop = $('skillSearchDrop');
+  if (!inp || !box || !drop) return;
+  inp.addEventListener('input', () => renderSkillSearch());
+  inp.addEventListener('focus', () => { if (inp.value.trim()) renderSkillSearch(); });
+  inp.addEventListener('keydown', e => {
+    const dropOpen = box.classList.contains('open');
+    if (e.key === 'Escape') { clearSkillSearch(); inp.blur(); e.preventDefault(); return; }
+    if (!dropOpen) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); setSearchActive(searchActive + 1); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setSearchActive(searchActive < 0 ? 0 : searchActive - 1); }
+    else if (e.key === 'Enter') {
+      const btn = drop.querySelector('button[aria-selected="true"]') || drop.querySelector('button[data-sk]');
+      if (btn) { e.preventDefault(); goToSkill(btn.dataset.sk); }
+    }
+  });
+  drop.addEventListener('mousedown', e => {
+    const b = e.target.closest('button[data-sk]'); if (!b) return;
+    e.preventDefault(); goToSkill(b.dataset.sk);
+  });
+  document.addEventListener('click', e => {
+    if (!box.classList.contains('open')) return;
+    if (box.contains(e.target)) return;
+    box.classList.remove('open');
+    inp.setAttribute('aria-expanded', 'false');
+    drop.hidden = true;
+  });
+})();
+
 
 /* ---- land homepage ---- */
 function renderLand() {
@@ -1111,5 +1223,5 @@ async function boot() {
     else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, openBranch, openTree, goSkillsTab, goToSkill, searchSkills, era: () => era, navEra: () => navEra, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand, renderBranches, renderSkills, renderTreeView, BRANCHES };
 })();
