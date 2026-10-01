@@ -11,6 +11,7 @@ const fs = require('fs'); fs.mkdirSync('shots', { recursive: true });
     await page.route(/fonts\.(googleapis|gstatic)/, r => r.abort());
     await page.goto('file://' + __dirname + '/mathera.html');
     await page.waitForTimeout(300);
+    await page.click('#landPanels button[data-era="II"]');
     await page.screenshot({ path: `shots/${tag}-1-welcome.png`, fullPage: true });
     await page.click('#ulist button[data-u="II.1"]');
     await page.screenshot({ path: `shots/${tag}-2-home.png`, fullPage: true });

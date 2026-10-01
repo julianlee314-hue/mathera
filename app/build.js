@@ -13,4 +13,6 @@ const out = t.replace('%ENGINE%', () => ['s0.js', 's1.js', 's2.js', 'b1.js', 'b2
   .replace('%MASTERY%', () => safe(fs.readFileSync('mastery.js', 'utf8')))
   .replace('%APP%', () => safe(fs.readFileSync('app.js', 'utf8')));
 fs.writeFileSync('mathera.html', out);
-console.log('stones', Object.keys(st).length, 'bytes', out.length);
+const pages = '<!DOCTYPE html>\n<html lang="en">\n<meta charset="utf-8">\n' + out;
+fs.writeFileSync('../index.html', pages);
+console.log('stones', Object.keys(st).length, 'bytes', out.length, '→ mathera.html + ../index.html');

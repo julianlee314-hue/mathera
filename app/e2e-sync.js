@@ -20,6 +20,7 @@ const MOCK = `
   const page = await ctx.newPage();
   const errs = []; page.on('pageerror', e => errs.push(e.message)); page.on('console', m => { if (m.type() === 'warning') errs.push(m.text()); });
   await page.goto('file://' + __dirname + '/mathera.html'); await page.waitForTimeout(400);
+  await page.click('#landPanels button[data-era="II"]');
   await page.click('#ulist button[data-u="II.3"]');
   await page.click('#contBtn');
   for (let i = 0; i < 12; i++) {
@@ -35,7 +36,8 @@ const MOCK = `
   // device 2: same account, empty localStorage
   await page.evaluate(() => localStorage.clear());
   await page.reload(); await page.waitForTimeout(800);
-  const r2 = await page.evaluate(() => ({ view: ['welcome', 'home'].find(v => !document.getElementById('v-' + v).hidden), steps: Object.keys(window.__mathera.P().steps).length, start: window.__mathera.P().settings.start, inferred: window.__mathera.MM.counts(window.__mathera.P(), Date.now()).inferred, saved: document.getElementById('savedHome').textContent }));
+  await page.click('#landPanels button[data-era="II"]');
+  const r2 = await page.evaluate(() => ({ view: ['welcome', 'home', 'land'].find(v => !document.getElementById('v-' + v).hidden), steps: Object.keys(window.__mathera.P().steps).length, start: window.__mathera.P().settings.start, inferred: window.__mathera.MM.counts(window.__mathera.P(), Date.now()).inferred, saved: document.getElementById('savedHome').textContent }));
   console.log('device 2:', r2, 'errors:', errs);
   await browser.close();
 })();

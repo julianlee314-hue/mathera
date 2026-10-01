@@ -5,7 +5,7 @@ const { chromium } = require(require('child_process').execSync('npm root -g').to
     const p = await b.newPage({ viewport: { width: w, height: 900 }, colorScheme: dark ? 'dark' : 'light' }); p.on('pageerror', e => errs.push(e.message));
     await p.route(/fonts\./, r => r.abort());
     await p.goto('file://' + __dirname + '/mathera.html'); await p.waitForTimeout(300);
-    await p.click('#welTabs button[data-era="IV"]');
+    await p.click('#landPanels button[data-era="IV"]');
     await p.screenshot({ path: `shots/up-${tag}-1-welcome.png`, fullPage: true });
     await p.click('#ulist button[data-u="IV.7"]');
     await p.screenshot({ path: `shots/up-${tag}-2-home.png`, fullPage: true });

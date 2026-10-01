@@ -20,6 +20,14 @@ const UP_UNITS = { IV: [["IV.1", "Equations & inequalities"], ["IV.2", "Function
 for (const [k, E, name] of [['IV', G_E4(), 'Solve'], ['V', G_E5(), 'Prove']]) if (E && E.skills.length) { const have = new Set(E.skills.map(s => MM.unitOf(s.id))); ERAS[k] = { E, name, units: UP_UNITS[k].filter(([u]) => have.has(u)), total: UP_UNITS[k].length }; }
 function G_E4() { return typeof E4 !== 'undefined' ? E4 : null; } function G_E5() { return typeof E5 !== 'undefined' ? E5 : null; }
 const ERA_KEYS = Object.keys(ERAS);
+// Display roster for homepage + era tabs (VI–VII mapped, not practice yet)
+const ALL_ERAS = [
+  { k: 'I', name: 'Count' }, { k: 'II', name: 'Operate' }, { k: 'III', name: 'Relate' },
+  { k: 'IV', name: 'Solve' }, { k: 'V', name: 'Prove' },
+  { k: 'VI', name: 'Change', soon: true }, { k: 'VII', name: 'Space', soon: true },
+];
+const eraName = k => (ALL_ERAS.find(e => e.k === k) || {}).name || (ERAS[k] || {}).name || k;
+const eraSoon = k => !ERAS[k];
 const UPPER = k => k === 'IV' || k === 'V';
 const eraOf = id => id.split('.')[0];
 const ALL_UNITS = ERA_KEYS.flatMap(k => ERAS[k].units);
@@ -31,7 +39,7 @@ const CHECK = (id, f, v) => (ENG(id).check || E2.check)(f, v);
 const SHOWV = (id, f) => (ENG(id).show || E2.show)(f);
 let era = 'II', UNITS = ERAS.II.units, SKILLS = E2.skills, ORDER = SKILLS.map(s => s.id);
 const unitSkills = u => ALL_SKILLS.filter(s => MM.unitOf(s.id) === u);
-const eraLabel = k => `Era ${k} · ${ERAS[k].name}`;
+const eraLabel = k => `Era ${k} · ${eraName(k)}`;
 const HEROES = [['nova', 'Nova, a space explorer'], ['kai', 'Kai, a street chef'], ['rio', 'Rio, a footballer'], ['mei', 'Mei, a martial artist'], ['juno', 'Juno, a detective'], ['ade', 'Ade, a musician'], ['sol', 'Sol, a deep-sea diver']];
 const NEMESES = [['crumblewick', 'Baron Crumblewick', 'a cookie-stealing raccoon'], ['rex', 'Tiny-Arms Rex', 'a dinosaur with big plans'], ['bragg', 'Lord Braggington', 'who overestimates everything'], ['sterling', 'Sly Sterling', 'a terrible tycoon'], ['moriarty', 'Professor Moriarty', 'a mathematician gone bad'], ['tempus', 'Dr. Tempus', 'who meddles with time'], ['nullspace', 'Emperor Nullspace', 'ruler of the galaxy'], ['unit9', 'UNIT-9', 'an AI very sure of itself'], ['rumpel', 'Rumpelstiltskin', 'spinner of riddles']];
 const DEFAULT_RULES = { hero: 'nova', nemesis: 'crumblewick', coins: 'US', units: 'metric', clock: '12h', stories: 'on', sfx: 'on', sound: 'off' };
@@ -204,21 +212,62 @@ function teleSave() {
 }
 
 /* ================= views ================= */
-let view = 'home';
-const VIEWS = ['loading', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+let view = 'land';
+const VIEWS = ['loading', 'land', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+let toastT = 0;
+function toast(msg) {
+  const el = $('toast'); if (!el) return;
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2200);
+}
 function show(v) {
-  view = v; VIEWS.forEach(x => $('v-' + x).hidden = x !== v);
+  view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
+  document.body.classList.toggle('land', v === 'land');
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === v || ((v === 'practice' || v === 'alarm') && b.dataset.v === 'home') ? 'page' : 'false'));
+  if (v === 'land') renderLand();
   if (v === 'home') renderHome(); if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
   window.scrollTo(0, 0);
 }
 $('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (view === 'practice') leavePractice(); show(!META.placed[era] && b.dataset.v === 'home' ? 'welcome' : b.dataset.v); });
+$('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
+
+/* ---- land homepage ---- */
+function renderLand() {
+  $('landPanels').innerHTML = ALL_ERAS.map(e => {
+    const soon = !!e.soon;
+    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}">
+      <div class="panel-body">
+        <div class="panel-num">${e.k}</div>
+        <div class="panel-name">${e.name}</div>
+        ${soon ? '<div class="panel-soon">Coming Soon</div>' : ''}
+      </div>
+    </button>`;
+  }).join('');
+}
+$('landPanels').addEventListener('click', e => {
+  const b = e.target.closest('button.panel[data-era]'); if (!b) return;
+  enterEra(b.dataset.era);
+});
+function enterEra(k) {
+  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  show(META.placed[k] ? 'home' : 'welcome');
+}
 
 /* ---- era switcher ---- */
 function renderEraTabs(el) {
-  $(el).innerHTML = ERA_KEYS.map(k => { const c = MM.counts(PS[k], now()); return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`; }).join('');
+  $(el).innerHTML = ALL_ERAS.map(e => {
+    const k = e.k;
+    if (e.soon) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Coming Soon</small></button>`;
+    const c = MM.counts(PS[k], now());
+    return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`;
+  }).join('');
 }
-function switchEra(k) { if (k === era) return; setEra(k); S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome'); }
+function switchEra(k) {
+  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  if (k === era) return;
+  setEra(k); S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
+}
 ['eraTabs', 'welTabs'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button[data-era]'); if (b) switchEra(b.dataset.era); }));
 
 /* ---- welcome / placement ---- */
@@ -705,7 +754,7 @@ document.addEventListener('keydown', e => {
 const hadLocal = loadLocal();
 if (!META.pseudo) META.pseudo = 't' + Math.random().toString(36).slice(2, 10);
 setEra(ERAS[META.era] ? META.era : 'II');
-const firstView = () => show(META.placed[era] ? 'home' : 'welcome');
+const firstView = () => show('land');
 if (hadLocal) firstView(); else show('loading');
 setSaved('Saved on this device');
 (async () => {
@@ -747,8 +796,9 @@ async function boot() {
     }
     save(); flush();
     selUnit = META.start[era] || selUnit;
-    if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
+    if (view === 'land') { /* stay on homepage */ }
+    else if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { setEra(k); show(META.placed[k] ? 'home' : 'welcome'); }, era: () => era, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, era: () => era, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand };
 })();

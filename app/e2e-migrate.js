@@ -17,11 +17,12 @@ const MOCK = (seed) => `(() => {
   await ctx.route(/fonts\./, r => r.abort());
   let page = await ctx.newPage(); const errs = []; page.on('pageerror', e => errs.push(e.message));
   await page.goto('file://' + __dirname + '/mathera.html'); await page.waitForTimeout(1200);
-  const a = await page.evaluate(() => { const M = window.__mathera; return { era: M.era(), view: ['welcome', 'home'].find(v => !document.getElementById('v-' + v).hidden), provenII: M.MM.proven(M.PS.II, 'II.5.15'), inf: M.MM.counts(M.PS.II, Date.now()).inferred, hero: document.getElementById('whoLine').textContent }; });
+  await page.click('#landPanels button[data-era="II"]');
+  const a = await page.evaluate(() => { const M = window.__mathera; return { era: M.era(), view: ['welcome', 'home', 'land'].find(v => !document.getElementById('v-' + v).hidden), provenII: M.MM.proven(M.PS.II, 'II.5.15'), inf: M.MM.counts(M.PS.II, Date.now()).inferred, hero: document.getElementById('whoLine').textContent }; });
   await page.waitForTimeout(1200);
   const saved = await page.evaluate(() => ({ v: window.__mock['data/users/u1/settings'].v, placed: window.__mock['data/users/u1/settings'].meta.placed, start: window.__mock['data/users/u1/settings'].meta.start }));
   await page.click('#eraTabs button[data-era="III"]');
-  const b = await page.evaluate(() => ({ era: window.__mathera.era(), view: ['welcome', 'home'].find(v => !document.getElementById('v-' + v).hidden) }));
+  const b = await page.evaluate(() => ({ era: window.__mathera.era(), view: ['welcome', 'home', 'land'].find(v => !document.getElementById('v-' + v).hidden) }));
   console.log('A account v0.2 →', a, saved, 'switch to III →', b);
   await ctx.close();
   // B: device has v0.2 localStorage, no account
@@ -30,7 +31,8 @@ const MOCK = (seed) => `(() => {
   await page.goto('file://' + __dirname + '/mathera.html');
   await page.evaluate(() => localStorage.setItem('mathera-v02', JSON.stringify({ v: 2, skills: { 'II.1.01': { top: 'd', sg: 0, due: Date.now() + 864e5, cur: 'd' } }, steps: { 'II.1.01.d': { st: 'p', n: 3, r: 3 } }, settings: { pace: 'gentle', dial: 7, start: 'II.1' }, rules: { hero: 'mei' }, meta: { placed: true, pseudo: 'tx', at: {} }, tele: {} })));
   await page.reload(); await page.waitForTimeout(500);
-  const c = await page.evaluate(() => { const M = window.__mathera; return { era: M.era(), view: ['welcome', 'home'].find(v => !document.getElementById('v-' + v).hidden), proven: M.MM.proven(M.PS.II, 'II.1.01'), hero: document.getElementById('whoLine').textContent, v: JSON.parse(localStorage.getItem('mathera-v02') || '{}').v }; });
+  await page.click('#landPanels button[data-era="II"]');
+  const c = await page.evaluate(() => { const M = window.__mathera; return { era: M.era(), view: ['welcome', 'home', 'land'].find(v => !document.getElementById('v-' + v).hidden), proven: M.MM.proven(M.PS.II, 'II.1.01'), hero: document.getElementById('whoLine').textContent, v: JSON.parse(localStorage.getItem('mathera-v02') || '{}').v }; });
   console.log('B local v0.2 →', c, 'errors', errs);
   await browser.close();
 })();

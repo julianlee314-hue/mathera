@@ -3,7 +3,7 @@
 <meta charset="utf-8">
 <title>Mathera</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&family=STIX+Two+Text:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#F6F7F9; --surface:#FFFFFF; --ink:#15171C; --muted:#646A75; --faint:#9AA0AA; --rule:#E2E5EA; --key:#EEF0F3; --keyp:#E2E5EA;
@@ -287,11 +287,40 @@ mi.blank{color:var(--acc)}
 .danger{align-self:flex-start;border:1px solid var(--rule);background:transparent;border-radius:8px;padding:6px 12px;font-size:13px;color:var(--muted)}
 .danger.arm{border-color:var(--bad);color:var(--bad)}
 .saved{font-family:var(--mono);font-size:11px;color:var(--faint);text-align:center}
+
+/* land homepage (7 era panels) */
+body.land{padding:0;overflow:hidden;background:#0a0e17;color:#f4f1ea}
+body.land .app{max-width:none;margin:0;min-height:100dvh;min-height:100vh}
+body.land .top{position:absolute;inset:0 0 auto 0;z-index:6;margin:0;padding:1.1rem 1.35rem;pointer-events:none;width:100%;box-sizing:border-box}
+body.land .top *{pointer-events:auto}
+body.land .brand{color:rgba(244,241,234,.55);letter-spacing:.08em;text-transform:uppercase;font-size:1.05rem}
+body.land .brand span{display:none}
+body.land .tabs{display:none}
+body.land #v-land{gap:0}
+.brand{border:0;background:transparent;padding:0;cursor:pointer;font:inherit;color:inherit;text-align:left}
+.brand:hover{opacity:.85}
+.toast{position:fixed;top:1rem;left:50%;transform:translateX(-50%);z-index:40;background:#1a2233;border:1px solid rgba(255,255,255,.12);padding:.55rem .9rem;border-radius:999px;font-size:.8rem;color:#a8b0c4;opacity:0;pointer-events:none;transition:opacity .25s;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.toast.show{opacity:1}
+.eras button.soon{opacity:.55;cursor:default}
+.eras button.soon small{color:var(--thirst)}
+#v-land{padding:0;margin:0}
+.panels{flex:1;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));min-height:100dvh;min-height:100vh;width:100%}
+@media(max-width:820px){.panels{grid-template-columns:1fr;min-height:auto}.panel{min-height:42vh}}
+.panel{position:relative;overflow:hidden;border:0;padding:0;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;background:transparent;border-right:1px solid rgba(255,255,255,.08);transition:opacity .2s;cursor:pointer;color:#f4f1ea;font:inherit;min-width:0}
+.panel:last-child{border-right:0}
+.panel:hover{opacity:.92}
+.panel.locked{opacity:.35;cursor:default}
+.panel.locked:hover{opacity:.35}
+.panel-body{position:relative;z-index:2;padding:1.5rem .6rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem}
+.panel-num{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;opacity:.7;font-weight:500}
+.panel-name{font-family:Fraunces,Georgia,serif;font-size:clamp(1rem,1.8vw,1.45rem);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(230,235,245,.88)}
+.panel:hover .panel-name{color:#fff}
+.panel-soon{font-family:var(--mono);font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-top:.15rem}
 </style>
 
 <div class="app">
   <div class="top">
-    <div class="brand">Mathera<span>v0.5 beta</span></div>
+    <button type="button" class="brand" id="brandBtn" title="Mathera homepage">Mathera<span>v0.5 beta</span></button>
     <nav class="tabs" aria-label="Main" id="tabs">
       <button data-v="home" aria-current="page">Tree</button>
       <button data-v="id">ID card</button>
@@ -299,7 +328,14 @@ mi.blank{color:var(--acc)}
     </nav>
   </div>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
   <section class="view" id="v-loading" hidden><p class="nextline" style="padding:60px 0">Opening your garden…</p></section>
+
+  <!-- LAND / HOMEPAGE -->
+  <section class="view" id="v-land" hidden>
+    <div class="panels" id="landPanels" role="group" aria-label="Eras"></div>
+  </section>
 
   <!-- WELCOME / PLACEMENT -->
   <section class="view welcome" id="v-welcome" hidden>
@@ -39063,6 +39099,14 @@ const UP_UNITS = { IV: [["IV.1", "Equations & inequalities"], ["IV.2", "Function
 for (const [k, E, name] of [['IV', G_E4(), 'Solve'], ['V', G_E5(), 'Prove']]) if (E && E.skills.length) { const have = new Set(E.skills.map(s => MM.unitOf(s.id))); ERAS[k] = { E, name, units: UP_UNITS[k].filter(([u]) => have.has(u)), total: UP_UNITS[k].length }; }
 function G_E4() { return typeof E4 !== 'undefined' ? E4 : null; } function G_E5() { return typeof E5 !== 'undefined' ? E5 : null; }
 const ERA_KEYS = Object.keys(ERAS);
+// Display roster for homepage + era tabs (VI–VII mapped, not practice yet)
+const ALL_ERAS = [
+  { k: 'I', name: 'Count' }, { k: 'II', name: 'Operate' }, { k: 'III', name: 'Relate' },
+  { k: 'IV', name: 'Solve' }, { k: 'V', name: 'Prove' },
+  { k: 'VI', name: 'Change', soon: true }, { k: 'VII', name: 'Space', soon: true },
+];
+const eraName = k => (ALL_ERAS.find(e => e.k === k) || {}).name || (ERAS[k] || {}).name || k;
+const eraSoon = k => !ERAS[k];
 const UPPER = k => k === 'IV' || k === 'V';
 const eraOf = id => id.split('.')[0];
 const ALL_UNITS = ERA_KEYS.flatMap(k => ERAS[k].units);
@@ -39074,7 +39118,7 @@ const CHECK = (id, f, v) => (ENG(id).check || E2.check)(f, v);
 const SHOWV = (id, f) => (ENG(id).show || E2.show)(f);
 let era = 'II', UNITS = ERAS.II.units, SKILLS = E2.skills, ORDER = SKILLS.map(s => s.id);
 const unitSkills = u => ALL_SKILLS.filter(s => MM.unitOf(s.id) === u);
-const eraLabel = k => `Era ${k} · ${ERAS[k].name}`;
+const eraLabel = k => `Era ${k} · ${eraName(k)}`;
 const HEROES = [['nova', 'Nova, a space explorer'], ['kai', 'Kai, a street chef'], ['rio', 'Rio, a footballer'], ['mei', 'Mei, a martial artist'], ['juno', 'Juno, a detective'], ['ade', 'Ade, a musician'], ['sol', 'Sol, a deep-sea diver']];
 const NEMESES = [['crumblewick', 'Baron Crumblewick', 'a cookie-stealing raccoon'], ['rex', 'Tiny-Arms Rex', 'a dinosaur with big plans'], ['bragg', 'Lord Braggington', 'who overestimates everything'], ['sterling', 'Sly Sterling', 'a terrible tycoon'], ['moriarty', 'Professor Moriarty', 'a mathematician gone bad'], ['tempus', 'Dr. Tempus', 'who meddles with time'], ['nullspace', 'Emperor Nullspace', 'ruler of the galaxy'], ['unit9', 'UNIT-9', 'an AI very sure of itself'], ['rumpel', 'Rumpelstiltskin', 'spinner of riddles']];
 const DEFAULT_RULES = { hero: 'nova', nemesis: 'crumblewick', coins: 'US', units: 'metric', clock: '12h', stories: 'on', sfx: 'on', sound: 'off' };
@@ -39247,21 +39291,62 @@ function teleSave() {
 }
 
 /* ================= views ================= */
-let view = 'home';
-const VIEWS = ['loading', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+let view = 'land';
+const VIEWS = ['loading', 'land', 'welcome', 'home', 'alarm', 'practice', 'id', 'rules'];
+let toastT = 0;
+function toast(msg) {
+  const el = $('toast'); if (!el) return;
+  el.textContent = msg; el.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove('show'), 2200);
+}
 function show(v) {
-  view = v; VIEWS.forEach(x => $('v-' + x).hidden = x !== v);
+  view = v; VIEWS.forEach(x => { const el = $('v-' + x); if (el) el.hidden = x !== v; });
+  document.body.classList.toggle('land', v === 'land');
   document.querySelectorAll('#tabs button').forEach(b => b.setAttribute('aria-current', b.dataset.v === v || ((v === 'practice' || v === 'alarm') && b.dataset.v === 'home') ? 'page' : 'false'));
+  if (v === 'land') renderLand();
   if (v === 'home') renderHome(); if (v === 'id') renderID(); if (v === 'rules') renderRules(); if (v === 'welcome') renderWelcome();
   window.scrollTo(0, 0);
 }
 $('tabs').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (view === 'practice') leavePractice(); show(!META.placed[era] && b.dataset.v === 'home' ? 'welcome' : b.dataset.v); });
+$('brandBtn').addEventListener('click', () => { if (view === 'practice') leavePractice(); show('land'); });
+
+/* ---- land homepage ---- */
+function renderLand() {
+  $('landPanels').innerHTML = ALL_ERAS.map(e => {
+    const soon = !!e.soon;
+    return `<button type="button" class="panel${soon ? ' locked' : ''}" data-era="${e.k}">
+      <div class="panel-body">
+        <div class="panel-num">${e.k}</div>
+        <div class="panel-name">${e.name}</div>
+        ${soon ? '<div class="panel-soon">Coming Soon</div>' : ''}
+      </div>
+    </button>`;
+  }).join('');
+}
+$('landPanels').addEventListener('click', e => {
+  const b = e.target.closest('button.panel[data-era]'); if (!b) return;
+  enterEra(b.dataset.era);
+});
+function enterEra(k) {
+  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  if (k !== era) { setEra(k); S = MM.session(); save(); }
+  show(META.placed[k] ? 'home' : 'welcome');
+}
 
 /* ---- era switcher ---- */
 function renderEraTabs(el) {
-  $(el).innerHTML = ERA_KEYS.map(k => { const c = MM.counts(PS[k], now()); return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`; }).join('');
+  $(el).innerHTML = ALL_ERAS.map(e => {
+    const k = e.k;
+    if (e.soon) return `<button type="button" class="soon" data-era="${k}"><b>Era ${k}</b> ${e.name}<small>Coming Soon</small></button>`;
+    const c = MM.counts(PS[k], now());
+    return `<button data-era="${k}" aria-pressed="${k === era}"><b>Era ${k}</b> ${ERAS[k].name}${META.placed[k] ? `<small>${c.proven + c.thirsty}/${PS[k].order.length}</small>` : ERAS[k].total ? `<small>${ERAS[k].units.length < ERAS[k].total ? `preview · ${ERAS[k].units.length}/${ERAS[k].total} units` : `new · ${PS[k].order.length} skills`}</small>` : ''}</button>`;
+  }).join('');
 }
-function switchEra(k) { if (k === era) return; setEra(k); S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome'); }
+function switchEra(k) {
+  if (eraSoon(k)) { toast('Coming Soon — Era ' + k + ' arrives in Mathera 2.0'); return; }
+  if (k === era) return;
+  setEra(k); S = MM.session(); save(); show(META.placed[k] ? 'home' : 'welcome');
+}
 ['eraTabs', 'welTabs'].forEach(id => $(id).addEventListener('click', e => { const b = e.target.closest('button[data-era]'); if (b) switchEra(b.dataset.era); }));
 
 /* ---- welcome / placement ---- */
@@ -39748,7 +39833,7 @@ document.addEventListener('keydown', e => {
 const hadLocal = loadLocal();
 if (!META.pseudo) META.pseudo = 't' + Math.random().toString(36).slice(2, 10);
 setEra(ERAS[META.era] ? META.era : 'II');
-const firstView = () => show(META.placed[era] ? 'home' : 'welcome');
+const firstView = () => show('land');
 if (hadLocal) firstView(); else show('loading');
 setSaved('Saved on this device');
 (async () => {
@@ -39790,12 +39875,11 @@ async function boot() {
     }
     save(); flush();
     selUnit = META.start[era] || selUnit;
-    if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
+    if (view === 'land') { /* stay on homepage */ }
+    else if (view === 'welcome' && META.placed[era]) show('home'); else if (view === 'home') renderHome(); else if (view === 'id') renderID(); else if (view === 'rules') renderRules();
   } catch (e) { remote = false; console.warn('mathera sync', e); }
 }
-window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { setEra(k); show(META.placed[k] ? 'home' : 'welcome'); }, era: () => era, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome };
+window.__mathera = { force: (id, step) => { FORCE = { id, step, mode: 'practice' }; newQ(); }, P: () => P, PS, setEra: k => { enterEra(k); }, enterEra, era: () => era, S: () => S, MM, clock, cur: () => cur, q: () => q, show, renderHome, renderLand };
 })();
 
 </script>
-
-</html>
