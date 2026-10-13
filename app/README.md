@@ -19,5 +19,4 @@ Published as the **Mathera Beta** artifact (https://claude.ai/artifact/PfGMsA8aD
 - A user doc path must have an even number of segments; `data/users/<uid>/units/x` is invalid.
 
 ## Shared (Claude reads these)
-- `telemetry/<pseudonym>`: `{pace, dial, start, steps:{II_5_03_c:{t,r,s,fun,conf}}}`, where t = tried, r = right, s = total seconds.
 - `bugs/*`: in-app reports with the question code.
