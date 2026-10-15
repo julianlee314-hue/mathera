@@ -2,7 +2,7 @@
 
 A living math curriculum — practice app for **Eras I–V** (Count through Proof), with curriculum docs and harnesses for further development.
 
-**Live app (GitHub Pages):** https://julianlee314-hue.github.io/mathera/
+**Live app (GitHub Pages):** https://the-court-press.github.io/mathera/
 
 Open that URL for the self-contained beta. The same build also lives at [`app/mathera.html`](app/mathera.html) (repo root `index.html` is a Pages entry point).
 
